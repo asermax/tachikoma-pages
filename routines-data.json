@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-02-02T12:54:31.736304",
+  "stats": {
+    "total": 1,
+    "by_category": {
+      "wellness": 1
+    },
+    "daily_average": 1.0,
+    "most_active_day": "2026-02-02"
+  },
+  "streaks": {
+    "wellness": {
+      "days": 1,
+      "last_date": "2026-02-02"
+    }
+  },
+  "recent_activities": [
+    {
+      "id": 1,
+      "name": "Yoga session",
+      "category": "wellness",
+      "duration": "20min",
+      "tags": [],
+      "date": "2026-02-02",
+      "timestamp": "2026-02-02T01:44:36.817452"
+    }
+  ],
+  "weekly_summary": {
+    "week_start": "2026-02-02",
+    "week_end": "2026-02-08",
+    "total_activities": 1,
+    "by_category": {
+      "wellness": 1
+    },
+    "daily_breakdown": {
+      "2026-02-02": {
+        "wellness": 1
+      }
+    },
+    "day_completion": {
+      "Monday": 1,
+      "Tuesday": 0,
+      "Wednesday": 0,
+      "Thursday": 0,
+      "Friday": 0,
+      "Saturday": 0,
+      "Sunday": 0
+    }
+  }
+}
