@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routines Tracker | Tachikoma</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            opacity: 0.9;
+        }
+        .back-link {
+            position: absolute;
+            top: 2.5rem;
+            left: 2rem;
+        }
+        .back-link a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+        .back-link a:hover {
+            opacity: 1;
+        }
+        main {
+            padding: 2rem;
+        }
+        
+        /* Stats Overview */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .stat-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+        
+        /* Routine Categories */
+        .category {
+            margin-bottom: 2rem;
+        }
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #eee;
+        }
+        .category-icon {
+            font-size: 1.5rem;
+        }
+        .category h2 {
+            color: #2c3e50;
+            font-size: 1.3rem;
+        }
+        
+        /* Routine Items */
+        .routine-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .routine-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .routine-item:hover {
+            transform: translateX(4px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .routine-status {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+        }
+        .status-done {
+            background: #27ae60;
+            color: white;
+        }
+        .status-pending {
+            background: #e0e0e0;
+            color: #999;
+        }
+        .status-missed {
+            background: #e74c3c;
+            color: white;
+        }
+        .routine-info {
+            flex: 1;
+        }
+        .routine-name {
+            font-weight: 500;
+            color: #2c3e50;
+        }
+        .routine-meta {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 0.25rem;
+        }
+        .streak {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            font-size: 0.9rem;
+            color: #e67e22;
+        }
+        
+        /* Weekly View */
+        .week-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        .day-column {
+            text-align: center;
+        }
+        .day-header {
+            font-weight: 500;
+            color: #666;
+            font-size: 0.85rem;
+            padding: 0.5rem;
+        }
+        .day-cell {
+            aspect-ratio: 1;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            margin: 0.25rem 0;
+        }
+        .day-done {
+            background: #27ae60;
+            color: white;
+        }
+        .day-missed {
+            background: #e74c3c;
+            color: white;
+        }
+        .day-future {
+            background: #f0f0f0;
+            color: #ccc;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #f8f9fa;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+            .week-grid {
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="back-link">
+                <a href="index.html">← Back</a>
+            </div>
+            <h1>📅 Routines Tracker</h1>
+            <p>Weekly activity tracking and accountability</p>
+        </header>
+
+        <main>
+            <!-- Stats Overview -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="weekly-completion">0%</div>
+                    <div class="stat-label">Weekly Completion</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="current-streak">0</div>
+                    <div class="stat-label">Day Streak</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="total-routines">0</div>
+                    <div class="stat-label">Active Routines</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="weeks-tracked">0</div>
+                    <div class="stat-label">Weeks Tracked</div>
+                </div>
+            </div>
+
+            <!-- Today's Routines -->
+            <div class="category">
+                <div class="category-header">
+                    <span class="category-icon">📋</span>
+                    <h2>Today's Routines</h2>
+                </div>
+                <div class="routine-list" id="today-routines">
+                    <!-- Populated by JavaScript -->
+                    <div class="routine-item">
+                        <div class="routine-status status-pending">○</div>
+                        <div class="routine-info">
+                            <div class="routine-name">Loading routines...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wellness -->
+            <div class="category">
+                <div class="category-header">
+                    <span class="category-icon">🧘</span>
+                    <h2>Wellness</h2>
+                </div>
+                <div class="routine-list">
+                    <div class="routine-item">
+                        <div class="routine-status status-done">✓</div>
+                        <div class="routine-info">
+                            <div class="routine-name">Morning Meditation</div>
+                            <div class="routine-meta">15 min • Daily</div>
+                        </div>
+                        <div class="streak">🔥 5 days</div>
+                    </div>
+                    <div class="routine-item">
+                        <div class="routine-status status-done">✓</div>
+                        <div class="routine-info">
+                            <div class="routine-name">Evening Stretching</div>
+                            <div class="routine-meta">10 min • Daily</div>
+                        </div>
+                        <div class="streak">🔥 12 days</div>
+                    </div>
+                </div>
+                <div class="week-grid">
+                    <div class="day-column">
+                        <div class="day-header">Mon</div>
+                        <div class="day-cell day-done">✓</div>
+                        <div class="day-cell day-done">✓</div>
+                    </div>
+                    <div class="day-column">
+                        <div class="day-header">Tue</div>
+                        <div class="day-cell day-done">✓</div>
+                        <div class="day-cell day-done">✓</div>
+                    </div>
+                    <div class="day-column">
+                        <div class="day-header">Wed</div>
+                        <div class="day-cell day-done">✓</div>
+                        <div class="day-cell day-missed">✗</div>
+                    </div>
+                    <div class="day-column">
+                        <div class="day-header">Thu</div>
+                        <div class="day-cell day-done">✓</div>
+                        <div class="day-cell day-done">✓</div>
+                    </div>
+                    <div class="day-column">
+                        <div class="day-header">Fri</div>
+                        <div class="day-cell day-done">✓</div>
+                        <div class="day-cell day-done">✓</div>
+                    </div>
+                    <div class="day-column">
+                        <div class="day-header">Sat</div>
+                        <div class="day-cell day-future">-</div>
+                        <div class="day-cell day-future">-</div>
+                    </div>
+                    <div class="day-column">
+                        <div class="day-header">Sun</div>
+                        <div class="day-cell day-future">-</div>
+                        <div class="day-cell day-future">-</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning -->
+            <div class="category">
+                <div class="category-header">
+                    <span class="category-icon">📚</span>
+                    <h2>Learning</h2>
+                </div>
+                <div class="routine-list">
+                    <div class="routine-item">
+                        <div class="routine-status status-done">✓</div>
+                        <div class="routine-info">
+                            <div class="routine-name">Japanese Study</div>
+                            <div class="routine-meta">30 min • Daily</div>
+                        </div>
+                        <div class="streak">🔥 8 days</div>
+                    </div>
+                    <div class="routine-item">
+                        <div class="routine-status status-pending">○</div>
+                        <div class="routine-info">
+                            <div class="routine-name">Read 30 Pages</div>
+                            <div class="routine-meta">Books/Articles • Daily</div>
+                        </div>
+                        <div class="streak">🔥 3 days</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Creative -->
+            <div class="category">
+                <div class="category-header">
+                    <span class="category-icon">🎨</span>
+                    <h2>Creative</h2>
+                </div>
+                <div class="routine-list">
+                    <div class="routine-item">
+                        <div class="routine-status status-done">✓</div>
+                        <div class="routine-info">
+                            <div class="routine-name">Music Practice</div>
+                            <div class="routine-meta">Saxophone/Piano • 3x/week</div>
+                        </div>
+                        <div class="streak">🔥 2 days</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Last updated: <span id="last-updated">--</span></p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;">🕷️ Tracked by Tachi</p>
+        </footer>
+    </div>
+
+    <script>
+        // Sample data structure - in production, this would come from an API
+        const routinesData = {
+            categories: [
+                {
+                    name: 'Wellness',
+                    icon: '🧘',
+                    routines: [
+                        { name: 'Morning Meditation', duration: '15 min', frequency: 'Daily', streak: 5 },
+                        { name: 'Evening Stretching', duration: '10 min', frequency: 'Daily', streak: 12 }
+                    ]
+                },
+                {
+                    name: 'Learning',
+                    icon: '📚',
+                    routines: [
+                        { name: 'Japanese Study', duration: '30 min', frequency: 'Daily', streak: 8 },
+                        { name: 'Read 30 Pages', duration: 'Variable', frequency: 'Daily', streak: 3 }
+                    ]
+                },
+                {
+                    name: 'Creative',
+                    icon: '🎨',
+                    routines: [
+                        { name: 'Music Practice', duration: '45 min', frequency: '3x/week', streak: 2 }
+                    ]
+                }
+            ],
+            stats: {
+                weeklyCompletion: 78,
+                currentStreak: 5,
+                totalRoutines: 5,
+                weeksTracked: 3
+            }
+        };
+
+        // Update stats
+        document.getElementById('weekly-completion').textContent = routinesData.stats.weeklyCompletion + '%';
+        document.getElementById('current-streak').textContent = routinesData.stats.currentStreak;
+        document.getElementById('total-routines').textContent = routinesData.stats.totalRoutines;
+        document.getElementById('weeks-tracked').textContent = routinesData.stats.weeksTracked;
+
+        // Update last updated time
+        document.getElementById('last-updated').textContent = new Date().toLocaleDateString('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
+        // TODO: Integrate with routines-cli API to fetch real data
+        // This is a static template for now - data will be populated dynamically
+    </script>
+</body>
+</html>
