@@ -1,9 +1,10 @@
 {
-  "generated_at": "2026-02-02T12:54:31.736304",
+  "generated_at": "2026-02-03T06:00:27.147913",
   "stats": {
-    "total": 1,
+    "total": 2,
     "by_category": {
-      "wellness": 1
+      "wellness": 1,
+      "learning": 1
     },
     "daily_average": 1.0,
     "most_active_day": "2026-02-02"
@@ -12,6 +13,10 @@
     "wellness": {
       "days": 1,
       "last_date": "2026-02-02"
+    },
+    "learning": {
+      "days": 1,
+      "last_date": "2026-02-03"
     }
   },
   "recent_activities": [
@@ -23,23 +28,36 @@
       "tags": [],
       "date": "2026-02-02",
       "timestamp": "2026-02-02T01:44:36.817452"
+    },
+    {
+      "id": 2,
+      "name": "Piano Practice",
+      "category": "learning",
+      "duration": "45min",
+      "tags": [],
+      "date": "2026-02-03",
+      "timestamp": "2026-02-03T01:19:30.847634"
     }
   ],
   "weekly_summary": {
     "week_start": "2026-02-02",
     "week_end": "2026-02-08",
-    "total_activities": 1,
+    "total_activities": 2,
     "by_category": {
-      "wellness": 1
+      "wellness": 1,
+      "learning": 1
     },
     "daily_breakdown": {
       "2026-02-02": {
         "wellness": 1
+      },
+      "2026-02-03": {
+        "learning": 1
       }
     },
     "day_completion": {
       "Monday": 1,
-      "Tuesday": 0,
+      "Tuesday": 1,
       "Wednesday": 0,
       "Thursday": 0,
       "Friday": 0,
