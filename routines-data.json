@@ -1,38 +1,46 @@
 {
-  "generated_at": "2026-02-05T00:47:06.574581",
+  "generated_at": "2026-02-05T00:57:16.204942",
+  "source": "vault",
   "stats": {
-    "total": 2,
+    "total": 3,
     "by_category": {
-      "wellness": 1,
+      "wellness": 2,
       "creative": 1
     },
     "daily_average": 1.0,
-    "most_active_day": "2026-02-03"
+    "most_active_day": "2026-02-01"
   },
-  "streaks": {
-    "wellness": {
-      "days": 1,
-      "last_date": "2026-02-03"
-    }
-  },
+  "streaks": {},
   "recent_activities": [
     {
-      "id": 1,
-      "name": "Rock Climbing",
+      "id": 3,
+      "name": "Rock Climbing 8:00-9:30 PM",
       "category": "wellness",
-      "duration": "90min",
+      "duration": "1.5h",
       "tags": [],
       "date": "2026-02-03",
-      "timestamp": "2026-02-03T20:00:00.000000"
+      "timestamp": "2026-02-03T12:00:00.000000",
+      "notes": "tired from poor sleep, did exercises + 3/6 boulders completed \u2713"
     },
     {
       "id": 2,
       "name": "Piano Practice",
       "category": "creative",
-      "duration": "45min",
+      "duration": "45 min",
       "tags": [],
       "date": "2026-02-02",
-      "timestamp": "2026-02-02T19:00:00.000000"
+      "timestamp": "2026-02-02T12:00:00.000000",
+      "notes": "Harmony course, 3 lessons, 6th chords + pop progression \u2713"
+    },
+    {
+      "id": 1,
+      "name": "Yoga 9:00-9:30 PM",
+      "category": "wellness",
+      "duration": "20 min",
+      "tags": [],
+      "date": "2026-02-01",
+      "timestamp": "2026-02-01T12:00:00.000000",
+      "notes": "felt refreshed \u2713"
     }
   ],
   "weekly_summary": {
@@ -40,15 +48,15 @@
     "week_end": "2026-02-08",
     "total_activities": 2,
     "by_category": {
-      "wellness": 1,
-      "creative": 1
+      "creative": 1,
+      "wellness": 1
     },
     "daily_breakdown": {
-      "2026-02-03": {
-        "wellness": 1
-      },
       "2026-02-02": {
         "creative": 1
+      },
+      "2026-02-03": {
+        "wellness": 1
       }
     },
     "day_completion": {
