@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-02-04T22:57:57.523416",
+  "generated_at": "2026-02-05T03:01:50.542611",
   "source": "vault",
   "stats": {
-    "total": 4,
+    "total": 3,
     "by_category": {
-      "wellness": 3,
+      "wellness": 2,
       "creative": 1
     },
     "daily_average": 1.0,
@@ -12,16 +12,6 @@
   },
   "streaks": {},
   "recent_activities": [
-    {
-      "id": 4,
-      "name": "Yoga 9:00-9:30 PM",
-      "category": "wellness",
-      "duration": "30 min",
-      "tags": [],
-      "date": "2026-02-04",
-      "timestamp": "2026-02-04T12:00:00.000000",
-      "notes": "had to force myself away from the computer but felt relaxed after \u2713"
-    },
     {
       "id": 3,
       "name": "Rock Climbing 8:00-9:30 PM",
@@ -56,10 +46,10 @@
   "weekly_summary": {
     "week_start": "2026-02-02",
     "week_end": "2026-02-08",
-    "total_activities": 3,
+    "total_activities": 2,
     "by_category": {
       "creative": 1,
-      "wellness": 2
+      "wellness": 1
     },
     "daily_breakdown": {
       "2026-02-02": {
@@ -67,15 +57,12 @@
       },
       "2026-02-03": {
         "wellness": 1
-      },
-      "2026-02-04": {
-        "wellness": 1
       }
     },
     "day_completion": {
       "Monday": 1,
       "Tuesday": 1,
-      "Wednesday": 1,
+      "Wednesday": 0,
       "Thursday": 0,
       "Friday": 0,
       "Saturday": 0,
