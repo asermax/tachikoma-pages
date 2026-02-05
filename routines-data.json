@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-02-05T03:01:50.542611",
+  "generated_at": "2026-02-05T19:28:33.792127",
   "source": "vault",
   "stats": {
-    "total": 3,
+    "total": 2,
     "by_category": {
-      "wellness": 2,
+      "wellness": 1,
       "creative": 1
     },
     "daily_average": 1.0,
@@ -12,16 +12,6 @@
   },
   "streaks": {},
   "recent_activities": [
-    {
-      "id": 3,
-      "name": "Rock Climbing 8:00-9:30 PM",
-      "category": "wellness",
-      "duration": "1.5h",
-      "tags": [],
-      "date": "2026-02-03",
-      "timestamp": "2026-02-03T12:00:00.000000",
-      "notes": "tired from poor sleep, did exercises + 3/6 boulders completed \u2713"
-    },
     {
       "id": 2,
       "name": "Piano Practice",
@@ -46,22 +36,18 @@
   "weekly_summary": {
     "week_start": "2026-02-02",
     "week_end": "2026-02-08",
-    "total_activities": 2,
+    "total_activities": 1,
     "by_category": {
-      "creative": 1,
-      "wellness": 1
+      "creative": 1
     },
     "daily_breakdown": {
       "2026-02-02": {
         "creative": 1
-      },
-      "2026-02-03": {
-        "wellness": 1
       }
     },
     "day_completion": {
       "Monday": 1,
-      "Tuesday": 1,
+      "Tuesday": 0,
       "Wednesday": 0,
       "Thursday": 0,
       "Friday": 0,
