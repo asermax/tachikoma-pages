@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-07T17:41:48.723542",
+  "generated_at": "2026-02-07T17:43:19.650196",
   "source": "vault",
   "stats": {
     "total": 4,
@@ -96,6 +96,6 @@
     "state": "content",
     "archive_name": "2026-W06",
     "image": "assets/spirit/current/fox-content.jpg",
-    "completion_rate": 75.0
+    "completion_rate": 60.0
   }
 }
