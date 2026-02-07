@@ -442,12 +442,16 @@
             const dayCompletion = weekly.day_completion || {};
             const dayPlanned = weekly.day_planned || {};
             
+            // Get current day name
+            const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
+            
             const grid = document.getElementById('week-grid');
             grid.innerHTML = '';
             
             days.forEach(day => {
                 const completed = dayCompletion[day] || 0;
                 const planned = dayPlanned[day] || 0;
+                const isToday = day === today;
                 const cell = document.createElement('div');
                 cell.className = 'day-column';
                 
@@ -461,11 +465,12 @@
                 if (completed > 0) {
                     // Has completed activities - green
                     cellContent.classList.add('day-done');
-                } else if (planned > 0 && completed === 0) {
-                    // Had planned activities but none completed - yellow (missed)
+                } else if (planned > 0 && completed === 0 && !isToday) {
+                    // Had planned activities but none completed, and not today - yellow (missed)
                     cellContent.classList.add('day-missed');
                 }
-                // If no planned and no completed - gray (default)
+                // If today: never show yellow (might complete later)
+                // If no planned and no completed: gray (default)
                 
                 cell.appendChild(header);
                 cell.appendChild(cellContent);
