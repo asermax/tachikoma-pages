@@ -332,7 +332,7 @@
                 <!-- Spirit Companion -->
                 <div class="spirit-section">
                     <h2 class="spirit-title">🦊 Your Kitsune Companion</h2>
-                    <img src="assets/spirit/fox-thriving-2026-02-01.jpg" alt="Spirit Companion" class="spirit-image" id="spirit-image">
+                    <img src="assets/spirit/current/fox-thriving.jpg" alt="Spirit Companion" class="spirit-image" id="spirit-image">
                     <div class="spirit-state" id="spirit-state">Thriving</div>
                     <p class="spirit-description" id="spirit-description">
                         Your fox companion is happy and energetic! You've been honoring your commitments this week. Keep it up!
@@ -426,7 +426,7 @@
 
         function updateSpiritCompanion(spirit) {
             const state = spirit.state || 'thriving';
-            const imagePath = spirit.image || `assets/spirit/fox-${state}-2026-02-01.jpg`;
+            const imagePath = spirit.image || `assets/spirit/current/fox-${state}.jpg`;
             const description = spiritDescriptions[state] || spiritDescriptions.thriving;
             
             document.getElementById('spirit-image').src = imagePath;
