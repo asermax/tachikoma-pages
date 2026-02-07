@@ -368,7 +368,7 @@
         // Fetch routines data from JSON file
         async function loadRoutinesData() {
             try {
-                const response = await fetch('routines-data.json');
+                const response = await fetch('routines-data.json?t=' + Date.now());
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
@@ -376,6 +376,7 @@
                 renderData(data);
             } catch (error) {
                 console.error('Failed to load routines data:', error);
+                document.getElementById('loading').innerHTML = '<p>Error: ' + error.message + '</p>';
                 showError();
             }
         }
