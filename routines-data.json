@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-07T17:25:00.489063",
+  "generated_at": "2026-02-07T17:34:21.130206",
   "source": "vault",
   "stats": {
     "total": 4,
@@ -85,17 +85,17 @@
       "Monday": 1,
       "Tuesday": 1,
       "Wednesday": 1,
-      "Thursday": 1,
-      "Friday": 1,
+      "Thursday": 0,
+      "Friday": 0,
       "Saturday": 2,
       "Sunday": 0
     }
   },
   "spirit_companion": {
     "animal": "fox",
-    "state": "critical",
+    "state": "tired",
     "archive_name": "2026-W06",
-    "image": "assets/spirit/current/fox-critical.jpg",
-    "completion_rate": 37.5
+    "image": "assets/spirit/current/fox-tired.jpg",
+    "completion_rate": 50.0
   }
 }
