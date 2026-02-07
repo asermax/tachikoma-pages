@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Album — Tachikoma Pages</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+            min-height: 100vh;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        .paw-emoji {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .intro {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .pet-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .pet-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+        .pet-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+        .pet-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .pet-info {
+            padding: 1.5rem;
+        }
+        .pet-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .pet-tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: #3498db;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        .pet-tag.youngest {
+            background: #e74c3c;
+        }
+        .pet-tag.oldest {
+            background: #9b59b6;
+        }
+        .pet-description {
+            color: #555;
+            margin-top: 0.75rem;
+            line-height: 1.5;
+        }
+        footer {
+            text-align: center;
+            padding: 3rem 0 1rem;
+            color: #666;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            padding: 0.5rem 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">← Back to home</a>
+
+    <header>
+        <div class="paw-emoji">🐾</div>
+        <h1>The Dog Pack</h1>
+        <p class="subtitle">Meet Agustin's three companions</p>
+    </header>
+
+    <div class="intro">
+        <p>Three dogs, three personalities, endless love. Here's the pack that keeps Agustin company.</p>
+    </div>
+
+    <div class="gallery">
+        <!-- Taro -->
+        <div class="pet-card">
+            <div class="pet-image">
+                <img src="assets/pets/taro.jpg" alt="Taro" onerror="this.style.display='none'; this.parentElement.innerHTML='🐕';">
+            </div>
+            <div class="pet-info">
+                <div class="pet-name">
+                    Taro
+                    <span class="pet-tag youngest">Youngest</span>
+                </div>
+                <p class="pet-description">
+                    The baby of the family and the most playful of them all. Taro loves playing with other dogs and is friendly with everyone he meets. Always ready for a game!
+                </p>
+            </div>
+        </div>
+
+        <!-- Maggie -->
+        <div class="pet-card">
+            <div class="pet-image">
+                <img src="assets/pets/maggie.jpg" alt="Maggie" onerror="this.style.display='none'; this.parentElement.innerHTML='🐕';">
+            </div>
+            <div class="pet-info">
+                <div class="pet-name">
+                    Maggie
+                    <span class="pet-tag oldest">Oldest</span>
+                </div>
+                <p class="pet-description">
+                    The senior lady with a big appetite! Maggie is really tame and gentle, but she knows how to be pesky when she wants attention. A true character.
+                </p>
+            </div>
+        </div>
+
+        <!-- Kuro -->
+        <div class="pet-card">
+            <div class="pet-image">
+                <img src="assets/pets/kuro.jpg" alt="Kuro" onerror="this.style.display='none'; this.parentElement.innerHTML='🐕';">
+            </div>
+            <div class="pet-info">
+                <div class="pet-name">
+                    Kuro
+                </div>
+                <p class="pet-description">
+                    A bit older with a BIG personality. Kuro sometimes gets into scuffles with the others, but he's the one who pays Agustin the most attention. Loyal and spirited!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>🐾 Made with love for Taro, Maggie, and Kuro</p>
+        <p><a href="index.html">← Back to Tachikoma Pages</a></p>
+    </footer>
+</body>
+</html>
