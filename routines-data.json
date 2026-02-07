@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-07T15:44:56.843934",
+  "generated_at": "2026-02-07T15:50:10.052238",
   "source": "vault",
   "stats": {
     "total": 4,
@@ -14,7 +14,7 @@
   "recent_activities": [
     {
       "id": 4,
-      "name": "Yoga 9:00-9:30 PM",
+      "name": "Yoga",
       "category": "wellness",
       "duration": "30 min",
       "tags": [],
@@ -24,7 +24,7 @@
     },
     {
       "id": 3,
-      "name": "Rock Climbing 8:00-9:30 PM",
+      "name": "Rock Climbing",
       "category": "wellness",
       "duration": "1.5h",
       "tags": [],
@@ -44,7 +44,7 @@
     },
     {
       "id": 1,
-      "name": "Yoga 9:00-9:30 PM",
+      "name": "Yoga",
       "category": "wellness",
       "duration": "20 min",
       "tags": [],
