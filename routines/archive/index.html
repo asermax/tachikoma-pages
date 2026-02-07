@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routines Archive | Tachikoma</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            opacity: 0.9;
+        }
+        .back-link {
+            position: absolute;
+            top: 2.5rem;
+            left: 2rem;
+        }
+        .back-link a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+        .back-link a:hover {
+            opacity: 1;
+        }
+        main {
+            padding: 2rem;
+        }
+        
+        .archive-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .archive-item {
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .archive-item:hover {
+            transform: translateX(4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .archive-icon {
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+        
+        .archive-info {
+            flex: 1;
+        }
+        
+        .archive-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .archive-meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+        
+        .archive-arrow {
+            font-size: 1.5rem;
+            color: #667eea;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: #666;
+        }
+        
+        .empty-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        
+        .empty-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #f8f9fa;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="back-link">
+                <a href="../routines.html">← Back to Current</a>
+            </div>
+            <h1>📚 Routines Archive</h1>
+            <p>Weekly routine history</p>
+        </header>
+
+        <main>
+            <div id="archive-content">
+                <!-- Populated by JavaScript -->
+            </div>
+        </main>
+
+        <footer>
+            <p>🕷️ Tracked by Tachi</p>
+        </footer>
+    </div>
+
+    <script>
+        // List of archived weeks
+        // Format: { folder: "2026-W05", label: "January 26 - February 1", spirit: "fox", state: "thriving" }
+        const archives = [
+            // Archives will be added here as weeks are completed
+            // Example:
+            // { folder: "2026-W05", label: "January 26 - February 1, 2026", spirit: "fox", state: "thriving" },
+        ];
+
+        function renderArchives() {
+            const container = document.getElementById('archive-content');
+            
+            if (archives.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-icon">📭</div>
+                        <div class="empty-title">No Archives Yet</div>
+                        <p>Archives will appear here after each weekly review.</p>
+                        <p style="margin-top: 1rem; font-size: 0.9rem;">
+                            The current week's data will be moved here on Sunday during the weekly review.
+                        </p>
+                    </div>
+                `;
+                return;
+            }
+            
+            const list = document.createElement('div');
+            list.className = 'archive-list';
+            
+            // Sort archives newest first
+            archives.sort((a, b) => b.folder.localeCompare(a.folder));
+            
+            archives.forEach(archive => {
+                const item = document.createElement('a');
+                item.className = 'archive-item';
+                item.href = `${archive.folder}/`;
+                
+                item.innerHTML = `
+                    <div class="archive-icon">🦊</div>
+                    <div class="archive-info">
+                        <div class="archive-title">Week ${archive.folder.split('-W')[1]} (${archive.folder.split('-')[0]})</div>
+                        <div class="archive-meta">${archive.label} • Spirit: ${archive.state}</div>
+                    </div>
+                    <div class="archive-arrow">→</div>
+                `;
+                
+                list.appendChild(item);
+            });
+            
+            container.appendChild(list);
+        }
+
+        // Load archives when page loads
+        document.addEventListener('DOMContentLoaded', renderArchives);
+    </script>
+</body>
+</html>
