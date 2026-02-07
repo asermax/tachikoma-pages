@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-07T16:43:46.833188",
+  "generated_at": "2026-02-07T16:46:42.916401",
   "source": "vault",
   "stats": {
     "total": 4,
@@ -85,8 +85,8 @@
   "spirit_companion": {
     "animal": "fox",
     "state": "content",
-    "week_date": "2026-02-01",
-    "image": "assets/spirit/fox-content-2026-02-01.jpg",
+    "archive_name": "2026-W06",
+    "image": "assets/spirit/current/fox-content.jpg",
     "completion_rate": 60.0
   }
 }
