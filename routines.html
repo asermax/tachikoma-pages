@@ -96,6 +96,54 @@
             margin: 1rem 0;
         }
         
+        /* Spirit Companion */
+        .spirit-section {
+            background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            text-align: center;
+            border: 2px solid #ffd700;
+        }
+        .spirit-title {
+            font-size: 1.5rem;
+            color: #856404;
+            margin-bottom: 1rem;
+        }
+        .spirit-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffd700;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-bottom: 1rem;
+        }
+        .spirit-state {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #856404;
+            margin-bottom: 0.5rem;
+        }
+        .spirit-description {
+            color: #666;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .archive-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: #856404;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .archive-link:hover {
+            background: #6d5203;
+        }
+
         /* Routine Categories */
         .category {
             margin-bottom: 2rem;
@@ -265,6 +313,17 @@
                         <div class="stat-number" id="weeks-tracked">--</div>
                         <div class="stat-label">Categories</div>
                     </div>
+                </div>
+
+                <!-- Spirit Companion -->
+                <div class="spirit-section">
+                    <h2 class="spirit-title">🦊 Your Spirit Companion</h2>
+                    <img src="assets/spirit/fox-thriving-2026-02-01.jpg" alt="Spirit Companion" class="spirit-image" id="spirit-image">
+                    <div class="spirit-state" id="spirit-state">Thriving</div>
+                    <p class="spirit-description" id="spirit-description">
+                        Your fox companion is happy and energetic! You've been honoring your commitments this week. Keep it up!
+                    </p>
+                    <a href="routines/archive/" class="archive-link">📚 View Past Weeks</a>
                 </div>
 
                 <!-- Weekly View -->
