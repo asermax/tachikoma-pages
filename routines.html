@@ -397,10 +397,9 @@
             document.getElementById('total-routines').textContent = stats.total || 0;
             document.getElementById('active-categories').textContent = Object.keys(stats.by_category || {}).length;
             
-            // Weekly completion
-            const dayCompletion = weekly.day_completion || {};
-            const completedDays = Object.values(dayCompletion).filter(v => v > 0).length;
-            const completionRate = Math.round((completedDays / 7) * 100);
+            // Weekly completion - use same calculation as spirit companion
+            const spirit = data.spirit_companion || {};
+            const completionRate = Math.round(spirit.completion_rate || 0);
             document.getElementById('weekly-completion').textContent = completionRate + '%';
 
             // Render week grid
