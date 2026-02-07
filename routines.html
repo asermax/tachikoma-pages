@@ -31,7 +31,6 @@
             color: white;
             padding: 2rem;
             text-align: center;
-            position: relative;
         }
         header h1 {
             font-size: 2rem;
@@ -43,7 +42,23 @@
         main {
             padding: 2rem;
         }
-        
+
+        /* Back Button */
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.9rem;
+        }
+        .back-button:hover {
+            background: #e9ecef;
+        }
+
         /* Stats Overview */
         .stats-grid {
             display: grid;
@@ -68,22 +83,8 @@
             font-size: 0.9rem;
             margin-top: 0.25rem;
         }
-        
-        /* Loading State */
-        .loading {
-            text-align: center;
-            padding: 3rem;
-            color: #666;
-        }
-        .error {
-            background: #fee;
-            color: #c33;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
 
-        /* Routine Categories */
+        /* Week Grid */
         .category {
             margin-bottom: 2rem;
         }
@@ -98,94 +99,69 @@
         .category-icon {
             font-size: 1.5rem;
         }
-        .category h2 {
-            color: #2c3e50;
+        .category-header h2 {
             font-size: 1.3rem;
+            color: #333;
         }
-        
-        /* Routine Items */
-        .routine-list {
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-        }
-        .routine-item {
-            display: flex;
-            align-items: center;
-            padding: 1rem;
-            background: #f8f9fa;
-            border-radius: 8px;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .routine-item:hover {
-            transform: translateX(4px);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        .routine-info {
-            flex: 1;
-        }
-        .routine-name {
-            font-weight: 500;
-            color: #2c3e50;
-        }
-        .routine-meta {
-            font-size: 0.85rem;
-            color: #666;
-            margin-top: 0.25rem;
-        }
-        
-        /* Weekly View */
         .week-grid {
             display: grid;
             grid-template-columns: repeat(7, 1fr);
             gap: 0.5rem;
-            margin-top: 1rem;
+            text-align: center;
         }
         .day-column {
-            text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
         .day-header {
-            font-weight: 500;
-            color: #666;
             font-size: 0.85rem;
-            padding: 0.5rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
         }
         .day-cell {
-            width: 12px;
-            height: 12px;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
-            margin: 0.25rem 0;
-            background: #e0e0e0;
+            background: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            color: #666;
         }
-        .day-done {
-            background: #27ae60;
+        .day-cell.done {
+            background: #28a745;
+            color: white;
         }
-        .day-missed {
-            background: #f1c40f;
+        .day-cell.missed {
+            background: #ffc107;
+            color: #333;
         }
-        
+        .day-cell.today {
+            border: 2px solid #667eea;
+        }
+
         /* Recent Activities */
         .activity-list {
             display: flex;
             flex-direction: column;
-            gap: 0.5rem;
+            gap: 0.75rem;
         }
         .activity-item {
             display: flex;
             justify-content: space-between;
-            padding: 0.75rem;
+            align-items: center;
+            padding: 0.75rem 1rem;
             background: #f8f9fa;
-            border-radius: 6px;
-            font-size: 0.9rem;
+            border-radius: 8px;
         }
         .activity-date {
             color: #666;
             font-size: 0.85rem;
         }
-        
+
         /* Spirit Companion */
         .spirit-section {
             background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
@@ -214,13 +190,14 @@
             font-weight: bold;
             color: #856404;
             margin-bottom: 0.5rem;
+            text-transform: capitalize;
         }
         .spirit-description {
             color: #666;
             max-width: 500px;
             margin: 0 auto;
         }
-        
+
         /* Archive Link */
         .archive-section {
             text-align: center;
@@ -236,7 +213,7 @@
         .archive-link:hover {
             text-decoration: underline;
         }
-        
+
         /* Footer */
         footer {
             text-align: center;
@@ -245,7 +222,7 @@
             color: #666;
             font-size: 0.9rem;
         }
-        
+
         /* Responsive */
         @media (max-width: 600px) {
             body {
@@ -258,242 +235,86 @@
     </style>
 </head>
 <body>
+    <div class="back-nav" style="max-width: 900px; margin: 0 auto 1rem; padding: 0 2rem;">
+        <a href="index.html" class="back-button" style="background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <span>←</span> Back to Home
+        </a>
+    </div>
+
     <div class="container">
         <header>
             <h1>📅 Routines Tracker</h1>
             <p>Weekly activity tracking and accountability</p>
         </header>
 
-        <div style="padding: 1rem 2rem 0;">
-            <a href="index.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1rem; background: #f8f9fa; border-radius: 8px; text-decoration: none; color: #333; font-size: 0.9rem;">
-                <span>←</span> Back to Home
-            </a>
-        </div>
-
         <main>
-            <!-- Loading State -->
-            <div id="loading" class="loading">
-                <p>Loading routines data...</p>
+            <!-- Stats Overview -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">75%</div>
+                    <div class="stat-label">Weekly Completion</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Total Activities</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Categories</div>
+                </div>
             </div>
 
-            <!-- Error State -->
-            <div id="error" class="error" style="display: none;">
-                <p>Failed to load routines data. Make sure you've exported data from routines-cli.</p>
-                <code>routines export --output routines-data.json</code>
+            <!-- Weekly View -->
+            <div class="category">
+                <div class="category-header">
+                    <span class="category-icon">📊</span>
+                    <h2>This Week</h2>
+                </div>
+                <div class="week-grid">
+                    <div class="day-column"><div class="day-header">Mon</div><div class="day-cell done">1</div></div>
+<div class="day-column"><div class="day-header">Tue</div><div class="day-cell done">1</div></div>
+<div class="day-column"><div class="day-header">Wed</div><div class="day-cell done">1</div></div>
+<div class="day-column"><div class="day-header">Thu</div><div class="day-cell missed">·</div></div>
+<div class="day-column"><div class="day-header">Fri</div><div class="day-cell">·</div></div>
+<div class="day-column"><div class="day-header">Sat</div><div class="day-cell today">·</div></div>
+<div class="day-column"><div class="day-header">Sun</div><div class="day-cell">·</div></div>
+
+                </div>
             </div>
 
-            <!-- Content -->
-            <div id="content" style="display: none;">
-                <!-- Stats Overview -->
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number" id="weekly-completion">--</div>
-                        <div class="stat-label">Weekly Completion</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" id="total-routines">--</div>
-                        <div class="stat-label">Total Activities</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" id="active-categories">--</div>
-                        <div class="stat-label">Categories</div>
-                    </div>
+            <!-- Recent Activities -->
+            <div class="category">
+                <div class="category-header">
+                    <span class="category-icon">📝</span>
+                    <h2>Recent Activities</h2>
                 </div>
+                <div class="activity-list">
+                    <div class="activity-item"><span>Yoga <span class="activity-date">(wellness)</span></span><span class="activity-date">Feb 04</span></div>
+<div class="activity-item"><span>Rock Climbing <span class="activity-date">(wellness)</span></span><span class="activity-date">Feb 03</span></div>
+<div class="activity-item"><span>Piano Practice <span class="activity-date">(creative)</span></span><span class="activity-date">Feb 02</span></div>
+<div class="activity-item"><span>Yoga <span class="activity-date">(wellness)</span></span><span class="activity-date">Feb 01</span></div>
 
-                <!-- Weekly View -->
-                <div class="category">
-                    <div class="category-header">
-                        <span class="category-icon">📊</span>
-                        <h2>This Week</h2>
-                    </div>
-                    <div class="week-grid" id="week-grid">
-                        <!-- Populated by JavaScript -->
-                    </div>
                 </div>
+            </div>
 
-                <!-- Recent Activities -->
-                <div class="category">
-                    <div class="category-header">
-                        <span class="category-icon">📝</span>
-                        <h2>Recent Activities</h2>
-                    </div>
-                    <div class="activity-list" id="recent-activities">
-                        <!-- Populated by JavaScript -->
-                    </div>
-                </div>
+            <!-- Spirit Companion -->
+            <div class="spirit-section">
+                <div class="spirit-title">🦊 Your Spirit Companion</div>
+                <img src="assets/spirit/current/fox-content.jpg" alt="Spirit Companion" class="spirit-image">
+                <div class="spirit-state">content</div>
+                <div class="spirit-description">Your kitsune companion is calm and peaceful. You're doing well, with just a few misses.</div>
+            </div>
 
-                <!-- Spirit Companion -->
-                <div class="spirit-section">
-                    <h2 class="spirit-title">🦊 Your Kitsune Companion</h2>
-                    <img src="assets/spirit/current/fox-thriving.jpg" alt="Spirit Companion" class="spirit-image" id="spirit-image">
-                    <div class="spirit-state" id="spirit-state">Thriving</div>
-                    <p class="spirit-description" id="spirit-description">
-                        Your fox companion is happy and energetic! You've been honoring your commitments this week. Keep it up!
-                    </p>
-                </div>
-
-                <!-- Archive Link -->
-                <div class="archive-section">
-                    <a href="routines/archive/" class="archive-link">📚 View Past Weeks</a>
-                </div>
+            <!-- Archive Link -->
+            <div class="archive-section">
+                <a href="routines/archive/index.html" class="archive-link">📚 View Archive →</a>
             </div>
         </main>
 
         <footer>
-            <p>Last updated: <span id="last-updated">--</span></p>
+            <p>Last updated: Saturday, February 07, 2026 at 18:04</p>
             <p style="margin-top: 0.5rem; font-size: 0.8rem;">🕷️ Tracked by Tachi</p>
         </footer>
     </div>
-
-    <script>
-        // Spirit companion state descriptions
-        const spiritDescriptions = {
-            thriving: 'Your kitsune companion is happy and energetic! You\'ve been honoring your commitments this week. Keep it up!',
-            content: 'Your kitsune companion is calm and peaceful. You\'re doing well, with just a few misses.',
-            tired: 'Your kitsune companion is feeling droopy. You\'ve been struggling to keep up this week.',
-            critical: 'Your kitsune companion needs attention. Many commitments have gone unfulfilled.',
-            dormant: 'Your kitsune companion is resting. You took a valid break this week.'
-        };
-
-        // Fetch routines data from JSON file
-        async function loadRoutinesData() {
-            try {
-                const response = await fetch('routines-data.json?t=' + Date.now());
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                const data = await response.json();
-                renderData(data);
-            } catch (error) {
-                console.error('Failed to load routines data:', error);
-                document.getElementById('loading').innerHTML = '<p>Error: ' + error.message + '</p>';
-                showError();
-            }
-        }
-
-        function showError() {
-            document.getElementById('loading').style.display = 'none';
-            document.getElementById('error').style.display = 'block';
-            document.getElementById('content').style.display = 'none';
-        }
-
-        function renderData(data) {
-            document.getElementById('loading').style.display = 'none';
-            document.getElementById('content').style.display = 'block';
-
-            // Update stats
-            const stats = data.stats || {};
-            const weekly = data.weekly_summary || {};
-            
-            document.getElementById('total-routines').textContent = stats.total || 0;
-            document.getElementById('active-categories').textContent = Object.keys(stats.by_category || {}).length;
-            
-            // Weekly completion - use same calculation as spirit companion
-            const spirit = data.spirit_companion || {};
-            const completionRate = Math.round(spirit.completion_rate || 0);
-            document.getElementById('weekly-completion').textContent = completionRate + '%';
-
-            // Render week grid
-            renderWeekGrid(weekly);
-
-            // Render recent activities
-            renderRecentActivities(data.recent_activities || []);
-
-            updateSpiritCompanion(spirit);
-
-            // Update last updated
-            if (data.generated_at) {
-                const date = new Date(data.generated_at);
-                document.getElementById('last-updated').textContent = date.toLocaleDateString('en-US', {
-                    weekday: 'long',
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                    hour: '2-digit',
-                    minute: '2-digit'
-                });
-            }
-        }
-
-        function updateSpiritCompanion(spirit) {
-            const state = spirit.state || 'thriving';
-            const imagePath = spirit.image || `assets/spirit/current/fox-${state}.jpg`;
-            const description = spiritDescriptions[state] || spiritDescriptions.thriving;
-            
-            document.getElementById('spirit-image').src = imagePath;
-            document.getElementById('spirit-state').textContent = state.charAt(0).toUpperCase() + state.slice(1);
-            document.getElementById('spirit-description').textContent = description;
-        }
-
-        function renderWeekGrid(weekly) {
-            const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-            const dayCompletion = weekly.day_completion || {};
-            const dayPlanned = weekly.day_planned || {};
-            
-            // Get current day name
-            const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
-            
-            const grid = document.getElementById('week-grid');
-            grid.innerHTML = '';
-            
-            days.forEach(day => {
-                const completed = dayCompletion[day] || 0;
-                const planned = dayPlanned[day] || 0;
-                const isToday = day === today;
-                const cell = document.createElement('div');
-                cell.className = 'day-column';
-                
-                const header = document.createElement('div');
-                header.className = 'day-header';
-                header.textContent = day.slice(0, 3);
-                
-                const cellContent = document.createElement('div');
-                cellContent.className = 'day-cell';
-                
-                if (completed > 0) {
-                    // Has completed activities - green
-                    cellContent.classList.add('day-done');
-                } else if (planned > 0 && completed === 0 && !isToday) {
-                    // Had planned activities but none completed, and not today - yellow (missed)
-                    cellContent.classList.add('day-missed');
-                }
-                // If today: never show yellow (might complete later)
-                // If no planned and no completed: gray (default)
-                
-                cell.appendChild(header);
-                cell.appendChild(cellContent);
-                grid.appendChild(cell);
-            });
-        }
-
-        function renderRecentActivities(activities) {
-            const list = document.getElementById('recent-activities');
-            list.innerHTML = '';
-            
-            if (activities.length === 0) {
-                list.innerHTML = '<div class="activity-item"><span>No recent activities</span></div>';
-                return;
-            }
-
-            activities.slice(0, 10).forEach(activity => {
-                const item = document.createElement('div');
-                item.className = 'activity-item';
-                
-                const date = new Date(activity.date).toLocaleDateString('en-US', {
-                    month: 'short',
-                    day: 'numeric'
-                });
-                
-                item.innerHTML = `
-                    <span>${activity.name} <span class="activity-date">(${activity.category})</span></span>
-                    <span class="activity-date">${date}</span>
-                `;
-                list.appendChild(item);
-            });
-        }
-
-        // Load data when page loads
-        document.addEventListener('DOMContentLoaded', loadRoutinesData);
-    </script>
 </body>
 </html>
