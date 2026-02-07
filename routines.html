@@ -331,7 +331,7 @@
 
                 <!-- Spirit Companion -->
                 <div class="spirit-section">
-                    <h2 class="spirit-title">🦊 Your Spirit Companion</h2>
+                    <h2 class="spirit-title">🦊 Your Kitsune Companion</h2>
                     <img src="assets/spirit/fox-thriving-2026-02-01.jpg" alt="Spirit Companion" class="spirit-image" id="spirit-image">
                     <div class="spirit-state" id="spirit-state">Thriving</div>
                     <p class="spirit-description" id="spirit-description">
@@ -353,37 +353,13 @@
     </div>
 
     <script>
-        // Spirit companion state configuration
-        const spiritConfig = {
-            animal: 'fox',
-            week: '2026-02-01',
-            states: {
-                thriving: {
-                    image: 'assets/spirit/fox-thriving-2026-02-01.jpg',
-                    title: 'Thriving',
-                    description: 'Your fox companion is happy and energetic! You\'ve been honoring your commitments this week. Keep it up!'
-                },
-                content: {
-                    image: 'assets/spirit/fox-content-2026-02-01.jpg',
-                    title: 'Content',
-                    description: 'Your fox companion is calm and peaceful. You\'re doing well, with just a few misses.'
-                },
-                tired: {
-                    image: 'assets/spirit/fox-tired-2026-02-01.jpg',
-                    title: 'Tired',
-                    description: 'Your fox companion is feeling droopy. You\'ve been struggling to keep up this week.'
-                },
-                critical: {
-                    image: 'assets/spirit/fox-critical-2026-02-01.jpg',
-                    title: 'Critical',
-                    description: 'Your fox companion needs attention. Many commitments have gone unfulfilled.'
-                },
-                dormant: {
-                    image: 'assets/spirit/fox-dormant-2026-02-01.jpg',
-                    title: 'Dormant',
-                    description: 'Your fox companion is resting. You took a valid break this week.'
-                }
-            }
+        // Spirit companion state descriptions
+        const spiritDescriptions = {
+            thriving: 'Your kitsune companion is happy and energetic! You\'ve been honoring your commitments this week. Keep it up!',
+            content: 'Your kitsune companion is calm and peaceful. You\'re doing well, with just a few misses.',
+            tired: 'Your kitsune companion is feeling droopy. You\'ve been struggling to keep up this week.',
+            critical: 'Your kitsune companion needs attention. Many commitments have gone unfulfilled.',
+            dormant: 'Your kitsune companion is resting. You took a valid break this week.'
         };
 
         // Fetch routines data from JSON file
@@ -405,19 +381,6 @@
             document.getElementById('loading').style.display = 'none';
             document.getElementById('error').style.display = 'block';
             document.getElementById('content').style.display = 'none';
-        }
-
-        function calculateState(data) {
-            const weekly = data.weekly_summary || {};
-            const total = weekly.total_activities || 0;
-            const planned = 5; // Approximate, should come from data
-            
-            const completionRate = planned > 0 ? (total / planned) * 100 : 0;
-            
-            if (completionRate >= 80) return 'thriving';
-            if (completionRate >= 60) return 'content';
-            if (completionRate >= 40) return 'tired';
-            return 'critical';
         }
 
         function renderData(data) {
@@ -443,9 +406,9 @@
             // Render recent activities
             renderRecentActivities(data.recent_activities || []);
 
-            // Update spirit companion based on state
-            const state = calculateState(data);
-            updateSpiritCompanion(state);
+            // Update spirit companion based on exported data
+            const spirit = data.spirit_companion || {};
+            updateSpiritCompanion(spirit);
 
             // Update last updated
             if (data.generated_at) {
@@ -461,11 +424,14 @@
             }
         }
 
-        function updateSpiritCompanion(state) {
-            const config = spiritConfig.states[state] || spiritConfig.states.thriving;
-            document.getElementById('spirit-image').src = config.image;
-            document.getElementById('spirit-state').textContent = config.title;
-            document.getElementById('spirit-description').textContent = config.description;
+        function updateSpiritCompanion(spirit) {
+            const state = spirit.state || 'thriving';
+            const imagePath = spirit.image || `assets/spirit/fox-${state}-2026-02-01.jpg`;
+            const description = spiritDescriptions[state] || spiritDescriptions.thriving;
+            
+            document.getElementById('spirit-image').src = imagePath;
+            document.getElementById('spirit-state').textContent = state.charAt(0).toUpperCase() + state.slice(1);
+            document.getElementById('spirit-description').textContent = description;
         }
 
         function renderWeekGrid(weekly) {
