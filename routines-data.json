@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-07T16:46:42.916401",
+  "generated_at": "2026-02-07T16:53:06.074421",
   "source": "vault",
   "stats": {
     "total": 4,
@@ -79,6 +79,15 @@
       "Thursday": 0,
       "Friday": 0,
       "Saturday": 0,
+      "Sunday": 0
+    },
+    "day_planned": {
+      "Monday": 1,
+      "Tuesday": 1,
+      "Wednesday": 1,
+      "Thursday": 0,
+      "Friday": 0,
+      "Saturday": 2,
       "Sunday": 0
     }
   },
