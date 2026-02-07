@@ -95,54 +95,6 @@
             border-radius: 8px;
             margin: 1rem 0;
         }
-        
-        /* Spirit Companion */
-        .spirit-section {
-            background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
-            padding: 2rem;
-            border-radius: 12px;
-            margin-bottom: 2rem;
-            text-align: center;
-            border: 2px solid #ffd700;
-        }
-        .spirit-title {
-            font-size: 1.5rem;
-            color: #856404;
-            margin-bottom: 1rem;
-        }
-        .spirit-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #ffd700;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            margin-bottom: 1rem;
-        }
-        .spirit-state {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #856404;
-            margin-bottom: 0.5rem;
-        }
-        .spirit-description {
-            color: #666;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        .archive-link {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.5rem 1rem;
-            background: #856404;
-            color: white;
-            border-radius: 20px;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-        .archive-link:hover {
-            background: #6d5203;
-        }
 
         /* Routine Categories */
         .category {
@@ -194,13 +146,6 @@
             color: #666;
             margin-top: 0.25rem;
         }
-        .streak {
-            display: flex;
-            align-items: center;
-            gap: 0.25rem;
-            font-size: 0.9rem;
-            color: #e67e22;
-        }
         
         /* Weekly View */
         .week-grid {
@@ -249,6 +194,57 @@
         .activity-date {
             color: #666;
             font-size: 0.85rem;
+        }
+        
+        /* Spirit Companion */
+        .spirit-section {
+            background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            text-align: center;
+            border: 2px solid #ffd700;
+        }
+        .spirit-title {
+            font-size: 1.5rem;
+            color: #856404;
+            margin-bottom: 1rem;
+        }
+        .spirit-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffd700;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-bottom: 1rem;
+        }
+        .spirit-state {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #856404;
+            margin-bottom: 0.5rem;
+        }
+        .spirit-description {
+            color: #666;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        /* Archive Link */
+        .archive-section {
+            text-align: center;
+            margin: 2rem 0;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+        .archive-link {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        .archive-link:hover {
+            text-decoration: underline;
         }
         
         /* Footer */
@@ -302,28 +298,13 @@
                         <div class="stat-label">Weekly Completion</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number" id="current-streak">--</div>
-                        <div class="stat-label">Day Streak</div>
-                    </div>
-                    <div class="stat-card">
                         <div class="stat-number" id="total-routines">--</div>
                         <div class="stat-label">Total Activities</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number" id="weeks-tracked">--</div>
+                        <div class="stat-number" id="active-categories">--</div>
                         <div class="stat-label">Categories</div>
                     </div>
-                </div>
-
-                <!-- Spirit Companion -->
-                <div class="spirit-section">
-                    <h2 class="spirit-title">🦊 Your Spirit Companion</h2>
-                    <img src="assets/spirit/fox-thriving-2026-02-01.jpg" alt="Spirit Companion" class="spirit-image" id="spirit-image">
-                    <div class="spirit-state" id="spirit-state">Thriving</div>
-                    <p class="spirit-description" id="spirit-description">
-                        Your fox companion is happy and energetic! You've been honoring your commitments this week. Keep it up!
-                    </p>
-                    <a href="routines/archive/" class="archive-link">📚 View Past Weeks</a>
                 </div>
 
                 <!-- Weekly View -->
@@ -333,17 +314,6 @@
                         <h2>This Week</h2>
                     </div>
                     <div class="week-grid" id="week-grid">
-                        <!-- Populated by JavaScript -->
-                    </div>
-                </div>
-
-                <!-- Streaks -->
-                <div class="category">
-                    <div class="category-header">
-                        <span class="category-icon">🔥</span>
-                        <h2>Current Streaks</h2>
-                    </div>
-                    <div class="routine-list" id="streaks-list">
                         <!-- Populated by JavaScript -->
                     </div>
                 </div>
@@ -358,6 +328,21 @@
                         <!-- Populated by JavaScript -->
                     </div>
                 </div>
+
+                <!-- Spirit Companion -->
+                <div class="spirit-section">
+                    <h2 class="spirit-title">🦊 Your Spirit Companion</h2>
+                    <img src="assets/spirit/fox-thriving-2026-02-01.jpg" alt="Spirit Companion" class="spirit-image" id="spirit-image">
+                    <div class="spirit-state" id="spirit-state">Thriving</div>
+                    <p class="spirit-description" id="spirit-description">
+                        Your fox companion is happy and energetic! You've been honoring your commitments this week. Keep it up!
+                    </p>
+                </div>
+
+                <!-- Archive Link -->
+                <div class="archive-section">
+                    <a href="routines/archive/" class="archive-link">📚 View Past Weeks</a>
+                </div>
             </div>
         </main>
 
@@ -368,6 +353,39 @@
     </div>
 
     <script>
+        // Spirit companion state configuration
+        const spiritConfig = {
+            animal: 'fox',
+            week: '2026-02-01',
+            states: {
+                thriving: {
+                    image: 'assets/spirit/fox-thriving-2026-02-01.jpg',
+                    title: 'Thriving',
+                    description: 'Your fox companion is happy and energetic! You\'ve been honoring your commitments this week. Keep it up!'
+                },
+                content: {
+                    image: 'assets/spirit/fox-content-2026-02-01.jpg',
+                    title: 'Content',
+                    description: 'Your fox companion is calm and peaceful. You\'re doing well, with just a few misses.'
+                },
+                tired: {
+                    image: 'assets/spirit/fox-tired-2026-02-01.jpg',
+                    title: 'Tired',
+                    description: 'Your fox companion is feeling droopy. You\'ve been struggling to keep up this week.'
+                },
+                critical: {
+                    image: 'assets/spirit/fox-critical-2026-02-01.jpg',
+                    title: 'Critical',
+                    description: 'Your fox companion needs attention. Many commitments have gone unfulfilled.'
+                },
+                dormant: {
+                    image: 'assets/spirit/fox-dormant-2026-02-01.jpg',
+                    title: 'Dormant',
+                    description: 'Your fox companion is resting. You took a valid break this week.'
+                }
+            }
+        };
+
         // Fetch routines data from JSON file
         async function loadRoutinesData() {
             try {
@@ -389,26 +407,31 @@
             document.getElementById('content').style.display = 'none';
         }
 
+        function calculateState(data) {
+            const weekly = data.weekly_summary || {};
+            const total = weekly.total_activities || 0;
+            const planned = 5; // Approximate, should come from data
+            
+            const completionRate = planned > 0 ? (total / planned) * 100 : 0;
+            
+            if (completionRate >= 80) return 'thriving';
+            if (completionRate >= 60) return 'content';
+            if (completionRate >= 40) return 'tired';
+            return 'critical';
+        }
+
         function renderData(data) {
             document.getElementById('loading').style.display = 'none';
             document.getElementById('content').style.display = 'block';
 
             // Update stats
             const stats = data.stats || {};
-            const streaks = data.streaks || {};
             const weekly = data.weekly_summary || {};
             
             document.getElementById('total-routines').textContent = stats.total || 0;
-            document.getElementById('weeks-tracked').textContent = Object.keys(stats.by_category || {}).length;
+            document.getElementById('active-categories').textContent = Object.keys(stats.by_category || {}).length;
             
-            // Calculate best streak
-            const streakValues = Object.values(streaks);
-            const maxStreak = streakValues.length > 0 
-                ? Math.max(...streakValues.map(s => s.days || 0)) 
-                : 0;
-            document.getElementById('current-streak').textContent = maxStreak;
-            
-            // Weekly completion (placeholder calculation)
+            // Weekly completion
             const dayCompletion = weekly.day_completion || {};
             const completedDays = Object.values(dayCompletion).filter(v => v > 0).length;
             const completionRate = Math.round((completedDays / 7) * 100);
@@ -417,11 +440,12 @@
             // Render week grid
             renderWeekGrid(weekly);
 
-            // Render streaks
-            renderStreaks(streaks);
-
             // Render recent activities
             renderRecentActivities(data.recent_activities || []);
+
+            // Update spirit companion based on state
+            const state = calculateState(data);
+            updateSpiritCompanion(state);
 
             // Update last updated
             if (data.generated_at) {
@@ -435,6 +459,13 @@
                     minute: '2-digit'
                 });
             }
+        }
+
+        function updateSpiritCompanion(state) {
+            const config = spiritConfig.states[state] || spiritConfig.states.thriving;
+            document.getElementById('spirit-image').src = config.image;
+            document.getElementById('spirit-state').textContent = config.title;
+            document.getElementById('spirit-description').textContent = config.description;
         }
 
         function renderWeekGrid(weekly) {
@@ -465,30 +496,6 @@
             });
         }
 
-        function renderStreaks(streaks) {
-            const list = document.getElementById('streaks-list');
-            list.innerHTML = '';
-            
-            const entries = Object.entries(streaks);
-            if (entries.length === 0) {
-                list.innerHTML = '<div class="routine-item"><div class="routine-info"><div class="routine-name">No active streaks yet</div></div></div>';
-                return;
-            }
-            
-            entries.forEach(([category, streak]) => {
-                const days = streak.days || 0;
-                const item = document.createElement('div');
-                item.className = 'routine-item';
-                item.innerHTML = `
-                    <div class="routine-info">
-                        <div class="routine-name">${category}</div>
-                    </div>
-                    <div class="streak">🔥 ${days} day${days !== 1 ? 's' : ''}</div>
-                `;
-                list.appendChild(item);
-            });
-        }
-
         function renderRecentActivities(activities) {
             const list = document.getElementById('recent-activities');
             list.innerHTML = '';
@@ -497,22 +504,26 @@
                 list.innerHTML = '<div class="activity-item"><span>No recent activities</span></div>';
                 return;
             }
-            
-            // Show last 10 activities
+
             activities.slice(0, 10).forEach(activity => {
                 const item = document.createElement('div');
                 item.className = 'activity-item';
-                const category = activity.category || 'other';
+                
+                const date = new Date(activity.date).toLocaleDateString('en-US', {
+                    month: 'short',
+                    day: 'numeric'
+                });
+                
                 item.innerHTML = `
-                    <span><strong>[${category}]</strong> ${activity.name}</span>
-                    <span class="activity-date">${activity.date}</span>
+                    <span>${activity.name} <span class="activity-date">(${activity.category})</span></span>
+                    <span class="activity-date">${date}</span>
                 `;
                 list.appendChild(item);
             });
         }
 
-        // Load data on page load
-        loadRoutinesData();
+        // Load data when page loads
+        document.addEventListener('DOMContentLoaded', loadRoutinesData);
     </script>
 </body>
 </html>
