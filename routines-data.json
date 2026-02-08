@@ -288,9 +288,9 @@
             <!-- Spirit Companion -->
             <div class="spirit-section">
                 <div class="spirit-title">🌸 Your Spirit Companion</div>
-                <img src="assets/spirit/current/flower-thriving.jpg" alt="Spirit Companion" class="spirit-image">
+                <img src="assets/spirit/current/thriving.jpg" alt="Spirit Companion" class="spirit-image">
                 <div class="spirit-state">thriving</div>
-                <div class="spirit-description">Your flower spirit is blooming beautifully! You've been honoring your commitments this week. Keep it up!</div>
+                <div class="spirit-description">Your spirit is thriving! You've been honoring your commitments this week. Keep it up!</div>
             </div>
 
             <!-- Archive Link -->
@@ -300,7 +300,7 @@
         </main>
 
         <footer>
-            <p>Last updated: Sunday, February 08, 2026 at 19:21</p>
+            <p>Last updated: Sunday, February 08, 2026 at 19:31</p>
             <p style="margin-top: 0.5rem; font-size: 0.8rem;">🕷️ Tracked by Tachi</p>
         </footer>
     </div>
