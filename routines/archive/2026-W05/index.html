@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 6, 2026 | Routines Archive | Tachikoma</title>
+    <title>Week 5, 2026 | Routines Archive | Tachikoma</title>
     <style>
         * {
             margin: 0;
@@ -134,6 +134,24 @@
             font-size: 1.5rem;
         }
 
+        .activity-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .activity-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .activity-date {
+            color: #666;
+            font-size: 0.85rem;
+        }
+
         .spirit-section {
             background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
             padding: 2rem;
@@ -193,7 +211,7 @@
 
     <div class="container">
         <header>
-            <h1>📅 Week 6, 2026</h1>
+            <h1>📅 Week 5, 2026</h1>
             <p>February 1 - February 7, 2026</p>
         </header>
 
@@ -218,19 +236,35 @@
                 </div>
                 <div class="week-grid">
                     <div class="day-column"><div class="day-header">Sun</div><div class="day-cell done">1</div></div>
-                    <div class="day-column"><div class="day-header">Mon</div><div class="day-cell">·</div></div>
+                    <div class="day-column"><div class="day-header">Mon</div><div class="day-cell done">1</div></div>
                     <div class="day-column"><div class="day-header">Tue</div><div class="day-cell done">1</div></div>
-                    <div class="day-column"><div class="day-header">Wed</div><div class="day-cell">·</div></div>
-                    <div class="day-column"><div class="day-header">Thu</div><div class="day-cell done">1</div></div>
+                    <div class="day-column"><div class="day-header">Wed</div><div class="day-cell done">1</div></div>
+                    <div class="day-column"><div class="day-header">Thu</div><div class="day-cell missed">·</div></div>
                     <div class="day-column"><div class="day-header">Fri</div><div class="day-cell">·</div></div>
                     <div class="day-column"><div class="day-header">Sat</div><div class="day-cell done">2</div></div>
+                </div>
+            </div>
+
+            <!-- Recent Activities -->
+            <div class="category">
+                <div class="category-header">
+                    <span class="category-icon">📝</span>
+                    <h2>Activities</h2>
+                </div>
+                <div class="activity-list">
+                    <div class="activity-item"><span>Yoga <span class="activity-date">(wellness)</span></span><span class="activity-date">Feb 07</span></div>
+                    <div class="activity-item"><span>Run <span class="activity-date">(fitness)</span></span><span class="activity-date">Feb 07</span></div>
+                    <div class="activity-item"><span>Yoga <span class="activity-date">(wellness)</span></span><span class="activity-date">Feb 04</span></div>
+                    <div class="activity-item"><span>Rock Climbing <span class="activity-date">(wellness)</span></span><span class="activity-date">Feb 03</span></div>
+                    <div class="activity-item"><span>Piano Practice <span class="activity-date">(creative)</span></span><span class="activity-date">Feb 02</span></div>
+                    <div class="activity-item"><span>Yoga <span class="activity-date">(wellness)</span></span><span class="activity-date">Feb 01</span></div>
                 </div>
             </div>
 
             <!-- Spirit Companion -->
             <div class="spirit-section">
                 <div class="spirit-title">🦊 Your Spirit Companion</div>
-                <img src="../../assets/spirit/current/fox-thriving.jpg" alt="Spirit Companion" class="spirit-image">
+                <img src="../../assets/spirit/archive/2026-W05/fox-thriving.jpg" alt="Spirit Companion" class="spirit-image" onerror="this.src='../../assets/spirit/current/fox-thriving.jpg'">
                 <div class="spirit-state">thriving</div>
                 <div class="spirit-description">Your kitsune companion is happy and energetic! You've been honoring your commitments this week. Keep it up!</div>
             </div>
