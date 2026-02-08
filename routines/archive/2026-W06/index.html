@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6, 2026 | Routines Archive | Tachikoma</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            opacity: 0.9;
+        }
+        main {
+            padding: 2rem;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.9rem;
+        }
+        .back-button:hover {
+            background: #e9ecef;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .stat-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+
+        .week-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 0.5rem;
+            text-align: center;
+        }
+        .day-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .day-header {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .day-cell {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        .day-cell.done {
+            background: #28a745;
+            color: white;
+        }
+        .day-cell.missed {
+            background: #ffc107;
+            color: #333;
+        }
+
+        .category {
+            margin-bottom: 2rem;
+        }
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #eee;
+        }
+        .category-icon {
+            font-size: 1.5rem;
+        }
+
+        .spirit-section {
+            background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            text-align: center;
+            border: 2px solid #ffd700;
+        }
+        .spirit-title {
+            font-size: 1.5rem;
+            color: #856404;
+            margin-bottom: 1rem;
+        }
+        .spirit-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffd700;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-bottom: 1rem;
+        }
+        .spirit-state {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #856404;
+            margin-bottom: 0.5rem;
+            text-transform: capitalize;
+        }
+        .spirit-description {
+            color: #666;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #f8f9fa;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="max-width: 900px; margin: 0 auto 1rem; padding: 0 2rem;">
+        <a href="../index.html" class="back-button" style="background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <span>←</span> Back to Archive
+        </a>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>📅 Week 6, 2026</h1>
+            <p>February 1 - February 7, 2026</p>
+        </header>
+
+        <main>
+            <!-- Stats Overview -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">5 / 6</div>
+                    <div class="stat-label">Completed / Planned</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">83%</div>
+                    <div class="stat-label">Completion Rate</div>
+                </div>
+            </div>
+
+            <!-- Weekly View -->
+            <div class="category">
+                <div class="category-header">
+                    <span class="category-icon">📊</span>
+                    <h2>This Week</h2>
+                </div>
+                <div class="week-grid">
+                    <div class="day-column"><div class="day-header">Sun</div><div class="day-cell done">1</div></div>
+                    <div class="day-column"><div class="day-header">Mon</div><div class="day-cell">·</div></div>
+                    <div class="day-column"><div class="day-header">Tue</div><div class="day-cell done">1</div></div>
+                    <div class="day-column"><div class="day-header">Wed</div><div class="day-cell">·</div></div>
+                    <div class="day-column"><div class="day-header">Thu</div><div class="day-cell done">1</div></div>
+                    <div class="day-column"><div class="day-header">Fri</div><div class="day-cell">·</div></div>
+                    <div class="day-column"><div class="day-header">Sat</div><div class="day-cell done">2</div></div>
+                </div>
+            </div>
+
+            <!-- Spirit Companion -->
+            <div class="spirit-section">
+                <div class="spirit-title">🦊 Your Spirit Companion</div>
+                <img src="../../assets/spirit/current/fox-thriving.jpg" alt="Spirit Companion" class="spirit-image">
+                <div class="spirit-state">thriving</div>
+                <div class="spirit-description">Your kitsune companion is happy and energetic! You've been honoring your commitments this week. Keep it up!</div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Archived: February 8, 2026</p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;">🕷️ Tracked by Tachi</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -144,11 +144,9 @@
 
     <script>
         // List of archived weeks
-        // Format: { folder: "2026-W05", label: "January 26 - February 1", spirit: "fox", state: "thriving" }
+        // Format: { folder: "2026-W05", label: "January 26 - February 1", spirit: "flower", state: "thriving" }
         const archives = [
-            // Archives will be added here as weeks are completed
-            // Example:
-            // { folder: "2026-W05", label: "January 26 - February 1, 2026", spirit: "fox", state: "thriving" },
+            { folder: "2026-W06", label: "February 2 - February 8, 2026", spirit: "flower", state: "thriving" },
         ];
 
         function renderArchives() {
@@ -179,8 +177,9 @@
                 item.className = 'archive-item';
                 item.href = `${archive.folder}/`;
                 
+                const spiritEmoji = archive.spirit === "flower" ? "🌸" : "🦊";
                 item.innerHTML = `
-                    <div class="archive-icon">🦊</div>
+                    <div class="archive-icon">${spiritEmoji}</div>
                     <div class="archive-info">
                         <div class="archive-title">Week ${archive.folder.split('-W')[1]} (${archive.folder.split('-')[0]})</div>
                         <div class="archive-meta">${archive.label} • Spirit: ${archive.state}</div>
