@@ -144,9 +144,9 @@
 
     <script>
         // List of archived weeks
-        // Format: { folder: "2026-W05", label: "February 1 - February 7", spirit: "fox", state: "thriving" }
+        // Format: { folder: "2026-W05", label: "February 1 - February 7", emoji: "🦊", state: "thriving" }
         const archives = [
-            { folder: "2026-W05", label: "February 1 - February 7, 2026", spirit: "fox", state: "thriving" },
+            { folder: "2026-W05", label: "February 1 - February 7, 2026", emoji: "🦊", state: "thriving" },
         ];
 
         function renderArchives() {
@@ -177,15 +177,7 @@
                 item.className = 'archive-item';
                 item.href = `${archive.folder}/`;
                 
-                const spiritEmojiMap = {
-                    "flower": "🌸",
-                    "fox": "🦊",
-                    "cat": "🐱",
-                    "dog": "🐶",
-                    "bird": "🐦",
-                    "dragon": "🐲"
-                };
-                const spiritEmoji = spiritEmojiMap[archive.spirit] || "🦊";
+                const spiritEmoji = archive.emoji || "🌸";
                 item.innerHTML = `
                     <div class="archive-icon">${spiritEmoji}</div>
                     <div class="archive-info">
