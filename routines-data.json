@@ -251,11 +251,11 @@
             <!-- Stats Overview -->
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-number">67%</div>
+                    <div class="stat-number">83%</div>
                     <div class="stat-label">Weekly Completion</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">5</div>
+                    <div class="stat-number">6</div>
                     <div class="stat-label">Total Activities</div>
                 </div>
                 <div class="stat-card">
@@ -289,7 +289,8 @@
                     <h2>Recent Activities</h2>
                 </div>
                 <div class="activity-list">
-                    <div class="activity-item"><span>Run <span class="activity-date">(wellness)</span></span><span class="activity-date">Feb 07</span></div>
+                    <div class="activity-item"><span>Yoga <span class="activity-date">(wellness)</span></span><span class="activity-date">Feb 07</span></div>
+<div class="activity-item"><span>Run <span class="activity-date">(wellness)</span></span><span class="activity-date">Feb 07</span></div>
 <div class="activity-item"><span>Yoga <span class="activity-date">(wellness)</span></span><span class="activity-date">Feb 04</span></div>
 <div class="activity-item"><span>Rock Climbing <span class="activity-date">(wellness)</span></span><span class="activity-date">Feb 03</span></div>
 <div class="activity-item"><span>Piano Practice <span class="activity-date">(creative)</span></span><span class="activity-date">Feb 02</span></div>
@@ -301,9 +302,9 @@
             <!-- Spirit Companion -->
             <div class="spirit-section">
                 <div class="spirit-title">🦊 Your Spirit Companion</div>
-                <img src="assets/spirit/current/fox-content.jpg" alt="Spirit Companion" class="spirit-image">
-                <div class="spirit-state">content</div>
-                <div class="spirit-description">Your kitsune companion is calm and peaceful. You're doing well, with just a few misses.</div>
+                <img src="assets/spirit/current/fox-thriving.jpg" alt="Spirit Companion" class="spirit-image">
+                <div class="spirit-state">thriving</div>
+                <div class="spirit-description">Your kitsune companion is happy and energetic! You've been honoring your commitments this week. Keep it up!</div>
             </div>
 
             <!-- Archive Link -->
@@ -313,7 +314,7 @@
         </main>
 
         <footer>
-            <p>Last updated: Saturday, February 07, 2026 at 22:21</p>
+            <p>Last updated: Saturday, February 07, 2026 at 23:31</p>
             <p style="margin-top: 0.5rem; font-size: 0.8rem;">🕷️ Tracked by Tachi</p>
         </footer>
     </div>
