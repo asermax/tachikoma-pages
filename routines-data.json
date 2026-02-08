@@ -1,101 +1,321 @@
-{
-  "generated_at": "2026-02-07T17:50:41.494387",
-  "source": "vault",
-  "stats": {
-    "total": 4,
-    "by_category": {
-      "wellness": 3,
-      "creative": 1
-    },
-    "daily_average": 1.0,
-    "most_active_day": "2026-02-01"
-  },
-  "streaks": {},
-  "recent_activities": [
-    {
-      "id": 4,
-      "name": "Yoga",
-      "category": "wellness",
-      "duration": "30 min",
-      "tags": [],
-      "date": "2026-02-04",
-      "timestamp": "2026-02-04T12:00:00.000000",
-      "notes": null
-    },
-    {
-      "id": 3,
-      "name": "Rock Climbing",
-      "category": "wellness",
-      "duration": "1.5h",
-      "tags": [],
-      "date": "2026-02-03",
-      "timestamp": "2026-02-03T12:00:00.000000",
-      "notes": null
-    },
-    {
-      "id": 2,
-      "name": "Piano Practice",
-      "category": "creative",
-      "duration": "45 min",
-      "tags": [],
-      "date": "2026-02-02",
-      "timestamp": "2026-02-02T12:00:00.000000",
-      "notes": "Harmony course, 3 lessons, 6th chords + pop progression \u2713"
-    },
-    {
-      "id": 1,
-      "name": "Yoga",
-      "category": "wellness",
-      "duration": "20 min",
-      "tags": [],
-      "date": "2026-02-01",
-      "timestamp": "2026-02-01T12:00:00.000000",
-      "notes": "felt refreshed \u2713"
-    }
-  ],
-  "weekly_summary": {
-    "week_start": "2026-02-02",
-    "week_end": "2026-02-08",
-    "total_activities": 3,
-    "by_category": {
-      "creative": 1,
-      "wellness": 2
-    },
-    "daily_breakdown": {
-      "2026-02-02": {
-        "creative": 1
-      },
-      "2026-02-03": {
-        "wellness": 1
-      },
-      "2026-02-04": {
-        "wellness": 1
-      }
-    },
-    "day_completion": {
-      "Monday": 1,
-      "Tuesday": 1,
-      "Wednesday": 1,
-      "Thursday": 0,
-      "Friday": 0,
-      "Saturday": 0,
-      "Sunday": 0
-    },
-    "day_planned": {
-      "Monday": 1,
-      "Tuesday": 1,
-      "Wednesday": 1,
-      "Thursday": 1,
-      "Friday": 0,
-      "Saturday": 0,
-      "Sunday": 0
-    }
-  },
-  "spirit_companion": {
-    "animal": "fox",
-    "state": "content",
-    "archive_name": "2026-W06",
-    "image": "assets/spirit/current/fox-content.jpg",
-    "completion_rate": 75.0
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routines Tracker | Tachikoma</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            opacity: 0.9;
+        }
+        main {
+            padding: 2rem;
+        }
+
+        /* Back Button */
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.9rem;
+        }
+        .back-button:hover {
+            background: #e9ecef;
+        }
+
+        /* Stats Overview */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .stat-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+
+        /* Week Grid */
+        .category {
+            margin-bottom: 2rem;
+        }
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #eee;
+        }
+        .category-icon {
+            font-size: 1.5rem;
+        }
+        .category-header h2 {
+            font-size: 1.3rem;
+            color: #333;
+        }
+        .week-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 0.5rem;
+            text-align: center;
+        }
+        .day-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .day-header {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .day-cell {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        .day-cell.done {
+            background: #28a745;
+            color: white;
+        }
+        .day-cell.missed {
+            background: #ffc107;
+            color: #333;
+        }
+        .day-cell.today {
+            border: 2px solid #667eea;
+        }
+
+        /* Recent Activities */
+        .activity-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .activity-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .activity-date {
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        /* Spirit Companion */
+        .spirit-section {
+            background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            text-align: center;
+            border: 2px solid #ffd700;
+        }
+        .spirit-title {
+            font-size: 1.5rem;
+            color: #856404;
+            margin-bottom: 1rem;
+        }
+        .spirit-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffd700;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-bottom: 1rem;
+        }
+        .spirit-state {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #856404;
+            margin-bottom: 0.5rem;
+            text-transform: capitalize;
+        }
+        .spirit-description {
+            color: #666;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* Archive Link */
+        .archive-section {
+            text-align: center;
+            margin: 2rem 0;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+        .archive-link {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        .archive-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #f8f9fa;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+            .week-grid {
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="back-nav" style="max-width: 900px; margin: 0 auto 1rem; padding: 0 2rem;">
+        <a href="index.html" class="back-button" style="background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <span>←</span> Back to Home
+        </a>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>📅 Routines Tracker</h1>
+            <p>Weekly activity tracking and accountability</p>
+        </header>
+
+        <main>
+            <!-- Stats Overview -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">67%</div>
+                    <div class="stat-label">Weekly Completion</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Total Activities</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Categories</div>
+                </div>
+            </div>
+
+            <!-- Weekly View -->
+            <div class="category">
+                <div class="category-header">
+                    <span class="category-icon">📊</span>
+                    <h2>This Week</h2>
+                </div>
+                <div class="week-grid">
+                    <div class="day-column"><div class="day-header">Mon</div><div class="day-cell done">1</div></div>
+<div class="day-column"><div class="day-header">Tue</div><div class="day-cell done">1</div></div>
+<div class="day-column"><div class="day-header">Wed</div><div class="day-cell done">1</div></div>
+<div class="day-column"><div class="day-header">Thu</div><div class="day-cell missed">·</div></div>
+<div class="day-column"><div class="day-header">Fri</div><div class="day-cell">·</div></div>
+<div class="day-column"><div class="day-header">Sat</div><div class="day-cell done today">1</div></div>
+<div class="day-column"><div class="day-header">Sun</div><div class="day-cell">·</div></div>
+
+                </div>
+            </div>
+
+            <!-- Recent Activities -->
+            <div class="category">
+                <div class="category-header">
+                    <span class="category-icon">📝</span>
+                    <h2>Recent Activities</h2>
+                </div>
+                <div class="activity-list">
+                    <div class="activity-item"><span>Run <span class="activity-date">(wellness)</span></span><span class="activity-date">Feb 07</span></div>
+<div class="activity-item"><span>Yoga <span class="activity-date">(wellness)</span></span><span class="activity-date">Feb 04</span></div>
+<div class="activity-item"><span>Rock Climbing <span class="activity-date">(wellness)</span></span><span class="activity-date">Feb 03</span></div>
+<div class="activity-item"><span>Piano Practice <span class="activity-date">(creative)</span></span><span class="activity-date">Feb 02</span></div>
+<div class="activity-item"><span>Yoga <span class="activity-date">(wellness)</span></span><span class="activity-date">Feb 01</span></div>
+
+                </div>
+            </div>
+
+            <!-- Spirit Companion -->
+            <div class="spirit-section">
+                <div class="spirit-title">🦊 Your Spirit Companion</div>
+                <img src="assets/spirit/current/fox-content.jpg" alt="Spirit Companion" class="spirit-image">
+                <div class="spirit-state">content</div>
+                <div class="spirit-description">Your kitsune companion is calm and peaceful. You're doing well, with just a few misses.</div>
+            </div>
+
+            <!-- Archive Link -->
+            <div class="archive-section">
+                <a href="routines/archive/index.html" class="archive-link">📚 View Archive →</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Last updated: Saturday, February 07, 2026 at 22:21</p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;">🕷️ Tracked by Tachi</p>
+        </footer>
+    </div>
+</body>
+</html>
