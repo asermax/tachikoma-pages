@@ -236,7 +236,7 @@
 </head>
 <body>
     <div class="back-nav" style="max-width: 900px; margin: 0 auto 1rem; padding: 0 2rem;">
-        <a href="index.html" class="back-button" style="background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <a href="../" class="back-button" style="background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
             <span>←</span> Back to Home
         </a>
     </div>
@@ -249,12 +249,7 @@
 
         <main>
             <!-- Stats Overview -->
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">0 / 0</div>
-                    <div class="stat-label">Completed / Planned</div>
-                </div>
-            </div>
+            
 
             <!-- Weekly View -->
             <div class="category">
@@ -263,8 +258,8 @@
                     <h2>This Week</h2>
                 </div>
                 <div class="week-grid">
-                    <div class="day-column"><div class="day-header">Sun</div><div class="day-cell today">·</div></div>
-<div class="day-column"><div class="day-header">Mon</div><div class="day-cell">·</div></div>
+                    <div class="day-column"><div class="day-header">Sun</div><div class="day-cell">·</div></div>
+<div class="day-column"><div class="day-header">Mon</div><div class="day-cell today">·</div></div>
 <div class="day-column"><div class="day-header">Tue</div><div class="day-cell">·</div></div>
 <div class="day-column"><div class="day-header">Wed</div><div class="day-cell">·</div></div>
 <div class="day-column"><div class="day-header">Thu</div><div class="day-cell">·</div></div>
@@ -288,19 +283,19 @@
             <!-- Spirit Companion -->
             <div class="spirit-section">
                 <div class="spirit-title">🌸 Your Spirit Companion</div>
-                <img src="assets/spirit/current/thriving.jpg" alt="Spirit Companion" class="spirit-image">
-                <div class="spirit-state">thriving</div>
-                <div class="spirit-description">Your spirit is thriving! You've been honoring your commitments this week. Keep it up!</div>
+                <img src="assets/dormant.jpg" alt="Spirit Companion" class="spirit-image">
+                <div class="spirit-state">dormant</div>
+                <div class="spirit-description">Your spirit is resting. You took a valid break this week.</div>
             </div>
 
             <!-- Archive Link -->
             <div class="archive-section">
-                <a href="routines/archive/index.html" class="archive-link">📚 View Archive →</a>
+                <a href="archive/" class="archive-link">📚 View Archive →</a>
             </div>
         </main>
 
         <footer>
-            <p>Last updated: Sunday, February 08, 2026 at 19:31</p>
+            <p>Last updated: Monday, February 09, 2026 at 06:00</p>
             <p style="margin-top: 0.5rem; font-size: 0.8rem;">🕷️ Tracked by Tachi</p>
         </footer>
     </div>
