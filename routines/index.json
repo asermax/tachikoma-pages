@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-02-09T10:41:24.668591",
+  "source": "vault",
+  "stats": {
+    "completed": 0,
+    "planned": 0
+  },
+  "streaks": {},
+  "recent_activities": [],
+  "weekly_summary": {
+    "week_start": "2026-02-08",
+    "week_end": "2026-02-14",
+    "total_activities": 0,
+    "by_category": {},
+    "daily_breakdown": {},
+    "day_completion": {
+      "Sunday": 0,
+      "Monday": 0,
+      "Tuesday": 0,
+      "Wednesday": 0,
+      "Thursday": 0,
+      "Friday": 0,
+      "Saturday": 0
+    },
+    "day_planned": {
+      "Sunday": 0,
+      "Monday": 0,
+      "Tuesday": 0,
+      "Wednesday": 0,
+      "Thursday": 0,
+      "Friday": 0,
+      "Saturday": 0
+    }
+  },
+  "spirit_companion": {
+    "emoji": "\ud83c\udf38",
+    "state": "dormant",
+    "archive_name": "2026-W06",
+    "image": "assets/dormant.jpg"
+  },
+  "config": {
+    "spirit_companion": {
+      "emoji": "\ud83c\udf38",
+      "title": "Your Spirit Companion",
+      "image_base_path": "assets",
+      "descriptions": {
+        "thriving": "Your spirit is thriving! You've been honoring your commitments this week. Keep it up!",
+        "content": "Your spirit is content. You're doing well, with just a few misses.",
+        "tired": "Your spirit is feeling tired. You've been struggling to keep up this week.",
+        "critical": "Your spirit needs attention. Many commitments have gone unfulfilled.",
+        "dormant": "Your spirit is resting. You took a valid break this week."
+      }
+    },
+    "page": {
+      "title": "Routines Tracker | Tachikoma",
+      "header_title": "\ud83d\udcc5 Routines Tracker",
+      "header_subtitle": "Weekly activity tracking and accountability",
+      "footer_tracking_by": "\ud83d\udd77\ufe0f Tracked by Tachi"
+    }
+  }
+}
