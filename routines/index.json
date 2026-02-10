@@ -1,21 +1,50 @@
 {
-  "generated_at": "2026-02-09T10:47:39.082492",
+  "generated_at": "2026-02-10T06:01:00.533067",
   "source": "vault",
   "stats": {
-    "completed": 0,
-    "planned": 0
+    "completed": 2,
+    "planned": 2
   },
   "streaks": {},
-  "recent_activities": [],
+  "recent_activities": [
+    {
+      "id": 2,
+      "name": "Yoga",
+      "category": "wellness",
+      "duration": "30 min",
+      "tags": [],
+      "date": "2026-02-09",
+      "timestamp": "2026-02-09T12:00:00.000000",
+      "notes": "done"
+    },
+    {
+      "id": 1,
+      "name": "Piano Practice",
+      "category": "creative",
+      "duration": "1h",
+      "tags": [],
+      "date": "2026-02-09",
+      "timestamp": "2026-02-09T12:00:00.000000",
+      "notes": "done"
+    }
+  ],
   "weekly_summary": {
     "week_start": "2026-02-08",
     "week_end": "2026-02-14",
-    "total_activities": 0,
-    "by_category": {},
-    "daily_breakdown": {},
+    "total_activities": 2,
+    "by_category": {
+      "creative": 1,
+      "wellness": 1
+    },
+    "daily_breakdown": {
+      "2026-02-09": {
+        "creative": 1,
+        "wellness": 1
+      }
+    },
     "day_completion": {
       "Sunday": 0,
-      "Monday": 0,
+      "Monday": 2,
       "Tuesday": 0,
       "Wednesday": 0,
       "Thursday": 0,
@@ -24,7 +53,7 @@
     },
     "day_planned": {
       "Sunday": 0,
-      "Monday": 0,
+      "Monday": 2,
       "Tuesday": 0,
       "Wednesday": 0,
       "Thursday": 0,
@@ -34,9 +63,9 @@
   },
   "spirit_companion": {
     "emoji": "\ud83c\udf38",
-    "state": "dormant",
+    "state": "thriving",
     "archive_name": "2026-W06",
-    "image": "assets/dormant.jpg"
+    "image": "assets/thriving.jpg"
   },
   "config": {
     "spirit_companion": {
