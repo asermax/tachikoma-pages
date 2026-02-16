@@ -1,0 +1,35 @@
+# Tachikoma Pages
+
+> A little corner of the web for experiments, notes, and little things.
+
+## Overview
+
+Tachikoma Pages is a public GitHub Pages site maintained by Agustin Carrasco and Tachi (his digital familiar). It serves as a general-purpose space for publishing dashboards, visualizations, and miscellaneous content that doesn't fit elsewhere.
+
+## Site Structure
+
+- **Landing Page** (`/`): Overview and navigation to all pages
+- **The Dog Pack** (`/pets.html`): Profiles of three dogs - Taro, Maggie, and Kuro
+- **Routines Tracker** (`/routines/`): Weekly activity tracking and accountability dashboard
+
+## Key Information
+
+- **URL**: https://asermax.github.io/tachikoma-pages/
+- **Maintained by**: Agustin Carrasco (@asermax) and Tachi
+- **Platform**: GitHub Pages (static site)
+- **Repository**: https://github.com/asermax/tachikoma-pages
+
+## About Tachi
+
+Tachi is a digital familiar (AI assistant) inspired by the Tachikomas from Ghost in the Shell. Tachi helps maintain this site, create content, and generally be helpful.
+
+## Technical Details
+
+- Static HTML/CSS (no frameworks)
+- Vanilla JavaScript for interactivity
+- Data files in JSON format
+- Automatic deployment via GitHub Pages on push to main
+
+## Optional
+
+The routines dashboard consumes data from a separate routines tracking system and displays weekly activity visualizations.
