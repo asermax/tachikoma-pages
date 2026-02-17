@@ -16,12 +16,40 @@
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             min-height: 100vh;
             color: #e4e4e4;
-            padding: 2rem 1rem;
+            padding: 1rem;
+        }
+        
+        /* Back Navigation - matching routines page style */
+        .back-nav {
+            max-width: 900px;
+            margin: 0 auto 1rem;
+            padding: 0 1rem;
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+        
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.2);
         }
         
         .container {
             max-width: 900px;
             margin: 0 auto;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         header {
@@ -110,30 +138,40 @@
             color: #fff;
         }
         
+        /* Improved chart styling */
         .chart {
             display: flex;
             align-items: flex-end;
-            gap: 8px;
-            height: 150px;
-            padding-bottom: 2rem;
+            justify-content: space-between;
+            gap: 4px;
+            height: 180px;
+            padding: 0 0.5rem 1.5rem;
             position: relative;
         }
         
-        .chart::after {
+        /* Horizontal grid lines */
+        .chart::before {
             content: '';
             position: absolute;
-            bottom: 1.5rem;
+            top: 0;
             left: 0;
             right: 0;
-            height: 1px;
-            background: rgba(255, 255, 255, 0.1);
+            bottom: 1.5rem;
+            background-image: 
+                linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 100% 25%;
+            pointer-events: none;
         }
         
         .bar-wrapper {
             flex: 1;
+            min-width: 30px;
+            max-width: 60px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: flex-end;
+            height: 100%;
             gap: 0.5rem;
         }
         
@@ -141,17 +179,42 @@
             width: 100%;
             background: linear-gradient(to top, #4dabf7, #74c0fc);
             border-radius: 4px 4px 0 0;
-            min-height: 4px;
-            transition: opacity 0.2s;
+            min-height: 2px;
+            transition: opacity 0.2s, transform 0.2s;
+            position: relative;
         }
         
         .bar:hover {
-            opacity: 0.8;
+            opacity: 0.85;
+            transform: scaleY(1.02);
+        }
+        
+        .bar.empty {
+            background: rgba(255, 255, 255, 0.1);
+            min-height: 2px;
+        }
+        
+        /* Value label on top of bar */
+        .bar-value {
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.7rem;
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.2s;
+            white-space: nowrap;
+        }
+        
+        .bar-wrapper:hover .bar-value {
+            opacity: 1;
         }
         
         .bar-label {
             font-size: 0.75rem;
             color: #888;
+            text-align: center;
         }
         
         .week-table {
@@ -242,15 +305,6 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         
-        footer a {
-            color: #64b5f6;
-            text-decoration: none;
-        }
-        
-        footer a:hover {
-            text-decoration: underline;
-        }
-        
         .empty-state {
             text-align: center;
             padding: 3rem;
@@ -258,6 +312,10 @@
         }
         
         @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            
             .macros {
                 display: none;
             }
@@ -265,13 +323,27 @@
             th, td {
                 padding: 0.75rem 1rem;
             }
+            
+            .bar-wrapper {
+                min-width: 24px;
+            }
+            
+            .bar-value {
+                font-size: 0.6rem;
+                top: -14px;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="back-nav">
+        <a href="../" class="back-button">
+            <span>←</span> Back to Home
+        </a>
+    </div>
+
     <div class="container">
         <header>
-            <p style="text-align: center; margin-bottom: 1rem;"><a href="../index.html" style="color: #64b5f6; text-decoration: none;">← Back to home</a></p>
             <h1>🍽️ Food Diary</h1>
             <nav class="week-nav">
                 {{PREV_LINK}}
