@@ -271,11 +271,12 @@
 <body>
     <div class="container">
         <header>
+            <p style="text-align: center; margin-bottom: 1rem;"><a href="../index.html" style="color: #64b5f6; text-decoration: none;">← Back to home</a></p>
             <h1>🍽️ Food Diary</h1>
             <nav class="week-nav">
-                <span style="color: #666;">← Previous Week</span>
-                <span class="current">Feb 16 - Feb 22</span>
-                <span style="color: #666;">Next Week →</span>
+                
+                <span class="current">Feb 15 - Feb 21</span>
+                
             </nav>
         </header>
         
@@ -283,7 +284,7 @@
             <div class="card">
                 <div class="card-value">603.0</div>
                 <div class="card-label">Avg Calories</div>
-                <div class="card-delta delta-same">—</div>
+                <div class="card-delta "></div>
             </div>
             <div class="card">
                 <div class="card-value">1/7</div>
@@ -303,6 +304,10 @@
             <h2>📊 Daily Calories</h2>
             <div class="chart">
                 
+                <div class="bar-wrapper">
+                    <div class="bar empty" style="height: 0%" title="No data"></div>
+                    <span class="bar-label">Sun</span>
+                </div>
                 <div class="bar-wrapper">
                     <div class="bar empty" style="height: 0%" title="No data"></div>
                     <span class="bar-label">Mon</span>
@@ -327,10 +332,6 @@
                     <div class="bar empty" style="height: 0%" title="No data"></div>
                     <span class="bar-label">Sat</span>
                 </div>
-                <div class="bar-wrapper">
-                    <div class="bar empty" style="height: 0%" title="No data"></div>
-                    <span class="bar-label">Sun</span>
-                </div>
             </div>
         </div>
         
@@ -347,6 +348,15 @@
                 </thead>
                 <tbody>
                     
+                    <tr>
+                        <td>
+                            <div class="day-name">Sun</div>
+                            <div class="day-date">Feb 15</div>
+                        </td>
+                        <td><span class="meals">-</span></td>
+                        <td class="calories">-</td>
+                        <td class="macros">-</td>
+                    </tr>
                     <tr>
                         <td>
                             <div class="day-name">Mon</div>
@@ -396,15 +406,6 @@
                         <td>
                             <div class="day-name">Sat</div>
                             <div class="day-date">Feb 21</div>
-                        </td>
-                        <td><span class="meals">-</span></td>
-                        <td class="calories">-</td>
-                        <td class="macros">-</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="day-name">Sun</div>
-                            <div class="day-date">Feb 22</div>
                         </td>
                         <td><span class="meals">-</span></td>
                         <td class="calories">-</td>
