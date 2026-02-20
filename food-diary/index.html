@@ -4,52 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Diary | Tachikoma</title>
-    <link rel="icon" type="image/png" href="../assets/favicon.png">
     <style>
-        :root {
-            --bg-primary: #0d1117;
-            --bg-secondary: #161b22;
-            --bg-tertiary: #21262d;
-            --text-primary: #c9d1d9;
-            --text-secondary: #8b949e;
-            --accent: #58a6ff;
-            --accent-green: #238636;
-            --accent-orange: #f0883e;
-            --border: #30363d;
-        }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: var(--text-primary);
-            line-height: 1.6;
-            padding: 2rem;
             min-height: 100vh;
+            color: #e4e4e4;
+            padding: 1rem;
         }
-
-        /* Container card like routines page */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 16px;
-            padding: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-        }
-
-        /* Back button at top */
+        
+        /* Back Navigation - matching routines page style */
         .back-nav {
             max-width: 900px;
             margin: 0 auto 1rem;
+            padding: 0 1rem;
         }
-
+        
         .back-button {
             display: inline-flex;
             align-items: center;
@@ -58,119 +34,135 @@
             background: rgba(255, 255, 255, 0.1);
             border-radius: 8px;
             text-decoration: none;
-            color: var(--text-primary);
+            color: #fff;
             font-size: 0.9rem;
             transition: background 0.2s;
         }
-
+        
         .back-button:hover {
             background: rgba(255, 255, 255, 0.2);
         }
-
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
         header {
             text-align: center;
             margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid var(--border);
         }
-
+        
         h1 {
-            color: var(--accent);
-            font-size: 1.8rem;
+            font-size: 2rem;
+            color: #fff;
             margin-bottom: 0.5rem;
         }
-
+        
         .week-nav {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 1rem;
-            margin-top: 1rem;
+            margin-bottom: 1rem;
         }
-
+        
         .week-nav a {
-            color: var(--accent);
+            color: #64b5f6;
             text-decoration: none;
             padding: 0.5rem 1rem;
             border-radius: 6px;
             transition: background 0.2s;
         }
-
+        
         .week-nav a:hover {
-            background: rgba(88, 166, 255, 0.1);
+            background: rgba(100, 181, 246, 0.1);
         }
-
-        .week-label {
-            color: var(--text-secondary);
-            font-size: 1rem;
+        
+        .week-nav .current {
+            font-size: 1.1rem;
+            color: #fff;
         }
-
-        .stats-grid {
+        
+        .summary-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 1rem;
             margin-bottom: 2rem;
         }
-
-        .stat-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1rem;
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 1.5rem;
             text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
-
-        .stat-value {
-            font-size: 1.6rem;
+        
+        .card-value {
+            font-size: 2rem;
             font-weight: bold;
-            color: var(--accent);
+            color: #fff;
         }
-
-        .stat-label {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
+        
+        .card-label {
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 0.5rem;
+        }
+        
+        .card-delta {
+            font-size: 0.8rem;
             margin-top: 0.25rem;
         }
-
-        .delta-up {
-            color: var(--accent-orange);
-        }
-
-        .delta-down {
-            color: var(--accent-green);
-        }
-
-        .delta {
-            font-size: 0.75rem;
-            margin-top: 0.25rem;
-        }
-
-        .chart-container {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 8px;
+        
+        .delta-up { color: #ff6b6b; }
+        .delta-down { color: #51cf66; }
+        .delta-same { color: #888; }
+        
+        .histogram {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
             padding: 1.5rem;
             margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
-
-        .chart-title {
-            font-size: 1rem;
-            color: var(--text-secondary);
+        
+        .histogram h2 {
+            font-size: 1.1rem;
             margin-bottom: 1rem;
-            text-align: center;
+            color: #fff;
         }
-
-        /* Chart with fixed height for bars */
+        
+        /* Improved chart styling */
         .chart {
             display: flex;
             align-items: flex-end;
-            justify-content: space-around;
-            height: 200px;
-            gap: 0.5rem;
-            padding-bottom: 1.5rem;
+            justify-content: space-between;
+            gap: 4px;
+            height: 180px;
+            padding: 0 0.5rem 1.5rem;
             position: relative;
         }
-
+        
+        /* Horizontal grid lines */
+        .chart::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 1.5rem;
+            background-image: 
+                linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 100% 25%;
+            pointer-events: none;
+        }
+        
         .bar-wrapper {
             flex: 1;
             min-width: 30px;
@@ -182,126 +174,163 @@
             height: 100%;
             gap: 0.5rem;
         }
-
+        
         .bar {
             width: 100%;
-            background: linear-gradient(to top, var(--accent), #79c0ff);
+            background: linear-gradient(to top, #4dabf7, #74c0fc);
             border-radius: 4px 4px 0 0;
-            min-height: 4px;
+            min-height: 2px;
+            transition: opacity 0.2s, transform 0.2s;
             position: relative;
-            transition: opacity 0.2s;
         }
-
+        
         .bar:hover {
             opacity: 0.85;
+            transform: scaleY(1.02);
         }
-
+        
         .bar.empty {
-            background: var(--bg-tertiary);
-            min-height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            min-height: 2px;
         }
-
-        /* Value label always visible on bars */
+        
+        /* Value label on top of bar */
         .bar-value {
             position: absolute;
             top: -18px;
             left: 50%;
             transform: translateX(-50%);
             font-size: 0.7rem;
-            color: var(--text-primary);
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.2s;
             white-space: nowrap;
         }
-
+        
+        .bar-wrapper:hover .bar-value {
+            opacity: 1;
+        }
+        
         .bar-label {
             font-size: 0.75rem;
-            color: var(--text-secondary);
+            color: #888;
             text-align: center;
         }
-
-        .data-table {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 8px;
+        
+        .week-table {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
             overflow: hidden;
-            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
-
-        .data-table table {
+        
+        .week-table h2 {
+            font-size: 1.1rem;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        table {
             width: 100%;
             border-collapse: collapse;
         }
-
-        .data-table th {
-            background: var(--bg-tertiary);
-            padding: 0.75rem;
+        
+        th, td {
+            padding: 1rem 1.5rem;
             text-align: left;
-            font-size: 0.8rem;
-            color: var(--text-secondary);
+        }
+        
+        th {
+            font-weight: 600;
+            color: #888;
+            font-size: 0.85rem;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.05em;
         }
-
-        .data-table td {
-            padding: 0.75rem;
-            border-top: 1px solid var(--border);
+        
+        tbody tr {
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
-
+        
+        tbody tr:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+        
         .day-name {
-            font-weight: 500;
+            font-weight: 600;
+            color: #fff;
         }
-
+        
         .day-date {
-            font-size: 0.75rem;
-            color: var(--text-secondary);
+            font-size: 0.8rem;
+            color: #666;
         }
-
+        
         .meals {
-            display: flex;
+            display: inline-flex;
+            align-items: center;
             gap: 0.25rem;
         }
-
+        
         .meal-dot {
             width: 8px;
             height: 8px;
-            background: var(--accent);
             border-radius: 50%;
+            background: #51cf66;
         }
-
+        
         .calories {
-            font-weight: 500;
-            color: var(--accent);
+            font-weight: 600;
+            color: #fff;
         }
-
+        
         .macros {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            color: #888;
         }
-
-        /* Footer with Tachi signature */
+        
+        tfoot {
+            background: rgba(255, 255, 255, 0.03);
+            font-weight: 600;
+        }
+        
+        tfoot td {
+            color: #fff;
+        }
+        
         footer {
             text-align: center;
-            margin-top: 2rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid var(--border);
-            color: var(--text-secondary);
-            font-size: 0.9rem;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
-
-        footer .tachi-sig {
-            margin-top: 0.5rem;
-            font-size: 0.8rem;
+        
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: #666;
         }
-
+        
         @media (max-width: 600px) {
             .container {
                 padding: 1rem;
             }
+            
             .macros {
                 display: none;
             }
-            .data-table th,
-            .data-table td {
-                padding: 0.5rem;
+            
+            th, td {
+                padding: 0.75rem 1rem;
+            }
+            
+            .bar-wrapper {
+                min-width: 24px;
+            }
+            
+            .bar-value {
+                font-size: 0.6rem;
+                top: -14px;
             }
         }
     </style>
@@ -318,41 +347,33 @@
             <h1>🍽️ Food Diary</h1>
             <nav class="week-nav">
                 
-                <span class="week-label">Feb 15 - Feb 21</span>
+                <span class="current">Feb 15 - Feb 21</span>
                 
             </nav>
         </header>
-
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-value">2116.0</div>
-                <div class="stat-label">Avg Calories</div>
-                <div class="delta "></div>
+        
+        <div class="summary-cards">
+            <div class="card">
+                <div class="card-value">1287.0</div>
+                <div class="card-label">Avg Calories</div>
+                <div class="card-delta "></div>
             </div>
-            <div class="stat-card">
-                <div class="stat-value">87.0g</div>
-                <div class="stat-label">Avg Protein</div>
+            <div class="card">
+                <div class="card-value">4/7</div>
+                <div class="card-label">Days Logged</div>
             </div>
-            <div class="stat-card">
-                <div class="stat-value">286.0g</div>
-                <div class="stat-label">Avg Carbs</div>
+            <div class="card">
+                <div class="card-value">63.0g</div>
+                <div class="card-label">Avg Protein</div>
             </div>
-            <div class="stat-card">
-                <div class="stat-value">68.0g</div>
-                <div class="stat-label">Avg Fat</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value">7.3</div>
-                <div class="stat-label">Avg Meals</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value">3/7</div>
-                <div class="stat-label">Days Logged</div>
+            <div class="card">
+                <div class="card-value">5148.0</div>
+                <div class="card-label">Total Calories</div>
             </div>
         </div>
-
-        <div class="chart-container">
-            <div class="chart-title">📊 Daily Calories</div>
+        
+        <div class="histogram">
+            <h2>📊 Daily Calories</h2>
             <div class="chart">
                 
                 <div class="bar-wrapper">
@@ -382,7 +403,9 @@
                     <span class="bar-label">Thu</span>
                 </div>
                 <div class="bar-wrapper">
-                    <div class="bar empty" style="height: 4px;" title="No data"></div>
+                    <div class="bar" style="height: 10px;" title="120.0 kcal">
+                        <span class="bar-value">120.0</span>
+                    </div>
                     <span class="bar-label">Fri</span>
                 </div>
                 <div class="bar-wrapper">
@@ -391,8 +414,9 @@
                 </div>
             </div>
         </div>
-
-        <div class="data-table">
+        
+        <div class="week-table">
+            <h2>📅 Week Overview</h2>
             <table>
                 <thead>
                     <tr>
@@ -454,9 +478,9 @@
                             <div class="day-name">Fri</div>
                             <div class="day-date">Feb 20</div>
                         </td>
-                        <td><span class="meals">-</span></td>
-                        <td class="calories">-</td>
-                        <td class="macros">-</td>
+                        <td><span class="meals"><span class="meal-dot"></span></span></td>
+                        <td class="calories">120.0</td>
+                        <td class="macros">3g / 28g / 1g</td>
                     </tr>
                     <tr>
                         <td>
@@ -468,19 +492,28 @@
                         <td class="macros">-</td>
                     </tr>
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Average</td>
+                        <td>5.8</td>
+                        <td>1287.0</td>
+                        <td class="macros">63.0g / 149.0g / 48.0g</td>
+                    </tr>
+                </tfoot>
             </table>
         </div>
-
+        
         <footer>
             <p>🕷️ Tracked by Tachi — 2026</p>
         </footer>
     </div>
-
+    
     <script>
-        // Week navigation
+        // Simple week navigation
         const urlParams = new URLSearchParams(window.location.search);
         const weekOffset = parseInt(urlParams.get('week')) || 0;
         
+        // Update navigation links
         document.querySelectorAll('.week-nav a').forEach(link => {
             const href = link.getAttribute('href');
             const match = href.match(/week=(-?\d+)/);
