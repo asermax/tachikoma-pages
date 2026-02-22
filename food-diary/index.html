@@ -160,26 +160,14 @@
             text-align: center;
         }
 
-        /* Chart v2 - fixed alignment */
+        /* Chart v3 - simplified */
         .chart {
             display: flex;
             align-items: flex-end;
             justify-content: space-around;
             height: 176px;
-            gap: 0.5rem;
-            padding-bottom: 1.5rem;
+            padding: 0 0.5rem;
             position: relative;
-        }
-
-        .chart-content {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 1.5rem;
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-around;
         }
 
         .chart-grid {
@@ -187,9 +175,13 @@
             top: 0;
             left: 0;
             right: 0;
-            bottom: 1.5rem;
+            bottom: 0;
             pointer-events: none;
             z-index: 2;
+        }
+
+        .chart-content {
+            display: contents;
         }
 
         .grid-line {
@@ -263,6 +255,7 @@
             font-size: 0.75rem;
             color: var(--text-secondary);
             text-align: center;
+            margin-top: 0.5rem;
         }
 
         .data-table {
