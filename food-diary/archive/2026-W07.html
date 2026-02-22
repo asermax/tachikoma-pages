@@ -346,9 +346,9 @@
         <header>
             <h1>🍽️ Food Diary</h1>
             <nav class="week-nav">
-                
+                <a href="2026-W06.html">← Previous Week</a>
                 <span class="current">Feb 22 - Feb 28</span>
-                
+                <a href="../index.html">Next Week →</a>
             </nav>
         </header>
         
@@ -501,21 +501,5 @@
             <p>🕷️ Tracked by Tachi — 2026</p>
         </footer>
     </div>
-    
-    <script>
-        // Simple week navigation
-        const urlParams = new URLSearchParams(window.location.search);
-        const weekOffset = parseInt(urlParams.get('week')) || 0;
-        
-        // Update navigation links
-        document.querySelectorAll('.week-nav a').forEach(link => {
-            const href = link.getAttribute('href');
-            const match = href.match(/week=(-?\d+)/);
-            if (match) {
-                const newOffset = weekOffset + parseInt(match[1]);
-                link.href = newOffset === 0 ? 'index.html' : `?week=${newOffset}`;
-            }
-        });
-    </script>
 </body>
 </html>
