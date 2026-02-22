@@ -162,6 +162,32 @@
             background-size: 100% 25%;
             pointer-events: none;
         }
+
+        /* Grid lines from GRID_LINES placeholder */
+        .chart-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 1.5rem;
+            pointer-events: none;
+        }
+
+        .grid-line {
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: rgba(255,255,255,0.15);
+        }
+
+        .grid-label {
+            position: absolute;
+            right: 0.5rem;
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.5);
+            transform: translateY(50%);
+        }
         
         .bar-wrapper {
             flex: 1;
@@ -375,6 +401,7 @@
         <div class="histogram">
             <h2>📊 Daily Calories</h2>
             <div class="chart">
+                {{GRID_LINES}}
                 {{CALORIE_BARS}}
             </div>
         </div>
