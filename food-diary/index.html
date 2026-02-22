@@ -164,15 +164,17 @@
             left: 0;
             right: 0;
             height: 1px;
-            background: rgba(255,255,255,0.15);
+            border-top: 1px dashed rgba(255,255,255,0.2);
+            background: transparent;
         }
 
         .grid-label {
             position: absolute;
-            left: 0.5rem;
+            right: calc(100% + 0.5rem);
             font-size: 0.7rem;
             color: rgba(255,255,255,0.5);
             transform: translateY(50%);
+            white-space: nowrap;
         }
         
         .bar-wrapper {
