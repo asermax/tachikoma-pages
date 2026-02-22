@@ -162,6 +162,32 @@
             background-size: 100% 25%;
             pointer-events: none;
         }
+
+        /* Grid lines from GRID_LINES placeholder */
+        .chart-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 1.5rem;
+            pointer-events: none;
+        }
+
+        .grid-line {
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: rgba(255,255,255,0.15);
+        }
+
+        .grid-label {
+            position: absolute;
+            right: 0.5rem;
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.5);
+            transform: translateY(50%);
+        }
         
         .bar-wrapper {
             flex: 1;
@@ -348,26 +374,26 @@
             <nav class="week-nav">
                 <a href="./archive/2026-W06.html">← Previous Week</a>
                 <span class="current">Feb 22 - Feb 28</span>
-                <a href="./archive/2026-W08.html">Next Week →</a>
+                
             </nav>
         </header>
         
         <div class="summary-cards">
             <div class="card">
-                <div class="card-value">1643.0</div>
+                <div class="card-value">1327.0</div>
                 <div class="card-label">Avg Calories</div>
-                <div class="card-delta "></div>
+                <div class="card-delta delta-down">▼ 19% vs last week</div>
             </div>
             <div class="card">
-                <div class="card-value">5/7</div>
+                <div class="card-value">1/7</div>
                 <div class="card-label">Days Logged</div>
             </div>
             <div class="card">
-                <div class="card-value">71.0g</div>
+                <div class="card-value">75.0g</div>
                 <div class="card-label">Avg Protein</div>
             </div>
             <div class="card">
-                <div class="card-value">8215.5</div>
+                <div class="card-value">1327.0</div>
                 <div class="card-label">Total Calories</div>
             </div>
         </div>
@@ -375,6 +401,7 @@
         <div class="histogram">
             <h2>📊 Daily Calories</h2>
             <div class="chart">
+                <div class="chart-grid"><div class="grid-line" style="bottom: 50.0%;"></div><div class="grid-label" style="bottom: 50.0%;">1000</div><div class="grid-line" style="bottom: 100.0%;"></div><div class="grid-label" style="bottom: 100.0%;">1500</div></div>
                 
                 <div class="bar-wrapper">
                     <div class="bar" style="height: 82.7%;" title="1327.0 kcal">
@@ -489,9 +516,9 @@
                 <tfoot>
                     <tr>
                         <td>Average</td>
-                        <td>0.6</td>
-                        <td>1643.0</td>
-                        <td class="macros">71.0g / 194.0g / 58.0g</td>
+                        <td>3.0</td>
+                        <td>1327.0</td>
+                        <td class="macros">75.0g / 114.0g / 64.0g</td>
                     </tr>
                 </tfoot>
             </table>
