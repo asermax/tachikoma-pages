@@ -136,9 +136,13 @@
             background: #28a745;
             color: white;
         }
-        .day-cell.missed {
+        .day-cell.partial {
             background: #ffc107;
             color: #333;
+        }
+        .day-cell.missed {
+            background: #dc3545;
+            color: white;
         }
         .day-cell.today {
             border: 2px solid #667eea;
@@ -265,12 +269,12 @@
                 </div>
                 <div class="week-grid">
                     <div class="day-column"><div class="day-header">Sun</div><div class="day-cell today">·</div></div>
-<div class="day-column"><div class="day-header">Mon</div><div class="day-cell done">2</div></div>
-<div class="day-column"><div class="day-header">Tue</div><div class="day-cell done">3</div></div>
-<div class="day-column"><div class="day-header">Wed</div><div class="day-cell done">2</div></div>
-<div class="day-column"><div class="day-header">Thu</div><div class="day-cell done">2</div></div>
+<div class="day-column"><div class="day-header">Mon</div><div class="day-cell">2</div></div>
+<div class="day-column"><div class="day-header">Tue</div><div class="day-cell">3</div></div>
+<div class="day-column"><div class="day-header">Wed</div><div class="day-cell">2</div></div>
+<div class="day-column"><div class="day-header">Thu</div><div class="day-cell">2</div></div>
 <div class="day-column"><div class="day-header">Fri</div><div class="day-cell">·</div></div>
-<div class="day-column"><div class="day-header">Sat</div><div class="day-cell done">1</div></div>
+<div class="day-column"><div class="day-header">Sat</div><div class="day-cell">1</div></div>
 
                 </div>
             </div>
@@ -311,7 +315,7 @@
         </main>
 
         <footer>
-            <p>Last updated: Sunday, February 22, 2026 at 12:31</p>
+            <p>Last updated: Sunday, February 22, 2026 at 12:40</p>
             <p style="margin-top: 0.5rem; font-size: 0.8rem;">🕷️ Tracked by Tachi</p>
         </footer>
     </div>
