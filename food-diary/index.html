@@ -4,28 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Diary | Tachikoma</title>
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
     <style>
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-tertiary: #21262d;
+            --text-primary: #c9d1d9;
+            --text-secondary: #8b949e;
+            --accent: #58a6ff;
+            --accent-green: #238636;
+            --accent-orange: #f0883e;
+            --border: #30363d;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
             min-height: 100vh;
-            color: #e4e4e4;
-            padding: 1rem;
         }
-        
-        /* Back Navigation - matching routines page style */
+
+        /* Container card like routines page */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        /* Back button at top */
         .back-nav {
             max-width: 900px;
             margin: 0 auto 1rem;
-            padding: 0 1rem;
         }
-        
+
         .back-button {
             display: inline-flex;
             align-items: center;
@@ -34,149 +58,147 @@
             background: rgba(255, 255, 255, 0.1);
             border-radius: 8px;
             text-decoration: none;
-            color: #fff;
+            color: var(--text-primary);
             font-size: 0.9rem;
             transition: background 0.2s;
         }
-        
+
         .back-button:hover {
             background: rgba(255, 255, 255, 0.2);
         }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 16px;
-            padding: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
+
         header {
             text-align: center;
             margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
         }
-        
+
         h1 {
-            font-size: 2rem;
-            color: #fff;
+            color: var(--accent);
+            font-size: 1.8rem;
             margin-bottom: 0.5rem;
         }
-        
+
         .week-nav {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 1rem;
-            margin-bottom: 1rem;
+            margin-top: 1rem;
         }
-        
+
         .week-nav a {
-            color: #64b5f6;
+            color: var(--accent);
             text-decoration: none;
             padding: 0.5rem 1rem;
             border-radius: 6px;
             transition: background 0.2s;
         }
-        
+
         .week-nav a:hover {
-            background: rgba(100, 181, 246, 0.1);
+            background: rgba(88, 166, 255, 0.1);
         }
-        
-        .week-nav .current {
-            font-size: 1.1rem;
-            color: #fff;
+
+        .week-label {
+            color: var(--text-secondary);
+            font-size: 1rem;
         }
-        
-        .summary-cards {
+
+        .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
             gap: 1rem;
             margin-bottom: 2rem;
         }
-        
-        .card {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 12px;
-            padding: 1.5rem;
+
+        .stat-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
             text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
-        .card-value {
-            font-size: 2rem;
+
+        .stat-value {
+            font-size: 1.6rem;
             font-weight: bold;
-            color: #fff;
+            color: var(--accent);
         }
-        
-        .card-label {
-            font-size: 0.9rem;
-            color: #888;
-            margin-top: 0.5rem;
-        }
-        
-        .card-delta {
-            font-size: 0.8rem;
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
             margin-top: 0.25rem;
         }
-        
-        .delta-up { color: #ff6b6b; }
-        .delta-down { color: #51cf66; }
-        .delta-same { color: #888; }
-        
-        .histogram {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 12px;
+
+        .delta-up {
+            color: var(--accent-orange);
+        }
+
+        .delta-down {
+            color: var(--accent-green);
+        }
+
+        .delta {
+            font-size: 0.75rem;
+            margin-top: 0.25rem;
+        }
+
+        .chart-container {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
             padding: 1.5rem;
             margin-bottom: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
-        .histogram h2 {
-            font-size: 1.1rem;
+
+        .chart-title {
+            font-size: 1rem;
+            color: var(--text-secondary);
             margin-bottom: 1rem;
-            color: #fff;
+            text-align: center;
         }
-        
-        /* Improved chart styling */
+
+        /* Chart v4 - bars and grid in same container */
         .chart {
             display: flex;
             align-items: flex-end;
-            justify-content: space-between;
-            gap: 4px;
-            height: 180px;
-            padding: 0 0.5rem 1.5rem;
+            justify-content: space-around;
+            height: 176px;
+            gap: 0.5rem;
+            padding: 0 0.5rem;
             position: relative;
         }
-        
-        /* Grid lines from GRID_LINES placeholder */
+
         .chart-grid {
             position: absolute;
             top: 0;
-            left: 0;
+            left: 10px;
             right: 0;
-            bottom: 1.5rem;
+            bottom: 24px;
             pointer-events: none;
+            z-index: 2;
         }
 
         .grid-line {
             position: absolute;
             left: 0;
             right: 0;
-            height: 1px;
-            border-top: 1px dashed rgba(255,255,255,0.2);
-            background: transparent;
+            border-top: 1px dashed rgba(139, 148, 158, 0.4);
         }
 
         .grid-label {
             position: absolute;
-            right: calc(100% + 0.3rem);
-            font-size: 0.6rem;
-            color: rgba(255,255,255,0.5);
+            left: -35px;
             transform: translateY(50%);
-            white-space: nowrap;
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            width: 30px;
+            text-align: right;
+            line-height: 1;
         }
-        
+
         .bar-wrapper {
             flex: 1;
             min-width: 30px;
@@ -185,166 +207,138 @@
             flex-direction: column;
             align-items: center;
             justify-content: flex-end;
-            height: calc(100% - 1.5rem);  /* Match grid container: 180px - 24px = 156px */
-            gap: 0.5rem;
+            height: calc(100% - 24px);
+            position: relative;
+            z-index: 1;
         }
         
+        .bar-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+
         .bar {
             width: 100%;
-            background: linear-gradient(to top, #4dabf7, #74c0fc);
+            background: linear-gradient(to top, var(--accent), #79c0ff);
             border-radius: 4px 4px 0 0;
             min-height: 2px;
-            transition: opacity 0.2s, transform 0.2s;
             position: relative;
+            transition: opacity 0.2s;
         }
-        
+
         .bar:hover {
             opacity: 0.85;
-            transform: scaleY(1.02);
         }
-        
+
         .bar.empty {
-            background: rgba(255, 255, 255, 0.1);
-            min-height: 2px;
+            background: var(--bg-tertiary);
+            min-height: 4px;
         }
-        
-        /* Value label on top of bar */
+
+        /* Value label always visible on bars */
         .bar-value {
             position: absolute;
             top: -18px;
             left: 50%;
             transform: translateX(-50%);
             font-size: 0.7rem;
-            color: #fff;
-            opacity: 0;
-            transition: opacity 0.2s;
+            color: var(--text-primary);
             white-space: nowrap;
         }
-        
-        .bar-wrapper:hover .bar-value {
-            opacity: 1;
-        }
-        
+
         .bar-label {
             font-size: 0.75rem;
-            color: #888;
+            color: var(--text-secondary);
             text-align: center;
+            margin-top: 0.5rem;
         }
-        
-        .week-table {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 12px;
+
+        .data-table {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
             overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 2rem;
         }
-        
-        .week-table h2 {
-            font-size: 1.1rem;
-            padding: 1rem 1.5rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        table {
+
+        .data-table table {
             width: 100%;
             border-collapse: collapse;
         }
-        
-        th, td {
-            padding: 1rem 1.5rem;
+
+        .data-table th {
+            background: var(--bg-tertiary);
+            padding: 0.75rem;
             text-align: left;
-        }
-        
-        th {
-            font-weight: 600;
-            color: #888;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        
-        tbody tr {
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-        
-        tbody tr:hover {
-            background: rgba(255, 255, 255, 0.02);
-        }
-        
-        .day-name {
-            font-weight: 600;
-            color: #fff;
-        }
-        
-        .day-date {
             font-size: 0.8rem;
-            color: #666;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
-        
+
+        .data-table td {
+            padding: 0.75rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .day-name {
+            font-weight: 500;
+        }
+
+        .day-date {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
         .meals {
-            display: inline-flex;
-            align-items: center;
+            display: flex;
             gap: 0.25rem;
         }
-        
+
         .meal-dot {
             width: 8px;
             height: 8px;
+            background: var(--accent);
             border-radius: 50%;
-            background: #51cf66;
         }
-        
+
         .calories {
-            font-weight: 600;
-            color: #fff;
+            font-weight: 500;
+            color: var(--accent);
         }
-        
+
         .macros {
-            font-size: 0.85rem;
-            color: #888;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
         }
-        
-        tfoot {
-            background: rgba(255, 255, 255, 0.03);
-            font-weight: 600;
-        }
-        
-        tfoot td {
-            color: #fff;
-        }
-        
+
+        /* Footer with Tachi signature */
         footer {
             text-align: center;
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
         }
-        
-        .empty-state {
-            text-align: center;
-            padding: 3rem;
-            color: #666;
+
+        footer .tachi-sig {
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
         }
-        
+
         @media (max-width: 600px) {
             .container {
                 padding: 1rem;
             }
-            
             .macros {
                 display: none;
             }
-            
-            th, td {
-                padding: 0.75rem 1rem;
-            }
-            
-            .bar-wrapper {
-                min-width: 24px;
-            }
-            
-            .bar-value {
-                font-size: 0.6rem;
-                top: -14px;
+            .data-table th,
+            .data-table td {
+                padding: 0.5rem;
             }
         }
     </style>
@@ -361,33 +355,41 @@
             <h1>🍽️ Food Diary</h1>
             <nav class="week-nav">
                 <a href="./archive/2026-W08.html">← Previous Week</a>
-                <span class="current">Mar 01 - Mar 07</span>
+                <span class="week-label">Mar 01 - Mar 07</span>
                 
             </nav>
         </header>
-        
-        <div class="summary-cards">
-            <div class="card">
-                <div class="card-value">0</div>
-                <div class="card-label">Avg Calories</div>
-                <div class="card-delta delta-down">▼ 100% vs last week</div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value">1647.0</div>
+                <div class="stat-label">Avg Calories</div>
+                <div class="delta delta-down">▼ 22% vs last week</div>
             </div>
-            <div class="card">
-                <div class="card-value">0/7</div>
-                <div class="card-label">Days Logged</div>
+            <div class="stat-card">
+                <div class="stat-value">44.0g</div>
+                <div class="stat-label">Avg Protein</div>
             </div>
-            <div class="card">
-                <div class="card-value">0g</div>
-                <div class="card-label">Avg Protein</div>
+            <div class="stat-card">
+                <div class="stat-value">235.0g</div>
+                <div class="stat-label">Avg Carbs</div>
             </div>
-            <div class="card">
-                <div class="card-value">0</div>
-                <div class="card-label">Total Calories</div>
+            <div class="stat-card">
+                <div class="stat-value">48.0g</div>
+                <div class="stat-label">Avg Fat</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">6.0</div>
+                <div class="stat-label">Avg Meals</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">1/7</div>
+                <div class="stat-label">Days Logged</div>
             </div>
         </div>
-        
-        <div class="histogram">
-            <h2>📊 Daily Calories</h2>
+
+        <div class="chart-container">
+            <div class="chart-title">📊 Daily Calories</div>
             <div class="chart">
                 <div class="chart-grid"><div class="grid-line" style="bottom: 33.3%;"></div><div class="grid-label" style="bottom: 33.3%;">1k</div><div class="grid-line" style="bottom: 66.7%;"></div><div class="grid-label" style="bottom: 66.7%;">1.5k</div><div class="grid-line" style="bottom: 100.0%;"></div><div class="grid-label" style="bottom: 100.0%;">2k</div></div>
                 
@@ -423,9 +425,8 @@
                 </div>
             </div>
         </div>
-        
-        <div class="week-table">
-            <h2>📅 Week Overview</h2>
+
+        <div class="data-table">
             <table>
                 <thead>
                     <tr>
@@ -501,20 +502,27 @@
                         <td class="macros">-</td>
                     </tr>
                 </tbody>
-                <tfoot>
-                    <tr>
-                        <td>Average</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td class="macros">0g / 0g / 0g</td>
-                    </tr>
-                </tfoot>
             </table>
         </div>
-        
+
         <footer>
             <p>🕷️ Tracked by Tachi — 2026</p>
         </footer>
     </div>
+
+    <script>
+        // Week navigation
+        const urlParams = new URLSearchParams(window.location.search);
+        const weekOffset = parseInt(urlParams.get('week')) || 0;
+        
+        document.querySelectorAll('.week-nav a').forEach(link => {
+            const href = link.getAttribute('href');
+            const match = href.match(/week=(-?\d+)/);
+            if (match) {
+                const newOffset = weekOffset + parseInt(match[1]);
+                link.href = newOffset === 0 ? 'index.html' : `?week=${newOffset}`;
+            }
+        });
+    </script>
 </body>
 </html>
