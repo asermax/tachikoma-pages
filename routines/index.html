@@ -6,11 +6,7 @@
     <title>Routines Tracker | Tachikoma</title>
     <link rel="icon" type="image/png" href="../assets/favicon.png">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             line-height: 1.6;
@@ -33,193 +29,105 @@
             padding: 2rem;
             text-align: center;
         }
-        header h1 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-        header p {
-            opacity: 0.9;
-        }
-        main {
-            padding: 2rem;
-        }
-
-        /* Back Button */
+        header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        header p { opacity: 0.9; }
+        main { padding: 2rem; }
         .back-button {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
             padding: 0.75rem 1rem;
-            background: #f8f9fa;
+            background: white;
             border-radius: 8px;
             text-decoration: none;
             color: #333;
             font-size: 0.9rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
         }
-        .back-button:hover {
-            background: #e9ecef;
-        }
-
-        /* Stats Overview */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-        .stat-card {
-            background: #f8f9fa;
-            padding: 1.5rem;
-            border-radius: 8px;
+        .week-header {
             text-align: center;
-            border-left: 4px solid #667eea;
-        }
-        .stat-number {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #667eea;
-        }
-        .stat-label {
-            color: #666;
-            font-size: 0.9rem;
-            margin-top: 0.25rem;
-        }
-
-        /* Week Grid */
-        .category {
             margin-bottom: 2rem;
         }
-        .category-header {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+        .week-header h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        .week-dates {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        .spirit-section {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 12px;
+        }
+        .spirit-image {
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
+            border-radius: 12px;
+            margin: 1rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .spirit-emoji { font-size: 3rem; margin-bottom: 0.5rem; }
+        .spirit-title { font-size: 1.5rem; color: #2c3e50; margin-bottom: 0.5rem; }
+        .spirit-description { color: #666; max-width: 500px; margin: 0 auto; }
+        .schedule-section { margin: 2rem 0; }
+        .schedule-section h3 {
+            color: #2c3e50;
+            font-size: 1.4rem;
             margin-bottom: 1rem;
             padding-bottom: 0.5rem;
-            border-bottom: 2px solid #eee;
+            border-bottom: 2px solid #667eea;
         }
-        .category-icon {
-            font-size: 1.5rem;
+        .day-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
         }
-        .category-header h2 {
-            font-size: 1.3rem;
-            color: #333;
-        }
-        .week-grid {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 0.5rem;
-            text-align: center;
-        }
-        .day-column {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .day-header {
-            font-size: 0.85rem;
-            color: #666;
+        .day-name {
+            font-weight: bold;
+            color: #667eea;
+            font-size: 1.1rem;
             margin-bottom: 0.5rem;
-            font-weight: 500;
         }
-        .day-cell {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            background: #e9ecef;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.75rem;
-            color: #666;
-        }
-        .day-cell.done {
-            background: #28a745;
-            color: white;
-        }
-        .day-cell.partial {
-            background: #ffc107;
-            color: #333;
-        }
-        .day-cell.missed {
-            background: #dc3545;
-            color: white;
-        }
-        .day-cell.today {
-            border: 2px solid #667eea;
-        }
-
-        /* Recent Activities */
         .activity-list {
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
+            list-style: none;
         }
         .activity-item {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            padding: 0.75rem 1rem;
+            gap: 0.5rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .activity-item:last-child { border-bottom: none; }
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #667eea;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .checkbox.checked { background: #667eea; color: white; }
+        .archive-link {
+            display: block;
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1rem;
             background: #f8f9fa;
             border-radius: 8px;
-        }
-        .activity-date {
-            color: #666;
-            font-size: 0.85rem;
-        }
-
-        /* Spirit Companion */
-        .spirit-section {
-            background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
-            padding: 2rem;
-            border-radius: 12px;
-            margin: 2rem 0;
-            text-align: center;
-            border: 2px solid #ffd700;
-        }
-        .spirit-title {
-            font-size: 1.5rem;
-            color: #856404;
-            margin-bottom: 1rem;
-        }
-        .spirit-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #ffd700;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            margin-bottom: 1rem;
-        }
-        .spirit-state {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #856404;
-            margin-bottom: 0.5rem;
-            text-transform: capitalize;
-        }
-        .spirit-description {
-            color: #666;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        /* Archive Link */
-        .archive-section {
-            text-align: center;
-            margin: 2rem 0;
-            padding-top: 1rem;
-            border-top: 1px solid #eee;
-        }
-        .archive-link {
-            color: #667eea;
             text-decoration: none;
-            font-size: 0.95rem;
+            color: #667eea;
+            font-weight: 500;
         }
-        .archive-link:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer */
         footer {
             text-align: center;
             padding: 2rem;
@@ -227,93 +135,94 @@
             color: #666;
             font-size: 0.9rem;
         }
-
-        /* Responsive */
-        @media (max-width: 600px) {
-            body {
-                padding: 1rem;
-            }
-            .week-grid {
-                font-size: 0.75rem;
-            }
-        }
     </style>
 </head>
 <body>
-    <div class="back-nav" style="max-width: 900px; margin: 0 auto 1rem; padding: 0 2rem;">
-        <a href="../" class="back-button" style="background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <span>←</span> Back to Home
-        </a>
-    </div>
-
+    <a href="../" class="back-button">← Back to Home</a>
+    
     <div class="container">
         <header>
             <h1>📅 Routines Tracker</h1>
             <p>Weekly activity tracking and accountability</p>
         </header>
-
+        
         <main>
-            <!-- Stats Overview -->
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">7 / 8</div>
-                    <div class="stat-label">Completed / Planned</div>
-                </div>
+            <div class="week-header">
+                <h2>Week 11, 2026</h2>
+                <p class="week-dates">March 09 - March 15, 2026</p>
             </div>
-
-            <!-- Weekly View -->
-            <div class="category">
-                <div class="category-header">
-                    <span class="category-icon">📊</span>
-                    <h2>This Week</h2>
-                </div>
-                <div class="week-grid">
-                    <div class="day-column"><div class="day-header">Sun</div><div class="day-cell done today">2</div></div>
-<div class="day-column"><div class="day-header">Mon</div><div class="day-cell">2</div></div>
-<div class="day-column"><div class="day-header">Tue</div><div class="day-cell">1</div></div>
-<div class="day-column"><div class="day-header">Wed</div><div class="day-cell">1</div></div>
-<div class="day-column"><div class="day-header">Thu</div><div class="day-cell">1</div></div>
-<div class="day-column"><div class="day-header">Fri</div><div class="day-cell">·</div></div>
-<div class="day-column"><div class="day-header">Sat</div><div class="day-cell">·</div></div>
-
-                </div>
-            </div>
-
-            <!-- Recent Activities -->
-            <div class="category">
-                <div class="category-header">
-                    <span class="category-icon">📝</span>
-                    <h2>Recent Activities</h2>
-                </div>
-                <div class="activity-list">
-                    <div class="activity-item"><span>Yoga <span class="activity-date">(wellness)</span></span><span class="activity-date">Mar 05</span></div>
-<div class="activity-item"><span>Band Practice <span class="activity-date">(creative)</span></span><span class="activity-date">Mar 04</span></div>
-<div class="activity-item"><span>Rock Climbing <span class="activity-date">(wellness)</span></span><span class="activity-date">Mar 03</span></div>
-<div class="activity-item"><span>Yoga <span class="activity-date">(wellness)</span></span><span class="activity-date">Mar 02</span></div>
-<div class="activity-item"><span>Piano Practice <span class="activity-date">(creative)</span></span><span class="activity-date">Mar 02</span></div>
-<div class="activity-item"><span>Piano Practice - Harmony Module 3 <span class="activity-date">(creative)</span></span><span class="activity-date">Mar 01</span></div>
-<div class="activity-item"><span>Yoga <span class="activity-date">(wellness)</span></span><span class="activity-date">Mar 01</span></div>
-
-                </div>
-            </div>
-
-            <!-- Spirit Companion -->
+            
             <div class="spirit-section">
-                <div class="spirit-title">🐢 Your Turtle Spirit</div>
+                <div class="spirit-emoji">🐉</div>
+                <h3 class="spirit-title">Your Serpent Dragon</h3>
                 <img src="assets/thriving.jpg" alt="Spirit Companion" class="spirit-image">
-                <div class="spirit-state">thriving</div>
-                <div class="spirit-description">Your turtle spirit is glowing with golden energy! You're climbing steady and strong this week!</div>
+                <p class="spirit-description">
+                    Your serpent dragon is radiant with emerald energy! Golden magic flows through your completed routines!
+                </p>
             </div>
-
-            <!-- Archive Link -->
-            <div class="archive-section">
-                <a href="archive/" class="archive-link">📚 View Archive →</a>
+            
+            <div class="schedule-section">
+                <h3>📋 Weekly Schedule</h3>
+                
+                <div class="day-card">
+                    <div class="day-name">Sunday, Mar 09</div>
+                    <ul class="activity-list">
+                        <li class="activity-item"><span class="checkbox"></span> Yoga 9:00-9:30 PM 🧘</li>
+                    </ul>
+                </div>
+                
+                <div class="day-card">
+                    <div class="day-name">Monday, Mar 10</div>
+                    <ul class="activity-list">
+                        <li class="activity-item"><span class="checkbox"></span> Piano Practice 8:00-9:00 PM 🎹</li>
+                        <li class="activity-item"><span class="checkbox"></span> Pilates 9:30-10:00 PM 🧘</li>
+                    </ul>
+                </div>
+                
+                <div class="day-card">
+                    <div class="day-name">Tuesday, Mar 11</div>
+                    <ul class="activity-list">
+                        <li class="activity-item"><span class="checkbox"></span> Run 6:30-7:00 PM 🏃</li>
+                        <li class="activity-item"><span class="checkbox"></span> Rock Climbing 8:00-9:30 PM 🧗</li>
+                    </ul>
+                </div>
+                
+                <div class="day-card">
+                    <div class="day-name">Wednesday, Mar 12</div>
+                    <ul class="activity-list">
+                        <li class="activity-item"><span class="checkbox"></span> Yoga 6:30-7:00 PM 🧘</li>
+                        <li class="activity-item"><span class="checkbox"></span> Band Practice 7:30-9:00 PM 🎷🎹</li>
+                    </ul>
+                </div>
+                
+                <div class="day-card">
+                    <div class="day-name">Thursday, Mar 13</div>
+                    <ul class="activity-list">
+                        <li class="activity-item"><span class="checkbox"></span> Rock Climbing 8:00-9:30 PM 🧗</li>
+                    </ul>
+                </div>
+                
+                <div class="day-card">
+                    <div class="day-name">Friday, Mar 14</div>
+                    <ul class="activity-list">
+                        <li class="activity-item"><span class="checkbox"></span> Rest Day 😌</li>
+                    </ul>
+                </div>
+                
+                <div class="day-card">
+                    <div class="day-name">Saturday, Mar 15</div>
+                    <ul class="activity-list">
+                        <li class="activity-item"><span class="checkbox"></span> Run 4:00-5:00 PM 🏃</li>
+                        <li class="activity-item"><span class="checkbox"></span> Pilates 7:00-7:30 PM 🧘</li>
+                    </ul>
+                </div>
             </div>
+            
+            <a href="archive/" class="archive-link">📚 View Previous Weeks</a>
         </main>
-
+        
         <footer>
-            <p>Last updated: Sunday, March 08, 2026 at 12:46</p>
-            <p style="margin-top: 0.5rem; font-size: 0.8rem;">🕷️ Tracked by Tachi</p>
+            <p>🕷️ Tracked by Tachi</p>
         </footer>
     </div>
 </body>
