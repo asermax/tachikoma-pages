@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-04-07T02:01:10.135930-03:00",
+  "generated_at": "2026-04-07T19:27:06.043951-03:00",
   "week_start": "2026-04-05",
   "week_label": "April 05 - April 11, 2026",
   "stats": {
     "completed": 1,
-    "planned": 4,
-    "skipped": 3
+    "planned": 3,
+    "skipped": 2
   },
   "daily": {
     "Sunday": {
-      "status": "missed",
+      "status": "empty",
       "completed": 0,
-      "total": 1
+      "total": 0
     },
     "Monday": {
       "status": "partial",
