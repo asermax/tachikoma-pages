@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-09T02:02:14.285807-03:00",
+  "generated_at": "2026-04-10T02:00:43.025230-03:00",
   "week_start": "2026-04-05",
   "week_label": "April 05 - April 11, 2026",
   "stats": {
-    "completed": 5,
-    "planned": 8,
+    "completed": 7,
+    "planned": 10,
     "skipped": 3
   },
   "daily": {
@@ -29,8 +29,8 @@
       "total": 3
     },
     "Thursday": {
-      "status": "missed",
-      "completed": 0,
+      "status": "done",
+      "completed": 2,
       "total": 2
     },
     "Friday": {
