@@ -398,7 +398,9 @@ function resetFocusToTop() {
 function scrollToChunk(index) {
     if (index < 0 || index >= paragraphs.length) return;
     isAutoScrolling = true;
-    paragraphs[index].scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // Scroll new chunk to ~30% from top so previous paragraph tail is visible
+    const targetY = paragraphs[index].offsetTop - window.innerHeight * 0.3;
+    window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
     setTimeout(() => { isAutoScrolling = false; }, 600);
 }
 
@@ -501,7 +503,6 @@ function onManualScroll() {
     if (isAutoScrolling || !isPlaying || !audio.duration) return;
     isUserScrolling = true;
     followBtn.classList.add('visible');
-    resetFocusToTop();
     clearTimeout(scrollTimeout);
     scrollTimeout = setTimeout(() => {
         isUserScrolling = false;
