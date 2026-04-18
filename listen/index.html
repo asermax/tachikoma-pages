@@ -8,6 +8,10 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Georgia, 'Times New Roman', serif;
             background: #faf9f6;
@@ -70,6 +74,91 @@
             color: #3a3a3a;
         }
 
+        /* Focus overlay — dims text above/below center reading area */
+        .focus-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: 50;
+            background: linear-gradient(
+                to bottom,
+                rgba(250, 249, 246, 0.7) 0%,
+                rgba(250, 249, 246, 0) 30%,
+                rgba(250, 249, 246, 0) 70%,
+                rgba(250, 249, 246, 0.7) 100%
+            );
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .focus-overlay.active {
+            opacity: 1;
+        }
+
+        /* Follow from here button */
+        .follow-btn {
+            position: fixed;
+            bottom: 90px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background: #e94560;
+            color: #fff;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 0.85rem;
+            cursor: pointer;
+            z-index: 150;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 2px 10px rgba(233, 69, 96, 0.3);
+        }
+
+        .follow-btn.visible {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .follow-btn:hover {
+            background: #d63851;
+        }
+
+        /* Focus toggle */
+        .focus-toggle {
+            position: fixed;
+            bottom: 90px;
+            right: 1rem;
+            background: rgba(26, 26, 46, 0.8);
+            color: rgba(255,255,255,0.7);
+            border: 1px solid rgba(255,255,255,0.2);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            font-size: 1rem;
+            cursor: pointer;
+            z-index: 150;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s, color 0.2s, border-color 0.2s;
+        }
+
+        .focus-toggle:hover {
+            background: rgba(26, 26, 46, 0.95);
+            color: #fff;
+        }
+
+        .focus-toggle.active {
+            border-color: #e94560;
+            color: #e94560;
+        }
+
         /* Player bar */
         .player {
             position: fixed;
@@ -115,7 +204,6 @@
             background: none;
             border: none;
             color: #fff;
-            font-size: 1.3rem;
             cursor: pointer;
             width: 36px;
             height: 36px;
@@ -124,9 +212,18 @@
             justify-content: center;
             border-radius: 50%;
             flex-shrink: 0;
+            font-size: 0;
+            line-height: 0;
         }
 
         .play-btn:hover { background: rgba(255,255,255,0.1); }
+
+        /* Play icon as SVG for consistent sizing */
+        .play-btn .icon {
+            width: 14px;
+            height: 14px;
+            fill: #fff;
+        }
 
         .time {
             font-size: 0.8rem;
@@ -161,21 +258,83 @@
             width: 0%;
             transition: width 0.1s linear;
         }
+
+        /* Archive */
+        #archive {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            display: none;
+        }
+
+        #archive h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+        }
+
+        .archive-item {
+            display: block;
+            padding: 1.25rem;
+            background: #fff;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid #eee;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .archive-item:hover {
+            border-color: #e94560;
+            box-shadow: 0 2px 8px rgba(233, 69, 96, 0.1);
+        }
+
+        .archive-item h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.25rem;
+            color: #2c3e50;
+        }
+
+        .archive-item .archive-meta {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        /* Loading state */
+        .loading {
+            text-align: center;
+            padding: 4rem 1rem;
+            color: #999;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
     </style>
 </head>
 <body>
 
 <div class="scroll-progress" id="scrollProgress"></div>
+<div class="focus-overlay" id="focusOverlay"></div>
+
+<button class="follow-btn" id="followBtn">Follow from here</button>
+<button class="focus-toggle" id="focusToggle" title="Toggle reading focus">&#9678;</button>
 
 <div class="top-bar">
     <a href="../">&larr; Home</a>
+    <a href="#" id="archiveLink" style="margin-left: 0.5rem;">Archive</a>
     <span class="title">Listen</span>
+</div>
+
+<div id="archive">
+    <h2>Articles</h2>
+    <div id="archiveList"></div>
 </div>
 
 <div id="article">
     <h1 id="articleTitle">Loading...</h1>
     <div class="meta" id="articleMeta"></div>
-    <div id="articleBody"></div>
+    <div id="articleBody"><div class="loading">Loading article...</div></div>
 </div>
 
 <div class="player">
@@ -183,7 +342,15 @@
         <div class="progress-fill" id="progressFill"></div>
     </div>
     <div class="controls">
-        <button class="play-btn" id="playBtn">&#9654;</button>
+        <button class="play-btn" id="playBtn">
+            <svg class="icon" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                <path id="playIcon" d="M3 1.5 L12 7 L3 12.5 Z"/>
+                <g id="pauseIcon" style="display:none">
+                    <rect x="2" y="2" width="3.5" height="10" rx="0.5"/>
+                    <rect x="8.5" y="2" width="3.5" height="10" rx="0.5"/>
+                </g>
+            </svg>
+        </button>
         <span class="time" id="timeDisplay">0:00 / 0:00</span>
         <div class="spacer"></div>
         <button class="speed-btn" data-speed="1">1x</button>
@@ -196,19 +363,29 @@
 
 <script>
 const audio = document.getElementById('audio');
-const article = document.getElementById('article');
 const playBtn = document.getElementById('playBtn');
+const playIcon = document.getElementById('playIcon');
+const pauseIcon = document.getElementById('pauseIcon');
 const progressTrack = document.getElementById('progressTrack');
 const progressFill = document.getElementById('progressFill');
 const timeDisplay = document.getElementById('timeDisplay');
 const scrollProgress = document.getElementById('scrollProgress');
 const speedBtns = document.querySelectorAll('.speed-btn');
+const followBtn = document.getElementById('followBtn');
+const focusToggle = document.getElementById('focusToggle');
+const focusOverlay = document.getElementById('focusOverlay');
+const archiveLink = document.getElementById('archiveLink');
+const archiveSection = document.getElementById('archive');
+const archiveList = document.getElementById('archiveList');
+const articleSection = document.getElementById('article');
 
 let isPlaying = false;
 let isUserScrolling = false;
+let focusActive = false;
 let scrollTimeout;
+let currentArticle = null;
 
-// Play / Pause
+// SVG play/pause — consistent sizing, no overflow
 playBtn.addEventListener('click', () => {
     if (isPlaying) {
         audio.pause();
@@ -219,21 +396,23 @@ playBtn.addEventListener('click', () => {
 
 audio.addEventListener('play', () => {
     isPlaying = true;
-    playBtn.innerHTML = '&#9646;&#9646;';
+    playIcon.style.display = 'none';
+    pauseIcon.style.display = '';
 });
 
 audio.addEventListener('pause', () => {
     isPlaying = false;
-    playBtn.innerHTML = '&#9654;';
+    playIcon.style.display = '';
+    pauseIcon.style.display = 'none';
 });
 
 audio.addEventListener('ended', () => {
     isPlaying = false;
-    playBtn.innerHTML = '&#9654;';
+    playIcon.style.display = '';
+    pauseIcon.style.display = 'none';
     progressFill.style.width = '100%';
 });
 
-// Time formatting
 function fmt(s) {
     if (isNaN(s)) return '0:00';
     const m = Math.floor(s / 60);
@@ -278,27 +457,48 @@ speedBtns.forEach(btn => {
 });
 speedBtns[0].classList.add('active');
 
-// Detect manual scrolling — pause auto-scroll briefly
-window.addEventListener('wheel', () => {
+// Manual scroll detection — show follow button, pause auto-scroll
+function onManualScroll() {
+    if (!isPlaying || !audio.duration) return;
+
     isUserScrolling = true;
+    followBtn.classList.add('visible');
     clearTimeout(scrollTimeout);
     scrollTimeout = setTimeout(() => {
         isUserScrolling = false;
-    }, 3000);
-}, { passive: true });
+        followBtn.classList.remove('visible');
+    }, 5000);
+}
 
-window.addEventListener('touchmove', () => {
-    isUserScrolling = true;
+window.addEventListener('wheel', onManualScroll, { passive: true });
+window.addEventListener('touchmove', onManualScroll, { passive: true });
+
+// Follow from here — sync audio to current scroll position
+followBtn.addEventListener('click', () => {
+    if (!audio.duration) return;
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = window.scrollY / maxScroll;
+    audio.currentTime = pct * audio.duration;
+
+    isUserScrolling = false;
+    followBtn.classList.remove('visible');
     clearTimeout(scrollTimeout);
-    scrollTimeout = setTimeout(() => {
-        isUserScrolling = false;
-    }, 3000);
-}, { passive: true });
+});
 
-// Load article data
-async function loadArticle() {
+// Focus toggle
+focusToggle.addEventListener('click', () => {
+    focusActive = !focusActive;
+    focusOverlay.classList.toggle('active', focusActive);
+    focusToggle.classList.toggle('active', focusActive);
+});
+
+// Article loading
+async function loadArticle(slug) {
+    articleSection.style.display = '';
+    archiveSection.style.display = 'none';
+
     try {
-        const res = await fetch('article.json');
+        const res = await fetch(`articles/${slug}.json`);
         const data = await res.json();
 
         document.getElementById('articleTitle').textContent = data.title;
@@ -307,13 +507,55 @@ async function loadArticle() {
         document.title = `${data.title} | Listen | Tachikoma Pages`;
 
         audio.src = data.audio;
+        currentArticle = slug;
+
+        // Reset state
+        window.scrollTo(0, 0);
+        progressFill.style.width = '0%';
+        scrollProgress.style.width = '0%';
+        isUserScrolling = false;
+        followBtn.classList.remove('visible');
     } catch (e) {
         document.getElementById('articleTitle').textContent = 'Failed to load article';
         document.getElementById('articleBody').innerHTML = '<p>Could not load the article data.</p>';
     }
 }
 
-loadArticle();
+// Archive
+const ARTICLES = [
+    { slug: 'gas-town', title: 'Gas Town: from Clown Show to v1.0', meta: 'Steve Yegge \u00b7 April 2026' },
+    { slug: 'resonant-computing', title: 'Resonant Computing', meta: 'Resonant Computing Collective \u00b7 March 2026' }
+];
+
+function showArchive() {
+    articleSection.style.display = 'none';
+    archiveSection.style.display = '';
+
+    if (audio.src) audio.pause();
+
+    archiveList.innerHTML = '';
+    ARTICLES.forEach(a => {
+        const div = document.createElement('div');
+        div.className = 'archive-item';
+        div.innerHTML = `<h3>${a.title}</h3><div class="archive-meta">${a.meta}</div>`;
+        div.addEventListener('click', () => {
+            loadArticle(a.slug);
+        });
+        archiveList.appendChild(div);
+    });
+}
+
+archiveLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (archiveSection.style.display === 'none' || !archiveSection.style.display) {
+        showArchive();
+    } else {
+        loadArticle(currentArticle || 'gas-town');
+    }
+});
+
+// Load latest article by default
+loadArticle('resonant-computing');
 </script>
 </body>
 </html>
