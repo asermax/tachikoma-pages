@@ -68,22 +68,15 @@
             line-height: 1.85;
             margin-bottom: 1.5rem;
             color: #3a3a3a;
+            padding: 0.4rem 0.6rem;
+            border-radius: 6px;
+            transition: background 0.5s ease, color 0.5s ease;
         }
 
-        /* Focus overlay — brown band, slides from top to bottom with progress */
-        .focus-overlay {
-            position: fixed;
-            left: 0;
-            right: 0;
-            height: 30vh;
-            pointer-events: none;
-            z-index: 50;
-            background: rgba(139, 90, 43, 0.35);
-            opacity: 0;
-            transition: opacity 0.3s ease;
+        #article p.reading {
+            background: rgba(139, 90, 43, 0.12);
+            color: #1a1a1a;
         }
-
-        .focus-overlay.active { opacity: 1; }
 
         /* Follow from here button */
         .follow-btn {
@@ -113,39 +106,6 @@
         }
 
         .follow-btn:hover { background: #d63851; }
-
-        /* Focus toggle — crosshair icon */
-        .focus-toggle {
-            position: fixed;
-            bottom: 90px;
-            right: 1rem;
-            background: rgba(26, 26, 46, 0.8);
-            border: 1px solid rgba(255,255,255,0.2);
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            cursor: pointer;
-            z-index: 150;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.2s, border-color 0.2s;
-        }
-
-        .focus-toggle:hover { background: rgba(26, 26, 46, 0.95); }
-        .focus-toggle.active { border-color: #e94560; }
-
-        .focus-toggle svg {
-            width: 18px;
-            height: 18px;
-            stroke: rgba(255,255,255,0.7);
-            fill: none;
-            stroke-width: 2;
-            transition: stroke 0.2s;
-        }
-
-        .focus-toggle:hover svg { stroke: #fff; }
-        .focus-toggle.active svg { stroke: #e94560; }
 
         /* Player bar */
         .player {
@@ -265,18 +225,8 @@
 <body>
 
 <div class="scroll-progress" id="scrollProgress"></div>
-<div class="focus-overlay" id="focusOverlay"></div>
 
 <button class="follow-btn" id="followBtn">Follow from here</button>
-<button class="focus-toggle" id="focusToggle" title="Toggle reading focus">
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="12" cy="12" r="4"/>
-        <line x1="12" y1="2" x2="12" y2="6"/>
-        <line x1="12" y1="18" x2="12" y2="22"/>
-        <line x1="2" y1="12" x2="6" y2="12"/>
-        <line x1="18" y1="12" x2="22" y2="12"/>
-    </svg>
-</button>
 
 <div class="top-bar">
     <a href="../">&larr; Home</a>
@@ -326,14 +276,11 @@ const timeDisplay = document.getElementById('timeDisplay');
 const scrollProgress = document.getElementById('scrollProgress');
 const speedBtns = document.querySelectorAll('.speed-btn');
 const followBtn = document.getElementById('followBtn');
-const focusToggle = document.getElementById('focusToggle');
-const focusOverlay = document.getElementById('focusOverlay');
 const resetBtn = document.getElementById('resetBtn');
 
 let isPlaying = false;
 let isUserScrolling = false;
 let isAutoScrolling = false;
-let focusActive = localStorage.getItem('listen_focus') === 'true';
 let scrollTimeout;
 let currentArticle = null;
 let currentChunkIndex = -1;
@@ -341,7 +288,7 @@ let chunkBoundaries = [];
 let paragraphs = [];
 let wakeLock = null;
 
-// Screen wake lock — prevent sleep while playing
+// Screen wake lock
 async function requestWakeLock() {
     if (!('wakeLock' in navigator)) return;
     try { wakeLock = await navigator.wakeLock.request('screen'); } catch {}
@@ -355,7 +302,7 @@ document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible' && isPlaying) requestWakeLock();
 });
 
-// ── Chunk-based scroll system ──
+// ── Chunk-based scroll + highlight ──
 
 function setupChunks() {
     paragraphs = Array.from(document.querySelectorAll('#articleBody p'));
@@ -379,30 +326,18 @@ function getCurrentChunk(pct) {
     return Math.max(0, chunkBoundaries.length - 2);
 }
 
-function getHeaderHeight() {
-    return document.querySelector('.top-bar').offsetHeight;
-}
-
-function getFocusTop(pct) {
-    const headerH = getHeaderHeight();
-    const bandH = window.innerHeight * 0.3;
-    const centerTop = (window.innerHeight - bandH) / 2;
-    // Slide from header to center, reaching center at ~20% progress
-    const t = Math.min(1, pct * 5);
-    return headerH + (centerTop - headerH) * t;
-}
-
-function resetFocusToTop() {
-    focusOverlay.style.top = `${getHeaderHeight()}px`;
+function highlightChunk(index) {
+    paragraphs.forEach(p => p.classList.remove('reading'));
+    if (index >= 0 && index < paragraphs.length) {
+        paragraphs[index].classList.add('reading');
+    }
 }
 
 function scrollToChunk(index) {
     if (index < 0 || index >= paragraphs.length) return;
     isAutoScrolling = true;
-    // Position paragraph at the focus band's current top
-    const pct = audio.duration ? audio.currentTime / audio.duration : 0;
-    const focusTop = getFocusTop(pct);
-    const targetY = paragraphs[index].offsetTop - focusTop;
+    const headerH = document.querySelector('.top-bar').offsetHeight;
+    const targetY = paragraphs[index].offsetTop - headerH - 8;
     window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
     setTimeout(() => { isAutoScrolling = false; }, 600);
 }
@@ -435,6 +370,7 @@ audio.addEventListener('ended', () => {
     progressFill.style.width = '100%';
     scrollProgress.style.width = '100%';
     releaseWakeLock();
+    highlightChunk(-1);
     if (currentArticle) {
         localStorage.removeItem('listen_' + currentArticle);
         localStorage.removeItem('listen_dur_' + currentArticle);
@@ -449,7 +385,7 @@ function fmt(s) {
     return `${m}:${sec.toString().padStart(2, '0')}`;
 }
 
-// ── Chunk-based auto-scroll on timeupdate ──
+// ── Auto-scroll + highlight on timeupdate ──
 
 audio.addEventListener('timeupdate', () => {
     if (!audio.duration) return;
@@ -463,12 +399,11 @@ audio.addEventListener('timeupdate', () => {
         const newChunk = getCurrentChunk(pct);
         if (newChunk !== currentChunkIndex) {
             currentChunkIndex = newChunk;
+            highlightChunk(newChunk);
             scrollToChunk(newChunk);
         }
-        focusOverlay.style.top = `${getFocusTop(pct)}px`;
     }
 
-    // Auto-save position
     if (isPlaying && currentArticle) {
         localStorage.setItem('listen_' + currentArticle, audio.currentTime);
         localStorage.setItem('listen_dur_' + currentArticle, audio.duration);
@@ -476,7 +411,7 @@ audio.addEventListener('timeupdate', () => {
     }
 });
 
-// Seek on progress bar click
+// Seek on progress bar
 progressTrack.addEventListener('click', (e) => {
     if (!audio.duration) return;
     const rect = progressTrack.getBoundingClientRect();
@@ -485,6 +420,7 @@ progressTrack.addEventListener('click', (e) => {
     const newChunk = getCurrentChunk(pct);
     if (newChunk !== currentChunkIndex) {
         currentChunkIndex = newChunk;
+        highlightChunk(newChunk);
         scrollToChunk(newChunk);
     }
 });
@@ -516,7 +452,7 @@ function onManualScroll() {
 window.addEventListener('wheel', onManualScroll, { passive: true });
 window.addEventListener('touchmove', onManualScroll, { passive: true });
 
-// Follow from here — find closest chunk to viewport center and seek
+// Follow from here
 followBtn.addEventListener('click', () => {
     if (!audio.duration) return;
     const viewportMid = window.scrollY + window.innerHeight / 2;
@@ -533,32 +469,19 @@ followBtn.addEventListener('click', () => {
     const midPct = (chunkBoundaries[closestChunk] + chunkBoundaries[closestChunk + 1]) / 2;
     audio.currentTime = midPct * audio.duration;
     currentChunkIndex = closestChunk;
+    highlightChunk(closestChunk);
     isUserScrolling = false;
     followBtn.classList.remove('visible');
     clearTimeout(scrollTimeout);
 });
-
-// ── Focus toggle ──
-
-focusToggle.addEventListener('click', () => {
-    focusActive = !focusActive;
-    focusOverlay.classList.toggle('active', focusActive);
-    focusToggle.classList.toggle('active', focusActive);
-    localStorage.setItem('listen_focus', focusActive);
-});
-
-if (focusActive) {
-    focusOverlay.classList.add('active');
-    focusToggle.classList.add('active');
-}
 
 // Reset to beginning
 resetBtn.addEventListener('click', () => {
     if (!currentArticle) return;
     audio.currentTime = 0;
     currentChunkIndex = 0;
+    highlightChunk(0);
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    resetFocusToTop();
     localStorage.removeItem('listen_' + currentArticle);
     localStorage.removeItem('listen_dur_' + currentArticle);
     resetBtn.style.display = 'none';
@@ -580,19 +503,15 @@ async function loadArticle(slug) {
         currentArticle = slug;
         currentChunkIndex = -1;
 
-        // Reset state
         window.scrollTo(0, 0);
         progressFill.style.width = '0%';
         scrollProgress.style.width = '0%';
         isUserScrolling = false;
         isAutoScrolling = false;
         followBtn.classList.remove('visible');
-        resetFocusToTop();
 
-        // Setup chunk boundaries from paragraph elements
         setupChunks();
 
-        // Restore saved position
         const saved = localStorage.getItem('listen_' + slug);
         if (saved) {
             const savedTime = parseFloat(saved);
@@ -603,6 +522,7 @@ async function loadArticle(slug) {
                     const pct = savedTime / audio.duration;
                     const chunk = getCurrentChunk(pct);
                     currentChunkIndex = chunk;
+                    highlightChunk(chunk);
                     setTimeout(() => scrollToChunk(chunk), 100);
                 }, { once: true });
             }
