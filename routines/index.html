@@ -148,23 +148,71 @@
             border: 2px solid #667eea;
         }
 
-        /* Recent Activities */
-        .activity-list {
+        /* Routine Cards */
+        .routine-cards {
             display: flex;
             flex-direction: column;
-            gap: 0.75rem;
+            gap: 1rem;
         }
-        .activity-item {
+        .routine-card {
+            background: #f8f9fa;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .routine-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0.75rem 1rem;
-            background: #f8f9fa;
-            border-radius: 8px;
+            margin-bottom: 0.75rem;
         }
-        .activity-date {
+        .routine-name {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .routine-count {
             color: #666;
             font-size: 0.85rem;
+        }
+        .routine-punch-card {
+            display: flex;
+            gap: 0.4rem;
+            margin-bottom: 0.5rem;
+        }
+        .punch {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+        .punch.done {
+            background: #28a745;
+            color: white;
+        }
+        .punch.pending {
+            background: #e9ecef;
+            color: #999;
+        }
+        .punch.skipped {
+            background: #f8d7da;
+            color: #dc3545;
+        }
+        .routine-metrics {
+            color: #495057;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .routine-comparison {
+            color: #28a745;
+            font-size: 0.8rem;
+            margin-top: 0.25rem;
+        }
+        .routine-comparison [data-negative] {
+            color: #dc3545;
         }
 
         /* Spirit Companion */
@@ -278,19 +326,20 @@
                 </div>
             </div>
 
-            <!-- Recent Activities -->
+            <!-- Routine Cards -->
             <div class="category">
                 <div class="category-header">
                     <span class="category-icon">📝</span>
-                    <h2>Recent Activities</h2>
+                    <h2>Routines</h2>
                 </div>
-                <div class="activity-list">
-                    <div class="activity-item"><span>🎺 Trumpet Practice (30 min)</span><span class="activity-date">Apr 14</span></div>
-<div class="activity-item"><span>🎷 Music Practice 7:30-9:30 PM (2h)</span><span class="activity-date">Apr 15</span></div>
-<div class="activity-item"><span>🧘 Yoga 7:00-7:30 PM (30 min)</span><span class="activity-date">Apr 15</span></div>
-<div class="activity-item"><span>🎺 Trumpet Practice (30 min)</span><span class="activity-date">Apr 14</span></div>
-<div class="activity-item"><span>🎺 🎺 Trumpet Practice (30 min)</span><span class="activity-date">Apr 13</span></div>
-<div class="activity-item"><span>🎹 Piano Practice 7:30-9:00 PM (1.5h)</span><span class="activity-date">Apr 13</span></div>
+                <div class="routine-cards">
+                    <div class="routine-card"><div class="routine-header"><span class="routine-name">🎷 Music Practice</span><span class="routine-count">1/1 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Wed">W</div></div></div>
+<div class="routine-card"><div class="routine-header"><span class="routine-name">🎹 Piano Practice</span><span class="routine-count">1/1 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Mon">M</div></div></div>
+<div class="routine-card"><div class="routine-header"><span class="routine-name">🧘 Pilates</span><span class="routine-count">0/1 sessions</span></div><div class="routine-punch-card"><div class="punch pending" title="Sat">S</div></div></div>
+<div class="routine-card"><div class="routine-header"><span class="routine-name">🧗 Rock Climbing</span><span class="routine-count">0/2 sessions</span></div><div class="routine-punch-card"><div class="punch skipped" title="Tue">T</div><div class="punch skipped" title="Thu">T</div></div></div>
+<div class="routine-card"><div class="routine-header"><span class="routine-name">🏃 Running</span><span class="routine-count">0/1 sessions</span></div><div class="routine-punch-card"><div class="punch pending" title="Sat">S</div></div></div>
+<div class="routine-card"><div class="routine-header"><span class="routine-name">🎺 Trumpet Practice</span><span class="routine-count">3/5 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Mon">M</div><div class="punch done" title="Tue">T</div><div class="punch done" title="Tue">T</div><div class="punch skipped" title="Thu">T</div><div class="punch skipped" title="Fri">F</div></div></div>
+<div class="routine-card"><div class="routine-header"><span class="routine-name">🧘 Yoga</span><span class="routine-count">1/1 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Wed">W</div></div></div>
                 </div>
             </div>
 
@@ -309,7 +358,7 @@
         </main>
 
         <footer>
-            <p>Last updated: Saturday, April 18, 2026 at 02:01</p>
+            <p>Last updated: Saturday, April 18, 2026 at 15:40</p>
             <p style="margin-top: 0.5rem; font-size: 0.8rem;">🕷️ Tracked by Tachi</p>
         </footer>
     </div>
