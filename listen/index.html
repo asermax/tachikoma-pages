@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen | Tachikoma Pages</title>
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background: #faf9f6;
+            color: #2c3e50;
+            padding-bottom: 80px;
+        }
+
+        .top-bar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: rgba(250, 249, 246, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e8e6e1;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .top-bar a {
+            color: #666;
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 0.9rem;
+        }
+        .top-bar a:hover { color: #2c3e50; }
+
+        .top-bar .title {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 0.85rem;
+            color: #999;
+            margin-left: auto;
+        }
+
+        #article {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        #article h1 {
+            font-size: 2rem;
+            line-height: 1.3;
+            margin-bottom: 0.75rem;
+            color: #1a1a1a;
+        }
+
+        #article .meta {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 0.85rem;
+            color: #999;
+            margin-bottom: 2rem;
+        }
+
+        #article p {
+            font-size: 1.15rem;
+            line-height: 1.85;
+            margin-bottom: 1.5rem;
+            color: #3a3a3a;
+        }
+
+        /* Player bar */
+        .player {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #1a1a2e;
+            color: #fff;
+            padding: 0;
+            z-index: 100;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.15);
+        }
+
+        .progress-track {
+            width: 100%;
+            height: 4px;
+            background: rgba(255,255,255,0.15);
+            cursor: pointer;
+            position: relative;
+        }
+
+        .progress-track:hover { height: 6px; }
+
+        .progress-fill {
+            height: 100%;
+            background: #e94560;
+            width: 0%;
+            transition: width 0.1s linear;
+            border-radius: 0 2px 2px 0;
+        }
+
+        .controls {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            gap: 0.75rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .play-btn {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.3rem;
+            cursor: pointer;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .play-btn:hover { background: rgba(255,255,255,0.1); }
+
+        .time {
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.6);
+            min-width: 80px;
+            flex-shrink: 0;
+        }
+
+        .speed-btn {
+            background: none;
+            border: 1px solid rgba(255,255,255,0.2);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.75rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .speed-btn:hover { border-color: rgba(255,255,255,0.4); color: #fff; }
+        .speed-btn.active { border-color: #e94560; color: #e94560; }
+
+        .spacer { flex: 1; }
+
+        /* Scroll progress indicator */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 2px;
+            background: #e94560;
+            z-index: 200;
+            width: 0%;
+            transition: width 0.1s linear;
+        }
+    </style>
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<div class="top-bar">
+    <a href="../">&larr; Home</a>
+    <span class="title">Listen</span>
+</div>
+
+<div id="article">
+    <h1 id="articleTitle">Loading...</h1>
+    <div class="meta" id="articleMeta"></div>
+    <div id="articleBody"></div>
+</div>
+
+<div class="player">
+    <div class="progress-track" id="progressTrack">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+    <div class="controls">
+        <button class="play-btn" id="playBtn">&#9654;</button>
+        <span class="time" id="timeDisplay">0:00 / 0:00</span>
+        <div class="spacer"></div>
+        <button class="speed-btn" data-speed="1">1x</button>
+        <button class="speed-btn" data-speed="1.25">1.25x</button>
+        <button class="speed-btn" data-speed="1.5">1.5x</button>
+    </div>
+</div>
+
+<audio id="audio" preload="auto"></audio>
+
+<script>
+const audio = document.getElementById('audio');
+const article = document.getElementById('article');
+const playBtn = document.getElementById('playBtn');
+const progressTrack = document.getElementById('progressTrack');
+const progressFill = document.getElementById('progressFill');
+const timeDisplay = document.getElementById('timeDisplay');
+const scrollProgress = document.getElementById('scrollProgress');
+const speedBtns = document.querySelectorAll('.speed-btn');
+
+let isPlaying = false;
+let isUserScrolling = false;
+let scrollTimeout;
+
+// Play / Pause
+playBtn.addEventListener('click', () => {
+    if (isPlaying) {
+        audio.pause();
+    } else {
+        audio.play();
+    }
+});
+
+audio.addEventListener('play', () => {
+    isPlaying = true;
+    playBtn.innerHTML = '&#9646;&#9646;';
+});
+
+audio.addEventListener('pause', () => {
+    isPlaying = false;
+    playBtn.innerHTML = '&#9654;';
+});
+
+audio.addEventListener('ended', () => {
+    isPlaying = false;
+    playBtn.innerHTML = '&#9654;';
+    progressFill.style.width = '100%';
+});
+
+// Time formatting
+function fmt(s) {
+    if (isNaN(s)) return '0:00';
+    const m = Math.floor(s / 60);
+    const sec = Math.floor(s % 60);
+    return `${m}:${sec.toString().padStart(2, '0')}`;
+}
+
+// Auto-scroll synced to audio progress
+audio.addEventListener('timeupdate', () => {
+    if (!audio.duration) return;
+    const pct = audio.currentTime / audio.duration;
+
+    progressFill.style.width = `${pct * 100}%`;
+    scrollProgress.style.width = `${pct * 100}%`;
+    timeDisplay.textContent = `${fmt(audio.currentTime)} / ${fmt(audio.duration)}`;
+
+    if (!isUserScrolling) {
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        window.scrollTo({
+            top: maxScroll * pct,
+            behavior: 'smooth'
+        });
+    }
+});
+
+// Seek on progress bar click
+progressTrack.addEventListener('click', (e) => {
+    if (!audio.duration) return;
+    const rect = progressTrack.getBoundingClientRect();
+    const pct = (e.clientX - rect.left) / rect.width;
+    audio.currentTime = pct * audio.duration;
+});
+
+// Speed controls
+speedBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const speed = parseFloat(btn.dataset.speed);
+        audio.playbackRate = speed;
+        speedBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+    });
+});
+speedBtns[0].classList.add('active');
+
+// Detect manual scrolling — pause auto-scroll briefly
+window.addEventListener('wheel', () => {
+    isUserScrolling = true;
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+        isUserScrolling = false;
+    }, 3000);
+}, { passive: true });
+
+window.addEventListener('touchmove', () => {
+    isUserScrolling = true;
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+        isUserScrolling = false;
+    }, 3000);
+}, { passive: true });
+
+// Load article data
+async function loadArticle() {
+    try {
+        const res = await fetch('article.json');
+        const data = await res.json();
+
+        document.getElementById('articleTitle').textContent = data.title;
+        document.getElementById('articleMeta').textContent = data.meta || '';
+        document.getElementById('articleBody').innerHTML = data.body;
+        document.title = `${data.title} | Listen | Tachikoma Pages`;
+
+        audio.src = data.audio;
+    } catch (e) {
+        document.getElementById('articleTitle').textContent = 'Failed to load article';
+        document.getElementById('articleBody').innerHTML = '<p>Could not load the article data.</p>';
+    }
+}
+
+loadArticle();
+</script>
+</body>
+</html>
