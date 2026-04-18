@@ -107,10 +107,17 @@ ARTICLES.forEach(a => {
     const div = document.createElement('div');
     div.className = 'archive-item';
 
-    const saved = localStorage.getItem('listen_' + a.slug);
-    const badge = saved && parseFloat(saved) > 1
-        ? ' <span class="saved-badge">In progress</span>'
-        : '';
+    const saved = parseFloat(localStorage.getItem('listen_' + a.slug) || 0);
+    const duration = parseFloat(localStorage.getItem('listen_dur_' + a.slug) || 0);
+    let badge = '';
+
+    if (saved > 1 && duration > 0) {
+        const remaining = duration - saved;
+        const m = Math.floor(remaining / 60);
+        const s = Math.floor(remaining % 60);
+        const label = m > 0 ? `${m}m ${s}s left` : `${s}s left`;
+        badge = ` <span class="saved-badge">${label}</span>`;
+    }
 
     div.innerHTML = `<h3>${a.title}${badge}</h3><div class="archive-meta">${a.meta}</div>`;
     div.addEventListener('click', () => {

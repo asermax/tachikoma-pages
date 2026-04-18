@@ -70,40 +70,21 @@
             color: #3a3a3a;
         }
 
-        /* Focus overlay — solid brown band covering center 50vh */
+        /* Focus overlay — brown band on center, 10% from top */
         .focus-overlay {
             position: fixed;
-            top: 0;
+            top: 10vh;
             left: 0;
             right: 0;
-            bottom: 0;
+            height: 50vh;
             pointer-events: none;
             z-index: 50;
+            background: rgba(139, 90, 43, 0.35);
             opacity: 0;
             transition: opacity 0.3s ease;
         }
 
         .focus-overlay.active { opacity: 1; }
-
-        .focus-overlay::before,
-        .focus-overlay::after {
-            content: '';
-            position: fixed;
-            left: 0;
-            right: 0;
-        }
-
-        .focus-overlay::before {
-            top: 0;
-            height: 25vh;
-            background: rgba(139, 90, 43, 0.35);
-        }
-
-        .focus-overlay::after {
-            bottom: 0;
-            height: 25vh;
-            background: rgba(139, 90, 43, 0.35);
-        }
 
         /* Follow from here button */
         .follow-btn {
@@ -249,7 +230,7 @@
 
         .spacer { flex: 1; }
 
-        .resume-btn {
+        .reset-btn {
             background: none;
             border: 1px solid rgba(255,255,255,0.2);
             color: rgba(255,255,255,0.7);
@@ -260,7 +241,7 @@
             flex-shrink: 0;
             font-family: inherit;
         }
-        .resume-btn:hover { border-color: rgba(255,255,255,0.4); color: #fff; }
+        .reset-btn:hover { border-color: rgba(255,255,255,0.4); color: #fff; }
 
         /* Scroll progress indicator */
         .scroll-progress {
@@ -326,7 +307,7 @@
         </button>
         <span class="time" id="timeDisplay">0:00 / 0:00</span>
         <div class="spacer"></div>
-        <button class="resume-btn" id="resumeBtn" title="Resume saved position" style="display:none">&#8634; Resume</button>
+        <button class="reset-btn" id="resetBtn" title="Reset to beginning" style="display:none">&#8634; Reset</button>
         <button class="speed-btn" data-speed="1">1x</button>
         <button class="speed-btn" data-speed="1.25">1.25x</button>
         <button class="speed-btn" data-speed="1.5">1.5x</button>
@@ -348,11 +329,11 @@ const speedBtns = document.querySelectorAll('.speed-btn');
 const followBtn = document.getElementById('followBtn');
 const focusToggle = document.getElementById('focusToggle');
 const focusOverlay = document.getElementById('focusOverlay');
-const resumeBtn = document.getElementById('resumeBtn');
+const resetBtn = document.getElementById('resetBtn');
 
 let isPlaying = false;
 let isUserScrolling = false;
-let focusActive = false;
+let focusActive = localStorage.getItem('listen_focus') === 'true';
 let scrollTimeout;
 let currentArticle = null;
 
@@ -405,8 +386,11 @@ audio.addEventListener('ended', () => {
     progressFill.style.width = '100%';
     scrollProgress.style.width = '100%';
     if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
-    if (currentArticle) localStorage.removeItem('listen_' + currentArticle);
-    resumeBtn.style.display = 'none';
+    if (currentArticle) {
+        localStorage.removeItem('listen_' + currentArticle);
+        localStorage.removeItem('listen_dur_' + currentArticle);
+    }
+    resetBtn.style.display = 'none';
 });
 
 function fmt(s) {
@@ -433,6 +417,8 @@ audio.addEventListener('timeupdate', () => {
     // Auto-save position every ~5s while playing
     if (isPlaying && currentArticle) {
         localStorage.setItem('listen_' + currentArticle, audio.currentTime);
+        localStorage.setItem('listen_dur_' + currentArticle, audio.duration);
+        if (audio.currentTime > 1) resetBtn.style.display = '';
     }
 });
 
@@ -482,24 +468,29 @@ followBtn.addEventListener('click', () => {
     clearTimeout(scrollTimeout);
 });
 
-// Focus toggle
+// Focus toggle — persisted globally in localStorage
 focusToggle.addEventListener('click', () => {
     focusActive = !focusActive;
     focusOverlay.classList.toggle('active', focusActive);
     focusToggle.classList.toggle('active', focusActive);
+    localStorage.setItem('listen_focus', focusActive);
 });
 
-// Resume saved position
-resumeBtn.addEventListener('click', () => {
+// Restore focus state on load
+if (focusActive) {
+    focusOverlay.classList.add('active');
+    focusToggle.classList.add('active');
+}
+
+// Reset to beginning
+resetBtn.addEventListener('click', () => {
     if (!currentArticle) return;
-    const saved = localStorage.getItem('listen_' + currentArticle);
-    if (saved) {
-        const t = parseFloat(saved);
-        audio.currentTime = t;
-        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-        setTargetScroll((t / audio.duration) * maxScroll);
-        audio.play();
-    }
+    audio.currentTime = 0;
+    setTargetScroll(0);
+    window.scrollTo(0, 0);
+    localStorage.removeItem('listen_' + currentArticle);
+    localStorage.removeItem('listen_dur_' + currentArticle);
+    resetBtn.style.display = 'none';
 });
 
 // Article loading
@@ -523,7 +514,7 @@ async function loadArticle(slug) {
         followBtn.classList.remove('visible');
 
         const saved = localStorage.getItem('listen_' + slug);
-        resumeBtn.style.display = (saved && parseFloat(saved) > 1) ? '' : 'none';
+        resetBtn.style.display = (saved && parseFloat(saved) > 1) ? '' : 'none';
     } catch (e) {
         document.getElementById('articleTitle').textContent = 'Failed to load article';
         document.getElementById('articleBody').innerHTML = '<p>Could not load the article data.</p>';
