@@ -383,12 +383,13 @@ function getHeaderHeight() {
     return document.querySelector('.top-bar').offsetHeight;
 }
 
-function updateFocusPosition(pct) {
+function getFocusTop(pct) {
     const headerH = getHeaderHeight();
-    const focusH = window.innerHeight * 0.3;
-    const minTop = headerH;
-    const maxTop = window.innerHeight - focusH;
-    focusOverlay.style.top = `${minTop + (maxTop - minTop) * pct}px`;
+    const bandH = window.innerHeight * 0.3;
+    const centerTop = (window.innerHeight - bandH) / 2;
+    // Slide from header to center, reaching center at ~20% progress
+    const t = Math.min(1, pct * 5);
+    return headerH + (centerTop - headerH) * t;
 }
 
 function resetFocusToTop() {
@@ -398,8 +399,10 @@ function resetFocusToTop() {
 function scrollToChunk(index) {
     if (index < 0 || index >= paragraphs.length) return;
     isAutoScrolling = true;
-    // Scroll new chunk to center of viewport for natural reading
-    const targetY = paragraphs[index].offsetTop - window.innerHeight / 2;
+    // Position paragraph at the focus band's current top
+    const pct = audio.duration ? audio.currentTime / audio.duration : 0;
+    const focusTop = getFocusTop(pct);
+    const targetY = paragraphs[index].offsetTop - focusTop;
     window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
     setTimeout(() => { isAutoScrolling = false; }, 600);
 }
@@ -462,7 +465,7 @@ audio.addEventListener('timeupdate', () => {
             currentChunkIndex = newChunk;
             scrollToChunk(newChunk);
         }
-        updateFocusPosition(pct);
+        focusOverlay.style.top = `${getFocusTop(pct)}px`;
     }
 
     // Auto-save position
