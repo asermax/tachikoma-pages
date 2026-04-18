@@ -70,10 +70,9 @@
             color: #3a3a3a;
         }
 
-        /* Focus overlay — brown band, 30% height, starts at 10% from top */
+        /* Focus overlay — brown band, slides from top to bottom with progress */
         .focus-overlay {
             position: fixed;
-            top: 10vh;
             left: 0;
             right: 0;
             height: 30vh;
@@ -81,7 +80,7 @@
             z-index: 50;
             background: rgba(139, 90, 43, 0.35);
             opacity: 0;
-            transition: opacity 0.3s ease, top 0.5s ease;
+            transition: opacity 0.3s ease;
         }
 
         .focus-overlay.active { opacity: 1; }
@@ -380,11 +379,26 @@ function getCurrentChunk(pct) {
     return Math.max(0, chunkBoundaries.length - 2);
 }
 
+function getHeaderHeight() {
+    return document.querySelector('.top-bar').offsetHeight;
+}
+
+function updateFocusPosition(pct) {
+    const headerH = getHeaderHeight();
+    const focusH = window.innerHeight * 0.3;
+    const minTop = headerH;
+    const maxTop = window.innerHeight - focusH;
+    focusOverlay.style.top = `${minTop + (maxTop - minTop) * pct}px`;
+}
+
+function resetFocusToTop() {
+    focusOverlay.style.top = `${getHeaderHeight()}px`;
+}
+
 function scrollToChunk(index) {
     if (index < 0 || index >= paragraphs.length) return;
     isAutoScrolling = true;
     paragraphs[index].scrollIntoView({ behavior: 'smooth', block: 'start' });
-    focusOverlay.style.top = '0';
     setTimeout(() => { isAutoScrolling = false; }, 600);
 }
 
@@ -446,6 +460,7 @@ audio.addEventListener('timeupdate', () => {
             currentChunkIndex = newChunk;
             scrollToChunk(newChunk);
         }
+        updateFocusPosition(pct);
     }
 
     // Auto-save position
@@ -486,7 +501,7 @@ function onManualScroll() {
     if (isAutoScrolling || !isPlaying || !audio.duration) return;
     isUserScrolling = true;
     followBtn.classList.add('visible');
-    focusOverlay.style.top = '10vh';
+    resetFocusToTop();
     clearTimeout(scrollTimeout);
     scrollTimeout = setTimeout(() => {
         isUserScrolling = false;
@@ -539,7 +554,7 @@ resetBtn.addEventListener('click', () => {
     audio.currentTime = 0;
     currentChunkIndex = 0;
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    focusOverlay.style.top = '10vh';
+    resetFocusToTop();
     localStorage.removeItem('listen_' + currentArticle);
     localStorage.removeItem('listen_dur_' + currentArticle);
     resetBtn.style.display = 'none';
@@ -568,7 +583,7 @@ async function loadArticle(slug) {
         isUserScrolling = false;
         isAutoScrolling = false;
         followBtn.classList.remove('visible');
-        focusOverlay.style.top = '10vh';
+        resetFocusToTop();
 
         // Setup chunk boundaries from paragraph elements
         setupChunks();
