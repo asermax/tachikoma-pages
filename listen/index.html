@@ -336,10 +336,26 @@ let isUserScrolling = false;
 let focusActive = localStorage.getItem('listen_focus') === 'true';
 let scrollTimeout;
 let currentArticle = null;
+let wakeLock = null;
 
 // Smooth scroll via requestAnimationFrame
 let targetScrollY = 0;
 let rafId = null;
+
+// Screen wake lock — prevent sleep while playing
+async function requestWakeLock() {
+    if (!('wakeLock' in navigator)) return;
+    try { wakeLock = await navigator.wakeLock.request('screen'); } catch {}
+}
+
+function releaseWakeLock() {
+    if (wakeLock) { wakeLock.release(); wakeLock = null; }
+}
+
+// Re-acquire wake lock when tab becomes visible again
+document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible' && isPlaying) requestWakeLock();
+});
 
 function animateScroll() {
     const diff = targetScrollY - window.scrollY;
@@ -371,12 +387,14 @@ audio.addEventListener('play', () => {
     playIcon.style.display = 'none';
     pauseIcon.style.display = '';
     if (!rafId) rafId = requestAnimationFrame(animateScroll);
+    requestWakeLock();
 });
 
 audio.addEventListener('pause', () => {
     isPlaying = false;
     playIcon.style.display = '';
     pauseIcon.style.display = 'none';
+    releaseWakeLock();
 });
 
 audio.addEventListener('ended', () => {
@@ -386,6 +404,7 @@ audio.addEventListener('ended', () => {
     progressFill.style.width = '100%';
     scrollProgress.style.width = '100%';
     if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+    releaseWakeLock();
     if (currentArticle) {
         localStorage.removeItem('listen_' + currentArticle);
         localStorage.removeItem('listen_dur_' + currentArticle);
