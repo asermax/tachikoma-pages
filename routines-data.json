@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-18T15:40:11.859961-03:00",
-  "week_start": "2026-04-12",
-  "week_label": "April 12 - April 18, 2026",
+  "generated_at": "2026-04-19T11:54:57.113023-03:00",
+  "week_start": "2026-04-19",
+  "week_label": "April 19 - April 25, 2026",
   "stats": {
-    "completed": 6,
-    "planned": 10,
-    "skipped": 4
+    "completed": 0,
+    "planned": 0,
+    "skipped": 0
   },
   "daily": {
     "Sunday": {
@@ -14,35 +14,35 @@
       "total": 0
     },
     "Monday": {
-      "status": "done",
-      "completed": 2,
-      "total": 2
+      "status": "missed",
+      "completed": 0,
+      "total": 4
     },
     "Tuesday": {
-      "status": "partial",
-      "completed": 1,
+      "status": "missed",
+      "completed": 0,
       "total": 2
     },
     "Wednesday": {
-      "status": "done",
-      "completed": 3,
-      "total": 3
-    },
-    "Thursday": {
       "status": "missed",
       "completed": 0,
       "total": 2
     },
-    "Friday": {
-      "status": "missed",
+    "Thursday": {
+      "status": "empty",
       "completed": 0,
-      "total": 1
+      "total": 0
+    },
+    "Friday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Saturday": {
       "status": "missed",
       "completed": 0,
-      "total": 2
+      "total": 1
     }
   },
-  "spirit_state": "content"
+  "spirit_state": "dormant"
 }
