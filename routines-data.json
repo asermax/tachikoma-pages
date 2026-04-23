@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-22T02:01:50.587309-03:00",
+  "generated_at": "2026-04-23T02:02:04.548508-03:00",
   "week_start": "2026-04-19",
   "week_label": "April 19 - April 25, 2026",
   "stats": {
     "completed": 6,
-    "planned": 6,
-    "skipped": 0
+    "planned": 8,
+    "skipped": 2
   },
   "daily": {
     "Sunday": {
@@ -44,5 +44,5 @@
       "total": 1
     }
   },
-  "spirit_state": "thriving"
+  "spirit_state": "content"
 }
