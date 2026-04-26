@@ -532,9 +532,11 @@ async function loadArticle(slug) {
         document.getElementById('articleBody').innerHTML = '<p>Could not load the article data.</p>';
     }
 }
-
+</script>
+<script src="articles.js"></script>
+<script>
 const params = new URLSearchParams(window.location.search);
-const slug = params.get('article') || 'resonant-computing';
+const slug = params.get('article') || ARTICLES[0].slug;
 loadArticle(slug);
 </script>
 </body>
