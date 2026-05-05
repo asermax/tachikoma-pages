@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-04T02:01:43.283799-03:00",
+  "generated_at": "2026-05-05T02:01:56.890041-03:00",
   "week_start": "2026-05-03",
   "week_label": "May 03 - May 09, 2026",
   "stats": {
     "completed": 0,
     "planned": 0,
-    "skipped": 0
+    "skipped": 1
   },
   "daily": {
     "Sunday": {
@@ -14,14 +14,14 @@
       "total": 0
     },
     "Monday": {
-      "status": "missed",
-      "completed": 0,
-      "total": 4
+      "status": "partial",
+      "completed": 1,
+      "total": 3
     },
     "Tuesday": {
       "status": "missed",
       "completed": 0,
-      "total": 3
+      "total": 4
     },
     "Wednesday": {
       "status": "missed",
