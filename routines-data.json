@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T02:01:22.477181-03:00",
+  "generated_at": "2026-05-07T02:25:56.476067-03:00",
   "week_start": "2026-05-03",
   "week_label": "May 03 - May 09, 2026",
   "stats": {
@@ -24,8 +24,8 @@
       "total": 4
     },
     "Wednesday": {
-      "status": "missed",
-      "completed": 0,
+      "status": "done",
+      "completed": 2,
       "total": 2
     },
     "Thursday": {
