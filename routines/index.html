@@ -215,6 +215,57 @@
             color: #dc3545;
         }
 
+        /* Goal Cards */
+        .goal-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .goal-card {
+            background: #f8f9fa;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .goal-card.done {
+            border-left-color: #28a745;
+        }
+        .goal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        .goal-name {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .goal-count {
+            color: #666;
+            font-size: 0.85rem;
+        }
+        .goal-progress {
+            width: 100%;
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+        }
+        .goal-bar {
+            height: 100%;
+            background: #ffc107;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+        .goal-card.done .goal-bar {
+            background: #28a745;
+        }
+        .goal-detail {
+            color: #495057;
+            font-size: 0.85rem;
+        }
+
         /* Spirit Companion */
         .spirit-section {
             background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
@@ -304,7 +355,7 @@
             <!-- Stats Overview -->
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-number">7 / 8</div>
+                    <div class="stat-number">9 / 12</div>
                     <div class="stat-label">Completed / Planned</div>
                 </div>
             </div>
@@ -321,8 +372,19 @@
 <div class="day-column"><div class="day-header">Tue</div><div class="day-cell done">4</div></div>
 <div class="day-column"><div class="day-header">Wed</div><div class="day-cell done">2</div></div>
 <div class="day-column"><div class="day-header">Thu</div><div class="day-cell partial">2</div></div>
-<div class="day-column"><div class="day-header">Fri</div><div class="day-cell today">·</div></div>
-<div class="day-column"><div class="day-header">Sat</div><div class="day-cell">·</div></div>
+<div class="day-column"><div class="day-header">Fri</div><div class="day-cell done">1</div></div>
+<div class="day-column"><div class="day-header">Sat</div><div class="day-cell today">·</div></div>
+                </div>
+            </div>
+
+            <!-- Weekly Goals -->
+            <div class="category" id="goals-section">
+                <div class="category-header">
+                    <span class="category-icon">🎯</span>
+                    <h2>Weekly Goals</h2>
+                </div>
+                <div class="goal-cards">
+                    
                 </div>
             </div>
 
@@ -335,10 +397,11 @@
                 <div class="routine-cards">
                     <div class="routine-card"><div class="routine-header"><span class="routine-name">🎵 Music Practice</span><span class="routine-count">1/1 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Wed">W</div></div></div>
 <div class="routine-card"><div class="routine-header"><span class="routine-name">🎹 Piano Practice</span><span class="routine-count">1/1 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Mon">M</div></div><div class="routine-metrics">1.5h</div></div>
+<div class="routine-card"><div class="routine-header"><span class="routine-name">📖 Reading</span><span class="routine-count">1/1 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Sat">S</div></div><div class="routine-metrics">10min</div></div>
 <div class="routine-card"><div class="routine-header"><span class="routine-name">📖 Reading</span><span class="routine-count">2/2 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Tue">T</div><div class="punch done" title="Thu">T</div></div><div class="routine-metrics">65min</div></div>
 <div class="routine-card"><div class="routine-header"><span class="routine-name">🧗 Rock Climbing</span><span class="routine-count">2/2 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Tue">T</div><div class="punch done" title="Thu">T</div></div></div>
 <div class="routine-card"><div class="routine-header"><span class="routine-name">🏃 Running</span><span class="routine-count">0/1 sessions</span></div><div class="routine-punch-card"><div class="punch skipped" title="Thu">T</div></div></div>
-<div class="routine-card"><div class="routine-header"><span class="routine-name">🎺 Trumpet Practice</span><span class="routine-count">2/5 sessions</span></div><div class="routine-punch-card"><div class="punch skipped" title="Mon">M</div><div class="punch done" title="Tue">T</div><div class="punch done" title="Wed">W</div><div class="punch skipped" title="Thu">T</div><div class="punch pending" title="Fri">F</div></div></div>
+<div class="routine-card"><div class="routine-header"><span class="routine-name">🎺 Trumpet Practice</span><span class="routine-count">3/5 sessions</span></div><div class="routine-punch-card"><div class="punch skipped" title="Mon">M</div><div class="punch done" title="Tue">T</div><div class="punch done" title="Wed">W</div><div class="punch skipped" title="Thu">T</div><div class="punch done" title="Fri">F</div></div><div class="routine-metrics">30min</div><div class="routine-comparison">vs last week: -50.0min</div></div>
 <div class="routine-card"><div class="routine-header"><span class="routine-name">🧘 Yoga</span><span class="routine-count">1/1 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Tue">T</div></div></div>
                 </div>
             </div>
@@ -346,9 +409,9 @@
             <!-- Spirit Companion -->
             <div class="spirit-section">
                 <div class="spirit-title">🐇 Autumn Bunny</div>
-                <img src="assets/thriving.jpg" alt="Spirit Companion" class="spirit-image">
-                <div class="spirit-state">thriving</div>
-                <div class="spirit-description">Your autumn bunny is full of energy, hopping through golden leaves with ears perked high and a warm glow in its eyes.</div>
+                <img src="assets/content.jpg" alt="Spirit Companion" class="spirit-image">
+                <div class="spirit-state">content</div>
+                <div class="spirit-description">Your autumn bunny is cozy and content, nestled comfortably among the falling leaves with a gentle smile.</div>
             </div>
 
             <!-- Archive Link -->
@@ -358,7 +421,7 @@
         </main>
 
         <footer>
-            <p>Last updated: Friday, May 08, 2026 at 02:01</p>
+            <p>Last updated: Saturday, May 09, 2026 at 02:01</p>
             <p style="margin-top: 0.5rem; font-size: 0.8rem;">🕷️ Tracked by Tachi</p>
         </footer>
     </div>
