@@ -63,20 +63,139 @@
             margin-bottom: 2rem;
         }
 
-        #article p {
-            font-size: 1.15rem;
-            line-height: 1.85;
+        #article .chunk {
             margin-bottom: 1.5rem;
-            color: #3a3a3a;
             padding: 0.4rem 0.6rem;
             border-radius: 6px;
             transition: background 0.5s ease, color 0.5s ease;
         }
 
-        #article p.reading {
+        #article .chunk.reading {
             background: rgba(139, 90, 43, 0.12);
+        }
+
+        #article .chunk p {
+            font-size: 1.15rem;
+            line-height: 1.85;
+            color: #3a3a3a;
+            margin: 0;
+        }
+
+        /* Markdown elements inside chunks */
+        #article h1, #article h2, #article h3, #article h4 {
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.3;
             color: #1a1a1a;
         }
+        #article h1 { font-size: 1.8rem; margin: 0.6rem 0 0.3rem; }
+        #article h2 { font-size: 1.5rem; margin: 0.5rem 0 0.3rem; }
+        #article h3 { font-size: 1.25rem; margin: 0.4rem 0 0.2rem; }
+
+        #article a { color: #2563eb; text-decoration: none; }
+        #article a:hover { text-decoration: underline; }
+        #article strong { font-weight: 600; }
+        #article em { font-style: italic; }
+
+        #article blockquote {
+            margin: 0;
+            padding: 0.3rem 1rem;
+            border-left: 3px solid #d1d5db;
+            color: #4b5563;
+            background: #f9fafb;
+        }
+        #article blockquote p { color: #4b5563; font-style: italic; }
+
+        #article ul, #article ol {
+            margin: 0;
+            padding-left: 1.5em;
+            color: #3a3a3a;
+        }
+        #article li { margin: 0.15rem 0; }
+        #article li p { display: inline; }
+
+        #article code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9em;
+        }
+        #article p code, #article li code {
+            background: #f3f4f6;
+            padding: 0.1em 0.3em;
+            border-radius: 3px;
+        }
+
+        #article pre {
+            margin: 0;
+            padding: 0.8em 1em;
+            background: #1e1e2e;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        #article pre code {
+            color: #cdd6f4;
+            font-size: 0.85em;
+            line-height: 1.5;
+        }
+
+        /* Pygments token colors */
+        #article pre code .tok-k { color: #cba6f7; }
+        #article pre code .tok-kc { color: #f38ba8; }
+        #article pre code .tok-kd { color: #cba6f7; }
+        #article pre code .tok-kn { color: #f38ba8; }
+        #article pre code .tok-kp { color: #cba6f7; }
+        #article pre code .tok-kr { color: #cba6f7; }
+        #article pre code .tok-kt { color: #89b4fa; }
+        #article pre code .tok-n { color: #cdd6f4; }
+        #article pre code .tok-nb { color: #fab387; }
+        #article pre code .tok-nc { color: #89b4fa; }
+        #article pre code .tok-nf { color: #89b4fa; }
+        #article pre code .tok-ni { color: #f9e2af; }
+        #article pre code .tok-nl { color: #cdd6f4; }
+        #article pre code .tok-no { color: #fab387; }
+        #article pre code .tok-nt { color: #89b4fa; }
+        #article pre code .tok-nv { color: #fab387; }
+        #article pre code .tok-s { color: #a6e3a1; }
+        #article pre code .tok-s1 { color: #a6e3a1; }
+        #article pre code .tok-s2 { color: #a6e3a1; }
+        #article pre code .tok-sb { color: #a6e3a1; }
+        #article pre code .tok-sc { color: #a6e3a1; }
+        #article pre code .tok-sd { color: #6c7086; }
+        #article pre code .tok-se { color: #f38ba8; }
+        #article pre code .tok-sh { color: #a6e3a1; }
+        #article pre code .tok-si { color: #a6e3a1; }
+        #article pre code .tok-sr { color: #89dceb; }
+        #article pre code .tok-ss { color: #a6e3a1; }
+        #article pre code .tok-c, #article pre code .tok-c1, #article pre code .tok-cm, #article pre code .tok-cp, #article pre code .tok-cs { color: #6c7086; font-style: italic; }
+        #article pre code .tok-err { color: #f38ba8; }
+        #article pre code .tok-m { color: #fab387; }
+        #article pre code .tok-mf { color: #fab387; }
+        #article pre code .tok-mi { color: #fab387; }
+        #article pre code .tok-mo { color: #fab387; }
+        #article pre code .tok-o { color: #89dceb; }
+        #article pre code .tok-ow { color: #89dceb; }
+        #article pre code .tok-p { color: #6c7086; }
+        #article pre code .tok-w { color: #6c7086; }
+
+        #article table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 0.4rem 0;
+            font-size: 0.95em;
+        }
+        #article th, #article td {
+            border: 1px solid #d1d5db;
+            padding: 0.4em 0.6em;
+            text-align: left;
+        }
+        #article th { background: #f3f4f6; font-weight: 600; }
+        #article tr:nth-child(even) { background: #f9fafb; }
+
+        #article hr {
+            border: none;
+            border-top: 1px solid #d1d5db;
+            margin: 0.5rem 0;
+        }
+
+        #article sup { font-size: 0.75em; color: #999; }
 
         /* Follow from here button */
         .follow-btn {
@@ -305,7 +424,7 @@ document.addEventListener('visibilitychange', () => {
 // ── Chunk-based scroll + highlight ──
 
 function setupChunks() {
-    paragraphs = Array.from(document.querySelectorAll('#articleBody p'));
+    paragraphs = Array.from(document.querySelectorAll('#articleBody .chunk'));
     if (paragraphs.length === 0) return;
 
     const chunkChars = paragraphs.map(p => p.textContent.length);
