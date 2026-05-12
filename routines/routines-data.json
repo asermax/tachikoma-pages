@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T02:01:27.932274-03:00",
+  "generated_at": "2026-05-12T02:01:27.285657-03:00",
   "week_start": "2026-05-10",
   "week_label": "May 10 - May 16, 2026",
   "stats": {
@@ -14,8 +14,8 @@
       "total": 0
     },
     "Monday": {
-      "status": "missed",
-      "completed": 0,
+      "status": "partial",
+      "completed": 1,
       "total": 2
     },
     "Tuesday": {
@@ -46,9 +46,9 @@
   },
   "goals": [
     {
-      "name": "\ud83c\udfba Trumpet Practice",
+      "name": "\ud83c\udfbaTrumpet Practice",
       "status": "pending",
-      "accumulated": "0min",
+      "accumulated": "20min",
       "target": "90min"
     },
     {
