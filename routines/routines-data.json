@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-13T02:02:04.531301-03:00",
+  "generated_at": "2026-05-14T02:02:22.693602-03:00",
   "week_start": "2026-05-10",
   "week_label": "May 10 - May 16, 2026",
   "stats": {
-    "completed": 3.0,
-    "planned": 4,
+    "completed": 5.75,
+    "planned": 6,
     "skipped": 0
   },
   "daily": {
@@ -24,8 +24,8 @@
       "total": 2
     },
     "Wednesday": {
-      "status": "missed",
-      "completed": 0,
+      "status": "partial",
+      "completed": 1,
       "total": 2
     },
     "Thursday": {
@@ -48,15 +48,15 @@
     {
       "name": "\ud83c\udfbaTrumpet Practice",
       "status": "pending",
-      "accumulated": "50min",
+      "accumulated": "65min",
       "target": "90min"
     },
     {
-      "name": "\ud83d\udcd6 Reading",
+      "name": "\ud83d\udcd6Reading",
       "status": "pending",
-      "accumulated": "0min",
+      "accumulated": "15min",
       "target": "60min"
     }
   ],
-  "spirit_state": "content"
+  "spirit_state": "thriving"
 }
