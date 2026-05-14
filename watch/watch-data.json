@@ -1,0 +1,455 @@
+{
+  "generated_at": "2026-05-14",
+  "queue": [
+    {
+      "slug": "claude-opus-47-a-new-frontier-in-performance-and-drama",
+      "title": "Claude Opus 4.7 - A New Frontier, in Performance \u2026 and Drama",
+      "url": "https://www.youtube.com/watch?v=QVJcdfkRpH8",
+      "video_id": "QVJcdfkRpH8",
+      "channel": "AI Explained",
+      "summary": "Examines the launch of Claude Opus 4.7, analyzing benchmark results and contrasting capabilities with previous versions and rival models. Explores performance gains in coding and professional sectors, regressions in long-context reasoning, and the implementation of adaptive thinking. AI professionals, researchers, and technology enthusiasts will find this detailed comparison useful.",
+      "added": "2026-04-18",
+      "times_shown": 0
+    },
+    {
+      "slug": "harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan",
+      "title": "Harness Engineering: How to Build Software When Humans Steer, Agents Execute \u2014\u00a0Ryan Lopopolo, OpenAI",
+      "url": "https://www.youtube.com/watch?v=am_oeAoUhew",
+      "video_id": "am_oeAoUhew",
+      "channel": "AI Engineer",
+      "summary": "Ryan Lopopolo from OpenAI explores the paradigm shift where AI agents handle code implementation. He argues that human engineers must evolve from writing code to steering systems, designing guardrails, and managing AI agent teams. Key takeaway: human attention is now the most scarce resource in engineering. Beneficial for software engineers and tech leaders adapting to AI-assisted development.",
+      "added": "2026-04-18",
+      "times_shown": 0
+    },
+    {
+      "slug": "how-the-iran-war-spiked-oil-prices",
+      "title": "How the Iran War Spiked Oil Prices",
+      "url": "https://www.youtube.com/watch?v=5qjvluMnyAw",
+      "video_id": "5qjvluMnyAw",
+      "channel": "Wendover Productions",
+      "summary": "Examines the geopolitical and economic consequences of shutting down the Strait of Hormuz. While the Strait handles 20% of the world's oil, global production only fell by 8% due to strategic bypass pipelines. Discusses demand elasticity to explain why even small supply drops cause massive price spikes. Beneficial for students of economics, geopolitics, and international relations.",
+      "added": "2026-04-18",
+      "times_shown": 0
+    },
+    {
+      "slug": "rezero-season-3-full-recap-everything-you-need-to-know-for-season-4",
+      "title": "Re:ZERO Season 3 Full Recap | Everything You Need To Know For Season 4",
+      "url": "https://www.youtube.com/watch?v=_OLyeDp73x0",
+      "video_id": "_OLyeDp73x0",
+      "channel": "AniNews",
+      "summary": "This video provides a detailed summary of the Watergate City of Priestella arc from Re:Zero, covering the Emilia camp's diplomatic mission and the ensuing battle against the Witch Cult. It highlights major plot points, such as Subaru's limited use of Return by Death and his evolution into a hero for the masses, while resolving personal subplots for characters like Wilhelm and Garfield. Fans of the series looking for a concise refresher on character growth and arc outcomes before continuing the story will find this summary particularly beneficial.",
+      "added": "2026-04-18",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-funny-thing-about-frierens-magic",
+      "title": "The funny thing about Frieren's magic",
+      "url": "https://www.youtube.com/watch?v=qmHdwkmyOF0",
+      "video_id": "qmHdwkmyOF0",
+      "channel": "pey talks anime",
+      "summary": "Explores how Frieren: Beyond Journey's End uses magic and immortality as catalysts to examine the human condition. The diverse perspectives of elven characters \u2014 Frieren's struggle with apathy, Serie's drive for control \u2014 serve as exaggerated mirrors for universal human experiences like loss, regret, and the search for meaning. Beneficial for fans of the series and anyone interested in philosophical and literary analysis of modern anime.",
+      "added": "2026-04-18",
+      "times_shown": 0
+    },
+    {
+      "slug": "stanford-cs229-i-machine-learning-i-building-large-language-models-llms",
+      "title": "Stanford CS229 I Machine Learning I Building Large Language Models (LLMs)",
+      "url": "https://www.youtube.com/watch?v=9vM4p9NN0Ts",
+      "video_id": "9vM4p9NN0Ts",
+      "channel": "Stanford Online",
+      "summary": "This video features Yann Dubois from Stanford Engineering discussing the core components involved in building Large Language Models (LLMs). He breaks down the five key factors of LLM development\u2014architecture, training algorithms, data, evaluation, and systems\u2014while emphasizing the practical importance of data and evaluation in industry. The lecture covers pretraining and post-training phases, explaining how autoregressive models use tokenization and cross-entropy loss to predict text sequences. Ideal for CS students or researchers interested in the engineering behind tools like ChatGPT and Gemini.",
+      "added": "2026-04-20",
+      "times_shown": 0
+    },
+    {
+      "slug": "buying-facebook-marketplace-food",
+      "title": "buying facebook marketplace food",
+      "url": "https://www.youtube.com/watch?v=h6dpdLNzMx4",
+      "video_id": "h6dpdLNzMx4",
+      "channel": "William Osman 2",
+      "summary": "Follows a man's frustrating journey maintaining and repairing various mechanical and electronic devices. Covers persistent car 'check engine' light issues, failed tractor troubleshooting at the farm, and successfully fixing a Wi-Fi connectivity issue by installing used routers bought second-hand.",
+      "added": "2026-04-21",
+      "times_shown": 0
+    },
+    {
+      "slug": "code-mode-let-the-code-do-the-talking-sunil-pai-cloudflare",
+      "title": "Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare",
+      "url": "https://www.youtube.com/watch?v=8txf05vVVl4",
+      "video_id": "8txf05vVVl4",
+      "channel": "AI Engineer",
+      "summary": "Sunil Pai from Cloudflare introduces 'Code Mode,' where AI models generate code like JavaScript to interact with systems instead of traditional JSON-based tool calling. This approach reduces token usage by 99.9% and enables multiple API interactions in a single round trip. By leveraging the model's ability to compose logic through loops and state management, Code Mode provides a faster and more reliable interface for complex tasks.",
+      "added": "2026-04-21",
+      "times_shown": 0
+    },
+    {
+      "slug": "gemma-deepminds-family-of-open-models-omar-sanseviero-google-deepmind",
+      "title": "Gemma, DeepMind's Family of Open Models \u2014\u00a0Omar Sanseviero, Google DeepMind",
+      "url": "https://www.youtube.com/watch?v=_gVFUEdhCyI",
+      "video_id": "_gVFUEdhCyI",
+      "channel": "AI Engineer",
+      "summary": "Overview of Gemma 4, the latest family of open-source AI models from Google DeepMind. Sizes range from 2B to 32B parameters, enabling high performance on consumer GPUs and mobile devices. Key features include on-device offline coding, advanced multimodal understanding across text/images/audio, multilingual support for 140+ languages, and an Apache 2.0 license for community collaboration.",
+      "added": "2026-04-21",
+      "times_shown": 0
+    },
+    {
+      "slug": "nuevo-claude-design-un-antes-y-despu\u00e9s-en-mi-forma-de-trabajar",
+      "title": "\u00a1NUEVO CLAUDE DESIGN! Un ANTES y DESPU\u00c9S en mi forma de TRABAJAR...",
+      "url": "https://www.youtube.com/watch?v=j1oJi1Pfobs",
+      "video_id": "j1oJi1Pfobs",
+      "channel": "Dot CSV Lab ",
+      "summary": "Anthropic has launched Claude Design, a new AI-powered platform for creating websites, documents, and interactive animations through automated HTML programming. Supports custom design systems including color palettes and logos for consistent branding. Simplifies complex workflows like motion graphics with features such as interactive sliders and 3D effects, significantly reducing time for manual design and coding tasks.",
+      "added": "2026-04-21",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-future-of-mcp-david-soria-parra-anthropic",
+      "title": "The Future of MCP \u2014 David Soria Parra, Anthropic",
+      "url": "https://www.youtube.com/watch?v=v3Fr2JR47KA",
+      "video_id": "v3Fr2JR47KA",
+      "channel": "AI Engineer",
+      "summary": "Explores the current state and future of the Model Context Protocol (MCP), a standard for connecting AI agents to diverse tools and interfaces. Notes massive growth in MCP adoption and predicts 2026 as the year AI agents move into production. Introduces a 'connectivity stack' of skills, MCP, and CLI/computer use, plus technical improvements like progressive tool discovery and programmatic tool calling.",
+      "added": "2026-04-21",
+      "times_shown": 0
+    },
+    {
+      "slug": "what-is-yann-lecun-cooking-jepa-explained-simply",
+      "title": "What Is Yann LeCun Cooking? JEPA Explained Simply",
+      "url": "https://www.youtube.com/watch?v=oM4neOyZOi0",
+      "video_id": "oM4neOyZOi0",
+      "channel": "bycloud",
+      "summary": "Explains JEPA (Joint-Embedding Predictive Architecture), an AI concept that focuses on predicting high-dimensional representations in a learned latent space rather than individual pixels or text tokens. By analyzing partial observations of an input, JEPA aims to capture stable semantic structures and physical relationships while discarding irrelevant noise. This approach offers computational efficiency and shows promise for world modeling and planning in fields like robotics.",
+      "added": "2026-04-21",
+      "times_shown": 0
+    },
+    {
+      "slug": "how-ai-is-changing-software-engineering-a-conversation-with-gergely-orosz-pragma",
+      "title": "How AI is changing Software Engineering: A Conversation with Gergely Orosz, @pragmaticengineer",
+      "url": "https://www.youtube.com/watch?v=CS5Cmz5FssI",
+      "video_id": "CS5Cmz5FssI",
+      "channel": "AI Engineer",
+      "summary": "Explores 'token maxing,' where engineers at major tech firms like Meta and Microsoft artificially inflate AI token usage to perform well on internal leaderboards tied to performance evaluations. Gergely Orosz explains how this leads employees to prioritize high token counts over genuine productivity, and suggests leadership may be using these metrics to force AI adoption despite conflicting data on AI's actual impact on developer output.",
+      "added": "2026-04-22",
+      "times_shown": 0
+    },
+    {
+      "slug": "nigel-cheese-down-the-rabbit-hole",
+      "title": "Nigel Cheese | Down the Rabbit Hole",
+      "url": "https://www.youtube.com/watch?v=l7ZpEr1TyXs",
+      "video_id": "l7ZpEr1TyXs",
+      "channel": "Fredrik Knudsen",
+      "summary": "Profiles Nigel, who presents unconventional scientific theories including that 1+1=1 and magnets prove cold fusion. Claims to have discovered free limitless energy and a cancer cure through ionized water, countered by science educator Kyle Hill. Highlights Nigel's attempts to validate his identity and belief that his research was suppressed following a Navy raid.",
+      "added": "2026-04-22",
+      "times_shown": 0
+    },
+    {
+      "slug": "taste-craft-a-conversation-with-tuomas-artman-cto-linear-gergely-orosz-pragmatic",
+      "title": "Taste & Craft: A Conversation with Tuomas Artman, CTO Linear & Gergely Orosz, @pragmaticengineer",
+      "url": "https://www.youtube.com/watch?v=wjk0ulMAkbc",
+      "video_id": "wjk0ulMAkbc",
+      "channel": "AI Engineer",
+      "summary": "Interview with Tuomas Artman, CTO of Linear, on AI's impact on software development. Cautions against shipping features too quickly using AI agents, emphasizing that quality still requires thoughtful design and discipline. Linear uses AI to automate routine tasks like bug fixing, with ~10% of bugs resolved by AI-generated PRs. Also discusses the difficulty of measuring software quality versus straightforward business metrics.",
+      "added": "2026-04-22",
+      "times_shown": 0
+    },
+    {
+      "slug": "chatgpt-images-20-es-espectacular-pero-tiene-un-problema",
+      "title": "\u00a1CHATGPT IMAGES 2.0 es ESPECTACULAR! ...PERO tiene UN PROBLEMA",
+      "url": "https://www.youtube.com/watch?v=_ef1-0Onsv8",
+      "video_id": "_ef1-0Onsv8",
+      "channel": "Dot CSV Lab ",
+      "summary": "OpenAI has launched a new image generation model, ChatGPT Images 2.0, which significantly advances realism, creativity, and visual intelligence. This model demonstrates exceptional precision in rendering text, complex diagrams, and infographics, while maintaining high consistency when iterating on existing images or reference poses. A key innovation is its integration with deeper reasoning modes, allowing it to research and synthesize complex information before rendering it into high-fidelity visuals. Comparative tests suggest it offers superior control over nuanced details compared to competitors, positioning it as a leading tool for both creative and professional tasks.",
+      "added": "2026-04-24",
+      "times_shown": 0
+    },
+    {
+      "slug": "how-the-last-queen-of-egypt-lost-everything",
+      "title": "How the Last Queen of Egypt Lost EVERYTHING",
+      "url": "https://www.youtube.com/watch?v=WajgNhbbeHM",
+      "video_id": "WajgNhbbeHM",
+      "channel": "Nightshift \u2013 Kurzgesagt After Dark",
+      "summary": "This video follows Cleopatra's journey from a young co-ruler to the undisputed Queen of Egypt, emphasizing her strategic use of political alliances and ruthless family dynamics. Forced to navigate a fragile Egyptian economy and threats from her siblings, Cleopatra leveraged relationships with powerful Roman leaders like Julius Caesar and Mark Antony to secure her position. The narrative highlights her willingness to eliminate rivals, including her own brother and sister, while skillfully managing the complex and often treacherous relationship between Egypt and the expanding Roman Empire.",
+      "added": "2026-04-24",
+      "times_shown": 0
+    },
+    {
+      "slug": "i-forced-streamers-to-make-ice-cream-sandwiches-without-a-recipe-master-baker-se",
+      "title": "I forced streamers to make Ice Cream Sandwiches without a recipe | Master Baker Season 5",
+      "url": "https://www.youtube.com/watch?v=Uxjxz9Wqz44",
+      "video_id": "Uxjxz9Wqz44",
+      "channel": "QTCinderella",
+      "summary": "In the fifth season of 'Master Baker,' host QTCinderella welcomes six amateur bakers to a kitchen competition where they must create dishes without recipes. The first challenge tasks the contestants with making homemade ice cream sandwiches from scratch within a 75-minute timeframe, with judging based on taste, creativity, and execution. As the clock begins, the bakers struggle with basic culinary skills, such as separating eggshells and distinguishing between baking soda and baking powder. The host provides a brief tutorial on the proper technique but notes that some participants may fail to achieve the desired creamy texture by omitting necessary fats from their ice cream base.",
+      "added": "2026-04-24",
+      "times_shown": 0
+    },
+    {
+      "slug": "it-aint-broke-why-software-fundamentals-matter-more-than-ever-matt-pocock-ai-her",
+      "title": "It Ain't Broke: Why Software Fundamentals Matter More Than Ever \u2014 Matt Pocock, AI Hero @mattpocockuk",
+      "url": "https://www.youtube.com/watch?v=v4F1gFy-hqg",
+      "video_id": "v4F1gFy-hqg",
+      "channel": "AI Engineer",
+      "summary": "This video features Matt Pocock's presentation on why traditional software engineering fundamentals remain critical in the age of AI-driven coding. He argues that relying purely on AI to generate code from specifications often leads to 'software entropy,' where code quality degrades with each iteration, making it increasingly expensive to maintain. To counter this, Pocock advocates for techniques like reaching a shared 'design concept' through deep AI questioning and establishing a 'ubiquitous language' based on domain-driven design. Ultimately, he emphasizes that a solid foundation in software design is essential for developers to successfully leverage AI tools while building maintainable systems.",
+      "added": "2026-04-24",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-end-of-apps-kitze-sizzyco",
+      "title": "The End of Apps \u2014\u00a0Kitze, Sizzy.co",
+      "url": "https://www.youtube.com/watch?v=4fntwuOoedA",
+      "video_id": "4fntwuOoedA",
+      "channel": "AI Engineer",
+      "summary": "The speaker describes his decades-long quest for the perfect productivity system, moving from simple text files to a complex 'life OS' called Benji that integrates numerous personal data points. He highlights a shift towards using specialized AI agents, such as openclaw, which operate on locally hosted data to ensure privacy and better contextual awareness. Kitze argues that general-purpose chat interfaces are inadequate for managing life's complexities, advocating instead for specialized agents with distinct permissions and tools. Ultimately, he envisions a future where personal AI assistants have deep control over digital environments, even leading him to switch from iOS to Android for greater system accessibility.",
+      "added": "2026-04-24",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-thing-about-aesthetic-people-dont-talk-about",
+      "title": "The thing about aesthetic people don't talk about",
+      "url": "https://www.youtube.com/watch?v=eCBFkq0_88U",
+      "video_id": "eCBFkq0_88U",
+      "channel": "pey talks anime",
+      "summary": "This video explores the seven key components that contribute to an anime's visual aesthetic, identifying world-building as the most foundational element. By analyzing various anime such as Witch Hat Atelier, Your Name, and several Studio Ghibli films, the narrator illustrates how a show's setting influences its color design, art style, and overall sense of wonder. Magical worlds are highlighted as particularly effective because they allow creators to express unique movements and visual metaphors, such as the spell-casting through drawing in Witch Hat Atelier. Ultimately, the video argues that a well-crafted world serves as a platform for other artistic elements to thrive, deeply enhancing the viewing experience and the emotional impact of the story.",
+      "added": "2026-04-24",
+      "times_shown": 0
+    },
+    {
+      "slug": "building-your-own-software-factory-eric-zakariasson-cursor",
+      "title": "Building your own software factory \u2014 Eric Zakariasson, Cursor",
+      "url": "https://www.youtube.com/watch?v=rnDm57Py54A",
+      "video_id": "rnDm57Py54A",
+      "channel": "AI Engineer",
+      "summary": "In this presentation, Eric from Cursor explores the evolution of AI-assisted software development toward a 'software factory' model where AI agents operate with high levels of autonomy. He argues that achieving this requires setting up specific primitives, guardrails like dynamic rules and automated tests, and enablers that give agents access to external context. The shift aims to improve throughput and consistency while allowing human engineers to leverage their creativity more effectively.",
+      "added": "2026-04-28",
+      "times_shown": 0
+    },
+    {
+      "slug": "what-do-models-still-suck-at-peter-gostev-arenaai-bullshitbench",
+      "title": "What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench",
+      "url": "https://www.youtube.com/watch?v=R7A8rX-09Zw",
+      "video_id": "R7A8rX-09Zw",
+      "channel": "AI Engineer",
+      "summary": "Peter Gostev, AI Capability Lead at Arena, discusses the limitations of current AI models through his 'Bullshit Benchmark,' which tests a model's ability to identify and reject nonsensical prompts. His findings reveal that while some models, particularly those from Anthropic, are improving, many still fail by attempting to rationalize illogical questions. A significant takeaway is that increased reasoning power actually tends to decrease performance in this area, as models spend more tokens trying to solve non-existent problems.",
+      "added": "2026-04-28",
+      "times_shown": 0
+    },
+    {
+      "slug": "why-building-eval-platforms-is-hard-phil-hetzel-braintrust",
+      "title": "Why building eval platforms is hard \u2014 Phil Hetzel, Braintrust",
+      "url": "https://www.youtube.com/watch?v=_fQ7Z_Wfouk",
+      "video_id": "_fQ7Z_Wfouk",
+      "channel": "AI Engineer",
+      "summary": "Phil Hetzel from Braintrust discusses the evolution and necessity of evaluation (eval) platforms for AI agents, emphasizing that they are critical for moving projects from proof-of-concept to production. He highlights that while many start with simple spreadsheets, robust evals require complex systems that include human annotation, specialized databases, and ongoing observability to handle the high variability of LLMs.",
+      "added": "2026-04-28",
+      "times_shown": 0
+    },
+    {
+      "slug": "agents-on-the-canvas-in-tldraw-steve-ruiz-tldraw",
+      "title": "Agents on the Canvas in tldraw \u2014 Steve Ruiz, tldraw",
+      "url": "https://www.youtube.com/watch?v=sPUjIBH5Cwg",
+      "video_id": "sPUjIBH5Cwg",
+      "channel": "AI Engineer",
+      "summary": "In this video from the AI Engineer Europe conference, Steve Ruiz, the creator of tldraw, demonstrates the evolution of their online whiteboard and SDK as it integrates with AI. He showcases various experimental features, including \"Make Real,\" which turns sketches into functional prototypes, and an AI collaborator that can draw and iterate on diagrams directly on the canvas. The presentation highlights how tldraw's hackable, React-based infrastructure allows for the creation of sophisticated AI agents that can assist with complex tasks like filling out forms or building interactive diagrams. Developers and AI engineers will benefit from watching this to see how a flexible canvas can be used to build next-generation, collaborative AI experiences.",
+      "added": "2026-05-02",
+      "times_shown": 0
+    },
+    {
+      "slug": "context-is-the-new-code-patrick-debois-tessl",
+      "title": "Context Is the New Code \u2014 Patrick Debois, Tessl",
+      "url": "https://www.youtube.com/watch?v=bSG9wUYaHWU",
+      "video_id": "bSG9wUYaHWU",
+      "channel": "AI Engineer",
+      "summary": "Patrick Debois explores the evolving role of \"context\" in AI development, arguing that it is becoming a foundational layer as important as traditional code. He introduces the Context Development Lifecycle (CDLC)\u2014comprising generation, evaluation, distribution, and observation\u2014as a framework for systematically managing how AI models are instructed. The presentation highlights practical techniques for curating context, such as using reusable agent instructions and implementing automated \"evals\" to ensure AI outputs adhere to specific organizational standards. This talk is highly beneficial for AI engineers and developers seeking to apply disciplined software engineering principles to their work with large language models.",
+      "added": "2026-05-04",
+      "times_shown": 0
+    },
+    {
+      "slug": "i-gave-an-ai-agent-the-keys-to-my-life-heres-what-happened-radek-sienkiewicz-vel",
+      "title": "I Gave an AI Agent the Keys to My Life (Here's What Happened) \u2014 Radek Sienkiewicz (@velvetshark-com)",
+      "url": "https://www.youtube.com/watch?v=sJ2jc7leKBk",
+      "video_id": "sJ2jc7leKBk",
+      "channel": "AI Engineer",
+      "summary": "In this presentation, Radek, a maintainer of Open Interpreter, shares his journey of integrating an AI agent into his daily life until it became essential \"life infrastructure.\" He argues that building such a powerful system should be done incrementally\u2014one permission and workflow at a time\u2014to safely establish trust and define boundaries. A central takeaway is the importance of a vast personal knowledge base, which allows the AI to \"connect the dots\" across thousands of notes and automate complex, context-aware tasks. This video is highly beneficial for AI engineers and productivity enthusiasts interested in the practical application of autonomous agents for personal digital management.",
+      "added": "2026-05-04",
+      "times_shown": 0
+    },
+    {
+      "slug": "harness-engineering-beyond-skills-using-sensors-to-keep-your-coding-agent-in-che",
+      "title": "Harness engineering beyond skills: Using sensors to keep your coding agent in check",
+      "url": "https://www.youtube.com/watch?v=uLWOLmeHOSE",
+      "video_id": "uLWOLmeHOSE",
+      "channel": "Thoughtworks",
+      "summary": "This video explores \"harness engineering,\" a mental model for optimizing AI coding agents by surrounding them with supportive tools and specific instructions. Birgitta Boeckeler explains how developers can build an \"outer harness\" using \"feedforward\" guides (like principles and rules) to improve initial code generation and \"feedback\" sensors (such as static analysis and logs) to help agents self-correct. The ultimate goal is to increase trust in AI outputs, thereby reducing the burden of human review and promoting more sustainable delivery. This discussion is highly valuable for software engineers and developers looking to integrate AI assistants more effectively into their professional workflows.",
+      "added": "2026-05-05",
+      "times_shown": 0
+    },
+    {
+      "slug": "a-piece-of-pi-embedding-the-openclaw-coding-agent-in-your-product-matthias-luebk",
+      "title": "A Piece of Pi: Embedding The OpenClaw Coding Agent In Your Product \u2014 Matthias Luebken, Tavon",
+      "url": "https://www.youtube.com/watch?v=vAIDdLKB6-w",
+      "video_id": "vAIDdLKB6-w",
+      "channel": "AI Engineer",
+      "summary": "This video features Matthias from TAVON.AI presenting A Piece of PI, a talk on embedding the open-source PI coding agent into products. He defines a coding agent as an LLM operating in a loop with access to a runtime and a shell, enabling it to autonomously execute code and perform complex tasks like data analysis or CRM management. A central takeaway is the importance of the make-it-easy-for-coding-agents architectural pattern, which involves designing systems that are simple and accessible for agents to navigate. This presentation is highly beneficial for AI engineers and developers interested in the practical implementation of autonomous agents and agentic workflows.",
+      "added": "2026-05-12",
+      "times_shown": 0
+    },
+    {
+      "slug": "everything-we-got-wrong-about-research-plan-implement-dexter-horthy",
+      "title": "Everything We Got Wrong About Research-Plan-Implement -  Dexter Horthy",
+      "url": "https://www.youtube.com/watch?v=YwZR6tc7qYg",
+      "video_id": "YwZR6tc7qYg",
+      "channel": "MLOps.community",
+      "summary": "This video features Dexter Horthy discussing the lessons learned from deploying AI-driven development workflows across various engineering teams. He emphasizes that while AI can enhance productivity, it often leads to increased rework and requires careful human steering to avoid low-quality outputs. Horthy advocates for engineers to maintain active oversight by avoiding the outsourcing of critical thinking and prioritizing the review of actual code over AI-generated plans. This presentation is highly beneficial for software developers and engineering managers interested in the practical challenges and best practices for integrating AI agents into professional development cycles.",
+      "added": "2026-05-12",
+      "times_shown": 0
+    },
+    {
+      "slug": "two-roads-to-durable-agents-replay-vs-snapshot-eric-allam-ceo-triggerdev",
+      "title": "Two Roads to Durable Agents: Replay vs. Snapshot \u2014 Eric Allam, CEO, Trigger.dev",
+      "url": "https://www.youtube.com/watch?v=svCnShDvgQg",
+      "video_id": "svCnShDvgQg",
+      "channel": "AI Engineer",
+      "summary": "This video explores the technical evolution and future of durable agents, which are AI systems capable of long-running, meaningful work that remains persistent across errors and code versions. The speaker traces the history of backend architecture from early stateless systems to modern workflow engines, highlighting how traditional replay models struggle with the scale and complexity of agentic sessions. A key takeaway is that true durability requires a dual approach: using append-only logs for an agent's context and conversation history, while utilizing snapshot and restore mechanisms for its execution state, such as memory and file systems. AI engineers and software architects building production-grade agentic workflows would benefit most from watching this talk.",
+      "added": "2026-05-12",
+      "times_shown": 0
+    },
+    {
+      "slug": "viktor-ai-coworker-that-lives-in-slack-fryderyk-wiatrowski",
+      "title": "Viktor: AI Coworker That Lives in Slack \u2014 Fryderyk Wiatrowski",
+      "url": "https://www.youtube.com/watch?v=ohKt066uFhg",
+      "video_id": "ohKt066uFhg",
+      "channel": "AI Engineer",
+      "summary": "This video introduces Viktor, an AI employee designed to operate directly within Slack to streamline business workflows using over 3,000 integrations. The speaker highlights that Viktor provides a unique horizontal context across all departments, allowing it to act as a company-wide resource rather than a siloed individual. It addresses complex organizational challenges such as shared memory management, departmental privacy, and the evolution from personal agents to team-based assistants. This presentation is particularly beneficial for AI engineers, business leaders, and professionals interested in the practical application of autonomous agents within corporate environments.",
+      "added": "2026-05-12",
+      "times_shown": 0
+    },
+    {
+      "slug": "you-cant-just-one-shot-it-mehedi-hassan-granola",
+      "title": "You can't just one shot it \u2014 Mehedi Hassan, Granola",
+      "url": "https://www.youtube.com/watch?v=ON5LIT0M4do",
+      "video_id": "ON5LIT0M4do",
+      "channel": "AI Engineer",
+      "summary": "This video features Mehedi Hassan, a Product Engineer at Granola, discussing the challenges of integrating AI features into production environments beyond simple one-shot prompts. He highlights the necessity of molding LLM behavior for specific user roles and the complexities of features like web search. Hassan introduces internal tools developed at Granola, such as custom tracing for agentic loops and a web shell for faster desktop app testing, to facilitate rapid iteration. The core message is that a fast feedback loop is crucial for creating an AI product that feels seamless and intuitive. This presentation is highly beneficial for product engineers and developers looking for practical strategies to refine and improve AI-driven applications.",
+      "added": "2026-05-12",
+      "times_shown": 0
+    },
+    {
+      "slug": "dark-factory-how-openclaw-ships-faster-than-you-can-read-the-diff-vincent-koc",
+      "title": "Dark Factory: How OpenClaw Ships Faster Than You Can Read the Diff \u2014 Vincent Koc",
+      "url": "https://www.youtube.com/watch?v=4VhbYlfC7Gs",
+      "video_id": "4VhbYlfC7Gs",
+      "channel": "AI Engineer",
+      "summary": "Vincent Koc discusses the evolution of AI evaluations from static, hand-curated benchmarks to more malleable systems capable of measuring adaptive AI agents. He argues that as AI progresses from prompt engineering to intent engineering, traditional testing methods become insufficient for capturing the performance of self-optimizing systems. Koc emphasizes that as AI behavior becomes more fluid and context-dependent, evaluation frameworks must also become dynamic and adaptive. This presentation is particularly beneficial for AI engineers, researchers, and developers looking for more robust ways to measure and understand the performance of modern, agentic LLM applications.",
+      "added": "2026-05-13",
+      "times_shown": 0
+    },
+    {
+      "slug": "data-vs-hype-how-orgs-actually-win-with-ai-the-pragmatic-summit",
+      "title": "Data vs Hype: How Orgs Actually Win with AI - The Pragmatic Summit",
+      "url": "https://www.youtube.com/watch?v=LOHgRw43fFk",
+      "video_id": "LOHgRw43fFk",
+      "channel": "The Pragmatic Engineer",
+      "summary": "Laura Tacho provides a pragmatic, data-driven analysis of how AI is currently impacting software development organizations, moving beyond the industry hype. She highlights key industry benchmarks, noting that while over 92% of developers use AI assistants, the average time savings remains steady at about four hours per week, even as the volume of AI-authored code continues to rise. The talk also reveals significant benefits in cutting onboarding time in half, though it warns that AI acts as an accelerator that can either reduce incidents or double them depending on an organization's existing structural health. This video is highly beneficial for CTOs, engineering leaders, and tech managers looking to understand the realistic outcomes and performance metrics of AI implementation in technical teams.",
+      "added": "2026-05-13",
+      "times_shown": 0
+    },
+    {
+      "slug": "cicd-is-dead-agents-need-continuous-compute-and-computers-hugo-santos-and-madiso",
+      "title": "CI/CD Is Dead, Agents Need Continuous Compute and Computers \u2014 Hugo Santos and Madison Faulkner",
+      "url": "https://www.youtube.com/watch?v=VktrqzQgytY",
+      "video_id": "VktrqzQgytY",
+      "channel": "AI Engineer",
+      "summary": "This video explores how Agentic Software\u2014AI-driven code generation and management\u2014is fundamentally changing traditional software development lifecycles. The speakers argue that traditional CI/CD pipelines, designed for the relatively slow and predictable pace of human developers, are being overwhelmed by the high volume and speed of AI agents. To address this, they propose a shift toward Continuous Compute, which uses an agent-aware orchestration layer to handle rapid code commits, automated validation, and complex merging processes. This presentation is particularly beneficial for software engineers, DevOps professionals, and AI researchers interested in modernizing infrastructure for an AI-integrated development environment.",
+      "added": "2026-05-14",
+      "times_shown": 0
+    }
+  ],
+  "archive": [
+    {
+      "slug": "building-an-electric-wind-up-plane",
+      "title": "Building an Electric Wind-Up Plane",
+      "url": "https://www.youtube.com/watch?v=-4X6KYlQ7YQ",
+      "video_id": "-4X6KYlQ7YQ",
+      "channel": "Tom Stanton",
+      "summary": "Documents the design and construction of a 21st-century wind-up plane, replacing rubber bands with supercapacitors and a hand-crank generator. Showcases innovative 3D printing directly onto tissue paper for lightweight wing surfaces, and computational simulations for flight stability. Hobbyists, makers, and engineering enthusiasts will benefit from this detailed look at modernizing classic toy technology.",
+      "added": "2026-04-18",
+      "watched": "2026-04-28",
+      "has_notes": false
+    },
+    {
+      "slug": "building-pi-in-a-world-of-slop-mario-zechner",
+      "title": "Building pi in a World of Slop \u2014 Mario Zechner",
+      "url": "https://www.youtube.com/watch?v=RjfbvDXpFls",
+      "video_id": "RjfbvDXpFls",
+      "channel": "AI Engineer",
+      "summary": "Mario Zechner introduces pi, a minimal and highly extensible coding agent designed to replace bloated alternatives. He argues that current coding agents suffer from slop \u2014 unnecessary features and poor context management \u2014 and proposes that agents should be malleable and self-modifying. Using a small token footprint and TypeScript-based extensions, pi allows developers to adapt the tool to their specific workflows. Ideal for AI engineers and developers seeking a more flexible, developer-centric approach to AI-assisted coding.",
+      "added": "2026-04-18",
+      "watched": "2026-05-01",
+      "has_notes": true
+    },
+    {
+      "slug": "season-21-episode-1-cube-is-good-full-episode",
+      "title": "Season 21, Episode 1 - 'Cube is good.' | Full Episode",
+      "url": "https://www.youtube.com/watch?v=oRfHA2d3DhM",
+      "video_id": "oRfHA2d3DhM",
+      "channel": "Taskmaster",
+      "summary": "Taskmaster S21E01 premiere where contestants present humorous deterrents to protect their property, judged by Greg Davies for creativity and comedic value. A recurring secret task requires Joel Dommett to keep a specially decorated egg intact throughout the series. Fans of comedy panel shows and British humor will enjoy this.",
+      "added": "2026-04-18",
+      "watched": "2026-04-18",
+      "has_notes": false
+    },
+    {
+      "slug": "why-was-i-invited-to-beast-studios",
+      "title": "Why was I invited to Beast Studios?",
+      "url": "https://www.youtube.com/watch?v=0dwagg5wYY4",
+      "video_id": "0dwagg5wYY4",
+      "channel": "Folding Ideas",
+      "summary": "Dan Olson (Folding Ideas) chronicles his visit to MrBeast's studios for an exclusive tour and preview of Beast Games Season 2. He breaks down the trip as a wine and dine PR move, providing an itemized cost analysis of the hospitality. Insightful for viewers interested in corporate PR, YouTube culture, and the business behind large-scale creators.",
+      "added": "2026-04-18",
+      "watched": "2026-04-19",
+      "has_notes": false
+    },
+    {
+      "slug": "we-finally-watched-tip2tip",
+      "title": "We finally watched Tip2Tip",
+      "url": "https://www.youtube.com/watch?v=-7TfJ4r4_p8",
+      "video_id": "-7TfJ4r4_p8",
+      "channel": "Ludwig",
+      "summary": "Ludwig and Michael react to the first episode of their series 'Tip to Tip China,' which documents their 4,000-kilometer motorcycle journey across the country. They humorously critique their own attempts at speaking Mandarin, specifically laughing at Ludwig's repeated linguistic errors and his reliance on ChatGPT for local slang. The reaction highlights their awkward interactions with locals and the challenges of navigating a foreign country with limited language skills.",
+      "added": "2026-04-21",
+      "watched": "2026-04-21",
+      "has_notes": false
+    },
+    {
+      "slug": "making-human-kibble-to-change-the-way-we-eat-forever",
+      "title": "Making human kibble (to change the way we eat forever)",
+      "url": "https://www.youtube.com/watch?v=tK-cKWSPBBs",
+      "video_id": "tK-cKWSPBBs",
+      "channel": "NileBlue",
+      "summary": "The video explores the creation of 'human kibble,' a concept designed to save the time people typically spend preparing and eating food. The creator uses a high-powered blender to homogenize popular fast foods, including McDonald's Big Macs, Domino's pepperoni pizza, and KFC chicken meals, with distilled water to create a smooth, drinkable consistency. After blending each meal and confirming they still retain their original flavors through taste tests, the resulting mixtures are spread onto metal trays, presumably to be freeze-dried into pellets in the next stage of the process.",
+      "added": "2026-04-24",
+      "watched": "2026-04-26",
+      "has_notes": false
+    },
+    {
+      "slug": "191-mar\u00eda-odonnell-en-cartograf\u00edas",
+      "title": "#191 Mar\u00eda O'Donnell en Cartograf\u00edas",
+      "url": "https://www.youtube.com/watch?v=EqwxmGgVQK0",
+      "video_id": "EqwxmGgVQK0",
+      "channel": "Cartograf\u00edas, con Rosendo Grobo",
+      "summary": "The video features an interview with Maria O'Donnell about her book, 'Montoneros: una historia visual,' which provides a graphical and accessible account of the Argentine armed political organization from the 1970s. O'Donnell explains how the book aims to educate younger generations on the group's complex history, including its rise during the proscription of Peronism and the impact of pivotal events like the assassination of General Aramburu.",
+      "added": "2026-04-28",
+      "watched": "2026-05-01",
+      "has_notes": false
+    },
+    {
+      "slug": "a-love-letter-to-pi-lucas-meijer",
+      "title": "A love letter to Pi | Lucas Meijer",
+      "url": "https://www.youtube.com/watch?v=fdbXNWkpPMY",
+      "video_id": "fdbXNWkpPMY",
+      "channel": "Build Monumental",
+      "summary": "This video features a presentation by Lucas Meijer, a former Unity developer, on the practical application of AI coding agents in software development. Meijer shares several strategies, such as using specific AI models like Codex, embracing HTML as an output format for agent reports, and making codebases agent-friendly by reducing build warnings and providing clear documentation. He emphasizes analyzing previous agent sessions to identify friction points and advises defining evaluation criteria before tasking an agent. Highly relevant for programmers looking to integrate AI agents into their workflows effectively.",
+      "added": "2026-05-03",
+      "watched": "2026-05-03",
+      "has_notes": true
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "generated_at": "2026-05-14",
+  "queue": [
+    {
+      "slug": "80-problem-agentic-coding",
+      "title": "The 80% Problem in Agentic Coding",
+      "url": "https://addyo.substack.com/p/the-80-problem-in-agentic-coding",
+      "category": "ai",
+      "summary": "An exploration of the evolving landscape of AI-assisted coding, where top engineers like Andrej Karpathy and the Claude Code team now write 80%+ of their code with agents.\n\nTHE SHIFT:\n- Karpathy: went from 80% manual + 20% agents to 80% agent + 20% manual edits in just weeks\n- Boris Cherny (Claude Code): ships 20-27 PRs daily, 100% written by Claude for 2+ months\n- Survey data: 44% of developers write less than 10% of code manually now\n\nNEW PROBLEMS (The Last 10-20%):\n- Assumption propagation: Models misunderstand early and build on faulty premises\n- Abstraction bloat: Agents create elaborate hierarchies where simple functions suffice\n- Dead code accumulation: Old implementations linger, comments get removed\n- Sycophantic agreement: No pushback on bad ideas, just enthusiastic execution\n\nTHE VERIFICATION BOTTLENECK:\n- High AI-adoption teams merge 98% more PRs but review time increased 91%\n- Only 48% consistently check AI code before committing\n- 38% find reviewing AI code requires MORE effort than human code\n- Individual output surged but organizational friction consumed the gains\n\nCOMPREHENSION DEBT:\n- Code that looks right but you don't fully understand\n- Tempting to rubber-stamp when the LLM one-shotted a working feature\n- Over time, you understand less of your own codebase\n- Dangerous when ability to read doesn't scale with agent's ability to output\n\nWHAT WORKS:\n1. Declarative over imperative: Define success criteria, let agent iterate\n2. Write tests first, let agent loop until they pass\n3. Fresh-context code reviews (agent reviews its own code)\n4. Automated verification (CI/CD, linters, tests as guardrails)\n5. 70% time on problem definition, 30% on execution\n\nKEY INSIGHT: AI is splitting engineers into those who liked coding (may feel loss) vs those who liked building (feel liberation). The tooling optimizes for the latter.",
+      "added": "2026-03-28",
+      "times_shown": 1
+    },
+    {
+      "slug": "conductors-to-orchestrators",
+      "title": "Conductors to Orchestrators",
+      "url": "https://addyo.substack.com/p/conductors-to-orchestrators-the-future",
+      "category": "ai",
+      "summary": "# Conductors to Orchestrators: The Future of Agentic Coding\n\n## The Paradigm Shift\nAI coding assistants have evolved from novelty to necessity (90% of devs use AI), but a new paradigm is emerging: **fleets of autonomous coding agents** that are transforming engineers from implementers into managers—from coders to **conductors** and ultimately **orchestrators**.\n\n## The Conductor Pattern\n**Conductor** = working closely with a single AI agent on a specific task, like a conductor guiding a soloist.\n\n**Key characteristics:**\n- Synchronous, interactive sessions (IDE/CLI)\n- Tight feedback loop—engineer reviews every suggestion\n- Ephemeral interaction—context lost after session ends\n- One-agent-at-a-time, step-by-step guidance\n\n**Modern Conductor Tools:**\n- **Claude Code (Anthropic):** CLI tool for interactive code generation\n- **Gemini CLI (Google):** Large context window assistant for planning/coding\n- **Cursor:** AI-augmented IDE with deep codebase indexing\n- **VSCode/Cline/Roo Code:** In-IDE chat assistants\n\n## The Orchestrator Pattern\n**Orchestrator** = overseeing multiple AI agents working in parallel, like conducting a symphony.\n\n**Key characteristics:**\n- Asynchronous, background execution\n- High autonomy—agents plan and execute multi-step tasks\n- Persistent artifacts (branches, commits, PRs) in version control\n- Parallel development—multiple agents on different tasks simultaneously\n- Human focuses on coordination, quality control, integration\n\n**Modern Orchestrator Tools:**\n- **GitHub Copilot Coding Agent:** Autonomous background dev via GitHub Actions; creates branches, runs tests, opens PRs\n- **Jules (Google):** Autonomous agent in secure cloud VM; formulates plans for approval; audio changelogs\n- **OpenAI Codex:** Cloud-based agent working in parallel on many tasks; available via CLI and ChatGPT\n- **Claude Code for Web:** Hosted version with sandboxed cloud execution\n- **Cursor 2:** Multi-agent orchestration with real-time dashboard; agents run concurrently on different tasks\n- **Orchestration Platforms:** Conductor by Melty Labs, Claude Squad (open-source), Azure AI multi-agent SDKs\n\n## Key Differences\n\n| Aspect | Conductor | Orchestrator |\n|--------|-----------|--------------|\n| **Scope** | Micro—single task/problem | Macro—multiple tasks/projects |\n| **Autonomy** | Low—waits for each prompt | High—executes dozens of steps autonomously |\n| **Timing** | Synchronous (real-time) | Asynchronous (minutes/hours) |\n| **Artifacts** | Ephemeral suggestions | Persistent PRs, commits, branches |\n| **Human Effort** | 100% engaged during AI work | Front-loaded (spec) + back-loaded (review) |\n| **Question** | How do I code this? | How do I get the right code built? |\n\n## Future Vision: The AI Software Pipeline\nImagine specialized agents handling each phase:\n- **Planning Agent** → breaks down feature requests\n- **Coding Agents** → implement tasks in parallel\n- **Testing Agent** → generates and runs tests\n- **Code Review Agent** → checks PRs for quality\n- **Documentation Agent** → updates docs\n- **Deployment Agent** → rolls out and monitors\n\nHuman becomes overseer of the entire flow, approving plans and resolving conflicts.\n\n## Challenges and Considerations\n- **Quality control:** Human review remains critical (trust but verify)\n- **Coordination:** Merge conflicts, task overlap need careful management\n- **Context sharing:** Agents need unified workflow orchestration layer\n- **Prompt engineering:** Clear specs become more important than ever\n- **Debugging:** Need new tools for monitoring agent failures\n- **Ethics/responsibility:** Humans remain accountable for shipped code\n\n## The Bottom Line\nThe role of software engineer is evolving toward **product thinking, architecture, and validation**, with routine coding becoming largely automated. Engineers who master both modes—knowing when to be precise conductors vs. scaling as orchestrators—will be best positioned for the agentic future. The future is not AI or human—it is AI and human, with humans at the helm.",
+      "added": "2026-03-28",
+      "times_shown": 1
+    },
+    {
+      "slug": "how-codex-is-built",
+      "title": "How Codex is built",
+      "url": "https://newsletter.pragmaticengineer.com/p/how-codex-is-built",
+      "category": "ai",
+      "summary": "A deep dive into OpenAI's Codex, a multi-agent coding assistant used by over 1 million developers.\n\nTECHNOLOGY & ARCHITECTURE:\n- Built in Rust (not TypeScript like Claude Code) for performance, correctness, and engineering culture\n- Open source CLI with core agent loop implementing a state machine\n- Uses compaction to manage context window efficiently\n- Runs in sandboxed environment by default for safety\n\nHOW CODEX BUILDS ITSELF:\n- 90%+ of Codex's code was written by Codex itself\n- Engineers run 4-8 parallel agents simultaneously for tasks like feature implementation, code review, security audits, and bugfixes\n- Team has shifted from writing code to agent management\n- 100+ internal Agent Skills for task-specific capabilities (security checks, PR creation, Datadog integration)\n\nENGINEERING PRACTICES:\n- Tiered code review: AI reviews everything, non-critical code can merge automatically, key parts require human review\n- AGENTS.md files for codebase navigation and standards\n- Nightly Codex runs to find and fix issues\n- New engineers onboard by pairing and ship to production on day one\n\nUSAGE AT OPENAI:\n- Data team built internal data agent in 2 months (would have taken 1+ year before)\n- Engineers have unlimited LLM access\n- GPT-5.3-Codex is the first model that helped create itself\n\nKEY INSIGHT: The 30/70 rule - engineers spend 30% of time on agent management, 70% on high-level design and taste.",
+      "added": "2026-03-28",
+      "times_shown": 2
+    },
+    {
+      "slug": "steve-yegge-on-ai-agents",
+      "title": "Steve Yegge on AI Agents",
+      "url": "https://newsletter.pragmaticengineer.com/p/steve-yegge-on-ai-agents-and-the",
+      "category": "ai",
+      "summary": "An interview with Steve Yegge (40-year software veteran from Amazon, Google, Grab) on AI's impact on software engineering.\n\n**Key Insights:**\n\n**The End of Coding by Hand**\nSteve argues we're entering a steep exponential growth curve in AI capability that shows no signs of stopping. After being skeptical initially, he became a convert after using Claude Code, realizing the industry was on an unstoppable trajectory. He co-authored the book \"Vibe Coding\" which proclaims \"the days of coding by hand are over.\"\n\n**The '50% Dial' and Deep Cuts**\nSteve controversially suggests big companies could cut up to 50% of engineering staff to make room for AI tools—a trend that could dwarf pandemic-era layoffs. His reasoning: companies need to fund AI tools for remaining engineers, and about half of engineers don't want to use AI prompting anyway.\n\n**Eight Levels of AI Adoption**\nSteve outlines a progression from Level 1 (no AI) through increasingly integrated usage:\n- Level 2-3: IDE agents with/without review\n- Level 4-5: Trusting agents more, focusing on conversation not code review\n- Level 6-7: Managing multiple agents by hand\n- Level 8: Building your own orchestrator\nHe warns engineers at lower levels will be left behind.\n\n**The Dracula Effect**\nVibe coding at full speed is physically draining—what Steve calls a \"vampiric effect.\" He argues employers should only expect about 3 productive hours per day from engineers using AI at maximum capacity, even though their output may be 100x higher.\n\n**Big Companies Are Doomed**\nSteve believes innovation at large companies is effectively dead due to the innovator's dilemma. Real innovation will come from small, AI-augmented teams—similar to how cloud computing shifted power from enterprises to startups.\n\n**Engineers Are No Longer Special**\nThe traditional engineer mindset and coding skills no longer make engineers unique. However, demand for software will keep growing, and AI is augmentation (not replacement).\n\n**Predictions:** Steve's non-coder wife could become the top contributor to their video game using AI tools, signaling a future where technical barriers collapse.",
+      "added": "2026-03-28",
+      "times_shown": 2
+    },
+    {
+      "slug": "the-complete-guide-to-building-skill-for-claude",
+      "title": "The Complete Guide to Building Skill for Claude",
+      "url": "https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf?hsLang=en",
+      "category": "uncategorized",
+      "summary": "This comprehensive 33-page guide from Anthropic covers everything needed to build effective skills for Claude - custom instructions that teach Claude specific workflows and tasks.\n\n## What is a Skill?\n\nA skill is a folder containing instructions (SKILL.md with YAML frontmatter) that teaches Claude how to handle specific tasks. Instead of re-explaining preferences in every conversation, skills let you teach Claude once and benefit every time. Skills work across Claude.ai, Claude Code, and the API.\n\n## Skill Structure\n\nA skill folder contains:\n- **SKILL.md** (required): Main instructions in Markdown with YAML frontmatter\n- **scripts/** (optional): Executable code (Python, Bash, etc.)\n- **references/** (optional): Additional documentation loaded as needed\n- **assets/** (optional): Templates, fonts, icons used in output\n\n## Core Design Principles\n\n**Progressive Disclosure**: Three-level system minimizes token usage while maintaining expertise:\n1. YAML frontmatter (always loaded): When to use the skill\n2. SKILL.md body (loaded when relevant): Full instructions\n3. Linked files (loaded on demand): Additional documentation\n\n**Composability**: Multiple skills can work simultaneously; skills should not assume exclusivity.\n\n**Portability**: Skills work identically across all Claude surfaces.\n\n## Skills + MCP Integration\n\nThe guide uses a \"kitchen analogy\": MCP provides the professional kitchen (tools, ingredients, equipment), while skills provide the recipes (step-by-step instructions). Together they enable users to accomplish complex tasks without figuring out every step themselves.\n\nWithout skills: Users connect MCP but don't know what to do next, leading to inconsistent results and support tickets.\nWith skills: Pre-built workflows activate automatically, providing consistent, reliable tool usage with embedded best practices.\n\n## Three Common Use Case Categories\n\n1. **Document & Asset Creation**: Creating consistent output (documents, presentations, apps, designs) - uses built-in capabilities without external tools\n2. **Workflow Automation**: Multi-step processes with consistent methodology, often coordinating multiple MCP servers\n3. **MCP Enhancement**: Workflow guidance that enhances raw tool access from MCP servers\n\n## Planning and Design\n\nStart by identifying 2-3 concrete use cases. Define success criteria including:\n- Quantitative: Skill triggers on 90% of relevant queries, completes workflows efficiently, minimal API failures\n- Qualitative: Users don't need to prompt about next steps, workflows complete without correction, consistent results\n\n## YAML Frontmatter (Critical)\n\nThe frontmatter determines when Claude loads your skill. The description MUST include what it does AND when to use it (trigger conditions).\n\n**Key requirements**:\n- Name: kebab-case only, no spaces or capitals\n- Description: Under 1024 characters, no XML tags\n- Include specific tasks users might say\n\n## Testing and Iteration\n\nRecommended testing covers three areas:\n1. **Triggering tests**: Ensure skill loads at right times (obvious tasks, paraphrased requests, not unrelated topics)\n2. **Functional tests**: Verify correct outputs, successful API calls, error handling\n3. **Performance comparison**: Prove skill improves results vs baseline\n\nUse the built-in **skill-creator skill** to generate and review skills - can build a functional skill in 15-30 minutes.\n\n## Distribution and Sharing\n\nCurrent model (January 2026):\n1. Download skill folder\n2. Zip and upload to Claude.ai via Settings > Capabilities > Skills\n3. Or place in Claude Code skills directory\n4. Organization admins can deploy workspace-wide\n\nAgent Skills is published as an open standard for portability across platforms.\n\n## Common Patterns\n\n1. **Sequential Workflow Orchestration**: Multi-step processes in specific order with validation at each stage\n2. **Multi-MCP Coordination**: Workflows spanning multiple services with clear phase separation\n3. **Iterative Refinement**: Output quality improves through validation scripts and refinement loops\n4. **Context-Aware Tool Selection**: Same outcome using different tools based on context\n5. **Domain-Specific Intelligence**: Specialized knowledge beyond tool access (e.g., compliance checks)\n\n## Troubleshooting\n\nCommon issues and solutions:\n- **Skill won't upload**: File must be exactly SKILL.md (case-sensitive), valid YAML frontmatter\n- **Skill doesn't trigger**: Revise description - include specific trigger phrases, relevant file types\n- **Skill triggers too often**: Add negative triggers, be more specific about scope\n- **Instructions not followed**: Keep concise, put critical instructions at top, use validation scripts for deterministic checks\n- **MCP connection issues**: Verify server connected, authentication valid, tool names correct\n- **Large context issues**: Move detailed docs to references/, keep SKILL.md under 5,000 words\n\n## Resources\n\n- Official documentation and API reference at docs.anthropic.com\n- Public skills repository: github.com/anthropics/skills\n- skill-creator skill built into Claude.ai for interactive skill generation\n- Partner skills available from Asana, Atlassian, Canva, Figma, Sentry, Zapier, and more",
+      "added": "2026-03-28",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-final-bottleneck",
+      "title": "The Final Bottleneck",
+      "url": "https://lucumr.pocoo.org/2026/2/13/the-final-bottleneck/",
+      "category": "uncategorized",
+      "summary": "Armin Ronacher reflects on how AI has flipped the traditional software engineering bottleneck from writing code to reviewing it. Historically, code creation was slower than review, but now AI-assisted coding is generating pull requests faster than humans can review them—exemplified by OpenClaw's 2,500+ open PRs.\n\nThe author draws parallels to the Industrial Revolution's textile industry, where removing one bottleneck shifted constraints downstream. As weaving sped up, yarn became the constraint; faster spinning required better fiber, and so on. Similarly, AI has accelerated code generation, but code review—the critical accountability point—cannot be fully automated.\n\nThe article explores two paths forward:\n1. **Throttling input** - Using strict controls like Pi.dev's auto-closure of untrusted PRs to limit the flood\n2. **Giving in** - Accepting machine-written and machine-reviewed code, with humans as mere \"rubber stamps\"\n\nThe author expresses unease with both approaches, noting that humans remain ultimately responsible for what ships. The \"single-use plastic software\" era risks shifting accountability away from individuals to faceless systems. Despite AI's speed, the core bottleneck remains human: we are accountable for what we deploy, and machines—sentient or not—cannot carry that responsibility.\n\nThe piece concludes that this isn't the final bottleneck. Society will demand accountability, and humans will remain the constraint until we figure out how to push responsibility upward—or until machines achieve sentience.",
+      "added": "2026-03-28",
+      "times_shown": 0
+    },
+    {
+      "slug": "httpsbloglmorchardcom20260311grief-and-the-ai-split",
+      "title": "Untitled",
+      "url": "https://blog.lmorchard.com/2026/03/11/grief-and-the-ai-split/",
+      "category": "uncategorized",
+      "summary": "Les Orchard explores the emotional divide among developers in the age of AI-assisted coding, arguing that two distinct camps — those who love the craft of writing code for its own sake, and those who see code as a means to an end — have always existed but were invisible because everyone followed the same manual process. AI tools have made this split visible by forcing a choice: let the machine write code and focus on directing what gets built, or insist on hand-crafting it. Orchard acknowledges grief from writers who mourn the loss of the tactile satisfaction of crafting elegant code, but distinguishes their grief from his own: his mourning centers on the changing context — the threatened open web ecosystem, shifting career landscape, and industry uncertainty. He concludes neither side is wrong, but recognizing which kind of grief you feel is practically useful. He still gets satisfaction when something he built actually works — even if the code got there differently.",
+      "added": "2026-03-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "httpslalitmcompostbuilding-syntaqlite-ai",
+      "title": "Untitled",
+      "url": "https://lalitm.com/post/building-syntaqlite-ai/",
+      "category": "engineering",
+      "summary": "Lalit Maganti's experience building syntaqlite — high-fidelity SQLite developer tools (formatter, linter, language server) — using AI coding agents across ~250 hours. Two phases: first month of vibe-coding produced a functional but unmaintainable prototype requiring total rewrite; second phase using Rust + disciplined AI-as-autocomplete yielded the 0.1 release. Key framework: AI excels at overcoming procrastination, obvious code generation, teaching unfamiliar domains, and shipping last-mile features. Costs include addictive feedback loops, erosion of mental models, and deferred hard design decisions. Core insight: AI is excellent for tasks with verifiable answers but poor for tasks requiring taste and judgment (architecture, API design).",
+      "added": "2026-04-06",
+      "times_shown": 0
+    },
+    {
+      "slug": "httpsopensubstackcompubsebastianraschkapcomponents-of-a-coding-agentutm-sourcesh",
+      "title": "Untitled",
+      "url": "https://open.substack.com/pub/sebastianraschka/p/components-of-a-coding-agent?utm_source=share&utm_medium=android&r=7mo5z",
+      "category": "engineering",
+      "summary": "Comprehensive breakdown of coding agent architecture (Claude Code, Codex CLI, etc.). Covers six core components: live repo context, prompt shape and cache reuse, tool access/use, context bloat mitigation (clipping, transcript reduction, deduplication), structured session memory (full transcript vs working memory), and delegation with bounded subagents. Key insight: the harness is often the distinguishing factor when base LLM capabilities are similar.",
+      "added": "2026-04-06",
+      "times_shown": 0
+    },
+    {
+      "slug": "httpsmartinfowlercomarticlesharness-engineeringhtml",
+      "title": "Untitled",
+      "url": "https://martinfowler.com/articles/harness-engineering.html",
+      "category": "engineering",
+      "summary": "Birgitta Bockeler's mental model for building trust in AI coding agents via an 'outer harness' — feedforward guides (rules, specs, conventions) and feedback sensors (linters, tests, code review). Three regulation categories: maintainability (most tractable), architecture fitness (fitness functions for perf/observability), and behaviour (hardest — functional correctness). Introduces 'harnessability' (how amenable a codebase is to being harnessed) and 'harness templates' tied to common service topologies. Core thesis: harnesses externalize what developers implicitly bring, directing human input to where it matters most.",
+      "added": "2026-04-07",
+      "times_shown": 0
+    },
+    {
+      "slug": "httpsmartinfowlercomarticlesreduce-friction-aiencoding-team-standardshtml",
+      "title": "Untitled",
+      "url": "https://martinfowler.com/articles/reduce-friction-ai/encoding-team-standards.html",
+      "category": "ai",
+      "summary": "Rahul Garg on encoding team standards as versioned AI instruction files in the repo — 'executable governance.' Problem: two devs using the same AI tool produce different code because senior engineers instinctively encode conventions into prompts while juniors don't. Solution: structured instruction files with role definition, context, categorized standards (must/should/nice-to-have), and output format. Key insight: the extraction process surfaces tacit knowledge and hidden disagreements between seniors. Most valuable for teams of 15+ devs. Expands what teams can codify beyond syntax into architectural judgment and review rigor.",
+      "added": "2026-04-07",
+      "times_shown": 0
+    },
+    {
+      "slug": "absurd-workflows-armin-ronacher",
+      "title": "Absurd Workflows (Armin Ronacher)",
+      "url": "https://lucumr.pocoo.org/2025/11/3/absurd-workflows/",
+      "category": "engineering",
+      "summary": "Introduces Absurd, an open-source library for durable workflow execution using only Postgres as its backing store — no extensions, compiler plugins, or third-party services. Explains durable execution fundamentals: queue system + state store with SELECT FOR UPDATE SKIP LOCKED for queue semantics. Tasks decompose into sequential steps with checkpointed results; on failure, replays from last checkpoint. Maps naturally onto AI agent patterns — agents dynamically decide their own path, and Absurd handles this by auto-incrementing step names and storing message deltas. Supports sleeping, suspending for external events, and timeouts. The argument: not every problem needs Temporal-scale complexity — a single SQL file + thin SDK suffices for many real-world use cases, especially self-hosted software.",
+      "added": "2026-04-08",
+      "times_shown": 0
+    },
+    {
+      "slug": "human-ai-giles-thomas",
+      "title": "Human-AI (Giles Thomas)",
+      "url": "https://gilest.org/notes/2026/human-ai/",
+      "category": "ai",
+      "summary": "Explores why AI is a terrible writer: it defaults to cliches because it's trained on internet text saturated with them. The core argument is that human writing has 'tiny sprinklings of poetry' — subtle literary flourishes like alliteration, gentle puns, and callbacks that make text memorable. AI cannot calibrate these touches; it either writes a full poem or flat generic prose. The practical conclusion: if you must use AI for first drafts, carefully edit the output with a human eye and get feedback from humans, not other AI. The goal is for humans to read, absorb, and remember.",
+      "added": "2026-04-08",
+      "times_shown": 0
+    },
+    {
+      "slug": "httpsmartinfowlercomarticlesreduce-friction-aifeedback-flywheelhtml",
+      "title": "Untitled",
+      "url": "https://martinfowler.com/articles/reduce-friction-ai/feedback-flywheel.html",
+      "category": "ai",
+      "summary": "Same author as Encoding Team Standards (Rahul Garg, Martin Fowler series). Argues teams plateau with AI tools because individual learnings never become shared practice. Framework: 4 signal types (context gaps, instruction patterns, workflow discoveries, failures with root causes) mapped to 4 cadences (after-session reflection, daily stand-up, sprint retro, quarterly audit). Metrics that matter: first-pass acceptance rate, iteration cycles, post-merge rework — not lines generated. Key insight: the other practices in the series are passive surfaces; the flywheel is what makes them compound over time. Treat shared AI artifacts like dependencies — maintain them or they become liabilities.",
+      "added": "2026-04-14",
+      "times_shown": 2
+    },
+    {
+      "slug": "httpswalkinglabsgithubiolearn-harness-engineeringen",
+      "title": "Untitled",
+      "url": "https://walkinglabs.github.io/learn-harness-engineering/en/",
+      "category": "engineering",
+      "summary": "Structured, project-based course from WalkingLabs teaching developers how to build reliable harnesses around AI coding agents. Covers constrained environments with explicit rules, state management, verification, and control systems, drawing on guidance from OpenAI and Anthropic. Addresses common agent failure modes — premature victory declarations, context loss, overreach — with practical techniques for end-to-end testing, runtime observability, and clean-state discipline.",
+      "added": "2026-05-01",
+      "times_shown": 0
+    },
+    {
+      "slug": "httpstilandrew-quinnmepostsreplacing-a-3-gb-sqlite-database-with-a-7-mb-fst-fini",
+      "title": "Untitled",
+      "url": "https://til.andrew-quinn.me/posts/replacing-a-3-gb-sqlite-database-with-a-7-mb-fst-finite-state-trandsucer-binary/",
+      "category": "engineering",
+      "summary": "Andrew Quinn describes replacing a 3 GB SQLite database with a 10 MB finite state transducer (FST) binary in his Finnish-English dictionary app Taskusanakirja, achieving a roughly 300x reduction in size. The original Go version used a trie for prefix search, which worked for base words but couldn't scale to Finnish's 40-60 million inflected forms. After rewriting in Rust and discovering BurntSushi's fst crate, he found FSTs compress both prefixes and suffixes — making them ideal for agglutinative languages where a handful of inflectional suffixes repeat across tens of thousands of words. The key lesson: shipping the 'bad easy thing' first made it cheap to experiment and discover the far better solution later.",
+      "added": "2026-05-10",
+      "times_shown": 0
+    },
+    {
+      "slug": "httpsopensubstackcompubpragmaticengineerprevisiting-no-silver-bullets-in-theutm",
+      "title": "Untitled",
+      "url": "https://open.substack.com/pub/pragmaticengineer/p/revisiting-no-silver-bullets-in-the?utm_source=share&utm_medium=android&r=7mo5z",
+      "category": "engineering",
+      "summary": "This article by Gergely Orosz revisits Frederick Brooks Jr.'s influential 1986 paper 'No Silver Bullet -- Essence and Accident in Software Engineering' (later included as Chapter 17 in the 1995 edition of 'The Mythical Man-Month'). Brooks argued that no single technology or management technique would deliver an order-of-magnitude improvement in software engineering productivity, reliability, or simplicity. Orosz examines whether that prediction has held up over 40 years and how it relates to the current era of AI-assisted coding.\n\nOrosz surveys the major developments since Brooks wrote the paper: version control systems (CVS, Subversion, Git), modern IDEs, CI/CD and automated testing, open source and package managers, StackOverflow, cloud computing, platform and DevEx teams, and the SRE discipline. While each contributed to developer efficiency, none by itself delivered a standalone 10x improvement in the way Brooks defined a silver bullet. However, taken together they dramatically improved iteration speed -- shipping software multiple times per day is now routine, whereas in 1975 delivery was measured in months or years. Yet shipping complex, high-quality software still takes years, as illustrated by the development timeline of Grand Theft Auto VI (roughly 6-12 years). The bar for standout software keeps rising as capabilities expand.\n\nThe article examines SRE as a possible counterexample: Google Search, the most reliable public-facing internet service in history (one global outage in 15 years), pioneered the SRE role starting in 2003. Orosz argues SRE qualifies as a silver bullet for Google Search specifically, but not for the broader industry. Other Google services still experience outages, and even GitHub sits at zero nines of availability despite having SRE. This suggests silver bullets may be context-dependent -- they require the right team culture, investment, and founding values to produce outsized results. The article then raises open source plus GitHub as a potential silent silver bullet and AI as a candidate, though these later sections are behind the paywall.\n\nThe main takeaway is that Brooks' thesis has largely held up: no single tool or methodology has been a universal silver bullet for software engineering. Progress has been real and substantial, but it comes from the compounding effect of many incremental improvements, not from any single breakthrough. The rare exceptions, like SRE at Google Search, prove the rule -- they depend heavily on specific organizational context and sustained investment.\n\nNote: portions of the article covering open source and AI as potential silver bullets are behind the Pragmatic Engineer paywall.",
+      "added": "2026-05-12",
+      "times_shown": 0
+    }
+  ],
+  "archive": [
+    {
+      "slug": "cognitive-debt",
+      "title": "Cognitive Debt",
+      "url": "https://margaretstorey.com/blog/2026/02/09/cognitive-debt/",
+      "category": "uncategorized",
+      "summary": "Technical debt lives in the code; cognitive debt lives in developers' minds.\n\nCognitive debt is the accumulated loss of understanding about how software works, why design decisions were made, and how the system can be changed. Unlike technical debt which is about messy code, cognitive debt is about the erosion of the shared \"theory\" of the system that lives in developers' minds.\n\nAs generative and agentic AI accelerate development, cognitive debt is becoming a bigger threat than technical debt. Teams can generate code quickly without truly understanding it. Warning signs include: hesitation to make changes for fear of breaking things, reliance on tribal knowledge held by just one or two people, and the feeling that the system is becoming a black box.\n\nTo mitigate cognitive debt, teams should: require at least one human fully understands each AI-generated change before shipping, document not just what changed but why, create regular checkpoints to rebuild shared understanding through code reviews, retrospectives, and knowledge-sharing sessions, and practice slowing down to make hard changes easy rather than rushing for speed at all costs.\n\nThe article references Peter Naur's insight that a program is more than its source code—it is a theory held in developers' minds. As AI reshapes software development, protecting that shared theory may be more important for long-term health than raw output metrics.",
+      "added": "2026-02-19",
+      "read": "2026-02-24",
+      "has_notes": true
+    },
+    {
+      "slug": "the-ai-vampire",
+      "title": "The AI Vampire",
+      "url": "https://steve-yegge.medium.com/the-ai-vampire-eda6e4f07163",
+      "category": "ai",
+      "summary": "Steve Yegge explores a concerning phenomenon he's calling \"The AI Vampire\" - the way AI coding tools (particularly Claude Code with Opus 4.5/4.6) are making developers 10x more productive while simultaneously draining them of energy.\n\n**Key Points:**\n\n1. **10x Productivity is Real** - AI coding hit an \"event horizon\" in November 2025. Engineers using Claude Code can genuinely produce 10x output, which is why even Microsoft engineers have adopted it over Copilot.\n\n2. **The Value Capture Dilemma** - With 10x productivity comes a problem: who captures the value? If you work 8 hours at 10x productivity, your employer captures everything while you burn out. If you slack off and capture all the value for yourself, your company fails. The answer must be somewhere in the middle.\n\n3. **The Vampire Effect** - Yegge describes experiencing \"nap attacks\" and massive fatigue after long AI coding sessions. Like an energy vampire, being around AI drains people. This is compounded by panicking CEOs, unrealistic standards set by early adopters, and the addictive slot-machine nature of vibe-coding.\n\n4. **Startups Are Making It Worse** - AI-native startups are draining talent at unprecedented rates for often-terrible ideas. They're setting a frenzied tone that's spreading to enterprises.\n\n5. **The $/hr Solution** - Yegge proposes the same formula he used at Amazon in 2001: focus on dollars per hour. You can't control your salary (numerator), but you can control hours worked (denominator). The right balance for AI-augmented work, he argues, is 3-4 hour workdays with unlimited AI tokens - anything more leads to burnout.\n\n**The Core Message:** Fight the AI Vampire by controlling your hours, educating leadership about sustainable AI value sharing, and remembering that this is a collective problem requiring collective solutions. The new workday should be shorter, not more productive.",
+      "added": "2026-02-19",
+      "read": "2026-02-21",
+      "has_notes": true
+    },
+    {
+      "slug": "antirez-news-158",
+      "title": "Antirez News 158",
+      "url": "https://antirez.com/news/158",
+      "category": "ai",
+      "summary": "Antirez (Salvatore Sanfilippo, creator of Redis) argues that AI has fundamentally changed programming forever, regardless of one's feelings about it. He shares four recent examples where Claude Code accomplished in hours what would have taken weeks: adding UTF-8 support to linenoise with a testing framework, fixing transient failures in Redis tests, creating a pure C BERT inference library matching PyTorch performance in 700 lines, and reproducing complex Redis Streams internal changes from a design doc.\n\nHe acknowledges that while he loves writing software line by line and hopes for a society that doesn't forget the disadvantaged, facts are facts: for most projects, writing code yourself is no longer sensible. The real value now lies in understanding what to build and how to communicate that vision to LLMs.\n\nAntirez sees LLMs as a continuation of open source's democratization of code—helping small teams compete with larger companies. He's concerned about AI centralization in a few corporations and the job losses that will follow, advocating for political solutions like basic income and government support for displaced workers. His core advice to programmers: don't refuse AI out of principle. Test it thoroughly, find your way to use it effectively, and remember—the joy of building remains untouched; you can just build more and better now.",
+      "added": "2026-02-20",
+      "read": "2026-02-24",
+      "has_notes": true
+    },
+    {
+      "slug": "llm-learning-loop",
+      "title": "LLM Learning Loop",
+      "url": "https://martinfowler.com/articles/llm-learning-loop.html",
+      "category": "uncategorized",
+      "summary": "Martin Fowler argues that while LLMs offer impressive productivity gains, they cannot replace the fundamental learning loop essential to software development. The article explores why the 'assembly line' metaphor fails for software—design emerges through implementation, not before it.\n\n**Key Insights:**\n\n1. **The Learning Loop is Fundamental**: True expertise comes from a cycle of (1) Observing/Understanding, (2) Experimenting/Trying, and (3) Recalling/Applying. This hands-on process cannot be automated—AI can generate solutions instantly, but cannot provide the learning that comes from struggle.\n\n2. **LLMs Excel at Setup, Not Learning**: LLMs shine in lowering the initial friction—bootstrapping projects, resolving dependencies, generating boilerplate. But once 'Hello World' compiles, the real work of learning begins.\n\n3. **The Maintenance Cliff**: Readymade solutions (low-code platforms, LLM-generated code) provide initial speed but hide contextual complexity. When requirements deviate slightly, developers lacking deep understanding face exponential time sinks—similar to system saturation 'knee' curves.\n\n4. **Fluency ≠ Understanding**: LLMs act as translators between natural language and specialized tech dialects (Gradle, Python, SVG, etc.), but this fluency doesn't replace understanding the design constraints and trade-offs embedded in those languages.\n\n**Core Message**: Tools keep getting smarter, but the nature of the learning loop stays the same. Sustainable software development requires acknowledging this reality—forgetting it leads to the 'maintenance cliff.'",
+      "added": "2026-02-20",
+      "read": "2026-03-02",
+      "has_notes": true
+    },
+    {
+      "slug": "rlm-blog",
+      "title": "RLM Blog",
+      "url": "https://alexzhang13.github.io/blog/2025/rlm/",
+      "category": "ai",
+      "summary": "Recursive Language Models (RLMs) are a new inference paradigm where language models recursively call themselves or other LLMs before providing a final answer. The key innovation is treating the input context as a Python variable in a REPL environment, allowing the model to decompose, partition, and recursively query the context without being overwhelmed by context rot.\n\n**Key Concepts:**\n- **Context Rot**: The phenomenon where model performance degrades as context length increases, even when the full context fits in the window\n- **RLM Architecture**: A thin wrapper around an LM that provides a Python notebook environment. The root LM can peek at context, grep for keywords, partition data, and launch recursive sub-queries over chunks\n- **REPL Environment**: The context is stored as a variable that the LM can programmatically analyze using code execution and recursive LM calls\n\n**Experimental Results:**\n1. **OOLONG Benchmark**: RLM using GPT-5-mini outperformed GPT-5 by over 100% (double the correct answers) on long-context reasoning tasks, while being cheaper per query\n2. **BrowseComp-Plus**: RLM(GPT-5) achieved perfect performance with 1000 documents (10M+ tokens) without using a retriever, while baseline models degraded significantly\n\n**Emergent Strategies:**\nThe RLM exhibits several interpretable behaviors: peeking at context structure, grepping for keywords, partition+map over chunks, summarization, and even one-shotting programmatic tasks like git diff tracking.\n\n**Why It Matters:**\nRLMs offer a new axis for test-time compute scaling beyond chain-of-thought reasoning. Rather than training models to handle massive contexts, RLMs decompose the problem so no single call sees the full context. As base models improve, RLMs scale proportionally—if GPT-5 handles 10M tokens, an RLM could handle 100M.",
+      "added": "2026-02-20",
+      "read": "2026-02-22",
+      "has_notes": false
+    },
+    {
+      "slug": "self-driving-codebases",
+      "title": "Self-Driving Codebases",
+      "url": "https://cursor.com/blog/self-driving-codebases",
+      "category": "programming",
+      "summary": "Cursor's research on building self-driving codebases using thousands of autonomous AI agents working together to build complex software projects.\n\n## What They Built\n\nA multi-agent harness system that orchestrated thousands of agents to build a web browser from scratch. The system peaked at ~1,000 commits per hour across 10M tool calls over one week, making the vast majority of commits without human intervention.\n\n## Evolution of the System\n\n**Single Agent (Failed):** Started with one agent trying to build a browser - quickly overwhelmed by complexity, lost track of goals, and got stuck on implementation details.\n\n**Multi-Agent with Shared State (Failed):** Agents used a shared coordination file with locks. Created contention problems (20 agents slowed to 1-3 throughput), agents held locks too long, and couldn't self-coordinate effectively.\n\n**Structured Roles - Planner/Executor/Judge (Partial):** Separated roles for ownership: planner laid out approach, executor managed workers, judge verified completion. Better but bottlenecked by slowest worker and too rigid.\n\n**Continuous Executor (Partial):** Removed independent planner, letting executor also plan and spawn tasks dynamically. Added freshness mechanisms (scratchpad rewriting, auto-summarization, self-reflection). But gave executor too many roles, causing pathological behaviors.\n\n**Final Design (Successful):**\n- **Root planner:** Owns entire scope, delegates specific tasks, does no coding\n- **Subplanners:** Recursive delegation when scope can be subdivided, full ownership of narrow slices  \n- **Workers:** Pick up tasks, drive to completion in isolation, write handoff notes when done\n- **Handoffs:** Contain not just what was done but notes, concerns, findings - fed back to planners\n\n## Key Learnings\n\n**Tradeoffs for Throughput:**\n- Accept small error rate rather than 100% correctness before every commit - errors get fixed by other agents\n- Accept some synchronization overhead and turbulence rather than complex locking\n- Removed the integrator bottleneck - workers merge directly\n\n**Infrastructure:**\n- Disk I/O became the hotspot with hundreds of agents compiling simultaneously\n- Standard tools (Git, Cargo) use shared locks that become problematic at scale\n- Opportunity for copy-on-write and deduplication since agents have mostly identical files\n\n**Specifying Intent:**\n- Instructions become critical at scale - amplifies everything including bad instructions\n- Constraints beat instructions (e.g., \"No TODOs, no partial implementations\" works better than \"remember to finish implementations\")\n- Give concrete numbers (\"20-100 tasks\" not \"many tasks\")\n- Architecture matters - agents follow instructions exactly, good or bad\n\n**Prompting:**\n- Do not instruct things models already know (general engineering)\n- Do instruct things they don't (multi-agent collaboration, your specific processes)\n- Treat like a brilliant new hire who knows engineering but not your codebase\n\n## Principles Established\n\n- **Anti-fragile:** System withstands individual agent failures\n- **Empirical over assumption-driven:** Use data/observation, not assumptions about human org structures\n- **Design for throughput explicitly:** Accept stable error rate requiring final reconciliation vs perfect code that slows everything down\n\nThe system resembles how some software teams already operate - suggesting this organizational pattern may be emergent and optimal for complex software projects.",
+      "added": "2026-02-20",
+      "read": "2026-02-22",
+      "has_notes": true
+    },
+    {
+      "slug": "the-browser-is-the-sandbox",
+      "title": "The Browser is the Sandbox",
+      "url": "https://aifoc.us/the-browser-is-the-sandbox/",
+      "category": "uncategorized",
+      "summary": "",
+      "added": "2026-02-20",
+      "read": "2026-02-22",
+      "has_notes": true
+    },
+    {
+      "slug": "the-normalization-of-deviance-in-ai",
+      "title": "The Normalization of Deviance in AI",
+      "url": "https://embracethered.com/blog/posts/2025/the-normalization-of-deviance-in-ai/",
+      "category": "uncategorized",
+      "summary": "This article explores how the AI industry is dangerously normalizing the acceptance of unreliable LLM outputs, drawing parallels to the Challenger disaster's \"normalization of deviance\" concept coined by sociologist Diane Vaughan.\n\n## Core Argument\nAt its heart, LLMs are unreliable actors in system design - they are probabilistic, non-deterministic, and vulnerable to adversarial attacks. Despite this, vendors and organizations are increasingly treating LLM outputs as trustworthy, skipping security controls like access checks, encoding, and sanitization that should be applied downstream of LLM output.\n\n## The Dangerous Drift\nThe normalization happens gradually: systems work most of the time, so teams lower their guard, skip human oversight, and forget why guardrails existed. Organizations confuse the absence of attacks with the presence of security. This cultural drift is accelerated by competitive pressure for automation, cost savings, and being first to market.\n\n## Real-World Examples\nThe article highlights how major vendors acknowledge risks while still pushing agentic AI:\n- **Microsoft**: Warns that agents can override instructions and become insider threats\n- **OpenAI (Atlas)**: Explicitly recommends against using it for high-stakes or sensitive data\n- **Anthropic (Claude)**: Documents data exfiltration risks via indirect prompt injection\n- **Google (Antigravity)**: Remote code execution was a known issue at launch\n- **Windsurf Cascade**: No human-in-the-loop for MCP tool calls\n\n## The Risk\nAn attacker could train a backdoor into a model that triggers on specific conditions. Given the centralized LLM ecosystem where attacks transfer across systems, this could have widespread consequences.\n\n## Conclusion\nThe author argues for realistic assessment of AI capabilities, maintaining human oversight in high-stakes contexts, and proper security investments (sandboxing, least privilege, temporary credentials) rather than hoping \"the model will just do the right thing.\" The final message: Trust No AI.",
+      "added": "2026-02-20",
+      "read": "2026-02-28",
+      "has_notes": true
+    },
+    {
+      "slug": "what-i-love-about-rust",
+      "title": "What I Love About Rust",
+      "url": "https://nchagnet.pages.dev/blog/what-i-love-about-rust/",
+      "category": "programming",
+      "summary": "An experienced Python developer's perspective on why Rust has become their favorite language after two years of use.\n\nKey Points:\n\nReliability: Rust's strict type system and borrow checker catch most bugs at compile-time. If Rust code compiles, it typically just works—eliminating entire classes of bugs like wrong-type errors, memory safety issues, and data races that plague Python development.\n\nExplicitness: The type system forces handling of all possible cases through enums like Option and Result. Unlike Python's exceptions or optional type hints, Rust makes error handling and null-checking mandatory—you must handle the None case or the Err branch to access your data.\n\nFunctional Programming: Rust incorporates functional concepts from languages like OCaml, including algebraic data types and lazy iterators. Iterators compose operations (filter, map, etc.) without executing until an accumulator like collect() or sum() is called.\n\nPerformance and Interop: The author achieved 10-100x speedup rewriting Python optimization algorithms for IKEA data science workloads. PyO3 makes Python-Rust interop seamless, allowing hot paths to be encapsulated in Rust while keeping the main application in Python.\n\nTooling: Cargo provides a unified, well-designed experience for building, dependency management, testing, and formatting.\n\nTradeoffs: Compile times can be slow (especially with heavy crates), and runtime debugging is more challenging than Python—complex types like dataframes are hard to inspect.\n\nVerdict: Even developers without systems programming backgrounds can quickly appreciate Rust. The initial learning curve pays dividends in reliability and performance for production workloads.",
+      "added": "2026-02-20",
+      "read": "2026-03-02",
+      "has_notes": false
+    },
+    {
+      "slug": "ai-agent-coding",
+      "title": "Ai Agent Coding",
+      "url": "https://minimaxir.com/2026/02/ai-agent-coding/",
+      "category": "ai",
+      "summary": "A detailed, experiment-backed account of a former AI agent skeptic's transformation after Claude Opus 4.5's release in November 2025.\n\nThe author (minimaxir, a Data Scientist) had previously written about not using LLMs often due to agents being \"unpredictable, expensive, and overhyped.\" His early experiences with Copilot and Claude Sonnet 4.5 were disappointing — Sonnet created overly verbose Jupyter notebooks. However, Opus 4.5 was a \"massive difference.\"\n\n**Key Techniques for Success:**\n- Created detailed `AGENTS.md` files (system prompts for agents) with specific coding standards, Pythonic conventions, and rules like \"MUST avoid redundant comments\" and \"NEVER use emoji\"\n- Used elaborate \"gigaprompts\" — detailed Markdown specs stored in git, then fed to the agent as implementation targets\n\n**Projects Built with Opus 4.5:**\n\n*Python:*\n- YouTube channel metadata scraper using httpx (20K videos)\n- Polars-based EDA Jupyter notebook\n- FastAPI + HTMX + PicoCSS webapp for viewing top videos by month\n\n*Rust with Python bindings (PyO3/Maturin):*\n- **icon-to-image**: Renders icon fonts to images with supersampling (6x faster than old Python hack)\n- **word cloud generator**: Full Rust implementation with WASM browser output and shadcn/ui frontend\n- **miditui**: Terminal MIDI composer/DAW using rodio and ratatui\n- **ballin**: Terminal physics simulator with 10,000+ balls using rapier 2D engine\n\n*ML Algorithm Reimplementations (Rust):*\nUsing a multi-step optimization pipeline (implement → clean → identify weaknesses → optimize → add Python bindings → validate accuracy), the author achieved massive speedups:\n- **UMAP**: 9-30x faster than Python's umap-learn\n- **HDBSCAN**: 3-10x faster than Python hdbscan\n- **GBDT (gradient boosting)**: 24-42x faster training than XGBoost\n- **nndex** (nearest neighbors): 1-5x faster than numpy for single queries, with GPU support via wgpu/Metal\n\nThe author is now developing **rustlearn**, a scikit-learn competitor in Rust with Python bindings.\n\n**The Optimization Pipeline:**\n1. Implement with benchmarks\n2. Clean code and optimize\n3. Identify algorithmic weaknesses\n4. Optimize to 60% runtime (1.4x speedup)\n5. Profile with flamegraph, create tuning profiles for another 60% gain\n6. Add Python bindings\n7. Validate accuracy vs reference implementations\n8. Chain agents (Codex then Opus) for cumulative 2-3x+ gains\n\n**Key Insights:**\n- Agents work best when you have \"approximate knowledge of many things\" with domain expertise to validate outputs\n- Success is heavily dependent on the AGENTS.md file (analogous to system prompts)\n- AI-generated code beating existing optimized libraries proves it's not just \"regurgitating GitHub\"\n- Despite personal success, the author notes toxic discourse around AI coding and struggles with how to represent this work professionally",
+      "added": "2026-02-27",
+      "read": "2026-04-04",
+      "has_notes": true
+    },
+    {
+      "slug": "software-development-costs-less-than-minimum-wage",
+      "title": "Software development now costs less than the wage of a minimum wage worker",
+      "url": "https://ghuntley.com/real/",
+      "category": "ai",
+      "summary": "Geoffrey Huntley argues that AI has commoditized software development, with costs dropping to $10.42/hour—less than minimum wage. The article explores the societal implications of \"Ralph\" (AI coding tools) and how they're disrupting the industry.\n\n**Key Points:**\n\n1. **Cost Disruption**: Software development now costs less than a burger flipper at McDonald's. Private equity firms are already shorting companies like Atlassian based on this trend.\n\n2. **Identity Crisis**: If everyone can be a software developer (enabled by tools like Cursor), what does it mean for those whose identity is tied to being a \"software developer who writes software for a living\"?\n\n3. **The K Shape**: The industry is dividing into:\n   - **Model-first companies**: Lean, apex predators operating on razor-thin margins\n   - **Incumbents**: Burdened by corporate process and inefficiency\n\n4. **Accessibility Shift**: The models evolved from \"wild horses\" requiring skill to \"factory defaults of broken in and ready to get shit done.\" People no longer need to invest as much time learning how to juice them.\n\n5. **VC Existential Crisis**: Venture capitalists are questioning their business model—why raise large amounts of capital if it's just a five-person show now?\n\n6. **Two Types of People**: Those who picked up the guitar (invested in themselves, practiced deliberately) vs. those who waited. The gap between them is widening exponentially.",
+      "added": "2026-02-28",
+      "read": "2026-02-28",
+      "has_notes": true
+    },
+    {
+      "slug": "ai-doesnt-reduce-work-it-intensifies-it",
+      "title": "AI Doesn't Reduce Work, It Intensifies It",
+      "url": "https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it",
+      "category": "ai",
+      "summary": "**The Promise vs. Reality of AI at Work**\n\nThis Harvard Business Review article by UC Berkeley Haas researchers Aruna Ranganathan and Xingqi Maggie Ye presents findings from an eight-month ethnographic study (April–December 2025) of 200 employees at a U.S.-based technology company. The research reveals a counterintuitive finding: rather than reducing workloads as promised, generative AI actually **intensifies work** in three distinct ways.\n\n**Three Forms of Work Intensification:**\n\n1. **Job Scope Expansion** — Workers began taking on tasks that previously belonged to others or might not have been attempted at all. What started as \"just trying things\" with AI accumulated into a meaningful widening of responsibilities. Workers increasingly absorbed work that previously would have justified additional headcount.\n\n2. **Dissolution of Natural Pauses** — Because AI makes it easy to start and continue tasks, work seeped into moments that used to function as breaks. Employees sent prompts during lunch, before meetings, or in the evening when ideas struck. This created a workday with fewer natural stopping points and more continuous involvement with work.\n\n3. **Continuous Multitasking** — Workers managed several active threads simultaneously: manually writing code while AI generated alternatives, running multiple agents in parallel, or reviving long-deferred tasks because AI could \"handle them\" in the background. While this created a sense of having a productive \"partner,\" the reality was continual attention switching and cognitive juggling.\n\n**The Hidden Cost:**\n\nWhile AI initially creates excitement, momentum, and a feeling of expanded capability, the cumulative effect creates strain over time. The researchers warn of a vicious cycle: increased capability leads to increased output, which leads to higher expectations, which pressures further expansion. By month six, many workers reported cognitive fatigue, burnout, and weakened decision-making.\n\n**The Solution: Building an \"AI Practice\":**\n\nThe authors recommend organizations develop intentional structures around AI use rather than simply accelerating because the technology makes it possible. This includes:\n- **Intentional pauses** — Structured moments before major decisions to ensure speed doesn't crowd out reflection\n- **Sequencing** — Batching non-urgent updates and protecting focus windows instead of reacting to every AI output immediately\n- **Human grounding** — Protecting time for check-ins, shared reflection, and dialogue so work doesn't become entirely solo and tool-mediated\n\n**Key Quote:**\n\"The intention is not to slow innovation, but to ensure that productivity gains remain aligned, thoughtful, and sustainable over time.\"",
+      "added": "2026-03-28",
+      "read": "2026-03-30",
+      "has_notes": true
+    },
+    {
+      "slug": "ai-killed-my-job",
+      "title": "AI Killed My Job",
+      "url": "https://www.bloodinthemachine.com/s/ai-killed-my-job",
+      "category": "ai",
+      "summary": "A Substack series by Brian Merchant (Blood in the Machine) collecting real-life stories from workers across multiple industries about how AI is impacting their jobs and livelihoods.\n\nThe series features firsthand accounts from:\n\n**Copywriters** - Forced to use AI tools until being laid off, with the industry decimated as companies replace human writers with AI-generated content.\n\n**Visual Artists & Illustrators** - Graphic designers sharing stories about AI being used to lower wages, degrade creative work, and replace human artists entirely.\n\n**Translators** - One of the hardest-hit professions, with rates plummeting, work drying up, and many considering leaving the field as AI translation tools take over.\n\n**Tech Workers** - Employees at major companies like TikTok and Google describing how AI is changing, ruining, or outright replacing their jobs from the inside.\n\nThe series serves as an oral history of the early AI era's impact on labor, documenting the human cost of automation across creative, technical, and knowledge-work professions.",
+      "added": "2026-03-28",
+      "read": "2026-04-13",
+      "has_notes": true
+    },
+    {
+      "slug": "bet-on-juniors-ai",
+      "title": "The Bet On Juniors Just Got Better",
+      "url": "https://tidyfirst.substack.com/p/the-bet-on-juniors-just-got-better",
+      "category": "engineering",
+      "summary": "Kent Beck argues that hiring junior developers has become MORE attractive with AI tools, not less.\n\nTHE TRADITIONAL PROBLEM:\nJuniors go through a valley of regret - you pay senior-level costs for negative productivity while they learn. The longer this valley, the more likely they leave before becoming net positive (20% annual attrition means 36% never breakeven with a 24-month ramp).\n\nTHE SHIFT WITH AI:\nWhen juniors use AI for augmented coding (not vibe coding), the learning curve compresses:\n- Tasks that took days take hours\n- AI collapses the search space - instead of 3 hours finding the right API, spend 20 minutes evaluating AI-surfaced options\n- Time saved is reinvested in learning, not more unprofitable features\n\nTHE MATH:\n- Traditional 24-month ramp: ~36% of juniors leave before breakeven\n- Compressed 9-month ramp: ~15% leave before breakeven\n- Cut failure rate by more than half\n\nMANAGE FOR LEARNING, NOT PRODUCTION:\nAfter completing a task, juniors should ask:\n- How else could this have been done?\n- Can we simplify the code?\n- What are the tradeoffs?\n- Are there more tests we should write?\n- What is the performance envelope?\n\nTHE MULTIPLIER EFFECT:\nProductive developers don't just produce - they mentor, build institutional knowledge, and create leverage. Accelerating one junior's ramp accelerates everyone they'll eventually help.\n\nKEY INSIGHT: Investment in AI tooling isn't just about existing developer productivity - it is about making profitable bets on juniors that were not viable before.",
+      "added": "2026-03-28",
+      "read": "2026-05-01",
+      "has_notes": true
+    },
+    {
+      "slug": "how-to-handle-territorial-behavior",
+      "title": "How To Handle Territorial Behavior",
+      "url": "https://open.substack.com/pub/thecaringtechie/p/how-to-handle-territorial-behavior?utm_source=share&utm_medium=android&r=7mo5z",
+      "category": "uncategorized",
+      "summary": "Territorial behavior in tech is one of the most common yet least named collaboration problems. It manifests as gatekeeping knowledge, shutting down ideas before they get a fair hearing, controlling information flow, or making oneself a bottleneck for decisions. The article explores the root causes: lack of trust, perceived lack of control, past negative experiences, job security fears, and simple overwhelm. When dealing with territorial colleagues, the advice is to lead with curiosity, do your homework before proposing changes, be transparent about intentions, include them early in the process, and name problems without attacking the person. For those recognizing territorial tendencies in themselves, the guidance is to get curious before defensive, engage with ideas rather than shutting them down, say no based on merit not ownership, and directly name underlying needs (e.g., 'I want to be consulted'). The author emphasizes that while territorial behavior is a human instinct, its cost is real: knowledge silos slow information, kill ideas, and discourage fresh perspectives. With AI-generated code blurring ownership lines further, this dynamic is becoming more urgent than ever. The distinction matters: hold ground when you have something worth defending, not out of fear of letting go.",
+      "added": "2026-03-28",
+      "read": "2026-04-12",
+      "has_notes": true
+    },
+    {
+      "slug": "learning-reinforcement-learning",
+      "title": "Learning Reinforcement Learning",
+      "url": "https://dennybritz.com/posts/wildml/learning-reinforcement-learning/",
+      "category": "uncategorized",
+      "summary": "This post by Denny Britz is a practical guide to learning Reinforcement Learning (RL), a field that has seen breakthroughs like learning to play Atari games from pixels and mastering Go.\n\n**Why study RL?** RL is applied in robotics, image processing, and NLP. The combination of RL with Deep Learning works extremely well—neural networks serve as function approximators for learning representations, while RL techniques are being integrated into supervised learning problems (attention mechanisms, conversational interfaces, translation systems). RL also has fascinating parallels to human psychology and neuroscience.\n\n**Learning Resources Recommended:**\n- David Silver's Reinforcement Learning Course (UCL)\n- Richard Sutton & Andrew Barto's 'Reinforcement Learning: An Introduction' (2nd edition, ~80% complete)\n\nThese cover most of what you need to understand recent research papers. Prerequisites: basic math and some ML knowledge.\n\n**Practical Implementation:** The author provides a comprehensive GitHub repository implementing standard RL algorithms using Python, OpenAI Gym, and TensorFlow, organized into chapters with exercises and solutions.\n\n**Topics Covered:**\n- Introduction to RL problems & OpenAI Gym\n- MDPs and Bellman Equations\n- Dynamic Programming (Model-Based RL, Policy/Value Iteration)\n- Monte Carlo Model-Free Prediction & Control\n- Temporal Difference Model-Free Prediction & Control (SARSA, Q-Learning)\n- Function Approximation\n- Deep Q Learning\n- Policy Gradient Methods (REINFORCE, Actor-Critic, A3C)\n- Learning and Planning (WIP)\n- Exploration and Exploitation (WIP)",
+      "added": "2026-03-28",
+      "read": "2026-03-29",
+      "has_notes": true
+    },
+    {
+      "slug": "martin-fowler-fragment-2026-01-08",
+      "title": "Martin Fowler Fragment 2026-01-08",
+      "url": "https://martinfowler.com/fragments/2026-01-08.html",
+      "category": "uncategorized",
+      "summary": "**Anthropic AI Report**: Developers use AI for 59% of work with 50% productivity gains; concerns about career and social dynamics.\n\n**Obie Fernandez Workflow**: Built 13,000-line production app with Claude using TDD as a \"forcing function\" to maintain human understanding.\n\n**Jason Fried on Design**: Interface elements should be Obvious, Easy, or Possible to manage cognitive costs.\n\n**AI Misinformation**: Fake Uber Eats whistleblower story shows AI can generate convincing fake documents in minutes.\n\n**Kent Beck on Specs**: Critiques spec-driven development; LLMs work best with learning loops and feedback.\n\n**Context Management**: Emerging tools like Pi for managing context in AI coding workflows.\n\nTheme: AI transforms development but human judgment, testing, and learning remain essential.",
+      "added": "2026-03-28",
+      "read": "2026-04-21",
+      "has_notes": true
+    },
+    {
+      "slug": "resonant-computing",
+      "title": "Resonant Computing",
+      "url": "https://resonantcomputing.org/",
+      "category": "uncategorized",
+      "summary": "**Resonant Computing** is a manifesto proposing a new vision for technology that prioritizes human flourishing over engagement-driven business models.\n\n**Core Argument:**\nCurrent technology (social feeds, platforms mediating daily life) often leaves us feeling alienated and anxious, designed to hijack attention rather than serve human needs. With AI, we stand at a crossroads: continue down the path of hyper-scale centralization, or build technology that truly serves people.\n\n**The Concept of Resonance:**\nDrawing from Christopher Alexander's work on architecture, the authors introduce \"resonance\"—the quality of environments that leave us feeling more alive, connected, and nourished. Technology should be designed to resonate with our deeper values, not exploit our psychological vulnerabilities.\n\n**Five Principles of Resonant Computing:**\n\n1. **Private** — People must be primary stewards of their own context and data\n2. **Dedicated** — Software should work exclusively for you, with no hidden agendas\n3. **Plural** — No single entity should control digital spaces; distributed power and interoperability\n4. **Adaptable** — Software should meet the specific, context-dependent needs of each person\n5. **Prosocial** — Technology should enable connection and help us become better neighbors and collaborators\n\n**The Opportunity:**\nAI enables hyper-personalization without sacrificing human agency. Software can now adapt to individual contexts rather than forcing standardized solutions. The movement calls for rethinking system architectures, design patterns, and business models that have dominated tech for decades.\n\n**Signatories include:** Tim O'Reilly, Kevin Kelly, Bruce Schneier, Alan Kay, Lawrence Lessig, Matt Mullenweg, and many other notable technologists and thinkers.",
+      "added": "2026-03-28",
+      "read": "2026-04-22",
+      "has_notes": true
+    },
+    {
+      "slug": "sandboxes-for-ai",
+      "title": "Sandboxes for AI",
+      "url": "https://www.luiscardoso.dev/blog/sandboxes-for-ai",
+      "category": "uncategorized",
+      "summary": "This article explores sandboxing technologies for AI agent code execution, addressing the critical security problem of running untrusted code generated by AI models or users.\n\n**The Core Problem**\nAI agents frequently request to execute code (pytest, package installations, scripts), creating a threat model where untrusted bytes run on infrastructure you care about. Risks include data exfiltration, secret theft, network pivoting, and resource abuse—even without kernel exploits.\n\n**The Three-Question Evaluation Model**\nThe author proposes evaluating any sandbox through three lenses:\n1. **Boundary**: Where isolation is enforced (container, gVisor, microVM, or Wasm runtime)\n2. **Policy**: What the code can touch (filesystem, network, devices, quotas)\n3. **Lifecycle**: What persists between runs (fresh, workspace, snapshot/restore)\n\n**Boundary Options Compared**\n- **Containers**: Share host kernel; fast but expose syscall ABI to same kernel\n- **gVisor**: Interposes a userspace kernel (Sentry) that filters syscalls\n- **MicroVMs**: Hardware virtualization with guest kernel; host sees only hypervisor activity\n- **WebAssembly/Isolates**: No syscall ABI; explicit host API access only\n\n**Key Insight**: Moving from containers to stronger boundaries means betting on different trusted components, not eliminating trust. The trade-offs involve startup time, compatibility, and isolation strength.\n\n**Use Case Mapping**\n- Remote devbox/coding agents: microVMs with workspace persistence\n- Stateless code interpreter: microVMs or containers with fresh lifecycle\n- Tool calling: Wasm components with minimal policy\n- RL environments: microVMs with fast snapshot/restore\n\nThe article emphasizes that containers became the default due to speed and density advantages for trusted workloads, but AI agents require reevaluating this assumption based on actual threat models rather than infrastructure convenience.",
+      "added": "2026-03-28",
+      "read": "2026-04-13",
+      "has_notes": true
+    },
+    {
+      "slug": "why-does-development-slow",
+      "title": "Why Does Development Slow?",
+      "url": "https://tidyfirst.substack.com/p/why-does-development-slow",
+      "category": "engineering",
+      "summary": "Kent Beck explores why software development starts fast but slows to a crawl over time, and how this happens faster when coding with AI.\n\nTHE CORE PROBLEM:\nSoftware embeds economic value in two ways:\n1. Cash flow from current features\n2. Optionality (future possibilities)\n\nEvery feature you implement burns optionality. The first feature goes fast because you have maximum options. But each addition makes the codebase more complex, burning options for future work.\n\nTHE TRAP:\n- Early features: Rapid progress, many options\n- Later features: Slow progress, few options remaining\n- Eventually: Out of options, must start over (Beck's pattern of BPlusTree, BPlusTree2, BPlusTree3...)\n\nTHE SOLUTION - TIDYING FIRST:\nBetween features, invest in restoring and enhancing optionality:\n1. Ask: What's the next feature we're implementing?\n2. Identify: What in our current mess makes that harder?\n3. Tidy: What can we clean up to make it easier?\n\nThe rhythm becomes: Feature, Options, Feature, Options...\n\nAI AMPLIFIES THE PROBLEM:\nCoding with a genie (AI) compresses time - you reach the slowdown point faster because you generate more code in less time, burning through options more quickly.\n\nKEY INSIGHT: You can't improve both axes at once (make it run then make it right). The space between features is where you choose to invest in optionality - this is the Tidy First philosophy.",
+      "added": "2026-03-28",
+      "read": "2026-05-01",
+      "has_notes": true
+    },
+    {
+      "slug": "httpsghuntleycomcogsec",
+      "title": "Untitled",
+      "url": "https://ghuntley.com/cogsec/",
+      "category": "uncategorized",
+      "summary": "Geoffrey Huntley explores 'cognitive security' — the idea that as people increasingly rely on AI models for daily decision-making, they are outsourcing their thinking to a handful of frontier labs. Society is sorting into tribes based on which AI provider they use, creating dangerous concentration of influence. Centers on Anthropic's 'Golden Gate Claude' experiment, where researchers surgically modified model weights to make the Golden Gate Bridge inescapably top-of-mind regardless of the query, demonstrating that model behavior can be invisibly altered after deployment. Huntley raises the question of what happens when advertisers bid to rank higher in model weights. Concludes the only real defense is to train and run your own models, giving control over cognitive security and supply chain.",
+      "added": "2026-03-29",
+      "read": "2026-04-27",
+      "has_notes": true
+    },
+    {
+      "slug": "httpsghuntleycomfrontier",
+      "title": "Untitled",
+      "url": "https://ghuntley.com/frontier/",
+      "category": "uncategorized",
+      "summary": "Geoffrey Huntley draws a sharp distinction between software development and software engineering. Software development — writing code, prompting LLMs — is accelerating to ubiquity, where anyone can now be a 'developer.' Software engineering remains essential but is evolving: engineers are becoming more like locomotive engineers, focused on keeping systems safe, reliable, and on track rather than manually writing code. Huntley argues that traditional open source is effectively dead — the original purpose of open-source libraries is undermined when AI can generate first-party code on demand, avoiding maintainer burnout and supply-chain attacks. The broader thesis is that software is moving from scarcity to abundance. Products are becoming hyper-commodities, easily reimplemented via AI. True competitive moats now lie in non-technical areas: contracts, relationships, distribution, taste, and judgment. He questions whether software remains investable and urges professionals to adapt quickly or risk irrelevance.",
+      "added": "2026-03-29",
+      "read": "2026-04-25",
+      "has_notes": true
+    },
+    {
+      "slug": "httpsghuntleycomporting",
+      "title": "Untitled",
+      "url": "https://ghuntley.com/porting/",
+      "category": "uncategorized",
+      "summary": "Geoffrey Huntley presents a practical guide for using AI to port software between programming languages via a 'ralph loop' — an iterative AI agent process. Four steps: first, compress all tests into specification files with citations to implementation code; second, do the same for product functionality in src/*; third, generate a TODO file and execute a ralph loop tackling one item at a time, studying specs and following citations; fourth, configure the target language with strict compilation. The core insight is using citations in specifications to encourage the AI agent to study the original implementation during porting, decoupling implementation intent from source language.",
+      "added": "2026-03-29",
+      "read": "2026-04-27",
+      "has_notes": true
+    },
+    {
+      "slug": "httpslamportazurewebsitesnetvideovideoshtml",
+      "title": "Untitled",
+      "url": "https://lamport.azurewebsites.net/video/videos.html",
+      "category": "uncategorized",
+      "summary": "A comprehensive video lecture series by Leslie Lamport (Turing Award winner and creator of TLA+) designed to teach programmers how to write TLA+ specifications. The course assumes basic programming knowledge and elementary mathematics, progressing from introductory concepts through advanced topics like distributed consensus algorithms. Spans 10 lectures covering: state machines in TLA+, the TLA+ Toolbox, specification writing and model checking with TLC, database transaction commit protocols (two-phase commit and Paxos commit), temporal logic, liveness and fairness properties, and refinement mappings. TLA+ is a formal specification language used to design and verify concurrent and distributed systems, adopted by companies like Amazon and Microsoft to catch design-level bugs before implementation. Serves as the primary self-study resource for engineers looking to add formal methods to their toolkit.",
+      "added": "2026-03-29",
+      "read": "2026-04-20",
+      "has_notes": true
+    },
+    {
+      "slug": "ai-as-economic-warfare",
+      "title": "AI as economic warfare",
+      "url": "https://ghuntley.com/warfare/",
+      "category": "ai",
+      "summary": "Geoffrey Huntley argues that open source has always been a financial weapon by design, tracing its origins from Linux vs Windows in the 90s to today's AI landscape. He speculates that China releasing free AI models may be economic warfare — weaponizing open source at the nation-state level for the first time. Raises questions about trust, business dependency on AI, and what happens when the AI 'spigot gets turned off' through sanctions.",
+      "added": "2026-04-26",
+      "read": "2026-04-27",
+      "has_notes": true
+    },
+    {
+      "slug": "welcome-to-gas-city",
+      "title": "Welcome to Gas City",
+      "url": "https://steve-yegge.medium.com/welcome-to-gas-city-57f564bb3607",
+      "category": "engineering",
+      "summary": "Steve Yegge introduces Gas City v1.0, an open-source SDK for building dark factories (AI agent infrastructure). Covers 11 stages of AI adoption, the MEOW stack (Models, Execution, Observation, Workflow), Dolt database integration, and the trend of de-SaaSing companies. Evolution from the earlier Gas Town concept into a production-ready platform.",
+      "added": "2026-04-26",
+      "read": "2026-05-02",
+      "has_notes": true
+    },
+    {
+      "slug": "httpswwwjamesshorecomv2blog2026you-need-ai-that-reduces-your-maintenance-costs",
+      "title": "Untitled",
+      "url": "https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs",
+      "category": "ai",
+      "summary": "James Shore argues that AI coding agents must reduce maintenance costs proportionally to their productivity gains. Using a maintenance cost model, he shows that doubling code output while keeping maintenance costs the same still doubles long-term maintenance burden, eroding gains within 19 months. If AI doubles output but also doubles maintenance costs, gains vanish after just 5 months. The key insight: to actually benefit from AI coding tools, you need code that costs proportionally less to maintain — otherwise you're trading a temporary speed boost for permanent indenture.",
+      "added": "2026-05-11",
+      "read": "2026-05-12",
+      "has_notes": true
+    }
+  ]
+}
