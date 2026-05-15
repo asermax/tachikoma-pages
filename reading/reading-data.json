@@ -155,6 +155,15 @@
       "times_shown": 0
     },
     {
+      "slug": "httpswwwstvnshwritingprogramming-still-sucks-fqffhyp",
+      "title": "Untitled",
+      "url": "https://www.stvn.sh/writing/programming-still-sucks-fqffhyp",
+      "category": "engineering",
+      "summary": "A critique of the software industry's response to AI, told through an extended burning ship metaphor. Argues the real threat isn't AI but greedy leadership gutting engineering teams and dismantling the apprenticeship pipeline. The centerpiece is Sara, a mid-50s engineer maintaining a critical payroll cron job inherited from her late mentor — representing the invisible institutional knowledge that gets destroyed when juniors are cut. A lament for engineering culture replaced by output optimization and AI-driven cost cutting.",
+      "added": "2026-05-15",
+      "times_shown": 0
+    },
+    {
       "slug": "structured-prompt-driven-development",
       "title": "Structured Prompt-Driven Development",
       "url": "https://martinfowler.com/articles/structured-prompt-driven/",
