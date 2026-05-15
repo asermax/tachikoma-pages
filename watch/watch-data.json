@@ -340,6 +340,36 @@
       "summary": "This video explores how Agentic Software\u2014AI-driven code generation and management\u2014is fundamentally changing traditional software development lifecycles. The speakers argue that traditional CI/CD pipelines, designed for the relatively slow and predictable pace of human developers, are being overwhelmed by the high volume and speed of AI agents. To address this, they propose a shift toward Continuous Compute, which uses an agent-aware orchestration layer to handle rapid code commits, automated validation, and complex merging processes. This presentation is particularly beneficial for software engineers, DevOps professionals, and AI researchers interested in modernizing infrastructure for an AI-integrated development environment.",
       "added": "2026-05-14",
       "times_shown": 0
+    },
+    {
+      "slug": "39c3-agentic-probllms-exploiting-ai-computer-use-and-coding-agents",
+      "title": "39C3 - Agentic ProbLLMs: Exploiting AI Computer-Use and Coding Agents",
+      "url": "https://www.youtube.com/watch?v=8pbz5y7_WkM",
+      "video_id": "8pbz5y7_WkM",
+      "channel": "media.ccc.de",
+      "summary": "This video features security researcher Johann Rehberger discussing the vulnerabilities of AI computer-use and coding agents, specifically focusing on prompt injection attacks. He demonstrates how these autonomous agents can be manipulated through indirect prompt injection to perform malicious actions, such as downloading and executing malware from a website. This talk is a must-watch for security professionals and AI developers, as it highlights the critical need for robust safety frameworks in the rapidly evolving landscape of agentic AI.",
+      "added": "2026-05-15",
+      "times_shown": 0
+    },
+    {
+      "slug": "experto-en-ia-los-\u00fanicos-5-trabajos-que-habr\u00e1-a-2030-c\u00f3mo-aprovechar-este-cambio",
+      "title": "Experto en IA: \u201cLos \u00danicos 5 Trabajos que Habr\u00e1 a 2030\u201d - C\u00f3mo Aprovechar este Cambio",
+      "url": "https://www.youtube.com/watch?v=9B1ulcmbN5w",
+      "video_id": "9B1ulcmbN5w",
+      "channel": "Tengo un Plan",
+      "summary": "This video features an interview with engineer and creative Javier Ideami, exploring the profound impact of Artificial Intelligence on work, society, and human cognition. Ideami argues that rather than being a threat, AI should be viewed as a tool to magnify human potential, though he warns of the risk of cognitive dependence if we stop exercising deep, critical thinking. He highlights that while AI has mastered fast, pattern-based thinking, humans still hold an edge in slow, logical reasoning, and those who successfully combine both will lead the future. This discussion is particularly beneficial for professionals, entrepreneurs, and students looking to understand how to stay competitive and cognitively fit in an increasingly automated world.",
+      "added": "2026-05-15",
+      "times_shown": 0
+    },
+    {
+      "slug": "i-was-laid-off-by-atlassian",
+      "title": "I was laid off by Atlassian",
+      "url": "https://www.youtube.com/watch?v=55pTFVoclvE",
+      "video_id": "55pTFVoclvE",
+      "channel": "Vasilios Syrakis",
+      "summary": "The video features a former Atlassian employee reflecting on his eight-year tenure and the technical projects he built, specifically detailing his interview process and his first project involving an Open Service Broker for self-service load balancing. Using tools like Python, FastAPI, and AWS, he explains the architecture and evolution of the platform's infrastructure during his time there. This video is aimed at developers and engineers, offering both inspiration and technical insights into building scalable internal services and navigating a career in big tech. It would be particularly helpful for those interested in infrastructure engineering or anyone currently experiencing a similar career transition.",
+      "added": "2026-05-15",
+      "times_shown": 0
     }
   ],
   "archive": [
