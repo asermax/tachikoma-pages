@@ -155,15 +155,6 @@
       "times_shown": 0
     },
     {
-      "slug": "httpswwwstvnshwritingprogramming-still-sucks-fqffhyp",
-      "title": "Untitled",
-      "url": "https://www.stvn.sh/writing/programming-still-sucks-fqffhyp",
-      "category": "engineering",
-      "summary": "A critique of the software industry's response to AI, told through an extended burning ship metaphor. Argues the real threat isn't AI but greedy leadership gutting engineering teams and dismantling the apprenticeship pipeline. The centerpiece is Sara, a mid-50s engineer maintaining a critical payroll cron job inherited from her late mentor — representing the invisible institutional knowledge that gets destroyed when juniors are cut. A lament for engineering culture replaced by output optimization and AI-driven cost cutting.",
-      "added": "2026-05-15",
-      "times_shown": 0
-    },
-    {
       "slug": "structured-prompt-driven-development",
       "title": "Structured Prompt-Driven Development",
       "url": "https://martinfowler.com/articles/structured-prompt-driven/",
@@ -442,6 +433,16 @@
       "summary": "James Shore argues that AI coding agents must reduce maintenance costs proportionally to their productivity gains. Using a maintenance cost model, he shows that doubling code output while keeping maintenance costs the same still doubles long-term maintenance burden, eroding gains within 19 months. If AI doubles output but also doubles maintenance costs, gains vanish after just 5 months. The key insight: to actually benefit from AI coding tools, you need code that costs proportionally less to maintain — otherwise you're trading a temporary speed boost for permanent indenture.",
       "added": "2026-05-11",
       "read": "2026-05-12",
+      "has_notes": true
+    },
+    {
+      "slug": "httpswwwstvnshwritingprogramming-still-sucks-fqffhyp",
+      "title": "Untitled",
+      "url": "https://www.stvn.sh/writing/programming-still-sucks-fqffhyp",
+      "category": "engineering",
+      "summary": "A critique of the software industry's response to AI, told through an extended burning ship metaphor. Argues the real threat isn't AI but greedy leadership gutting engineering teams and dismantling the apprenticeship pipeline. The centerpiece is Sara, a mid-50s engineer maintaining a critical payroll cron job inherited from her late mentor — representing the invisible institutional knowledge that gets destroyed when juniors are cut. A lament for engineering culture replaced by output optimization and AI-driven cost cutting.",
+      "added": "2026-05-15",
+      "read": "2026-05-15",
       "has_notes": true
     }
   ]
