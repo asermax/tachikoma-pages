@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-14",
+  "generated_at": "2026-05-15",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -152,6 +152,15 @@
       "category": "engineering",
       "summary": "This article by Gergely Orosz revisits Frederick Brooks Jr.'s influential 1986 paper 'No Silver Bullet -- Essence and Accident in Software Engineering' (later included as Chapter 17 in the 1995 edition of 'The Mythical Man-Month'). Brooks argued that no single technology or management technique would deliver an order-of-magnitude improvement in software engineering productivity, reliability, or simplicity. Orosz examines whether that prediction has held up over 40 years and how it relates to the current era of AI-assisted coding.\n\nOrosz surveys the major developments since Brooks wrote the paper: version control systems (CVS, Subversion, Git), modern IDEs, CI/CD and automated testing, open source and package managers, StackOverflow, cloud computing, platform and DevEx teams, and the SRE discipline. While each contributed to developer efficiency, none by itself delivered a standalone 10x improvement in the way Brooks defined a silver bullet. However, taken together they dramatically improved iteration speed -- shipping software multiple times per day is now routine, whereas in 1975 delivery was measured in months or years. Yet shipping complex, high-quality software still takes years, as illustrated by the development timeline of Grand Theft Auto VI (roughly 6-12 years). The bar for standout software keeps rising as capabilities expand.\n\nThe article examines SRE as a possible counterexample: Google Search, the most reliable public-facing internet service in history (one global outage in 15 years), pioneered the SRE role starting in 2003. Orosz argues SRE qualifies as a silver bullet for Google Search specifically, but not for the broader industry. Other Google services still experience outages, and even GitHub sits at zero nines of availability despite having SRE. This suggests silver bullets may be context-dependent -- they require the right team culture, investment, and founding values to produce outsized results. The article then raises open source plus GitHub as a potential silent silver bullet and AI as a candidate, though these later sections are behind the paywall.\n\nThe main takeaway is that Brooks' thesis has largely held up: no single tool or methodology has been a universal silver bullet for software engineering. Progress has been real and substantial, but it comes from the compounding effect of many incremental improvements, not from any single breakthrough. The rare exceptions, like SRE at Google Search, prove the rule -- they depend heavily on specific organizational context and sustained investment.\n\nNote: portions of the article covering open source and AI as potential silver bullets are behind the Pragmatic Engineer paywall.",
       "added": "2026-05-12",
+      "times_shown": 0
+    },
+    {
+      "slug": "structured-prompt-driven-development",
+      "title": "Structured Prompt-Driven Development",
+      "url": "https://martinfowler.com/articles/structured-prompt-driven/",
+      "category": "ai",
+      "summary": "Introduces Structured-Prompt-Driven Development (SPDD), a method that treats AI prompts as first-class delivery artifacts — version-controlled, reviewed, and reusable. Built around the REASONS Canvas (Requirements, Entities, Approach, Structure, Operations, Norms, Safeguards) and a six-step workflow that brings prompts into the same discipline as code. Developed by Thoughtworks to address the gap between individual AI speed and system-level throughput. Includes a worked billing engine example, core skill identification (abstraction-first, alignment, iterative review), and fitness assessment for where SPDD pays off vs. falls short.",
+      "added": "2026-05-15",
       "times_shown": 0
     }
   ],
