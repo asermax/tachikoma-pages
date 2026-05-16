@@ -379,6 +379,13 @@
                 </g>
             </svg>
         </button>
+        <button class="play-btn" id="rewindBtn" title="Rewind 10 seconds">
+            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 4v4h4"/>
+                <path d="M3.5 11.5a6.5 6.5 0 1 0 1.2-5.7L1 8"/>
+                <text x="10" y="14" fill="#fff" stroke="none" font-size="7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle" font-weight="600">10</text>
+            </svg>
+        </button>
         <span class="time" id="timeDisplay">0:00 / 0:00</span>
         <div class="spacer"></div>
         <button class="reset-btn" id="resetBtn" title="Reset to beginning" style="display:none">&#8634; Reset</button>
@@ -402,6 +409,7 @@ const scrollProgress = document.getElementById('scrollProgress');
 const speedBtns = document.querySelectorAll('.speed-btn');
 const followBtn = document.getElementById('followBtn');
 const resetBtn = document.getElementById('resetBtn');
+const rewindBtn = document.getElementById('rewindBtn');
 
 let isPlaying = false;
 let isUserScrolling = false;
@@ -548,6 +556,12 @@ progressTrack.addEventListener('click', (e) => {
         highlightChunk(newChunk);
         scrollToChunk(newChunk);
     }
+});
+
+// Rewind 10 seconds
+rewindBtn.addEventListener('click', () => {
+    if (!audio.duration) return;
+    audio.currentTime = Math.max(0, audio.currentTime - 10);
 });
 
 // Speed controls
