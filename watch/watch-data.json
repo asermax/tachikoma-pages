@@ -370,6 +370,26 @@
       "summary": "The video features a former Atlassian employee reflecting on his eight-year tenure and the technical projects he built, specifically detailing his interview process and his first project involving an Open Service Broker for self-service load balancing. Using tools like Python, FastAPI, and AWS, he explains the architecture and evolution of the platform's infrastructure during his time there. This video is aimed at developers and engineers, offering both inspiration and technical insights into building scalable internal services and navigating a career in big tech. It would be particularly helpful for those interested in infrastructure engineering or anyone currently experiencing a similar career transition.",
       "added": "2026-05-15",
       "times_shown": 0
+    },
+    {
+      "slug": "combine-skills-and-mcp-to-close-the-context-gap-pedro-rodrigues-supabase",
+      "title": "Combine Skills and MCP to Close the Context Gap \u2014 Pedro Rodrigues, Supabase",
+      "url": "https://www.youtube.com/watch?v=JT3OzDKrucU",
+      "video_id": "JT3OzDKrucU",
+      "channel": "AI Engineer",
+      "summary": "This video features Pedro, an AI Tooling Engineer at Supabase, sharing insights and lessons learned from developing \"skills\" to help AI agents better understand and interact with the Supabase platform. He presents three core principles for teaching agents: describe intent rather than means to avoid documentation duplication, include critical information like security checklists directly in the main skill file to prevent it from being skipped, and provide opinionated guidance on optimal workflows. Additionally, the talk introduces an experimental feature where documentation is exposed over SSH, allowing agents to navigate it like a file system. This presentation is particularly valuable for AI engineers and developers building AI-integrated products who want to enhance the precision and efficiency of AI agents within their software ecosystems.",
+      "added": "2026-05-16",
+      "times_shown": 0
+    },
+    {
+      "slug": "how-building-with-ai-can-double-the-throughput-of-your-engineering-team-brian-sc",
+      "title": "How Building with AI Can Double the Throughput of Your Engineering Team \u2014 Brian Scanlan, Intercom",
+      "url": "https://www.youtube.com/watch?v=4_VQBbs2iQA",
+      "video_id": "4_VQBbs2iQA",
+      "channel": "AI Engineer",
+      "summary": "This video features Brian, a Senior Principal Engineer at Intercom, discussing how the company leveraged AI to double the throughput of their engineering teams. He emphasizes the importance of organizational change, such as updating job descriptions and rewarding AI adoption, alongside a standardized platform strategy using tools like Claude Code. By integrating company-specific engineering guidance and fostering a continuous improvement flywheel, Intercom successfully transformed into an AI-first company. This talk is highly beneficial for engineering leaders, AI developers, and anyone interested in the practical application of AI to enhance corporate productivity.",
+      "added": "2026-05-16",
+      "times_shown": 0
     }
   ],
   "archive": [
