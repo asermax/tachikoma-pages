@@ -265,10 +265,16 @@
         .controls {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             padding: 0.5rem 1rem;
-            gap: 0.75rem;
             max-width: 800px;
             margin: 0 auto;
+        }
+
+        .controls-left, .controls-right {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
         }
 
         .play-btn {
@@ -366,25 +372,28 @@
         <div class="progress-fill" id="progressFill"></div>
     </div>
     <div class="controls">
-        <button class="play-btn" id="playBtn">
-            <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                <path id="playIcon" d="M3 1.5 L12 7 L3 12.5 Z"/>
-                <g id="pauseIcon" style="display:none">
-                    <rect x="2" y="2" width="3.5" height="10" rx="0.5"/>
-                    <rect x="8.5" y="2" width="3.5" height="10" rx="0.5"/>
-                </g>
-            </svg>
-        </button>
-        <span class="time" id="timeDisplay">0:00 / 0:00</span>
-        <div class="spacer"></div>
-        <button class="ctrl-btn wide" id="resetBtn" title="Reset to beginning" style="display:none">&#8634; Reset</button>
-        <button class="ctrl-btn" id="speedBtn" title="Playback speed">1x</button>
-        <button class="ctrl-btn" id="rewindBtn" title="Rewind 10 seconds">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M1 4v6h6"/>
-                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
-            </svg>
-        </button>
+        <div class="controls-left">
+            <button class="play-btn" id="playBtn">
+                <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                    <path id="playIcon" d="M3 1.5 L12 7 L3 12.5 Z"/>
+                    <g id="pauseIcon" style="display:none">
+                        <rect x="2" y="2" width="3.5" height="10" rx="0.5"/>
+                        <rect x="8.5" y="2" width="3.5" height="10" rx="0.5"/>
+                    </g>
+                </svg>
+            </button>
+            <span class="time" id="timeDisplay">0:00 / 0:00</span>
+        </div>
+        <div class="controls-right">
+            <button class="ctrl-btn wide" id="resetBtn" title="Reset to beginning" style="display:none">&#8634; Reset</button>
+            <button class="ctrl-btn" id="speedBtn" title="Playback speed">1x</button>
+            <button class="ctrl-btn" id="rewindBtn" title="Rewind 10 seconds">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M1 4v6h6"/>
+                    <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+                </svg>
+            </button>
+        </div>
     </div>
 </div>
 
