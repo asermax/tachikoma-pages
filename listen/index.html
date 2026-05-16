@@ -269,6 +269,7 @@
             gap: 0.75rem;
             max-width: 800px;
             margin: 0 auto;
+            justify-content: flex-end;
         }
 
         .play-btn {
@@ -316,6 +317,12 @@
         }
         .ctrl-btn:hover { background: rgba(255,255,255,0.1); color: #fff; }
         .ctrl-btn svg { width: 18px; height: 18px; }
+        .ctrl-btn.wide {
+            width: auto;
+            padding: 0 0.6rem;
+            border-radius: 18px;
+            gap: 0.25rem;
+        }
 
         /* Scroll progress indicator */
         .scroll-progress {
@@ -371,14 +378,14 @@
         </button>
         <span class="time" id="timeDisplay">0:00 / 0:00</span>
         <div class="spacer"></div>
+        <button class="ctrl-btn wide" id="resetBtn" title="Reset to beginning" style="display:none">&#8634; Reset</button>
+        <button class="ctrl-btn" id="speedBtn" title="Playback speed">1x</button>
         <button class="ctrl-btn" id="rewindBtn" title="Rewind 10 seconds">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M1 4v6h6"/>
                 <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
             </svg>
         </button>
-        <button class="ctrl-btn" id="speedBtn" title="Playback speed">1x</button>
-        <button class="ctrl-btn" id="resetBtn" title="Reset to beginning" style="display:none">&#8634;</button>
     </div>
 </div>
 
@@ -661,7 +668,9 @@ async function loadArticle(slug) {
 <script src="articles.js"></script>
 <script>
 const params = new URLSearchParams(window.location.search);
-const slug = params.get('article') || ARTICLES[0].slug;
+const lastSlug = localStorage.getItem('listen_last_article');
+const defaultSlug = lastSlug && ARTICLES.some(a => a.slug === lastSlug) ? lastSlug : ARTICLES[0].slug;
+const slug = params.get('article') || defaultSlug;
 loadArticle(slug);
 </script>
 </body>
