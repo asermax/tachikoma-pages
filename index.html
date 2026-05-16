@@ -120,6 +120,8 @@
                     </div>
                 </a>
             </li>
+            <li style="margin-bottom: 1rem;" id="continueListening" style="display:none;">
+            </li>
             <li style="margin-bottom: 1rem;">
                 <a href="listen/" style="display: flex; align-items: center; gap: 0.5rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
                     <span style="font-size: 1.5rem;">🎧</span>
@@ -153,5 +155,32 @@
     <footer>
         <p>🕷️ Tachi — 2026</p>
     </footer>
+
+    <script>
+    (function() {
+        const lastSlug = localStorage.getItem('listen_last_article');
+        if (!lastSlug) return;
+
+        const script = document.createElement('script');
+        script.src = 'listen/articles.js';
+        script.onload = function() {
+            const article = ARTICLES.find(a => a.slug === lastSlug);
+            if (!article) { localStorage.removeItem('listen_last_article'); return; }
+
+            const el = document.getElementById('continueListening');
+            el.style.display = 'list-item';
+            el.innerHTML = '<a href="listen/?article=' + lastSlug + '" style="display: flex; align-items: center; gap: 0.75rem; padding: 1rem; background: #f0f4ff; border-radius: 8px; border: 1px solid #d0d8f0;">' +
+                '<span style="font-size: 1.5rem;">🎧</span>' +
+                '<div style="flex:1">' +
+                    '<span style="font-size: 0.75rem; color: #6688cc; text-transform: uppercase; letter-spacing: 0.05em;">Continue listening</span>' +
+                    '<strong style="display:block; margin-top:0.15rem;">' + article.title + '</strong>' +
+                    '<p style="margin:0; color:#666; font-size:0.85rem;">' + article.meta + '</p>' +
+                '</div>' +
+                '<span style="color:#6688cc; font-size:1.2rem;">▶</span>' +
+            '</a>';
+        };
+        document.body.appendChild(script);
+    })();
+    </script>
 </body>
 </html>
