@@ -299,33 +299,23 @@
             flex-shrink: 0;
         }
 
-        .speed-btn {
+        .ctrl-btn {
             background: none;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: none;
+            cursor: pointer;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            flex-shrink: 0;
             color: rgba(255,255,255,0.7);
             font-size: 0.75rem;
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-            flex-shrink: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         }
-        .speed-btn:hover { border-color: rgba(255,255,255,0.4); color: #fff; }
-        .speed-btn.active { border-color: #e94560; color: #e94560; }
-
-        .spacer { flex: 1; }
-
-        .reset-btn {
-            background: none;
-            border: 1px solid rgba(255,255,255,0.2);
-            color: rgba(255,255,255,0.7);
-            font-size: 0.7rem;
-            padding: 0.15rem 0.4rem;
-            border-radius: 4px;
-            cursor: pointer;
-            flex-shrink: 0;
-            font-family: inherit;
-        }
-        .reset-btn:hover { border-color: rgba(255,255,255,0.4); color: #fff; }
+        .ctrl-btn:hover { background: rgba(255,255,255,0.1); color: #fff; }
+        .ctrl-btn svg { width: 18px; height: 18px; }
 
         /* Scroll progress indicator */
         .scroll-progress {
@@ -379,19 +369,16 @@
                 </g>
             </svg>
         </button>
-        <button class="play-btn" id="rewindBtn" title="Rewind 10 seconds">
-            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M1 4v4h4"/>
-                <path d="M3.5 11.5a6.5 6.5 0 1 0 1.2-5.7L1 8"/>
-                <text x="10" y="14" fill="#fff" stroke="none" font-size="7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle" font-weight="600">10</text>
-            </svg>
-        </button>
         <span class="time" id="timeDisplay">0:00 / 0:00</span>
         <div class="spacer"></div>
-        <button class="reset-btn" id="resetBtn" title="Reset to beginning" style="display:none">&#8634; Reset</button>
-        <button class="speed-btn" data-speed="1">1x</button>
-        <button class="speed-btn" data-speed="1.25">1.25x</button>
-        <button class="speed-btn" data-speed="1.5">1.5x</button>
+        <button class="ctrl-btn" id="rewindBtn" title="Rewind 10 seconds">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 4v6h6"/>
+                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+            </svg>
+        </button>
+        <button class="ctrl-btn" id="speedBtn" title="Playback speed">1x</button>
+        <button class="ctrl-btn" id="resetBtn" title="Reset to beginning" style="display:none">&#8634;</button>
     </div>
 </div>
 
@@ -406,10 +393,10 @@ const progressTrack = document.getElementById('progressTrack');
 const progressFill = document.getElementById('progressFill');
 const timeDisplay = document.getElementById('timeDisplay');
 const scrollProgress = document.getElementById('scrollProgress');
-const speedBtns = document.querySelectorAll('.speed-btn');
 const followBtn = document.getElementById('followBtn');
 const resetBtn = document.getElementById('resetBtn');
 const rewindBtn = document.getElementById('rewindBtn');
+const speedBtn = document.getElementById('speedBtn');
 
 let isPlaying = false;
 let isUserScrolling = false;
@@ -564,16 +551,14 @@ rewindBtn.addEventListener('click', () => {
     audio.currentTime = Math.max(0, audio.currentTime - 10);
 });
 
-// Speed controls
-speedBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        const speed = parseFloat(btn.dataset.speed);
-        audio.playbackRate = speed;
-        speedBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-    });
+// Speed cycle
+const speeds = [1, 1.25, 1.5, 2];
+let speedIndex = 0;
+speedBtn.addEventListener('click', () => {
+    speedIndex = (speedIndex + 1) % speeds.length;
+    audio.playbackRate = speeds[speedIndex];
+    speedBtn.textContent = speeds[speedIndex] + 'x';
 });
-speedBtns[0].classList.add('active');
 
 // ── Manual scroll detection ──
 
@@ -641,6 +626,7 @@ async function loadArticle(slug) {
         audio.src = data.audio;
         currentArticle = slug;
         currentChunkIndex = -1;
+        localStorage.setItem('listen_last_article', slug);
 
         window.scrollTo(0, 0);
         progressFill.style.width = '0%';
