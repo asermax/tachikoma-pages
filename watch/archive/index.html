@@ -163,7 +163,7 @@
         }
 
         function render() {
-            const archive = data.archive || [];
+            const archive = (data.archive || []).sort((a, b) => (b.watched || b.added).localeCompare(a.watched || a.added));
             const totalPages = Math.ceil(archive.length / PER_PAGE);
 
             if (archive.length === 0) {
