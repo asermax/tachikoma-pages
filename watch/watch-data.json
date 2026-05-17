@@ -1,16 +1,6 @@
 {
-  "generated_at": "2026-05-16",
+  "generated_at": "2026-05-17",
   "queue": [
-    {
-      "slug": "claude-opus-47-a-new-frontier-in-performance-and-drama",
-      "title": "Claude Opus 4.7 - A New Frontier, in Performance \u2026 and Drama",
-      "url": "https://www.youtube.com/watch?v=QVJcdfkRpH8",
-      "video_id": "QVJcdfkRpH8",
-      "channel": "AI Explained",
-      "summary": "Examines the launch of Claude Opus 4.7, analyzing benchmark results and contrasting capabilities with previous versions and rival models. Explores performance gains in coding and professional sectors, regressions in long-context reasoning, and the implementation of adaptive thinking. AI professionals, researchers, and technology enthusiasts will find this detailed comparison useful.",
-      "added": "2026-04-18",
-      "times_shown": 0
-    },
     {
       "slug": "harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan",
       "title": "Harness Engineering: How to Build Software When Humans Steer, Agents Execute \u2014\u00a0Ryan Lopopolo, OpenAI",
@@ -38,16 +28,6 @@
       "video_id": "_OLyeDp73x0",
       "channel": "AniNews",
       "summary": "This video provides a detailed summary of the Watergate City of Priestella arc from Re:Zero, covering the Emilia camp's diplomatic mission and the ensuing battle against the Witch Cult. It highlights major plot points, such as Subaru's limited use of Return by Death and his evolution into a hero for the masses, while resolving personal subplots for characters like Wilhelm and Garfield. Fans of the series looking for a concise refresher on character growth and arc outcomes before continuing the story will find this summary particularly beneficial.",
-      "added": "2026-04-18",
-      "times_shown": 0
-    },
-    {
-      "slug": "the-funny-thing-about-frierens-magic",
-      "title": "The funny thing about Frieren's magic",
-      "url": "https://www.youtube.com/watch?v=qmHdwkmyOF0",
-      "video_id": "qmHdwkmyOF0",
-      "channel": "pey talks anime",
-      "summary": "Explores how Frieren: Beyond Journey's End uses magic and immortality as catalysts to examine the human condition. The diverse perspectives of elven characters \u2014 Frieren's struggle with apathy, Serie's drive for control \u2014 serve as exaggerated mirrors for universal human experiences like loss, regret, and the search for meaning. Beneficial for fans of the series and anyone interested in philosophical and literary analysis of modern anime.",
       "added": "2026-04-18",
       "times_shown": 0
     },
@@ -178,16 +158,6 @@
       "video_id": "4fntwuOoedA",
       "channel": "AI Engineer",
       "summary": "The speaker describes his decades-long quest for the perfect productivity system, moving from simple text files to a complex 'life OS' called Benji that integrates numerous personal data points. He highlights a shift towards using specialized AI agents, such as openclaw, which operate on locally hosted data to ensure privacy and better contextual awareness. Kitze argues that general-purpose chat interfaces are inadequate for managing life's complexities, advocating instead for specialized agents with distinct permissions and tools. Ultimately, he envisions a future where personal AI assistants have deep control over digital environments, even leading him to switch from iOS to Android for greater system accessibility.",
-      "added": "2026-04-24",
-      "times_shown": 0
-    },
-    {
-      "slug": "the-thing-about-aesthetic-people-dont-talk-about",
-      "title": "The thing about aesthetic people don't talk about",
-      "url": "https://www.youtube.com/watch?v=eCBFkq0_88U",
-      "video_id": "eCBFkq0_88U",
-      "channel": "pey talks anime",
-      "summary": "This video explores the seven key components that contribute to an anime's visual aesthetic, identifying world-building as the most foundational element. By analyzing various anime such as Witch Hat Atelier, Your Name, and several Studio Ghibli films, the narrator illustrates how a show's setting influences its color design, art style, and overall sense of wonder. Magical worlds are highlighted as particularly effective because they allow creators to express unique movements and visual metaphors, such as the spell-casting through drawing in Witch Hat Atelier. Ultimately, the video argues that a well-crafted world serves as a platform for other artistic elements to thrive, deeply enhancing the viewing experience and the emotional impact of the story.",
       "added": "2026-04-24",
       "times_shown": 0
     },
