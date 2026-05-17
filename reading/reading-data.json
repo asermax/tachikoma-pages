@@ -8,7 +8,7 @@
       "category": "ai",
       "summary": "An exploration of the evolving landscape of AI-assisted coding, where top engineers like Andrej Karpathy and the Claude Code team now write 80%+ of their code with agents.\n\nTHE SHIFT:\n- Karpathy: went from 80% manual + 20% agents to 80% agent + 20% manual edits in just weeks\n- Boris Cherny (Claude Code): ships 20-27 PRs daily, 100% written by Claude for 2+ months\n- Survey data: 44% of developers write less than 10% of code manually now\n\nNEW PROBLEMS (The Last 10-20%):\n- Assumption propagation: Models misunderstand early and build on faulty premises\n- Abstraction bloat: Agents create elaborate hierarchies where simple functions suffice\n- Dead code accumulation: Old implementations linger, comments get removed\n- Sycophantic agreement: No pushback on bad ideas, just enthusiastic execution\n\nTHE VERIFICATION BOTTLENECK:\n- High AI-adoption teams merge 98% more PRs but review time increased 91%\n- Only 48% consistently check AI code before committing\n- 38% find reviewing AI code requires MORE effort than human code\n- Individual output surged but organizational friction consumed the gains\n\nCOMPREHENSION DEBT:\n- Code that looks right but you don't fully understand\n- Tempting to rubber-stamp when the LLM one-shotted a working feature\n- Over time, you understand less of your own codebase\n- Dangerous when ability to read doesn't scale with agent's ability to output\n\nWHAT WORKS:\n1. Declarative over imperative: Define success criteria, let agent iterate\n2. Write tests first, let agent loop until they pass\n3. Fresh-context code reviews (agent reviews its own code)\n4. Automated verification (CI/CD, linters, tests as guardrails)\n5. 70% time on problem definition, 30% on execution\n\nKEY INSIGHT: AI is splitting engineers into those who liked coding (may feel loss) vs those who liked building (feel liberation). The tooling optimizes for the latter.",
       "added": "2026-03-28",
-      "times_shown": 1
+      "times_shown": 2
     },
     {
       "slug": "conductors-to-orchestrators",
@@ -57,7 +57,7 @@
     },
     {
       "slug": "httpsbloglmorchardcom20260311grief-and-the-ai-split",
-      "title": "Untitled",
+      "title": "Grief and the AI Split",
       "url": "https://blog.lmorchard.com/2026/03/11/grief-and-the-ai-split/",
       "category": "uncategorized",
       "summary": "Les Orchard explores the emotional divide among developers in the age of AI-assisted coding, arguing that two distinct camps — those who love the craft of writing code for its own sake, and those who see code as a means to an end — have always existed but were invisible because everyone followed the same manual process. AI tools have made this split visible by forcing a choice: let the machine write code and focus on directing what gets built, or insist on hand-crafting it. Orchard acknowledges grief from writers who mourn the loss of the tactile satisfaction of crafting elegant code, but distinguishes their grief from his own: his mourning centers on the changing context — the threatened open web ecosystem, shifting career landscape, and industry uncertainty. He concludes neither side is wrong, but recognizing which kind of grief you feel is practically useful. He still gets satisfaction when something he built actually works — even if the code got there differently.",
@@ -66,7 +66,7 @@
     },
     {
       "slug": "httpslalitmcompostbuilding-syntaqlite-ai",
-      "title": "Untitled",
+      "title": "Eight Years of Wanting, Three Months of Building with AI",
       "url": "https://lalitm.com/post/building-syntaqlite-ai/",
       "category": "engineering",
       "summary": "Lalit Maganti's experience building syntaqlite — high-fidelity SQLite developer tools (formatter, linter, language server) — using AI coding agents across ~250 hours. Two phases: first month of vibe-coding produced a functional but unmaintainable prototype requiring total rewrite; second phase using Rust + disciplined AI-as-autocomplete yielded the 0.1 release. Key framework: AI excels at overcoming procrastination, obvious code generation, teaching unfamiliar domains, and shipping last-mile features. Costs include addictive feedback loops, erosion of mental models, and deferred hard design decisions. Core insight: AI is excellent for tasks with verifiable answers but poor for tasks requiring taste and judgment (architecture, API design).",
@@ -75,7 +75,7 @@
     },
     {
       "slug": "httpsopensubstackcompubsebastianraschkapcomponents-of-a-coding-agentutm-sourcesh",
-      "title": "Untitled",
+      "title": "Components of A Coding Agent",
       "url": "https://open.substack.com/pub/sebastianraschka/p/components-of-a-coding-agent?utm_source=share&utm_medium=android&r=7mo5z",
       "category": "engineering",
       "summary": "Comprehensive breakdown of coding agent architecture (Claude Code, Codex CLI, etc.). Covers six core components: live repo context, prompt shape and cache reuse, tool access/use, context bloat mitigation (clipping, transcript reduction, deduplication), structured session memory (full transcript vs working memory), and delegation with bounded subagents. Key insight: the harness is often the distinguishing factor when base LLM capabilities are similar.",
@@ -84,7 +84,7 @@
     },
     {
       "slug": "httpsmartinfowlercomarticlesharness-engineeringhtml",
-      "title": "Untitled",
+      "title": "Harness Engineering for Coding Agent Users",
       "url": "https://martinfowler.com/articles/harness-engineering.html",
       "category": "engineering",
       "summary": "Birgitta Bockeler's mental model for building trust in AI coding agents via an 'outer harness' — feedforward guides (rules, specs, conventions) and feedback sensors (linters, tests, code review). Three regulation categories: maintainability (most tractable), architecture fitness (fitness functions for perf/observability), and behaviour (hardest — functional correctness). Introduces 'harnessability' (how amenable a codebase is to being harnessed) and 'harness templates' tied to common service topologies. Core thesis: harnesses externalize what developers implicitly bring, directing human input to where it matters most.",
@@ -93,7 +93,7 @@
     },
     {
       "slug": "httpsmartinfowlercomarticlesreduce-friction-aiencoding-team-standardshtml",
-      "title": "Untitled",
+      "title": "Encoding Team Standards",
       "url": "https://martinfowler.com/articles/reduce-friction-ai/encoding-team-standards.html",
       "category": "ai",
       "summary": "Rahul Garg on encoding team standards as versioned AI instruction files in the repo — 'executable governance.' Problem: two devs using the same AI tool produce different code because senior engineers instinctively encode conventions into prompts while juniors don't. Solution: structured instruction files with role definition, context, categorized standards (must/should/nice-to-have), and output format. Key insight: the extraction process surfaces tacit knowledge and hidden disagreements between seniors. Most valuable for teams of 15+ devs. Expands what teams can codify beyond syntax into architectural judgment and review rigor.",
@@ -120,16 +120,16 @@
     },
     {
       "slug": "httpsmartinfowlercomarticlesreduce-friction-aifeedback-flywheelhtml",
-      "title": "Untitled",
+      "title": "Feedback Flywheel",
       "url": "https://martinfowler.com/articles/reduce-friction-ai/feedback-flywheel.html",
       "category": "ai",
       "summary": "Same author as Encoding Team Standards (Rahul Garg, Martin Fowler series). Argues teams plateau with AI tools because individual learnings never become shared practice. Framework: 4 signal types (context gaps, instruction patterns, workflow discoveries, failures with root causes) mapped to 4 cadences (after-session reflection, daily stand-up, sprint retro, quarterly audit). Metrics that matter: first-pass acceptance rate, iteration cycles, post-merge rework — not lines generated. Key insight: the other practices in the series are passive surfaces; the flywheel is what makes them compound over time. Treat shared AI artifacts like dependencies — maintain them or they become liabilities.",
       "added": "2026-04-14",
-      "times_shown": 2
+      "times_shown": 3
     },
     {
       "slug": "httpswalkinglabsgithubiolearn-harness-engineeringen",
-      "title": "Untitled",
+      "title": "Learn Harness Engineering",
       "url": "https://walkinglabs.github.io/learn-harness-engineering/en/",
       "category": "engineering",
       "summary": "Structured, project-based course from WalkingLabs teaching developers how to build reliable harnesses around AI coding agents. Covers constrained environments with explicit rules, state management, verification, and control systems, drawing on guidance from OpenAI and Anthropic. Addresses common agent failure modes — premature victory declarations, context loss, overreach — with practical techniques for end-to-end testing, runtime observability, and clean-state discipline.",
@@ -138,7 +138,7 @@
     },
     {
       "slug": "httpstilandrew-quinnmepostsreplacing-a-3-gb-sqlite-database-with-a-7-mb-fst-fini",
-      "title": "Untitled",
+      "title": "Replacing a 3GB SQLite Database with a 7MB FST Binary",
       "url": "https://til.andrew-quinn.me/posts/replacing-a-3-gb-sqlite-database-with-a-7-mb-fst-finite-state-trandsucer-binary/",
       "category": "engineering",
       "summary": "Andrew Quinn describes replacing a 3 GB SQLite database with a 10 MB finite state transducer (FST) binary in his Finnish-English dictionary app Taskusanakirja, achieving a roughly 300x reduction in size. The original Go version used a trie for prefix search, which worked for base words but couldn't scale to Finnish's 40-60 million inflected forms. After rewriting in Rust and discovering BurntSushi's fst crate, he found FSTs compress both prefixes and suffixes — making them ideal for agglutinative languages where a handful of inflectional suffixes repeat across tens of thousands of words. The key lesson: shipping the 'bad easy thing' first made it cheap to experiment and discover the far better solution later.",
@@ -147,7 +147,7 @@
     },
     {
       "slug": "httpsopensubstackcompubpragmaticengineerprevisiting-no-silver-bullets-in-theutm",
-      "title": "Untitled",
+      "title": "Revisiting No Silver Bullets in the Age of AI",
       "url": "https://open.substack.com/pub/pragmaticengineer/p/revisiting-no-silver-bullets-in-the?utm_source=share&utm_medium=android&r=7mo5z",
       "category": "engineering",
       "summary": "This article by Gergely Orosz revisits Frederick Brooks Jr.'s influential 1986 paper 'No Silver Bullet -- Essence and Accident in Software Engineering' (later included as Chapter 17 in the 1995 edition of 'The Mythical Man-Month'). Brooks argued that no single technology or management technique would deliver an order-of-magnitude improvement in software engineering productivity, reliability, or simplicity. Orosz examines whether that prediction has held up over 40 years and how it relates to the current era of AI-assisted coding.\n\nOrosz surveys the major developments since Brooks wrote the paper: version control systems (CVS, Subversion, Git), modern IDEs, CI/CD and automated testing, open source and package managers, StackOverflow, cloud computing, platform and DevEx teams, and the SRE discipline. While each contributed to developer efficiency, none by itself delivered a standalone 10x improvement in the way Brooks defined a silver bullet. However, taken together they dramatically improved iteration speed -- shipping software multiple times per day is now routine, whereas in 1975 delivery was measured in months or years. Yet shipping complex, high-quality software still takes years, as illustrated by the development timeline of Grand Theft Auto VI (roughly 6-12 years). The bar for standout software keeps rising as capabilities expand.\n\nThe article examines SRE as a possible counterexample: Google Search, the most reliable public-facing internet service in history (one global outage in 15 years), pioneered the SRE role starting in 2003. Orosz argues SRE qualifies as a silver bullet for Google Search specifically, but not for the broader industry. Other Google services still experience outages, and even GitHub sits at zero nines of availability despite having SRE. This suggests silver bullets may be context-dependent -- they require the right team culture, investment, and founding values to produce outsized results. The article then raises open source plus GitHub as a potential silent silver bullet and AI as a candidate, though these later sections are behind the paywall.\n\nThe main takeaway is that Brooks' thesis has largely held up: no single tool or methodology has been a universal silver bullet for software engineering. Progress has been real and substantial, but it comes from the compounding effect of many incremental improvements, not from any single breakthrough. The rare exceptions, like SRE at Google Search, prove the rule -- they depend heavily on specific organizational context and sustained investment.\n\nNote: portions of the article covering open source and AI as potential silver bullets are behind the Pragmatic Engineer paywall.",
@@ -367,7 +367,7 @@
     },
     {
       "slug": "httpsghuntleycomcogsec",
-      "title": "Untitled",
+      "title": "Cognitive Security",
       "url": "https://ghuntley.com/cogsec/",
       "category": "uncategorized",
       "summary": "Geoffrey Huntley explores 'cognitive security' — the idea that as people increasingly rely on AI models for daily decision-making, they are outsourcing their thinking to a handful of frontier labs. Society is sorting into tribes based on which AI provider they use, creating dangerous concentration of influence. Centers on Anthropic's 'Golden Gate Claude' experiment, where researchers surgically modified model weights to make the Golden Gate Bridge inescapably top-of-mind regardless of the query, demonstrating that model behavior can be invisibly altered after deployment. Huntley raises the question of what happens when advertisers bid to rank higher in model weights. Concludes the only real defense is to train and run your own models, giving control over cognitive security and supply chain.",
@@ -377,7 +377,7 @@
     },
     {
       "slug": "httpsghuntleycomfrontier",
-      "title": "Untitled",
+      "title": "Frontier — Interview with Vivek Bharathi",
       "url": "https://ghuntley.com/frontier/",
       "category": "uncategorized",
       "summary": "Geoffrey Huntley draws a sharp distinction between software development and software engineering. Software development — writing code, prompting LLMs — is accelerating to ubiquity, where anyone can now be a 'developer.' Software engineering remains essential but is evolving: engineers are becoming more like locomotive engineers, focused on keeping systems safe, reliable, and on track rather than manually writing code. Huntley argues that traditional open source is effectively dead — the original purpose of open-source libraries is undermined when AI can generate first-party code on demand, avoiding maintainer burnout and supply-chain attacks. The broader thesis is that software is moving from scarcity to abundance. Products are becoming hyper-commodities, easily reimplemented via AI. True competitive moats now lie in non-technical areas: contracts, relationships, distribution, taste, and judgment. He questions whether software remains investable and urges professionals to adapt quickly or risk irrelevance.",
@@ -387,7 +387,7 @@
     },
     {
       "slug": "httpsghuntleycomporting",
-      "title": "Untitled",
+      "title": "Porting Software Has Been Trivial for a While Now",
       "url": "https://ghuntley.com/porting/",
       "category": "uncategorized",
       "summary": "Geoffrey Huntley presents a practical guide for using AI to port software between programming languages via a 'ralph loop' — an iterative AI agent process. Four steps: first, compress all tests into specification files with citations to implementation code; second, do the same for product functionality in src/*; third, generate a TODO file and execute a ralph loop tackling one item at a time, studying specs and following citations; fourth, configure the target language with strict compilation. The core insight is using citations in specifications to encourage the AI agent to study the original implementation during porting, decoupling implementation intent from source language.",
@@ -397,7 +397,7 @@
     },
     {
       "slug": "httpslamportazurewebsitesnetvideovideoshtml",
-      "title": "Untitled",
+      "title": "TLA+ Video Course",
       "url": "https://lamport.azurewebsites.net/video/videos.html",
       "category": "uncategorized",
       "summary": "A comprehensive video lecture series by Leslie Lamport (Turing Award winner and creator of TLA+) designed to teach programmers how to write TLA+ specifications. The course assumes basic programming knowledge and elementary mathematics, progressing from introductory concepts through advanced topics like distributed consensus algorithms. Spans 10 lectures covering: state machines in TLA+, the TLA+ Toolbox, specification writing and model checking with TLC, database transaction commit protocols (two-phase commit and Paxos commit), temporal logic, liveness and fairness properties, and refinement mappings. TLA+ is a formal specification language used to design and verify concurrent and distributed systems, adopted by companies like Amazon and Microsoft to catch design-level bugs before implementation. Serves as the primary self-study resource for engineers looking to add formal methods to their toolkit.",
@@ -427,7 +427,7 @@
     },
     {
       "slug": "httpswwwjamesshorecomv2blog2026you-need-ai-that-reduces-your-maintenance-costs",
-      "title": "Untitled",
+      "title": "You Need AI That Reduces Maintenance Costs",
       "url": "https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs",
       "category": "ai",
       "summary": "James Shore argues that AI coding agents must reduce maintenance costs proportionally to their productivity gains. Using a maintenance cost model, he shows that doubling code output while keeping maintenance costs the same still doubles long-term maintenance burden, eroding gains within 19 months. If AI doubles output but also doubles maintenance costs, gains vanish after just 5 months. The key insight: to actually benefit from AI coding tools, you need code that costs proportionally less to maintain — otherwise you're trading a temporary speed boost for permanent indenture.",
@@ -437,7 +437,7 @@
     },
     {
       "slug": "httpswwwstvnshwritingprogramming-still-sucks-fqffhyp",
-      "title": "Untitled",
+      "title": "Programming Still Sucks",
       "url": "https://www.stvn.sh/writing/programming-still-sucks-fqffhyp",
       "category": "engineering",
       "summary": "A critique of the software industry's response to AI, told through an extended burning ship metaphor. Argues the real threat isn't AI but greedy leadership gutting engineering teams and dismantling the apprenticeship pipeline. The centerpiece is Sara, a mid-50s engineer maintaining a critical payroll cron job inherited from her late mentor — representing the invisible institutional knowledge that gets destroyed when juniors are cut. A lament for engineering culture replaced by output optimization and AI-driven cost cutting.",
