@@ -92,15 +92,6 @@
       "times_shown": 0
     },
     {
-      "slug": "httpsmartinfowlercomarticlesreduce-friction-aiencoding-team-standardshtml",
-      "title": "Encoding Team Standards",
-      "url": "https://martinfowler.com/articles/reduce-friction-ai/encoding-team-standards.html",
-      "category": "ai",
-      "summary": "Rahul Garg on encoding team standards as versioned AI instruction files in the repo — 'executable governance.' Problem: two devs using the same AI tool produce different code because senior engineers instinctively encode conventions into prompts while juniors don't. Solution: structured instruction files with role definition, context, categorized standards (must/should/nice-to-have), and output format. Key insight: the extraction process surfaces tacit knowledge and hidden disagreements between seniors. Most valuable for teams of 15+ devs. Expands what teams can codify beyond syntax into architectural judgment and review rigor.",
-      "added": "2026-04-07",
-      "times_shown": 0
-    },
-    {
       "slug": "absurd-workflows-armin-ronacher",
       "title": "Absurd Workflows (Armin Ronacher)",
       "url": "https://lucumr.pocoo.org/2025/11/3/absurd-workflows/",
@@ -125,7 +116,7 @@
       "category": "ai",
       "summary": "Same author as Encoding Team Standards (Rahul Garg, Martin Fowler series). Argues teams plateau with AI tools because individual learnings never become shared practice. Framework: 4 signal types (context gaps, instruction patterns, workflow discoveries, failures with root causes) mapped to 4 cadences (after-session reflection, daily stand-up, sprint retro, quarterly audit). Metrics that matter: first-pass acceptance rate, iteration cycles, post-merge rework — not lines generated. Key insight: the other practices in the series are passive surfaces; the flywheel is what makes them compound over time. Treat shared AI artifacts like dependencies — maintain them or they become liabilities.",
       "added": "2026-04-14",
-      "times_shown": 3
+      "times_shown": 0
     },
     {
       "slug": "httpswalkinglabsgithubiolearn-harness-engineeringen",
@@ -412,6 +403,16 @@
       "summary": "A comprehensive video lecture series by Leslie Lamport (Turing Award winner and creator of TLA+) designed to teach programmers how to write TLA+ specifications. The course assumes basic programming knowledge and elementary mathematics, progressing from introductory concepts through advanced topics like distributed consensus algorithms. Spans 10 lectures covering: state machines in TLA+, the TLA+ Toolbox, specification writing and model checking with TLC, database transaction commit protocols (two-phase commit and Paxos commit), temporal logic, liveness and fairness properties, and refinement mappings. TLA+ is a formal specification language used to design and verify concurrent and distributed systems, adopted by companies like Amazon and Microsoft to catch design-level bugs before implementation. Serves as the primary self-study resource for engineers looking to add formal methods to their toolkit.",
       "added": "2026-03-29",
       "read": "2026-04-20",
+      "has_notes": true
+    },
+    {
+      "slug": "httpsmartinfowlercomarticlesreduce-friction-aiencoding-team-standardshtml",
+      "title": "Encoding Team Standards",
+      "url": "https://martinfowler.com/articles/reduce-friction-ai/encoding-team-standards.html",
+      "category": "ai",
+      "summary": "Rahul Garg on encoding team standards as versioned AI instruction files in the repo — 'executable governance.' Problem: two devs using the same AI tool produce different code because senior engineers instinctively encode conventions into prompts while juniors don't. Solution: structured instruction files with role definition, context, categorized standards (must/should/nice-to-have), and output format. Key insight: the extraction process surfaces tacit knowledge and hidden disagreements between seniors. Most valuable for teams of 15+ devs. Expands what teams can codify beyond syntax into architectural judgment and review rigor.",
+      "added": "2026-04-07",
+      "read": "2026-05-17",
       "has_notes": true
     },
     {
