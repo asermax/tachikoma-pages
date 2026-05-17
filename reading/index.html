@@ -55,12 +55,15 @@
         }
 
         .card {
+            display: block;
             background: white;
             border-radius: 10px;
             padding: 1.25rem 1.5rem;
             margin-bottom: 1rem;
             border: 1px solid #e8e6e1;
             transition: box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
         }
         .card:hover {
             box-shadow: 0 2px 8px rgba(0,0,0,0.06);
@@ -70,14 +73,10 @@
             font-size: 1.15rem;
             line-height: 1.4;
             margin-bottom: 0.5rem;
-        }
-        .card .title a {
             color: #1a1a1a;
-            text-decoration: none;
         }
-        .card .title a:hover {
+        .card:hover .title {
             color: #5a3e28;
-            text-decoration: underline;
         }
 
         .card .category {
@@ -181,7 +180,7 @@
         }
 
         function render() {
-            const queue = data.queue || [];
+            const queue = (data.queue || []).sort((a, b) => b.added.localeCompare(a.added));
             const totalPages = Math.ceil(queue.length / PER_PAGE);
 
             if (queue.length === 0) {
@@ -198,12 +197,12 @@
             for (const item of slice) {
                 const preview = item.summary ? item.summary.substring(0, 200) : '';
                 html += `
-                    <div class="card">
+                    <a class="card" href="${esc(item.url)}" target="_blank" rel="noopener">
                         <span class="category">${esc(item.category)}</span>
-                        <div class="title"><a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a></div>
+                        <div class="title">${esc(item.title)}</div>
                         ${preview ? `<div class="summary">${esc(preview)}</div>` : ''}
                         <div class="meta">Added ${item.added}</div>
-                    </div>
+                    </a>
                 `;
             }
             document.getElementById('cards').innerHTML = html;
