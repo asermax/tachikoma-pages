@@ -360,6 +360,26 @@
       "summary": "This video features Brian, a Senior Principal Engineer at Intercom, discussing how the company leveraged AI to double the throughput of their engineering teams. He emphasizes the importance of organizational change, such as updating job descriptions and rewarding AI adoption, alongside a standardized platform strategy using tools like Claude Code. By integrating company-specific engineering guidance and fostering a continuous improvement flywheel, Intercom successfully transformed into an AI-first company. This talk is highly beneficial for engineering leaders, AI developers, and anyone interested in the practical application of AI to enhance corporate productivity.",
       "added": "2026-05-16",
       "times_shown": 0
+    },
+    {
+      "slug": "harnesses-in-ai-a-deep-dive-tejas-kumar-ibm",
+      "title": "Harnesses in AI: A Deep Dive \u2014 Tejas Kumar, IBM",
+      "url": "https://www.youtube.com/watch?v=C_GG5g38vLU",
+      "video_id": "C_GG5g38vLU",
+      "channel": "AI Engineer",
+      "summary": "Tejas Kumar explains the concept and critical role of \"AI harnesses\" in developing reliable AI agents at the AI Engineer Europe conference. He defines a harness as the supporting infrastructure\u2014including tool registries, guardrails, and verification steps\u2014that grounds a \"black box\" model in a stable, real-world environment. Using a practical demonstration, Kumar illustrates how a well-constructed harness can significantly improve the performance and reliability of AI agents, even when utilizing less powerful models. This talk is highly valuable for AI engineers and developers looking to build more robust and consistent AI-driven applications.",
+      "added": "2026-05-18",
+      "times_shown": 0
+    },
+    {
+      "slug": "why-your-ai-ux-is-broken-and-its-not-the-models-fault-mike-christensen-ably",
+      "title": "Why Your AI UX Is Broken (and It's Not the Model's Fault) \u2014 Mike Christensen, Ably",
+      "url": "https://www.youtube.com/watch?v=YNJvm7t3yq8",
+      "video_id": "YNJvm7t3yq8",
+      "channel": "AI Engineer",
+      "summary": "This presentation by Mike Christensen from Ably explores why current AI user experiences are often fragile and how to improve them through better architecture. He argues that the standard model of direct HTTP streaming using Server-Sent Events (SSE) lacks resilience to disconnections and fails to provide a seamless experience across multiple devices or tabs. Christensen proposes the use of \"durable sessions\"\u2014a stateful layer that decouples the agent from the client\u2014along with bidirectional transports like WebSockets to enable live control and continuity. AI engineers and developers building production-grade AI chat or assistant applications would benefit from watching this to learn how to build more robust and interactive user interfaces.",
+      "added": "2026-05-18",
+      "times_shown": 0
     }
   ],
   "archive": [
