@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-19T02:02:40.210325-03:00",
+  "generated_at": "2026-05-20T12:28:55.616043-03:00",
   "week_start": "2026-05-17",
   "week_label": "May 17 - May 23, 2026",
   "stats": {
-    "completed": 4.0,
-    "planned": 4,
+    "completed": 2.5,
+    "planned": 5,
     "skipped": 0
   },
   "daily": {
@@ -15,8 +15,8 @@
     },
     "Monday": {
       "status": "done",
-      "completed": 2,
-      "total": 2
+      "completed": 1,
+      "total": 1
     },
     "Tuesday": {
       "status": "missed",
@@ -58,5 +58,5 @@
       "target": "60min"
     }
   ],
-  "spirit_state": "thriving"
+  "spirit_state": "tired"
 }
