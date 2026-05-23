@@ -454,6 +454,26 @@
       "added": "2026-05-15",
       "read": "2026-05-15",
       "has_notes": true
+    },
+    {
+      "slug": "a-new-edit-tool-for-llm-agents",
+      "title": "A new EDIT tool for LLM agents",
+      "url": "https://antirez.com/news/166",
+      "category": "ai",
+      "summary": "Antirez (Salvatore Sanfilippo) describes a new tag-based EDIT tool for LLM coding agents. Instead of copying entire file sections for CAS-style edits, the tool uses 4-character checksum tags as anchors, reducing token usage significantly. The article walks through optimization trade-offs in building practical agent tooling.",
+      "added": "2026-05-23",
+      "read": "2026-05-23",
+      "has_notes": true
+    },
+    {
+      "slug": "we-might-all-be-ai-engineers-now",
+      "title": "We Might All Be AI Engineers Now",
+      "url": "https://yasint.dev/we-might-all-be-ai-engineers-now/",
+      "category": "ai",
+      "summary": "The article argues that as AI tools become more capable, the distinction between 'AI engineers' and other engineers dissolves — everyone ends up working with AI, making specialized AI engineering roles less meaningful over time. It reflects on how AI changes what it means to build software, suggesting the real skill is learning to work effectively with these tools rather than specializing in them.",
+      "added": "2026-05-23",
+      "read": "2026-05-23",
+      "has_notes": false
     }
   ]
 }
