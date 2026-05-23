@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-22T02:02:57.550825-03:00",
+  "generated_at": "2026-05-23T02:02:32.154642-03:00",
   "week_start": "2026-05-17",
   "week_label": "May 17 - May 23, 2026",
   "stats": {
-    "completed": 6.75,
+    "completed": 6.8,
     "planned": 9,
     "skipped": 2
   },
@@ -48,7 +48,7 @@
     {
       "name": "\ud83c\udfbaTrumpet Practice",
       "status": "pending",
-      "accumulated": "45min",
+      "accumulated": "60min",
       "target": "90min"
     },
     {
