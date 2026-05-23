@@ -163,8 +163,13 @@
         <div id="pagination" class="pagination"></div>
     </div>
 
+    <script src="../assets/tachikoma.js"></script>
     <script>
         const PER_PAGE = 10;
+        const READ_ACTIONS = encodeURIComponent(JSON.stringify([
+            {"icon":"📖","label":"Read","cmd":"read {slug}"},
+            {"icon":"🗑","label":"Discard","cmd":"discard {slug}"}
+        ]));
         let data = null;
         let page = 0;
 
@@ -197,7 +202,8 @@
             for (const item of slice) {
                 const preview = item.summary ? item.summary.substring(0, 200) : '';
                 html += `
-                    <a class="card" href="${esc(item.url)}" target="_blank" rel="noopener">
+                    <a class="card" href="${esc(item.url)}" target="_blank" rel="noopener"
+                       data-tachi-actions="${READ_ACTIONS}" data-tachi-slug="${esc(item.slug)}">
                         <span class="category">${esc(item.category)}</span>
                         <div class="title">${esc(item.title)}</div>
                         ${preview ? `<div class="summary">${esc(preview)}</div>` : ''}
@@ -206,6 +212,7 @@
                 `;
             }
             document.getElementById('cards').innerHTML = html;
+            Tachikoma.refresh();
 
             if (totalPages <= 1) {
                 document.getElementById('pagination').innerHTML = '';

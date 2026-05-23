@@ -336,6 +336,7 @@
             }
         }
     </style>
+    <script src="../assets/tachikoma.js"></script>
 </head>
 <body>
     <div class="back-nav" style="max-width: 900px; margin: 0 auto 1rem; padding: 0 2rem;">
@@ -395,12 +396,12 @@
                     <h2>Routines</h2>
                 </div>
                 <div class="routine-cards">
-                    <div class="routine-card"><div class="routine-header"><span class="routine-name">💪 Basic Workout</span><span class="routine-count">1/2 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Tue">T</div><div class="punch skipped" title="Thu">T</div></div></div>
-<div class="routine-card"><div class="routine-header"><span class="routine-name">🎵 Music Practice</span><span class="routine-count">0/1 sessions</span></div><div class="routine-punch-card"><div class="punch skipped" title="Wed">W</div></div></div>
-<div class="routine-card"><div class="routine-header"><span class="routine-name">🎹 Piano Practice</span><span class="routine-count">1/1 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Mon">M</div></div><div class="routine-metrics">1h</div></div>
-<div class="routine-card"><div class="routine-header"><span class="routine-name">🧗 Rock Climbing</span><span class="routine-count">2/2 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Tue">T</div><div class="punch done" title="Thu">T</div></div></div>
-<div class="routine-card"><div class="routine-header"><span class="routine-name">🏃 Running</span><span class="routine-count">0/1 sessions</span></div><div class="routine-punch-card"><div class="punch pending" title="Sat">S</div></div></div>
-<div class="routine-card"><div class="routine-header"><span class="routine-name">🧘 Yoga</span><span class="routine-count">1/1 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Wed">W</div></div></div>
+                    <div class="routine-card" data-tachi-actions="routines" data-tachi-slug="basic-workout"><div class="routine-header"><span class="routine-name">💪 Basic Workout</span><span class="routine-count">1/2 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Tue">T</div><div class="punch skipped" title="Thu">T</div></div></div>
+<div class="routine-card" data-tachi-actions="routines" data-tachi-slug="music-practice"><div class="routine-header"><span class="routine-name">🎵 Music Practice</span><span class="routine-count">0/1 sessions</span></div><div class="routine-punch-card"><div class="punch skipped" title="Wed">W</div></div></div>
+<div class="routine-card" data-tachi-actions="routines" data-tachi-slug="piano-practice"><div class="routine-header"><span class="routine-name">🎹 Piano Practice</span><span class="routine-count">1/1 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Mon">M</div></div><div class="routine-metrics">1h</div></div>
+<div class="routine-card" data-tachi-actions="routines" data-tachi-slug="rock-climbing"><div class="routine-header"><span class="routine-name">🧗 Rock Climbing</span><span class="routine-count">2/2 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Tue">T</div><div class="punch done" title="Thu">T</div></div></div>
+<div class="routine-card" data-tachi-actions="routines" data-tachi-slug="running"><div class="routine-header"><span class="routine-name">🏃 Running</span><span class="routine-count">0/1 sessions</span></div><div class="routine-punch-card"><div class="punch pending" title="Sat">S</div></div></div>
+<div class="routine-card" data-tachi-actions="routines" data-tachi-slug="yoga"><div class="routine-header"><span class="routine-name">🧘 Yoga</span><span class="routine-count">1/1 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Wed">W</div></div></div>
                 </div>
             </div>
 
@@ -423,5 +424,6 @@
             <p style="margin-top: 0.5rem; font-size: 0.8rem;">🕷️ Tracked by Tachi</p>
         </footer>
     </div>
+    <script>Tachikoma.refresh();</script>
 </body>
 </html>
