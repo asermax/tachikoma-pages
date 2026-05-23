@@ -8,6 +8,9 @@
             {"icon":"✓","label":"Done","cmd":"done {slug}"},
             {"icon":"⏭","label":"Skip","cmd":"skip {slug}"}
         ],
+        goals: [
+            {"icon":"⏱","label":"Track","cmd":"goal done {slug}"}
+        ],
         reading: [
             {"icon":"📖","label":"Read","cmd":"read {slug}"},
             {"icon":"🗑","label":"Discard","cmd":"discard {slug}"}
@@ -122,7 +125,7 @@
         for (var j = 0; j < actionsDef.length; j++) {
             var a = actionsDef[j];
             var cmd = a.cmd.replace(/\{slug\}/g, slug);
-            html += '<span class="tachi-action" onclick="event.stopPropagation(); event.preventDefault()" data-tachi-command="' + escAttr(cmd) + '">' +
+            html += '<span class="tachi-action" onclick="event.stopPropagation(); event.preventDefault(); Tachikoma.send(\'' + escAttr(cmd).replace(/'/g, "\\'") + '\')">' +
                 a.icon + ' ' + escAttr(a.label) + '</span>';
         }
         html += '</div>';
@@ -141,16 +144,6 @@
             renderActionsFor(containers[i]);
         }
     }
-
-    // Global click handler for all .tachi-action buttons
-    document.addEventListener('click', function (e) {
-        var btn = e.target.closest('.tachi-action');
-        if (!btn) return;
-        e.preventDefault();
-        e.stopPropagation();
-        var cmd = btn.getAttribute('data-tachi-command');
-        if (cmd) sendCommand(cmd);
-    });
 
     // ── CSS ──
 

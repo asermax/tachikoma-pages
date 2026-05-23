@@ -201,7 +201,7 @@
             .week-grid { font-size: 0.75rem; }
         }
     </style>
-    <script src="../assets/tachikoma.js?v=66a787bd"></script>
+    <script src="../assets/tachikoma.js?v=30d9ee3ddbc999ba"></script>
 </head>
 <body>
     <div style="max-width: 900px; margin: 0 auto 1rem; padding: 0 2rem;">
@@ -288,7 +288,7 @@
                 var doneCls = goal.status === 'done' ? ' done' : '';
                 var pct = goal.progress_pct || 0;
                 var emoji = goal.emoji ? goal.emoji + ' ' : '';
-                h += '<div class="goal-card' + doneCls + '">';
+                h += '<div class="goal-card' + doneCls + '" data-tachi-actions="goals" data-tachi-slug="' + esc(goal.name) + '">';
                 h += '<div class="goal-header"><span class="goal-name">' + emoji + esc(goal.name) + '</span></div>';
                 h += '<div class="goal-progress"><div class="goal-bar" style="width: ' + pct + '%;"></div></div>';
                 h += '<div class="goal-detail">' + esc(goal.accumulated) + ' / ' + esc(goal.target) + ' (' + pct + '%)</div>';
