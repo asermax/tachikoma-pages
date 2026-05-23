@@ -117,14 +117,12 @@
         }
         var slug = el.getAttribute('data-tachi-slug') || '';
 
-        var html = '<div class="tachi-actions"';
-        if (el.closest('a')) html += ' onclick="event.stopPropagation()"';
-        html += '>';
+        var html = '<div class="tachi-actions">';
 
         for (var j = 0; j < actionsDef.length; j++) {
             var a = actionsDef[j];
             var cmd = a.cmd.replace(/\{slug\}/g, slug);
-            html += '<span class="tachi-action" data-tachi-command="' + escAttr(cmd) + '">' +
+            html += '<span class="tachi-action" onclick="event.stopPropagation(); event.preventDefault()" data-tachi-command="' + escAttr(cmd) + '">' +
                 a.icon + ' ' + escAttr(a.label) + '</span>';
         }
         html += '</div>';
