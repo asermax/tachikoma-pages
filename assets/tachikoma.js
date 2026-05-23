@@ -5,19 +5,19 @@
 
     var PRESETS = {
         routines: [
-            {"icon":"✓","label":"Done","cmd":"done {slug}"},
-            {"icon":"⏭","label":"Skip","cmd":"skip {slug}"}
+            {"icon":"✓","label":"Done","cmd":"mark {slug} as done"},
+            {"icon":"⏭","label":"Skip","cmd":"skip {slug} today"}
         ],
         goals: [
-            {"icon":"⏱","label":"Track","cmd":"goal done {slug}"}
+            {"icon":"⏱","label":"Track","cmd":"track goal {slug}"}
         ],
         reading: [
-            {"icon":"📖","label":"Read","cmd":"read {slug}"},
-            {"icon":"🗑","label":"Discard","cmd":"discard {slug}"}
+            {"icon":"📖","label":"Read","cmd":"I read {slug}"},
+            {"icon":"🗑","label":"Discard","cmd":"discard {slug} from reading list"}
         ],
         watch: [
-            {"icon":"✓","label":"Watched","cmd":"watch {slug}"},
-            {"icon":"🗑","label":"Discard","cmd":"discard {slug}"}
+            {"icon":"✓","label":"Watched","cmd":"I watched {slug}"},
+            {"icon":"🗑","label":"Discard","cmd":"discard {slug} from watch list"}
         ]
     };
 
