@@ -6,11 +6,7 @@
     <title>Routines Tracker | Tachikoma</title>
     <link rel="icon" type="image/png" href="../assets/favicon.png">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             line-height: 1.6;
@@ -33,18 +29,10 @@
             padding: 2rem;
             text-align: center;
         }
-        header h1 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-        header p {
-            opacity: 0.9;
-        }
-        main {
-            padding: 2rem;
-        }
+        header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        header p { opacity: 0.9; }
+        main { padding: 2rem; }
 
-        /* Back Button */
         .back-button {
             display: inline-flex;
             align-items: center;
@@ -56,11 +44,9 @@
             color: #333;
             font-size: 0.9rem;
         }
-        .back-button:hover {
-            background: #e9ecef;
-        }
+        .back-button:hover { background: #e9ecef; }
 
-        /* Stats Overview */
+        /* Stats */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -74,21 +60,11 @@
             text-align: center;
             border-left: 4px solid #667eea;
         }
-        .stat-number {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #667eea;
-        }
-        .stat-label {
-            color: #666;
-            font-size: 0.9rem;
-            margin-top: 0.25rem;
-        }
+        .stat-number { font-size: 2rem; font-weight: bold; color: #667eea; }
+        .stat-label { color: #666; font-size: 0.9rem; margin-top: 0.25rem; }
 
-        /* Week Grid */
-        .category {
-            margin-bottom: 2rem;
-        }
+        /* Sections */
+        .category { margin-bottom: 2rem; }
         .category-header {
             display: flex;
             align-items: center;
@@ -97,63 +73,31 @@
             padding-bottom: 0.5rem;
             border-bottom: 2px solid #eee;
         }
-        .category-icon {
-            font-size: 1.5rem;
-        }
-        .category-header h2 {
-            font-size: 1.3rem;
-            color: #333;
-        }
+        .category-icon { font-size: 1.5rem; }
+        .category-header h2 { font-size: 1.3rem; color: #333; }
+
+        /* Week Grid */
         .week-grid {
             display: grid;
             grid-template-columns: repeat(7, 1fr);
             gap: 0.5rem;
             text-align: center;
         }
-        .day-column {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .day-header {
-            font-size: 0.85rem;
-            color: #666;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-        }
+        .day-column { display: flex; flex-direction: column; align-items: center; }
+        .day-header { font-size: 0.85rem; color: #666; margin-bottom: 0.5rem; font-weight: 500; }
         .day-cell {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
+            width: 32px; height: 32px; border-radius: 50%;
             background: #e9ecef;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.75rem;
-            color: #666;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.75rem; color: #666;
         }
-        .day-cell.done {
-            background: #28a745;
-            color: white;
-        }
-        .day-cell.partial {
-            background: #ffc107;
-            color: #333;
-        }
-        .day-cell.missed {
-            background: #dc3545;
-            color: white;
-        }
-        .day-cell.today {
-            border: 2px solid #667eea;
-        }
+        .day-cell.done { background: #28a745; color: white; }
+        .day-cell.partial { background: #ffc107; color: #333; }
+        .day-cell.missed { background: #dc3545; color: white; }
+        .day-cell.today { border: 2px solid #667eea; }
 
         /* Routine Cards */
-        .routine-cards {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
+        .routine-cards { display: flex; flex-direction: column; gap: 1rem; }
         .routine-card {
             background: #f8f9fa;
             padding: 1rem 1.25rem;
@@ -166,104 +110,48 @@
             align-items: center;
             margin-bottom: 0.75rem;
         }
-        .routine-name {
-            font-weight: 600;
-            font-size: 1rem;
-        }
-        .routine-count {
-            color: #666;
-            font-size: 0.85rem;
-        }
-        .routine-punch-card {
-            display: flex;
-            gap: 0.4rem;
-            margin-bottom: 0.5rem;
-        }
+        .routine-name { font-weight: 600; font-size: 1rem; }
+        .routine-count { color: #666; font-size: 0.85rem; }
+        .routine-punch-card { display: flex; gap: 0.4rem; margin-bottom: 0.5rem; }
         .punch {
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            font-weight: 600;
+            width: 28px; height: 28px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.7rem; font-weight: 600;
         }
-        .punch.done {
-            background: #28a745;
-            color: white;
-        }
-        .punch.pending {
-            background: #e9ecef;
-            color: #999;
-        }
-        .punch.skipped {
-            background: #f8d7da;
-            color: #dc3545;
-        }
-        .routine-metrics {
-            color: #495057;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-        .routine-comparison {
-            color: #28a745;
-            font-size: 0.8rem;
-            margin-top: 0.25rem;
-        }
-        .routine-comparison [data-negative] {
-            color: #dc3545;
-        }
+        .punch.done { background: #28a745; color: white; }
+        .punch.pending { background: #e9ecef; color: #999; }
+        .punch.skipped { background: #f8d7da; color: #dc3545; }
+        .routine-metrics { color: #495057; font-size: 0.9rem; font-weight: 500; }
+        .routine-comparison { color: #28a745; font-size: 0.8rem; margin-top: 0.25rem; }
+        .routine-comparison.negative { color: #dc3545; }
 
         /* Goal Cards */
-        .goal-cards {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
+        .goal-cards { display: flex; flex-direction: column; gap: 1rem; }
         .goal-card {
             background: #f8f9fa;
             padding: 1rem 1.25rem;
             border-radius: 8px;
             border-left: 4px solid #ffc107;
         }
-        .goal-card.done {
-            border-left-color: #28a745;
-        }
+        .goal-card.done { border-left-color: #28a745; }
         .goal-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 0.5rem;
         }
-        .goal-name {
-            font-weight: 600;
-            font-size: 1rem;
-        }
-        .goal-count {
-            display: none;
-        }
+        .goal-name { font-weight: 600; font-size: 1rem; }
         .goal-progress {
-            width: 100%;
-            height: 8px;
-            background: #e9ecef;
-            border-radius: 4px;
-            overflow: hidden;
-            margin-bottom: 0.5rem;
+            width: 100%; height: 8px;
+            background: #e9ecef; border-radius: 4px;
+            overflow: hidden; margin-bottom: 0.5rem;
         }
         .goal-bar {
-            height: 100%;
-            background: #ffc107;
-            border-radius: 4px;
-            transition: width 0.3s ease;
+            height: 100%; background: #ffc107;
+            border-radius: 4px; transition: width 0.3s ease;
         }
-        .goal-card.done .goal-bar {
-            background: #28a745;
-        }
-        .goal-detail {
-            color: #495057;
-            font-size: 0.85rem;
-        }
+        .goal-card.done .goal-bar { background: #28a745; }
+        .goal-detail { color: #495057; font-size: 0.85rem; }
 
         /* Spirit Companion */
         .spirit-section {
@@ -274,50 +162,30 @@
             text-align: center;
             border: 2px solid #ffd700;
         }
-        .spirit-title {
-            font-size: 1.5rem;
-            color: #856404;
-            margin-bottom: 1rem;
-        }
+        .spirit-title { font-size: 1.5rem; color: #856404; margin-bottom: 1rem; }
         .spirit-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #ffd700;
+            width: 200px; height: 200px; border-radius: 50%;
+            object-fit: cover; border: 4px solid #ffd700;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             margin-bottom: 1rem;
         }
         .spirit-state {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #856404;
-            margin-bottom: 0.5rem;
+            font-size: 1.2rem; font-weight: bold;
+            color: #856404; margin-bottom: 0.5rem;
             text-transform: capitalize;
         }
-        .spirit-description {
-            color: #666;
-            max-width: 500px;
-            margin: 0 auto;
-        }
+        .spirit-description { color: #666; max-width: 500px; margin: 0 auto; }
 
-        /* Archive Link */
+        /* Archive */
         .archive-section {
             text-align: center;
             margin: 2rem 0;
             padding-top: 1rem;
             border-top: 1px solid #eee;
         }
-        .archive-link {
-            color: #667eea;
-            text-decoration: none;
-            font-size: 0.95rem;
-        }
-        .archive-link:hover {
-            text-decoration: underline;
-        }
+        .archive-link { color: #667eea; text-decoration: none; font-size: 0.95rem; }
+        .archive-link:hover { text-decoration: underline; }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 2rem;
@@ -326,104 +194,168 @@
             font-size: 0.9rem;
         }
 
-        /* Responsive */
+        .loading { text-align: center; color: #999; padding: 3rem 0; }
+
         @media (max-width: 600px) {
-            body {
-                padding: 1rem;
-            }
-            .week-grid {
-                font-size: 0.75rem;
-            }
+            body { padding: 1rem; }
+            .week-grid { font-size: 0.75rem; }
         }
     </style>
     <script src="../assets/tachikoma.js"></script>
 </head>
 <body>
-    <div class="back-nav" style="max-width: 900px; margin: 0 auto 1rem; padding: 0 2rem;">
+    <div style="max-width: 900px; margin: 0 auto 1rem; padding: 0 2rem;">
         <a href="../" class="back-button" style="background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <span>←</span> Back to Home
+            <span>&larr;</span> Back to Home
         </a>
     </div>
 
     <div class="container">
         <header>
-            <h1>📅 Routines Tracker</h1>
+            <h1>&#128197; Routines Tracker</h1>
             <p>Weekly activity tracking and accountability</p>
         </header>
 
         <main>
-            <!-- Stats Overview -->
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">6.8 / 9</div>
-                    <div class="stat-label">Completed / Planned</div>
-                </div>
-            </div>
-
-            <!-- Weekly View -->
-            <div class="category">
-                <div class="category-header">
-                    <span class="category-icon">📊</span>
-                    <h2>This Week</h2>
-                </div>
-                <div class="week-grid">
-                    <div class="day-column"><div class="day-header">Sun</div><div class="day-cell">·</div></div>
-<div class="day-column"><div class="day-header">Mon</div><div class="day-cell done">1</div></div>
-<div class="day-column"><div class="day-header">Tue</div><div class="day-cell done">2</div></div>
-<div class="day-column"><div class="day-header">Wed</div><div class="day-cell partial">1</div></div>
-<div class="day-column"><div class="day-header">Thu</div><div class="day-cell partial">1</div></div>
-<div class="day-column"><div class="day-header">Fri</div><div class="day-cell">·</div></div>
-<div class="day-column"><div class="day-header">Sat</div><div class="day-cell today">·</div></div>
-                </div>
-            </div>
-
-            <!-- Weekly Goals -->
-            <div class="category" id="goals-section">
-                <div class="category-header">
-                    <span class="category-icon">🎯</span>
-                    <h2>Weekly Goals</h2>
-                </div>
-                <div class="goal-cards">
-                    <div class="goal-card pending"><div class="goal-header"><span class="goal-name">Trumpet Practice</span></div><div class="goal-progress"><div class="goal-bar" style="width: 66%;"></div></div><div class="goal-detail">60min / 90min (66%)</div></div>
-<div class="goal-card pending"><div class="goal-header"><span class="goal-name">Reading</span></div><div class="goal-progress"><div class="goal-bar" style="width: 83%;"></div></div><div class="goal-detail">50min / 60min (83%)</div></div>
-                </div>
-            </div>
-
-            <!-- Routine Cards -->
-            <div class="category">
-                <div class="category-header">
-                    <span class="category-icon">📝</span>
-                    <h2>Routines</h2>
-                </div>
-                <div class="routine-cards">
-                    <div class="routine-card" data-tachi-actions="routines" data-tachi-slug="basic-workout"><div class="routine-header"><span class="routine-name">💪 Basic Workout</span><span class="routine-count">1/2 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Tue">T</div><div class="punch skipped" title="Thu">T</div></div></div>
-<div class="routine-card" data-tachi-actions="routines" data-tachi-slug="music-practice"><div class="routine-header"><span class="routine-name">🎵 Music Practice</span><span class="routine-count">0/1 sessions</span></div><div class="routine-punch-card"><div class="punch skipped" title="Wed">W</div></div></div>
-<div class="routine-card" data-tachi-actions="routines" data-tachi-slug="piano-practice"><div class="routine-header"><span class="routine-name">🎹 Piano Practice</span><span class="routine-count">1/1 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Mon">M</div></div><div class="routine-metrics">1h</div></div>
-<div class="routine-card" data-tachi-actions="routines" data-tachi-slug="rock-climbing"><div class="routine-header"><span class="routine-name">🧗 Rock Climbing</span><span class="routine-count">2/2 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Tue">T</div><div class="punch done" title="Thu">T</div></div></div>
-<div class="routine-card" data-tachi-actions="routines" data-tachi-slug="running"><div class="routine-header"><span class="routine-name">🏃 Running</span><span class="routine-count">0/1 sessions</span></div><div class="routine-punch-card"><div class="punch pending" title="Sat">S</div></div></div>
-<div class="routine-card" data-tachi-actions="routines" data-tachi-slug="yoga"><div class="routine-header"><span class="routine-name">🧘 Yoga</span><span class="routine-count">1/1 sessions</span></div><div class="routine-punch-card"><div class="punch done" title="Wed">W</div></div></div>
-                </div>
-            </div>
-
-            <!-- Spirit Companion -->
-            <div class="spirit-section">
-                <div class="spirit-title">🦔 Autumn Hedgehog</div>
-                <img src="assets/content.jpg" alt="Spirit Companion" class="spirit-image">
-                <div class="spirit-state">content</div>
-                <div class="spirit-description">Your autumn hedgehog is cozy and content, nestled among warm fallen leaves with a gentle smile under its acorn cap.</div>
-            </div>
-
-            <!-- Archive Link -->
-            <div class="archive-section">
-                <a href="archive/" class="archive-link">📚 View Archive →</a>
-            </div>
+            <div id="content" class="loading">Loading...</div>
         </main>
 
         <footer>
-            <p>Last updated: Saturday, May 23, 2026 at 02:02</p>
-            <p style="margin-top: 0.5rem; font-size: 0.8rem;">🕷️ Tracked by Tachi</p>
+            <p id="last-updated"></p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;">&#128375; Tracked by Tachi</p>
         </footer>
     </div>
-    <script>Tachikoma.refresh();</script>
+
+    <script>
+    var DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    var DAY_SHORT = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    var DAY_INITIAL = ['S','M','T','W','T','F','S'];
+
+    async function load() {
+        try {
+            var res = await fetch('routines-data.json');
+            var data = await res.json();
+        } catch (e) {
+            document.getElementById('content').innerHTML = '<div class="loading">Failed to load dashboard.</div>';
+            return;
+        }
+        render(data);
+    }
+
+    function esc(s) {
+        var d = document.createElement('div');
+        d.textContent = s || '';
+        return d.innerHTML;
+    }
+
+    function render(d) {
+        var h = '';
+
+        // Stats
+        h += '<div class="stats-grid">';
+        h += '<div class="stat-card"><div class="stat-number">' + esc(d.stats.display) + '</div><div class="stat-label">Completed / Planned</div></div>';
+        if (d.stats.skipped > 0) {
+            h += '<div class="stat-card"><div class="stat-number">' + d.stats.skipped + '</div><div class="stat-label">Skipped</div></div>';
+        }
+        h += '</div>';
+
+        // Week grid
+        h += '<div class="category"><div class="category-header"><span class="category-icon">&#128202;</span><h2>This Week</h2></div>';
+        h += '<div class="week-grid">';
+        var today = new Date();
+        var todayDay = DAYS[today.getDay()];
+        for (var i = 0; i < 7; i++) {
+            var dayName = DAYS[i];
+            var day = d.daily[dayName];
+            var isToday = dayName === todayDay;
+            var cls = 'day-cell';
+            var label = '&middot;';
+            if (day) {
+                cls += ' ' + (day.status || '');
+                if (day.completed > 0) label = day.completed;
+                if (isToday) cls += ' today';
+            }
+            h += '<div class="day-column"><div class="day-header">' + DAY_SHORT[i] + '</div><div class="' + cls + '">' + label + '</div></div>';
+        }
+        h += '</div></div>';
+
+        // Goals
+        if (d.goals && d.goals.length > 0) {
+            h += '<div class="category"><div class="category-header"><span class="category-icon">&#127919;</span><h2>Weekly Goals</h2></div>';
+            h += '<div class="goal-cards">';
+            for (var g = 0; g < d.goals.length; g++) {
+                var goal = d.goals[g];
+                var doneCls = goal.status === 'done' ? ' done' : '';
+                var pct = goal.progress_pct || 0;
+                var emoji = goal.emoji ? goal.emoji + ' ' : '';
+                h += '<div class="goal-card' + doneCls + '" data-tachi-actions="routines" data-tachi-slug="' + esc(goal.name) + '">';
+                h += '<div class="goal-header"><span class="goal-name">' + emoji + esc(goal.name) + '</span></div>';
+                h += '<div class="goal-progress"><div class="goal-bar" style="width: ' + pct + '%;"></div></div>';
+                h += '<div class="goal-detail">' + esc(goal.accumulated) + ' / ' + esc(goal.target) + ' (' + pct + '%)</div>';
+                h += '</div>';
+            }
+            h += '</div></div>';
+        }
+
+        // Routines
+        if (d.routines && d.routines.length > 0) {
+            h += '<div class="category"><div class="category-header"><span class="category-icon">&#128221;</span><h2>Routines</h2></div>';
+            h += '<div class="routine-cards">';
+            for (var r = 0; r < d.routines.length; r++) {
+                var rt = d.routines[r];
+                h += '<div class="routine-card" data-tachi-actions="routines" data-tachi-slug="' + esc(rt.id) + '">';
+                h += '<div class="routine-header"><span class="routine-name">' + esc(rt.emoji) + ' ' + esc(rt.name) + '</span>';
+                h += '<span class="routine-count">' + rt.done + '/' + rt.total + ' sessions</span></div>';
+
+                // Punch card
+                if (rt.sessions && rt.sessions.length > 0) {
+                    h += '<div class="routine-punch-card">';
+                    for (var s = 0; s < rt.sessions.length; s++) {
+                        var sess = rt.sessions[s];
+                        var initial = sess.day ? sess.day.charAt(0) : '?';
+                        h += '<div class="punch ' + sess.status + '" title="' + esc(sess.day) + '">' + initial + '</div>';
+                    }
+                    h += '</div>';
+                }
+
+                if (rt.metrics_total) {
+                    h += '<div class="routine-metrics">' + esc(rt.metrics_total) + '</div>';
+                }
+                if (rt.comparison) {
+                    var isNeg = rt.comparison.charAt(0) === '-';
+                    h += '<div class="routine-comparison' + (isNeg ? ' negative' : '') + '">' + esc(rt.comparison) + ' vs last week</div>';
+                }
+
+                h += '</div>';
+            }
+            h += '</div></div>';
+        }
+
+        // Spirit
+        if (d.spirit) {
+            h += '<div class="spirit-section">';
+            h += '<div class="spirit-title">' + esc(d.spirit.title) + '</div>';
+            h += '<img src="' + esc(d.spirit.image) + '" alt="Spirit Companion" class="spirit-image">';
+            h += '<div class="spirit-state">' + esc(d.spirit.state) + '</div>';
+            h += '<div class="spirit-description">' + esc(d.spirit.description) + '</div>';
+            h += '</div>';
+        }
+
+        // Archive link
+        h += '<div class="archive-section"><a href="archive/" class="archive-link">&#128218; View Archive &rarr;</a></div>';
+
+        document.getElementById('content').innerHTML = h;
+
+        // Footer
+        if (d.last_updated) {
+            document.getElementById('last-updated').textContent = 'Last updated: ' + d.last_updated;
+        }
+
+        // Refresh action buttons
+        if (window.Tachikoma && Tachikoma.refresh) Tachikoma.refresh();
+    }
+
+    load();
+    </script>
 </body>
 </html>
