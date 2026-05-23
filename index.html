@@ -149,6 +149,25 @@
                 </a>
             </li>
         </ul>
+
+        <h2>Settings</h2>
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span style="font-size: 1.5rem;">🤖</span>
+                <div>
+                    <strong>Tachikoma Bot</strong>
+                    <p id="tachi-status" style="margin: 0; color: #999; font-size: 0.9rem;">Not configured</p>
+                </div>
+            </div>
+            <button onclick="Tachikoma.setup()" style="padding: 0.5rem 1rem; background: #667eea; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 0.9rem;">Configure</button>
+        </div>
+        <script>
+            var _ts = document.getElementById('tachi-status');
+            if (Tachikoma.get()) {
+                _ts.textContent = '@' + Tachikoma.get();
+                _ts.style.color = '#28a745';
+            }
+        </script>
     </main>
 
     <footer>
