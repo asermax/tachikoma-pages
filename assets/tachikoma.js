@@ -7,6 +7,14 @@
         routines: [
             {"icon":"✓","label":"Done","cmd":"done {slug}"},
             {"icon":"⏭","label":"Skip","cmd":"skip {slug}"}
+        ],
+        reading: [
+            {"icon":"📖","label":"Read","cmd":"read {slug}"},
+            {"icon":"🗑","label":"Discard","cmd":"discard {slug}"}
+        ],
+        watch: [
+            {"icon":"✓","label":"Watched","cmd":"watch {slug}"},
+            {"icon":"🗑","label":"Discard","cmd":"discard {slug}"}
         ]
     };
 
@@ -85,17 +93,6 @@
         };
     }
 
-    // ── Floating settings gear ──
-
-    function injectSettingsGear() {
-        var btn = document.createElement('button');
-        btn.className = 'tachi-gear';
-        btn.title = 'Tachikoma Settings';
-        btn.innerHTML = '&#9881;';
-        btn.onclick = function (e) { e.stopPropagation(); showSetupModal(); };
-        document.body.appendChild(btn);
-    }
-
     // ── Action button injection ──
     // Declarative pattern: add data-tachi-actions and data-tachi-slug to any element.
     // data-tachi-actions='[{"icon":"📖","label":"Read","cmd":"read {slug}"}]'
@@ -161,13 +158,6 @@
 
     var css = document.createElement('style');
     css.textContent =
-        '.tachi-gear{' +
-        'position:fixed;bottom:20px;right:20px;width:40px;height:40px;' +
-        'border-radius:50%;background:rgba(0,0,0,0.5);color:#fff;border:none;' +
-        'cursor:pointer;font-size:18px;display:flex;align-items:center;' +
-        'justify-content:center;z-index:999;opacity:0.35;transition:opacity 0.2s;' +
-        'box-shadow:0 2px 8px rgba(0,0,0,0.2)}' +
-        '.tachi-gear:hover{opacity:0.9}' +
         '.tachi-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);' +
         'z-index:10000;align-items:center;justify-content:center}' +
         '.tachi-modal{background:#fff;border-radius:12px;padding:1.5rem;max-width:360px;' +
@@ -193,8 +183,6 @@
     document.head.appendChild(css);
 
     // ── Init ──
-
-    injectSettingsGear();
 
     // ── Public API ──
 
