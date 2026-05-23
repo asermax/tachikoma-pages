@@ -151,10 +151,6 @@
     <script src="../assets/tachikoma.js"></script>
     <script>
         const PER_PAGE = 10;
-        const WATCH_ACTIONS = encodeURIComponent(JSON.stringify([
-            {"icon":"✓","label":"Watched","cmd":"watch {slug}"},
-            {"icon":"🗑","label":"Discard","cmd":"discard {slug}"}
-        ]));
         let data = null;
         let page = 0;
 
@@ -188,7 +184,7 @@
                 const preview = item.summary ? item.summary.substring(0, 200) : '';
                 html += `
                     <div class="card"
-                         data-tachi-actions="${WATCH_ACTIONS}" data-tachi-slug="${esc(item.slug)}">
+                         data-tachi-actions="watch" data-tachi-slug="${esc(item.slug)}">
                         <iframe class="embed" src="https://www.youtube.com/embed/${esc(item.video_id)}" allowfullscreen loading="lazy"></iframe>
                         <div class="title">${esc(item.title)}</div>
                         ${item.channel ? `<div class="channel">${esc(item.channel)}</div>` : ''}
