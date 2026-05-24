@@ -5,19 +5,19 @@
 
     var PRESETS = {
         routines: [
-            {"icon":"✓","label":"Done","cmd":"mark {slug} as done"},
-            {"icon":"⏭","label":"Skip","cmd":"skip {slug} today"}
+            {"icon":"✓","label":"Done","cmd":"mark {slug} as done on my routine"},
+            {"icon":"⏭","label":"Skip","cmd":"skip {slug} today on my routine"}
         ],
         goals: [
-            {"icon":"⏱","label":"Track","cmd":"track goal {slug}"}
+            {"icon":"⏱","label":"Track","cmd":"track {slug} on my weekly goals"}
         ],
         reading: [
-            {"icon":"📖","label":"Read","cmd":"I read {slug}"},
-            {"icon":"🗑","label":"Discard","cmd":"discard {slug} from reading list"}
+            {"icon":"📖","label":"Read","cmd":"mark {slug} as read on my reading list"},
+            {"icon":"🗑","label":"Discard","cmd":"discard {slug} from my reading list"}
         ],
         watch: [
-            {"icon":"✓","label":"Watched","cmd":"I watched {slug}"},
-            {"icon":"🗑","label":"Discard","cmd":"discard {slug} from watch list"}
+            {"icon":"✓","label":"Watched","cmd":"mark {slug} as watched on my watch list"},
+            {"icon":"🗑","label":"Discard","cmd":"discard {slug} from my watch list"}
         ]
     };
 
