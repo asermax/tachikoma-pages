@@ -153,15 +153,6 @@
       "summary": "Introduces Structured-Prompt-Driven Development (SPDD), a method that treats AI prompts as first-class delivery artifacts — version-controlled, reviewed, and reusable. Built around the REASONS Canvas (Requirements, Entities, Approach, Structure, Operations, Norms, Safeguards) and a six-step workflow that brings prompts into the same discipline as code. Developed by Thoughtworks to address the gap between individual AI speed and system-level throughput. Includes a worked billing engine example, core skill identification (abstraction-first, alignment, iterative review), and fitness assessment for where SPDD pays off vs. falls short.",
       "added": "2026-05-15",
       "times_shown": 0
-    },
-    {
-      "slug": "what-is-code",
-      "title": "What Is Code?",
-      "url": "https://martinfowler.com/articles/what-is-code.html",
-      "category": "engineering",
-      "summary": "This article explores the evolving role of code in the era of large language models (LLMs). While code has traditionally been understood as instructions written by developers to tell machines what to do, the author argues that code serves a second, deeper purpose: it acts as a conceptual model of the problem domain. With LLMs commoditizing the mechanical production of code, this second aspect -- building vocabulary, discovering abstractions, and shaping conceptual models -- becomes the truly valuable part of software development.",
-      "added": "2026-05-16",
-      "times_shown": 0
     }
   ],
   "archive": [
@@ -453,6 +444,16 @@
       "summary": "A critique of the software industry's response to AI, told through an extended burning ship metaphor. Argues the real threat isn't AI but greedy leadership gutting engineering teams and dismantling the apprenticeship pipeline. The centerpiece is Sara, a mid-50s engineer maintaining a critical payroll cron job inherited from her late mentor — representing the invisible institutional knowledge that gets destroyed when juniors are cut. A lament for engineering culture replaced by output optimization and AI-driven cost cutting.",
       "added": "2026-05-15",
       "read": "2026-05-15",
+      "has_notes": true
+    },
+    {
+      "slug": "what-is-code",
+      "title": "What Is Code?",
+      "url": "https://martinfowler.com/articles/what-is-code.html",
+      "category": "engineering",
+      "summary": "This article explores the evolving role of code in the era of large language models (LLMs). While code has traditionally been understood as instructions written by developers to tell machines what to do, the author argues that code serves a second, deeper purpose: it acts as a conceptual model of the problem domain. With LLMs commoditizing the mechanical production of code, this second aspect -- building vocabulary, discovering abstractions, and shaping conceptual models -- becomes the truly valuable part of software development.",
+      "added": "2026-05-16",
+      "read": "2026-05-24",
       "has_notes": true
     },
     {
