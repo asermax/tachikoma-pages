@@ -352,16 +352,6 @@
       "times_shown": 0
     },
     {
-      "slug": "how-building-with-ai-can-double-the-throughput-of-your-engineering-team-brian-sc",
-      "title": "How Building with AI Can Double the Throughput of Your Engineering Team \u2014 Brian Scanlan, Intercom",
-      "url": "https://www.youtube.com/watch?v=4_VQBbs2iQA",
-      "video_id": "4_VQBbs2iQA",
-      "channel": "AI Engineer",
-      "summary": "This video features Brian, a Senior Principal Engineer at Intercom, discussing how the company leveraged AI to double the throughput of their engineering teams. He emphasizes the importance of organizational change, such as updating job descriptions and rewarding AI adoption, alongside a standardized platform strategy using tools like Claude Code. By integrating company-specific engineering guidance and fostering a continuous improvement flywheel, Intercom successfully transformed into an AI-first company. This talk is highly beneficial for engineering leaders, AI developers, and anyone interested in the practical application of AI to enhance corporate productivity.",
-      "added": "2026-05-16",
-      "times_shown": 0
-    },
-    {
       "slug": "harnesses-in-ai-a-deep-dive-tejas-kumar-ibm",
       "title": "Harnesses in AI: A Deep Dive \u2014 Tejas Kumar, IBM",
       "url": "https://www.youtube.com/watch?v=C_GG5g38vLU",
@@ -469,6 +459,17 @@
       "summary": "This video features a presentation by Lucas Meijer, a former Unity developer, on the practical application of AI coding agents in software development. Meijer shares several strategies, such as using specific AI models like Codex, embracing HTML as an output format for agent reports, and making codebases agent-friendly by reducing build warnings and providing clear documentation. He emphasizes analyzing previous agent sessions to identify friction points and advises defining evaluation criteria before tasking an agent. Highly relevant for programmers looking to integrate AI agents into their workflows effectively.",
       "added": "2026-05-03",
       "watched": "2026-05-03",
+      "has_notes": true
+    },
+    {
+      "slug": "how-building-with-ai-can-double-the-throughput-of-your-engineering-team-brian-sc",
+      "title": "How Building with AI Can Double the Throughput of Your Engineering Team \u2014 Brian Scanlan, Intercom",
+      "url": "https://www.youtube.com/watch?v=4_VQBbs2iQA",
+      "video_id": "4_VQBbs2iQA",
+      "channel": "AI Engineer",
+      "summary": "This video features Brian, a Senior Principal Engineer at Intercom, discussing how the company leveraged AI to double the throughput of their engineering teams. He emphasizes the importance of organizational change, such as updating job descriptions and rewarding AI adoption, alongside a standardized platform strategy using tools like Claude Code. By integrating company-specific engineering guidance and fostering a continuous improvement flywheel, Intercom successfully transformed into an AI-first company. This talk is highly beneficial for engineering leaders, AI developers, and anyone interested in the practical application of AI to enhance corporate productivity.",
+      "added": "2026-05-16",
+      "watched": "2026-05-23",
       "has_notes": true
     }
   ]
