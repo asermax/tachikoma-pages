@@ -1,0 +1,174 @@
+{
+  "generated_at": "2026-05-23T14:37:04.706159-03:00",
+  "week_start": "2026-05-17",
+  "week_label": "May 17 - May 23, 2026",
+  "last_updated": "Saturday, May 23, 2026 at 14:37",
+  "stats": {
+    "completed": 6.8,
+    "planned": 9,
+    "skipped": 2,
+    "display": "6.8 / 9"
+  },
+  "daily": {
+    "Sunday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Monday": {
+      "status": "done",
+      "completed": 1,
+      "total": 1
+    },
+    "Tuesday": {
+      "status": "done",
+      "completed": 2,
+      "total": 2
+    },
+    "Wednesday": {
+      "status": "partial",
+      "completed": 1,
+      "total": 2
+    },
+    "Thursday": {
+      "status": "partial",
+      "completed": 1,
+      "total": 2
+    },
+    "Friday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Saturday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 1
+    }
+  },
+  "goals": [
+    {
+      "name": "Trumpet Practice",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "60min",
+      "target": "90min",
+      "progress_pct": 66
+    },
+    {
+      "name": "Reading",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "50min",
+      "target": "60min",
+      "progress_pct": 83
+    }
+  ],
+  "routines": [
+    {
+      "id": "basic-workout-7:45-pm",
+      "name": "Basic Workout",
+      "emoji": "\ud83d\udcaa",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "done"
+        },
+        {
+          "day": "Thu",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 2
+    },
+    {
+      "id": "music-practice",
+      "name": "Music Practice",
+      "emoji": "\ud83c\udfb5",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 1
+    },
+    {
+      "id": "piano-practice",
+      "name": "Piano Practice",
+      "emoji": "\ud83c\udfb9",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "1h",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "rock-climbing",
+      "name": "Rock Climbing",
+      "emoji": "\ud83e\uddd7",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "done"
+        },
+        {
+          "day": "Thu",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 2,
+      "total": 2
+    },
+    {
+      "id": "running",
+      "name": "Running",
+      "emoji": "\ud83c\udfc3",
+      "sessions": [
+        {
+          "day": "Sat",
+          "status": "pending"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 1
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga",
+      "emoji": "\ud83e\uddd8",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    }
+  ],
+  "spirit": {
+    "state": "content",
+    "emoji": "\ud83e\udd94",
+    "title": "\ud83e\udd94 Autumn Hedgehog",
+    "image": "assets/content.jpg",
+    "description": "Your autumn hedgehog is cozy and content, nestled among warm fallen leaves with a gentle smile under its acorn cap."
+  }
+}
