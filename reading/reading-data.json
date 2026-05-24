@@ -155,6 +155,15 @@
       "times_shown": 0
     },
     {
+      "slug": "building-pi-with-pi",
+      "title": "Building Pi With Pi",
+      "url": "https://lucumr.pocoo.org/2026/5/24/pi-oss/",
+      "category": "ai",
+      "summary": "Armin Ronacher reflects on building Pi (the AI coding tool) with Pi itself. Three key themes: (1) Slop issues — AI-generated issue reports that contain wrong diagnoses are worse than no diagnosis because agents treat them as evidence; (2) Slop begets slop — LLMs over-engineer by adding local defenses instead of fixing root causes, making bad states 'impossible' rather than 'handled'; (3) Volume is the problem — 3,145 external issues/PRs in 90 days, most are slop. Pi uses careful parallelism with custom slash commands (/is for analysis, /wr for wrap-up) rather than fully detached automation. Argues Open Source needs more collaboration, not more isolated work with machines — stronger foundations, not more local workarounds.",
+      "added": "2026-05-24",
+      "times_shown": 0
+    },
+    {
       "slug": "httpsxcomistatus2058014104854626490",
       "title": "Thoughts on LLMs, May 2026",
       "url": "https://x.com/i/status/2058014104854626490",
