@@ -480,6 +480,16 @@
       "summary": "Advocates for using advanced coding agents to tackle complex AI systems and ML engineering tasks such as writing custom CUDA kernels and fine-tuning LLMs. Introduces Hugging Face's kernels repository, a platform for publishing and distributing optimized compute kernels to overcome GPU memory bottlenecks and accelerate model inference. Highlights the use of Skills \u2014 file-based contexts that guide agents through few-shot learning \u2014 alongside the upskill library for benchmarking agent performance. These frameworks enable AI engineers to optimize workloads closer to the hardware level and automate sophisticated model-training processes.",
       "added": "2026-05-24",
       "times_shown": 0
+    },
+    {
+      "slug": "scaling-the-next-paradigm-of-heterogeneous-intelligence-adrian-bertagnoli-callos",
+      "title": "Scaling the Next Paradigm of Heterogeneous Intelligence \u2014 Adrian Bertagnoli, Callosum",
+      "url": "https://www.youtube.com/watch?v=WRBNDpUhsJQ",
+      "video_id": "WRBNDpUhsJQ",
+      "channel": "AI Engineer",
+      "summary": "Adrian Bertagnoli, a founding engineer at Callosum, presents a case for transitioning from homogeneous AI systems to heterogeneous intelligence, which integrates diverse model architectures and specialized hardware. He explains that because real-world problems are complex and multi-faceted, utilizing a variety of specialized agent models on optimized hardware is mathematically proven to outperform single, dense models under resource constraints. He introduces heterogeneous recursion, demonstrating that routing sub-contexts of long-context tasks to optimal chips (such as Cerebras or Sambanova) can make processing up to 12 times cheaper and 5 times faster than standard models. This presentation is valuable for AI engineers, system architects, and researchers interested in the future of scaling and optimizing large language model workflows.",
+      "added": "2026-05-25",
+      "times_shown": 0
     }
   ],
   "archive": [
