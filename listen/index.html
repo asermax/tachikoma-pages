@@ -430,6 +430,7 @@ let scrollTimeout;
 let currentArticle = null;
 let currentChunkIndex = -1;
 let chunkBoundaries = [];
+let syncData = null;
 let paragraphs = [];
 let wakeLock = null;
 
@@ -449,33 +450,56 @@ document.addEventListener('visibilitychange', () => {
 
 // ── Chunk-based scroll + highlight ──
 
-function setupChunks() {
+function setupChunks(articleSync) {
     paragraphs = Array.from(document.querySelectorAll('#articleBody .chunk'));
     if (paragraphs.length === 0) return;
 
-    const chunkChars = paragraphs.map(p => p.textContent.length);
-    const totalChars = chunkChars.reduce((a, b) => a + b, 0);
-
-    let cumulative = 0;
-    chunkBoundaries = [0];
-    for (const chars of chunkChars) {
-        cumulative += chars;
-        chunkBoundaries.push(cumulative / totalChars);
+    if (articleSync && articleSync.timestamps && articleSync.chunkMap) {
+        syncData = articleSync;
+    } else {
+        syncData = null;
+        const chunkChars = paragraphs.map(p => p.textContent.length);
+        const totalChars = chunkChars.reduce((a, b) => a + b, 0);
+        let cumulative = 0;
+        chunkBoundaries = [0];
+        for (const chars of chunkChars) {
+            cumulative += chars;
+            chunkBoundaries.push(cumulative / totalChars);
+        }
     }
 }
 
 function getCurrentChunk(pct) {
+    if (syncData) return -1; // Not used in sync mode
     for (let i = 0; i < chunkBoundaries.length - 1; i++) {
         if (pct >= chunkBoundaries[i] && pct < chunkBoundaries[i + 1]) return i;
     }
     return Math.max(0, chunkBoundaries.length - 2);
 }
 
-function highlightChunk(index) {
-    paragraphs.forEach(p => p.classList.remove('reading'));
-    if (index >= 0 && index < paragraphs.length) {
-        paragraphs[index].classList.add('reading');
+function getSyncChunks(time) {
+    if (!syncData) return null;
+    const ts = syncData.timestamps;
+    let lo = 0, hi = ts.length - 1;
+    while (lo < hi) {
+        const mid = (lo + hi + 1) >> 1;
+        if (ts[mid] <= time) lo = mid;
+        else hi = mid - 1;
     }
+    return syncData.chunkMap[lo] || [0];
+}
+
+function highlightChunks(indices) {
+    paragraphs.forEach(p => p.classList.remove('reading'));
+    for (const i of indices) {
+        if (i >= 0 && i < paragraphs.length) {
+            paragraphs[i].classList.add('reading');
+        }
+    }
+}
+
+function highlightChunk(index) {
+    highlightChunks([index]);
 }
 
 function scrollToChunk(index) {
@@ -515,7 +539,7 @@ audio.addEventListener('ended', () => {
     progressFill.style.width = '100%';
     scrollProgress.style.width = '100%';
     releaseWakeLock();
-    highlightChunk(-1);
+    highlightChunks([]);
     if (currentArticle) {
         localStorage.removeItem('listen_' + currentArticle);
         localStorage.removeItem('listen_dur_' + currentArticle);
@@ -541,11 +565,21 @@ audio.addEventListener('timeupdate', () => {
     timeDisplay.textContent = `${fmt(audio.currentTime)} / ${fmt(audio.duration)}`;
 
     if (!isUserScrolling && isPlaying) {
-        const newChunk = getCurrentChunk(pct);
-        if (newChunk !== currentChunkIndex) {
-            currentChunkIndex = newChunk;
-            highlightChunk(newChunk);
-            scrollToChunk(newChunk);
+        if (syncData) {
+            const newChunks = getSyncChunks(audio.currentTime);
+            const key = newChunks.join(',');
+            if (key !== currentChunkIndex) {
+                currentChunkIndex = key;
+                highlightChunks(newChunks);
+                scrollToChunk(newChunks[0]);
+            }
+        } else {
+            const newChunk = getCurrentChunk(pct);
+            if (newChunk !== currentChunkIndex) {
+                currentChunkIndex = newChunk;
+                highlightChunk(newChunk);
+                scrollToChunk(newChunk);
+            }
         }
     }
 
@@ -562,11 +596,21 @@ progressTrack.addEventListener('click', (e) => {
     const rect = progressTrack.getBoundingClientRect();
     const pct = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
     audio.currentTime = pct * audio.duration;
-    const newChunk = getCurrentChunk(pct);
-    if (newChunk !== currentChunkIndex) {
-        currentChunkIndex = newChunk;
-        highlightChunk(newChunk);
-        scrollToChunk(newChunk);
+    if (syncData) {
+        const chunks = getSyncChunks(audio.currentTime);
+        const key = chunks.join(',');
+        if (key !== currentChunkIndex) {
+            currentChunkIndex = key;
+            highlightChunks(chunks);
+            scrollToChunk(chunks[0]);
+        }
+    } else {
+        const newChunk = getCurrentChunk(pct);
+        if (newChunk !== currentChunkIndex) {
+            currentChunkIndex = newChunk;
+            highlightChunk(newChunk);
+            scrollToChunk(newChunk);
+        }
     }
 });
 
@@ -615,10 +659,21 @@ followBtn.addEventListener('click', () => {
             closestChunk = i;
         }
     });
-    const midPct = (chunkBoundaries[closestChunk] + chunkBoundaries[closestChunk + 1]) / 2;
-    audio.currentTime = midPct * audio.duration;
-    currentChunkIndex = closestChunk;
-    highlightChunk(closestChunk);
+    if (syncData) {
+        // Find the TTS chunk that contains this HTML chunk
+        const ttsIdx = syncData.chunkMap.findIndex(group => group.includes(closestChunk));
+        if (ttsIdx >= 0) {
+            audio.currentTime = syncData.timestamps[ttsIdx];
+            const key = syncData.chunkMap[ttsIdx].join(',');
+            currentChunkIndex = key;
+            highlightChunks(syncData.chunkMap[ttsIdx]);
+        }
+    } else {
+        const midPct = (chunkBoundaries[closestChunk] + chunkBoundaries[closestChunk + 1]) / 2;
+        audio.currentTime = midPct * audio.duration;
+        currentChunkIndex = closestChunk;
+        highlightChunk(closestChunk);
+    }
     isUserScrolling = false;
     followBtn.classList.remove('visible');
     clearTimeout(scrollTimeout);
@@ -666,7 +721,7 @@ async function loadArticle(slug) {
         isAutoScrolling = false;
         followBtn.classList.remove('visible');
 
-        setupChunks();
+        setupChunks(data.sync || null);
 
         const saved = localStorage.getItem('listen_' + slug);
         if (saved) {
@@ -675,11 +730,18 @@ async function loadArticle(slug) {
                 resetBtn.style.display = '';
                 audio.addEventListener('loadedmetadata', () => {
                     audio.currentTime = savedTime;
-                    const pct = savedTime / audio.duration;
-                    const chunk = getCurrentChunk(pct);
-                    currentChunkIndex = chunk;
-                    highlightChunk(chunk);
-                    setTimeout(() => scrollToChunk(chunk), 100);
+                    if (syncData) {
+                        const chunks = getSyncChunks(savedTime);
+                        currentChunkIndex = chunks.join(',');
+                        highlightChunks(chunks);
+                        setTimeout(() => scrollToChunk(chunks[0]), 100);
+                    } else {
+                        const pct = savedTime / audio.duration;
+                        const chunk = getCurrentChunk(pct);
+                        currentChunkIndex = chunk;
+                        highlightChunk(chunk);
+                        setTimeout(() => scrollToChunk(chunk), 100);
+                    }
                 }, { once: true });
             }
         }
