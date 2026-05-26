@@ -480,6 +480,26 @@
       "summary": "Adrian Bertagnoli, a founding engineer at Callosum, presents a case for transitioning from homogeneous AI systems to heterogeneous intelligence, which integrates diverse model architectures and specialized hardware. He explains that because real-world problems are complex and multi-faceted, utilizing a variety of specialized agent models on optimized hardware is mathematically proven to outperform single, dense models under resource constraints. He introduces heterogeneous recursion, demonstrating that routing sub-contexts of long-context tasks to optimal chips (such as Cerebras or Sambanova) can make processing up to 12 times cheaper and 5 times faster than standard models. This presentation is valuable for AI engineers, system architects, and researchers interested in the future of scaling and optimizing large language model workflows.",
       "added": "2026-05-25",
       "times_shown": 0
+    },
+    {
+      "slug": "agentic-evaluations-at-scale-for-everybody-nicholas-kang-michael-aaron-google-de",
+      "title": "Agentic Evaluations at Scale, For Everybody \u2014 Nicholas Kang & Michael Aaron, Google DeepMind",
+      "url": "https://www.youtube.com/watch?v=Ubwb6NzegyA",
+      "video_id": "Ubwb6NzegyA",
+      "channel": "AI Engineer",
+      "summary": "In this presentation from the AI Engineer Europe conference, Kaggle Product Manager Nicholas Kang discusses the challenges and potential solutions for agentic AI evaluation at scale. Kang argues that current AI evaluations are broken because they are scattered, lack transparency, and are primarily created by a narrow group of researchers rather than diverse domain experts. To address this, he introduces Kaggle's initiatives, such as collaborative hackathons and standardized agent exams, to make AI benchmarks more accessible and robust. This video is highly beneficial for AI developers, researchers, and data scientists interested in building more reliable and comprehensive evaluation methods for AI models.",
+      "added": "2026-05-26",
+      "times_shown": 0
+    },
+    {
+      "slug": "bounded-autonomy-between-free-will-and-determinism-angus-j-mclean-oliver",
+      "title": "Bounded Autonomy: Between Free Will and Determinism \u2014 Angus J. McLean, Oliver",
+      "url": "https://www.youtube.com/watch?v=t4359sKBu4w",
+      "video_id": "t4359sKBu4w",
+      "channel": "AI Engineer",
+      "summary": "This video features Angus McLean, AI Director at Oliver, discussing the practical applications and design challenges of using AI agents for speed and scale in the advertising industry. He advises developers to slow down amidst rapid AI advancements, emphasizing that the fundamental limitations of large language models\u2014such as data inefficiency and a lack of true understanding\u2014remain unchanged. McLean argues that instead of chasing massive context windows, developers should intentionally constrain context to reduce noise, as limitations can actually foster greater creativity. This talk is highly beneficial for both beginners and experts actively experimenting with AI agents who are looking for a practical and grounded perspective on agent design.",
+      "added": "2026-05-26",
+      "times_shown": 0
     }
   ],
   "archive": [
