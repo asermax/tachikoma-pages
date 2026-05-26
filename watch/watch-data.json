@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25",
+  "generated_at": "2026-05-26",
   "queue": [
     {
       "slug": "harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan",
@@ -368,16 +368,6 @@
       "video_id": "dyHpnnlkTc8",
       "channel": "AI Engineer",
       "summary": "Liam Hampton explores how developers can utilize different types of AI agents within VS Code to streamline workflows and reduce cognitive load. He categorizes tools into local agents for interactive tasks, background agents for autonomous local tasks using Git worktrees, and cloud agents for remote long-running tasks. Through a practical demo, he showcases a simultaneous workflow using all three agent types to update, test, and document a Python application, highlighting VS Code as a unified entry point for shifting from writing raw code to orchestrating outcomes.",
-      "added": "2026-05-24",
-      "times_shown": 0
-    },
-    {
-      "slug": "dont-build-slop-4-levels-of-ai-agent-maturity-ara-khan-cline",
-      "title": "Don't Build Slop (4 Levels of AI Agent Maturity) - Ara Khan, Cline",
-      "url": "https://www.youtube.com/watch?v=yUmS-F9IX90",
-      "video_id": "yUmS-F9IX90",
-      "channel": "AI Engineer",
-      "summary": "Outlines a four-level framework of AI agent maturity, guiding developers from initial frameworks to custom-building agents as state machines, managing workflows, and deploying to the cloud. Custom-built agents modeled as recursive state machines provide greater customizability and control than rigid pre-built frameworks. Key rules include keeping system prompts minimal to prevent model sensory overload and building CLI-accessible interfaces for automated testing. Developers are encouraged to prioritize thoughtful architectural design and actively resist vendor lock-in from frontier model APIs.",
       "added": "2026-05-24",
       "times_shown": 0
     },
