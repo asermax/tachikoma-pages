@@ -500,6 +500,26 @@
       "summary": "This video features Angus McLean, AI Director at Oliver, discussing the practical applications and design challenges of using AI agents for speed and scale in the advertising industry. He advises developers to slow down amidst rapid AI advancements, emphasizing that the fundamental limitations of large language models\u2014such as data inefficiency and a lack of true understanding\u2014remain unchanged. McLean argues that instead of chasing massive context windows, developers should intentionally constrain context to reduce noise, as limitations can actually foster greater creativity. This talk is highly beneficial for both beginners and experts actively experimenting with AI agents who are looking for a practical and grounded perspective on agent design.",
       "added": "2026-05-26",
       "times_shown": 0
+    },
+    {
+      "slug": "stop-babysitting-your-agents-brandon-walsenuk-unblocked",
+      "title": "Stop babysitting your agents... \u2014 Brandon Walsenuk, Unblocked",
+      "url": "https://www.youtube.com/watch?v=BiG2ssibKGc",
+      "video_id": "BiG2ssibKGc",
+      "channel": "AI Engineer",
+      "summary": "This presentation focuses on the necessity of building robust context engines to make AI agents more autonomous, eliminating the need for developers to constantly monitor and correct them. The speaker argues that the primary bottleneck for current AI agents is not intelligence, but a lack of contextual understanding, which cannot be solved merely through naive RAG, simple tool access, or larger context windows. Instead, an effective context engine must integrate static, runtime, and social graph data to resolve conflicting information, respect governance, and deliver precise, token-optimized context. This video is highly beneficial for software engineers, AI developers, and engineering leaders looking to successfully implement and scale AI agents within their workflows.",
+      "added": "2026-05-27",
+      "times_shown": 0
+    },
+    {
+      "slug": "what-the-best-agents-share-mardu-swanepoel-flinn-ai",
+      "title": "What the Best Agents Share \u2014 Mardu Swanepoel, Flinn AI",
+      "url": "https://www.youtube.com/watch?v=7CrPrHgoEYk",
+      "video_id": "7CrPrHgoEYk",
+      "channel": "AI Engineer",
+      "summary": "This video presents a talk by Mardu Swanepoel on how to design more effective AI agents by analyzing and adopting design patterns from the industry's best examples. He outlines four key patterns\u2014focused modes, transparent execution, personalization, and reversibility\u2014that help improve agent output, foster user trust, and lower the risks associated with AI mistakes. AI developers and engineers will benefit from watching this to learn how to transition their agent designs from simple delegation tools to collaborative, user-centric systems.",
+      "added": "2026-05-27",
+      "times_shown": 0
     }
   ],
   "archive": [
