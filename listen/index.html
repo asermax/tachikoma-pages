@@ -431,6 +431,7 @@ let currentArticle = null;
 let currentChunkIndex = -1;
 let chunkBoundaries = [];
 let syncData = null;
+let syncCharWeights = [];
 let paragraphs = [];
 let wakeLock = null;
 
@@ -456,6 +457,13 @@ function setupChunks(articleSync) {
 
     if (articleSync && articleSync.timestamps && articleSync.chunkMap) {
         syncData = articleSync;
+        // Pre-compute cumulative char ratios for sub-chunk highlighting
+        syncCharWeights = syncData.chunkMap.map(group => {
+            const chars = group.map(i => paragraphs[i]?.textContent.length || 1);
+            const total = chars.reduce((a, b) => a + b, 0);
+            let cum = 0;
+            return chars.map(c => { cum += c / total; return cum; });
+        });
     } else {
         syncData = null;
         const chunkChars = paragraphs.map(p => p.textContent.length);
@@ -477,8 +485,8 @@ function getCurrentChunk(pct) {
     return Math.max(0, chunkBoundaries.length - 2);
 }
 
-function getSyncChunks(time) {
-    if (!syncData) return null;
+function getSyncChunk(time) {
+    if (!syncData) return -1;
     const ts = syncData.timestamps;
     let lo = 0, hi = ts.length - 1;
     while (lo < hi) {
@@ -486,7 +494,21 @@ function getSyncChunks(time) {
         if (ts[mid] <= time) lo = mid;
         else hi = mid - 1;
     }
-    return syncData.chunkMap[lo] || [0];
+    const group = syncData.chunkMap[lo];
+    if (!group || group.length === 0) return 0;
+    if (group.length === 1) return group[0];
+
+    // Calculate progress within this TTS chunk
+    const chunkStart = ts[lo];
+    const chunkEnd = lo + 1 < ts.length ? ts[lo + 1] : chunkStart + 60;
+    const progress = Math.max(0, Math.min(1, (time - chunkStart) / (chunkEnd - chunkStart)));
+
+    // Find sub-chunk by cumulative char weight
+    const weights = syncCharWeights[lo];
+    for (let i = 0; i < weights.length; i++) {
+        if (progress <= weights[i]) return group[i];
+    }
+    return group[group.length - 1];
 }
 
 function highlightChunks(indices) {
@@ -566,12 +588,11 @@ audio.addEventListener('timeupdate', () => {
 
     if (!isUserScrolling && isPlaying) {
         if (syncData) {
-            const newChunks = getSyncChunks(audio.currentTime);
-            const key = newChunks.join(',');
-            if (key !== currentChunkIndex) {
-                currentChunkIndex = key;
-                highlightChunks(newChunks);
-                scrollToChunk(newChunks[0]);
+            const newChunk = getSyncChunk(audio.currentTime);
+            if (newChunk !== currentChunkIndex) {
+                currentChunkIndex = newChunk;
+                highlightChunk(newChunk);
+                scrollToChunk(newChunk);
             }
         } else {
             const newChunk = getCurrentChunk(pct);
@@ -597,12 +618,11 @@ progressTrack.addEventListener('click', (e) => {
     const pct = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
     audio.currentTime = pct * audio.duration;
     if (syncData) {
-        const chunks = getSyncChunks(audio.currentTime);
-        const key = chunks.join(',');
-        if (key !== currentChunkIndex) {
-            currentChunkIndex = key;
-            highlightChunks(chunks);
-            scrollToChunk(chunks[0]);
+        const chunk = getSyncChunk(audio.currentTime);
+        if (chunk !== currentChunkIndex) {
+            currentChunkIndex = chunk;
+            highlightChunk(chunk);
+            scrollToChunk(chunk);
         }
     } else {
         const newChunk = getCurrentChunk(pct);
@@ -731,10 +751,10 @@ async function loadArticle(slug) {
                 audio.addEventListener('loadedmetadata', () => {
                     audio.currentTime = savedTime;
                     if (syncData) {
-                        const chunks = getSyncChunks(savedTime);
-                        currentChunkIndex = chunks.join(',');
-                        highlightChunks(chunks);
-                        setTimeout(() => scrollToChunk(chunks[0]), 100);
+                        const chunk = getSyncChunk(savedTime);
+                        currentChunkIndex = chunk;
+                        highlightChunk(chunk);
+                        setTimeout(() => scrollToChunk(chunk), 100);
                     } else {
                         const pct = savedTime / audio.duration;
                         const chunk = getCurrentChunk(pct);
