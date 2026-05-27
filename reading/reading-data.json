@@ -171,6 +171,15 @@
       "summary": "Pope Leo XIV's first encyclical addresses the ethical challenges of AI through Catholic social teaching, arguing technology is never neutral and AI must serve the common good rather than concentrating power. It calls for international regulation, an ethical code for AI development, and rejects the technocratic paradigm that reduces decisions to efficiency and profit. The document covers dignity of work in the digital transition, algorithmic manipulation, digital colonialism, environmental costs of AI, and critiques the 'just war' theory in an era where AI lowers the moral threshold of armed conflict.",
       "added": "2026-05-26",
       "times_shown": 0
+    },
+    {
+      "slug": "i-think-anthropic-and-openai-have-found-product-market-fit",
+      "title": "I think Anthropic and OpenAI have found product-market fit",
+      "url": "https://simonwillison.net/2026/May/27/product-market-fit/",
+      "category": "business",
+      "summary": "Simon Willison argues that Anthropic and OpenAI have found product-market fit with their coding agents, particularly through enterprise pricing where companies are paying significant amounts for API usage, marking the transition from speculative technology to revenue-generating businesses.",
+      "added": "2026-05-27",
+      "times_shown": 0
     }
   ],
   "archive": [
