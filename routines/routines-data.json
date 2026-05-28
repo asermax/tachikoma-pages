@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-27T02:01:31.305161-03:00",
+  "generated_at": "2026-05-28T02:02:18.651183-03:00",
   "week_start": "2026-05-24",
   "week_label": "May 24 - May 30, 2026",
-  "last_updated": "Wednesday, May 27, 2026 at 02:01",
+  "last_updated": "Thursday, May 28, 2026 at 02:02",
   "stats": {
-    "completed": 6.0,
-    "planned": 7,
-    "display": "6 / 7"
+    "completed": 8.0,
+    "planned": 11,
+    "display": "8 / 11"
   },
   "daily": {
     "Sunday": {
@@ -25,8 +25,8 @@
       "total": 1
     },
     "Wednesday": {
-      "status": "missed",
-      "completed": 0,
+      "status": "partial",
+      "completed": 2,
       "total": 4
     },
     "Thursday": {
@@ -50,9 +50,9 @@
       "name": "Trumpet Practice",
       "emoji": "",
       "status": "pending",
-      "accumulated": "30min",
+      "accumulated": "55min",
       "target": "60min",
-      "progress_pct": 50
+      "progress_pct": 91
     },
     {
       "name": "Reading",
@@ -75,7 +75,7 @@
         },
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -90,12 +90,12 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -139,7 +139,7 @@
         },
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -158,20 +158,20 @@
         },
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 1,
+      "done": 2,
       "total": 2
     }
   ],
   "spirit": {
-    "state": "thriving",
+    "state": "content",
     "emoji": "\ud83e\udd8c",
     "title": "\ud83e\udd8c Winter Fawn",
-    "image": "assets/thriving.jpg",
-    "description": "Your winter fawn stands radiant, frost crystal antlers blazing with light, aurora borealis dancing vividly overhead, warm energy radiating through the snow."
+    "image": "assets/content.jpg",
+    "description": "Your winter fawn is calm and peaceful, frost crystal antlers glowing softly, resting contentedly as gentle snowflakes drift around."
   }
 }
