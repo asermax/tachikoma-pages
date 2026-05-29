@@ -520,6 +520,16 @@
       "summary": "This video presents a talk by Mardu Swanepoel on how to design more effective AI agents by analyzing and adopting design patterns from the industry's best examples. He outlines four key patterns\u2014focused modes, transparent execution, personalization, and reversibility\u2014that help improve agent output, foster user trust, and lower the risks associated with AI mistakes. AI developers and engineers will benefit from watching this to learn how to transition their agent designs from simple delegation tools to collaborative, user-centric systems.",
       "added": "2026-05-27",
       "times_shown": 0
+    },
+    {
+      "slug": "most-enterprise-agentic-projects-are-doomed-heres-why-jess-grogan-avignon-jack-w",
+      "title": "Most Enterprise Agentic Projects Are Doomed, Here's Why \u2014 Jess Grogan-Avignon & Jack Wang, Accenture",
+      "url": "https://www.youtube.com/watch?v=AGkzpxMdPn8",
+      "video_id": "AGkzpxMdPn8",
+      "channel": "AI Engineer",
+      "summary": "This video features a presentation by Jess and Jack at AI Engineer Europe on why most enterprise AI agentic projects are doomed to fail due to a clash between traditional human-paced structures and rapid machine-speed advancements. The speakers outline key enterprise tensions, arguing that organizations are bottlenecked by legacy approval infrastructures and that traditional, certainty-driven business cases are ill-suited for the emergent nature of AI. This talk is highly valuable for enterprise leaders, AI engineers, and financial decision-makers looking to understand how to restructure their organizations and adopt a venture-capital mindset to successfully scale AI initiatives.",
+      "added": "2026-05-29",
+      "times_shown": 0
     }
   ],
   "archive": [
