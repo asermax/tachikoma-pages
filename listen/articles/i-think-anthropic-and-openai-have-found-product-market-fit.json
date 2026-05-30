@@ -1,18 +1,19 @@
 {
   "title": "I think Anthropic and OpenAI have found product-market fit",
-  "meta": "Simon Willison · May 27, 2026 · ~7 min listen",
-  "body": "<div class=\"chunk\"><h1>I think Anthropic and OpenAI have found product-market fit</h1>\n</div>\n<div class=\"chunk\"><p>Anthropic are strongly rumored to be about to have their first profitable quarter. Stories are circulating of companies surprised at how expensive their LLM bills are becoming from usage by their staff. I think this is because OpenAI and Anthropic have both found product-market fit.</p>\n</div>\n<div class=\"chunk\"><h2>Enterprise customers are now paying API prices</h2>\n</div>\n<div class=\"chunk\"><p>I currently subscribe to the $100/month Max plan from Anthropic and the $100/month Pro plan from OpenAI. If you are a heavy user of coding agents these plans are a fantastic deal. I just ran the ccusage tool on my laptop to get an estimate of how much I would have spent if I were to pay for API tokens in the past 30 days and got $1,199.79 for Anthropic Claude Code and $980.37 for OpenAI Codex. That's $2,180.16 worth of tokens for $200—not bad at all! I'm a moderately heavy user of these tools, but I'm certainly not running agents every hour of the day and night.</p>\n</div>\n<div class=\"chunk\"><p>I had assumed that companies making extensive use of agents were getting similar discounts. It turns out I <em>could not have been more wrong</em> about that.</p>\n</div>\n<div class=\"chunk\"><p>I haven't been able to track down the exact date, but at some point in the last six months Anthropic switched their Enterprise plan to $20/seat/month plus API pricing for usage. OpenAI made a similar pricing change in April. All of which is to say that as of April 2026 the &quot;Enterprise&quot; cost for both OpenAI Codex and Anthropic Claude Code/Cowork is the same as the listed API price.</p>\n</div>\n<div class=\"chunk\"><p>GPT-5.5 (released April 23rd) is 2x the API price of GPT-5.4. Opus 4.7 (April 16th) is around 1.4x the price of Opus 4.6 when you take their new tokenizer into account.</p>\n</div>\n<div class=\"chunk\"><p>So April saw both leading model companies release new frontier models with a higher API price, <em>and</em> both companies now have measures to lock their enterprise customers (who tend to sign year-long deals) at those API prices, not the previous extreme discounts.</p>\n</div>\n<div class=\"chunk\"><h2>I think they've found product-market fit</h2>\n</div>\n<div class=\"chunk\"><p>Why these sudden aggressive moves on pricing? Both Anthropic and OpenAI are planning to IPO, but I suspect there's a more important factor here: I think they've finally found product-market fit, with the coding/general-purpose agent products embodied by Claude Code/Cowork and Codex.</p>\n</div>\n<div class=\"chunk\"><p>Tools like ChatGPT are wildly popular, but that wild popularity has been difficult to turn into revenue. In February OpenAI boasted more than 900 million weekly active users for ChatGPT, but only 50 million—5.6% of that—were paying consumer subscribers.</p>\n</div>\n<div class=\"chunk\"><p>Charging $10-$20/month per user is an OK business, but you'd need 1-2 billion subscribers sticking around for four years to cover $1 trillion in infrastructure.</p>\n</div>\n<div class=\"chunk\"><p>Companies spending $200+/month/user will get you there a whole lot faster—and as noted above, as a power-user I'm at ~$1,000/month in API costs per vendor already.</p>\n</div>\n<div class=\"chunk\"><p>Coding agents really did change everything. These are tools which burn <em>vastly</em> more tokens, but are also quickly becoming daily drivers for the work carried out by extremely well-compensated professionals. Right now that's still mostly software engineers, but a coding agent is a tool that can automate anything you can do by typing commands into a computer... so they are clearly applicable to a much wider set of skilled knowledge workers.</p>\n</div>\n<div class=\"chunk\"><p>As I've discussed on this site at length, the models released in November 2025 elevated agents to being genuinely useful. We've had six months to get used to that idea now—it's no wonder companies are beginning to spend real money on this technology.</p>\n</div>\n<div class=\"chunk\"><p>You could argue that ChatGPT achieved product-market fit when it became the fastest-growing consumer app in history back in February 2023... but it certainly wasn't making any actual money back then. Coding agents plus enterprise pricing marks the point when these companies start making <em>very</em> real revenue. Maybe even enough to start covering their costs!</p>\n</div>\n<div class=\"chunk\"><h2>And they're ramping up</h2>\n</div>\n<div class=\"chunk\"><p>As further evidence that enterprise agents represent product-market fit for these companies, consider their open job listings.</p>\n</div>\n<div class=\"chunk\"><p>OpenAI have 703 open jobs right now, of which I'd categorize 229 (32.6%) as relating to enterprise sales and support—account executives, &quot;Go To Market&quot;, &quot;Forward Deployed Engineers&quot; and the like.</p>\n</div>\n<div class=\"chunk\"><p>Anthropic have 390 open jobs, 105 (26.9%) of which look enterprisey to me.</p>\n</div>\n<div class=\"chunk\"><p>It's pleasingly ironic that these AI labs have picked a business model with such a heavy demand on human labor—enterprise sales contracts don't close themselves without a whole lot of humans in the mix!</p>\n</div>\n<div class=\"chunk\"><h2>The AI-failure stories around this are pretty thin</h2>\n</div>\n<div class=\"chunk\"><p>I started digging into this in response to a growing volume of stories claiming that large companies were sounding the alarm because their AI usage costs had grown so large.</p>\n</div>\n<div class=\"chunk\"><p>The most widely cited of these stories appear quite overblown to me.</p>\n</div>\n<div class=\"chunk\"><p>The most discussed has been Uber, based on this report where CTO Praveen Neppalli Naga indicated that Uber had &quot;maxed out its full year AI budget just a few months into 2026&quot;, mostly thanks to Claude Code.</p>\n</div>\n<div class=\"chunk\"><p>Given that Claude Code only got <em>really</em> good in November it's entirely unsurprising to me that a budget set in 2025 may have failed to predict demand for that tool in 2026!</p>\n</div>\n<div class=\"chunk\"><p>That Uber story was further fueled by comments made by Uber's COO, Andrew Macdonald, on the Rapid Response podcast. I tracked down the segment and there really isn't much there. Somehow this fragment turned into headlines like Uber's COO says it's getting harder to justify the money spent on AI tokenmaxxing, because the market for stories about AI failures remains enormous.</p>\n</div>\n<div class=\"chunk\"><p>The other popular story around this is Microsoft starts canceling Claude Code licenses, ostensibly to encourage their engineers to dogfood their own Copilot CLI agent instead—but sources say the decision is also a financial one, triggered by the June 30th end of Microsoft's financial year.</p>\n</div>\n<div class=\"chunk\"><p>I think both of these stories support my &quot;product-market fit&quot; hypothesis. The best advice I ever heard on pricing a product was that your customer should <em>suck air through their teeth</em> and then say yes. Uber's budget overrun and Microsoft's seat cancellations look like that effect playing out in practice.</p>\n</div>\n<div class=\"chunk\"><h2>We also know the labs are spending a lot</h2>\n</div>\n<div class=\"chunk\"><p>The big AI labs spend billions of dollars on both training and inference. Credible figures are hard to come by, but we did get one huge hint as to the figures involved from the recent SpaceX S-1: Anthropic has agreed to pay $1.25 billion per month through May 2029 for access to compute capacity across Colossus and Colossus II. The Anthropic announcement said this deal meant they could &quot;increase our usage limits for Claude Code and the Claude API&quot;, heavily implying that Colossus is being used for inference, not model training.</p>\n</div>\n<div class=\"chunk\"><p>Anthropic already have vast amounts of compute from other providers. The fact that they're willing to spend $1.25 billion per month for extra capacity from just <em>one</em> of their vendors hints at how big these inference budgets have become.</p>\n</div>\n<div class=\"chunk\"><h2>API revenue is becoming less important</h2>\n</div>\n<div class=\"chunk\"><p>Over the past two years my impression has been that OpenAI made more of their income from subscription revenue while Anthropic made more from their API.</p>\n</div>\n<div class=\"chunk\"><p>Anthropic's API revenue was historically quite dependent on a small number of large API customers—sources suggesting that just Cursor and GitHub Copilot were responsible for $1.2 billion of the company's then-$4 billion revenue.</p>\n</div>\n<div class=\"chunk\"><p>Today Anthropic are rumored to hit $10.9 billion in the second quarter, potentially even operating at a profit for the first time.</p>\n</div>\n<div class=\"chunk\"><p>This pivot-to-Enterprise suggests that the labs have realized that the real money lies in cutting out the middlemen. Anthropic's Claude Code directly competes with Cursor and Copilot. No wonder Cursor are investing in their own models!</p>\n</div>\n<div class=\"chunk\"><h2>April is a new inflection point</h2>\n</div>\n<div class=\"chunk\"><p>I've called November 2025 the November inflection point because that was when GPT-5.1 and Opus 4.5, combined with their respective coding agent harnesses, got <em>good</em>—good enough that we've spent the last six months adapting to agent systems that can reliably get useful work done.</p>\n</div>\n<div class=\"chunk\"><p>I think April 2026 is a new inflection point where the revenue implications of this have started to land, to the benefit of the frontier AI labs and with material impacts on the budgets of large companies.</p>\n</div>\n<div class=\"chunk\"><p>We'll know for sure how real this moment is when the S-1 documents for the upcoming Anthropic and OpenAI IPOs give us some real, audited numbers to get our teeth into.</p>\n</div>\n",
+  "meta": "Simon Willison · May 27, 2026",
+  "body": "<div class=\"chunk\"><p>I think Anthropic and OpenAI have found product-market fit</p>\n</div>\n<div class=\"chunk\"><p>Anthropic are strongly rumored to be about to have their first profitable quarter. Stories are circulating of companies surprised at how expensive their LLM bills are becoming from usage by their staff. I think this is because OpenAI and Anthropic have both found product-market fit.</p>\n</div>\n<div class=\"chunk\"><p>Enterprise customers are now paying API prices</p>\n</div>\n<div class=\"chunk\"><p>I currently subscribe to the $100/month Max plan from Anthropic and the $100/month Pro plan from OpenAI. If you are a heavy user of coding agents these plans are a fantastic deal. I just ran the ccusage tool on my laptop to get an estimate of how much I would have spent if I were to pay for API tokens in the past 30 days and got $1,199.79 for Anthropic Claude Code and $980.37 for OpenAI Codex. That's $2,180.16 worth of tokens for $200—not bad at all! I'm a moderately heavy user of these tools, but I'm certainly not running agents every hour of the day and night.</p>\n</div>\n<div class=\"chunk\"><p>I had assumed that companies making extensive use of agents were getting similar discounts. It turns out I could not have been more wrong about that.</p>\n</div>\n<div class=\"chunk\"><p>I haven't been able to track down the exact date, but at some point in the last six months Anthropic switched their Enterprise plan to $20/seat/month plus API pricing for usage. OpenAI made a similar pricing change in April. All of which is to say that as of April 2026 the &amp;quot;Enterprise&amp;quot; cost for both OpenAI Codex and Anthropic Claude Code/Cowork is the same as the listed API price.</p>\n</div>\n<div class=\"chunk\"><p>GPT-5.5 (released April 23rd) is 2x the API price of GPT-5.4. Opus 4.7 (April 16th) is around 1.4x the price of Opus 4.6 when you take their new tokenizer into account.</p>\n</div>\n<div class=\"chunk\"><p>So April saw both leading model companies release new frontier models with a higher API price, and both companies now have measures to lock their enterprise customers (who tend to sign year-long deals) at those API prices, not the previous extreme discounts.</p>\n</div>\n<div class=\"chunk\"><p>I think they've found product-market fit</p>\n</div>\n<div class=\"chunk\"><p>Why these sudden aggressive moves on pricing? Both Anthropic and OpenAI are planning to IPO, but I suspect there's a more important factor here: I think they've finally found product-market fit, with the coding/general-purpose agent products embodied by Claude Code/Cowork and Codex.</p>\n</div>\n<div class=\"chunk\"><p>Tools like ChatGPT are wildly popular, but that wild popularity has been difficult to turn into revenue. In February OpenAI boasted more than 900 million weekly active users for ChatGPT, but only 50 million—5.6% of that—were paying consumer subscribers.</p>\n</div>\n<div class=\"chunk\"><p>Charging $10-$20/month per user is an OK business, but you'd need 1-2 billion subscribers sticking around for four years to cover $1 trillion in infrastructure.</p>\n</div>\n<div class=\"chunk\"><p>Companies spending $200+/month/user will get you there a whole lot faster—and as noted above, as a power-user I'm at ~$1,000/month in API costs per vendor already.</p>\n</div>\n<div class=\"chunk\"><p>Coding agents really did change everything. These are tools which burn vastly more tokens, but are also quickly becoming daily drivers for the work carried out by extremely well-compensated professionals. Right now that's still mostly software engineers, but a coding agent is a tool that can automate anything you can do by typing commands into a computer... so they are clearly applicable to a much wider set of skilled knowledge workers.</p>\n</div>\n<div class=\"chunk\"><p>As I've discussed on this site at length, the models released in November 2025 elevated agents to being genuinely useful. We've had six months to get used to that idea now—it's no wonder companies are beginning to spend real money on this technology.</p>\n</div>\n<div class=\"chunk\"><p>You could argue that ChatGPT achieved product-market fit when it became the fastest-growing consumer app in history back in February 2023... but it certainly wasn't making any actual money back then. Coding agents plus enterprise pricing marks the point when these companies start making very real revenue. Maybe even enough to start covering their costs!</p>\n</div>\n<div class=\"chunk\"><p>And they're ramping up</p>\n</div>\n<div class=\"chunk\"><p>As further evidence that enterprise agents represent product-market fit for these companies, consider their open job listings.</p>\n</div>\n<div class=\"chunk\"><p>OpenAI have 703 open jobs right now, of which I'd categorize 229 (32.6%) as relating to enterprise sales and support—account executives, &amp;quot;Go To Market&amp;quot;, &amp;quot;Forward Deployed Engineers&amp;quot; and the like.</p>\n</div>\n<div class=\"chunk\"><p>Anthropic have 390 open jobs, 105 (26.9%) of which look enterprisey to me.</p>\n</div>\n<div class=\"chunk\"><p>It's pleasingly ironic that these AI labs have picked a business model with such a heavy demand on human labor—enterprise sales contracts don't close themselves without a whole lot of humans in the mix!</p>\n</div>\n<div class=\"chunk\"><p>The AI-failure stories around this are pretty thin</p>\n</div>\n<div class=\"chunk\"><p>I started digging into this in response to a growing volume of stories claiming that large companies were sounding the alarm because their AI usage costs had grown so large.</p>\n</div>\n<div class=\"chunk\"><p>The most widely cited of these stories appear quite overblown to me.</p>\n</div>\n<div class=\"chunk\"><p>The most discussed has been Uber, based on this report where CTO Praveen Neppalli Naga indicated that Uber had &amp;quot;maxed out its full year AI budget just a few months into 2026&amp;quot;, mostly thanks to Claude Code.</p>\n</div>\n<div class=\"chunk\"><p>Given that Claude Code only got really good in November it's entirely unsurprising to me that a budget set in 2025 may have failed to predict demand for that tool in 2026!</p>\n</div>\n<div class=\"chunk\"><p>That Uber story was further fueled by comments made by Uber's COO, Andrew Macdonald, on the Rapid Response podcast. I tracked down the segment and there really isn't much there. Somehow this fragment turned into headlines like Uber's COO says it's getting harder to justify the money spent on AI tokenmaxxing, because the market for stories about AI failures remains enormous.</p>\n</div>\n<div class=\"chunk\"><p>The other popular story around this is Microsoft starts canceling Claude Code licenses, ostensibly to encourage their engineers to dogfood their own Copilot CLI agent instead—but sources say the decision is also a financial one, triggered by the June 30th end of Microsoft's financial year.</p>\n</div>\n<div class=\"chunk\"><p>I think both of these stories support my &amp;quot;product-market fit&amp;quot; hypothesis. The best advice I ever heard on pricing a product was that your customer should suck air through their teeth and then say yes. Uber's budget overrun and Microsoft's seat cancellations look like that effect playing out in practice.</p>\n</div>\n<div class=\"chunk\"><p>We also know the labs are spending a lot</p>\n</div>\n<div class=\"chunk\"><p>The big AI labs spend billions of dollars on both training and inference. Credible figures are hard to come by, but we did get one huge hint as to the figures involved from the recent SpaceX S-1: Anthropic has agreed to pay $1.25 billion per month through May 2029 for access to compute capacity across Colossus and Colossus II. The Anthropic announcement said this deal meant they could &amp;quot;increase our usage limits for Claude Code and the Claude API&amp;quot;, heavily implying that Colossus is being used for inference, not model training.</p>\n</div>\n<div class=\"chunk\"><p>Anthropic already have vast amounts of compute from other providers. The fact that they're willing to spend $1.25 billion per month for extra capacity from just one of their vendors hints at how big these inference budgets have become.</p>\n</div>\n<div class=\"chunk\"><p>API revenue is becoming less important</p>\n</div>\n<div class=\"chunk\"><p>Over the past two years my impression has been that OpenAI made more of their income from subscription revenue while Anthropic made more from their API.</p>\n</div>\n<div class=\"chunk\"><p>Anthropic's API revenue was historically quite dependent on a small number of large API customers—sources suggesting that just Cursor and GitHub Copilot were responsible for $1.2 billion of the company's then-$4 billion revenue.</p>\n</div>\n<div class=\"chunk\"><p>Today Anthropic are rumored to hit $10.9 billion in the second quarter, potentially even operating at a profit for the first time.</p>\n</div>\n<div class=\"chunk\"><p>This pivot-to-Enterprise suggests that the labs have realized that the real money lies in cutting out the middlemen. Anthropic's Claude Code directly competes with Cursor and Copilot. No wonder Cursor are investing in their own models!</p>\n</div>\n<div class=\"chunk\"><p>April is a new inflection point</p>\n</div>\n<div class=\"chunk\"><p>I've called November 2025 the November inflection point because that was when GPT-5.1 and Opus 4.5, combined with their respective coding agent harnesses, got good—good enough that we've spent the last six months adapting to agent systems that can reliably get useful work done.</p>\n</div>\n<div class=\"chunk\"><p>I think April 2026 is a new inflection point where the revenue implications of this have started to land, to the benefit of the frontier AI labs and with material impacts on the budgets of large companies.</p>\n</div>\n<div class=\"chunk\"><p>We'll know for sure how real this moment is when the S-1 documents for the upcoming Anthropic and OpenAI IPOs give us some real, audited numbers to get our teeth into.</p>\n</div>\n",
   "audio": "i-think-anthropic-and-openai-have-found-product-market-fit.ogg",
   "sync": {
     "timestamps": [
       0.0,
-      59.007,
-      119.455,
-      181.102,
-      239.83,
-      296.157,
-      347.205,
-      399.492
+      65.967,
+      118.695,
+      184.702,
+      244.11,
+      299.957,
+      358.925,
+      410.052,
+      462.819
     ],
     "chunkMap": [
       [
@@ -20,58 +21,61 @@
         1,
         2,
         3,
-        4,
-        5
+        4
       ],
       [
+        5,
         6,
         7,
-        8,
-        9,
-        10
+        8
       ],
       [
+        9,
+        10,
         11,
-        12,
+        12
+      ],
+      [
         13,
         14,
-        15
+        15,
+        16
       ],
       [
-        16,
         17,
         18,
         19,
-        20
-      ],
-      [
+        20,
         21,
         22,
-        23,
-        24,
-        25
+        23
       ],
       [
+        24,
+        25,
         26,
-        27,
+        27
+      ],
+      [
         28,
         29,
-        30
+        30,
+        31
       ],
       [
-        31,
         32,
         33,
         34,
-        35
-      ],
-      [
+        35,
         36,
         37,
-        38,
+        38
+      ],
+      [
         39,
         40
       ]
-    ]
+    ],
+    "prefixOffset": 0
   }
 }
