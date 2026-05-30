@@ -173,15 +173,6 @@
       "times_shown": 0
     },
     {
-      "slug": "build-yourself-flowers",
-      "title": "Build Yourself Flowers",
-      "url": "https://vickiboykis.com/2026/04/20/build-yourself-flowers/",
-      "category": "engineering",
-      "summary": "This is an edited transcript of a keynote given by Vicki Boykis at the Applied Machine Learning Conference in April 2026. Boykis uses the life and work of Rachel Ruysch, a premier flower painter of the Dutch Golden Age, as an extended metaphor for the craft of software engineering in the age of AI-generated code. She argues that technical excellence still matters, even -- and especially -- when LLMs make it easy to produce code quickly. Drawing on a NASA report about how outsourcing engineering expertise to subcontractors led to quality degradation, she draws a parallel to the risks of offloading too much of our own engineering thinking to AI systems.\n\nThe article's practical backbone is Boykis's side project, Rijksearch, a semantic search engine built over the Rijksmuseum's public art collection. She walks through building a two-tower architecture using multimodal embeddings from the Gemini API, Redis vector sets (a new data structure by antirez), and a Go web server -- deliberately changing several components from her earlier Viberary project to stretch her skills. She is transparent about where AI tools helped (frontend scaffolding, data formatting, learning Go idioms) and where they did not (architecture decisions, understanding latency constraints, picking storage primitives, and anything requiring deep domain judgment built over years of experience).\n\nThe central argument is that mastery takes time -- Rachel Ruysch painted for over 60 years, and Boykis traces her own decade-long arc from struggling with Python word-counting scripts to building production-quality search and recommendation systems. She champions the idea of 'data sense,' the hard-won intuition that comes from years of working with messy data, and encourages engineers to keep building things themselves, deliberately and with craft, rather than fully delegating to generated code. The closing message is a call to 'build yourself flowers': pursue technical depth, seek mentorship, and treat software engineering as a lifelong craft.",
-      "added": "2026-05-30",
-      "times_shown": 0
-    },
-    {
       "slug": "my-ai-adoption-journey",
       "title": "My AI Adoption Journey",
       "url": "https://mitchellh.com/writing/my-ai-adoption-journey",
@@ -568,6 +559,16 @@
       "summary": "Armin Ronacher proposes 'clanker' (a Star Wars derogatory term for battle droids) as an alternative to anthropomorphizing terms like 'agent' for AI/LLM systems. Argues that calling AI 'agents' carries connotations of personhood that blur responsibility and accountability. Addresses counterarguments about dehumanization by distinguishing between human rights and machine status. Core thesis: maintaining linguistic distance from AI is essential for preserving clear thinking about human responsibility.",
       "added": "2026-05-28",
       "read": "2026-05-28",
+      "has_notes": true
+    },
+    {
+      "slug": "build-yourself-flowers",
+      "title": "Build Yourself Flowers",
+      "url": "https://vickiboykis.com/2026/04/20/build-yourself-flowers/",
+      "category": "engineering",
+      "summary": "This is an edited transcript of a keynote given by Vicki Boykis at the Applied Machine Learning Conference in April 2026. Boykis uses the life and work of Rachel Ruysch, a premier flower painter of the Dutch Golden Age, as an extended metaphor for the craft of software engineering in the age of AI-generated code. She argues that technical excellence still matters, even -- and especially -- when LLMs make it easy to produce code quickly. Drawing on a NASA report about how outsourcing engineering expertise to subcontractors led to quality degradation, she draws a parallel to the risks of offloading too much of our own engineering thinking to AI systems.\n\nThe article's practical backbone is Boykis's side project, Rijksearch, a semantic search engine built over the Rijksmuseum's public art collection. She walks through building a two-tower architecture using multimodal embeddings from the Gemini API, Redis vector sets (a new data structure by antirez), and a Go web server -- deliberately changing several components from her earlier Viberary project to stretch her skills. She is transparent about where AI tools helped (frontend scaffolding, data formatting, learning Go idioms) and where they did not (architecture decisions, understanding latency constraints, picking storage primitives, and anything requiring deep domain judgment built over years of experience).\n\nThe central argument is that mastery takes time -- Rachel Ruysch painted for over 60 years, and Boykis traces her own decade-long arc from struggling with Python word-counting scripts to building production-quality search and recommendation systems. She champions the idea of 'data sense,' the hard-won intuition that comes from years of working with messy data, and encourages engineers to keep building things themselves, deliberately and with craft, rather than fully delegating to generated code. The closing message is a call to 'build yourself flowers': pursue technical depth, seek mentorship, and treat software engineering as a lifelong craft.",
+      "added": "2026-05-30",
+      "read": "2026-05-30",
       "has_notes": true
     }
   ]
