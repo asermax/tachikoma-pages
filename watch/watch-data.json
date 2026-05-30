@@ -671,6 +671,39 @@
       "added": "2026-05-16",
       "watched": "2026-05-23",
       "has_notes": true
+    },
+    {
+      "slug": "how-does-google-maps-actually-work",
+      "title": "How Does Google Maps Actually Work?",
+      "url": "https://www.youtube.com/watch?v=kS-CGkiPetQ",
+      "video_id": "kS-CGkiPetQ",
+      "channel": "Veritasium",
+      "summary": "Explores pathfinding algorithms from Dijkstra's 1956 shortest-path to modern mapping systems. Covers A*, bidirectional search, and customizable contraction hierarchies \u2014 how road networks are preprocessed for near-instant routing. Shows how elegant math solves a computationally daunting problem in milliseconds.",
+      "added": "2026-05-30",
+      "watched": "2026-05-30",
+      "has_notes": false
+    },
+    {
+      "slug": "inside-the-worlds-smartest-robot-brain-vla",
+      "title": "Inside the World's Smartest Robot Brain [VLA]",
+      "url": "https://www.youtube.com/watch?v=2mrGMMmrVNE",
+      "video_id": "2mrGMMmrVNE",
+      "channel": "Welch Labs",
+      "summary": "",
+      "added": "2026-05-30",
+      "watched": "2026-05-30",
+      "has_notes": true
+    },
+    {
+      "slug": "they-teach-ai-music-at-music-school-now",
+      "title": "They Teach AI Music at Music School Now...",
+      "url": "https://www.youtube.com/watch?v=EfeGc02nzC4",
+      "video_id": "EfeGc02nzC4",
+      "channel": "Adam Neely",
+      "summary": "Explores Berklee College's push for generative AI songwriting courses and the backlash over connections between school leadership and AI music companies like Suno. Argues Berklee is out of touch with students and the industry, advocating for human-centered musical education over controversial AI reliance.",
+      "added": "2026-05-30",
+      "watched": "2026-05-30",
+      "has_notes": true
     }
   ]
 }
