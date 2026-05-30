@@ -530,6 +530,46 @@
       "summary": "This video features a presentation by Jess and Jack at AI Engineer Europe on why most enterprise AI agentic projects are doomed to fail due to a clash between traditional human-paced structures and rapid machine-speed advancements. The speakers outline key enterprise tensions, arguing that organizations are bottlenecked by legacy approval infrastructures and that traditional, certainty-driven business cases are ill-suited for the emergent nature of AI. This talk is highly valuable for enterprise leaders, AI engineers, and financial decision-makers looking to understand how to restructure their organizations and adopt a venture-capital mindset to successfully scale AI initiatives.",
       "added": "2026-05-29",
       "times_shown": 0
+    },
+    {
+      "slug": "as\u00ed-te-explota-el-capitalismo-digital-y-no-te-das-cuenta",
+      "title": "As\u00ed Te EXPLOTA el Capitalismo Digital (y NO Te Das Cuenta)",
+      "url": "https://www.youtube.com/watch?v=osuL5Ni08_I",
+      "video_id": "osuL5Ni08_I",
+      "channel": "DELIREO",
+      "summary": "This video features an interview with researcher Mariano Zukerfeld, who discusses the evolution of digital capitalism, specifically focusing on the transition from the network phase to the platform phase. He argues that modern digital platforms and artificial intelligence exploit human knowledge, user data, and social connections under the guise of free services, effectively commodifying human relationships. Additionally, Zukerfeld highlights the historical expansion of intellectual property rights as a mechanism of modern economic dominance. This video would be highly beneficial for students, sociologists, economists, and anyone interested in the socio-economic impacts of digital technology and AI.",
+      "added": "2026-05-30",
+      "times_shown": 0
+    },
+    {
+      "slug": "there-is-no-ai-really-its-just-people-with-jaron-lanier",
+      "title": "There Is No AI, Really (It\u2019s Just People), with Jaron Lanier",
+      "url": "https://www.youtube.com/watch?v=TTppvBU2rU4",
+      "video_id": "TTppvBU2rU4",
+      "channel": "StarTalk",
+      "summary": "This video features an interview between astrophysicist Neil deGrasse Tyson and computer scientist Jaron Lanier, the pioneer who coined the term 'virtual reality.' Lanier discusses his original conception of VR as a contrast medium to help people appreciate physical reality, rather than an escapist alternative, and addresses the issue of VR-induced motion sickness, noting its disproportionate effect on non-white women. He also reflects on his unique role as an internal critic at Microsoft and the massive financial investments made in the VR industry. Tech enthusiasts, futurists, and anyone interested in the philosophical and social implications of digital technology will find this video highly engaging and informative.",
+      "added": "2026-05-30",
+      "times_shown": 0
+    },
+    {
+      "slug": "why-your-agents-need-decision-traces-not-just-documents-zach-blumenfeld-neo4j",
+      "title": "Why your agents need decision traces, not just documents \u2014 Zach Blumenfeld, Neo4j",
+      "url": "https://www.youtube.com/watch?v=B9h9ovW5H9U",
+      "video_id": "B9h9ovW5H9U",
+      "channel": "AI Engineer",
+      "summary": "In this presentation, Zach from Neo4j explains how context graphs elevate AI agents beyond simple query-answering to make robust, institutionally grounded decisions. By integrating past decision traces, precedents, and hybrid search (combining text and graph embeddings), context graphs enable agents to analyze complex scenarios and provide explanation-backed recommendations. Zach also introduces create-context-graph, a new open-source CLI tool that allows developers to spin up a full-stack context graph agent in under five minutes. This video is highly beneficial for AI engineers and developers seeking to build more accurate, reliable, and decision-capable AI systems.",
+      "added": "2026-05-30",
+      "times_shown": 0
+    },
+    {
+      "slug": "zig-2026-no-ai-policy-670k-foundation-left-github-why-zig-isnt-10-andrew-kelley",
+      "title": "Zig 2026: No-AI Policy, $670K Foundation, Left GitHub & Why Zig Isn\u2019t 1.0 - Andrew Kelley Explains",
+      "url": "https://www.youtube.com/watch?v=iqddnwKF8HQ",
+      "video_id": "iqddnwKF8HQ",
+      "channel": "JetBrains",
+      "summary": "In this interview, Andrew Kelley, the creator of the Zig programming language, discusses his journey of developing Zig after experiencing frustrations with languages like C++, Rust, Go, and JavaScript while building a digital audio workstation. He explains that Zig was built to give developers full control over the computer, allowing for optimal performance and memory usage without compromising the user experience. The video also highlights real-world use cases of Zig, including applications like Ghosty, TigerBeetle, Bun, and Uber's development toolchain. This video is highly beneficial for software engineers, systems programmers, and anyone interested in the evolution of modern programming languages.",
+      "added": "2026-05-30",
+      "times_shown": 0
     }
   ],
   "archive": [
