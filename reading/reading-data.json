@@ -182,15 +182,6 @@
       "times_shown": 0
     },
     {
-      "slug": "the-last-technical-interview",
-      "title": "The Last Technical Interview",
-      "url": "https://steve-yegge.medium.com/the-last-technical-interview-bc13ddcf4564",
-      "category": "engineering",
-      "summary": "Steve Yegge, drawing on 35 years of conducting technical interviews at Amazon and Google, argues that the traditional technical interview process is fundamentally broken and finally dying. He recounts a damning anecdote from Google's Hiring Committee, where a group of elite engineers were tricked into reviewing their own anonymized interview packets -- and voted not to hire roughly two-thirds of themselves. Google's internal data consistently showed poor inter-interviewer agreement, virtually no correlation between interview scores and on-the-job performance, and rampant unconscious bias, yet the process was never overhauled because challenging it was culturally taboo.\n\nThe core problem is one of signal: resumes are noisy, phone screens are painful, and a few hours of simulated whiteboard exercises tell you almost nothing about whether someone can actually do the job. Yegge shows that the gold standard has always been provisional employment -- internships, co-ops, and contract-to-hire arrangements -- where you evaluate people on real work over weeks or months. His own first employer, Geoworks, used a six-month co-op and produced a team so strong that Amazon later acqui-hired the entire office and called it the strongest group they ever brought in.\n\nYegge proposes a 'campfire' model as the replacement: companies bring candidates in for paid multi-day stints doing real work on the real codebase with the real team, generating far stronger signal than any interview loop. To make this fair for candidates, he introduces the idea of 'counting work twice' -- each work item generates signal for the company and also produces a portable, signed record the candidate keeps forever, regardless of the hiring outcome. Over time, this builds a reputation system where stamps from rigorous companies carry real weight, turning interviewing from a cost center into a profit center that attracts stronger candidates.\n\nThe article is intentionally more diagnosis than prescription. Yegge's primary goal is to shift the Overton window -- to get the industry to agree that the 50-year-old interview process needs radical replacement rather than incremental band-aids. He sees the collapse accelerating due to AI-assisted cheating, résumé floods, and the rapid reshaping of job roles, and believes technical interviews will fade into a 'cute historical footnote' within a few years.",
-      "added": "2026-05-30",
-      "times_shown": 0
-    },
-    {
       "slug": "using-ai-to-write-better-code-more-slowly",
       "title": "Using AI to Write Better Code (More Slowly)",
       "url": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
@@ -615,6 +606,16 @@
       "summary": "Chad Whitacre (open-source advocate behind Assembla, etc.) announces he's leaving the tech industry to live a 'Neo-Amish' offline life. His primary catalyst: the unsettling cognitive intrusion of agentic AI — the feeling that AI agents operating autonomously cross a line that makes continued participation in the industry untenable for him personally.",
       "added": "2026-05-30",
       "read": "2026-05-30",
+      "has_notes": true
+    },
+    {
+      "slug": "the-last-technical-interview",
+      "title": "The Last Technical Interview",
+      "url": "https://steve-yegge.medium.com/the-last-technical-interview-bc13ddcf4564",
+      "category": "engineering",
+      "summary": "Steve Yegge, drawing on 35 years of conducting technical interviews at Amazon and Google, argues that the traditional technical interview process is fundamentally broken and finally dying. He recounts a damning anecdote from Google's Hiring Committee, where a group of elite engineers were tricked into reviewing their own anonymized interview packets -- and voted not to hire roughly two-thirds of themselves. Google's internal data consistently showed poor inter-interviewer agreement, virtually no correlation between interview scores and on-the-job performance, and rampant unconscious bias, yet the process was never overhauled because challenging it was culturally taboo.\n\nThe core problem is one of signal: resumes are noisy, phone screens are painful, and a few hours of simulated whiteboard exercises tell you almost nothing about whether someone can actually do the job. Yegge shows that the gold standard has always been provisional employment -- internships, co-ops, and contract-to-hire arrangements -- where you evaluate people on real work over weeks or months. His own first employer, Geoworks, used a six-month co-op and produced a team so strong that Amazon later acqui-hired the entire office and called it the strongest group they ever brought in.\n\nYegge proposes a 'campfire' model as the replacement: companies bring candidates in for paid multi-day stints doing real work on the real codebase with the real team, generating far stronger signal than any interview loop. To make this fair for candidates, he introduces the idea of 'counting work twice' -- each work item generates signal for the company and also produces a portable, signed record the candidate keeps forever, regardless of the hiring outcome. Over time, this builds a reputation system where stamps from rigorous companies carry real weight, turning interviewing from a cost center into a profit center that attracts stronger candidates.\n\nThe article is intentionally more diagnosis than prescription. Yegge's primary goal is to shift the Overton window -- to get the industry to agree that the 50-year-old interview process needs radical replacement rather than incremental band-aids. He sees the collapse accelerating due to AI-assisted cheating, résumé floods, and the rapid reshaping of job roles, and believes technical interviews will fade into a 'cute historical footnote' within a few years.",
+      "added": "2026-05-30",
+      "read": "2026-05-31",
       "has_notes": true
     }
   ]
