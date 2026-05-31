@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-31T16:01:07.102693-03:00",
-  "week_start": "2026-05-31",
-  "week_label": "May 31 - June 06, 2026",
-  "last_updated": "Sunday, May 31, 2026 at 16:01",
+  "generated_at": "2026-05-30T02:01:09.090716-03:00",
+  "week_start": "2026-05-24",
+  "week_label": "May 24 - May 30, 2026",
+  "last_updated": "Saturday, May 30, 2026 at 02:01",
   "stats": {
-    "completed": 0,
-    "planned": 0,
-    "display": "0 / 0"
+    "completed": 8.3,
+    "planned": 11,
+    "display": "8.3 / 11"
   },
   "daily": {
     "Sunday": {
@@ -15,24 +15,24 @@
       "total": 0
     },
     "Monday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 4,
+      "total": 4
     },
     "Tuesday": {
-      "status": "missed",
-      "completed": 0,
+      "status": "done",
+      "completed": 1,
       "total": 1
     },
     "Wednesday": {
-      "status": "missed",
-      "completed": 0,
+      "status": "partial",
+      "completed": 2,
       "total": 4
     },
     "Thursday": {
-      "status": "missed",
+      "status": "empty",
       "completed": 0,
-      "total": 1
+      "total": 0
     },
     "Friday": {
       "status": "empty",
@@ -50,17 +50,17 @@
       "name": "Trumpet Practice",
       "emoji": "",
       "status": "pending",
-      "accumulated": "0min",
+      "accumulated": "55min",
       "target": "60min",
-      "progress_pct": 0
+      "progress_pct": 91
     },
     {
       "name": "Reading",
       "emoji": "",
       "status": "pending",
-      "accumulated": "0min",
+      "accumulated": "15min",
       "target": "60min",
-      "progress_pct": 0
+      "progress_pct": 25
     }
   ],
   "routines": [
@@ -70,14 +70,18 @@
       "emoji": "\ud83d\udcaa",
       "sessions": [
         {
+          "day": "Mon",
+          "status": "done"
+        },
+        {
           "day": "Wed",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
-      "total": 1
+      "done": 1,
+      "total": 2
     },
     {
       "id": "music-practice",
@@ -86,12 +90,27 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "piano-practice",
+      "name": "Piano Practice",
+      "emoji": "\ud83c\udfb9",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
       "total": 1
     },
     {
@@ -101,17 +120,13 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "pending"
-        },
-        {
-          "day": "Thu",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
-      "total": 2
+      "done": 1,
+      "total": 1
     },
     {
       "id": "running",
@@ -119,14 +134,18 @@
       "emoji": "\ud83c\udfc3",
       "sessions": [
         {
+          "day": "Mon",
+          "status": "done"
+        },
+        {
           "day": "Wed",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
-      "total": 1
+      "done": 1,
+      "total": 2
     },
     {
       "id": "yoga",
@@ -134,21 +153,25 @@
       "emoji": "\ud83e\uddd8",
       "sessions": [
         {
+          "day": "Mon",
+          "status": "done"
+        },
+        {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
-      "total": 1
+      "done": 2,
+      "total": 2
     }
   ],
   "spirit": {
-    "state": "dormant",
+    "state": "content",
     "emoji": "\ud83e\udd8c",
     "title": "\ud83e\udd8c Winter Fawn",
-    "image": "assets/dormant.jpg",
-    "description": "Your winter fawn is fast asleep, curled up in a peaceful ball under moonlight, frost crystal antlers resting softly against the snow."
+    "image": "assets/content.jpg",
+    "description": "Your winter fawn is calm and peaceful, frost crystal antlers glowing softly, resting contentedly as gentle snowflakes drift around."
   }
 }
