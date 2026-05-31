@@ -590,6 +590,36 @@
       "summary": "In this interview, Andrew Kelley, the creator of the Zig programming language, discusses his journey of developing Zig after experiencing frustrations with languages like C++, Rust, Go, and JavaScript while building a digital audio workstation. He explains that Zig was built to give developers full control over the computer, allowing for optimal performance and memory usage without compromising the user experience. The video also highlights real-world use cases of Zig, including applications like Ghosty, TigerBeetle, Bun, and Uber's development toolchain. This video is highly beneficial for software engineers, systems programmers, and anyone interested in the evolution of modern programming languages.",
       "added": "2026-05-30",
       "times_shown": 0
+    },
+    {
+      "slug": "distributed-inference-in-dwarfstar",
+      "title": "Distributed inference in DwarfStar",
+      "url": "https://www.youtube.com/watch?v=aAWdlLfJmqw",
+      "video_id": "aAWdlLfJmqw",
+      "channel": "Salvatore Sanfilippo",
+      "summary": "This video demonstrates the dwarf star 4 (ds4) project, which enables distributed, parallel AI inference for large language models (LLMs) across multiple local machines. To overcome bandwidth constraints, the system splits model layers between a coordinator and worker nodes, transferring only small activation data rather than large tensor parameters. The presenter showcases this setup by running a 153 GB DeepSeek model split across two Macs, achieving impressive inference speeds through pipelined pre-fill processing. This video is highly beneficial for developers, AI researchers, and enthusiasts interested in running massive open-source models locally using consumer hardware.",
+      "added": "2026-05-31",
+      "times_shown": 0
+    },
+    {
+      "slug": "openclaw-vs-amishi-ran-as-far-as-i-could-from-agentic-ai-open-path-5",
+      "title": "OpenClaw vs. Amish\u2014I ran as far as I could from agentic AI \u2767 Open Path #5",
+      "url": "https://www.youtube.com/watch?v=DCC76jmmzkc",
+      "video_id": "DCC76jmmzkc",
+      "channel": "Chad Whitacre",
+      "summary": "This video follows a man's journey to visit his Amish friends in Western Pennsylvania as a way to clear his head and disconnect from the overwhelming world of AI and technology. Reflecting on his recent experience with AI coding tools that left him feeling detached from reality, he advocates for a lifestyle where technology is guided by community values rather than algorithms. Along his snowy drive, he encounters a major highway closure due to a winter pileup, ultimately spending a peaceful, offline evening at his in-laws' house engaging in simple activities like reading and doing a puzzle. This video is ideal for anyone experiencing digital burnout or seeking a mindful reflection on the role of technology in our daily lives.",
+      "added": "2026-05-31",
+      "times_shown": 0
+    },
+    {
+      "slug": "why-senior-engineers-struggle-to-build-ai-agents-philipp-schmid-google-deepmind",
+      "title": "Why (Senior) Engineers Struggle to Build AI Agents \u2014 Philipp Schmid, Google DeepMind",
+      "url": "https://www.youtube.com/watch?v=3_gYbhABcAE",
+      "video_id": "3_gYbhABcAE",
+      "channel": "AI Engineer",
+      "summary": "In this presentation, Philipp Schmid from Google DeepMind explores why traditional software engineers often struggle to build AI agents, focusing on the core conflict between deterministic software design and the probabilistic nature of large language models. He outlines five critical mental model shifts necessary for success: embracing text and semantic context as state, allowing the model flexibility rather than hard-coding workflows, treating system errors as inputs for self-correction, transitioning from rigid unit testing to robust evaluation frameworks, and designing self-documenting, agent-ready APIs. Ultimately, he argues that engineers must stop fighting non-determinism and instead design systems with the expectation of recovery and feedback. This video is highly beneficial for senior software developers, system architects, and AI practitioners looking to successfully pivot from traditional programming paradigms to building reliable, autonomous agentic systems.",
+      "added": "2026-05-31",
+      "times_shown": 0
     }
   ],
   "archive": [
