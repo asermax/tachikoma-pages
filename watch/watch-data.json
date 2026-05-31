@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30",
+  "generated_at": "2026-05-31",
   "queue": [
     {
       "slug": "harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan",
@@ -562,6 +562,26 @@
       "times_shown": 0
     },
     {
+      "slug": "yann-lecuns-1b-bet-against-llms-part-2",
+      "title": "Yann LeCun's $1B Bet Against LLMs [Part 2]",
+      "url": "https://www.youtube.com/watch?v=v_jDvpEGTIg",
+      "video_id": "v_jDvpEGTIg",
+      "channel": "Welch Labs",
+      "summary": "Compares Vision Language Action (VLA) models for robotics with JEPA, critiquing VLAs' reliance on behavioral cloning and lack of explicit planning. Shows how JEPA-based approaches learn world models \u2014 self-supervised simulations \u2014 to plan action sequences in embedding space, allowing robots to understand physics and plan complex tasks more efficiently than generative models.",
+      "added": "2026-05-30",
+      "times_shown": 0
+    },
+    {
+      "slug": "yann-lecuns-1b-bet-against-llms",
+      "title": "Yann LeCun's $1B Bet Against LLMs",
+      "url": "https://www.youtube.com/watch?v=kYkIdXwW2AE",
+      "video_id": "kYkIdXwW2AE",
+      "channel": "Welch Labs",
+      "summary": "Explores Yann LeCun's Joint Embedding Predictive Architecture (JEPA) as an alternative to generative models like LLMs. Argues JEPA can learn powerful world representations without generating data, mimicking how humans learn. Positions JEPA-based world models as a path to more efficient, human-like machine intelligence.",
+      "added": "2026-05-30",
+      "times_shown": 0
+    },
+    {
       "slug": "zig-2026-no-ai-policy-670k-foundation-left-github-why-zig-isnt-10-andrew-kelley",
       "title": "Zig 2026: No-AI Policy, $670K Foundation, Left GitHub & Why Zig Isn\u2019t 1.0 - Andrew Kelley Explains",
       "url": "https://www.youtube.com/watch?v=iqddnwKF8HQ",
@@ -689,7 +709,7 @@
       "url": "https://www.youtube.com/watch?v=2mrGMMmrVNE",
       "video_id": "2mrGMMmrVNE",
       "channel": "Welch Labs",
-      "summary": "",
+      "summary": "This video details the rapid evolution of Vision-Language-Action (VLA) models, which utilize large language models to serve as unified \"brains\" for physical robots. It traces the progression of these systems from Google's early iterations like SayCan, Palm-E, and RT-2\u2014highlighting a landmark demonstration where a robot successfully moved a coke can to a picture of Taylor Swift\u2014to Physical Intelligence's highly efficient Pi-0 model performing dexterous tasks like folding laundry and uncapping pens. A key takeaway is that VLAs can bridge internet-scale visual and textual knowledge with robotic actuators, enabling impressive zero-shot generalization to novel objects and environments. Finally, the video explains how Pi-0 integrates a flow-matching \"action expert\" to achieve high performance locally on consumer-grade hardware, while noting that alternative paradigms like world models are also emerging.",
       "added": "2026-05-30",
       "watched": "2026-05-30",
       "has_notes": true
