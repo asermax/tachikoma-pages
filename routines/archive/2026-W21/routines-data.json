@@ -1,0 +1,177 @@
+{
+  "generated_at": "2026-05-30T02:01:09.090716-03:00",
+  "week_start": "2026-05-24",
+  "week_label": "May 24 - May 30, 2026",
+  "last_updated": "Saturday, May 30, 2026 at 02:01",
+  "stats": {
+    "completed": 8.3,
+    "planned": 11,
+    "display": "8.3 / 11"
+  },
+  "daily": {
+    "Sunday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Monday": {
+      "status": "done",
+      "completed": 4,
+      "total": 4
+    },
+    "Tuesday": {
+      "status": "done",
+      "completed": 1,
+      "total": 1
+    },
+    "Wednesday": {
+      "status": "partial",
+      "completed": 2,
+      "total": 4
+    },
+    "Thursday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Friday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Saturday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    }
+  },
+  "goals": [
+    {
+      "name": "Trumpet Practice",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "55min",
+      "target": "60min",
+      "progress_pct": 91
+    },
+    {
+      "name": "Reading",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "15min",
+      "target": "60min",
+      "progress_pct": 25
+    }
+  ],
+  "routines": [
+    {
+      "id": "basic-workout",
+      "name": "Basic Workout",
+      "emoji": "\ud83d\udcaa",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        },
+        {
+          "day": "Wed",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 2
+    },
+    {
+      "id": "music-practice",
+      "name": "Music Practice",
+      "emoji": "\ud83c\udfb7",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "piano-practice",
+      "name": "Piano Practice",
+      "emoji": "\ud83c\udfb9",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "rock-climbing",
+      "name": "Rock Climbing",
+      "emoji": "\ud83e\uddd7",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "running",
+      "name": "Running",
+      "emoji": "\ud83c\udfc3",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        },
+        {
+          "day": "Wed",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 2
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga",
+      "emoji": "\ud83e\uddd8",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        },
+        {
+          "day": "Wed",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 2,
+      "total": 2
+    }
+  ],
+  "spirit": {
+    "state": "content",
+    "emoji": "\ud83e\udd8c",
+    "title": "\ud83e\udd8c Winter Fawn",
+    "image": "assets/content.jpg",
+    "description": "Your winter fawn is calm and peaceful, frost crystal antlers glowing softly, resting contentedly as gentle snowflakes drift around."
+  }
+}
