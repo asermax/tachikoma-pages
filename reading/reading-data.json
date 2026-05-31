@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30",
+  "generated_at": "2026-05-31",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -197,6 +197,42 @@
       "category": "ai",
       "summary": "Nolan Lawson pushes back against the prevailing narrative that AI coding tools are only useful for rapidly generating low-quality code. He argues that LLMs are flexible enough to be used in the opposite direction: to write higher-quality code at a more deliberate pace, using them primarily as thorough code reviewers and bug finders rather than as slop cannons for maximum output velocity.\n\nHis core technique involves running multiple AI agents (Claude, Codex, Cursor Bugbot) against a pull request in parallel, having each independently identify and rank bugs by severity, then collating their findings to eliminate false positives. He reports a near-zero false positive rate with this multi-model approach, and that it surfaces everything from critical security flaws to misleading comments. The real challenge, he notes, is not finding bugs but prioritizing and acting on them.\n\nLawson's workflow is notably disciplined: he has agents fix all critical and high-severity issues first, skips medium-priority fixes where the effort outweighs the benefit, and sometimes abandons PRs entirely if the review reveals the whole approach is flawed. Far from boosting raw velocity, this process often sends him on 'side quests' fixing pre-existing bugs and writing tests for legacy code -- which he finds more satisfying and more valuable for long-term codebase health than shipping features quickly.\n\nThe overarching message is a call for developers using AI to slow down rather than speed up. Use agents to deeply understand your PRs, generate documentation, and probe failure modes. The payoff is not higher lines-of-code throughput but a more careful, methodical, quality-obsessed style of programming that improves the codebase for the next developer.",
       "added": "2026-05-30",
+      "times_shown": 0
+    },
+    {
+      "slug": "addy-osmani-tweet-2059844244907696186",
+      "title": "Addy Osmani tweet (2059844244907696186)",
+      "url": "https://x.com/addyosmani/status/2059844244907696186",
+      "category": "ai",
+      "summary": "Addy Osmani argues that spawning multiple AI agents creates an 'orchestration tax' — starting agents is cheap, but reviewing, reconciling, and merging their output routes through you as a single serial bottleneck, like the GIL in Python. The key insight is that you must architect your attention as a scarce serial resource rather than optimizing the part that was never the constraint.",
+      "added": "2026-05-31",
+      "times_shown": 0
+    },
+    {
+      "slug": "arxiv-260506445v1",
+      "title": "arXiv 2605.06445v1",
+      "url": "https://arxiv.org/html/2605.06445v1",
+      "category": "ai",
+      "summary": "This paper introduces 'constraint decay,' showing that LLM coding agents perform well on unconstrained backend generation but degrade substantially — losing an average of 30 percentage points in assertion pass rates — when forced to adhere to structural requirements like Clean Architecture patterns, specific databases, and ORM integration across eight web frameworks.",
+      "added": "2026-05-31",
+      "times_shown": 0
+    },
+    {
+      "slug": "could-a-large-language-model-be-conscious",
+      "title": "Could a Large Language Model Be Conscious?",
+      "url": "https://www.bostonreview.net/articles/could-a-large-language-model-be-conscious/",
+      "category": "ai",
+      "summary": "Philosopher David Chalmers examines the evidence for and against consciousness in large language models, concluding that current LLMs probably are not conscious but that extended multimodal LLM+ systems may become serious candidates for consciousness within a decade. He outlines a research program of engineering challenges and emphasizes the profound ethical stakes of potentially creating conscious AI.",
+      "added": "2026-05-31",
+      "times_shown": 0
+    },
+    {
+      "slug": "hexednobility-tweet-2059974055294316574",
+      "title": "Hexednobility tweet (2059974055294316574)",
+      "url": "https://x.com/hexednobility/status/2059974055294316574",
+      "category": "ai",
+      "summary": "A practical framework for effective LLM use built around a three-step loop: outline (define what you want clearly), fill (let the model complete the bounded task), and refine (verify and polish the output). The argument is that skill with LLMs resides not in model selection or tooling, but in the human ability to structure work and critically evaluate results.",
+      "added": "2026-05-31",
       "times_shown": 0
     }
   ],
@@ -567,6 +603,16 @@
       "url": "https://vickiboykis.com/2026/04/20/build-yourself-flowers/",
       "category": "engineering",
       "summary": "This is an edited transcript of a keynote given by Vicki Boykis at the Applied Machine Learning Conference in April 2026. Boykis uses the life and work of Rachel Ruysch, a premier flower painter of the Dutch Golden Age, as an extended metaphor for the craft of software engineering in the age of AI-generated code. She argues that technical excellence still matters, even -- and especially -- when LLMs make it easy to produce code quickly. Drawing on a NASA report about how outsourcing engineering expertise to subcontractors led to quality degradation, she draws a parallel to the risks of offloading too much of our own engineering thinking to AI systems.\n\nThe article's practical backbone is Boykis's side project, Rijksearch, a semantic search engine built over the Rijksmuseum's public art collection. She walks through building a two-tower architecture using multimodal embeddings from the Gemini API, Redis vector sets (a new data structure by antirez), and a Go web server -- deliberately changing several components from her earlier Viberary project to stretch her skills. She is transparent about where AI tools helped (frontend scaffolding, data formatting, learning Go idioms) and where they did not (architecture decisions, understanding latency constraints, picking storage primitives, and anything requiring deep domain judgment built over years of experience).\n\nThe central argument is that mastery takes time -- Rachel Ruysch painted for over 60 years, and Boykis traces her own decade-long arc from struggling with Python word-counting scripts to building production-quality search and recommendation systems. She champions the idea of 'data sense,' the hard-won intuition that comes from years of working with messy data, and encourages engineers to keep building things themselves, deliberately and with craft, rather than fully delegating to generated code. The closing message is a call to 'build yourself flowers': pursue technical depth, seek mentorship, and treat software engineering as a lifelong craft.",
+      "added": "2026-05-30",
+      "read": "2026-05-30",
+      "has_notes": true
+    },
+    {
+      "slug": "i-am-retiring-from-tech-to-live-offline",
+      "title": "I Am Retiring from Tech to Live Offline",
+      "url": "https://simonwillison.net/2026/May/30/retiring-from-tech-to-live-offline/#atom-everything",
+      "category": "tech-critique",
+      "summary": "Chad Whitacre (open-source advocate behind Assembla, etc.) announces he's leaving the tech industry to live a 'Neo-Amish' offline life. His primary catalyst: the unsettling cognitive intrusion of agentic AI — the feeling that AI agents operating autonomously cross a line that makes continued participation in the industry untenable for him personally.",
       "added": "2026-05-30",
       "read": "2026-05-30",
       "has_notes": true
