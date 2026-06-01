@@ -590,6 +590,16 @@
       "summary": "In this interview, Andrew Kelley, the creator of the Zig programming language, discusses his journey of developing Zig after experiencing frustrations with languages like C++, Rust, Go, and JavaScript while building a digital audio workstation. He explains that Zig was built to give developers full control over the computer, allowing for optimal performance and memory usage without compromising the user experience. The video also highlights real-world use cases of Zig, including applications like Ghosty, TigerBeetle, Bun, and Uber's development toolchain. This video is highly beneficial for software engineers, systems programmers, and anyone interested in the evolution of modern programming languages.",
       "added": "2026-05-30",
       "times_shown": 0
+    },
+    {
+      "slug": "spec-driven-testing-for-agents-with-a-brain-the-size-of-a-planet-steven-willmott",
+      "title": "Spec-Driven Testing for Agents With A Brain the Size of A Planet \u2014 Steven Willmott, SafeIntelligence",
+      "url": "https://www.youtube.com/watch?v=UQKg0td-Bf4",
+      "video_id": "UQKg0td-Bf4",
+      "channel": "AI Engineer",
+      "summary": "In this presentation, Steven Willmott, CEO of Safe Intelligence, introduces \"spec-driven validation\" as a more comprehensive framework for testing and evaluating AI agents compared to simple datasets. He argues that deploying larger, \"smarter\" AI models actually increases security vulnerabilities and costs, necessitating a testing approach focused on balancing capability with safety. Willmott outlines how incorporating rules, domain knowledge, ontologies, and user rights into an agent's specification allows for more rigorous security and robustness testing under stress. This video is highly beneficial for AI developers, engineers, and enterprises looking to deploy secure and reliable AI agents in production environments.",
+      "added": "2026-06-01",
+      "times_shown": 0
     }
   ],
   "archive": [
