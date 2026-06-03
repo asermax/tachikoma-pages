@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02",
+  "generated_at": "2026-06-03",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -224,6 +224,33 @@
       "category": "ai",
       "summary": "A practical framework for effective LLM use built around a three-step loop: outline (define what you want clearly), fill (let the model complete the bounded task), and refine (verify and polish the output). The argument is that skill with LLMs resides not in model selection or tooling, but in the human ability to structure work and critically evaluate results.",
       "added": "2026-05-31",
+      "times_shown": 0
+    },
+    {
+      "slug": "a-harness-for-every-task-dynamic-workflows-in-claude-code",
+      "title": "A Harness for Every Task: Dynamic Workflows in Claude Code",
+      "url": "https://www.anthropic.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code",
+      "category": "ai",
+      "summary": "Thariq's article introduces dynamic workflows in Claude Code — a system that lets AI agents break complex tasks into ordered, stateful steps with automatic recovery. Workflows are defined as YAML files with steps that can include sub-workflows, loops, and conditional branching. The system persists state between steps so agents can resume after interruptions, and includes a plan mode for human approval before execution. Covers the architecture, step types, and how workflows integrate with Claude Code's existing tool system.",
+      "added": "2026-06-02",
+      "times_shown": 0
+    },
+    {
+      "slug": "japanese-verb-conjugation-the-simple-hard-way",
+      "title": "Japanese Verb Conjugation: The Simple Hard Way",
+      "url": "https://underreacted.leaflet.pub/3mmevu6woys27",
+      "category": "japanese",
+      "summary": "A unified stem-plus-suffix model for Japanese verb conjugation that replaces memorization-heavy group tables. Every verb has a stem (like tabe or nom*) and you append suffixes to it, with a wildcard vowel concept where stems ending with * absorb the suffix's secret vowel. Covers five rules for all basic conjugations including sound collapses for past forms, and extends elegantly to dictionary, conditional, and causative forms using secret consonants that disappear on wildcards.",
+      "added": "2026-06-02",
+      "times_shown": 0
+    },
+    {
+      "slug": "physics-as-a-game-loop",
+      "title": "Physics as a Game Loop. Part 1: Objects and Waves",
+      "url": "https://underreacted.leaflet.pub/3mncmabgnmc2x",
+      "category": "physics",
+      "summary": "The article reimagines classical physics as reverse-engineering the game loop of the universe, using JavaScript pseudocode to express physical laws as update functions that evolve state over time. It progresses from Newtonian mechanics through wave physics to Maxwell's equations, showing how electric and magnetic fields locked in mutual transformation via curl produce light. Closes with a quantum mechanics teaser — the double-slit experiment with single electrons producing interference patterns, raising the question 'where are the waves?'",
+      "added": "2026-06-02",
       "times_shown": 0
     }
   ],
