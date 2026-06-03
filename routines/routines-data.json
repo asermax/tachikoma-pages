@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-31T16:10:02.931543-03:00",
+  "generated_at": "2026-06-03T19:21:19.891894-03:00",
   "week_start": "2026-05-31",
   "week_label": "May 31 - June 06, 2026",
-  "last_updated": "Sunday, May 31, 2026 at 16:10",
+  "last_updated": "Wednesday, June 03, 2026 at 19:21",
   "stats": {
-    "completed": 0,
-    "planned": 0,
-    "display": "0 / 0"
+    "completed": 0.0,
+    "planned": 3,
+    "display": "0 / 3"
   },
   "daily": {
     "Sunday": {
@@ -30,9 +30,9 @@
       "total": 4
     },
     "Thursday": {
-      "status": "missed",
+      "status": "empty",
       "completed": 0,
-      "total": 1
+      "total": 0
     },
     "Friday": {
       "status": "empty",
@@ -145,10 +145,10 @@
     }
   ],
   "spirit": {
-    "state": "dormant",
+    "state": "critical",
     "emoji": "\ud83d\udc10",
     "title": "\ud83d\udc10 Winter Mountain Goat",
-    "image": "assets/dormant.jpg",
-    "description": "Your mountain goat is fast asleep, curled up into a fluffy ball on soft snow, tail wrapped around snugly, peaceful under gentle moonlight."
+    "image": "assets/critical.jpg",
+    "description": "Your mountain goat looks worried and small, hunched against harsh cold wind, dim aurora barely visible, fur ruffled by the storm."
   }
 }
