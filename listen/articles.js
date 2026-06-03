@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'pope-leo-xiv-encyclical-on-ai', title: 'Notes on Pope Leo XIV\'s Encyclical on AI', meta: 'Simon Willison · May 2026 · ~8 min listen' },
     { slug: 'what-is-code', title: 'What Is Code?', meta: 'Srujana Pundi · May 2026' },
     { slug: 'conductors-to-orchestrators', title: 'Conductors to Orchestrators: The Future of Agentic Coding', meta: 'Addy Osmani · November 2025' },
     { slug: '80-problem-agentic-coding', title: 'The 80% Problem in Agentic Coding', meta: 'Addy Osmani · January 2026' },
