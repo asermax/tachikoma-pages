@@ -600,6 +600,86 @@
       "summary": "In this presentation, Steven Willmott, CEO of Safe Intelligence, introduces \"spec-driven validation\" as a more comprehensive framework for testing and evaluating AI agents compared to simple datasets. He argues that deploying larger, \"smarter\" AI models actually increases security vulnerabilities and costs, necessitating a testing approach focused on balancing capability with safety. Willmott outlines how incorporating rules, domain knowledge, ontologies, and user rights into an agent's specification allows for more rigorous security and robustness testing under stress. This video is highly beneficial for AI developers, engineers, and enterprises looking to deploy secure and reliable AI agents in production environments.",
       "added": "2026-06-01",
       "times_shown": 0
+    },
+    {
+      "slug": "20-days-of-compute-vs-7-hours-rethinking-what-state-of-the-art-means-bertrand-ch",
+      "title": "20 days of compute vs 7 hours: rethinking what state-of-the-art means \u2014 Bertrand Charpentier, Pruna",
+      "url": "https://www.youtube.com/watch?v=hqHC6Z_lXyo",
+      "video_id": "hqHC6Z_lXyo",
+      "channel": "AI Engineer",
+      "summary": "Explores the challenge of determining which AI model is truly 'state-of-the-art' for a given application. Argues that common evaluation practices \u2014 relying on generic public leaderboards or subjective manual inspections \u2014 are deeply flawed because rankings vary wildly depending on the specific task, and human reviewers are highly biased toward their own preferences. No single model dominates every scenario, meaning developers must evaluate options using statistically significant data under conditions that closely mirror their final use case. Beneficial for AI engineers, product managers, and researchers selecting and deploying AI models for specific applications.",
+      "added": "2026-06-03",
+      "times_shown": 0
+    },
+    {
+      "slug": "can-llms-generate-enterprise-quality-code-prasenjit-sarkar-sonar",
+      "title": "Can LLMs generate Enterprise Quality Code? \u2014 Prasenjit Sarkar, Sonar",
+      "url": "https://www.youtube.com/watch?v=NuePCNMpWGc",
+      "video_id": "NuePCNMpWGc",
+      "channel": "AI Engineer",
+      "summary": "This video discusses Sonar's evaluation of whether LLMs can generate enterprise-quality code, highlighting that standard benchmarks fail to measure critical aspects like code maintainability, complexity, and security. Sonar developed an evaluation framework analyzing over 50 LLMs against 4,400+ Java assignments, revealing that high-performing models often produce highly verbose, buggy, and insecure code. Software developers, AI engineers, and tech architects would benefit from watching this to understand the risks and realities of AI coding assistants in enterprise environments.",
+      "added": "2026-06-03",
+      "times_shown": 0
+    },
+    {
+      "slug": "how-i-deleted-95-of-my-agent-skills-and-got-better-results-nick-nisi-workos",
+      "title": "How I deleted 95% of my agent skills and got better results \u2014 Nick Nisi, WorkOS",
+      "url": "https://www.youtube.com/watch?v=vy7o1g2iHY8",
+      "video_id": "vy7o1g2iHY8",
+      "channel": "AI Engineer",
+      "summary": "Presents a talk on building and shipping reliable AI systems using specialized, multi-agent workflows controlled by state machines. Explains how to prevent AI agents from skipping steps by implementing strict verification loops and limiting context with human-curated 'gotcha' lists rather than massive auto-generated guides. Demonstrates through rigorous evaluation that overloading agents with unnecessary context can paradoxically degrade performance from 97% down to 77%. Valuable for AI engineers and software developers deploying coding agents and developer-focused AI tools into production.",
+      "added": "2026-06-03",
+      "times_shown": 0
+    },
+    {
+      "slug": "how-lovable-self-improves-every-hour-benjamin-verbeek-lovable",
+      "title": "How Lovable self-improves every hour \u2014 Benjamin Verbeek, Lovable",
+      "url": "https://www.youtube.com/watch?v=KA5kPbdkK2E",
+      "video_id": "KA5kPbdkK2E",
+      "channel": "AI Engineer",
+      "summary": "Discusses how Lovable's AI-powered platform continuously self-improves to make software creation accessible to people who cannot code. Explains how the company identifies when users get stuck on technical issues and uses a system called 'Lovable Stack Overflow' to capture, cluster, and test solutions. By continuously updating this knowledge base, the platform injects fixes into future user sessions, ensuring mistakes only happen once. Beneficial for AI engineers, developers, and product designers interested in continuous learning at scale and building intuitive AI tools.",
+      "added": "2026-06-03",
+      "times_shown": 0
+    },
+    {
+      "slug": "how-to-talk-to-statues-joe-reeve-elevenlabs",
+      "title": "How to talk to statues \u2014 Joe Reeve, ElevenLabs",
+      "url": "https://www.youtube.com/watch?v=u-rJwPPU3QA",
+      "video_id": "u-rJwPPU3QA",
+      "channel": "AI Engineer",
+      "summary": "Introduces a viral AI-powered app built in two hours that allows users to have voice conversations with museum statues. Explains how the app integrates OpenAI's multimodal model for identification and research with ElevenLabs' APIs to generate custom voices and interactive agents in under 30 seconds. Explores the concept of 'vibe coding' (rapid prototyping with AI) and raises philosophical questions about designing voices for inanimate objects as voice interfaces become more common. Beneficial for AI developers, creators, and those interested in the future of voice technology and rapid app development.",
+      "added": "2026-06-03",
+      "times_shown": 0
+    },
+    {
+      "slug": "task-fidelity-scaling-laws-kobie-crawdord-snorkel",
+      "title": "Task Fidelity Scaling Laws \u2014 Kobie Crawdord, Snorkel",
+      "url": "https://www.youtube.com/watch?v=YYH0DMQr30A",
+      "video_id": "YYH0DMQr30A",
+      "channel": "AI Engineer",
+      "summary": "Discusses Task Fidelity Scaling Laws and how the quality of training tasks affects AI model performance. Argues that high-quality, curated tasks (achievable, non-trivial, functionally correct, and reliable) provide more complex, useful challenges with cleaner failure modes compared to low-quality, noisy tasks. Through RL training experiments, fine-tuning on high-quality tasks leads to a substantial 6.2 percentage point performance improvement, compared to a mere 1.1 percentage point gain from low-quality tasks. Beneficial for AI engineers, ML researchers, and data scientists optimizing fine-tuning for agentic AI models.",
+      "added": "2026-06-03",
+      "times_shown": 0
+    },
+    {
+      "slug": "what-if-the-network-was-the-sandbox-remy-guercio-tailscale",
+      "title": "What if the network was the sandbox? \u2014 Remy Guercio, Tailscale",
+      "url": "https://www.youtube.com/watch?v=BM2JX9hqsVQ",
+      "video_id": "BM2JX9hqsVQ",
+      "channel": "AI Engineer",
+      "summary": "Explores the concept of utilizing the network layer as a secure sandbox for AI agents. Argues that by integrating identity and permissions (AuthN and AuthZ) directly into network connections using WireGuard, organizations can eliminate the need to store sensitive API keys within sandbox environments. Demonstrates Aperture, an AI gateway that leverages network identity to control, monitor, and audit LLM requests based on specific user or runner tags. Beneficial for AI security engineers, cloud architects, and developers looking for robust, keyless methods to govern and secure AI infrastructure.",
+      "added": "2026-06-03",
+      "times_shown": 0
+    },
+    {
+      "slug": "what-lies-beneath-the-api-benjamin-cowen-modal",
+      "title": "What Lies Beneath the API \u2014 Benjamin Cowen, Modal",
+      "url": "https://www.youtube.com/watch?v=HvZXAOZ3iv8",
+      "video_id": "HvZXAOZ3iv8",
+      "channel": "AI Engineer",
+      "summary": "Explores the strategic transition from utilizing frontier APIs to fine-tuning custom AI models as a product matures and specializes. Argues that while frontier APIs offer a rapid starting point, they lack customization, prompting developers to eventually seek the performance and cost benefits of fine-tuning. Presents serverless compute platforms as a modern middle ground, bridging the gap by providing full algorithmic control and rapid iteration without the overhead of managing Kubernetes clusters. Beneficial for AI engineers, ML developers, and startup founders optimizing their AI product development lifecycle.",
+      "added": "2026-06-03",
+      "times_shown": 0
     }
   ],
   "archive": [
