@@ -670,6 +670,36 @@
       "summary": "Explores the strategic transition from utilizing frontier APIs to fine-tuning custom AI models as a product matures and specializes. Argues that while frontier APIs offer a rapid starting point, they lack customization, prompting developers to eventually seek the performance and cost benefits of fine-tuning. Presents serverless compute platforms as a modern middle ground, bridging the gap by providing full algorithmic control and rapid iteration without the overhead of managing Kubernetes clusters. Beneficial for AI engineers, ML developers, and startup founders optimizing their AI product development lifecycle.",
       "added": "2026-06-03",
       "times_shown": 0
+    },
+    {
+      "slug": "bdd-adr-prd-wtf-capturing-decisions-for-humans-and-ai-alike-michal-cichra-safe-i",
+      "title": "BDD, ADR, PRD, WTF: Capturing Decisions for Humans and AI Alike \u2014 Michal Cichra, Safe Intelligence",
+      "url": "https://www.youtube.com/watch?v=504PvfXou5Y",
+      "video_id": "504PvfXou5Y",
+      "channel": "AI Engineer",
+      "summary": "This video explores how to capture and enforce software development decisions to benefit both human engineers and AI models, which both struggle with limited context. The speaker advocates for structured frameworks like Architecture Decision Records (ADRs), Product Requirements Documents (PRDs), and Behavior-Driven Development (BDD) using Cucumber to create clear, executable specifications. He highlights the necessity of building an automated reinforcement loop via Git hooks and CI pipelines to consistently enforce these architectural and design rules. Software developers, AI engineers, and product managers seeking to improve team alignment and structure their codebases for AI agents will benefit from watching this.",
+      "added": "2026-06-04",
+      "times_shown": 0
+    },
+    {
+      "slug": "benchmarking-semantic-code-retrieval-on-claude-code-kuba-rogut-turbopuffer",
+      "title": "Benchmarking semantic code retrieval on Claude Code \u2014 Kuba Rogut, Turbopuffer",
+      "url": "https://www.youtube.com/watch?v=zKk7sDMGDEQ",
+      "video_id": "zKk7sDMGDEQ",
+      "channel": "AI Engineer",
+      "summary": "This presentation by Kuba Rogut from turbopuffer benchmarks semantic code retrieval for AI coding agents, specifically comparing Claude Code with and without semantic search capabilities. Rogut introduces a CLI tool they built to integrate semantic search into Claude Code and evaluates its performance using the ContextBench framework. The benchmark results demonstrate that semantic search significantly improves search precision, reducing wasted file reads, while showing that semantic search and traditional keyword grep methods are effective for different types of development tasks. This is beneficial for AI engineers, software developers, and researchers looking to optimize LLM-based coding tools and understand the practical benefits of vector databases in agentic workflows.",
+      "added": "2026-06-04",
+      "times_shown": 0
+    },
+    {
+      "slug": "beyond-components-designing-generative-ui-for-mcp-apps-ruben-casas-postman",
+      "title": "Beyond Components: Designing Generative UI for MCP Apps \u2014 Ruben Casas, Postman",
+      "url": "https://www.youtube.com/watch?v=hCMrEfPG2Yg",
+      "video_id": "hCMrEfPG2Yg",
+      "channel": "AI Engineer",
+      "summary": "This presentation explores the rapid evolution of AI-driven user interfaces, highlighting the transition from early vibe coding in 2022 to modern high-fidelity UI generation. The speaker explains that while AI acts as a new type of computer, the industry is still defining its ideal interface, experimenting with paradigms like chat, super-apps, and dynamic rendering. By comparing static, declarative, and generative UI models, the talk highlights why declarative generative UI currently offers the optimal balance of design consistency and flexibility. Frontend developers, AI engineers, and product managers will benefit from watching this to understand how AI is redefining software interfaces and development workflows.",
+      "added": "2026-06-04",
+      "times_shown": 0
     }
   ],
   "archive": [
