@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03",
+  "generated_at": "2026-06-04",
   "queue": [
     {
       "slug": "harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan",
@@ -632,16 +632,6 @@
       "times_shown": 0
     },
     {
-      "slug": "how-lovable-self-improves-every-hour-benjamin-verbeek-lovable",
-      "title": "How Lovable self-improves every hour \u2014 Benjamin Verbeek, Lovable",
-      "url": "https://www.youtube.com/watch?v=KA5kPbdkK2E",
-      "video_id": "KA5kPbdkK2E",
-      "channel": "AI Engineer",
-      "summary": "Discusses how Lovable's AI-powered platform continuously self-improves to make software creation accessible to people who cannot code. Explains how the company identifies when users get stuck on technical issues and uses a system called 'Lovable Stack Overflow' to capture, cluster, and test solutions. By continuously updating this knowledge base, the platform injects fixes into future user sessions, ensuring mistakes only happen once. Beneficial for AI engineers, developers, and product designers interested in continuous learning at scale and building intuitive AI tools.",
-      "added": "2026-06-03",
-      "times_shown": 0
-    },
-    {
       "slug": "how-to-talk-to-statues-joe-reeve-elevenlabs",
       "title": "How to talk to statues \u2014 Joe Reeve, ElevenLabs",
       "url": "https://www.youtube.com/watch?v=u-rJwPPU3QA",
@@ -814,6 +804,17 @@
       "added": "2026-05-30",
       "watched": "2026-05-30",
       "has_notes": true
+    },
+    {
+      "slug": "how-lovable-self-improves-every-hour-benjamin-verbeek-lovable",
+      "title": "How Lovable self-improves every hour \u2014 Benjamin Verbeek, Lovable",
+      "url": "https://www.youtube.com/watch?v=KA5kPbdkK2E",
+      "video_id": "KA5kPbdkK2E",
+      "channel": "AI Engineer",
+      "summary": "Discusses how Lovable's AI-powered platform continuously self-improves to make software creation accessible to people who cannot code. Explains how the company identifies when users get stuck on technical issues and uses a system called 'Lovable Stack Overflow' to capture, cluster, and test solutions. By continuously updating this knowledge base, the platform injects fixes into future user sessions, ensuring mistakes only happen once. Beneficial for AI engineers, developers, and product designers interested in continuous learning at scale and building intuitive AI tools.",
+      "added": "2026-06-03",
+      "watched": "2026-06-03",
+      "has_notes": false
     }
   ]
 }
