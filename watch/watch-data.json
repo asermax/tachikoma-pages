@@ -865,6 +865,17 @@
       "added": "2026-06-03",
       "watched": "2026-06-03",
       "has_notes": false
+    },
+    {
+      "slug": "the-insane-infrastructure-design-of-deepseek-v4",
+      "title": "The Insane Infrastructure Design of DeepSeek V4",
+      "url": "https://www.youtube.com/watch?v=AIRfT41A89s",
+      "video_id": "AIRfT41A89s",
+      "channel": "bycloud",
+      "summary": "This video delves into the advanced engineering and infrastructure design behind DeepSeek V4, explaining how it achieves extreme cost efficiency through custom hardware and software optimizations. Key takeaways include the implementation of complex attention mechanisms (CSA and HCA) with mixed-precision KV caching, alongside 'MegaMoE,' a technique that pipelines and overlaps communication and computation using fused GPU kernels. These architectural designs significantly reduce inference latency and memory usage, particularly for long-context windows and Mixture of Experts (MoE) routing. AI researchers, ML engineers, and system architects interested in LLM performance optimization and hardware-software co-design will benefit most.",
+      "added": "2026-06-06",
+      "watched": "2026-06-06",
+      "has_notes": false
     }
   ]
 }
