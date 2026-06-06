@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05",
+  "generated_at": "2026-06-06",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -161,15 +161,6 @@
       "category": "ai",
       "summary": "Nate Berkopec reflects on the state of LLMs ~5 months after Opus 4.5. He's fully transitioned to coding via LLMs, argues 'intelligence' is the wrong lens — LLMs have 'jagged intelligence' that grows more jagged. Identifies 4 characteristics of successful LLM workflows: verifiable output, brute-force loops, repetitive drudgery targets, rapid prototypes. Key insight: LLMs are 'compressed information stores' with lossy decompression; real opportunity is 'making the thing which makes the thing.'",
       "added": "2026-05-24",
-      "times_shown": 0
-    },
-    {
-      "slug": "magnifica-humanitas",
-      "title": "Magnifica Humanitas: On Safeguarding the Human Person in the Time of Artificial Intelligence",
-      "url": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
-      "category": "philosophy",
-      "summary": "Pope Leo XIV's first encyclical addresses the ethical challenges of AI through Catholic social teaching, arguing technology is never neutral and AI must serve the common good rather than concentrating power. It calls for international regulation, an ethical code for AI development, and rejects the technocratic paradigm that reduces decisions to efficiency and profit. The document covers dignity of work in the digital transition, algorithmic manipulation, digital colonialism, environmental costs of AI, and critiques the 'just war' theory in an era where AI lowers the moral threshold of armed conflict.",
-      "added": "2026-05-26",
       "times_shown": 0
     },
     {
@@ -593,6 +584,16 @@
       "summary": "Sanfilippo explores distributed local inference across multiple Mac machines as cost-effective alternative to NVIDIA hardware. Covers the challenges and architecture of running LLM inference on commodity hardware clusters.",
       "added": "2026-05-25",
       "read": "2026-05-25",
+      "has_notes": true
+    },
+    {
+      "slug": "magnifica-humanitas",
+      "title": "Magnifica Humanitas: On Safeguarding the Human Person in the Time of Artificial Intelligence",
+      "url": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "category": "philosophy",
+      "summary": "Pope Leo XIV's first encyclical addresses the ethical challenges of AI through Catholic social teaching, arguing technology is never neutral and AI must serve the common good rather than concentrating power. It calls for international regulation, an ethical code for AI development, and rejects the technocratic paradigm that reduces decisions to efficiency and profit. The document covers dignity of work in the digital transition, algorithmic manipulation, digital colonialism, environmental costs of AI, and critiques the 'just war' theory in an era where AI lowers the moral threshold of armed conflict.",
+      "added": "2026-05-26",
+      "read": "2026-06-06",
       "has_notes": true
     },
     {
