@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-05T02:03:06.172123-03:00",
+  "generated_at": "2026-06-06T02:01:17.310533-03:00",
   "week_start": "2026-05-31",
   "week_label": "May 31 - June 06, 2026",
-  "last_updated": "Friday, June 05, 2026 at 02:03",
+  "last_updated": "Saturday, June 06, 2026 at 02:01",
   "stats": {
-    "completed": 2.5,
+    "completed": 2.6,
     "planned": 8,
-    "display": "2.5 / 8"
+    "display": "2.6 / 8"
   },
   "daily": {
     "Sunday": {
@@ -58,9 +58,9 @@
       "name": "Reading",
       "emoji": "",
       "status": "pending",
-      "accumulated": "0min",
+      "accumulated": "10min",
       "target": "60min",
-      "progress_pct": 0
+      "progress_pct": 16
     }
   ],
   "routines": [
