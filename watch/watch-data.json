@@ -740,6 +740,16 @@
       "summary": "Vincent Koc discusses 'Dark Factories' and the rapid evolution of software engineering driven by AI agent swarms, specifically focusing on the OpenClaw project. He explains how software developers are transitioning into 'factory managers' who oversee AI agents, illustrating this shift with a massive, nine-day codebase refactoring project completed using thousands of automated commits. Koc emphasizes that as AI-driven code generation accelerates, the primary bottleneck in development shifts from manual coding to the engineer's 'taste' and management of automated workflows. This talk is highly beneficial for AI engineers, software developers, and tech leaders interested in the future of autonomous coding and high-velocity software development.",
       "added": "2026-06-07",
       "times_shown": 0
+    },
+    {
+      "slug": "reinventing-entropy-compression-intelligence-part-1",
+      "title": "Reinventing Entropy | Compression & Intelligence Part 1",
+      "url": "https://www.youtube.com/watch?v=l6DKRf-fAAM",
+      "video_id": "l6DKRf-fAAM",
+      "channel": "3Blue1Brown",
+      "summary": "This video introduces the foundational concepts of information theory and data compression, highlighting how predictive modeling in AI is mathematically equivalent to text compression. Using a practical example of a moon rover receiving instructions of varying probabilities, the video illustrates how prefix-free coding optimizes data transmission by using shorter bit sequences for more frequent events. Ultimately, it seeks to demystify Shannon's noiseless coding theorem and explain the role of concepts like entropy and cross-entropy in defining the limits of compression.",
+      "added": "2026-06-07",
+      "times_shown": 0
     }
   ],
   "archive": [
