@@ -218,15 +218,6 @@
       "times_shown": 0
     },
     {
-      "slug": "a-harness-for-every-task-dynamic-workflows-in-claude-code",
-      "title": "A Harness for Every Task: Dynamic Workflows in Claude Code",
-      "url": "https://www.anthropic.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code",
-      "category": "ai",
-      "summary": "Thariq's article introduces dynamic workflows in Claude Code — a system that lets AI agents break complex tasks into ordered, stateful steps with automatic recovery. Workflows are defined as YAML files with steps that can include sub-workflows, loops, and conditional branching. The system persists state between steps so agents can resume after interruptions, and includes a plan mode for human approval before execution. Covers the architecture, step types, and how workflows integrate with Claude Code's existing tool system.",
-      "added": "2026-06-02",
-      "times_shown": 0
-    },
-    {
       "slug": "japanese-verb-conjugation-the-simple-hard-way",
       "title": "Japanese Verb Conjugation: The Simple Hard Way",
       "url": "https://underreacted.leaflet.pub/3mmevu6woys27",
@@ -653,6 +644,16 @@
       "summary": "Steve Yegge, drawing on 35 years of conducting technical interviews at Amazon and Google, argues that the traditional technical interview process is fundamentally broken and finally dying. He recounts a damning anecdote from Google's Hiring Committee, where a group of elite engineers were tricked into reviewing their own anonymized interview packets -- and voted not to hire roughly two-thirds of themselves. Google's internal data consistently showed poor inter-interviewer agreement, virtually no correlation between interview scores and on-the-job performance, and rampant unconscious bias, yet the process was never overhauled because challenging it was culturally taboo.\n\nThe core problem is one of signal: resumes are noisy, phone screens are painful, and a few hours of simulated whiteboard exercises tell you almost nothing about whether someone can actually do the job. Yegge shows that the gold standard has always been provisional employment -- internships, co-ops, and contract-to-hire arrangements -- where you evaluate people on real work over weeks or months. His own first employer, Geoworks, used a six-month co-op and produced a team so strong that Amazon later acqui-hired the entire office and called it the strongest group they ever brought in.\n\nYegge proposes a 'campfire' model as the replacement: companies bring candidates in for paid multi-day stints doing real work on the real codebase with the real team, generating far stronger signal than any interview loop. To make this fair for candidates, he introduces the idea of 'counting work twice' -- each work item generates signal for the company and also produces a portable, signed record the candidate keeps forever, regardless of the hiring outcome. Over time, this builds a reputation system where stamps from rigorous companies carry real weight, turning interviewing from a cost center into a profit center that attracts stronger candidates.\n\nThe article is intentionally more diagnosis than prescription. Yegge's primary goal is to shift the Overton window -- to get the industry to agree that the 50-year-old interview process needs radical replacement rather than incremental band-aids. He sees the collapse accelerating due to AI-assisted cheating, résumé floods, and the rapid reshaping of job roles, and believes technical interviews will fade into a 'cute historical footnote' within a few years.",
       "added": "2026-05-30",
       "read": "2026-05-31",
+      "has_notes": true
+    },
+    {
+      "slug": "a-harness-for-every-task-dynamic-workflows-in-claude-code",
+      "title": "A Harness for Every Task: Dynamic Workflows in Claude Code",
+      "url": "https://www.anthropic.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code",
+      "category": "ai",
+      "summary": "Thariq's article introduces dynamic workflows in Claude Code — a system that lets AI agents break complex tasks into ordered, stateful steps with automatic recovery. Workflows are defined as YAML files with steps that can include sub-workflows, loops, and conditional branching. The system persists state between steps so agents can resume after interruptions, and includes a plan mode for human approval before execution. Covers the architecture, step types, and how workflows integrate with Claude Code's existing tool system.",
+      "added": "2026-06-02",
+      "read": "2026-06-07",
       "has_notes": true
     }
   ]
