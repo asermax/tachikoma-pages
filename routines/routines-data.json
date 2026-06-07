@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-06T02:01:17.310533-03:00",
-  "week_start": "2026-05-31",
-  "week_label": "May 31 - June 06, 2026",
-  "last_updated": "Saturday, June 06, 2026 at 02:01",
+  "generated_at": "2026-06-07T12:47:00.989324-03:00",
+  "week_start": "2026-06-07",
+  "week_label": "June 07 - June 13, 2026",
+  "last_updated": "Sunday, June 07, 2026 at 12:47",
   "stats": {
-    "completed": 2.6,
-    "planned": 8,
-    "display": "2.6 / 8"
+    "completed": 0,
+    "planned": 0,
+    "display": "0 / 0"
   },
   "daily": {
     "Sunday": {
@@ -20,19 +20,19 @@
       "total": 0
     },
     "Tuesday": {
-      "status": "missed",
+      "status": "empty",
       "completed": 0,
-      "total": 1
+      "total": 0
     },
     "Wednesday": {
-      "status": "partial",
-      "completed": 1,
-      "total": 4
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Thursday": {
-      "status": "done",
-      "completed": 1,
-      "total": 1
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Friday": {
       "status": "empty",
@@ -50,17 +50,17 @@
       "name": "Trumpet Practice",
       "emoji": "",
       "status": "pending",
-      "accumulated": "20min",
+      "accumulated": "0min",
       "target": "60min",
-      "progress_pct": 33
+      "progress_pct": 0
     },
     {
       "name": "Reading",
       "emoji": "",
       "status": "pending",
-      "accumulated": "10min",
+      "accumulated": "0min",
       "target": "60min",
-      "progress_pct": 16
+      "progress_pct": 0
     }
   ],
   "routines": [
@@ -70,14 +70,37 @@
       "emoji": "\ud83d\udcaa",
       "sessions": [
         {
+          "day": "Mon",
+          "status": "pending"
+        },
+        {
           "day": "Wed",
-          "status": "skipped"
+          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
       "done": 0,
-      "total": 1
+      "total": 2
+    },
+    {
+      "id": "basic-workout-7:45-pm",
+      "name": "Basic Workout",
+      "emoji": "\ud83d\udcaa",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "pending"
+        },
+        {
+          "day": "Thu",
+          "status": "pending"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 2
     },
     {
       "id": "music-practice",
@@ -86,12 +109,42 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "done"
+          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 1,
+      "done": 0,
+      "total": 1
+    },
+    {
+      "id": "music-practice-1h",
+      "name": "Music Practice",
+      "emoji": "\ud83c\udfb7",
+      "sessions": [
+        {
+          "day": "Sat",
+          "status": "pending"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 1
+    },
+    {
+      "id": "piano-practice",
+      "name": "Piano Practice",
+      "emoji": "\ud83c\udfb9",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "pending"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
       "total": 1
     },
     {
@@ -105,12 +158,12 @@
         },
         {
           "day": "Thu",
-          "status": "done"
+          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 1,
+      "done": 0,
       "total": 2
     },
     {
@@ -119,14 +172,18 @@
       "emoji": "\ud83c\udfc3",
       "sessions": [
         {
+          "day": "Mon",
+          "status": "pending"
+        },
+        {
           "day": "Wed",
-          "status": "skipped"
+          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
       "done": 0,
-      "total": 1
+      "total": 2
     },
     {
       "id": "yoga",
@@ -134,21 +191,25 @@
       "emoji": "\ud83e\uddd8",
       "sessions": [
         {
+          "day": "Mon",
+          "status": "pending"
+        },
+        {
           "day": "Wed",
-          "status": "skipped"
+          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
       "done": 0,
-      "total": 1
+      "total": 2
     }
   ],
   "spirit": {
-    "state": "critical",
+    "state": "dormant",
     "emoji": "\ud83d\udc10",
     "title": "\ud83d\udc10 Winter Mountain Goat",
-    "image": "assets/critical.jpg",
-    "description": "Your mountain goat looks worried and small, hunched against harsh cold wind, dim aurora barely visible, fur ruffled by the storm."
+    "image": "assets/dormant.jpg",
+    "description": "Your mountain goat is fast asleep, curled up into a fluffy ball on soft snow, tail wrapped around snugly, peaceful under gentle moonlight."
   }
 }
