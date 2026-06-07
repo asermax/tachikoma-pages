@@ -1,0 +1,154 @@
+{
+  "generated_at": "2026-06-06T02:01:17.310533-03:00",
+  "week_start": "2026-05-31",
+  "week_label": "May 31 - June 06, 2026",
+  "last_updated": "Saturday, June 06, 2026 at 02:01",
+  "stats": {
+    "completed": 2.6,
+    "planned": 8,
+    "display": "2.6 / 8"
+  },
+  "daily": {
+    "Sunday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Monday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Tuesday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 1
+    },
+    "Wednesday": {
+      "status": "partial",
+      "completed": 1,
+      "total": 4
+    },
+    "Thursday": {
+      "status": "done",
+      "completed": 1,
+      "total": 1
+    },
+    "Friday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Saturday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    }
+  },
+  "goals": [
+    {
+      "name": "Trumpet Practice",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "20min",
+      "target": "60min",
+      "progress_pct": 33
+    },
+    {
+      "name": "Reading",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "10min",
+      "target": "60min",
+      "progress_pct": 16
+    }
+  ],
+  "routines": [
+    {
+      "id": "basic-workout",
+      "name": "Basic Workout",
+      "emoji": "\ud83d\udcaa",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 1
+    },
+    {
+      "id": "music-practice",
+      "name": "Music Practice",
+      "emoji": "\ud83c\udfb7",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "rock-climbing",
+      "name": "Rock Climbing",
+      "emoji": "\ud83e\uddd7",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "pending"
+        },
+        {
+          "day": "Thu",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 2
+    },
+    {
+      "id": "running",
+      "name": "Running",
+      "emoji": "\ud83c\udfc3",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 1
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga",
+      "emoji": "\ud83e\uddd8",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 1
+    }
+  ],
+  "spirit": {
+    "state": "critical",
+    "emoji": "\ud83d\udc10",
+    "title": "\ud83d\udc10 Winter Mountain Goat",
+    "image": "assets/critical.jpg",
+    "description": "Your mountain goat looks worried and small, hunched against harsh cold wind, dim aurora barely visible, fur ruffled by the storm."
+  }
+}
