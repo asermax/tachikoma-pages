@@ -720,6 +720,46 @@
       "summary": "This presentation by Google DeepMind's Brendan O'Donoghue explores text diffusion, a novel technique that applies the principles of image and video diffusion to natural language generation. Unlike traditional auto-regressive models that generate text token-by-token, text diffusion models generate blocks of tokens simultaneously and refine them iteratively, leading to lower latencies and enabling features like self-correction and bidirectional attention. However, O'Donoghue notes that text diffusion currently suffers from lower throughput for large batches, making it more expensive to serve at scale compared to traditional models. AI researchers, developers, and engineers interested in the future of language modeling and alternative architectures will benefit from watching this presentation.",
       "added": "2026-06-05",
       "times_shown": 0
+    },
+    {
+      "slug": "building-agent-interfaces-lessons-from-chrome-devtools-mcp-for-agents-michael-ha",
+      "title": "Building Agent Interfaces: Lessons from Chrome DevTools (MCP) for Agents \u2014 Michael Hablich, Google",
+      "url": "https://www.youtube.com/watch?v=_B4Pv9ttFgY",
+      "video_id": "_B4Pv9ttFgY",
+      "channel": "AI Engineer",
+      "summary": "In this presentation, Michael Hablich discusses the design and implementation of Chrome Developer Tooling specifically for AI agents. He emphasizes that AI agents represent a distinct user class compared to humans, requiring text-based, schema-driven interfaces rather than visual layouts to minimize token usage and cognitive load. He introduces 'Tokens per Successful Outcome' (TPSO) as a crucial metric for balancing agent efficiency and effectiveness. This talk is highly valuable for AI engineers, developers, and product managers working on browser automation and LLM-powered agent tooling.",
+      "added": "2026-06-07",
+      "times_shown": 0
+    },
+    {
+      "slug": "building-interactive-uis-in-vs-code-with-mcp-apps-marlene-mhangami-liam-hampton",
+      "title": "Building Interactive UIs in VS Code with MCP Apps \u2014 Marlene Mhangami & Liam Hampton, GitHub",
+      "url": "https://www.youtube.com/watch?v=_xIwFcnHqp4",
+      "video_id": "_xIwFcnHqp4",
+      "channel": "AI Engineer",
+      "summary": "This presentation introduces Model Context Protocol (MCP) Apps, an open protocol designed to bring rich, interactive user interface (UI) experiences directly into AI chat interfaces like VS Code. The speakers explain how MCP Apps allow developers to bypass text-only limitations by enabling servers to return interactive HTML components\u2014such as charts, configuration wizards, and e-commerce interfaces\u2014that render seamlessly inside sandboxed iframes. The video breaks down the technical architecture of MCP Apps, highlights practical use cases, and showcases real-world adoption by major platforms like Shopify and Figma. This session is highly beneficial for AI engineers, developers, and software designers looking to build more immersive and context-rich AI developer tools.",
+      "added": "2026-06-07",
+      "times_shown": 0
+    },
+    {
+      "slug": "building-safe-payment-infrastructure-for-the-autonomous-economy-steve-kaliski-st",
+      "title": "Building safe Payment Infrastructure for the autonomous economy \u2014 Steve Kaliski, Stripe",
+      "url": "https://www.youtube.com/watch?v=KLSuFPj2ld0",
+      "video_id": "KLSuFPj2ld0",
+      "channel": "AI Engineer",
+      "summary": "This presentation discusses the development of safe payment infrastructure designed for AI agents in the autonomous economy. He highlights a key challenge: while AI exploration benefits from non-determinism, transaction processes like payments and checkouts require strict determinism to ensure safety. To solve this, Stripe has built solutions like Shared Payment Tokens that allow agents to transact securely under specific spend limits and policy controls. This video is ideal for developers and engineers interested in the intersection of AI agents, automation, and fintech.",
+      "added": "2026-06-07",
+      "times_shown": 0
+    },
+    {
+      "slug": "dark-factory-openclaw-ships-faster-than-you-can-read-the-diff-vincent-koc-opencl",
+      "title": "Dark Factory: OpenClaw Ships Faster Than You Can Read the Diff \u2014 Vincent Koc, OpenClaw",
+      "url": "https://www.youtube.com/watch?v=pmoDeA3RBZY",
+      "video_id": "pmoDeA3RBZY",
+      "channel": "AI Engineer",
+      "summary": "Vincent Koc discusses 'Dark Factories' and the rapid evolution of software engineering driven by AI agent swarms, specifically focusing on the OpenClaw project. He explains how software developers are transitioning into 'factory managers' who oversee AI agents, illustrating this shift with a massive, nine-day codebase refactoring project completed using thousands of automated commits. Koc emphasizes that as AI-driven code generation accelerates, the primary bottleneck in development shifts from manual coding to the engineer's 'taste' and management of automated workflows. This talk is highly beneficial for AI engineers, software developers, and tech leaders interested in the future of autonomous coding and high-velocity software development.",
+      "added": "2026-06-07",
+      "times_shown": 0
     }
   ],
   "archive": [
