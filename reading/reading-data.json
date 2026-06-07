@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06",
+  "generated_at": "2026-06-07",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -242,6 +242,15 @@
       "category": "physics",
       "summary": "The article reimagines classical physics as reverse-engineering the game loop of the universe, using JavaScript pseudocode to express physical laws as update functions that evolve state over time. It progresses from Newtonian mechanics through wave physics to Maxwell's equations, showing how electric and magnetic fields locked in mutual transformation via curl produce light. Closes with a quantum mechanics teaser — the double-slit experiment with single electrons producing interference patterns, raising the question 'where are the waves?'",
       "added": "2026-06-02",
+      "times_shown": 0
+    },
+    {
+      "slug": "communities-of-not",
+      "title": "Communities of Not",
+      "url": "https://lucumr.pocoo.org/2026/6/6/communities-of-not/",
+      "category": "ai",
+      "summary": "Armin Ronacher's essay examines a pattern in communities organized around abstaining from something -- childfree groups, anti-car advocacy, and LLM-skeptic developer circles. While these communities can start with positive goals (autonomy, safer streets, defending labor rights and code quality), the thing being rejected tends to become the dominant subject of the group's identity, pulling the community toward negativity.\n\nThe core problem, Ronacher argues, is that these communities begin policing and punishing outsiders who deviate from their stance. When a childless influencer has a child, a cyclist buys a car, or a respected developer tries LLMs, the community treats it as betrayal -- even though that person never signed up as a member of the tribe. The community piles on with shaming, out-of-context quoting, and character attacks to retroactively discredit the person. The expulsion is imaginary, but the harassment is real.\n\nRonacher is careful to say that the underlying concerns are legitimate. Cars do shape cities for everyone, children do affect politics and taxes for the childless, and LLMs do show up in editors, hiring, and code reviews whether developers want them or not. Resistance is valid. The issue is using that rejection as a justification for toxic mob behavior against individuals who make different choices.\n\nHe closes with a personal admission: he has done versions of this himself, and it took time to become more accepting of diverging worldviews. Finding a group that shares your insecurities is comforting, but being part of a crowd of negativity can easily make you part of collective harassment. His advice is to breathe, de-escalate, resist catastrophizing others' choices, and default to openness.",
+      "added": "2026-06-06",
       "times_shown": 0
     }
   ],
