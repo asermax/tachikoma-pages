@@ -652,16 +652,6 @@
       "times_shown": 0
     },
     {
-      "slug": "what-if-the-network-was-the-sandbox-remy-guercio-tailscale",
-      "title": "What if the network was the sandbox? \u2014 Remy Guercio, Tailscale",
-      "url": "https://www.youtube.com/watch?v=BM2JX9hqsVQ",
-      "video_id": "BM2JX9hqsVQ",
-      "channel": "AI Engineer",
-      "summary": "Explores the concept of utilizing the network layer as a secure sandbox for AI agents. Argues that by integrating identity and permissions (AuthN and AuthZ) directly into network connections using WireGuard, organizations can eliminate the need to store sensitive API keys within sandbox environments. Demonstrates Aperture, an AI gateway that leverages network identity to control, monitor, and audit LLM requests based on specific user or runner tags. Beneficial for AI security engineers, cloud architects, and developers looking for robust, keyless methods to govern and secure AI infrastructure.",
-      "added": "2026-06-03",
-      "times_shown": 0
-    },
-    {
       "slug": "what-lies-beneath-the-api-benjamin-cowen-modal",
       "title": "What Lies Beneath the API \u2014 Benjamin Cowen, Modal",
       "url": "https://www.youtube.com/watch?v=HvZXAOZ3iv8",
@@ -669,16 +659,6 @@
       "channel": "AI Engineer",
       "summary": "Explores the strategic transition from utilizing frontier APIs to fine-tuning custom AI models as a product matures and specializes. Argues that while frontier APIs offer a rapid starting point, they lack customization, prompting developers to eventually seek the performance and cost benefits of fine-tuning. Presents serverless compute platforms as a modern middle ground, bridging the gap by providing full algorithmic control and rapid iteration without the overhead of managing Kubernetes clusters. Beneficial for AI engineers, ML developers, and startup founders optimizing their AI product development lifecycle.",
       "added": "2026-06-03",
-      "times_shown": 0
-    },
-    {
-      "slug": "bdd-adr-prd-wtf-capturing-decisions-for-humans-and-ai-alike-michal-cichra-safe-i",
-      "title": "BDD, ADR, PRD, WTF: Capturing Decisions for Humans and AI Alike \u2014 Michal Cichra, Safe Intelligence",
-      "url": "https://www.youtube.com/watch?v=504PvfXou5Y",
-      "video_id": "504PvfXou5Y",
-      "channel": "AI Engineer",
-      "summary": "This video explores how to capture and enforce software development decisions to benefit both human engineers and AI models, which both struggle with limited context. The speaker advocates for structured frameworks like Architecture Decision Records (ADRs), Product Requirements Documents (PRDs), and Behavior-Driven Development (BDD) using Cucumber to create clear, executable specifications. He highlights the necessity of building an automated reinforcement loop via Git hooks and CI pipelines to consistently enforce these architectural and design rules. Software developers, AI engineers, and product managers seeking to improve team alignment and structure their codebases for AI agents will benefit from watching this.",
-      "added": "2026-06-04",
       "times_shown": 0
     },
     {
@@ -905,6 +885,17 @@
       "added": "2026-06-03",
       "watched": "2026-06-03",
       "has_notes": false
+    },
+    {
+      "slug": "bdd-adr-prd-wtf-capturing-decisions-for-humans-and-ai-alike-michal-cichra-safe-i",
+      "title": "BDD, ADR, PRD, WTF: Capturing Decisions for Humans and AI Alike \u2014 Michal Cichra, Safe Intelligence",
+      "url": "https://www.youtube.com/watch?v=504PvfXou5Y",
+      "video_id": "504PvfXou5Y",
+      "channel": "AI Engineer",
+      "summary": "This video explores how to capture and enforce software development decisions to benefit both human engineers and AI models, which both struggle with limited context. The speaker advocates for structured frameworks like Architecture Decision Records (ADRs), Product Requirements Documents (PRDs), and Behavior-Driven Development (BDD) using Cucumber to create clear, executable specifications. He highlights the necessity of building an automated reinforcement loop via Git hooks and CI pipelines to consistently enforce these architectural and design rules. Software developers, AI engineers, and product managers seeking to improve team alignment and structure their codebases for AI agents will benefit from watching this.",
+      "added": "2026-06-04",
+      "watched": "2026-06-07",
+      "has_notes": true
     },
     {
       "slug": "the-insane-infrastructure-design-of-deepseek-v4",
