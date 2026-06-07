@@ -655,6 +655,16 @@
       "added": "2026-06-02",
       "read": "2026-06-07",
       "has_notes": true
+    },
+    {
+      "slug": "httpsantirezcomnews168",
+      "title": "Untitled",
+      "url": "https://antirez.com/news/168",
+      "category": "software-engineering",
+      "summary": "antirez argues that LLM agents as QA engineers may be AI's strongest software use case — writing markdown-based test plans that agents execute autonomously (integration testing, speed regression, distributed systems), catching quality issues that traditional test suites miss. This could compensate for the quality tradeoff of AI-generated code.",
+      "added": "2026-06-07",
+      "read": "2026-06-07",
+      "has_notes": true
     }
   ]
 }
