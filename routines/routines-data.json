@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-08T02:01:45.360923-03:00",
+  "generated_at": "2026-06-08T19:51:31.423525-03:00",
   "week_start": "2026-06-07",
   "week_label": "June 07 - June 13, 2026",
-  "last_updated": "Monday, June 08, 2026 at 02:01",
+  "last_updated": "Monday, June 08, 2026 at 19:51",
   "stats": {
     "completed": 0,
     "planned": 0,
@@ -15,9 +15,9 @@
       "total": 0
     },
     "Monday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 4
     },
     "Tuesday": {
       "status": "empty",
