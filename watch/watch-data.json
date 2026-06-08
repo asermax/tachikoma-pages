@@ -940,6 +940,28 @@
       "added": "2026-06-07",
       "watched": "2026-06-07",
       "has_notes": false
+    },
+    {
+      "slug": "the-fma-of-artificial-intelligence-backpropagation-how-models-learn-part-2",
+      "title": "The F=ma of Artificial Intelligence [Backpropagation, How Models Learn Part 2]",
+      "url": "https://www.youtube.com/watch?v=VkHfRKewkWw",
+      "video_id": "VkHfRKewkWw",
+      "channel": "Welch Labs",
+      "summary": "This video introduces how large language models like LLaMA 3.2-1B learn and optimize parameters through gradient descent. It visually explains loss landscapes, the mathematical differences between L1 loss and cross-entropy loss, and why adjusting parameters individually is insufficient for complex models. Beneficial for AI researchers, ML students, and tech enthusiasts looking for an intuitive explanation of neural network training dynamics.",
+      "added": "2026-06-08",
+      "watched": "2026-06-08",
+      "has_notes": true
+    },
+    {
+      "slug": "the-misconception-that-almost-stopped-ai-how-models-learn-part-1",
+      "title": "The Misconception that Almost Stopped AI [How Models Learn Part 1]",
+      "url": "https://www.youtube.com/watch?v=NrO20Jb-hy0",
+      "video_id": "NrO20Jb-hy0",
+      "channel": "Welch Labs",
+      "summary": "This video explores the mathematical foundations of the backpropagation algorithm, the core method used to train almost all modern AI, including LLMs like Llama 3.2. It simplifies neural network training into a small three-neuron model that predicts location from GPS coordinates, covering input processing, softmax probabilities, cross-entropy loss, and gradient-based weight adjustment. Highly beneficial for students, developers, and ML enthusiasts wanting a clear, math-first explanation of how neural networks actually learn.",
+      "added": "2026-06-08",
+      "watched": "2026-06-08",
+      "has_notes": true
     }
   ]
 }
