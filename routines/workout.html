@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Workout Session | Tachikoma</title>
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 480px;
+            overflow: hidden;
+        }
+
+        /* Header */
+        .nav-bar {
+            display: flex;
+            align-items: center;
+            padding: 1rem 1.25rem;
+            background: #f8f9fa;
+            border-bottom: 1px solid #eee;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            text-decoration: none;
+            color: #667eea;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .session-info {
+            margin-left: auto;
+            font-size: 0.85rem;
+            color: #666;
+            text-align: right;
+        }
+        .session-info .location { font-weight: 600; color: #333; }
+
+        /* Round indicator */
+        .round-bar {
+            text-align: center;
+            padding: 0.75rem 1rem;
+            font-size: 0.95rem;
+            color: #667eea;
+            font-weight: 600;
+            border-bottom: 1px solid #eee;
+        }
+        .round-bar .round-label { color: #666; font-weight: 400; font-size: 0.85rem; }
+
+        /* Current exercise */
+        .exercise-area {
+            padding: 2rem 1.5rem;
+            text-align: center;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .exercise-emoji { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .exercise-name {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+        .exercise-detail {
+            font-size: 1rem;
+            color: #888;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        .exercise-target {
+            font-size: 1.2rem;
+            color: #555;
+            font-weight: 500;
+        }
+
+        /* Timer */
+        .timer-display {
+            font-size: 4rem;
+            font-weight: 700;
+            font-family: 'Courier New', monospace;
+            color: #333;
+            margin: 1rem 0;
+        }
+        .timer-display.running { color: #667eea; }
+        .timer-display.done { color: #28a745; }
+
+        /* Buttons */
+        .action-area { padding: 0 1.5rem 1.5rem; text-align: center; }
+        .btn {
+            display: inline-block;
+            padding: 1rem 3rem;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+        .btn:active { transform: scale(0.96); }
+        .btn-done {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+        }
+        .btn-done:hover { box-shadow: 0 6px 20px rgba(40, 167, 69, 0.5); }
+        .btn-start {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        .btn-skip {
+            display: block;
+            margin: 0.75rem auto 0;
+            padding: 0.5rem 1.5rem;
+            background: none;
+            border: 1px solid #ddd;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            color: #888;
+            cursor: pointer;
+        }
+        .btn-skip:hover { border-color: #bbb; color: #666; }
+
+        /* Progress */
+        .progress-section {
+            padding: 1.25rem;
+            border-top: 1px solid #eee;
+            background: #f8f9fa;
+        }
+        .progress-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+        }
+        .progress-list { display: flex; flex-direction: column; gap: 0.6rem; }
+        .progress-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 0.75rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+        .progress-item.current { background: #eef0ff; }
+        .progress-item .p-name { font-weight: 500; }
+        .progress-item.current .p-name { color: #667eea; }
+        .progress-item .p-dots {
+            display: flex;
+            gap: 0.35rem;
+        }
+        .p-dot {
+            width: 10px; height: 10px;
+            border-radius: 50%;
+            background: #ddd;
+        }
+        .p-dot.filled { background: #28a745; }
+        .p-dot.active { background: #667eea; box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2); }
+
+        /* Completion */
+        .completion {
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+        .completion .emoji { font-size: 4rem; margin-bottom: 1rem; }
+        .completion h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .completion .stats {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        .completion .stats span { font-weight: 600; color: #333; }
+
+        /* Loading / Error */
+        .loading, .error {
+            text-align: center;
+            padding: 3rem 2rem;
+            color: #999;
+        }
+        .error { color: #dc3545; }
+
+        /* Setup screen (day selector) */
+        .setup { padding: 2rem 1.5rem; text-align: center; }
+        .setup h2 { margin-bottom: 1.5rem; font-size: 1.3rem; }
+        .day-options { display: flex; flex-direction: column; gap: 0.75rem; }
+        .day-btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            background: white;
+            cursor: pointer;
+            text-align: left;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+        .day-btn:hover { border-color: #667eea; }
+        .day-btn .d-name { font-weight: 600; }
+        .day-btn .d-location { font-size: 0.85rem; color: #888; }
+        .day-btn .d-count { font-size: 0.8rem; color: #aaa; }
+    </style>
+</head>
+<body>
+    <div class="container" id="app">
+        <div class="loading">Loading workout...</div>
+    </div>
+
+    <script>
+    (function() {
+        var DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+        // State
+        var workoutData = null;
+        var dayName = null;
+        var exercises = [];
+        var maxSets = 0;
+        var totalSteps = 0;
+        var currentStep = 0;
+        var timerInterval = null;
+        var timerRemaining = 0;
+        var timerRunning = false;
+        var startTime = null;
+
+        // Init
+        function init() {
+            var params = new URLSearchParams(window.location.search);
+            var dayParam = params.get('day');
+
+            // Auto-detect today
+            var today = DAYS[new Date().getDay()];
+
+            loadWorkoutData(function(data) {
+                workoutData = data;
+                if (!data || !data.days || Object.keys(data.days).length === 0) {
+                    showError('No workout data found for this week.');
+                    return;
+                }
+
+                // Pick day: param > today > first available
+                if (dayParam && data.days[dayParam]) {
+                    dayName = dayParam;
+                } else if (data.days[today]) {
+                    dayName = today;
+                } else {
+                    // Show day selector
+                    showSetup(data);
+                    return;
+                }
+
+                startSession();
+            });
+        }
+
+        function loadWorkoutData(cb) {
+            fetch('workout-data.json')
+                .then(function(r) { return r.json(); })
+                .then(cb)
+                .catch(function() { showError('Failed to load workout data.'); });
+        }
+
+        function showSetup(data) {
+            var h = '<div class="setup">';
+            h += '<h2>💪 Select Workout Day</h2>';
+            h += '<div class="day-options">';
+            var sortedDays = ['Monday','Tuesday','Wednesday','Thursday'];
+            for (var i = 0; i < sortedDays.length; i++) {
+                var d = sortedDays[i];
+                if (!data.days[d]) continue;
+                var day = data.days[d];
+                h += '<button class="day-btn" onclick="window.__selectDay(\'' + d + '\')">';
+                h += '<div class="d-name">' + d + '</div>';
+                h += '<div class="d-location">' + esc(day.location) + '</div>';
+                h += '<div class="d-count">' + day.exercises.length + ' exercises</div>';
+                h += '</button>';
+            }
+            h += '</div></div>';
+            document.getElementById('app').innerHTML = h;
+        }
+
+        window.__selectDay = function(d) {
+            dayName = d;
+            history.replaceState(null, '', 'workout.html?day=' + d);
+            startSession();
+        };
+
+        function startSession() {
+            exercises = workoutData.days[dayName].exercises;
+            maxSets = 0;
+            for (var i = 0; i < exercises.length; i++) {
+                if (exercises[i].sets > maxSets) maxSets = exercises[i].sets;
+            }
+            totalSteps = exercises.length * maxSets;
+            currentStep = 0;
+            startTime = Date.now();
+            render();
+        }
+
+        function getCurrentExercise() {
+            var idx = currentStep % exercises.length;
+            return exercises[idx];
+        }
+
+        function getCurrentRound() {
+            return Math.floor(currentStep / exercises.length) + 1;
+        }
+
+        function getExerciseSetsDone(exerciseIdx) {
+            var done = 0;
+            for (var round = 0; round < maxSets; round++) {
+                var step = round * exercises.length + exerciseIdx;
+                if (step < currentStep) done++;
+            }
+            return done;
+        }
+
+        function advance() {
+            stopTimer();
+            currentStep++;
+            if (currentStep >= totalSteps) {
+                showCompletion();
+                return;
+            }
+            render();
+        }
+
+        // Timer
+        function startTimer(seconds) {
+            timerRemaining = seconds;
+            timerRunning = true;
+            updateTimerDisplay();
+
+            timerInterval = setInterval(function() {
+                timerRemaining--;
+                updateTimerDisplay();
+                if (timerRemaining <= 0) {
+                    stopTimer();
+                    advance();
+                }
+            }, 1000);
+        }
+
+        function stopTimer() {
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+            }
+            timerRunning = false;
+        }
+
+        function updateTimerDisplay() {
+            var el = document.getElementById('timer');
+            if (!el) return;
+            var mins = Math.floor(timerRemaining / 60);
+            var secs = timerRemaining % 60;
+            el.textContent = (mins > 0 ? mins + ':' : '') + (secs < 10 && mins > 0 ? '0' : '') + secs;
+            el.className = 'timer-display' + (timerRunning ? ' running' : '') + (timerRemaining <= 0 ? ' done' : '');
+        }
+
+        // Render
+        function render() {
+            if (currentStep >= totalSteps) {
+                showCompletion();
+                return;
+            }
+
+            var ex = getCurrentExercise();
+            var round = getCurrentRound();
+            var loc = workoutData.days[dayName].location;
+
+            var h = '';
+
+            // Nav bar
+            h += '<div class="nav-bar">';
+            h += '<a href="index.html" class="back-link">← Back</a>';
+            h += '<div class="session-info"><div class="location">' + esc(loc) + '</div><div>' + esc(dayName) + '</div></div>';
+            h += '</div>';
+
+            // Round bar
+            h += '<div class="round-bar">';
+            h += '<span class="round-label">Round </span>' + round + ' / ' + maxSets;
+            h += '</div>';
+
+            // Current exercise
+            h += '<div class="exercise-area">';
+            h += '<div class="exercise-emoji">💪</div>';
+            h += '<div class="exercise-name">' + esc(ex.name) + '</div>';
+            if (ex.detail) {
+                h += '<div class="exercise-detail">(' + esc(ex.detail) + ')</div>';
+            }
+            if (ex.type === 'reps') {
+                h += '<div class="exercise-target">' + ex.sets + ' × ' + ex.target + '</div>';
+            } else {
+                h += '<div class="exercise-target">' + ex.sets + ' × ' + ex.target + ex.unit + '</div>';
+            }
+            if (ex.type === 'time') {
+                h += '<div class="timer-display" id="timer">' + ex.target + ex.unit + '</div>';
+            }
+            h += '</div>';
+
+            // Actions
+            h += '<div class="action-area">';
+            if (ex.type === 'reps') {
+                h += '<button class="btn btn-done" onclick="window.__done()">Done ✓</button>';
+            } else {
+                if (timerRunning) {
+                    h += '<button class="btn btn-done" onclick="window.__done()">Done ✓</button>';
+                    h += '<button class="btn btn-skip" onclick="window.__skipTimer()">Skip</button>';
+                } else {
+                    h += '<button class="btn btn-start" onclick="window.__startTimer()">Start ' + ex.target + ex.unit + '</button>';
+                }
+            }
+            h += '</div>';
+
+            // Progress
+            h += '<div class="progress-section">';
+            h += '<div class="progress-title">Progress</div>';
+            h += '<div class="progress-list">';
+            for (var i = 0; i < exercises.length; i++) {
+                var e = exercises[i];
+                var isCurrent = (currentStep % exercises.length) === i;
+                var setsDone = getExerciseSetsDone(i);
+                h += '<div class="progress-item' + (isCurrent ? ' current' : '') + '">';
+                h += '<span class="p-name">' + esc(e.name) + '</span>';
+                h += '<span class="p-dots">';
+                for (var s = 0; s < e.sets; s++) {
+                    var dotCls = s < setsDone ? 'p-dot filled' : (isCurrent && s === setsDone ? 'p-dot active' : 'p-dot');
+                    h += '<span class="' + dotCls + '"></span>';
+                }
+                h += '</span></div>';
+            }
+            h += '</div></div>';
+
+            document.getElementById('app').innerHTML = h;
+        }
+
+        function showCompletion() {
+            stopTimer();
+            var elapsed = Math.round((Date.now() - startTime) / 1000);
+            var mins = Math.floor(elapsed / 60);
+            var secs = elapsed % 60;
+            var timeStr = mins > 0 ? mins + 'm ' + secs + 's' : secs + 's';
+
+            var h = '<div class="completion">';
+            h += '<div class="emoji">🎉</div>';
+            h += '<h2>Workout Complete!</h2>';
+            h += '<div class="stats">';
+            h += '<span>' + exercises.length + ' exercises</span> &middot; ';
+            h += '<span>' + maxSets + ' rounds</span> &middot; ';
+            h += '<span>' + timeStr + '</span>';
+            h += '</div>';
+            h += '<a href="index.html" class="btn btn-done" style="text-decoration:none;">Back to Routines</a>';
+            h += '</div>';
+            document.getElementById('app').innerHTML = h;
+        }
+
+        function showError(msg) {
+            document.getElementById('app').innerHTML = '<div class="error">' + esc(msg) + '</div>';
+        }
+
+        function esc(s) {
+            var d = document.createElement('div');
+            d.textContent = s || '';
+            return d.innerHTML;
+        }
+
+        // Global handlers
+        window.__done = function() { advance(); };
+        window.__startTimer = function() {
+            var ex = getCurrentExercise();
+            startTimer(parseInt(ex.target));
+            render();
+        };
+        window.__skipTimer = function() { advance(); };
+
+        // Go
+        init();
+    })();
+    </script>
+</body>
+</html>
