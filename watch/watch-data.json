@@ -920,6 +920,17 @@
       "has_notes": false
     },
     {
+      "slug": "ai-cant-cross-this-line-and-we-dont-know-why",
+      "title": "AI can't cross this line and we don't know why.",
+      "url": "https://www.youtube.com/watch?v=5eqRuVp65eY",
+      "video_id": "5eqRuVp65eY",
+      "channel": "Welch Labs",
+      "summary": "This video explains neural scaling laws, which describe how AI model performance improves predictably as compute, model size, and dataset size increase. It traces the history from OpenAI's power-law equations guiding GPT-3 and GPT-4 development, to Google DeepMind's refinement adding an irreducible error term corresponding to the natural entropy of language. For ML practitioners and AI researchers wanting to understand the predictable limits behind scaling large language models.",
+      "added": "2026-06-07",
+      "watched": "2026-06-07",
+      "has_notes": true
+    },
+    {
       "slug": "reinventing-entropy-compression-intelligence-part-1",
       "title": "Reinventing Entropy | Compression & Intelligence Part 1",
       "url": "https://www.youtube.com/watch?v=l6DKRf-fAAM",
