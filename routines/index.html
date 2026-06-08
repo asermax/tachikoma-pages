@@ -300,6 +300,10 @@
             h += '<div class="routine-cards">';
             for (var r = 0; r < d.routines.length; r++) {
                 var rt = d.routines[r];
+                var isWorkout = rt.id.indexOf('basic-workout') === 0;
+                if (isWorkout) {
+                    h += '<a href="workout.html" style="text-decoration:none;color:inherit;display:block;">';
+                }
                 h += '<div class="routine-card" data-tachi-actions="routines" data-tachi-slug="' + esc(rt.id) + '">';
                 h += '<div class="routine-header"><span class="routine-name">' + esc(rt.emoji) + ' ' + esc(rt.name) + '</span>';
                 h += '<span class="routine-count">' + rt.done + '/' + rt.total + ' sessions</span></div>';
@@ -324,6 +328,9 @@
                 }
 
                 h += '</div>';
+                if (isWorkout) {
+                    h += '</a>';
+                }
             }
             h += '</div></div>';
         }
