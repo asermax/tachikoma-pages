@@ -740,6 +740,26 @@
       "summary": "Vincent Koc discusses 'Dark Factories' and the rapid evolution of software engineering driven by AI agent swarms, specifically focusing on the OpenClaw project. He explains how software developers are transitioning into 'factory managers' who oversee AI agents, illustrating this shift with a massive, nine-day codebase refactoring project completed using thousands of automated commits. Koc emphasizes that as AI-driven code generation accelerates, the primary bottleneck in development shifts from manual coding to the engineer's 'taste' and management of automated workflows. This talk is highly beneficial for AI engineers, software developers, and tech leaders interested in the future of autonomous coding and high-velocity software development.",
       "added": "2026-06-07",
       "times_shown": 0
+    },
+    {
+      "slug": "from-mcp-to-scale-pipelines-that-build-themselves-rafael-levi-bright-data",
+      "title": "From MCP to Scale: Pipelines That Build Themselves \u2014 Rafael Levi, Bright Data",
+      "url": "https://www.youtube.com/watch?v=zTZ0qunQXnM",
+      "video_id": "zTZ0qunQXnM",
+      "channel": "AI Engineer",
+      "summary": "This presentation demonstrates how developers can use AI agents, specifically Claude Code integrated with Bright Data's tools, to build self-healing web scraping pipelines that automatically write and maintain their own code. Rather than wasting millions of tokens by directly parsing raw HTML through an LLM, developers can use AI to identify page structures, write efficient Python scrapers, and execute them at scale. This automated approach drastically reduces API token costs and eliminates tedious maintenance when target website layouts change.",
+      "added": "2026-06-08",
+      "times_shown": 0
+    },
+    {
+      "slug": "llm-observability-evaluation-experimentation-platform-dat-ngo-arize",
+      "title": "LLM Observability, Evaluation, Experimentation Platform \u2014 Dat Ngo, Arize",
+      "url": "https://www.youtube.com/watch?v=JsCCrBF7F1g",
+      "video_id": "JsCCrBF7F1g",
+      "channel": "AI Engineer",
+      "summary": "Dat Ngo introduces Arize AI's platform for LLM observability, evaluation, and experimentation. He demonstrates how open-telemetry based tracing and session mapping provide deep insights into agent behavior, while diverse evaluation metrics\u2014ranging from LLM-as-a-judge to deterministic logic\u2014help developers gather crucial performance signals. The talk emphasizes bridging technical AI engineers with domain-expert product managers through intuitive evaluation interfaces. Beneficial for engineers and PMs aiming to transition LLM prototypes into production.",
+      "added": "2026-06-08",
+      "times_shown": 0
     }
   ],
   "archive": [
