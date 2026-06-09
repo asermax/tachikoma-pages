@@ -62,7 +62,6 @@
             font-weight: 600;
             border-bottom: 1px solid #eee;
         }
-        .round-bar .round-label { color: #666; font-weight: 400; font-size: 0.85rem; }
 
         /* Current exercise */
         .exercise-area {
@@ -91,6 +90,12 @@
             color: #555;
             font-weight: 500;
         }
+        .exercise-weight {
+            font-size: 1rem;
+            color: #764ba2;
+            font-weight: 600;
+            margin-top: 0.25rem;
+        }
 
         /* Timer */
         .timer-display {
@@ -102,6 +107,31 @@
         }
         .timer-display.running { color: #667eea; }
         .timer-display.done { color: #28a745; }
+
+        /* Rest screen */
+        .rest-area {
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .rest-area .rest-emoji { font-size: 3rem; margin-bottom: 0.5rem; }
+        .rest-area .rest-label {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 0.5rem;
+        }
+        .rest-timer {
+            font-size: 5rem;
+            font-weight: 700;
+            font-family: 'Courier New', monospace;
+            color: #667eea;
+            margin-bottom: 2rem;
+        }
+        .rest-next {
+            font-size: 0.9rem;
+            color: #aaa;
+            margin-bottom: 2rem;
+        }
+        .rest-next strong { color: #667eea; }
 
         /* Buttons */
         .action-area { padding: 0 1.5rem 1.5rem; text-align: center; }
@@ -232,6 +262,7 @@
     <script>
     (function() {
         var DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+        var REST_SECONDS = 120; // 2 minutes between rounds
 
         // State
         var workoutData = null;
@@ -244,6 +275,7 @@
         var timerRemaining = 0;
         var timerRunning = false;
         var startTime = null;
+        var resting = false;
 
         // Init
         function init() {
@@ -266,7 +298,6 @@
                 } else if (data.days[today]) {
                     dayName = today;
                 } else {
-                    // Show day selector
                     showSetup(data);
                     return;
                 }
@@ -316,6 +347,7 @@
             totalSteps = exercises.length * maxSets;
             currentStep = 0;
             startTime = Date.now();
+            resting = false;
             render();
         }
 
@@ -344,10 +376,72 @@
                 showCompletion();
                 return;
             }
+            // Check if we just completed a round
+            if (currentStep % exercises.length === 0) {
+                showRest();
+                return;
+            }
             render();
         }
 
-        // Timer
+        // Rest between rounds
+        function showRest() {
+            resting = true;
+            var round = getCurrentRound();
+            var nextEx = getCurrentExercise();
+
+            var h = '';
+            // Nav bar
+            var loc = workoutData.days[dayName].location;
+            h += '<div class="nav-bar">';
+            h += '<a href="index.html" class="back-link">← Back</a>';
+            h += '<div class="session-info"><div class="location">' + esc(loc) + '</div><div>' + esc(dayName) + '</div></div>';
+            h += '</div>';
+
+            // Round bar
+            h += '<div class="round-bar">Round ' + round + ' / ' + maxSets + ' complete!</div>';
+
+            // Rest area
+            h += '<div class="rest-area">';
+            h += '<div class="rest-emoji">😌</div>';
+            h += '<div class="rest-label">Rest</div>';
+            h += '<div class="rest-timer" id="rest-timer">2:00</div>';
+            h += '<div class="rest-next">Next up: <strong>' + esc(nextEx.name) + '</strong></div>';
+            h += '<button class="btn btn-start" onclick="window.__skipRest()">Skip Rest →</button>';
+            h += '</div>';
+
+            // Progress
+            h += buildProgress();
+
+            document.getElementById('app').innerHTML = h;
+            startRestTimer(REST_SECONDS);
+        }
+
+        function startRestTimer(seconds) {
+            timerRemaining = seconds;
+            timerRunning = true;
+            updateRestDisplay();
+
+            timerInterval = setInterval(function() {
+                timerRemaining--;
+                updateRestDisplay();
+                if (timerRemaining <= 0) {
+                    stopTimer();
+                    resting = false;
+                    render();
+                }
+            }, 1000);
+        }
+
+        function updateRestDisplay() {
+            var el = document.getElementById('rest-timer');
+            if (!el) return;
+            var mins = Math.floor(timerRemaining / 60);
+            var secs = timerRemaining % 60;
+            el.textContent = mins + ':' + (secs < 10 ? '0' : '') + secs;
+        }
+
+        // Timer for exercises
         function startTimer(seconds) {
             timerRemaining = seconds;
             timerRunning = true;
@@ -400,9 +494,7 @@
             h += '</div>';
 
             // Round bar
-            h += '<div class="round-bar">';
-            h += '<span class="round-label">Round </span>' + round + ' / ' + maxSets;
-            h += '</div>';
+            h += '<div class="round-bar">Round ' + round + ' / ' + maxSets + '</div>';
 
             // Current exercise
             h += '<div class="exercise-area">';
@@ -412,9 +504,12 @@
                 h += '<div class="exercise-detail">(' + esc(ex.detail) + ')</div>';
             }
             if (ex.type === 'reps') {
-                h += '<div class="exercise-target">' + ex.sets + ' × ' + ex.target + '</div>';
+                h += '<div class="exercise-target">' + ex.target + ' reps</div>';
             } else {
-                h += '<div class="exercise-target">' + ex.sets + ' × ' + ex.target + ex.unit + '</div>';
+                h += '<div class="exercise-target">' + ex.target + ex.unit + '</div>';
+            }
+            if (ex.weight) {
+                h += '<div class="exercise-weight">' + esc(ex.weight) + '</div>';
             }
             if (ex.type === 'time') {
                 h += '<div class="timer-display" id="timer">' + ex.target + ex.unit + '</div>';
@@ -436,12 +531,18 @@
             h += '</div>';
 
             // Progress
-            h += '<div class="progress-section">';
+            h += buildProgress();
+
+            document.getElementById('app').innerHTML = h;
+        }
+
+        function buildProgress() {
+            var h = '<div class="progress-section">';
             h += '<div class="progress-title">Progress</div>';
             h += '<div class="progress-list">';
             for (var i = 0; i < exercises.length; i++) {
                 var e = exercises[i];
-                var isCurrent = (currentStep % exercises.length) === i;
+                var isCurrent = !resting && (currentStep % exercises.length) === i;
                 var setsDone = getExerciseSetsDone(i);
                 h += '<div class="progress-item' + (isCurrent ? ' current' : '') + '">';
                 h += '<span class="p-name">' + esc(e.name) + '</span>';
@@ -453,8 +554,7 @@
                 h += '</span></div>';
             }
             h += '</div></div>';
-
-            document.getElementById('app').innerHTML = h;
+            return h;
         }
 
         function showCompletion() {
@@ -495,6 +595,11 @@
             render();
         };
         window.__skipTimer = function() { advance(); };
+        window.__skipRest = function() {
+            stopTimer();
+            resting = false;
+            render();
+        };
 
         // Go
         init();
