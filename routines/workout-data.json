@@ -10,7 +10,8 @@
           "sets": 3,
           "type": "reps",
           "target": "10",
-          "unit": ""
+          "unit": "",
+          "weight": null
         },
         {
           "name": "Goblet squats",
@@ -18,7 +19,8 @@
           "sets": 3,
           "type": "reps",
           "target": "10",
-          "unit": ""
+          "unit": "",
+          "weight": "6 kg"
         },
         {
           "name": "Dumbbell rows",
@@ -26,7 +28,8 @@
           "sets": 3,
           "type": "reps",
           "target": "8",
-          "unit": ""
+          "unit": "",
+          "weight": "6 kg"
         },
         {
           "name": "Plank",
@@ -34,7 +37,8 @@
           "sets": 3,
           "type": "time",
           "target": "20",
-          "unit": "s"
+          "unit": "s",
+          "weight": null
         }
       ]
     },
@@ -47,7 +51,8 @@
           "sets": 3,
           "type": "reps",
           "target": "3",
-          "unit": ""
+          "unit": "",
+          "weight": null
         },
         {
           "name": "Hanging knee raises",
@@ -55,7 +60,8 @@
           "sets": 3,
           "type": "reps",
           "target": "8",
-          "unit": ""
+          "unit": "",
+          "weight": null
         },
         {
           "name": "Dips",
@@ -63,7 +69,8 @@
           "sets": 3,
           "type": "reps",
           "target": "8",
-          "unit": ""
+          "unit": "",
+          "weight": null
         },
         {
           "name": "Dead hang",
@@ -71,7 +78,8 @@
           "sets": 3,
           "type": "time",
           "target": "15",
-          "unit": "s"
+          "unit": "s",
+          "weight": null
         }
       ]
     },
@@ -84,7 +92,8 @@
           "sets": 3,
           "type": "reps",
           "target": "8",
-          "unit": ""
+          "unit": "",
+          "weight": "6 kg"
         },
         {
           "name": "Dumbbell lunges",
@@ -92,7 +101,8 @@
           "sets": 3,
           "type": "reps",
           "target": "8",
-          "unit": ""
+          "unit": "",
+          "weight": "6 kg"
         },
         {
           "name": "Knee push-ups",
@@ -100,7 +110,8 @@
           "sets": 3,
           "type": "reps",
           "target": "8",
-          "unit": ""
+          "unit": "",
+          "weight": null
         },
         {
           "name": "Bicycle crunches",
@@ -108,7 +119,8 @@
           "sets": 3,
           "type": "reps",
           "target": "12",
-          "unit": ""
+          "unit": "",
+          "weight": null
         }
       ]
     },
@@ -121,7 +133,8 @@
           "sets": 3,
           "type": "reps",
           "target": "3",
-          "unit": ""
+          "unit": "",
+          "weight": null
         },
         {
           "name": "Hanging knee raises",
@@ -129,7 +142,8 @@
           "sets": 3,
           "type": "reps",
           "target": "8",
-          "unit": ""
+          "unit": "",
+          "weight": null
         },
         {
           "name": "Knee push-ups",
@@ -137,7 +151,8 @@
           "sets": 3,
           "type": "reps",
           "target": "10",
-          "unit": ""
+          "unit": "",
+          "weight": null
         },
         {
           "name": "L-sit hang",
@@ -145,7 +160,8 @@
           "sets": 3,
           "type": "time",
           "target": "10",
-          "unit": "s"
+          "unit": "s",
+          "weight": null
         }
       ]
     }
