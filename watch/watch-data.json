@@ -760,6 +760,26 @@
       "summary": "Dat Ngo introduces Arize AI's platform for LLM observability, evaluation, and experimentation. He demonstrates how open-telemetry based tracing and session mapping provide deep insights into agent behavior, while diverse evaluation metrics\u2014ranging from LLM-as-a-judge to deterministic logic\u2014help developers gather crucial performance signals. The talk emphasizes bridging technical AI engineers with domain-expert product managers through intuitive evaluation interfaces. Beneficial for engineers and PMs aiming to transition LLM prototypes into production.",
       "added": "2026-06-08",
       "times_shown": 0
+    },
+    {
+      "slug": "from-transcription-to-live-music-geminis-audio-stack-thor-schaeff-google-deepmin",
+      "title": "From Transcription to Live Music: Gemini's Audio Stack \u2014 Thor Schaeff, Google DeepMind",
+      "url": "https://www.youtube.com/watch?v=Bc6Ojl2XS1w",
+      "video_id": "Bc6Ojl2XS1w",
+      "channel": "AI Engineer",
+      "summary": "In this presentation, Thor Schaeff, a Developer Relations Engineer at Google DeepMind, discusses the latest advancements in AI audio technology, particularly within the Gemini ecosystem. He demonstrates EchoScript AI, a tool powered by Gemini 3.1 Flash that can transcribe multi-lingual audio, identify emotions, and provide translations. Additionally, Schaeff explains how developers can customize speech generation by using structured prompts to direct the AI persona, accent, and pacing. This video is highly beneficial for AI engineers and developers interested in implementing advanced audio processing and speech synthesis into their applications.",
+      "added": "2026-06-10",
+      "times_shown": 0
+    },
+    {
+      "slug": "rag-is-dead-right-kuba-rogut-turbopuffer",
+      "title": "RAG is dead, right?? \u2014 Kuba Rogut, Turbopuffer",
+      "url": "https://www.youtube.com/watch?v=UM6sFg_jdlE",
+      "video_id": "UM6sFg_jdlE",
+      "channel": "AI Engineer",
+      "summary": "This presentation by Kuba Rogut of turbopuffer explores the evolution of Retrieval-Augmented Generation (RAG) into hybrid, tool-rich agentic search. Rogut argues that the traditional approach of one-time vector retrieval is being replaced by agentic retrieval, where AI agents iteratively search, reason, and fetch only the necessary data as they work. He highlights real-world examples from Cursor and Claude to demonstrate how this shift significantly improves answer accuracy and reduces computational costs. This video is ideal for AI engineers and software developers looking to build more efficient, state-of-the-art LLM retrieval systems.",
+      "added": "2026-06-10",
+      "times_shown": 0
     }
   ],
   "archive": [
