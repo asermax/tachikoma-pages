@@ -80,7 +80,7 @@
       "category": "engineering",
       "summary": "Comprehensive breakdown of coding agent architecture (Claude Code, Codex CLI, etc.). Covers six core components: live repo context, prompt shape and cache reuse, tool access/use, context bloat mitigation (clipping, transcript reduction, deduplication), structured session memory (full transcript vs working memory), and delegation with bounded subagents. Key insight: the harness is often the distinguishing factor when base LLM capabilities are similar.",
       "added": "2026-04-06",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "httpsmartinfowlercomarticlesharness-engineeringhtml",
@@ -98,7 +98,7 @@
       "category": "engineering",
       "summary": "Introduces Absurd, an open-source library for durable workflow execution using only Postgres as its backing store — no extensions, compiler plugins, or third-party services. Explains durable execution fundamentals: queue system + state store with SELECT FOR UPDATE SKIP LOCKED for queue semantics. Tasks decompose into sequential steps with checkpointed results; on failure, replays from last checkpoint. Maps naturally onto AI agent patterns — agents dynamically decide their own path, and Absurd handles this by auto-incrementing step names and storing message deltas. Supports sleeping, suspending for external events, and timeouts. The argument: not every problem needs Temporal-scale complexity — a single SQL file + thin SDK suffices for many real-world use cases, especially self-hosted software.",
       "added": "2026-04-08",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "human-ai-giles-thomas",
@@ -134,7 +134,7 @@
       "category": "engineering",
       "summary": "Andrew Quinn describes replacing a 3 GB SQLite database with a 10 MB finite state transducer (FST) binary in his Finnish-English dictionary app Taskusanakirja, achieving a roughly 300x reduction in size. The original Go version used a trie for prefix search, which worked for base words but couldn't scale to Finnish's 40-60 million inflected forms. After rewriting in Rust and discovering BurntSushi's fst crate, he found FSTs compress both prefixes and suffixes — making them ideal for agglutinative languages where a handful of inflectional suffixes repeat across tens of thousands of words. The key lesson: shipping the 'bad easy thing' first made it cheap to experiment and discover the far better solution later.",
       "added": "2026-05-10",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "httpsopensubstackcompubpragmaticengineerprevisiting-no-silver-bullets-in-theutm",
@@ -251,6 +251,15 @@
       "category": "engineering",
       "summary": "Practical guide to automated feedback mechanisms (sensors) wired into coding agent workflows to maintain codebase quality. Covers three categories: static analysis with custom agent-targeted linting rules, structural sensors using architecture tests to enforce boundaries and prevent coupling, and regression sensors with mutation testing to catch tests with missing assertions. Also explores inferential sensors using LLMs to evaluate modularity and higher-level structure. No single sensor is a silver bullet, but layering them together significantly improves maintainability of AI-generated code.",
       "added": "2026-06-08",
+      "times_shown": 0
+    },
+    {
+      "slug": "gaslighting-openness",
+      "title": "Gaslighting Openness",
+      "url": "https://lucumr.pocoo.org/2026/6/10/gaslighting/",
+      "category": "ai",
+      "summary": "Armin Ronacher argues that large tech companies are increasingly manipulating the narrative around openness by framing restricted access as being in users' best interests — what he calls 'gaslighting openness.' He points to Apple's EU AI fight and Anthropic's model restrictions as examples of corporations that benefited from open ecosystems now closing doors behind them, wrapping restrictions in safety language. He contends the EU's DMA matters because it pushes back against this narrative manipulation, and that short-term product pain is worth it to keep technology access democratized — especially for Europeans facing structural disadvantages.",
+      "added": "2026-06-10",
       "times_shown": 0
     }
   ],
