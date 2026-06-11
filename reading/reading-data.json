@@ -261,6 +261,15 @@
       "summary": "Armin Ronacher argues that large tech companies are increasingly manipulating the narrative around openness by framing restricted access as being in users' best interests — what he calls 'gaslighting openness.' He points to Apple's EU AI fight and Anthropic's model restrictions as examples of corporations that benefited from open ecosystems now closing doors behind them, wrapping restrictions in safety language. He contends the EU's DMA matters because it pushes back against this narrative manipulation, and that short-term product pain is worth it to keep technology access democratized — especially for Europeans facing structural disadvantages.",
       "added": "2026-06-10",
       "times_shown": 0
+    },
+    {
+      "slug": "prompts-are-code",
+      "title": "Prompts Are Code",
+      "url": "https://mariozechner.at/posts/2025-06-02-prompts-are-code/",
+      "category": "ai",
+      "summary": "Mario Zechner argues for treating LLMs as 'shitty general purpose computers' that we program with structured natural language prompts rather than conversing with ad hoc instructions. He demonstrates this with a real-world case study: porting the Spine animation runtimes from Java to C++, where a deterministic prompt-as-program workflow with persistent JSON state, jq queries, and human checkpoints reduced a 2-3 week manual process to 2-3 days. The key insight is applying traditional software engineering thinking — inputs, state, outputs, loops, conditionals — to agentic coding workflows.",
+      "added": "2026-06-10",
+      "times_shown": 0
     }
   ],
   "archive": [
