@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-10T02:01:45.088492-03:00",
+  "generated_at": "2026-06-11T00:21:04.829440-03:00",
   "week_start": "2026-06-07",
   "week_label": "June 07 - June 13, 2026",
-  "last_updated": "Wednesday, June 10, 2026 at 02:01",
+  "last_updated": "Thursday, June 11, 2026 at 00:21",
   "stats": {
-    "completed": 4.0,
-    "planned": 8,
-    "display": "4 / 8"
+    "completed": 4.5,
+    "planned": 12,
+    "display": "4.5 / 12"
   },
   "daily": {
     "Sunday": {
@@ -25,9 +25,9 @@
       "total": 2
     },
     "Wednesday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 4
     },
     "Thursday": {
       "status": "empty",
@@ -50,9 +50,9 @@
       "name": "Trumpet Practice",
       "emoji": "",
       "status": "pending",
-      "accumulated": "0min",
+      "accumulated": "15min",
       "target": "60min",
-      "progress_pct": 0
+      "progress_pct": 25
     },
     {
       "name": "Reading",
@@ -79,7 +79,7 @@
         },
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "skipped"
         },
         {
           "day": "Thu",
@@ -98,7 +98,7 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -166,7 +166,7 @@
         },
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "2km, 16min, 145bpm, 145bpm, 207kcal",
@@ -185,7 +185,7 @@
         },
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -195,10 +195,10 @@
     }
   ],
   "spirit": {
-    "state": "tired",
+    "state": "critical",
     "emoji": "\ud83d\udc10",
     "title": "\ud83d\udc10 Winter Mountain Goat",
-    "image": "assets/tired.jpg",
-    "description": "Your mountain goat is sleepy and muted, ears drooping, half-closed eyes gazing out over grey-blue snowfall, low energy but still standing on the peak."
+    "image": "assets/critical.jpg",
+    "description": "Your mountain goat looks worried and small, hunched against harsh cold wind, dim aurora barely visible, fur ruffled by the storm."
   }
 }
