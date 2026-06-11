@@ -1,7 +1,6 @@
 const ARTICLES = [
     { slug: 'agent-context', title: 'Agent Context', meta: 'Sankalp · June 2026' },
     { slug: 'policy-on-the-ai-exponential', title: 'Policy on the AI Exponential', meta: 'Dario Amodei · June 2026' },
-    { slug: 'prompts-are-code', title: 'Prompts Are Code', meta: 'Mario Zechner · June 2025' },
     { slug: 'loop-engineering', title: 'Loop Engineering', meta: 'Addy Osmani · June 2026' },
     { slug: 'what-is-code', title: 'What Is Code?', meta: 'Srujana Pundi · May 2026' },
     { slug: 'conductors-to-orchestrators', title: 'Conductors to Orchestrators: The Future of Agentic Coding', meta: 'Addy Osmani · November 2025' },
