@@ -1,0 +1,117 @@
+{
+  "title": "Policy on the AI Exponential",
+  "meta": "Dario Amodei · June 2026 · ~18 min listen",
+  "body": "<div class=\"chunk\"><p>Policy on the AI Exponential</p>\n</div>\n<div class=\"chunk\"><p>In one of the side plots to The Lord of the Rings, two of the Hobbits attempt to rouse Treebeard, a wise but ponderous sentient tree, to defend his forest from an army that is cutting it down. The problem is that Treebeard operates at a very different speed than the Hobbits. It takes him a full day simply to say hello to another tree, so getting him and his peers to act fast enough is nearly impossible.</p>\n</div>\n<div class=\"chunk\"><p>The intersection of AI and our political institutions feels a bit like the Hobbits and Treebeard. AI is advancing at a lightning pace. In only four years, AI models have gone from barely being able to write a coherent line of code to writing most of the code at major AI companies. Similar gains have been made in biology, physics, math, finance, law, translation, and many other fields. AI's scaling laws, which predict an exponential increase in general cognitive capabilities with increasing computing power, now have over a decade of empirical evidence behind them. If these scaling laws continue for only a year or two longer, we are likely to get what I've called Powerful AI, or &quot;a country of geniuses in a datacenter.&quot;</p>\n</div>\n<div class=\"chunk\"><p>By contrast, policy, and especially legislation, moves very slowly. Often this is for good reasons: governments have grave powers, and it's usually for the best that they aren't used too hastily. But the mismatch in timescale is nevertheless very painful: in the several years that it can take Congress to act, AI can go from an amusing toy to the full country of geniuses.</p>\n</div>\n<div class=\"chunk\"><p>Over the last few years since AI has become a major commercial technology, those of us who wanted to handle it responsibly have faced a dilemma. We could see clearly where the exponential was going: we strongly suspected that within a few years AI would be one of the rare technologies that fundamentally reshapes the entire policy landscape, in the same way that nuclear weapons reshaped geopolitics and the industrial revolution fundamentally reshaped every economic and social issue. But to those looking only at what AI could do at the time, it looked like a much more mundane technology. It was hard to convince most policymakers and companies that anything other than a laissez faire attitude made sense.</p>\n</div>\n<div class=\"chunk\"><p>Given the limits imposed by this situation, many safety advocates, including Anthropic, have so far been focused on advocating for policy actions that preserve optionality, tee up a fast reaction in the future, or give the world better insight into what is coming. These are not enough, but they have felt like all that was possible.</p>\n</div>\n<div class=\"chunk\"><p>In the last few months, however, the evidence of AI's incredible power, as well as its risks, has become undeniable. Perhaps the most emblematic example is Claude Mythos Preview and the discovery that frontier models pose very real risks to cybersecurity, creating the potential for disruption of the financial sector, critical infrastructure, and national security. Mythos Preview scrambled the global cybersecurity landscape. But its broader significance is that it proves beyond doubt that AI models are now tools of global and national strategic consequence.</p>\n</div>\n<div class=\"chunk\"><p>We now, globally and collectively, need to activate a slow and rickety policy apparatus to deal with risks and opportunities that are going to compound surprisingly quickly from here. Many policymakers are showing increased openness to taking action, and it's been encouraging to see our peers come around to the same positions we've been advocating for over the past few years. This is good, but I worry that these early actions are at least a year out of step with AI's rapid progress.</p>\n</div>\n<div class=\"chunk\"><p>I will focus on five perennial policy areas that need re-imagining in an AI world: regulation and public safety, macroeconomics and tax policy, scientific innovation, the balance of power between state and society, and geopolitics.</p>\n</div>\n<div class=\"chunk\"><p>Along with this essay, Anthropic is releasing a legislative proposal on frontier model testing and a policy framework for job displacement, for which we intend to provide substantial financial backing.</p>\n</div>\n<div class=\"chunk\"><p>Section 1: Regulation and public safety.</p>\n</div>\n<div class=\"chunk\"><p>Every new technology or product has both beneficial and harmful uses, and therefore presents a dilemma between innovation and safety. These dynamics loomed large for AI in 2023 and 2024. It was clear to Anthropic that AI might in the future be capable of producing biological weapons that could threaten millions, or autonomous misbehavior that in extreme cases could even threaten humanity itself. Less clear was the exact form in which the risks would appear, how best to test for them and mitigate them, and how they would play out in practice. There was therefore a high risk that legislation written ahead of time would end up being ineffective.</p>\n</div>\n<div class=\"chunk\"><p>Ultimately, we concluded that the right approach at that time was transparency. Developers of AI models should have to disclose their safety procedures and the tests that they run on their models and report on any critical safety incidents. Thus, in 2025, Anthropic supported transparency legislation, helping to pass bills in California, New York, and Illinois, and advocating for a transparency standard at the federal level.</p>\n</div>\n<div class=\"chunk\"><p>However, now the risks are clearly here. It is time to go beyond transparency to more serious and binding regulation of AI. I believe the best analogy, at least at the current stage of the exponential, is to cars, airplanes, or drugs, powerful technologies essential to the modern economy, but capable of killing large numbers of people if designed or operated poorly. I therefore believe we should model AI regulation on agencies like the Federal Aviation Administration, the FAA. Frontier AI models, like airplanes, should be required to go through technical testing and auditing, and their release should be blocked or reversed as a threat to public safety if they do not meet high standards of safety.</p>\n</div>\n<div class=\"chunk\"><p>Anthropic's proposal includes several elements. Models above a threshold of compute should undergo mandatory testing by a qualified third party for their level of risk in four specific areas: cybersecurity, biological weapons, loss of control of AI systems, and automated R&amp;D that could accelerate these other risks. The government should have the power to block or deter deployment of the model if it is determined to present unacceptable risks. This power must be scoped to the above four specific risks and there must be protective measures against political favoritism or arbitrary decisions. Third-party evaluation could be done by a government agency similar to the FAA, or a set of private organizations that are authorized and inspected by the government to evaluate models according to certain standards. AI companies that develop advanced AI models must have strong security standards that protect their model weights, should conduct regular red teaming and penetration testing, and should work with the government to defend against major threat actors. Safety incidents in the four critical areas must be reported promptly.</p>\n</div>\n<div class=\"chunk\"><p>There may come a time, perhaps relatively soon, when we need to go beyond this, when the most powerful AI systems look less like airplanes or automobiles and more like weaponizable nuclear materials, a threat to humanity rather than just a threat to public safety. If that occurs, we may need more aggressive regulatory measures than those I have laid out. But just as it was difficult in 2024 to target and apply the measures I'm suggesting now, I don't think we should get ahead of ourselves. We should design policies for the dangers that are emerging today, while laying the foundations to ramp up our response even more quickly as new dangers appear.</p>\n</div>\n<div class=\"chunk\"><p>Section 2: Macroeconomics and tax policy.</p>\n</div>\n<div class=\"chunk\"><p>Governments have long faced the problem of how to encourage economic growth while also providing important public services and ensuring that the least fortunate are taken care of. An important and generally correct premise of these debates has been that economic growth is fragile and difficult to achieve. I suspect that powerful AI may scramble this assumption. If AI achieves the ability to do most cognitive tasks far better than humans, it stands to reason that it could result in extremely rapid and robust economic growth. But for exactly the same reasons, AI may also act as a more general economic substitute for human cognitive abilities than previous technologies have, while also altering the economy far faster than previous technologies have. Thus, it's reasonable to think that AI could produce much larger disruptions to the labor market than previous technologies, and potentially more enduring disruptions. We risk ending up in a world where the economic tradeoff dial is stuck on the hypergrowth, hyper-inequality setting, and is potentially very hard to unstick from that setting. The key challenge in such a world won't be incentivizing growth, but finding a way for everyone to share in the benefits.</p>\n</div>\n<div class=\"chunk\"><p>Let me be extremely clear on two points. First, enduring job displacement is undesirable and dangerous, and we should do everything we can to minimize or prevent it, not to bring it about. As a company, Anthropic always does as much as it can to work with customers to find creative new use cases and new sources of revenue that allow them to do more with their existing workforce, rather than focusing solely on cost savings. I do think AI will enable a number of new economic opportunities. But at the same time we should recognize that there's a decent possibility that, despite all our efforts, AI still causes significant enduring job loss, and that this may be an intrinsic property of the technology and the way it broadly replicates human cognition.</p>\n</div>\n<div class=\"chunk\"><p>Second, any response to AI-driven job displacement needs to address both the need to provide for everyone economically, and the need for people to find meaning, purpose, and agency. The latter is ultimately more important, and it depends on deep questions about how society is organized. I am actually very optimistic that, even in a world with AI's that are better than everyone at everything, humans can live lives of deep purpose and strive to build awe-inspiring and beautiful things. But this is something to be collectively worked out by society as a whole, not something policy can directly address. Policy can be most helpful in buying us time to do that work, by slowing down job loss and providing economically for those likely to be affected.</p>\n</div>\n<div class=\"chunk\"><p>Some key policy interventions include measurement and tracking of AI job displacement, pro-employment incentives like wage insurance policies, retention tax incentives, workforce training grants, and infrastructure to facilitate matching of employers to employees. If AI-driven labor displacement ends up being large in magnitude and permanently drives down the demand for labor, it will likely be necessary to go beyond mere incentive programs to long-term income support for a significant fraction of the labor force. Mechanisms such as universal basic income could be financed through taxes on relevant companies or raising the capital gains tax.</p>\n</div>\n<div class=\"chunk\"><p>Section 3: Accelerating AI's positive impact.</p>\n</div>\n<div class=\"chunk\"><p>Just as we must grapple with the balance between innovation and safety for AI itself, we must grapple with the same balance for technologies that are likely to be accelerated by AI, such as biomedicine, energy, or materials science. But while AI itself is likely to present novel challenges that emerge very quickly, other fields accelerated by AI are likely to encounter a very different problem: regulatory systems that were designed for a slower pace of innovation and are not prepared to handle the deluge of new products and advances that AI will bring. Thus, for downstream applications of AI, in contrast to AI itself, I am more worried about the regulatory apparatus slowing down progress than I am about it failing to address important risks.</p>\n</div>\n<div class=\"chunk\"><p>Let me focus on one illustrative area: biomedical innovation. AI is likely to greatly increase the rate at which new drug candidates enter the regulatory pipeline, increase the effect sizes and improve the safety profiles of new drugs, develop drug candidates for diseases that have never been successfully treated before, and rapidly create entire new forms of therapies.</p>\n</div>\n<div class=\"chunk\"><p>Some of these advances will naturally accelerate regulatory timelines without need for structural change. But the regulatory system is currently designed to apply a high level of scrutiny and many stages of testing, under the assumption that drug candidates often don't work and often have serious safety problems even when they do. The typical time for a drug candidate to pass through the regulatory pipeline is 7 to 8 years. Without reforms, AI will simply jam or overload this system.</p>\n</div>\n<div class=\"chunk\"><p>Obviously, we don't want to change things in a way that leads to a crop of snake-oil drugs or widespread safety incidents. But some relatively simple reforms could make the FDA, EMA, and similar agencies more adaptable. Many of the steps in the clinical process that previously required expensive and slow experiments may soon be done via AI simulation or analysis. Regulatory agencies should consider developing standards now for what it would take to accept such methods. This includes AI-based pharmacodynamics and pharmacokinetics modeling, prediction of toxicology to avoid the need for multiple species animal toxicology, more accurate dose selection, biomarker validation via analysis of large datasets, synthetic control arms in clinical trials, and developing surrogate endpoints.</p>\n</div>\n<div class=\"chunk\"><p>Biomedical acceleration should substantially increase AI's benefits, but it's worth noting that it may also help to reduce AI's risks.</p>\n</div>\n<div class=\"chunk\"><p>Section 4: The state and civil liberties.</p>\n</div>\n<div class=\"chunk\"><p>Every system of government has to confront the question of the state's power and its limits. AI threatens to upset this balance while also dramatically raising its stakes. But if we react quickly and meet the moment, we can use AI to create a world that has more robust and durable guarantees of liberty and better defense against threats, than we have ever had before.</p>\n</div>\n<div class=\"chunk\"><p>Powerful AI in the wrong hands could be the ultimate tool of autocracy, and our existing legal and constitutional protections are not fully equipped to counter this threat. A fully automated drone army could, in the future, obey unlawful orders and allow governments to unilaterally entrench their power. A surveillance-focused AI could analyze widely available information at massive scale and use it to infer the innermost details of every citizen's life.</p>\n</div>\n<div class=\"chunk\"><p>Some policy ideas include creating reliable accountability rules for fully autonomous weapons, requiring them to respond to mechanisms of constitutional and command accountability rather than blindly following orders. Banning the domestic use of fully autonomous weapons. Closing the bulk collection and data broker loophole, where data that Americans share with private companies can be purchased and used for bulk analysis in domestic surveillance. And ensuring public rights to AI advice during adverse government action, so that any person subject to regulatory or legal action has access to AI that is at least as capable as whatever the government is allowed to use.</p>\n</div>\n<div class=\"chunk\"><p>Finally, governments are not the only entities that we should beware of when it comes to AI-driven seizure of power. AI will soon become so capable that I worry it cannot safely be fully entrusted to either governments or companies, and there must be checks and balances on each. Anthropic's Long-Term Benefit Trust, an independent governance body designed to hold the company to its mission, is one such structure.</p>\n</div>\n<div class=\"chunk\"><p>Section 5: Securing leadership by democracies.</p>\n</div>\n<div class=\"chunk\"><p>It has become a common instinct to regard new technologies geopolitically as instruments of trade policy. But it is my very strong belief that AI is something much more profound, something that resets the whole game board and around which all future geopolitical strategy must be shaped, like nuclear weapons, but potentially even more so.</p>\n</div>\n<div class=\"chunk\"><p>If AI really will soon be a country of geniuses in a datacenter, then AI is likely to be the dominant source of military and economic power for any nation. A nation that possesses powerful AI facing one without it, or even facing one that is behind in AI by 3 years, could be the equivalent of an army of World War II Marines facing an army of medieval swordsmen.</p>\n</div>\n<div class=\"chunk\"><p>Democracies should seek to form a global coalition centered on building AI according to their common values, iteratively trying to draw in the rest of the world by making it more and more attractive to be part of the coalition and less and less attractive to be outside it. Some principles include managing the AI supply chain by freely sharing chips and semiconductor manufacturing equipment within the coalition while denying it to adversaries. Coordinating to address AI's risks through compatible international standards. Sharing AI's benefits through trade and regulatory policy. Mutual defense, where countries work together to defend each other with AI and from adversaries' AI. Rejection of AI-powered repression. And macroeconomic cooperation to counter employment effects.</p>\n</div>\n<div class=\"chunk\"><p>The goal should be to make membership in the coalition as attractive as possible, and the costs of remaining outside it clear. The coalition would rest on coordination among sovereign states, with each nation retaining full authority over its own affairs. It could grow iteratively, starting with ideologically aligned democracies and progressively welcoming countries prepared to meet the coalition's standards.</p>\n</div>\n<div class=\"chunk\"><p>A window of opportunity.</p>\n</div>\n<div class=\"chunk\"><p>AI's exponential progress has created an urgency and a pace of change that the policymaking process is ordinarily ill-equipped to handle. But it has also created a unique window of opportunity. The confluence of clear and present evidence of AI's risks, an early taste of the AI's potential for both economic value creation and economic disruption, and a remarkable public backlash against unregulated approaches to AI have created a situation where policymakers are unusually open to forward-looking actions. Treebeard and his forest are waking up.</p>\n</div>\n<div class=\"chunk\"><p>It's become popular in AI industry circles to view this as a PR problem, to say that AI needs better marketing. I reject this framing completely. People are worried about AI because they correctly perceive that its risks are real, not because AI CEOs have been insufficiently Panglossian. I believe it is my duty as an AI leader to continue to be transparent about these risks, and public concern in response to this transparency constitutes democratic accountability working as it should. The key challenge is focusing this concern into constructive solutions and not allowing it to descend into formless anger and violence.</p>\n</div>\n<div class=\"chunk\"><p>I am optimistic about finding solutions because many of these issues have a common-sense appeal across the political spectrum. There is an aspirational but realistic future world in which a broad nonpartisan coalition, driven by direct recognition of the challenges posed by AI, leads to sane and forward-looking policies being adopted much faster than usual. The sooner we do this, the sooner we can all share in AI's incredible benefits.</p>\n</div>\n",
+  "audio": "policy-on-the-ai-exponential.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      63.087,
+      124.415,
+      175.182,
+      226.91,
+      289.717,
+      329.965,
+      387.612,
+      429.459,
+      492.707,
+      537.154,
+      577.442,
+      616.689,
+      677.656,
+      706.464,
+      762.071,
+      807.479,
+      869.486,
+      911.494,
+      953.861,
+      1007.548
+    ],
+    "chunkMap": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        8,
+        9,
+        10
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        17
+      ],
+      [
+        18
+      ],
+      [
+        19
+      ],
+      [
+        20,
+        21
+      ],
+      [
+        22,
+        23
+      ],
+      [
+        24
+      ],
+      [
+        25,
+        26,
+        27
+      ],
+      [
+        28,
+        29
+      ],
+      [
+        30,
+        31,
+        32
+      ],
+      [
+        33,
+        34
+      ],
+      [
+        35
+      ],
+      [
+        36,
+        37,
+        38
+      ],
+      [
+        39,
+        40
+      ]
+    ],
+    "prefixOffset": 0
+  }
+}

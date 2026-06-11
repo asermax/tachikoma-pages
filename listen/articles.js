@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'policy-on-the-ai-exponential', title: 'Policy on the AI Exponential', meta: 'Dario Amodei · June 2026' },
     { slug: 'prompts-are-code', title: 'Prompts Are Code', meta: 'Mario Zechner · June 2025' },
     { slug: 'loop-engineering', title: 'Loop Engineering', meta: 'Addy Osmani · June 2026' },
     { slug: 'what-is-code', title: 'What Is Code?', meta: 'Srujana Pundi · May 2026' },
