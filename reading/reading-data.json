@@ -272,6 +272,15 @@
       "times_shown": 0
     },
     {
+      "slug": "agent-context",
+      "title": "Agent Context",
+      "url": "https://sankalp.bearblog.dev/agent-context/",
+      "category": "engineering",
+      "summary": "Sankalp argues against rage-baiting over other people's agent usage patterns, pointing out that different contexts (workload, deadlines, task type, cost) drive different automation strategies. He traces the evolution from micro-managing agents through rubric-based semi-automation to dynamic workflows with sub-agents, noting that each step required a 'trust fall' as models improved. The key drivers: amount of work, time pressure, task type and stage, and token cost — personal supply and demand determines what level of automation makes sense for you.",
+      "added": "2026-06-11",
+      "times_shown": 0
+    },
+    {
       "slug": "policy-on-the-ai-exponential",
       "title": "Policy on the AI Exponential",
       "url": "https://darioamodei.com/post/policy-on-the-ai-exponential",
