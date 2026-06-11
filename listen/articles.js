@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'formal-methods-and-the-future-of-programming', title: 'Formal methods and the future of programming', meta: 'Yaron Minsky · June 2025' },
     { slug: 'agent-context', title: 'Agent Context', meta: 'Sankalp · June 2026' },
     { slug: 'policy-on-the-ai-exponential', title: 'Policy on the AI Exponential', meta: 'Dario Amodei · June 2026' },
     { slug: 'loop-engineering', title: 'Loop Engineering', meta: 'Addy Osmani · June 2026' },
