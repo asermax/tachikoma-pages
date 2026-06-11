@@ -1,0 +1,67 @@
+{
+  "title": "Agent Context",
+  "meta": "Sankalp · June 2026 · ~7 min listen",
+  "body": "<div class=\"chunk\"><p>Agent Context</p>\n</div>\n<div class=\"chunk\"><p>People become curious, or ignore things, when they see something different from their experience and perception of doing things. When they see something wildly different, they get triggered.</p>\n</div>\n<div class=\"chunk\"><p>Things are already mentally destabilising with all the agent shenanigans, and I think a lot of the cognitive dissonance in people is due to people not considering the background context of other people's way of using agents.</p>\n</div>\n<div class=\"chunk\"><p>Peter Steinberger has been one such character, mainly because of the amount of tokens he has spent to work on his projects and being super vocal about it. Unless you have been living under a rock, you might know that he worked on OpenClaw and was vocal about how he shipped stuff without reviewing it and just made sure things work, even though there were lots of bugs. Ship at inference speed. Eventually he got acquired by OpenAI. Now he has an infinite supply of tokens and he likes to shove it in the face of us peasants who are not in a frontier lab.</p>\n</div>\n<div class=\"chunk\"><p>Some people say that these are glimpses into the future, and I think that's a good way to think about this. An alternative way to imagine this is: if you had lots of tokens at lower cost, what could you do with them?</p>\n</div>\n<div class=\"chunk\"><p>If you want to scale yourself, then you need to keep finding opportunities to automate chunks of your work. It might be a necessity or it might not. Then there's an element of craft: some people took pride in or loved writing code by hand. I took pride in micro-managing my agent with intentional prompts.</p>\n</div>\n<div class=\"chunk\"><p>The pattern of usage over the last year since Claude Code got good.</p>\n</div>\n<div class=\"chunk\"><p>At each step, people have identified that ok, the model is doing good enough at this, the blocks of code look correct, I don't need to look anymore. Basically, if accuracy increased, then there were diminishing returns to manually reviewing, so it just made sense to lay back and automate that step if possible. You have to take a trust fall and move to the next step. The pattern has evolved like this.</p>\n</div>\n<div class=\"chunk\"><p>First, micro-managing the agent with prompts and doing your tasks, then leaving off threads of agents to do work for 20ish minutes, more common with Codex and GPT-5 series than Claude.</p>\n</div>\n<div class=\"chunk\"><p>Second, writing a rubric and semi-automating the work with oversight until the task is done.</p>\n</div>\n<div class=\"chunk\"><p>Third, doing the same but with a big agent with a big bad rubric and a few sub-agent threads spawned like sub-processes, with their own context and forks and probably personalities.</p>\n</div>\n<div class=\"chunk\"><p>Fourth, doing the same with a bigger, smarter agent and lots of sub-agents with access to their own tools and maybe an IDE.</p>\n</div>\n<div class=\"chunk\"><p>Fifth, dynamic workflows, which scale this idea both vertically and horizontally. We will probably have something soon which lets the sub-agents communicate with each other too, the agent swarms idea.</p>\n</div>\n<div class=\"chunk\"><p>At a certain point, post the Opus 4.5 and GPT-5.2-codex era, we started seeing longer horizon workflows. This was the effort of both post-training and tooling efforts. Models got smarter with less compounding error over a trajectory, plus inference time compute. As the models got smarter in each iteration, we saw that the models did the same task in less time, and then had more time to proceed to the next level of task.</p>\n</div>\n<div class=\"chunk\"><p>We also got very strong reviewer agents with fewer false positives and hallucinations, so you could afford to have very little oversight over the code.</p>\n</div>\n<div class=\"chunk\"><p>All this led us to stuff like goal, automation, dynamic workflow, and loop, which is like a cron job to repeat a task until some goal is achieved, a new feature in Claude Code. I particularly liked the temporal based element for automation because a lot of tasks in software engineering in production systems involve going through stuff periodically and then doing something about it if there is some high entropy behaviour.</p>\n</div>\n<div class=\"chunk\"><p>The loop Peter was talking about is what people have been referring to as an orchestrator system for like 2 to 3 years now. When you implement an orchestrator for your personal building, your aim is to write a super detailed spec and then write the skills and rubrics and the evals so that the orchestrator can operate with minimal oversight.</p>\n</div>\n<div class=\"chunk\"><p>What drives people's usage patterns and why you shouldn't get rage-baited by others' usage patterns without knowing their context.</p>\n</div>\n<div class=\"chunk\"><p>You have to work based on your own situation and context, and with the way technology is moving forward, tilting towards the direction of automation is the right way. Different people have different situations which heavily influences the way they operate. You will have to consider cost, time, how much soul and intent you are willing to dilute to trade off for automation.</p>\n</div>\n<div class=\"chunk\"><p>I think there are four to five main drivers. You can use these as pointers to evaluate someone's context or your own context.</p>\n</div>\n<div class=\"chunk\"><p>First, amount of work. You would want maximum automation when you have a shitload of work to do. This has been my experience over the last two years of working with agents. Whenever I have had a lot of work or a deadline, I came up with novel ways to automate or at least parallelise my workflows. If you are a single maintainer and you have most of the context for some project and many people are dependent on it, then it just makes sense to automate while burning a lot of tokens. Most people don't have this amount of work.</p>\n</div>\n<div class=\"chunk\"><p>Second, time and deadlines. Naturally, when you are under a deadline, your mind focuses on completing the task. You become more output shaped than process shaped, and in such moments you will find yourself thinking ahead and automating the shit out of things.</p>\n</div>\n<div class=\"chunk\"><p>Third, type of task and stage of task. Some scenarios where automation can really help: working on the same codebase building tonnes of features where you have the basic foundation set up so most of the code part is integration. You have some rubric and you want to make bespoke software that is spiritually similar. Tasks where models are really good, like frontend and backend. How good the models are determines the level of oversight and trust fall you can take.</p>\n</div>\n<div class=\"chunk\"><p>Stage of task matters too. If you are bootstrapping, working on something cutting edge, or working on an initial foundation against which everything will piggyback, you need oversight. Tasks with high intent density are the hardest to automate.</p>\n</div>\n<div class=\"chunk\"><p>Fourth, cost. Big labs and companies have tonnes of budgets but the labs particularly have advantage of running their own inference and even more advanced models internally. They have essentially an unlimited supply of tokens so the employees naturally need to figure out the best automations or workflows. Combine all of these and it's sort of personal demand and supply. If you make more than you burn, then it's justifiable and makes sense to automate parts of your work and scale yourself. Just don't be the type of person who spends most of their time automating their setup.</p>\n</div>\n<div class=\"chunk\"><p>I like a couple of quotes from Cat Wu from the Lenny Podcast on this. She said, I think AI gives everybody a ton more leverage than they used to. And so I would push you towards anytime you realize that you're doing some manual task multiple times, think about how you can use Claude Code or other AI tools to automate that for you. Most people have creative parts of their job that they absolutely love and then tedious parts that they really hate. I think the beauty of AI is that it can do those tedious parts for you. So figure out the repetitive parts that you can pass to Claude. Iterate on those automations until the success rate is very high, and then focus on what more can you be doing for your team, for your product, for your company.</p>\n</div>\n<div class=\"chunk\"><p>And on underfunding forcing automation, she said, if you have Claude, you can just use that to automate a lot of work. Another principle is just encouraging people to go faster. So if you can do something today, you should just do it today. If you want to go faster, a really good way to do that is to just have Claude do more stuff.</p>\n</div>\n",
+  "audio": "agent-context.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      73.847,
+      124.535,
+      166.662,
+      221.43,
+      271.437,
+      311.365,
+      351.052,
+      381.099
+    ],
+    "chunkMap": [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        5,
+        6,
+        7
+      ],
+      [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      [
+        13,
+        14,
+        15
+      ],
+      [
+        16,
+        17,
+        18,
+        19
+      ],
+      [
+        20,
+        21
+      ],
+      [
+        22,
+        23
+      ],
+      [
+        24
+      ],
+      [
+        25,
+        26
+      ]
+    ],
+    "prefixOffset": 0
+  }
+}
