@@ -780,6 +780,16 @@
       "summary": "This presentation by Kuba Rogut of turbopuffer explores the evolution of Retrieval-Augmented Generation (RAG) into hybrid, tool-rich agentic search. Rogut argues that the traditional approach of one-time vector retrieval is being replaced by agentic retrieval, where AI agents iteratively search, reason, and fetch only the necessary data as they work. He highlights real-world examples from Cursor and Claude to demonstrate how this shift significantly improves answer accuracy and reduces computational costs. This video is ideal for AI engineers and software developers looking to build more efficient, state-of-the-art LLM retrieval systems.",
       "added": "2026-06-10",
       "times_shown": 0
+    },
+    {
+      "slug": "sovereign-escape-velocity-ownership-w-open-models-gus-martins-ian-ballantyne-goo",
+      "title": "Sovereign Escape Velocity: Ownership w Open Models \u2014 Gus Martins, & Ian Ballantyne, Google DeepMind",
+      "url": "https://www.youtube.com/watch?v=SS-A8sE7hkw",
+      "video_id": "SS-A8sE7hkw",
+      "channel": "AI Engineer",
+      "summary": "This video presents the launch of Google DeepMind's Gemma 4 family of open AI models, emphasizing how open-source technology provides organizations with greater control, customization, and ownership over their models and data. The presenters showcase the four available model sizes (E2B, E4B, 26B MoE, and 31B Dense), highlighting their impressive intelligence-per-parameter performance, cost-effective hardware requirements, and the transition to a permissive Apache 2.0 license to facilitate easier legal adoption. This presentation is highly valuable for AI engineers, developers, and enterprise leaders seeking secure, highly efficient, and fully customizable AI solutions that can run locally or on their own infrastructure.",
+      "added": "2026-06-11",
+      "times_shown": 0
     }
   ],
   "archive": [
