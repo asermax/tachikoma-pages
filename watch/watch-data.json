@@ -790,6 +790,36 @@
       "summary": "This video presents the launch of Google DeepMind's Gemma 4 family of open AI models, emphasizing how open-source technology provides organizations with greater control, customization, and ownership over their models and data. The presenters showcase the four available model sizes (E2B, E4B, 26B MoE, and 31B Dense), highlighting their impressive intelligence-per-parameter performance, cost-effective hardware requirements, and the transition to a permissive Apache 2.0 license to facilitate easier legal adoption. This presentation is highly valuable for AI engineers, developers, and enterprise leaders seeking secure, highly efficient, and fully customizable AI solutions that can run locally or on their own infrastructure.",
       "added": "2026-06-11",
       "times_shown": 0
+    },
+    {
+      "slug": "self-driving-products-product-signals-to-pull-requests-joshua-snyder-posthog",
+      "title": "Self Driving Products: Product Signals to Pull Requests \u2014 Joshua Snyder, PostHog",
+      "url": "https://www.youtube.com/watch?v=zMiSRliEzv4",
+      "video_id": "zMiSRliEzv4",
+      "channel": "AI Engineer",
+      "summary": "In this video, Josh from PostHog introduces an automated pipeline designed to transition product observability from passive dashboards to proactive, AI-driven software development by automatically generating pull requests. He outlines the technical mechanics of this process, including safety-filtered signal ingestion, grouping logical issues using LLM-generated queries instead of raw embeddings, and deploying sandboxed research agents with Model Context Protocol (MCP) tools to assess bug actionability. The key takeaway is that shifting from manual bug investigation to automated agentic PR generation can drastically shorten the software maintenance cycle. Software engineers, AI developers, and DevOps professionals looking to integrate AI agents into their CI/CD workflows would highly benefit from watching this presentation.",
+      "added": "2026-06-12",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-agent-ready-web-simplify-user-actions-with-webmcp-tara-agyemang-google",
+      "title": "The agent-ready web: Simplify user actions with WebMCP \u2014 Tara Agyemang, Google",
+      "url": "https://www.youtube.com/watch?v=ghJmWQCIHRM",
+      "video_id": "ghJmWQCIHRM",
+      "channel": "AI Engineer",
+      "summary": "This video introduces WebMCP (Web Model Context Protocol), a proposed web standard that allows developers to define their website's capabilities as structured tools for AI agents to use. The presenter highlights how traditional web designs, optimized for human interaction, pose challenges for AI agents, which must consume significant resources to perform simple tasks. By implementing WebMCP alongside robust web foundations like clean HTML, accessibility, and high performance, developers can make their sites more agent-ready. Web developers and AI engineers will benefit from watching this to learn how to create a more seamless browsing experience where both humans and AI can navigate web pages efficiently.",
+      "added": "2026-06-12",
+      "times_shown": 0
+    },
+    {
+      "slug": "why-cant-anyone-answer-questions-about-the-business-garrett-galow-workos",
+      "title": "Why Can't Anyone Answer Questions About the Business? \u2014 Garrett Galow, WorkOS",
+      "url": "https://www.youtube.com/watch?v=iUWwcG-C8OU",
+      "video_id": "iUWwcG-C8OU",
+      "channel": "AI Engineer",
+      "summary": "Garrett from WorkOS presents Studio, an internal AI-powered platform designed to streamline data retrieval and dashboard creation within the company. He highlights how Studio resolves the typical bottlenecks between non-technical staff and SQL-proficient engineers by using an AI agent to translate natural language prompts into database queries across sources like Snowflake, Notion, and Linear. Through live demonstrations, Garrett shows how the tool can generate interactive, reusable widgets that teams can easily share and reuse. This video is ideal for software engineers, product managers, and operations teams interested in building self-serve AI tooling to improve organizational productivity.",
+      "added": "2026-06-12",
+      "times_shown": 0
     }
   ],
   "archive": [
