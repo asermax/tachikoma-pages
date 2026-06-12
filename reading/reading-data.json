@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11",
+  "generated_at": "2026-06-12",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -710,6 +710,16 @@
       "summary": "Mario Zechner argues for treating LLMs as 'shitty general purpose computers' that we program with structured natural language prompts rather than conversing with ad hoc instructions. He demonstrates this with a real-world case study: porting the Spine animation runtimes from Java to C++, where a deterministic prompt-as-program workflow with persistent JSON state, jq queries, and human checkpoints reduced a 2-3 week manual process to 2-3 days. The key insight is applying traditional software engineering thinking — inputs, state, outputs, loops, conditionals — to agentic coding workflows.",
       "added": "2026-06-10",
       "read": "2026-06-11",
+      "has_notes": false
+    },
+    {
+      "slug": "formal-methods-and-the-future-of-programming",
+      "title": "Formal methods and the future of programming",
+      "url": "https://blog.janestreet.com/formal-methods-at-jane-street-index/",
+      "category": "engineering",
+      "summary": "Jane Street, historically skeptical of formal methods due to their prohibitive costs, is now building a dedicated formal methods team driven by the rise of agentic coding. AI coding agents both lower the cost of formal methods (by making proof-based tools more accessible) and increase their benefits (by providing strong feedback signals and addressing the verification bottleneck inherent in AI-generated code). Their goal is to make formal methods as pervasively useful as sophisticated type systems, leveraging their control of the OxCaml language and a community of programmers eager for advanced type-system features.",
+      "added": "2026-06-11",
+      "read": "2026-06-12",
       "has_notes": false
     }
   ]
