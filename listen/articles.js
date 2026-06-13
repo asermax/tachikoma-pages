@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'dangerous-technology-for-americans-only', title: 'Dangerous Technology For Americans Only', meta: 'Armin Ronacher · June 2026' },
     { slug: 'agent-context', title: 'Agent Context', meta: 'Sankalp · June 2026' },
     { slug: 'policy-on-the-ai-exponential', title: 'Policy on the AI Exponential', meta: 'Dario Amodei · June 2026' },
     { slug: 'loop-engineering', title: 'Loop Engineering', meta: 'Addy Osmani · June 2026' },
