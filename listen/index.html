@@ -457,13 +457,7 @@ function setupChunks(articleSync) {
 
     if (articleSync && articleSync.timestamps && articleSync.chunkMap) {
         syncData = articleSync;
-        // Pre-compute cumulative char ratios for sub-chunk highlighting
-        syncCharWeights = syncData.chunkMap.map(group => {
-            const chars = group.map(i => paragraphs[i]?.textContent.length || 1);
-            const total = chars.reduce((a, b) => a + b, 0);
-            let cum = 0;
-            return chars.map(c => { cum += c / total; return cum; });
-        });
+        syncCharWeights = [];
     } else {
         syncData = null;
         const chunkChars = paragraphs.map(p => p.textContent.length);
@@ -496,19 +490,8 @@ function getSyncChunk(time) {
     }
     const group = syncData.chunkMap[lo];
     if (!group || group.length === 0) return 0;
-    if (group.length === 1) return group[0];
-
-    // Calculate progress within this TTS chunk
-    const chunkStart = ts[lo];
-    const chunkEnd = lo + 1 < ts.length ? ts[lo + 1] : chunkStart + 60;
-    const progress = Math.max(0, Math.min(1, (time - chunkStart) / (chunkEnd - chunkStart)));
-
-    // Find sub-chunk by cumulative char weight
-    const weights = syncCharWeights[lo];
-    for (let i = 0; i < weights.length; i++) {
-        if (progress <= weights[i]) return group[i];
-    }
-    return group[group.length - 1];
+    // Return the first chunk in the group — the whole group is highlighted together
+    return group[0];
 }
 
 function highlightChunks(indices) {
@@ -591,7 +574,10 @@ audio.addEventListener('timeupdate', () => {
             const newChunk = getSyncChunk(audio.currentTime);
             if (newChunk !== currentChunkIndex) {
                 currentChunkIndex = newChunk;
-                highlightChunk(newChunk);
+                const group = syncData.chunkMap[syncData.timestamps.findIndex(
+                    (t, i) => t <= audio.currentTime && (i === syncData.timestamps.length - 1 || syncData.timestamps[i + 1] > audio.currentTime)
+                )] || [newChunk];
+                highlightChunks(group);
                 scrollToChunk(newChunk);
             }
         } else {
@@ -753,7 +739,10 @@ async function loadArticle(slug) {
                     if (syncData) {
                         const chunk = getSyncChunk(savedTime);
                         currentChunkIndex = chunk;
-                        highlightChunk(chunk);
+                        const group = syncData.chunkMap[syncData.timestamps.findIndex(
+                            (t, i) => t <= savedTime && (i === syncData.timestamps.length - 1 || syncData.timestamps[i + 1] > savedTime)
+                        )] || [chunk];
+                        highlightChunks(group);
                         setTimeout(() => scrollToChunk(chunk), 100);
                     } else {
                         const pct = savedTime / audio.duration;
