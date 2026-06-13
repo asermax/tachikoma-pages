@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-12T02:01:55.045212-03:00",
+  "generated_at": "2026-06-13T02:01:13.110647-03:00",
   "week_start": "2026-06-07",
   "week_label": "June 07 - June 13, 2026",
-  "last_updated": "Friday, June 12, 2026 at 02:01",
+  "last_updated": "Saturday, June 13, 2026 at 02:01",
   "stats": {
-    "completed": 8.375,
+    "completed": 8.5,
     "planned": 14,
-    "display": "8.4 / 14"
+    "display": "8.5 / 14"
   },
   "daily": {
     "Sunday": {
@@ -50,9 +50,9 @@
       "name": "Trumpet Practice",
       "emoji": "",
       "status": "pending",
-      "accumulated": "15min",
+      "accumulated": "25min",
       "target": "60min",
-      "progress_pct": 25
+      "progress_pct": 41
     },
     {
       "name": "Reading",
@@ -195,10 +195,10 @@
     }
   ],
   "spirit": {
-    "state": "tired",
+    "state": "content",
     "emoji": "\ud83d\udc10",
     "title": "\ud83d\udc10 Winter Mountain Goat",
-    "image": "assets/tired.jpg",
-    "description": "Your mountain goat is sleepy and muted, ears drooping, half-closed eyes gazing out over grey-blue snowfall, low energy but still standing on the peak."
+    "image": "assets/content.jpg",
+    "description": "Your mountain goat rests peacefully on a rocky ledge, fluffy white fur catching soft aurora light, calm and satisfied with a gentle warm smile."
   }
 }
