@@ -89,7 +89,7 @@
       "category": "engineering",
       "summary": "Birgitta Bockeler's mental model for building trust in AI coding agents via an 'outer harness' — feedforward guides (rules, specs, conventions) and feedback sensors (linters, tests, code review). Three regulation categories: maintainability (most tractable), architecture fitness (fitness functions for perf/observability), and behaviour (hardest — functional correctness). Introduces 'harnessability' (how amenable a codebase is to being harnessed) and 'harness templates' tied to common service topologies. Core thesis: harnesses externalize what developers implicitly bring, directing human input to where it matters most.",
       "added": "2026-04-07",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "absurd-workflows-armin-ronacher",
@@ -107,7 +107,7 @@
       "category": "ai",
       "summary": "Explores why AI is a terrible writer: it defaults to cliches because it's trained on internet text saturated with them. The core argument is that human writing has 'tiny sprinklings of poetry' — subtle literary flourishes like alliteration, gentle puns, and callbacks that make text memorable. AI cannot calibrate these touches; it either writes a full poem or flat generic prose. The practical conclusion: if you must use AI for first drafts, carefully edit the output with a human eye and get feedback from humans, not other AI. The goal is for humans to read, absorb, and remember.",
       "added": "2026-04-08",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "httpsmartinfowlercomarticlesreduce-friction-aifeedback-flywheelhtml",
@@ -134,7 +134,7 @@
       "category": "engineering",
       "summary": "Andrew Quinn describes replacing a 3 GB SQLite database with a 10 MB finite state transducer (FST) binary in his Finnish-English dictionary app Taskusanakirja, achieving a roughly 300x reduction in size. The original Go version used a trie for prefix search, which worked for base words but couldn't scale to Finnish's 40-60 million inflected forms. After rewriting in Rust and discovering BurntSushi's fst crate, he found FSTs compress both prefixes and suffixes — making them ideal for agglutinative languages where a handful of inflectional suffixes repeat across tens of thousands of words. The key lesson: shipping the 'bad easy thing' first made it cheap to experiment and discover the far better solution later.",
       "added": "2026-05-10",
-      "times_shown": 1
+      "times_shown": 2
     },
     {
       "slug": "httpsopensubstackcompubpragmaticengineerprevisiting-no-silver-bullets-in-theutm",
@@ -278,6 +278,24 @@
       "category": "ai",
       "summary": "Dario Amodei argues that AI's exponential progress has outpaced policymaking, creating an urgent need for coordinated action across five areas: FAA-style safety regulation for frontier models, macroeconomic policy to address potential enduring job displacement, reforming regulatory agencies (especially FDA) to handle AI-accelerated science, fortifying civil liberties against AI-powered autocracy, and building a democratic coalition to secure AI leadership globally. He frames this as a narrow window of opportunity where policymakers are unusually open to action.",
       "added": "2026-06-11",
+      "times_shown": 0
+    },
+    {
+      "slug": "dangerous-technology-for-americans-only",
+      "title": "Dangerous Technology For Americans Only",
+      "url": "https://lucumr.pocoo.org/2026/6/13/americans-only/",
+      "category": "ai",
+      "summary": "The article examines the US government's export control directive ordering Anthropic to suspend access to its Fable and Mythos models for foreign nationals, including non-US employees. Armin Ronacher argues this is not merely ironic given Anthropic's safety rhetoric but represents a dangerous shift: the US is treating AI like a weapon controlled by nationality rather than addressing whether dangerous models should be available to anyone at all. Ronacher turns a critical eye toward Europe, arguing the continent is unprepared because it has confused regulation with strategy and dependency with virtue. The author cautions against simply copying the American model, noting its deep inequalities, and argues that the long-term answer must be a return to international cooperation, open source, and human dignity — not the replacement of one nationalism with another.",
+      "added": "2026-06-13",
+      "times_shown": 0
+    },
+    {
+      "slug": "lines-of-code-got-a-better-publicist",
+      "title": "Lines of Code Got a Better Publicist",
+      "url": "https://curlewis.co.nz/posts/lines-of-code-got-a-better-publicist/",
+      "category": "ai",
+      "summary": "David Curlewis argues that the AI industry has regressed to using volume-based metrics -- like percentage of code written by AI and raw line counts -- to measure engineering productivity, despite the software industry spending two decades learning that such metrics are meaningless. He points to recent claims from Google (75% AI-generated code), Anthropic (~80% Claude-written code, 8x more code shipped), OpenAI (~80%), and Cursor (100M+ lines/day) as repackaged lines-of-code vanity metrics that only track adoption, not outcomes.\n\nCurlewis contrasts these with earlier outcome-based claims, such as GitHub's original finding that Copilot helped developers complete tasks 55% faster. He traces the shift to volume metrics to the fact that outcome evidence became complicated: while Cui et al. found a 26% task completion boost, GitClear observed rising code churn, and organizational-level surveys show roughly 10% productivity gains on average -- useful but far from transformative. He highlights Anthropic's own RCT showing AI-assisted developers scored 17% lower on code comprehension with no significant productivity gain.\n\nThe article's core concern is real-world impact: these vanity metrics are influencing budgets, headcount decisions, and layoffs at companies like Block and Atlassian. Curlewis advocates measuring AI-assisted engineering with battle-tested outcome metrics -- DORA metrics, reliability, rate of meaningful change, revenue, and customer value -- rather than adoption intensity dressed up as maturity.",
+      "added": "2026-06-13",
       "times_shown": 0
     }
   ],
