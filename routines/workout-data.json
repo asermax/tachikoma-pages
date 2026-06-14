@@ -1,5 +1,5 @@
 {
-  "week": "2026-W23",
+  "week": "2026-W24",
   "days": {
     "Monday": {
       "location": "Home - Dumbbells",
@@ -9,7 +9,7 @@
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "10",
+          "target": "12",
           "unit": "",
           "weight": null
         },
@@ -20,23 +20,23 @@
           "type": "reps",
           "target": "10",
           "unit": "",
-          "weight": "6 kg"
+          "weight": "8 kg"
         },
         {
           "name": "Dumbbell rows",
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "8",
+          "target": "10",
           "unit": "",
-          "weight": "6 kg"
+          "weight": "8 kg"
         },
         {
           "name": "Plank",
           "detail": null,
           "sets": 3,
           "type": "time",
-          "target": "20",
+          "target": "25",
           "unit": "s",
           "weight": null
         }
@@ -50,7 +50,7 @@
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "3",
+          "target": "4",
           "unit": "",
           "weight": null
         },
@@ -59,7 +59,7 @@
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "8",
+          "target": "10",
           "unit": "",
           "weight": null
         },
@@ -77,49 +77,8 @@
           "detail": null,
           "sets": 3,
           "type": "time",
-          "target": "15",
+          "target": "20",
           "unit": "s",
-          "weight": null
-        }
-      ]
-    },
-    "Wednesday": {
-      "location": "Home - Dumbbells",
-      "exercises": [
-        {
-          "name": "Dumbbell shoulder press",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "8",
-          "unit": "",
-          "weight": "6 kg"
-        },
-        {
-          "name": "Dumbbell lunges",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "8",
-          "unit": "",
-          "weight": "6 kg"
-        },
-        {
-          "name": "Knee push-ups",
-          "detail": "diamond",
-          "sets": 3,
-          "type": "reps",
-          "target": "8",
-          "unit": "",
-          "weight": null
-        },
-        {
-          "name": "Bicycle crunches",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "12",
-          "unit": "",
           "weight": null
         }
       ]
@@ -132,7 +91,7 @@
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "3",
+          "target": "4",
           "unit": "",
           "weight": null
         },
@@ -141,7 +100,7 @@
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "8",
+          "target": "10",
           "unit": "",
           "weight": null
         },
@@ -150,7 +109,7 @@
           "detail": "wide",
           "sets": 3,
           "type": "reps",
-          "target": "10",
+          "target": "12",
           "unit": "",
           "weight": null
         },
@@ -159,8 +118,49 @@
           "detail": null,
           "sets": 3,
           "type": "time",
-          "target": "10",
+          "target": "12",
           "unit": "s",
+          "weight": null
+        }
+      ]
+    },
+    "Saturday": {
+      "location": "Home - Dumbbells",
+      "exercises": [
+        {
+          "name": "Dumbbell shoulder press",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "10",
+          "unit": "",
+          "weight": "8 kg"
+        },
+        {
+          "name": "Dumbbell lunges",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "8",
+          "unit": "",
+          "weight": "8 kg"
+        },
+        {
+          "name": "Knee push-ups",
+          "detail": "diamond",
+          "sets": 3,
+          "type": "reps",
+          "target": "10",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Bicycle crunches",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "15",
+          "unit": "",
           "weight": null
         }
       ]
