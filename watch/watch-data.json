@@ -820,6 +820,26 @@
       "summary": "Garrett from WorkOS presents Studio, an internal AI-powered platform designed to streamline data retrieval and dashboard creation within the company. He highlights how Studio resolves the typical bottlenecks between non-technical staff and SQL-proficient engineers by using an AI agent to translate natural language prompts into database queries across sources like Snowflake, Notion, and Linear. Through live demonstrations, Garrett shows how the tool can generate interactive, reusable widgets that teams can easily share and reuse. This video is ideal for software engineers, product managers, and operations teams interested in building self-serve AI tooling to improve organizational productivity.",
       "added": "2026-06-12",
       "times_shown": 0
+    },
+    {
+      "slug": "code-isnt-free-mario-zechner-on-the-hard-truths-of-coding-with-ai-creator-of-pi",
+      "title": "Code Isn't Free \u2014 Mario Zechner on the Hard Truths of Coding With AI (creator of Pi)",
+      "url": "https://www.youtube.com/watch?v=GhjU-KvXtT0",
+      "video_id": "GhjU-KvXtT0",
+      "channel": "Jan-Niklas Wortmann",
+      "summary": "This video features an interview with Mario Zechner, the creator of the open-source coding agent Py, discussing the realities, challenges, and future of AI-assisted software development. Zechner warns that generating massive amounts of AI code creates heavy technical debt and criticizes modern vibe coding as a regression to outdated waterfall development models. He explains that he built Py to provide a stable, customizable alternative to commercial tools like Claude Code, while also highlighting how AI-generated pull requests are currently overwhelming open-source maintainers. This video is ideal for software engineers, open-source contributors, and tech leaders seeking a realistic, developer-centric perspective on the impact of AI in coding.",
+      "added": "2026-06-14",
+      "times_shown": 0
+    },
+    {
+      "slug": "pi-building-pi-openclaws-minimalist-coding-agent-mario-zechner-creator-of-pi",
+      "title": "Pi Building Pi, Openclaw's Minimalist Coding Agent | Mario Zechner, Creator of Pi",
+      "url": "https://www.youtube.com/watch?v=DPgJjRdQWrg",
+      "video_id": "DPgJjRdQWrg",
+      "channel": "The Modern Software Developer",
+      "summary": "This video features a discussion on the evolving role of AI coding agents in software development, detailing how tools have progressed from simple chat interfaces to more autonomous, file-roaming systems. The speakers explore different philosophies surrounding AI integration, highlighting the divide between fully autonomous code generation (the dark factories approach) and AI as assistive tools with human oversight. Guest Mario Zechner argues that while AI is incredibly useful for scaffolding and non-mission-critical tasks, human developers must retain control over core functionality due to security concerns, error compounding, and ultimate liability. Software engineers, tech team leaders, and those curious about the practical limitations and future of AI-assisted programming will benefit from watching this conversation.",
+      "added": "2026-06-14",
+      "times_shown": 0
     }
   ],
   "archive": [
