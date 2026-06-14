@@ -4,9 +4,9 @@
   "week_label": "June 07 - June 13, 2026",
   "last_updated": "Saturday, June 13, 2026 at 02:01",
   "stats": {
-    "completed": 8.5,
+    "completed": 9.5,
     "planned": 14,
-    "display": "8.5 / 14"
+    "display": "9.5 / 14"
   },
   "daily": {
     "Sunday": {
@@ -40,9 +40,9 @@
       "total": 0
     },
     "Saturday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 1,
+      "total": 1
     }
   },
   "goals": [
@@ -113,12 +113,12 @@
       "sessions": [
         {
           "day": "Sat",
-          "status": "pending"
+          "status": "done"
         }
       ],
-      "metrics_total": "",
+      "metrics_total": "1h",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
