@@ -460,9 +460,12 @@ function setupChunks(articleSync) {
         // Pre-compute cumulative char ratios for sub-chunk highlighting
         syncCharWeights = syncData.chunkMap.map(group => {
             const chars = group.map(i => paragraphs[i]?.textContent.length || 1);
-            const total = chars.reduce((a, b) => a + b, 0);
+            // Include pause tag overhead (13 chars) for all but the last chunk
+            const PAUSE_LEN = 13;
+            const adjusted = chars.map((c, i) => i < chars.length - 1 ? c + PAUSE_LEN : c);
+            const total = adjusted.reduce((a, b) => a + b, 0);
             let cum = 0;
-            return chars.map(c => { cum += c / total; return cum; });
+            return adjusted.map(c => { cum += c / total; return cum; });
         });
     } else {
         syncData = null;
@@ -680,13 +683,19 @@ followBtn.addEventListener('click', () => {
         }
     });
     if (syncData) {
-        // Find the TTS chunk that contains this HTML chunk
         const ttsIdx = syncData.chunkMap.findIndex(group => group.includes(closestChunk));
         if (ttsIdx >= 0) {
-            audio.currentTime = syncData.timestamps[ttsIdx];
-            const key = syncData.chunkMap[ttsIdx].join(',');
-            currentChunkIndex = key;
-            highlightChunks(syncData.chunkMap[ttsIdx]);
+            const group = syncData.chunkMap[ttsIdx];
+            const posInGroup = group.indexOf(closestChunk);
+            const weights = syncCharWeights[ttsIdx];
+            const startWeight = posInGroup > 0 ? weights[posInGroup - 1] : 0;
+            const chunkStart = syncData.timestamps[ttsIdx];
+            const chunkEnd = ttsIdx + 1 < syncData.timestamps.length
+                ? syncData.timestamps[ttsIdx + 1]
+                : chunkStart + 60;
+            audio.currentTime = chunkStart + startWeight * (chunkEnd - chunkStart);
+            currentChunkIndex = closestChunk;
+            highlightChunk(closestChunk);
         }
     } else {
         const midPct = (chunkBoundaries[closestChunk] + chunkBoundaries[closestChunk + 1]) / 2;
