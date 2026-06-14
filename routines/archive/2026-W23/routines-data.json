@@ -1,0 +1,204 @@
+{
+  "generated_at": "2026-06-13T02:01:13.110647-03:00",
+  "week_start": "2026-06-07",
+  "week_label": "June 07 - June 13, 2026",
+  "last_updated": "Saturday, June 13, 2026 at 02:01",
+  "stats": {
+    "completed": 8.5,
+    "planned": 14,
+    "display": "8.5 / 14"
+  },
+  "daily": {
+    "Sunday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Monday": {
+      "status": "done",
+      "completed": 4,
+      "total": 4
+    },
+    "Tuesday": {
+      "status": "done",
+      "completed": 2,
+      "total": 2
+    },
+    "Wednesday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 4
+    },
+    "Thursday": {
+      "status": "done",
+      "completed": 2,
+      "total": 2
+    },
+    "Friday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Saturday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    }
+  },
+  "goals": [
+    {
+      "name": "Trumpet Practice",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "25min",
+      "target": "60min",
+      "progress_pct": 41
+    },
+    {
+      "name": "Reading",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "0min",
+      "target": "60min",
+      "progress_pct": 0
+    }
+  ],
+  "routines": [
+    {
+      "id": "basic-workout",
+      "name": "Basic Workout",
+      "emoji": "\ud83d\udcaa",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        },
+        {
+          "day": "Tue",
+          "status": "done"
+        },
+        {
+          "day": "Wed",
+          "status": "skipped"
+        },
+        {
+          "day": "Thu",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 3,
+      "total": 4
+    },
+    {
+      "id": "music-practice",
+      "name": "Music Practice",
+      "emoji": "\ud83c\udfb7",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 1
+    },
+    {
+      "id": "music-practice-1h",
+      "name": "Music Practice",
+      "emoji": "\ud83c\udfb7",
+      "sessions": [
+        {
+          "day": "Sat",
+          "status": "pending"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 1
+    },
+    {
+      "id": "piano-practice",
+      "name": "Piano Practice",
+      "emoji": "\ud83c\udfb9",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "rock-climbing",
+      "name": "Rock Climbing",
+      "emoji": "\ud83e\uddd7",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "done"
+        },
+        {
+          "day": "Thu",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 2,
+      "total": 2
+    },
+    {
+      "id": "running",
+      "name": "Running",
+      "emoji": "\ud83c\udfc3",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        },
+        {
+          "day": "Wed",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "2km, 16min, 145bpm, 145bpm, 207kcal",
+      "comparison": "",
+      "done": 1,
+      "total": 2
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga",
+      "emoji": "\ud83e\uddd8",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        },
+        {
+          "day": "Wed",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 2
+    }
+  ],
+  "spirit": {
+    "state": "content",
+    "emoji": "\ud83d\udc10",
+    "title": "\ud83d\udc10 Winter Mountain Goat",
+    "image": "assets/content.jpg",
+    "description": "Your mountain goat rests peacefully on a rocky ledge, fluffy white fur catching soft aurora light, calm and satisfied with a gentle warm smile."
+  }
+}
