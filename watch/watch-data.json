@@ -830,6 +830,36 @@
       "summary": "This video features a discussion on the evolving role of AI coding agents in software development, detailing how tools have progressed from simple chat interfaces to more autonomous, file-roaming systems. The speakers explore different philosophies surrounding AI integration, highlighting the divide between fully autonomous code generation (the dark factories approach) and AI as assistive tools with human oversight. Guest Mario Zechner argues that while AI is incredibly useful for scaffolding and non-mission-critical tasks, human developers must retain control over core functionality due to security concerns, error compounding, and ultimate liability. Software engineers, tech team leaders, and those curious about the practical limitations and future of AI-assisted programming will benefit from watching this conversation.",
       "added": "2026-06-14",
       "times_shown": 0
+    },
+    {
+      "slug": "a-tour-of-the-solveit-platform",
+      "title": "A Tour of the Solveit Platform",
+      "url": "https://www.youtube.com/watch?v=bxDDLMe6KuU",
+      "video_id": "bxDDLMe6KuU",
+      "channel": "Jeremy Howard",
+      "summary": "This video introduces SolveIT, a collaborative web-based platform designed for writing code, interacting with AI, and taking notes in unified 'dialogs.' The presenters demonstrate the platform's core features, including 'instances'\u2014which act as private, customizable virtual machines\u2014and show how users can organize their work and utilize built-in keyboard shortcuts. They also highlight the platform's real-time collaborative capabilities, showing how two people can edit a dialog and execute code together in the same space. This video is highly beneficial for developers, students, and educators looking for an integrated environment that combines the functionality of a code editor, Jupyter notebooks, and conversational AI.",
+      "added": "2026-06-15",
+      "times_shown": 0
+    },
+    {
+      "slug": "solveit-the-thinking-developers-environment-wjeremy-howard-johno-whitaker",
+      "title": "SolveIt: The Thinking Developer's Environment w/Jeremy Howard & Johno Whitaker",
+      "url": "https://www.youtube.com/watch?v=DgPr3HVp0eg",
+      "video_id": "DgPr3HVp0eg",
+      "channel": "Hamel Husain",
+      "summary": "This video features Jeremy Howard and Jono Whitaker introducing the 'solveit method,' an incremental approach to writing code with AI. The speakers argue that 'vibe coding'\u2014having an AI generate entire programs in one go\u2014is ineffective for long-term development because it prevents both humans and LLMs from building solid, reusable foundations. Instead, they advocate for working in smaller, deliberate batches to create robust, well-designed systems that get easier to maintain over time. This talk is highly beneficial for software developers, engineers, and tech teams looking for a more sustainable and scalable way to integrate AI into their coding workflow.",
+      "added": "2026-06-15",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-antidote-to-ai-fatigue-answerai-solveit",
+      "title": "The antidote to AI fatigue \u2014\u00a0Answer.ai Solveit",
+      "url": "https://www.youtube.com/watch?v=01ybLOH1fnU",
+      "video_id": "01ybLOH1fnU",
+      "channel": "Latent Space",
+      "summary": "In this podcast episode, host Alessio Fanelli interviews Answer.ai co-founders Eric Ries and Jeremy Howard about their company's unique approach to artificial intelligence. They discuss how they maintain a small, highly productive team of multi-disciplinary generalists to build complex software, utilizing a 'human-in-the-loop' philosophy where the human operator drives the AI process step-by-step. They also share details on and Jeremy Howard about their company's unique approach to artificial intelligence. They discuss how they maintain a small, highly productive team of multi-disciplinary generalists to build complex software, utilizing a 'human-in-the-loop' philosophy where the human operator drives the AI process step-by-step. They also share details on how they built their own custom development and deployment tools, such as their application Solveit, rather than relying on traditional cloud platforms like AWS or Google Cloud. This video is highly beneficial for software developers, startup founders, and anyone interested in innovative, human-centric methodologies in AI development.",
+      "added": "2026-06-15",
+      "times_shown": 0
     }
   ],
   "archive": [
