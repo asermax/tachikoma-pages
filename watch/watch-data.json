@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15",
+  "generated_at": "2026-06-16",
   "queue": [
     {
       "slug": "harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan",
@@ -859,6 +859,16 @@
       "channel": "Latent Space",
       "summary": "In this podcast episode, host Alessio Fanelli interviews Answer.ai co-founders Eric Ries and Jeremy Howard about their company's unique approach to artificial intelligence. They discuss how they maintain a small, highly productive team of multi-disciplinary generalists to build complex software, utilizing a 'human-in-the-loop' philosophy where the human operator drives the AI process step-by-step. They also share details on and Jeremy Howard about their company's unique approach to artificial intelligence. They discuss how they maintain a small, highly productive team of multi-disciplinary generalists to build complex software, utilizing a 'human-in-the-loop' philosophy where the human operator drives the AI process step-by-step. They also share details on how they built their own custom development and deployment tools, such as their application Solveit, rather than relying on traditional cloud platforms like AWS or Google Cloud. This video is highly beneficial for software developers, startup founders, and anyone interested in innovative, human-centric methodologies in AI development.",
       "added": "2026-06-15",
+      "times_shown": 0
+    },
+    {
+      "slug": "why-mcp-and-chatgpt-apps-use-double-iframes-fr\u00e9d\u00e9ric-barthelet-alpic",
+      "title": "Why MCP and ChatGPT Apps Use Double Iframes \u2014 Fr\u00e9d\u00e9ric Barthelet, Alpic",
+      "url": "https://www.youtube.com/watch?v=c-2eEv2ou7Y",
+      "video_id": "c-2eEv2ou7Y",
+      "channel": "AI Engineer",
+      "summary": "Fr\u00e9d\u00e9ric Barthelet explains why ChatGPT and MCP apps use double iframe mechanisms for secure UI rendering in AI chats. He covers security challenges of integrating third-party HTML, how single iframes can block scripts or expose host data, and how nested iframes provide security while allowing app functionality. Beneficial for AI developers building secure custom LLM applications.",
+      "added": "2026-06-16",
       "times_shown": 0
     }
   ],
