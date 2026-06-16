@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-15T02:01:06.639129-03:00",
+  "generated_at": "2026-06-16T02:00:47.275383-03:00",
   "week_start": "2026-06-14",
   "week_label": "June 14 - June 20, 2026",
-  "last_updated": "Monday, June 15, 2026 at 02:01",
+  "last_updated": "Tuesday, June 16, 2026 at 02:00",
   "stats": {
-    "completed": 0,
-    "planned": 0,
-    "display": "0 / 0"
+    "completed": 3.0,
+    "planned": 6,
+    "display": "3 / 6"
   },
   "daily": {
     "Sunday": {
@@ -15,9 +15,9 @@
       "total": 0
     },
     "Monday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "partial",
+      "completed": 2,
+      "total": 4
     },
     "Tuesday": {
       "status": "empty",
@@ -58,9 +58,9 @@
       "name": "Reading",
       "emoji": "",
       "status": "pending",
-      "accumulated": "0min",
+      "accumulated": "15min",
       "target": "60min",
-      "progress_pct": 0
+      "progress_pct": 25
     }
   ],
   "routines": [
@@ -117,12 +117,12 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         }
       ],
-      "metrics_total": "",
+      "metrics_total": "1h",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -151,16 +151,16 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Sat",
           "status": "pending"
         }
       ],
-      "metrics_total": "",
-      "comparison": "",
-      "done": 0,
+      "metrics_total": "2.0km, 16min, 152bpm, 152bpm, 208kcal",
+      "comparison": "+0.0km, +7bpm, +7bpm, +1kcal",
+      "done": 1,
       "total": 2
     },
     {
@@ -184,10 +184,10 @@
     }
   ],
   "spirit": {
-    "state": "dormant",
+    "state": "tired",
     "emoji": "\ud83d\udc09",
     "title": "\ud83d\udc09 Frost Dragon Hatchling",
-    "image": "assets/dormant.jpg",
-    "description": "Your ice dragon hatchling is fast asleep, curled into a cozy ball under gentle moonlight, soft deep blue night wrapping around it as snowflakes drift peacefully down."
+    "image": "assets/tired.jpg",
+    "description": "Your ice dragon hatchling is sleepy and muted, wings sagging, half-closed eyes gazing over grey-blue snowfall, low energy but still holding on."
   }
 }
