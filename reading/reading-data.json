@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15",
+  "generated_at": "2026-06-17",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -116,7 +116,7 @@
       "category": "ai",
       "summary": "Same author as Encoding Team Standards (Rahul Garg, Martin Fowler series). Argues teams plateau with AI tools because individual learnings never become shared practice. Framework: 4 signal types (context gaps, instruction patterns, workflow discoveries, failures with root causes) mapped to 4 cadences (after-session reflection, daily stand-up, sprint retro, quarterly audit). Metrics that matter: first-pass acceptance rate, iteration cycles, post-merge rework — not lines generated. Key insight: the other practices in the series are passive surfaces; the flywheel is what makes them compound over time. Treat shared AI artifacts like dependencies — maintain them or they become liabilities.",
       "added": "2026-04-14",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "httpswalkinglabsgithubiolearn-harness-engineeringen",
@@ -152,7 +152,7 @@
       "category": "ai",
       "summary": "Introduces Structured-Prompt-Driven Development (SPDD), a method that treats AI prompts as first-class delivery artifacts — version-controlled, reviewed, and reusable. Built around the REASONS Canvas (Requirements, Entities, Approach, Structure, Operations, Norms, Safeguards) and a six-step workflow that brings prompts into the same discipline as code. Developed by Thoughtworks to address the gap between individual AI speed and system-level throughput. Includes a worked billing engine example, core skill identification (abstraction-first, alignment, iterative review), and fitness assessment for where SPDD pays off vs. falls short.",
       "added": "2026-05-15",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "httpsxcomistatus2058014104854626490",
@@ -161,7 +161,7 @@
       "category": "ai",
       "summary": "Nate Berkopec reflects on the state of LLMs ~5 months after Opus 4.5. He's fully transitioned to coding via LLMs, argues 'intelligence' is the wrong lens — LLMs have 'jagged intelligence' that grows more jagged. Identifies 4 characteristics of successful LLM workflows: verifiable output, brute-force loops, repetitive drudgery targets, rapid prototypes. Key insight: LLMs are 'compressed information stores' with lossy decompression; real opportunity is 'making the thing which makes the thing.'",
       "added": "2026-05-24",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "my-ai-adoption-journey",
@@ -287,6 +287,15 @@
       "category": "ai",
       "summary": "David Curlewis argues that the AI industry has regressed to using volume-based metrics -- like percentage of code written by AI and raw line counts -- to measure engineering productivity, despite the software industry spending two decades learning that such metrics are meaningless. He points to recent claims from Google (75% AI-generated code), Anthropic (~80% Claude-written code, 8x more code shipped), OpenAI (~80%), and Cursor (100M+ lines/day) as repackaged lines-of-code vanity metrics that only track adoption, not outcomes.\n\nCurlewis contrasts these with earlier outcome-based claims, such as GitHub's original finding that Copilot helped developers complete tasks 55% faster. He traces the shift to volume metrics to the fact that outcome evidence became complicated: while Cui et al. found a 26% task completion boost, GitClear observed rising code churn, and organizational-level surveys show roughly 10% productivity gains on average -- useful but far from transformative. He highlights Anthropic's own RCT showing AI-assisted developers scored 17% lower on code comprehension with no significant productivity gain.\n\nThe article's core concern is real-world impact: these vanity metrics are influencing budgets, headcount decisions, and layoffs at companies like Block and Atlassian. Curlewis advocates measuring AI-assisted engineering with battle-tested outcome metrics -- DORA metrics, reliability, rate of meaningful change, revenue, and customer value -- rather than adoption intensity dressed up as maturity.",
       "added": "2026-06-13",
+      "times_shown": 0
+    },
+    {
+      "slug": "httpsxcomaddyosmanistatus2066595308629594363",
+      "title": "Code review in the age of AI agents",
+      "url": "https://x.com/addyosmani/status/2066595308629594363",
+      "category": "ai",
+      "summary": "Addy Osmani's deep dive on how code review became the bottleneck in agentic engineering. Key data: 4x code output for ~10% more value (GitClear), churn up 861%, zero-review merges up 31% (Faros). Argues review shifted from checking reasoning to reconstructing missing intent. Recommends: tier review by blast radius not author, run multiple heterogeneous AI reviewers (they catch different bugs with near-zero overlap), require intent statements before review, and treat AI review as sensor data not verdicts. Human moves from reading every diff to owning accountability and sampling.",
+      "added": "2026-06-15",
       "times_shown": 0
     }
   ],
@@ -740,6 +749,16 @@
       "added": "2026-06-13",
       "read": "2026-06-14",
       "has_notes": true
+    },
+    {
+      "slug": "httpsvickiboykiscom20260615running-local-models-is-good-now",
+      "title": "Running local models is good now",
+      "url": "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/",
+      "category": "ai",
+      "summary": "Vicki Boykis on how local LLMs have evolved from slow and clunky to genuinely useful. Running on a 2022 M2 Mac (64GB), she uses LM Studio + Pi in Docker to run agentic coding loops at ~75% accuracy of frontier models, leveraging GPT-OSS and Gemma 4 family models. Key benefits: free, total privacy, and deep inspectability of token processing.",
+      "added": "2026-06-15",
+      "read": "2026-06-15",
+      "has_notes": false
     }
   ]
 }
