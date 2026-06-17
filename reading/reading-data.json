@@ -297,6 +297,15 @@
       "summary": "Addy Osmani's deep dive on how code review became the bottleneck in agentic engineering. Key data: 4x code output for ~10% more value (GitClear), churn up 861%, zero-review merges up 31% (Faros). Argues review shifted from checking reasoning to reconstructing missing intent. Recommends: tier review by blast radius not author, run multiple heterogeneous AI reviewers (they catch different bugs with near-zero overlap), require intent statements before review, and treat AI review as sensor data not verdicts. Human moves from reading every diff to owning accountability and sampling.",
       "added": "2026-06-15",
       "times_shown": 0
+    },
+    {
+      "slug": "why-ai-hasnt-replaced-software-engineers-and-wont",
+      "title": "Why AI hasn't replaced software engineers, and won't",
+      "url": "https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers?utm_source=substack&publication_id=1008003&post_id=201537309&utm_medium=email&utm_content=share&utm_campaign=email-share&triggerShare=true&isFreemail=true&r=1stiu&triedRedirect=true&open=false",
+      "category": "AI & Software Engineering",
+      "summary": "Narayanan & Kapoor argue AI won't cause mass SWE layoffs. 'AI-driven layoffs' at Block, Snap, Intuit were mostly AI washing — financial pressure was the real driver. Their 'decide-execute-deliver sandwich' model shows AI compresses the middle (code writing) but leaves decision-making and accountability layers intact, which resist automation for non-capability reasons. Writing code was never the bottleneck (devs spend 9-61% time coding). Vibe coding ≠ agentic engineering. Software demand may actually increase as cheaper production drives more building.",
+      "added": "2026-06-17",
+      "times_shown": 0
     }
   ],
   "archive": [
