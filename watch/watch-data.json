@@ -880,6 +880,16 @@
       "summary": "In this presentation, Zack Proser from WorkOS addresses the challenge of developer burnout in the age of rapid AI advancement, proposing strategies for maintaining 'developer balance.' He argues that because human attention is a finite constraint compared to infinitely scalable AI agents, developers must learn to protect their cognitive load rather than trying to micromanage too many tasks. Proser introduces an enabling stack of techniques\u2014such as using AI 'signal layers' to filter communication, voice-first coding, and remote-control setups\u2014to allow developers to step away from their desks while maintaining productivity. This video is highly beneficial for software engineers, AI practitioners, and tech professionals seeking to integrate AI agents into their workflows without succumbing to cognitive exhaustion.",
       "added": "2026-06-17",
       "times_shown": 0
+    },
+    {
+      "slug": "state-of-agentic-coding-7-with-armin-and-ben",
+      "title": "State of Agentic Coding #7 with Armin and Ben",
+      "url": "https://www.youtube.com/watch?v=QqtW2q9ftu0",
+      "video_id": "QqtW2q9ftu0",
+      "channel": "Armin Ronacher",
+      "summary": "This video features Ben Vinegar and Armin Ronacher discussing their experiences and insights after a year of using AI agents for software development. They explore the shifting landscape of agentic coding, highlighting the financial disparity between high-resource developers who can afford massive token costs for automated loops and everyday programmers. While acknowledging improvements in AI-generated code quality, they express skepticism about the current practicality of fully autonomous coding loops for daily work, favoring a more \"tastefully curated\" human-AI collaboration. This discussion is highly beneficial for software engineers, developers, and tech enthusiasts interested in the realistic limitations and future of AI-assisted programming.",
+      "added": "2026-06-18",
+      "times_shown": 0
     }
   ],
   "archive": [
