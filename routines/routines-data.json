@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-19T02:00:59.291968-03:00",
+  "generated_at": "2026-06-19T14:04:43.588043-03:00",
   "week_start": "2026-06-14",
   "week_label": "June 14 - June 20, 2026",
-  "last_updated": "Friday, June 19, 2026 at 02:00",
+  "last_updated": "Friday, June 19, 2026 at 14:04",
   "stats": {
-    "completed": 6.5,
+    "completed": 7.5,
     "planned": 12,
-    "display": "6.5 / 12"
+    "display": "7.5 / 12"
   },
   "daily": {
     "Sunday": {
@@ -30,8 +30,8 @@
       "total": 2
     },
     "Thursday": {
-      "status": "partial",
-      "completed": 1,
+      "status": "done",
+      "completed": 2,
       "total": 2
     },
     "Friday": {
@@ -79,7 +79,7 @@
         },
         {
           "day": "Thu",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Sat",
@@ -88,7 +88,7 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 1,
+      "done": 2,
       "total": 4
     },
     {
@@ -184,10 +184,10 @@
     }
   ],
   "spirit": {
-    "state": "tired",
+    "state": "content",
     "emoji": "\ud83d\udc09",
     "title": "\ud83d\udc09 Frost Dragon Hatchling",
-    "image": "assets/tired.jpg",
-    "description": "Your ice dragon hatchling is sleepy and muted, wings sagging, half-closed eyes gazing over grey-blue snowfall, low energy but still holding on."
+    "image": "assets/content.jpg",
+    "description": "Your ice dragon hatchling rests peacefully on its rock, translucent wings catching soft winter light, calm and serene with a gentle satisfied expression."
   }
 }
