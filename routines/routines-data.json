@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-19T14:04:43.588043-03:00",
+  "generated_at": "2026-06-20T02:00:47.095803-03:00",
   "week_start": "2026-06-14",
   "week_label": "June 14 - June 20, 2026",
-  "last_updated": "Friday, June 19, 2026 at 14:04",
+  "last_updated": "Saturday, June 20, 2026 at 02:00",
   "stats": {
-    "completed": 7.5,
-    "planned": 12,
-    "display": "7.5 / 12"
+    "completed": 8.4,
+    "planned": 13,
+    "display": "8.4 / 13"
   },
   "daily": {
     "Sunday": {
@@ -35,9 +35,9 @@
       "total": 2
     },
     "Friday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 1,
+      "total": 1
     },
     "Saturday": {
       "status": "empty",
@@ -101,14 +101,18 @@
           "status": "done"
         },
         {
+          "day": "Fri",
+          "status": "done"
+        },
+        {
           "day": "Sat",
           "status": "pending"
         }
       ],
-      "metrics_total": "1h",
-      "comparison": "",
-      "done": 1,
-      "total": 2
+      "metrics_total": "3h",
+      "comparison": "+2h",
+      "done": 2,
+      "total": 3
     },
     {
       "id": "piano-practice",
