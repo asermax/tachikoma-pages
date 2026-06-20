@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19",
+  "generated_at": "2026-06-20",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -116,7 +116,7 @@
       "category": "ai",
       "summary": "Same author as Encoding Team Standards (Rahul Garg, Martin Fowler series). Argues teams plateau with AI tools because individual learnings never become shared practice. Framework: 4 signal types (context gaps, instruction patterns, workflow discoveries, failures with root causes) mapped to 4 cadences (after-session reflection, daily stand-up, sprint retro, quarterly audit). Metrics that matter: first-pass acceptance rate, iteration cycles, post-merge rework — not lines generated. Key insight: the other practices in the series are passive surfaces; the flywheel is what makes them compound over time. Treat shared AI artifacts like dependencies — maintain them or they become liabilities.",
       "added": "2026-04-14",
-      "times_shown": 1
+      "times_shown": 2
     },
     {
       "slug": "httpswalkinglabsgithubiolearn-harness-engineeringen",
@@ -161,7 +161,7 @@
       "category": "ai",
       "summary": "Nate Berkopec reflects on the state of LLMs ~5 months after Opus 4.5. He's fully transitioned to coding via LLMs, argues 'intelligence' is the wrong lens — LLMs have 'jagged intelligence' that grows more jagged. Identifies 4 characteristics of successful LLM workflows: verifiable output, brute-force loops, repetitive drudgery targets, rapid prototypes. Key insight: LLMs are 'compressed information stores' with lossy decompression; real opportunity is 'making the thing which makes the thing.'",
       "added": "2026-05-24",
-      "times_shown": 1
+      "times_shown": 2
     },
     {
       "slug": "my-ai-adoption-journey",
@@ -179,7 +179,7 @@
       "category": "ai",
       "summary": "Nolan Lawson pushes back against the prevailing narrative that AI coding tools are only useful for rapidly generating low-quality code. He argues that LLMs are flexible enough to be used in the opposite direction: to write higher-quality code at a more deliberate pace, using them primarily as thorough code reviewers and bug finders rather than as slop cannons for maximum output velocity.\n\nHis core technique involves running multiple AI agents (Claude, Codex, Cursor Bugbot) against a pull request in parallel, having each independently identify and rank bugs by severity, then collating their findings to eliminate false positives. He reports a near-zero false positive rate with this multi-model approach, and that it surfaces everything from critical security flaws to misleading comments. The real challenge, he notes, is not finding bugs but prioritizing and acting on them.\n\nLawson's workflow is notably disciplined: he has agents fix all critical and high-severity issues first, skips medium-priority fixes where the effort outweighs the benefit, and sometimes abandons PRs entirely if the review reveals the whole approach is flawed. Far from boosting raw velocity, this process often sends him on 'side quests' fixing pre-existing bugs and writing tests for legacy code -- which he finds more satisfying and more valuable for long-term codebase health than shipping features quickly.\n\nThe overarching message is a call for developers using AI to slow down rather than speed up. Use agents to deeply understand your PRs, generate documentation, and probe failure modes. The payoff is not higher lines-of-code throughput but a more careful, methodical, quality-obsessed style of programming that improves the codebase for the next developer.",
       "added": "2026-05-30",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "addy-osmani-tweet-2059844244907696186",
