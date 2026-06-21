@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20",
+  "generated_at": "2026-06-21",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -305,6 +305,15 @@
       "category": "AI & Software Engineering",
       "summary": "Narayanan & Kapoor argue AI won't cause mass SWE layoffs. 'AI-driven layoffs' at Block, Snap, Intuit were mostly AI washing — financial pressure was the real driver. Their 'decide-execute-deliver sandwich' model shows AI compresses the middle (code writing) but leaves decision-making and accountability layers intact, which resist automation for non-capability reasons. Writing code was never the bottleneck (devs spend 9-61% time coding). Vibe coding ≠ agentic engineering. Software demand may actually increase as cheaper production drives more building.",
       "added": "2026-06-17",
+      "times_shown": 0
+    },
+    {
+      "slug": "why-is-meta-destroying-its-engineering",
+      "title": "Why Is Meta Destroying Its Engineering?",
+      "url": "https://open.substack.com/pub/pragmaticengineer/p/why-is-meta-destroying-its-engineering",
+      "category": "engineering",
+      "summary": "Gergely Orosz deepdives Meta's engineering culture collapse since April 2026. After two decades of 'move fast' culture, leadership suddenly reassigned 30-50% of engineers to AI data labeling (4,500+ people in the ADO org), introduced invasive keystroke tracking for training data, and announced 10% layoffs. This created perverse incentives — engineers 'tokenmaxxed' by overusing AI to boost perf metrics while ignoring real work quality. The result: the most embarrassing outage in Meta's history (Instagram accounts hacked via zero-auth password reset caused by AI-generated, AI-reviewed code with gutted security teams), the CISO resigning, and an employee calling the reorg 'the gulag' on a company livestream. Mitchell Hashimoto warns this 'AI psychosis' is spreading to other companies — automating yourself into a resilient catastrophe machine. The article serves as a cautionary tale for any leadership tempted to make drastic AI-driven org changes.",
+      "added": "2026-06-20",
       "times_shown": 0
     }
   ],
