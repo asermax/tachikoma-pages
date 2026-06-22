@@ -152,7 +152,7 @@
       "category": "ai",
       "summary": "Introduces Structured-Prompt-Driven Development (SPDD), a method that treats AI prompts as first-class delivery artifacts — version-controlled, reviewed, and reusable. Built around the REASONS Canvas (Requirements, Entities, Approach, Structure, Operations, Norms, Safeguards) and a six-step workflow that brings prompts into the same discipline as code. Developed by Thoughtworks to address the gap between individual AI speed and system-level throughput. Includes a worked billing engine example, core skill identification (abstraction-first, alignment, iterative review), and fitness assessment for where SPDD pays off vs. falls short.",
       "added": "2026-05-15",
-      "times_shown": 1
+      "times_shown": 2
     },
     {
       "slug": "httpsxcomistatus2058014104854626490",
@@ -161,7 +161,7 @@
       "category": "ai",
       "summary": "Nate Berkopec reflects on the state of LLMs ~5 months after Opus 4.5. He's fully transitioned to coding via LLMs, argues 'intelligence' is the wrong lens — LLMs have 'jagged intelligence' that grows more jagged. Identifies 4 characteristics of successful LLM workflows: verifiable output, brute-force loops, repetitive drudgery targets, rapid prototypes. Key insight: LLMs are 'compressed information stores' with lossy decompression; real opportunity is 'making the thing which makes the thing.'",
       "added": "2026-05-24",
-      "times_shown": 2
+      "times_shown": 3
     },
     {
       "slug": "my-ai-adoption-journey",
@@ -169,15 +169,6 @@
       "url": "https://mitchellh.com/writing/my-ai-adoption-journey",
       "category": "ai",
       "summary": "Mitchell Hashimoto (co-founder of HashiCorp) shares his personal, six-step journey of gradually adopting AI coding agents, emphasizing that he forced himself through initial inefficiency to reach genuine productivity gains. He starts by urging developers to stop using chatbot interfaces for coding and instead adopt agentic tools (like Claude Code) that can read files, execute programs, and make HTTP requests in a loop.\n\nHis early approach was disciplined: he literally duplicated his manual commits by fighting agents to reproduce the same results, which built expertise from first principles. Key lessons included breaking work into small, clear tasks; separating planning from execution sessions; and giving agents ways to verify their own work. A notable tactic was blocking the last 30 minutes of each day to spin up agents for deep research, parallel exploration of vague ideas, and issue triage -- giving him a 'warm start' each morning.\n\nThe real inflection came when he began outsourcing high-confidence tasks to agents while simultaneously doing his own deep work, turning off agent notifications to avoid context-switching costs. He introduces the concept of 'harness engineering' -- systematically building safeguards (AGENTS.md files, custom scripts) so that whenever an agent makes a mistake, you engineer a solution to prevent it from recurring. His current goal is to always have an agent running, though he estimates he only achieves this 10-20% of the workday.\n\nThe piece is notably measured and hype-free. Hashimoto has no financial stake in AI companies, explicitly acknowledges concerns about skill formation (especially for junior developers), and frames the whole journey as simply a craftsman trying to build things more effectively. The core takeaway is that AI adoption requires deliberate, uncomfortable practice and structural workflow changes -- it does not deliver value through a chatbot alone.",
-      "added": "2026-05-30",
-      "times_shown": 0
-    },
-    {
-      "slug": "using-ai-to-write-better-code-more-slowly",
-      "title": "Using AI to Write Better Code (More Slowly)",
-      "url": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
-      "category": "ai",
-      "summary": "Nolan Lawson pushes back against the prevailing narrative that AI coding tools are only useful for rapidly generating low-quality code. He argues that LLMs are flexible enough to be used in the opposite direction: to write higher-quality code at a more deliberate pace, using them primarily as thorough code reviewers and bug finders rather than as slop cannons for maximum output velocity.\n\nHis core technique involves running multiple AI agents (Claude, Codex, Cursor Bugbot) against a pull request in parallel, having each independently identify and rank bugs by severity, then collating their findings to eliminate false positives. He reports a near-zero false positive rate with this multi-model approach, and that it surfaces everything from critical security flaws to misleading comments. The real challenge, he notes, is not finding bugs but prioritizing and acting on them.\n\nLawson's workflow is notably disciplined: he has agents fix all critical and high-severity issues first, skips medium-priority fixes where the effort outweighs the benefit, and sometimes abandons PRs entirely if the review reveals the whole approach is flawed. Far from boosting raw velocity, this process often sends him on 'side quests' fixing pre-existing bugs and writing tests for legacy code -- which he finds more satisfying and more valuable for long-term codebase health than shipping features quickly.\n\nThe overarching message is a call for developers using AI to slow down rather than speed up. Use agents to deeply understand your PRs, generate documentation, and probe failure modes. The payoff is not higher lines-of-code throughput but a more careful, methodical, quality-obsessed style of programming that improves the codebase for the next developer.",
       "added": "2026-05-30",
       "times_shown": 1
     },
@@ -708,6 +699,16 @@
       "added": "2026-05-30",
       "read": "2026-05-31",
       "has_notes": true
+    },
+    {
+      "slug": "using-ai-to-write-better-code-more-slowly",
+      "title": "Using AI to Write Better Code (More Slowly)",
+      "url": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
+      "category": "ai",
+      "summary": "Nolan Lawson pushes back against the prevailing narrative that AI coding tools are only useful for rapidly generating low-quality code. He argues that LLMs are flexible enough to be used in the opposite direction: to write higher-quality code at a more deliberate pace, using them primarily as thorough code reviewers and bug finders rather than as slop cannons for maximum output velocity.\n\nHis core technique involves running multiple AI agents (Claude, Codex, Cursor Bugbot) against a pull request in parallel, having each independently identify and rank bugs by severity, then collating their findings to eliminate false positives. He reports a near-zero false positive rate with this multi-model approach, and that it surfaces everything from critical security flaws to misleading comments. The real challenge, he notes, is not finding bugs but prioritizing and acting on them.\n\nLawson's workflow is notably disciplined: he has agents fix all critical and high-severity issues first, skips medium-priority fixes where the effort outweighs the benefit, and sometimes abandons PRs entirely if the review reveals the whole approach is flawed. Far from boosting raw velocity, this process often sends him on 'side quests' fixing pre-existing bugs and writing tests for legacy code -- which he finds more satisfying and more valuable for long-term codebase health than shipping features quickly.\n\nThe overarching message is a call for developers using AI to slow down rather than speed up. Use agents to deeply understand your PRs, generate documentation, and probe failure modes. The payoff is not higher lines-of-code throughput but a more careful, methodical, quality-obsessed style of programming that improves the codebase for the next developer.",
+      "added": "2026-05-30",
+      "read": "2026-06-22",
+      "has_notes": false
     },
     {
       "slug": "a-harness-for-every-task-dynamic-workflows-in-claude-code",
