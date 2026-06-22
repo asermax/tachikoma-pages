@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-21T11:04:57.875640-03:00",
+  "generated_at": "2026-06-22T02:01:12.326603-03:00",
   "week_start": "2026-06-21",
   "week_label": "June 21 - June 27, 2026",
-  "last_updated": "Sunday, June 21, 2026 at 11:04",
+  "last_updated": "Monday, June 22, 2026 at 02:01",
   "stats": {
     "completed": 0,
     "planned": 0,
@@ -50,9 +50,9 @@
       "name": "Trumpet Practice",
       "emoji": "",
       "status": "pending",
-      "accumulated": "0min",
+      "accumulated": "30min",
       "target": "60min",
-      "progress_pct": 0
+      "progress_pct": 50
     },
     {
       "name": "Reading",
