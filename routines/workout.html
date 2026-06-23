@@ -272,7 +272,8 @@
         var totalSteps = 0;
         var currentStep = 0;
         var timerInterval = null;
-        var timerRemaining = 0;
+        var timerEnd = 0;
+        var timerDuration = 0;
         var timerRunning = false;
         var startTime = null;
         var resting = false;
@@ -417,44 +418,51 @@
             startRestTimer(REST_SECONDS);
         }
 
+        function getRemaining() {
+            return Math.max(0, Math.ceil((timerEnd - Date.now()) / 1000));
+        }
+
         function startRestTimer(seconds) {
-            timerRemaining = seconds;
+            timerDuration = seconds;
+            timerEnd = Date.now() + seconds * 1000;
             timerRunning = true;
             updateRestDisplay();
 
             timerInterval = setInterval(function() {
-                timerRemaining--;
-                updateRestDisplay();
-                if (timerRemaining <= 0) {
+                if (getRemaining() <= 0) {
                     stopTimer();
                     resting = false;
                     render();
+                } else {
+                    updateRestDisplay();
                 }
-            }, 1000);
+            }, 250);
         }
 
         function updateRestDisplay() {
             var el = document.getElementById('rest-timer');
             if (!el) return;
-            var mins = Math.floor(timerRemaining / 60);
-            var secs = timerRemaining % 60;
+            var rem = getRemaining();
+            var mins = Math.floor(rem / 60);
+            var secs = rem % 60;
             el.textContent = mins + ':' + (secs < 10 ? '0' : '') + secs;
         }
 
         // Timer for exercises
         function startTimer(seconds) {
-            timerRemaining = seconds;
+            timerDuration = seconds;
+            timerEnd = Date.now() + seconds * 1000;
             timerRunning = true;
             updateTimerDisplay();
 
             timerInterval = setInterval(function() {
-                timerRemaining--;
-                updateTimerDisplay();
-                if (timerRemaining <= 0) {
+                if (getRemaining() <= 0) {
                     stopTimer();
                     advance();
+                } else {
+                    updateTimerDisplay();
                 }
-            }, 1000);
+            }, 250);
         }
 
         function stopTimer() {
@@ -468,10 +476,11 @@
         function updateTimerDisplay() {
             var el = document.getElementById('timer');
             if (!el) return;
-            var mins = Math.floor(timerRemaining / 60);
-            var secs = timerRemaining % 60;
+            var rem = getRemaining();
+            var mins = Math.floor(rem / 60);
+            var secs = rem % 60;
             el.textContent = (mins > 0 ? mins + ':' : '') + (secs < 10 && mins > 0 ? '0' : '') + secs;
-            el.className = 'timer-display' + (timerRunning ? ' running' : '') + (timerRemaining <= 0 ? ' done' : '');
+            el.className = 'timer-display' + (timerRunning ? ' running' : '') + (rem <= 0 ? ' done' : '');
         }
 
         // Render
