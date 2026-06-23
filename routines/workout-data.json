@@ -1,11 +1,52 @@
 {
   "week": "2026-W25",
   "days": {
-    "Thursday": {
+    "Monday": {
+      "location": "Home - Dumbbells",
+      "exercises": [
+        {
+          "name": "Dumbbell Romanian deadlift",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "10",
+          "unit": "",
+          "weight": "8 kg"
+        },
+        {
+          "name": "Dumbbell rows",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "10",
+          "unit": "",
+          "weight": "8 kg"
+        },
+        {
+          "name": "Knee push-ups",
+          "detail": "wide",
+          "sets": 3,
+          "type": "reps",
+          "target": "12",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Plank",
+          "detail": null,
+          "sets": 3,
+          "type": "time",
+          "target": "25",
+          "unit": "s",
+          "weight": null
+        }
+      ]
+    },
+    "Tuesday": {
       "location": "Climbing Gym - Bar",
       "exercises": [
         {
-          "name": "Chin-ups",
+          "name": "Pull-ups",
           "detail": null,
           "sets": 3,
           "type": "reps",
@@ -24,19 +65,19 @@
         },
         {
           "name": "Knee push-ups",
-          "detail": "wide",
+          "detail": "diamond",
           "sets": 3,
           "type": "reps",
-          "target": "12",
+          "target": "10",
           "unit": "",
           "weight": null
         },
         {
-          "name": "L-sit hang",
+          "name": "Dead hang",
           "detail": null,
           "sets": 3,
           "type": "time",
-          "target": "12",
+          "target": "20",
           "unit": "s",
           "weight": null
         }
@@ -55,20 +96,20 @@
           "weight": "8 kg"
         },
         {
-          "name": "Dumbbell lunges",
+          "name": "Goblet squats",
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "8",
+          "target": "10",
           "unit": "",
           "weight": "8 kg"
         },
         {
           "name": "Knee push-ups",
-          "detail": "diamond",
+          "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "10",
+          "target": "12",
           "unit": "",
           "weight": null
         },
@@ -77,7 +118,7 @@
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "15",
+          "target": "30",
           "unit": "",
           "weight": null
         }
