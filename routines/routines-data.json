@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-22T21:35:35.407225-03:00",
+  "generated_at": "2026-06-23T02:00:56.969614-03:00",
   "week_start": "2026-06-21",
   "week_label": "June 21 - June 27, 2026",
-  "last_updated": "Monday, June 22, 2026 at 21:35",
+  "last_updated": "Tuesday, June 23, 2026 at 02:00",
   "stats": {
-    "completed": 0,
-    "planned": 0,
-    "display": "0 / 0"
+    "completed": 6.0,
+    "planned": 6,
+    "display": "6 / 6"
   },
   "daily": {
     "Sunday": {
@@ -15,8 +15,8 @@
       "total": 0
     },
     "Monday": {
-      "status": "missed",
-      "completed": 0,
+      "status": "done",
+      "completed": 4,
       "total": 4
     },
     "Tuesday": {
@@ -58,9 +58,9 @@
       "name": "Reading",
       "emoji": "",
       "status": "pending",
-      "accumulated": "0min",
+      "accumulated": "30min",
       "target": "60min",
-      "progress_pct": 0
+      "progress_pct": 50
     }
   ],
   "routines": [
@@ -71,7 +71,7 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Tue",
@@ -84,7 +84,7 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 3
     },
     {
@@ -113,12 +113,12 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -143,7 +143,7 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Sat",
@@ -152,7 +152,7 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 2
     },
     {
@@ -162,7 +162,7 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Wed",
@@ -175,15 +175,15 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 3
     }
   ],
   "spirit": {
-    "state": "dormant",
+    "state": "thriving",
     "emoji": "\ud83d\udc09",
     "title": "\ud83d\udc09 Frost Dragon Hatchling",
-    "image": "assets/dormant.jpg",
-    "description": "Your ice dragon hatchling is fast asleep, curled into a cozy ball under gentle moonlight, soft deep blue night wrapping around it as snowflakes drift peacefully down."
+    "image": "assets/thriving.jpg",
+    "description": "Your ice dragon hatchling spreads its crystalline wings wide, frost sparkling in the air, vibrant icy blues glowing with triumphant energy atop a snow-dusted peak."
   }
 }
