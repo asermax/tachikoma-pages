@@ -106,6 +106,7 @@
             margin: 1rem 0;
         }
         .timer-display.running { color: #667eea; }
+        .timer-display.pre-timer { color: #e67e22; }
         .timer-display.done { color: #28a745; }
 
         /* Rest screen */
@@ -275,6 +276,7 @@
         var timerEnd = 0;
         var timerDuration = 0;
         var timerRunning = false;
+        var preTimerRunning = false;
         var startTime = null;
         var resting = false;
 
@@ -400,7 +402,8 @@
             h += '</div>';
 
             // Round bar
-            h += '<div class="round-bar">Round ' + round + ' / ' + maxSets + ' complete!</div>';
+            var roundsDone = round - 1;
+            h += '<div class="round-bar">Round ' + roundsDone + ' / ' + maxSets + ' complete!</div>';
 
             // Rest area
             h += '<div class="rest-area">';
@@ -448,6 +451,28 @@
             el.textContent = mins + ':' + (secs < 10 ? '0' : '') + secs;
         }
 
+        var PRE_TIMER_SECONDS = 3;
+
+        // Pre-timer countdown (3-2-1-Go) before exercise timer
+        function startPreTimer(exerciseSeconds) {
+            preTimerRunning = true;
+            timerDuration = PRE_TIMER_SECONDS;
+            timerEnd = Date.now() + PRE_TIMER_SECONDS * 1000;
+            updateTimerDisplay();
+
+            timerInterval = setInterval(function() {
+                var rem = getRemaining();
+                if (rem <= 0) {
+                    clearInterval(timerInterval);
+                    timerInterval = null;
+                    preTimerRunning = false;
+                    startTimer(exerciseSeconds);
+                } else {
+                    updateTimerDisplay();
+                }
+            }, 250);
+        }
+
         // Timer for exercises
         function startTimer(seconds) {
             timerDuration = seconds;
@@ -471,6 +496,7 @@
                 timerInterval = null;
             }
             timerRunning = false;
+            preTimerRunning = false;
         }
 
         function updateTimerDisplay() {
@@ -479,8 +505,12 @@
             var rem = getRemaining();
             var mins = Math.floor(rem / 60);
             var secs = rem % 60;
-            el.textContent = (mins > 0 ? mins + ':' : '') + (secs < 10 && mins > 0 ? '0' : '') + secs;
-            el.className = 'timer-display' + (timerRunning ? ' running' : '') + (rem <= 0 ? ' done' : '');
+            if (preTimerRunning) {
+                el.textContent = secs;
+            } else {
+                el.textContent = (mins > 0 ? mins + ':' : '') + (secs < 10 && mins > 0 ? '0' : '') + secs;
+            }
+            el.className = 'timer-display' + (preTimerRunning ? ' pre-timer' : (timerRunning ? ' running' : '')) + (rem <= 0 ? ' done' : '');
         }
 
         // Render
@@ -530,7 +560,7 @@
             if (ex.type === 'reps') {
                 h += '<button class="btn btn-done" onclick="window.__done()">Done ✓</button>';
             } else {
-                if (timerRunning) {
+                if (timerRunning || preTimerRunning) {
                     h += '<button class="btn btn-done" onclick="window.__done()">Done ✓</button>';
                     h += '<button class="btn btn-skip" onclick="window.__skipTimer()">Skip</button>';
                 } else {
@@ -600,7 +630,7 @@
         window.__done = function() { advance(); };
         window.__startTimer = function() {
             var ex = getCurrentExercise();
-            startTimer(parseInt(ex.target));
+            startPreTimer(parseInt(ex.target));
             render();
         };
         window.__skipTimer = function() { advance(); };
