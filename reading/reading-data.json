@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22",
+  "generated_at": "2026-06-23",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -296,6 +296,15 @@
       "category": "AI & Software Engineering",
       "summary": "Narayanan & Kapoor argue AI won't cause mass SWE layoffs. 'AI-driven layoffs' at Block, Snap, Intuit were mostly AI washing — financial pressure was the real driver. Their 'decide-execute-deliver sandwich' model shows AI compresses the middle (code writing) but leaves decision-making and accountability layers intact, which resist automation for non-capability reasons. Writing code was never the bottleneck (devs spend 9-61% time coding). Vibe coding ≠ agentic engineering. Software demand may actually increase as cheaper production drives more building.",
       "added": "2026-06-17",
+      "times_shown": 0
+    },
+    {
+      "slug": "prompt-injection-as-role-confusion",
+      "title": "Prompt Injection as Role Confusion",
+      "url": "https://role-confusion.github.io/",
+      "category": "ai",
+      "summary": "Research paper showing LLMs identify roles by writing style rather than structural tags, enabling CoT Forgery attacks where fake reasoning is mistaken for genuine thoughts. Proposes roles as a key abstraction for AI safety research.",
+      "added": "2026-06-23",
       "times_shown": 0
     }
   ],
