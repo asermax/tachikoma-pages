@@ -890,6 +890,16 @@
       "summary": "This video features Ben Vinegar and Armin Ronacher discussing their experiences and insights after a year of using AI agents for software development. They explore the shifting landscape of agentic coding, highlighting the financial disparity between high-resource developers who can afford massive token costs for automated loops and everyday programmers. While acknowledging improvements in AI-generated code quality, they express skepticism about the current practicality of fully autonomous coding loops for daily work, favoring a more \"tastefully curated\" human-AI collaboration. This discussion is highly beneficial for software engineers, developers, and tech enthusiasts interested in the realistic limitations and future of AI-assisted programming.",
       "added": "2026-06-18",
       "times_shown": 0
+    },
+    {
+      "slug": "slow-down-to-speed-up-ai-and-software-engineering",
+      "title": "Slow down to speed up: AI and software engineering",
+      "url": "https://www.youtube.com/watch?v=5wks1W-auKY",
+      "video_id": "5wks1W-auKY",
+      "channel": "The Pragmatic Engineer",
+      "summary": "In this presentation at the Craft Conference, software engineer and author Gergely Orosz explores the pitfalls of over-reliance on artificial intelligence in software development, using a dramatic case study of a major security breach at Meta/Instagram. He argues that corporate pressure to maximize AI usage (or \"tokenmaxing\") combined with organizational restructuring\u2014such as laying off security staff and shifting engineers to manual data labeling\u2014directly led to critical, unreviewed code vulnerabilities. Ultimately, Orosz warns that prioritizing rapid AI implementation over human oversight severely damages engineering culture and system security. This video is highly beneficial for software engineers, engineering managers, and tech leaders navigating the integration of AI tools within their organizations.",
+      "added": "2026-06-24",
+      "times_shown": 0
     }
   ],
   "archive": [
