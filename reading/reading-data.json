@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24",
+  "generated_at": "2026-06-25",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -305,15 +305,6 @@
       "category": "ai",
       "summary": "Research paper showing LLMs identify roles by writing style rather than structural tags, enabling CoT Forgery attacks where fake reasoning is mistaken for genuine thoughts. Proposes roles as a key abstraction for AI safety research.",
       "added": "2026-06-23",
-      "times_shown": 0
-    },
-    {
-      "slug": "ais-affordability-crisis",
-      "title": "AI's Affordability Crisis",
-      "url": "https://blog.dshr.org/2026/06/ais-affordability-crisis.html?m=1",
-      "category": "ai",
-      "summary": "David S. H. Rosenthal argues that AI platforms have been running a 'drug-dealer's algorithm' — massively subsidizing token usage to generate overwhelming demand, justifying huge investments in the hope that addicted users would pay higher prices later. Drawing on analysis from SemiAnalysis, Ed Zitron, and Sequoia's David Cahn, he shows the subsidy is enormous: a $200/month Anthropic subscription can burn $8,000 in tokens, and OpenAI's subscription can burn $14,000. This means platforms are subsidizing enterprise customers by 40-70x, losing money on almost every user.\n\nOpenAI's 2025 financials reveal the scale: $13B revenue but $34B in costs and expenses, with a net loss of $38.5B. Strikingly, 44% of revenue went to sales and marketing — the hype is incredibly expensive, yet business adoption has remained flat. Anthropic, OpenAI, and Microsoft have all started moving customers from flat subscriptions to token-based billing, causing immediate sticker shock — one CEO reported spending going up 7x the first day.\n\nThe mainstream business press has caught on, with Bloomberg, Scott Galloway, and others noting that AI costs are now exceeding the value delivered. Even Nvidia's VP of applied deep learning admitted that compute costs far exceed employee costs on his team. Rosenthal's conclusion: the AI bubble is built on unsustainable subsidies, and the inevitable price correction will be brutal.",
-      "added": "2026-06-24",
       "times_shown": 0
     }
   ],
@@ -806,6 +797,16 @@
       "summary": "Article by Armin Ronacher discussing how automated AI harness loops in software development accelerate output but risk creating codebases too complex for humans to maintain. Examines the tension between AI-driven productivity gains and long-term codebase comprehensibility.",
       "added": "2026-06-23",
       "read": "2026-06-23",
+      "has_notes": true
+    },
+    {
+      "slug": "ais-affordability-crisis",
+      "title": "AI's Affordability Crisis",
+      "url": "https://blog.dshr.org/2026/06/ais-affordability-crisis.html?m=1",
+      "category": "ai",
+      "summary": "David S. H. Rosenthal argues that AI platforms have been running a 'drug-dealer's algorithm' — massively subsidizing token usage to generate overwhelming demand, justifying huge investments in the hope that addicted users would pay higher prices later. Drawing on analysis from SemiAnalysis, Ed Zitron, and Sequoia's David Cahn, he shows the subsidy is enormous: a $200/month Anthropic subscription can burn $8,000 in tokens, and OpenAI's subscription can burn $14,000. This means platforms are subsidizing enterprise customers by 40-70x, losing money on almost every user.\n\nOpenAI's 2025 financials reveal the scale: $13B revenue but $34B in costs and expenses, with a net loss of $38.5B. Strikingly, 44% of revenue went to sales and marketing — the hype is incredibly expensive, yet business adoption has remained flat. Anthropic, OpenAI, and Microsoft have all started moving customers from flat subscriptions to token-based billing, causing immediate sticker shock — one CEO reported spending going up 7x the first day.\n\nThe mainstream business press has caught on, with Bloomberg, Scott Galloway, and others noting that AI costs are now exceeding the value delivered. Even Nvidia's VP of applied deep learning admitted that compute costs far exceed employee costs on his team. Rosenthal's conclusion: the AI bubble is built on unsustainable subsidies, and the inevitable price correction will be brutal.",
+      "added": "2026-06-24",
+      "read": "2026-06-24",
       "has_notes": true
     }
   ]
