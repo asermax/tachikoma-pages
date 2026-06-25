@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-24T02:00:21.146689-03:00",
+  "generated_at": "2026-06-25T02:00:42.588884-03:00",
   "week_start": "2026-06-21",
   "week_label": "June 21 - June 27, 2026",
-  "last_updated": "Wednesday, June 24, 2026 at 02:00",
+  "last_updated": "Thursday, June 25, 2026 at 02:00",
   "stats": {
-    "completed": 8.0,
-    "planned": 8,
-    "display": "8 / 8"
+    "completed": 10.0,
+    "planned": 10,
+    "display": "10 / 10"
   },
   "daily": {
     "Sunday": {
@@ -25,9 +25,9 @@
       "total": 2
     },
     "Wednesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 2,
+      "total": 2
     },
     "Thursday": {
       "status": "empty",
@@ -49,10 +49,10 @@
     {
       "name": "Trumpet Practice",
       "emoji": "",
-      "status": "pending",
-      "accumulated": "30min",
+      "status": "done",
+      "accumulated": "60min",
       "target": "60min",
-      "progress_pct": 50
+      "progress_pct": 100
     },
     {
       "name": "Reading",
@@ -94,16 +94,16 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Sat",
           "status": "pending"
         }
       ],
-      "metrics_total": "",
-      "comparison": "",
-      "done": 0,
+      "metrics_total": "1.5h",
+      "comparison": "-1.5h",
+      "done": 1,
       "total": 2
     },
     {
@@ -166,7 +166,7 @@
         },
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Sat",
@@ -175,7 +175,7 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 1,
+      "done": 2,
       "total": 3
     }
   ],
