@@ -912,12 +912,72 @@
       "times_shown": 0
     },
     {
+      "slug": "agents-in-production-how-opengov-built-and-scaled-og-assist-gabe-de-mesa-opengov",
+      "title": "Agents in Production: How OpenGov Built and Scaled OG Assist - Gabe De Mesa, OpenGov",
+      "url": "https://www.youtube.com/watch?v=4uFVSLgD2Q4",
+      "video_id": "4uFVSLgD2Q4",
+      "channel": "AI Engineer",
+      "summary": "OpenGov software engineer Gabe De Mesa details how the company built and scaled OG Assist, their production-level AI assistant. He highlights key architectural decisions, such as rebuilding their agent loop to be Effect-native in TypeScript for finer control and utilizing Google's Agent-to-Agent (A2A) protocol to standardize agent communication. Additionally, De Mesa emphasizes the crucial role of user feedback loops in refining model evaluations after deployment. This video is valuable for AI engineers and developers looking to understand the technical challenges and practical solutions of deploying AI agents in production environments.",
+      "added": "2026-06-26",
+      "times_shown": 0
+    },
+    {
+      "slug": "build-systems-not-code-angie-jones-agentic-ai-foundation",
+      "title": "Build Systems, Not Code - Angie Jones, Agentic AI Foundation",
+      "url": "https://www.youtube.com/watch?v=ZD9-4fW2HhM",
+      "video_id": "ZD9-4fW2HhM",
+      "channel": "AI Engineer",
+      "summary": "Angie Jones argues that the true thrill of modern development lies in architecting agentic systems rather than just using AI to write code. Using a hypothetical house-hunting agent as a case study, she demonstrates how traditional software engineering disciplines\u2014systems thinking, workflow design, decomposition, separation of concerns, modularity, and algorithmic thinking\u2014are still vital when designing AI systems. She emphasizes that agents should not be given oversized single prompts, but should be integrated as components within a larger system where tasks are divided among deterministic code, schemas, and specialized subagents. Developers, software engineers, and system architects working with generative AI will benefit from this video by learning how to apply structured engineering principles to build more reliable and scalable agentic workflows.",
+      "added": "2026-06-26",
+      "times_shown": 0
+    },
+    {
       "slug": "production-evals-for-agentic-ai-systems-nishant-gupta-meta-superintelligence-lab",
       "title": "Production Evals For Agentic AI Systems - Nishant Gupta, Meta Superintelligence Labs",
       "url": "https://www.youtube.com/watch?v=vljxQZfJ9wY",
       "video_id": "vljxQZfJ9wY",
       "channel": "AI Engineer",
       "summary": "In this talk, Nishant Gupta, Tech Lead at Meta, discusses the critical shift from traditional model benchmarking to evaluating the reliability of autonomous, agentic AI workflows in production. He argues that offline benchmarks only measure model capability, whereas actual production environments require assessing complex system behaviors like tool usage, planning, and cascading failure recovery. To address this, Gupta proposes a continuous evaluation framework that treats evaluation as a core infrastructure component, combining scenario-driven simulations, production telemetry, and human-in-the-loop calibration. This video is ideal for software engineers, AI developers, and system architects looking to build and maintain dependable autonomous AI systems at scale.",
+      "added": "2026-06-26",
+      "times_shown": 0
+    },
+    {
+      "slug": "recursive-coding-agents-raymond-weitekamp-openprose",
+      "title": "Recursive Coding Agents - Raymond Weitekamp, OpenProse",
+      "url": "https://www.youtube.com/watch?v=3hXJI2q0Jz8",
+      "video_id": "3hXJI2q0Jz8",
+      "channel": "AI Engineer",
+      "summary": "In this presentation, Raymond Weitekamp introduces Recursive Coding Agents (Recursive Language Models, or RLMs) as a solution to the reliability and trust bottleneck in today's AI agents. He argues that RLMs combine reasoning and code execution, allowing even small models to outperform top frontier models on complex, long-form reasoning tasks through recursive sub-agent queries and symbolic manipulation. By showcasing RLMs' success in memory systems and benchmarking contests like ARC-AGI, the video demonstrates the potential of this new reasoning paradigm. This presentation is highly valuable for AI engineers, developers, and researchers looking to build more capable, predictable, and reliable AI agents.",
+      "added": "2026-06-26",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-log-is-the-agent-ishaan-sehgal-omnara",
+      "title": "The Log Is The Agent - Ishaan Sehgal, Omnara",
+      "url": "https://www.youtube.com/watch?v=UPwGaM2MKHY",
+      "video_id": "UPwGaM2MKHY",
+      "channel": "AI Engineer",
+      "summary": "Ishaan Sehgal argues that an AI agent's true identity resides in its event log rather than its model or runtime environment. Drawing an analogy to a video game save file that represents a character independently of the hardware, he explains how the log serves as the durable record of an agent's state and history. Treating the log as the primary architectural primitive unlocks essential system properties including reliability, scalability, easy forking, and model portability. Software engineers, AI developers, and system architects building agentic applications will benefit from this video's insights into modern agent design patterns.",
+      "added": "2026-06-26",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-miranda-hypothesis-how-hamilton-poisoned-persona-evals-jacob-e-thomas-result",
+      "title": "The Miranda Hypothesis: How Hamilton Poisoned Persona Evals - Jacob E. Thomas, Results Gen",
+      "url": "https://www.youtube.com/watch?v=IJXjTLPzvAU",
+      "video_id": "IJXjTLPzvAU",
+      "channel": "AI Engineer",
+      "summary": "Jacob E. Thomas introduces The Miranda Hypothesis, which critiques current methods used to evaluate role-playing AI personas. He argues that existing benchmarks prioritize stylistic convincingness and personality consistency (the Mask) over actual historical and documentary accuracy (the Mirror), which can lead to high evaluation scores for historically inaccurate personas. This talk is beneficial for AI developers, researchers, and educators building or evaluating conversational agents who want to ensure authentic representations of historical figures.",
+      "added": "2026-06-26",
+      "times_shown": 0
+    },
+    {
+      "slug": "turn-10994-notes-into-memory-paul-iusztin-decoding-ai-louis-fran\u00e7ois-bouchard-to",
+      "title": "Turn 10,994 Notes Into Memory - Paul Iusztin, Decoding AI & Louis-Fran\u00e7ois Bouchard, Towards AI",
+      "url": "https://www.youtube.com/watch?v=ZRM_TfEZcIo",
+      "video_id": "ZRM_TfEZcIo",
+      "channel": "AI Engineer",
+      "summary": "Paul Iusztin and Louis-Fran\u00e7ois Bouchard introduce how to build a personalized AI Research OS to turn a personal Second Brain of notes into an active research memory. They argue that existing tools\u2014standard LLM chats, coding agents, and vector databases\u2014either lose context over time, lack personalization, or are too difficult for humans to inspect and edit. They propose a system built on plain Markdown files as the memory layer, which allows AI agents to maintain research states and build cumulative knowledge over time. This video is beneficial for AI engineers, researchers, and developers looking for a more efficient and personalized way to manage and leverage their notes using AI.",
       "added": "2026-06-26",
       "times_shown": 0
     }
