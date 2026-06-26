@@ -900,6 +900,26 @@
       "summary": "In this presentation at the Craft Conference, software engineer and author Gergely Orosz explores the pitfalls of over-reliance on artificial intelligence in software development, using a dramatic case study of a major security breach at Meta/Instagram. He argues that corporate pressure to maximize AI usage (or \"tokenmaxing\") combined with organizational restructuring\u2014such as laying off security staff and shifting engineers to manual data labeling\u2014directly led to critical, unreviewed code vulnerabilities. Ultimately, Orosz warns that prioritizing rapid AI implementation over human oversight severely damages engineering culture and system security. This video is highly beneficial for software engineers, engineering managers, and tech leaders navigating the integration of AI tools within their organizations.",
       "added": "2026-06-24",
       "times_shown": 0
+    },
+    {
+      "slug": "a-genius-with-amnesia-victor-savkin-nx",
+      "title": "A Genius With Amnesia - Victor Savkin, Nx",
+      "url": "https://www.youtube.com/watch?v=jVjt-2g8NMY",
+      "video_id": "jVjt-2g8NMY",
+      "channel": "AI Engineer",
+      "summary": "This video discusses the limitations of current AI coding agents, specifically their inability to see across repository boundaries and their lack of episodic memory, which the speaker compares to a 'genius with amnesia.' To resolve these issues, the presenter introduces Polygraph, an agent-agnostic meta-harness that constructs a 'synthetic monorepo' to unify repository dependency graphs and capture session states for seamless cross-repo coordination. This presentation is highly valuable for AI engineers, software developers managing multi-repo architectures, and technical leaders seeking to deploy AI agents effectively in complex development workflows.",
+      "added": "2026-06-26",
+      "times_shown": 0
+    },
+    {
+      "slug": "production-evals-for-agentic-ai-systems-nishant-gupta-meta-superintelligence-lab",
+      "title": "Production Evals For Agentic AI Systems - Nishant Gupta, Meta Superintelligence Labs",
+      "url": "https://www.youtube.com/watch?v=vljxQZfJ9wY",
+      "video_id": "vljxQZfJ9wY",
+      "channel": "AI Engineer",
+      "summary": "In this talk, Nishant Gupta, Tech Lead at Meta, discusses the critical shift from traditional model benchmarking to evaluating the reliability of autonomous, agentic AI workflows in production. He argues that offline benchmarks only measure model capability, whereas actual production environments require assessing complex system behaviors like tool usage, planning, and cascading failure recovery. To address this, Gupta proposes a continuous evaluation framework that treats evaluation as a core infrastructure component, combining scenario-driven simulations, production telemetry, and human-in-the-loop calibration. This video is ideal for software engineers, AI developers, and system architects looking to build and maintain dependable autonomous AI systems at scale.",
+      "added": "2026-06-26",
+      "times_shown": 0
     }
   ],
   "archive": [
