@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25",
+  "generated_at": "2026-06-26",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -152,7 +152,7 @@
       "category": "ai",
       "summary": "Introduces Structured-Prompt-Driven Development (SPDD), a method that treats AI prompts as first-class delivery artifacts — version-controlled, reviewed, and reusable. Built around the REASONS Canvas (Requirements, Entities, Approach, Structure, Operations, Norms, Safeguards) and a six-step workflow that brings prompts into the same discipline as code. Developed by Thoughtworks to address the gap between individual AI speed and system-level throughput. Includes a worked billing engine example, core skill identification (abstraction-first, alignment, iterative review), and fitness assessment for where SPDD pays off vs. falls short.",
       "added": "2026-05-15",
-      "times_shown": 2
+      "times_shown": 3
     },
     {
       "slug": "httpsxcomistatus2058014104854626490",
@@ -179,7 +179,7 @@
       "category": "ai",
       "summary": "Addy Osmani argues that spawning multiple AI agents creates an 'orchestration tax' — starting agents is cheap, but reviewing, reconciling, and merging their output routes through you as a single serial bottleneck, like the GIL in Python. The key insight is that you must architect your attention as a scarce serial resource rather than optimizing the part that was never the constraint.",
       "added": "2026-05-31",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "arxiv-260506445v1",
@@ -188,7 +188,7 @@
       "category": "ai",
       "summary": "This paper introduces 'constraint decay,' showing that LLM coding agents perform well on unconstrained backend generation but degrade substantially — losing an average of 30 percentage points in assertion pass rates — when forced to adhere to structural requirements like Clean Architecture patterns, specific databases, and ORM integration across eight web frameworks.",
       "added": "2026-05-31",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "could-a-large-language-model-be-conscious",
@@ -808,6 +808,16 @@
       "added": "2026-06-24",
       "read": "2026-06-24",
       "has_notes": true
+    },
+    {
+      "slug": "httpsopensubstackcompubtidyfirstpthe-cost-yagni-was-never-aboututm-sourceshareut",
+      "title": "The Cost YAGNI Was Never About",
+      "url": "https://open.substack.com/pub/tidyfirst/p/the-cost-yagni-was-never-about?utm_source=share&utm_medium=android&r=7mo5z",
+      "category": "engineering",
+      "summary": "Kent Beck argues YAGNI isn't about saving coding effort — it's about avoiding speculative structures. Two costs: Optionality (early commitment limits adaptability) and NPV (spending early delays value). As coding gets cheaper, the danger of speculative structures increases.\n\n**Reading notes**: Directly relevant to AI coding — models tend to add speculative features no one asked for, creating the exact premature structure commitment YAGNI warns against. Since LLMs can't easily iterate in-place, those decisions get locked in.",
+      "added": "2026-06-25",
+      "read": null,
+      "has_notes": false
     }
   ]
 }
