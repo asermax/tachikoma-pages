@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-26T02:00:44.727881-03:00",
+  "generated_at": "2026-06-27T02:01:04.142661-03:00",
   "week_start": "2026-06-21",
   "week_label": "June 21 - June 27, 2026",
-  "last_updated": "Friday, June 26, 2026 at 02:00",
+  "last_updated": "Saturday, June 27, 2026 at 02:01",
   "stats": {
-    "completed": 9.75,
-    "planned": 10,
-    "display": "9.8 / 10"
+    "completed": 10.6,
+    "planned": 11,
+    "display": "10.6 / 11"
   },
   "daily": {
     "Sunday": {
@@ -35,9 +35,9 @@
       "total": 0
     },
     "Friday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 1,
+      "total": 1
     },
     "Saturday": {
       "status": "empty",
@@ -76,16 +76,12 @@
         {
           "day": "Tue",
           "status": "done"
-        },
-        {
-          "day": "Sat",
-          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
       "done": 2,
-      "total": 3
+      "total": 2
     },
     {
       "id": "music-practice",
@@ -97,13 +93,13 @@
           "status": "done"
         },
         {
-          "day": "Sat",
-          "status": "pending"
+          "day": "Fri",
+          "status": "done"
         }
       ],
-      "metrics_total": "1.5h",
-      "comparison": "-1.5h",
-      "done": 1,
+      "metrics_total": "3.5h",
+      "comparison": "+0.5h",
+      "done": 2,
       "total": 2
     },
     {
@@ -144,16 +140,12 @@
         {
           "day": "Mon",
           "status": "done"
-        },
-        {
-          "day": "Sat",
-          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
       "done": 1,
-      "total": 2
+      "total": 1
     },
     {
       "id": "yoga",
