@@ -87,7 +87,7 @@
       "location": "Climbing Gym - Bar",
       "exercises": [
         {
-          "name": "Pull-ups",
+          "name": "Chin-ups",
           "detail": null,
           "sets": 3,
           "type": "reps",
@@ -106,19 +106,19 @@
         },
         {
           "name": "Knee push-ups",
-          "detail": "diamond",
+          "detail": "wide",
           "sets": 3,
           "type": "reps",
-          "target": "10",
+          "target": "12",
           "unit": "",
           "weight": null
         },
         {
-          "name": "Dead hang",
+          "name": "L-sit hang",
           "detail": null,
           "sets": 3,
           "type": "time",
-          "target": "20",
+          "target": "12",
           "unit": "s",
           "weight": null
         }
