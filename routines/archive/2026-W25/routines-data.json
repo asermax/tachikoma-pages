@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-27T02:01:04.142661-03:00",
+  "generated_at": "2026-06-28T18:16:14.822106-03:00",
   "week_start": "2026-06-21",
   "week_label": "June 21 - June 27, 2026",
-  "last_updated": "Saturday, June 27, 2026 at 02:01",
+  "last_updated": "Sunday, June 28, 2026 at 18:16",
   "stats": {
-    "completed": 10.6,
-    "planned": 11,
-    "display": "10.6 / 11"
+    "completed": 10.5,
+    "planned": 12,
+    "display": "10.5 / 12"
   },
   "daily": {
     "Sunday": {
@@ -40,9 +40,9 @@
       "total": 1
     },
     "Saturday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 1
     }
   },
   "goals": [
@@ -98,7 +98,7 @@
         }
       ],
       "metrics_total": "3.5h",
-      "comparison": "+0.5h",
+      "comparison": "",
       "done": 2,
       "total": 2
     },
@@ -173,9 +173,9 @@
   ],
   "spirit": {
     "state": "thriving",
-    "emoji": "\ud83d\udc09",
-    "title": "\ud83d\udc09 Frost Dragon Hatchling",
+    "emoji": "\ud83d\udc27",
+    "title": "\ud83d\udc27 Pixel Penguin",
     "image": "assets/thriving.jpg",
-    "description": "Your ice dragon hatchling spreads its crystalline wings wide, frost sparkling in the air, vibrant icy blues glowing with triumphant energy atop a snow-dusted peak."
+    "description": "Your pixel penguin stands tall with a crown of ice crystals, bright vibrant colors, snowflakes swirling happily around it \u2014 triumphant and full of energy."
   }
 }
