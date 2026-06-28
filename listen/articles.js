@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'engineering-for-bounded-cognition', title: 'Engineering for Bounded Cognition', meta: 'Matt Williams · February 2026' },
     { slug: 'prompt-injection-as-role-confusion', title: 'A Theory of Prompt Injection (and Why You Should Study Roles)', meta: 'Charles Ye et al. · June 2026' },
     { slug: 'why-ai-hasnt-replaced-software-engineers', title: 'Why AI hasn\'t replaced software engineers, and won\'t', meta: 'Narayanan & Kapoor · June 2026' },
     { slug: 'agent-context', title: 'Agent Context', meta: 'Sankalp · June 2026' },
