@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-28T11:29:08.146669-03:00",
+  "generated_at": "2026-06-28T11:51:10.147013-03:00",
   "week_start": "2026-06-28",
   "week_label": "June 28 - July 04, 2026",
-  "last_updated": "Sunday, June 28, 2026 at 11:29",
+  "last_updated": "Sunday, June 28, 2026 at 11:51",
   "stats": {
     "completed": 0,
     "planned": 0,
@@ -10,9 +10,9 @@
   },
   "daily": {
     "Sunday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 2
     },
     "Monday": {
       "status": "empty",
@@ -97,6 +97,14 @@
       "emoji": "\ud83c\udfb7",
       "sessions": [
         {
+          "day": "Sun",
+          "status": "pending"
+        },
+        {
+          "day": "Mon",
+          "status": "pending"
+        },
+        {
           "day": "Wed",
           "status": "pending"
         }
@@ -104,7 +112,7 @@
       "metrics_total": "",
       "comparison": "",
       "done": 0,
-      "total": 1
+      "total": 3
     },
     {
       "id": "piano-practice",
@@ -112,7 +120,7 @@
       "emoji": "\ud83c\udfb9",
       "sessions": [
         {
-          "day": "Mon",
+          "day": "Sat",
           "status": "pending"
         }
       ],
@@ -165,6 +173,10 @@
       "emoji": "\ud83e\uddd8",
       "sessions": [
         {
+          "day": "Sun",
+          "status": "pending"
+        },
+        {
           "day": "Mon",
           "status": "pending"
         },
@@ -180,14 +192,14 @@
       "metrics_total": "",
       "comparison": "",
       "done": 0,
-      "total": 3
+      "total": 4
     }
   ],
   "spirit": {
     "state": "dormant",
-    "emoji": "\ud83d\udc09",
-    "title": "\ud83d\udc09 Frost Dragon Hatchling",
+    "emoji": "\ud83d\udc27",
+    "title": "\ud83d\udc27 Pixel Penguin",
     "image": "assets/dormant.jpg",
-    "description": "Your ice dragon hatchling is fast asleep, curled into a cozy ball under gentle moonlight, soft deep blue night wrapping around it as snowflakes drift peacefully down."
+    "description": "Your pixel penguin is fast asleep, curled up in a cozy nest of snow, soft blue night colors, tiny Zzz floating above \u2014 peaceful rest."
   }
 }
