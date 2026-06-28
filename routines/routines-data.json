@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-28T11:57:35.599003-03:00",
-  "week_start": "2026-06-28",
-  "week_label": "June 28 - July 04, 2026",
-  "last_updated": "Sunday, June 28, 2026 at 11:57",
+  "generated_at": "2026-06-28T18:16:14.822106-03:00",
+  "week_start": "2026-06-21",
+  "week_label": "June 21 - June 27, 2026",
+  "last_updated": "Sunday, June 28, 2026 at 18:16",
   "stats": {
-    "completed": 0,
-    "planned": 0,
-    "display": "0 / 0"
+    "completed": 10.5,
+    "planned": 12,
+    "display": "10.5 / 12"
   },
   "daily": {
     "Sunday": {
@@ -15,19 +15,19 @@
       "total": 0
     },
     "Monday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 4,
+      "total": 4
     },
     "Tuesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 2,
+      "total": 2
     },
     "Wednesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 2,
+      "total": 2
     },
     "Thursday": {
       "status": "empty",
@@ -35,32 +35,32 @@
       "total": 0
     },
     "Friday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 1,
+      "total": 1
     },
     "Saturday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 1
     }
   },
   "goals": [
     {
       "name": "Trumpet Practice",
       "emoji": "",
-      "status": "pending",
-      "accumulated": "0min",
+      "status": "done",
+      "accumulated": "60min",
       "target": "60min",
-      "progress_pct": 0
+      "progress_pct": 100
     },
     {
       "name": "Reading",
       "emoji": "",
       "status": "pending",
-      "accumulated": "0min",
+      "accumulated": "30min",
       "target": "60min",
-      "progress_pct": 0
+      "progress_pct": 50
     }
   ],
   "routines": [
@@ -71,25 +71,17 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Tue",
-          "status": "pending"
-        },
-        {
-          "day": "Thu",
-          "status": "pending"
-        },
-        {
-          "day": "Sat",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
-      "total": 4
+      "done": 2,
+      "total": 2
     },
     {
       "id": "music-practice",
@@ -98,16 +90,16 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         },
         {
-          "day": "Sat",
-          "status": "pending"
+          "day": "Fri",
+          "status": "done"
         }
       ],
-      "metrics_total": "",
+      "metrics_total": "3.5h",
       "comparison": "",
-      "done": 0,
+      "done": 2,
       "total": 2
     },
     {
@@ -117,12 +109,12 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -132,17 +124,13 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "pending"
-        },
-        {
-          "day": "Thu",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
-      "total": 2
+      "done": 1,
+      "total": 1
     },
     {
       "id": "running",
@@ -151,17 +139,13 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
-        },
-        {
-          "day": "Sat",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
-      "total": 2
+      "done": 1,
+      "total": 1
     },
     {
       "id": "yoga",
@@ -170,11 +154,11 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Sat",
@@ -183,15 +167,15 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 2,
       "total": 3
     }
   ],
   "spirit": {
-    "state": "dormant",
+    "state": "thriving",
     "emoji": "\ud83d\udc27",
     "title": "\ud83d\udc27 Pixel Penguin",
-    "image": "assets/dormant.jpg",
-    "description": "Your pixel penguin is fast asleep, curled up in a cozy nest of snow, soft blue night colors, tiny Zzz floating above \u2014 peaceful rest."
+    "image": "assets/thriving.jpg",
+    "description": "Your pixel penguin stands tall with a crown of ice crystals, bright vibrant colors, snowflakes swirling happily around it \u2014 triumphant and full of energy."
   }
 }
