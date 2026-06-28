@@ -1,0 +1,181 @@
+{
+  "generated_at": "2026-06-27T02:01:04.142661-03:00",
+  "week_start": "2026-06-21",
+  "week_label": "June 21 - June 27, 2026",
+  "last_updated": "Saturday, June 27, 2026 at 02:01",
+  "stats": {
+    "completed": 10.6,
+    "planned": 11,
+    "display": "10.6 / 11"
+  },
+  "daily": {
+    "Sunday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Monday": {
+      "status": "done",
+      "completed": 4,
+      "total": 4
+    },
+    "Tuesday": {
+      "status": "done",
+      "completed": 2,
+      "total": 2
+    },
+    "Wednesday": {
+      "status": "done",
+      "completed": 2,
+      "total": 2
+    },
+    "Thursday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Friday": {
+      "status": "done",
+      "completed": 1,
+      "total": 1
+    },
+    "Saturday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    }
+  },
+  "goals": [
+    {
+      "name": "Trumpet Practice",
+      "emoji": "",
+      "status": "done",
+      "accumulated": "60min",
+      "target": "60min",
+      "progress_pct": 100
+    },
+    {
+      "name": "Reading",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "30min",
+      "target": "60min",
+      "progress_pct": 50
+    }
+  ],
+  "routines": [
+    {
+      "id": "basic-workout",
+      "name": "Basic Workout",
+      "emoji": "\ud83d\udcaa",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        },
+        {
+          "day": "Tue",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 2,
+      "total": 2
+    },
+    {
+      "id": "music-practice",
+      "name": "Music Practice",
+      "emoji": "\ud83c\udfb7",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "done"
+        },
+        {
+          "day": "Fri",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "3.5h",
+      "comparison": "+0.5h",
+      "done": 2,
+      "total": 2
+    },
+    {
+      "id": "piano-practice",
+      "name": "Piano Practice",
+      "emoji": "\ud83c\udfb9",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "rock-climbing",
+      "name": "Rock Climbing",
+      "emoji": "\ud83e\uddd7",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "running",
+      "name": "Running",
+      "emoji": "\ud83c\udfc3",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga",
+      "emoji": "\ud83e\uddd8",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        },
+        {
+          "day": "Wed",
+          "status": "done"
+        },
+        {
+          "day": "Sat",
+          "status": "pending"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 2,
+      "total": 3
+    }
+  ],
+  "spirit": {
+    "state": "thriving",
+    "emoji": "\ud83d\udc09",
+    "title": "\ud83d\udc09 Frost Dragon Hatchling",
+    "image": "assets/thriving.jpg",
+    "description": "Your ice dragon hatchling spreads its crystalline wings wide, frost sparkling in the air, vibrant icy blues glowing with triumphant energy atop a snow-dusted peak."
+  }
+}
