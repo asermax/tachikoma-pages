@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-28T11:51:10.147013-03:00",
+  "generated_at": "2026-06-28T11:57:35.599003-03:00",
   "week_start": "2026-06-28",
   "week_label": "June 28 - July 04, 2026",
-  "last_updated": "Sunday, June 28, 2026 at 11:51",
+  "last_updated": "Sunday, June 28, 2026 at 11:57",
   "stats": {
     "completed": 0,
     "planned": 0,
@@ -10,9 +10,9 @@
   },
   "daily": {
     "Sunday": {
-      "status": "missed",
+      "status": "empty",
       "completed": 0,
-      "total": 2
+      "total": 0
     },
     "Monday": {
       "status": "empty",
@@ -97,22 +97,18 @@
       "emoji": "\ud83c\udfb7",
       "sessions": [
         {
-          "day": "Sun",
-          "status": "pending"
-        },
-        {
-          "day": "Mon",
-          "status": "pending"
-        },
-        {
           "day": "Wed",
+          "status": "pending"
+        },
+        {
+          "day": "Sat",
           "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
       "done": 0,
-      "total": 3
+      "total": 2
     },
     {
       "id": "piano-practice",
@@ -120,7 +116,7 @@
       "emoji": "\ud83c\udfb9",
       "sessions": [
         {
-          "day": "Sat",
+          "day": "Mon",
           "status": "pending"
         }
       ],
@@ -173,10 +169,6 @@
       "emoji": "\ud83e\uddd8",
       "sessions": [
         {
-          "day": "Sun",
-          "status": "pending"
-        },
-        {
           "day": "Mon",
           "status": "pending"
         },
@@ -192,7 +184,7 @@
       "metrics_total": "",
       "comparison": "",
       "done": 0,
-      "total": 4
+      "total": 3
     }
   ],
   "spirit": {
