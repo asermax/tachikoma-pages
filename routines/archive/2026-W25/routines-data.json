@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-28T11:29:08.146669-03:00",
-  "week_start": "2026-06-28",
-  "week_label": "June 28 - July 04, 2026",
-  "last_updated": "Sunday, June 28, 2026 at 11:29",
+  "generated_at": "2026-06-27T02:01:04.142661-03:00",
+  "week_start": "2026-06-21",
+  "week_label": "June 21 - June 27, 2026",
+  "last_updated": "Saturday, June 27, 2026 at 02:01",
   "stats": {
-    "completed": 0,
-    "planned": 0,
-    "display": "0 / 0"
+    "completed": 10.6,
+    "planned": 11,
+    "display": "10.6 / 11"
   },
   "daily": {
     "Sunday": {
@@ -15,19 +15,19 @@
       "total": 0
     },
     "Monday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 4,
+      "total": 4
     },
     "Tuesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 2,
+      "total": 2
     },
     "Wednesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 2,
+      "total": 2
     },
     "Thursday": {
       "status": "empty",
@@ -35,9 +35,9 @@
       "total": 0
     },
     "Friday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 1,
+      "total": 1
     },
     "Saturday": {
       "status": "empty",
@@ -49,18 +49,18 @@
     {
       "name": "Trumpet Practice",
       "emoji": "",
-      "status": "pending",
-      "accumulated": "0min",
+      "status": "done",
+      "accumulated": "60min",
       "target": "60min",
-      "progress_pct": 0
+      "progress_pct": 100
     },
     {
       "name": "Reading",
       "emoji": "",
       "status": "pending",
-      "accumulated": "0min",
+      "accumulated": "30min",
       "target": "60min",
-      "progress_pct": 0
+      "progress_pct": 50
     }
   ],
   "routines": [
@@ -71,25 +71,17 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Tue",
-          "status": "pending"
-        },
-        {
-          "day": "Thu",
-          "status": "pending"
-        },
-        {
-          "day": "Sat",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
-      "total": 4
+      "done": 2,
+      "total": 2
     },
     {
       "id": "music-practice",
@@ -98,13 +90,17 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
+        },
+        {
+          "day": "Fri",
+          "status": "done"
         }
       ],
-      "metrics_total": "",
-      "comparison": "",
-      "done": 0,
-      "total": 1
+      "metrics_total": "3.5h",
+      "comparison": "+0.5h",
+      "done": 2,
+      "total": 2
     },
     {
       "id": "piano-practice",
@@ -113,12 +109,12 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -128,17 +124,13 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "pending"
-        },
-        {
-          "day": "Thu",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
-      "total": 2
+      "done": 1,
+      "total": 1
     },
     {
       "id": "running",
@@ -147,17 +139,13 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
-        },
-        {
-          "day": "Sat",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
-      "total": 2
+      "done": 1,
+      "total": 1
     },
     {
       "id": "yoga",
@@ -166,11 +154,11 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Sat",
@@ -179,15 +167,15 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 2,
       "total": 3
     }
   ],
   "spirit": {
-    "state": "dormant",
+    "state": "thriving",
     "emoji": "\ud83d\udc09",
     "title": "\ud83d\udc09 Frost Dragon Hatchling",
-    "image": "assets/dormant.jpg",
-    "description": "Your ice dragon hatchling is fast asleep, curled into a cozy ball under gentle moonlight, soft deep blue night wrapping around it as snowflakes drift peacefully down."
+    "image": "assets/thriving.jpg",
+    "description": "Your ice dragon hatchling spreads its crystalline wings wide, frost sparkling in the air, vibrant icy blues glowing with triumphant energy atop a snow-dusted peak."
   }
 }
