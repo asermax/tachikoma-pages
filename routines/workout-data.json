@@ -1,5 +1,5 @@
 {
-  "week": "2026-W25",
+  "week": "2026-W26",
   "days": {
     "Monday": {
       "location": "Home - Dumbbells",
@@ -78,6 +78,47 @@
           "sets": 3,
           "type": "time",
           "target": "20",
+          "unit": "s",
+          "weight": null
+        }
+      ]
+    },
+    "Thursday": {
+      "location": "Climbing Gym - Bar",
+      "exercises": [
+        {
+          "name": "Chin-ups",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "4",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Hanging knee raises",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "10",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Knee push-ups",
+          "detail": "wide",
+          "sets": 3,
+          "type": "reps",
+          "target": "12",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "L-sit hang",
+          "detail": null,
+          "sets": 3,
+          "type": "time",
+          "target": "12",
           "unit": "s",
           "weight": null
         }
