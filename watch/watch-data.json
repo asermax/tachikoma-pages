@@ -980,6 +980,116 @@
       "summary": "Paul Iusztin and Louis-Fran\u00e7ois Bouchard introduce how to build a personalized AI Research OS to turn a personal Second Brain of notes into an active research memory. They argue that existing tools\u2014standard LLM chats, coding agents, and vector databases\u2014either lose context over time, lack personalization, or are too difficult for humans to inspect and edit. They propose a system built on plain Markdown files as the memory layer, which allows AI agents to maintain research states and build cumulative knowledge over time. This video is beneficial for AI engineers, researchers, and developers looking for a more efficient and personalized way to manage and leverage their notes using AI.",
       "added": "2026-06-26",
       "times_shown": 0
+    },
+    {
+      "slug": "ai-driven-multi-document-correlation-for-financial-compliance-varsha-shah-indepe",
+      "title": "AI-Driven Multi-Document Correlation for Financial Compliance - Varsha Shah, Independent",
+      "url": "https://www.youtube.com/watch?v=Iwe_RY-fYgI",
+      "video_id": "Iwe_RY-fYgI",
+      "channel": "AI Engineer",
+      "summary": "This video presentation introduces an AI-driven framework designed to enhance enterprise financial compliance and fraud detection through multi-document correlation. The presenter argues that traditional compliance tools fail to detect sophisticated fraud because they analyze documents in isolation, whereas the proposed system connects disparate records to uncover hidden, relational patterns. This framework relies on a three-pillar architecture consisting of graph-based entity correlation, adaptive probabilistic risk modeling, and a cross-jurisdictional normalization layer. This presentation is highly beneficial for enterprise compliance officers, financial fraud analysts, and system architects seeking to transition from reactive compliance processes to proactive threat intelligence.",
+      "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "deterministic-infra-for-non-deterministic-ai-agents-nishant-gupta-meta-superinte",
+      "title": "Deterministic Infra for Non-Deterministic AI Agents - Nishant Gupta, Meta Superintelligence Labs",
+      "url": "https://www.youtube.com/watch?v=APh1Vx0oLmQ",
+      "video_id": "APh1Vx0oLmQ",
+      "channel": "AI Engineer",
+      "summary": "In this video, Nishant Gupta, Tech Lead at Meta, discusses the critical need to build deterministic infrastructure to support the non-deterministic, probabilistic nature of autonomous AI agents. He argues that as AI transitions from simple chatbots to autonomous agents, the primary engineering challenge shifts from model capability to system reliability, as production failures often stem from infrastructure issues rather than model hallucinations. To solve this, Gupta proposes utilizing an \"Agent Control Plane\" where the underlying platform\u2014not the model\u2014makes final execution decisions, adapting proven distributed systems patterns to manage chaotic AI behaviors. Software engineers, systems architects, and anyone looking to deploy reliable, enterprise-grade AI agent systems in production would benefit greatly from watching this presentation.",
+      "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "ep-0-none-of-my-software-has-gotten-better",
+      "title": "Ep 0 - \u201cNone of My Software Has Gotten Better\u201d",
+      "url": "https://www.youtube.com/watch?v=7o3wBWltV-s",
+      "video_id": "7o3wBWltV-s",
+      "channel": "Next Token",
+      "summary": "This podcast episode of \"The Next Token\" features software engineers Dillon Mulroy, Rhys Sullivan, and Sunil Pai as they discuss the real-world impact of advanced AI models\u2014specifically Anthropic's Claude Fable 5\u2014on modern software development. The hosts debate the high financial cost of running these complex models versus their actual utility, noting that while AI can be helpful for large, complex tasks, it is often too expensive and inefficient for daily developer workflows. A key takeaway is the critical observation that despite the widespread hype and integration of AI tools, everyday consumer software has not noticeably improved in quality. Software developers, engineering managers, and tech enthusiasts would benefit from watching this video to gain a realistic perspective on the limitations and expenses of AI-assisted coding.",
+      "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "openclaw-in-your-hand-building-a-physical-ai-terminal-lech-kalinowski-callstack",
+      "title": "OpenClaw in Your Hand: Building a Physical AI Terminal - Lech Kalinowski, Callstack",
+      "url": "https://www.youtube.com/watch?v=akk6KRlcwW4",
+      "video_id": "akk6KRlcwW4",
+      "channel": "AI Engineer",
+      "summary": "In this video, presenter Lech Kalinowski introduces VAULT, an innovative physical, text-first AI terminal designed to run local Large Language Model (LLM) agents entirely offline. He explains the engineering behind the device, which utilizes a dual-display system\u2014a fast OLED screen for real-time typing and a calm, power-efficient e-paper screen for reading outputs\u2014to create a tactile, cloud-free AI interface. Additionally, Kalinowski details the underlying system architecture, including its ESP32-powered hardware, custom power management, and local backend capabilities that interface with open-source LLMs. This video is ideal for AI engineers, hardware hobbyists, and developers interested in physical computing and privacy-focused, device-native AI applications.",
+      "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-agentic-ai-engineer-benedikt-sanftl-mutagent",
+      "title": "The Agentic AI Engineer - Benedikt Sanftl, Mutagent",
+      "url": "https://www.youtube.com/watch?v=pSto5YaNGUo",
+      "video_id": "pSto5YaNGUo",
+      "channel": "AI Engineer",
+      "summary": "This video introduces the concept of the \"Agentic AI Engineer,\" a framework designed by Mutagent to automate the entire development lifecycle of AI agents. The presenters argue that traditional, human-gated processes for building, testing, and optimizing AI agents are too slow and fail to scale as organizations deploy more agents. To solve this, they propose an automated, spec-driven loop where coding agents generate and continuously optimize portable AI agents based on clearly defined requirements and constraints. This presentation is highly beneficial for AI developers, software engineers, and technology leaders looking to scale and manage their AI agent infrastructure efficiently.",
+      "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-prompt-is-the-platform-dominik-tornow-resonate-hq",
+      "title": "The Prompt is the Platform - Dominik Tornow, Resonate HQ",
+      "url": "https://www.youtube.com/watch?v=DqtmZE6Hl0g",
+      "video_id": "DqtmZE6Hl0g",
+      "channel": "AI Engineer",
+      "summary": "This presentation by Dominik Tornow, founder and CEO of Resonate, explores the future of agentic software engineering and how the role of AI agents is shifting from writing code implementations to designing system specifications. Tornow argues that asking AI agents to directly generate complex production-grade software from abstract specifications often fails because the gap is too large. To bridge this gap, he proposes a structured development workflow that leverages deterministic simulation environments as \"executable designs\" to test algorithms before concrete specifications and final code are generated. This video is highly beneficial for software engineers, system architects, and AI developers interested in building robust, distributed systems using AI agents.",
+      "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "using-rl-agent-to-detect-and-remediate-etl-pipeline-failures-anna-marie-benzon",
+      "title": "Using RL Agent to Detect and Remediate ETL Pipeline Failures - Anna Marie Benzon",
+      "url": "https://www.youtube.com/watch?v=LrGCT7G_rU8",
+      "video_id": "LrGCT7G_rU8",
+      "channel": "AI Engineer",
+      "summary": "The presentation introduces a reinforcement learning (RL) guided agent designed to detect and autonomously remediate cloud-based ETL pipeline failures. Presenter Anna Marie Benzon proposes a system architecture that combines deterministic anomaly rules with a Q-learning decision policy and safety guardrails to ensure bounded, safe autonomy. This automation significantly reduces the mean time to resolution for routine failures from days to mere minutes while escalating high-risk anomalies to human teams. Data engineers, cloud architects, and operations teams seeking to implement automated, auditable self-healing workflows for data pipelines would benefit from watching this video.",
+      "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "voice-in-visuals-out-the-agony-and-the-ecstasy-allen-pike-forestwalk-labs",
+      "title": "Voice In, Visuals Out: The Agony and the Ecstasy - Allen Pike, Forestwalk Labs",
+      "url": "https://www.youtube.com/watch?v=65X0pQ6Lmbg",
+      "video_id": "65X0pQ6Lmbg",
+      "channel": "AI Engineer",
+      "summary": "In this presentation, Allen Pike of Forestwalk Labs advocates for a \"Voice In, Visuals Out\" design paradigm for AI, building on the idea that humans naturally prefer voice inputs but visual outputs. He argues that while real-time voice-to-voice communication is hindered by \"the tyranny of latency\"\u2014as human speech requires responses within 200 milliseconds to feel conversational\u2014visual feedback is much more forgiving, with users accepting up to a full second for rich visual data to render. To make these systems feel seamless, Pike outlines key pillars of low-latency design, emphasizing the necessity of using fast, lightweight AI models. AI developers, UX designers, and product engineers looking to create responsive and intuitive multimodal interfaces will highly benefit from watching this talk.",
+      "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "we-cut-94-of-ai-coding-tokens-with-a-local-code-index-rajkumar-sakthivel-tesco",
+      "title": "We Cut 94% of AI Coding Tokens With a Local Code Index - Rajkumar Sakthivel, Tesco",
+      "url": "https://www.youtube.com/watch?v=dRmWYHuIJxM",
+      "video_id": "dRmWYHuIJxM",
+      "channel": "AI Engineer",
+      "summary": "This video presentation by Rajkumar Sakthivel details how implementing a local retrieval layer between a codebase and AI agents can cut AI coding token usage by 94% and drastically reduce API bills. He explains that since 90% of AI coding costs stem from input context rather than output generation, developers should focus on retrieval optimization using a hybrid search architecture (combining semantic and keyword search) rather than prompt engineering. The presented system runs entirely locally on SQLite, maintains a 90% recall rate, and can be shared across multiple AI assistants (like Cursor, Claude, and Copilot) via the Model Context Protocol (MCP). Software engineers, AI developers, and engineering managers looking to minimize AI costs and latency while keeping code private will find this talk highly valuable.",
+      "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "your-agent-failed-in-prod-good-luck-reproducing-it-tisha-chawla-susheem-koul-mic",
+      "title": "Your Agent Failed in Prod. Good Luck Reproducing It. - Tisha Chawla & Susheem Koul, Microsoft",
+      "url": "https://www.youtube.com/watch?v=Lc8zRh9muoY",
+      "video_id": "Lc8zRh9muoY",
+      "channel": "AI Engineer",
+      "summary": "This video addresses the difficult challenge of reproducing and debugging AI agent failures in production, explaining that achieving perfect determinism (even with temperature set to zero) is often impossible due to underlying hardware and system-level behaviors. The presenters argue that developers should focus on \"replayability\" rather than \"determinism\" by recording the precise inputs and outputs of workflow boundaries, such as tool and LLM calls, using their tool \"Chronicle.\" AI engineers and software developers building LLM-based agent workflows will benefit from watching this presentation to learn how to reliably capture and replay production errors offline.",
+      "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "your-agent-is-wasting-tokens-and-you-dont-know-it-erik-hanchett-aws",
+      "title": "Your Agent Is Wasting Tokens and You Don't Know It - Erik Hanchett, AWS",
+      "url": "https://www.youtube.com/watch?v=uiP88SpCi1Q",
+      "video_id": "uiP88SpCi1Q",
+      "channel": "AI Engineer",
+      "summary": "This video presents five practical strategies to reduce token costs when developing AI agents. AWS Developer Advocate Erik Hanchett recommends caching system prompts, routing tasks to cheaper models based on difficulty, offloading and summarizing large tool results, capping tool loops to prevent infinite runs, and trimming conversation history using a sliding window. This presentation is highly beneficial for developers and AI engineers looking to optimize the efficiency and cost-effectiveness of their LLM-powered applications.",
+      "added": "2026-06-29",
+      "times_shown": 0
     }
   ],
   "archive": [
