@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28",
+  "generated_at": "2026-06-29",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -71,7 +71,7 @@
       "category": "engineering",
       "summary": "Lalit Maganti's experience building syntaqlite — high-fidelity SQLite developer tools (formatter, linter, language server) — using AI coding agents across ~250 hours. Two phases: first month of vibe-coding produced a functional but unmaintainable prototype requiring total rewrite; second phase using Rust + disciplined AI-as-autocomplete yielded the 0.1 release. Key framework: AI excels at overcoming procrastination, obvious code generation, teaching unfamiliar domains, and shipping last-mile features. Costs include addictive feedback loops, erosion of mental models, and deferred hard design decisions. Core insight: AI is excellent for tasks with verifiable answers but poor for tasks requiring taste and judgment (architecture, API design).",
       "added": "2026-04-06",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "httpsopensubstackcompubsebastianraschkapcomponents-of-a-coding-agentutm-sourcesh",
@@ -116,7 +116,7 @@
       "category": "ai",
       "summary": "Same author as Encoding Team Standards (Rahul Garg, Martin Fowler series). Argues teams plateau with AI tools because individual learnings never become shared practice. Framework: 4 signal types (context gaps, instruction patterns, workflow discoveries, failures with root causes) mapped to 4 cadences (after-session reflection, daily stand-up, sprint retro, quarterly audit). Metrics that matter: first-pass acceptance rate, iteration cycles, post-merge rework — not lines generated. Key insight: the other practices in the series are passive surfaces; the flywheel is what makes them compound over time. Treat shared AI artifacts like dependencies — maintain them or they become liabilities.",
       "added": "2026-04-14",
-      "times_shown": 2
+      "times_shown": 3
     },
     {
       "slug": "httpswalkinglabsgithubiolearn-harness-engineeringen",
@@ -152,7 +152,7 @@
       "category": "ai",
       "summary": "Introduces Structured-Prompt-Driven Development (SPDD), a method that treats AI prompts as first-class delivery artifacts — version-controlled, reviewed, and reusable. Built around the REASONS Canvas (Requirements, Entities, Approach, Structure, Operations, Norms, Safeguards) and a six-step workflow that brings prompts into the same discipline as code. Developed by Thoughtworks to address the gap between individual AI speed and system-level throughput. Includes a worked billing engine example, core skill identification (abstraction-first, alignment, iterative review), and fitness assessment for where SPDD pays off vs. falls short.",
       "added": "2026-05-15",
-      "times_shown": 3
+      "times_shown": 5
     },
     {
       "slug": "httpsxcomistatus2058014104854626490",
@@ -161,7 +161,7 @@
       "category": "ai",
       "summary": "Nate Berkopec reflects on the state of LLMs ~5 months after Opus 4.5. He's fully transitioned to coding via LLMs, argues 'intelligence' is the wrong lens — LLMs have 'jagged intelligence' that grows more jagged. Identifies 4 characteristics of successful LLM workflows: verifiable output, brute-force loops, repetitive drudgery targets, rapid prototypes. Key insight: LLMs are 'compressed information stores' with lossy decompression; real opportunity is 'making the thing which makes the thing.'",
       "added": "2026-05-24",
-      "times_shown": 3
+      "times_shown": 5
     },
     {
       "slug": "my-ai-adoption-journey",
@@ -170,7 +170,7 @@
       "category": "ai",
       "summary": "Mitchell Hashimoto (co-founder of HashiCorp) shares his personal, six-step journey of gradually adopting AI coding agents, emphasizing that he forced himself through initial inefficiency to reach genuine productivity gains. He starts by urging developers to stop using chatbot interfaces for coding and instead adopt agentic tools (like Claude Code) that can read files, execute programs, and make HTTP requests in a loop.\n\nHis early approach was disciplined: he literally duplicated his manual commits by fighting agents to reproduce the same results, which built expertise from first principles. Key lessons included breaking work into small, clear tasks; separating planning from execution sessions; and giving agents ways to verify their own work. A notable tactic was blocking the last 30 minutes of each day to spin up agents for deep research, parallel exploration of vague ideas, and issue triage -- giving him a 'warm start' each morning.\n\nThe real inflection came when he began outsourcing high-confidence tasks to agents while simultaneously doing his own deep work, turning off agent notifications to avoid context-switching costs. He introduces the concept of 'harness engineering' -- systematically building safeguards (AGENTS.md files, custom scripts) so that whenever an agent makes a mistake, you engineer a solution to prevent it from recurring. His current goal is to always have an agent running, though he estimates he only achieves this 10-20% of the workday.\n\nThe piece is notably measured and hype-free. Hashimoto has no financial stake in AI companies, explicitly acknowledges concerns about skill formation (especially for junior developers), and frames the whole journey as simply a craftsman trying to build things more effectively. The core takeaway is that AI adoption requires deliberate, uncomfortable practice and structural workflow changes -- it does not deliver value through a chatbot alone.",
       "added": "2026-05-30",
-      "times_shown": 1
+      "times_shown": 2
     },
     {
       "slug": "addy-osmani-tweet-2059844244907696186",
@@ -818,6 +818,16 @@
       "added": "2026-06-25",
       "read": null,
       "has_notes": false
+    },
+    {
+      "slug": "engineering-for-bounded-cognition",
+      "title": "Engineering for Bounded Cognition",
+      "url": "https://shapeofthesystem.com/posts/2026/02/03/bounded-cognition",
+      "category": "engineering",
+      "summary": "The mind can hold about four things at once (not seven as commonly cited), yet we build software with tens of millions of lines of code. This fundamental gap between bounded human cognition and system complexity is the central problem of software engineering. The article explores how attention is narrow (gorilla experiment, change blindness) and short-lived (20-second decay), making the real miracle that software works at all rather than that it fails. 'Human error' incident reports often blame individuals when the real fault lies in systems designed for an operator who doesn't exist — one who never tires, never looks away, and holds everything in mind. LLMs suffer from the same boundedness: context windows that drop information, 'Lost in the Middle' attention patterns, and accuracy degrading with more context. The solution isn't finding bigger minds but shaping systems so small minds can work on them safely — precise naming, clear boundaries, tests, and undo capability move cognitive load into the structure. Designing for the most constrained user (like OXO Good Grips for arthritic hands) produces better tools for everyone.",
+      "added": "2026-06-28",
+      "read": "2026-06-28",
+      "has_notes": true
     }
   ]
 }
