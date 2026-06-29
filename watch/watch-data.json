@@ -992,12 +992,52 @@
       "times_shown": 0
     },
     {
+      "slug": "ai-system-design-from-idea-to-production-apoorva-joshi-mongodb",
+      "title": "AI System Design: From Idea to Production - Apoorva Joshi, MongoDB",
+      "url": "https://www.youtube.com/watch?v=T0HhO4YtTfE",
+      "video_id": "T0HhO4YtTfE",
+      "channel": "AI Engineer",
+      "summary": "This video introduces a structured, repeatable framework for designing AI systems from concept to production, emphasizing the need to move beyond informal vibe coding when building real-world applications. Speaker Apoorva Joshi, a Developer Advocate at MongoDB, outlines a four-phase framework consisting of product requirements, system design, evaluation/monitoring, and production readiness. Using a hypothetical health insurance claims review system as a case study, she demonstrates how to establish concrete business problems, performance constraints, and data strategies. AI developers, system architects, and product managers looking to transition experimental AI projects into reliable, production-grade systems would benefit from watching this presentation.",
+      "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "building-an-autonomous-engineering-org-angie-jones-agentic-ai-foundation",
+      "title": "Building an Autonomous Engineering Org - Angie Jones, Agentic AI Foundation",
+      "url": "https://www.youtube.com/watch?v=whue9_YquGA",
+      "video_id": "whue9_YquGA",
+      "channel": "AI Engineer",
+      "summary": "In this presentation, Angie Jones, VP of Agentic AI Foundation, outlines how to transition a large engineering team into an autonomous organization by integrating AI agents. She argues that instead of pushing top-down mandates on all engineers, organizations should utilize an AI Maturity Model and focus on empowering a 1% group of AI Champions to make individual repositories AI-friendly with customized context and rules files. This tailored, bottom-up approach allows different teams to integrate AI in ways that suit their specific codebases, ultimately scaling AI adoption more effectively. Engineering leaders, CTOs, and developers looking for a practical framework to scale AI integration and boost productivity will benefit from watching this video.",
+      "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "bypassing-the-multimodal-tax-hybrid-rag-sql-rrf-ui-telemetry-abed-matini-ogilvy",
+      "title": "Bypassing the Multimodal Tax: Hybrid RAG, SQL RRF & UI Telemetry - Abed Matini, Ogilvy",
+      "url": "https://www.youtube.com/watch?v=Akm1sqvWG4A",
+      "video_id": "Akm1sqvWG4A",
+      "channel": "AI Engineer",
+      "summary": "This presentation, titled Bypassing the Multimodal Tax, introduces a framework-free approach to building highly efficient hybrid RAG systems. The speaker explains how to bypass expensive cloud-based document parsing APIs by processing files locally using Docling, converting raw documents into clean markdown to save significant token costs before ingestion. Additionally, the tutorial demonstrates how to consolidate search infrastructure by running both vector and keyword searches within a single PostgreSQL database and merging the results using Reciprocal Rank Fusion (RRF). AI developers, backend engineers, and system architects seeking to reduce cloud costs and simplify their RAG pipelines will benefit most from watching this presentation.",
+      "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
       "slug": "deterministic-infra-for-non-deterministic-ai-agents-nishant-gupta-meta-superinte",
       "title": "Deterministic Infra for Non-Deterministic AI Agents - Nishant Gupta, Meta Superintelligence Labs",
       "url": "https://www.youtube.com/watch?v=APh1Vx0oLmQ",
       "video_id": "APh1Vx0oLmQ",
       "channel": "AI Engineer",
       "summary": "In this video, Nishant Gupta, Tech Lead at Meta, discusses the critical need to build deterministic infrastructure to support the non-deterministic, probabilistic nature of autonomous AI agents. He argues that as AI transitions from simple chatbots to autonomous agents, the primary engineering challenge shifts from model capability to system reliability, as production failures often stem from infrastructure issues rather than model hallucinations. To solve this, Gupta proposes utilizing an \"Agent Control Plane\" where the underlying platform\u2014not the model\u2014makes final execution decisions, adapting proven distributed systems patterns to manage chaotic AI behaviors. Software engineers, systems architects, and anyone looking to deploy reliable, enterprise-grade AI agent systems in production would benefit greatly from watching this presentation.",
+      "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "frontier-results-on-device-rl-nabors-arize",
+      "title": "Frontier results, on device - RL Nabors, Arize",
+      "url": "https://www.youtube.com/watch?v=fWXJM-J0ZB8",
+      "video_id": "fWXJM-J0ZB8",
+      "channel": "AI Engineer",
+      "summary": "In this video, Rachel Lee Nabors advocates for transitioning from expensive frontier AI models to local, small language models (SLMs) and task-specific models for production. Nabors highlights the disadvantages of relying solely on cloud-based LLMs\u2014including high API costs, security risks, latency issues, and the lack of offline capability\u2014and demonstrates how SLMs can achieve similar results with much lower resource consumption. The video introduces a prototype big, deploy small framework, which encourages testing concepts with large models before optimizing and deploying smaller, local alternatives. This presentation is highly beneficial for software developers, CTOs, and product managers looking to make their AI applications more cost-efficient, secure, and performant.",
       "added": "2026-06-29",
       "times_shown": 0
     },
@@ -1012,12 +1052,52 @@
       "times_shown": 0
     },
     {
+      "slug": "research-to-reality-bringing-frontier-ml-research-to-production-vaidas-razgaitis",
+      "title": "Research to Reality: Bringing Frontier ML Research to Production - Vaidas Razgaitis, Higharc",
+      "url": "https://www.youtube.com/watch?v=OXMMN-XbxwA",
+      "video_id": "OXMMN-XbxwA",
+      "channel": "AI Engineer",
+      "summary": "In this video, Vaidas Razgaitis, a Senior Research Engineer at Higharc, discusses the challenges of bridging the gap between machine learning research and production-grade software. He argues that successfully shipping ML features is a systems and process problem that can be resolved by improving research legibility and codebase structure. Key takeaways include the implementation of a structured Research Prototype Taxonomy document to align cross-functional teams and the use of a monorepo with decoupled microservices to seamlessly integrate new prototypes. This presentation is highly beneficial for ML engineers, researchers, and product managers looking to streamline their AI product development lifecycle.",
+      "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-future-is-domain-specific-agents-justin-schroeder-standardagents",
+      "title": "The Future Is Domain-Specific Agents - Justin Schroeder, StandardAgents",
+      "url": "https://www.youtube.com/watch?v=spNAUEgq_A8",
+      "video_id": "spNAUEgq_A8",
+      "channel": "AI Engineer",
+      "summary": "The video explores the future of AI through the lens of domain-specific agents, defined by the speaker as deterministic software that harnesses the non-deterministic results of AI models. The presenter highlights the massive interest in building custom agents across various industries, while detailing the significant challenges involved, such as orchestration, telemetry, observability, and portability. He also critiques current solutions like the Model Context Protocol (MCP) and agent skills, arguing that tools and documentation alone are insufficient for solving complex, real-world problems. This video is highly beneficial for developers, software engineers, and business leaders looking to understand the complexities and future direction of building and integrating AI agents.",
+      "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
       "slug": "the-prompt-is-the-platform-dominik-tornow-resonate-hq",
       "title": "The Prompt is the Platform - Dominik Tornow, Resonate HQ",
       "url": "https://www.youtube.com/watch?v=DqtmZE6Hl0g",
       "video_id": "DqtmZE6Hl0g",
       "channel": "AI Engineer",
       "summary": "This presentation by Dominik Tornow, founder and CEO of Resonate, explores the future of agentic software engineering and how the role of AI agents is shifting from writing code implementations to designing system specifications. Tornow argues that asking AI agents to directly generate complex production-grade software from abstract specifications often fails because the gap is too large. To bridge this gap, he proposes a structured development workflow that leverages deterministic simulation environments as \"executable designs\" to test algorithms before concrete specifications and final code are generated. This video is highly beneficial for software engineers, system architects, and AI developers interested in building robust, distributed systems using AI agents.",
+      "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "turbocharge-your-agents-retrieval-with-turboquant-shashi-jagtap-superagentic-ai",
+      "title": "Turbocharge Your Agent's Retrieval with TurboQuant - Shashi Jagtap, Superagentic AI",
+      "url": "https://www.youtube.com/watch?v=tB9RKTrU-Ig",
+      "video_id": "tB9RKTrU-Ig",
+      "channel": "AI Engineer",
+      "summary": "This video introduces TurboQuant, a compression algorithm developed by Google Research that dramatically reduces the memory footprint of AI agent retrieval and KV caches by compressing 32-bit embeddings down to 3-4 bits without sacrificing search quality. The presenter explains the technical underpinnings of the algorithm and demonstrates how TurboAgents, an open-source library, allows developers to easily integrate this technology into existing AI frameworks like Pydantic AI. This presentation is highly beneficial for machine learning engineers, AI developers, and software creators looking to optimize retrieval-augmented generation (RAG) systems and significantly reduce hardware costs.",
+      "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "user-signal-dies-at-the-retrieval-boundary-sonam-pankaj-starlightsearch",
+      "title": "User Signal Dies at the Retrieval Boundary - Sonam Pankaj, StarlightSearch",
+      "url": "https://www.youtube.com/watch?v=Jx4ZFEAq6bY",
+      "video_id": "Jx4ZFEAq6bY",
+      "channel": "AI Engineer",
+      "summary": "This presentation, led by Sonam Pankaj, CEO and Co-founder of StarlightSearch, addresses why AI agents frequently fail in production and introduces agentRTX, a runtime learning layer designed to make agents outcome-aware. She explains that current agent memories are static and lack feedback loops, proposing a Utility Score system that re-ranks retrieved memories based on their past usefulness rather than just semantic similarity. By treating memory as reasoning rather than static facts, this approach helps agents continuously improve without retraining or manual prompt engineering. AI developers, machine learning engineers, and researchers building advanced AI agents would benefit most from watching this video.",
       "added": "2026-06-29",
       "times_shown": 0
     },
@@ -1048,6 +1128,16 @@
       "video_id": "dRmWYHuIJxM",
       "channel": "AI Engineer",
       "summary": "This video presentation by Rajkumar Sakthivel details how implementing a local retrieval layer between a codebase and AI agents can cut AI coding token usage by 94% and drastically reduce API bills. He explains that since 90% of AI coding costs stem from input context rather than output generation, developers should focus on retrieval optimization using a hybrid search architecture (combining semantic and keyword search) rather than prompt engineering. The presented system runs entirely locally on SQLite, maintains a 90% recall rate, and can be shared across multiple AI assistants (like Cursor, Claude, and Copilot) via the Model Context Protocol (MCP). Software engineers, AI developers, and engineering managers looking to minimize AI costs and latency while keeping code private will find this talk highly valuable.",
+      "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "when-all-context-matters-extended-cache-augmented-generation-luis-romero-sevilla",
+      "title": "When All Context Matters: Extended Cache Augmented Generation - Luis Romero-Sevilla, Orbis",
+      "url": "https://www.youtube.com/watch?v=XovaGv4f39A",
+      "video_id": "XovaGv4f39A",
+      "channel": "AI Engineer",
+      "summary": "The video introduces Extended Cache Augmented Generation (ECAG) as a novel solution for managing knowledge representation when dealing with large volumes of rapidly changing, highly relevant documents. The host explains that while traditional approaches like Simple RAG, Graph RAG, and basic CAG have their merits, they often struggle with context window limitations, high computational costs, or slow rebuild times in dynamic data environments. ECAG overcomes these limitations by distributing documents across parallel context buckets, allowing a supervisor model to efficiently query them and synthesize accurate answers without the high costs of rebuilding knowledge graphs. This video is highly beneficial for AI developers, data scientists, and engineers seeking to optimize retrieval systems and manage large-scale context more effectively.",
       "added": "2026-06-29",
       "times_shown": 0
     },
