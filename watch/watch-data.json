@@ -1012,16 +1012,6 @@
       "times_shown": 0
     },
     {
-      "slug": "the-agentic-ai-engineer-benedikt-sanftl-mutagent",
-      "title": "The Agentic AI Engineer - Benedikt Sanftl, Mutagent",
-      "url": "https://www.youtube.com/watch?v=pSto5YaNGUo",
-      "video_id": "pSto5YaNGUo",
-      "channel": "AI Engineer",
-      "summary": "This video introduces the concept of the \"Agentic AI Engineer,\" a framework designed by Mutagent to automate the entire development lifecycle of AI agents. The presenters argue that traditional, human-gated processes for building, testing, and optimizing AI agents are too slow and fail to scale as organizations deploy more agents. To solve this, they propose an automated, spec-driven loop where coding agents generate and continuously optimize portable AI agents based on clearly defined requirements and constraints. This presentation is highly beneficial for AI developers, software engineers, and technology leaders looking to scale and manage their AI agent infrastructure efficiently.",
-      "added": "2026-06-29",
-      "times_shown": 0
-    },
-    {
       "slug": "the-prompt-is-the-platform-dominik-tornow-resonate-hq",
       "title": "The Prompt is the Platform - Dominik Tornow, Resonate HQ",
       "url": "https://www.youtube.com/watch?v=DqtmZE6Hl0g",
