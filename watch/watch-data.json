@@ -1160,6 +1160,16 @@
       "summary": "This video presents five practical strategies to reduce token costs when developing AI agents. AWS Developer Advocate Erik Hanchett recommends caching system prompts, routing tasks to cheaper models based on difficulty, offloading and summarizing large tool results, capping tool loops to prevent infinite runs, and trimming conversation history using a sliding window. This presentation is highly beneficial for developers and AI engineers looking to optimize the efficiency and cost-effectiveness of their LLM-powered applications.",
       "added": "2026-06-29",
       "times_shown": 0
+    },
+    {
+      "slug": "building-great-agent-skills-the-missing-manual",
+      "title": "Building Great Agent Skills: The Missing Manual",
+      "url": "https://www.youtube.com/watch?v=UNzCG3lw6O0",
+      "video_id": "UNzCG3lw6O0",
+      "channel": "AI Engineer",
+      "summary": "In this video, Matt Pocock provides a practical guide on how to design and write high-quality \"skills\" (tools and capabilities) for AI agents to help developers navigate \"skill hell.\" He introduces a structured framework focused on how skills are triggered, structured, steered, and pruned, highlighting the trade-offs in predictability and cognitive load between user-invoked and model-invoked capabilities. Additionally, he emphasizes the importance of keeping skill files as concise as possible to minimize the agent's context load and reduce token costs. Developers and engineers building agentic AI systems will benefit from these design principles to make their AI tools more efficient and predictable.",
+      "added": "2026-06-30",
+      "times_shown": 0
     }
   ],
   "archive": [
