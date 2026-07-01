@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-30T02:00:53.048584-03:00",
+  "generated_at": "2026-07-01T02:01:29.315907-03:00",
   "week_start": "2026-06-28",
   "week_label": "June 28 - July 04, 2026",
-  "last_updated": "Tuesday, June 30, 2026 at 02:00",
+  "last_updated": "Wednesday, July 01, 2026 at 02:01",
   "stats": {
-    "completed": 2.0,
-    "planned": 4,
-    "display": "2 / 4"
+    "completed": 4.75,
+    "planned": 6,
+    "display": "4.8 / 6"
   },
   "daily": {
     "Sunday": {
@@ -20,9 +20,9 @@
       "total": 2
     },
     "Tuesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 2,
+      "total": 2
     },
     "Wednesday": {
       "status": "empty",
@@ -57,10 +57,10 @@
     {
       "name": "Reading",
       "emoji": "",
-      "status": "pending",
-      "accumulated": "0min",
+      "status": "done",
+      "accumulated": "60min",
       "target": "60min",
-      "progress_pct": 0
+      "progress_pct": 100
     }
   ],
   "routines": [
@@ -71,7 +71,7 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Wed",
@@ -92,7 +92,7 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 5
     },
     {
@@ -136,7 +136,7 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Thu",
@@ -145,7 +145,7 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 2
     },
     {
@@ -200,10 +200,10 @@
     }
   ],
   "spirit": {
-    "state": "tired",
+    "state": "content",
     "emoji": "\ud83d\udc27",
     "title": "\ud83d\udc27 Pixel Penguin",
-    "image": "assets/tired.jpg",
-    "description": "Your pixel penguin is droopy and muted, half-closed sleepy eyes, low energy but still standing on its ice floe \u2014 hanging in there."
+    "image": "assets/content.jpg",
+    "description": "Your pixel penguin rests calmly on its ice floe, soft pastel tones, gentle smile and peaceful expression \u2014 satisfied with the week so far."
   }
 }
