@@ -83,6 +83,47 @@
         }
       ]
     },
+    "Friday": {
+      "location": "Home - Dumbbells",
+      "exercises": [
+        {
+          "name": "Dumbbell Romanian deadlift",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "10",
+          "unit": "",
+          "weight": "8 kg"
+        },
+        {
+          "name": "Dumbbell rows",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "10",
+          "unit": "",
+          "weight": "8 kg"
+        },
+        {
+          "name": "Knee push-ups",
+          "detail": "wide",
+          "sets": 3,
+          "type": "reps",
+          "target": "12",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Plank",
+          "detail": null,
+          "sets": 3,
+          "type": "time",
+          "target": "25",
+          "unit": "s",
+          "weight": null
+        }
+      ]
+    },
     "Thursday": {
       "location": "Climbing Gym - Bar",
       "exercises": [
