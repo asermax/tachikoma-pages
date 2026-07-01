@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'the-primitive-is-the-product', title: 'The primitive is the product', meta: 'Lenny Pruss · June 2025' },
     { slug: 'on-idea-generation', title: 'On Exercising the Idea Muscle', meta: 'Sankalp · June 2026' },
     { slug: 'prompt-injection-as-role-confusion', title: 'A Theory of Prompt Injection (and Why You Should Study Roles)', meta: 'Charles Ye et al. · June 2026' },
     { slug: 'why-ai-hasnt-replaced-software-engineers', title: 'Why AI hasn\'t replaced software engineers, and won\'t', meta: 'Narayanan & Kapoor · June 2026' },
