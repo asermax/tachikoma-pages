@@ -1,0 +1,106 @@
+{
+  "title": "The primitive is the product",
+  "meta": "Lenny Pruss · June 2025 · ~10 min listen",
+  "body": "<div class=\"chunk\"><h1>The primitive is the product</h1>\n</div>\n<div class=\"chunk\"><p>For as long as software has existed it's been principally designed for human consumption.</p>\n</div>\n<div class=\"chunk\"><p>Users clicked buttons, navigated workflows, learned new interfaces. They spent years developing muscle memory for products like Excel, Photoshop, Salesforce, Github, Jira, etc.</p>\n</div>\n<div class=\"chunk\"><p>And so emerged a simple logic governing software economics: own more workflows, capture more value.</p>\n</div>\n<div class=\"chunk\"><p>In this era, features became the currency of software. Every new feature expanded the product's surface area, increased switching costs, and pulled users deeper into the platform.</p>\n</div>\n<div class=\"chunk\"><p>AI completely subverts this logic.</p>\n</div>\n<div class=\"chunk\"><p>The most important characteristic of the AI platform shift has less to do with the new technological foundation (e.g. the model) we're building on, and much more to do with the new type of user (e.g. the agent) we've introduced.</p>\n</div>\n<div class=\"chunk\"><p>Agents, which are already consuming a rapidly expanding share of software, have a completely different interaction model than humans. They don't <em>navigate</em> software so much as they <em>intuit</em> and <em>compose</em> it. Because the native language of the agent is code, they don't see your GUI, but they do consume your API spec.</p>\n</div>\n<div class=\"chunk\"><p>More plainly, agents could care less about dashboards, buttons, settings pages, etc. They care purely about capabilities, e.g. the inputs, outputs, and explicit constraints of your program and whether those can be invoked and chained reliably.</p>\n</div>\n<div class=\"chunk\"><p>My friend David Crawshaw, founder of exe.dev (and before that Tailscale), put it best: &quot;the best product for an agent is just the best product for a developer.&quot; It's no surprise that agents become dramatically more reliable when a prompt simply begins with ssh!</p>\n</div>\n<div class=\"chunk\"><p>Suddenly, every software company needs to start thinking like a developer tools company.</p>\n</div>\n<div class=\"chunk\"><h2>The Tao of HashiCorp</h2>\n</div>\n<div class=\"chunk\"><p>Long before LLMs, HashiCorp figured out something many software companies missed.</p>\n</div>\n<div class=\"chunk\"><p>Users don't want features, they want outcomes. Thus, the job of a product is to collapse complexity into the smallest yet most powerful abstraction that enables those outcomes.</p>\n</div>\n<div class=\"chunk\"><p>This philosophy became known as the <a href=\"https://www.hashicorp.com/en/tao-of-hashicorp\">Tao of HashiCorp</a>.</p>\n</div>\n<div class=\"chunk\"><p>HashiCorp understood that the hardest problem in software is not implementation, rather it's deciding where to draw these lines of abstraction. Where should the system be opinionated vs. where should it remain extensible? Where should complexity be hidden vs. where should it be exposed?</p>\n</div>\n<div class=\"chunk\"><p>The magic of HashiCorp was never in building the most feature-complete products which provisioned infrastructure or managed secrets. Their genius was in deeply understanding the practitioner and their workflows and identifying the right abstraction for the job to be done.</p>\n</div>\n<div class=\"chunk\"><p>Take Terraform. Rather than encoding the logic for every infra management workflow into the product itself, it exposed a lower-level building block: a declarative graph of resources and their dependencies. That primitive was just opinionated enough to get developers productive immediately, yet extensible enough that thousands of providers, modules, and internal platforms emerged around it. The differentiator was in composability.</p>\n</div>\n<div class=\"chunk\"><p>HashiCorp recognized that technology can be but an implementation detail. What mattered was finding the abstraction that cleanly captures the underlying workflow while hiding unnecessary complexity. The power was not in the product but in the primitive!</p>\n</div>\n<div class=\"chunk\"><p>And once you get the primitive right, it becomes the building block that everyone else standardizes around. The abstraction ultimately becomes the interface, the interface becomes the ecosystem, and the ecosystem becomes your competitive advantage.</p>\n</div>\n<div class=\"chunk\"><h2>Thinking like a dev tools company: the primitive-first mindset</h2>\n</div>\n<div class=\"chunk\"><p>The philosophy outlined in the Tao of HashiCorp provides a blueprint that every software company will need to internalize in the age of agents. But doing so requires a radical departure from how most products have been designed since the very birth of the software industry.</p>\n</div>\n<div class=\"chunk\"><p>First and foremost, teams need to stop thinking in terms of features and prescriptive workflows and start thinking in terms of abstractions and capabilities.</p>\n</div>\n<div class=\"chunk\"><p>Features are a liability for agents. Every feature expands the decision space an agent must reason about. More features mean more edge cases, more ambiguity, and more failure modes. At best, this translates into higher token spend, and at worst, into busted agent behavior.</p>\n</div>\n<div class=\"chunk\"><p>Agents naturally gravitate toward the smallest stable abstraction. So, in an agent-first world, the most important question facing product teams is not what features and why, but instead <strong>how do I design the right primitive</strong></p>\n</div>\n<div class=\"chunk\"><p>For the purposes of this post we will define &quot;primitive&quot; as an atomic building block which sufficiently captures a particular domain.</p>\n</div>\n<div class=\"chunk\"><p>Building great developer tools (e.g. primitives) has always been an exercise in exquisite taste and deep domain expertise because it requires balancing a set of competing, and often contradictory, forces: namely the tension between expressivity and simplicity.</p>\n</div>\n<div class=\"chunk\"><p>The more opinionated the abstraction, the more delightful the experience can become. But every opinion embeds assumptions which constrain what can be built on top or changed down below. So what you gain in usability, you often lose in flexibility.</p>\n</div>\n<div class=\"chunk\"><p>The canonical example is EC2 vs. Heroku. EC2 exposed a low-level primitive: the virtual machine. You could install anything, run anything, and compose it however you like. It's powerful precisely because it's minimally opinionated.</p>\n</div>\n<div class=\"chunk\"><p>Heroku, by contrast, provided a complete deployment platform (on top of EC2). The developer experience is magical: git push and your application is live. Simplicity! But that elegance comes from making a series of opinionated decisions on behalf of the user. As a result, you sacrifice flexibility and control for that ease of use.</p>\n</div>\n<div class=\"chunk\"><p>The best-designed primitives feel powerful but deceptively simple, if not outright boring. This is not because the problem itself is simple, but because complexity has been compressed into the abstraction in a thoughtful way.</p>\n</div>\n<div class=\"chunk\"><p>Consider S3, one of the most important infrastructure products of the last 20 years. S3 exposes an astonishingly small surface area with three core commands: Put. Get. List. Everything emerges around those operations.</p>\n</div>\n<div class=\"chunk\"><p>The value, ultimately, isn't in feature depth, but in the quality of abstraction.</p>\n</div>\n<div class=\"chunk\"><p>And so, the foundational philosophy of product development becomes flipped on its head. The old question was: &quot;What feature should we build next?&quot; The new question becomes: &quot;What capability should others build upon?&quot;</p>\n</div>\n<div class=\"chunk\"><h2>Claude vs Pi</h2>\n</div>\n<div class=\"chunk\"><p>My favorite current example of the products vs. primitives debate is Claude and Codex vs Pi.</p>\n</div>\n<div class=\"chunk\"><p>I've fallen in love with <a href=\"https://pi.dev/\">Pi</a>, a coding tool created by <a href=\"https://mariozechner.at/\">Mario Zechner</a> that bills itself as a &quot;minimal agent harness.&quot; At first glance, Pi appears less sophisticated than products like Claude or Codex, but that's precisely the point.</p>\n</div>\n<div class=\"chunk\"><p>Claude and Codex are vertically integrated <em>products</em> that bundle planning, execution, context management, tool calling, workflow orchestration, and the underlying model into a single unified experience. Anthropic and OpenAI seek to own the entire agentic coding workflow, soup to nuts.</p>\n</div>\n<div class=\"chunk\"><p>Pi takes the opposite approach: it's deliberately narrow. Pi is opinionated about execution, but leaves it to the developer (or agent) to decide the particulars of their desired workflow. Rather than shipping a complete coding product, it exposes a simple, pluggable coding agent harness...a set of primitives, if you will.</p>\n</div>\n<div class=\"chunk\"><p>If you've read this far, you already know the tradeoff inherent in this design. Vertically integrated products can move faster initially because they own the entire workflow and offer users the proverbial easy button to get started. Simplicity!</p>\n</div>\n<div class=\"chunk\"><p>Primitives, on the other, are slower to appreciate because they require users to be thoughtful about their workflow up front and then assemble the pieces themselves. You're likely not getting that &quot;magic moment&quot; for a user within minutes of them trying the product.</p>\n</div>\n<div class=\"chunk\"><p>But primitives possess several unique advantages that become more obvious over time...like a fine wine.</p>\n</div>\n<div class=\"chunk\"><p>First, they are inherently more malleable and adaptable. Claude and Codex users are tied to the opinions, workflows, and, critically, the models chosen by their creators. Pi, by contrast, can evolve with the ecosystem. As new models, tools, and workflows emerge, they can be incorporated without waiting for the platform owner to bless them.</p>\n</div>\n<div class=\"chunk\"><p>Second, primitives compound. Every workflow built on top of Pi increases its value, as each new integration expands its ecosystem and every new use case further strengthens the abstraction.</p>\n</div>\n<div class=\"chunk\"><p>This is a pattern we've seen repeatedly throughout the history of infrastructure. The most valuable layer is often not the application itself but the primitives the application depends on (see our earlier EC2 vs. Heroku example).</p>\n</div>\n<div class=\"chunk\"><p>Products may come and go, but primitives become standards.</p>\n</div>\n<div class=\"chunk\"><h2>Extensibility compounds</h2>\n</div>\n<div class=\"chunk\"><p>It's worth dwelling more on the concept of compounding extensibility and the role of the ecosystem. Many software companies struggle with this idea because it runs counter to decades of product strategy.</p>\n</div>\n<div class=\"chunk\"><p>Historically, sharing the ecosystem was dangerous because it gave life to competitors building on your API and potentially cannibalizing features you yourself could monetize. Platforms frequently fenced themselves off once third parties became &quot;too successful.&quot; The incentive was always to absorb the value back into the product, and in a world where humans were the primary consumers of software, this made sense. Look no further than all of the license changes over the past decade from major OSS infra providers as evidence.</p>\n</div>\n<div class=\"chunk\"><p>But agents fundamentally upend this equation...again!</p>\n</div>\n<div class=\"chunk\"><p>An agent doesn't care whether functionality comes from one vendor or fifty. It only cares whether the capability exists, and whether it's meaningfully better than alternatives.</p>\n</div>\n<div class=\"chunk\"><p>Every third-party integration becomes another tool the agent can leverage. Every extension increases the utility of the underlying primitive. The value of having a community that works on these things, that complements the work your team is doing, can't be understated.</p>\n</div>\n<div class=\"chunk\"><p>All of this means the winning products and strategies going forward will look very different from those of the SaaS era. The most valuable companies will <em>allow</em> every use case to emerge instead of trying to solve each one themselves.</p>\n</div>\n<div class=\"chunk\"><p>Whereas the old moat was defined by feature breadth, workflow ownership, and data gravity, the emerging moat may be something much simpler: the elegance of the abstraction.</p>\n</div>\n",
+  "audio": "the-primitive-is-the-product.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      47.347,
+      104.035,
+      148.722,
+      202.37,
+      243.577,
+      289.985,
+      334.632,
+      386.519,
+      434.407,
+      486.094,
+      515.302,
+      553.789
+    ],
+    "chunkMap": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        17,
+        18,
+        19
+      ],
+      [
+        20,
+        21,
+        22,
+        23
+      ],
+      [
+        24,
+        25,
+        26,
+        27
+      ],
+      [
+        28,
+        29,
+        30
+      ],
+      [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      [
+        37,
+        38,
+        39
+      ],
+      [
+        40,
+        41,
+        42,
+        43
+      ],
+      [
+        44,
+        45,
+        46,
+        47
+      ],
+      [
+        48,
+        49,
+        50
+      ],
+      [
+        51,
+        52,
+        53
+      ]
+    ],
+    "prefixOffset": 0
+  }
+}
