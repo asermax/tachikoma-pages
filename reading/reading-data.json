@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01",
+  "generated_at": "2026-07-02",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -71,7 +71,7 @@
       "category": "engineering",
       "summary": "Lalit Maganti's experience building syntaqlite — high-fidelity SQLite developer tools (formatter, linter, language server) — using AI coding agents across ~250 hours. Two phases: first month of vibe-coding produced a functional but unmaintainable prototype requiring total rewrite; second phase using Rust + disciplined AI-as-autocomplete yielded the 0.1 release. Key framework: AI excels at overcoming procrastination, obvious code generation, teaching unfamiliar domains, and shipping last-mile features. Costs include addictive feedback loops, erosion of mental models, and deferred hard design decisions. Core insight: AI is excellent for tasks with verifiable answers but poor for tasks requiring taste and judgment (architecture, API design).",
       "added": "2026-04-06",
-      "times_shown": 1
+      "times_shown": 2
     },
     {
       "slug": "httpsopensubstackcompubsebastianraschkapcomponents-of-a-coding-agentutm-sourcesh",
@@ -152,7 +152,7 @@
       "category": "ai",
       "summary": "Introduces Structured-Prompt-Driven Development (SPDD), a method that treats AI prompts as first-class delivery artifacts — version-controlled, reviewed, and reusable. Built around the REASONS Canvas (Requirements, Entities, Approach, Structure, Operations, Norms, Safeguards) and a six-step workflow that brings prompts into the same discipline as code. Developed by Thoughtworks to address the gap between individual AI speed and system-level throughput. Includes a worked billing engine example, core skill identification (abstraction-first, alignment, iterative review), and fitness assessment for where SPDD pays off vs. falls short.",
       "added": "2026-05-15",
-      "times_shown": 5
+      "times_shown": 6
     },
     {
       "slug": "httpsxcomistatus2058014104854626490",
@@ -197,7 +197,7 @@
       "category": "ai",
       "summary": "Philosopher David Chalmers examines the evidence for and against consciousness in large language models, concluding that current LLMs probably are not conscious but that extended multimodal LLM+ systems may become serious candidates for consciousness within a decade. He outlines a research program of engineering challenges and emphasizes the profound ethical stakes of potentially creating conscious AI.",
       "added": "2026-05-31",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "hexednobility-tweet-2059974055294316574",
