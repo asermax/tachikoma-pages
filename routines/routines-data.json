@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-01T02:01:29.315907-03:00",
+  "generated_at": "2026-07-02T02:01:16.914281-03:00",
   "week_start": "2026-06-28",
   "week_label": "June 28 - July 04, 2026",
-  "last_updated": "Wednesday, July 01, 2026 at 02:01",
+  "last_updated": "Thursday, July 02, 2026 at 02:01",
   "stats": {
-    "completed": 4.75,
-    "planned": 6,
-    "display": "4.8 / 6"
+    "completed": 8.0,
+    "planned": 10,
+    "display": "8 / 10"
   },
   "daily": {
     "Sunday": {
@@ -25,9 +25,9 @@
       "total": 2
     },
     "Wednesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "partial",
+      "completed": 3,
+      "total": 4
     },
     "Thursday": {
       "status": "empty",
@@ -50,9 +50,9 @@
       "name": "Trumpet Practice",
       "emoji": "",
       "status": "pending",
-      "accumulated": "15min",
+      "accumulated": "45min",
       "target": "60min",
-      "progress_pct": 25
+      "progress_pct": 75
     },
     {
       "name": "Reading",
@@ -75,11 +75,7 @@
         },
         {
           "day": "Wed",
-          "status": "pending"
-        },
-        {
-          "day": "Wed",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Thu",
@@ -92,8 +88,8 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 1,
-      "total": 5
+      "done": 2,
+      "total": 4
     },
     {
       "id": "music-practice",
@@ -102,7 +98,7 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "skipped"
         },
         {
           "day": "Sat",
@@ -155,21 +151,17 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
-        },
-        {
-          "day": "Wed",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Sat",
           "status": "pending"
         }
       ],
-      "metrics_total": "",
+      "metrics_total": "2.0km, 16min, 145bpm, 145bpm, 197kcal",
       "comparison": "",
-      "done": 0,
-      "total": 3
+      "done": 1,
+      "total": 2
     },
     {
       "id": "yoga",
@@ -182,11 +174,7 @@
         },
         {
           "day": "Wed",
-          "status": "pending"
-        },
-        {
-          "day": "Wed",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Sat",
@@ -195,15 +183,15 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
-      "total": 4
+      "done": 1,
+      "total": 3
     }
   ],
   "spirit": {
-    "state": "content",
+    "state": "thriving",
     "emoji": "\ud83d\udc27",
     "title": "\ud83d\udc27 Pixel Penguin",
-    "image": "assets/content.jpg",
-    "description": "Your pixel penguin rests calmly on its ice floe, soft pastel tones, gentle smile and peaceful expression \u2014 satisfied with the week so far."
+    "image": "assets/thriving.jpg",
+    "description": "Your pixel penguin stands tall with a crown of ice crystals, bright vibrant colors, snowflakes swirling happily around it \u2014 triumphant and full of energy."
   }
 }
