@@ -1,5 +1,4 @@
 const ARTICLES = [
-    { slug: 'knowing-your-unknowns-claude-fable-5', title: 'Knowing Your Unknowns — Working with Claude Fable 5', meta: 'Thariq · July 2026' },
     { slug: 'the-primitive-is-the-product', title: 'The primitive is the product', meta: 'Lenny Pruss · June 2025' },
     { slug: 'on-idea-generation', title: 'On Exercising the Idea Muscle', meta: 'Sankalp · June 2026' },
     { slug: 'prompt-injection-as-role-confusion', title: 'A Theory of Prompt Injection (and Why You Should Study Roles)', meta: 'Charles Ye et al. · June 2026' },
