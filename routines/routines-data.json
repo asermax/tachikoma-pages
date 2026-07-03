@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-02T02:01:16.914281-03:00",
+  "generated_at": "2026-07-03T02:01:15.486701-03:00",
   "week_start": "2026-06-28",
   "week_label": "June 28 - July 04, 2026",
-  "last_updated": "Thursday, July 02, 2026 at 02:01",
+  "last_updated": "Friday, July 03, 2026 at 02:01",
   "stats": {
-    "completed": 8.0,
-    "planned": 10,
-    "display": "8 / 10"
+    "completed": 10.0,
+    "planned": 12,
+    "display": "10 / 12"
   },
   "daily": {
     "Sunday": {
@@ -30,9 +30,9 @@
       "total": 4
     },
     "Thursday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 2,
+      "total": 2
     },
     "Friday": {
       "status": "empty",
@@ -79,7 +79,7 @@
         },
         {
           "day": "Thu",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Sat",
@@ -88,7 +88,7 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 2,
+      "done": 3,
       "total": 4
     },
     {
@@ -136,12 +136,12 @@
         },
         {
           "day": "Thu",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 1,
+      "done": 2,
       "total": 2
     },
     {
