@@ -1182,16 +1182,6 @@
       "times_shown": 0
     },
     {
-      "slug": "building-a-real-time-collaborative-editor-mihaela-gheorghe-roman-ndc-copenhagen",
-      "title": "Building a real-time collaborative editor - Mihaela Gheorghe-Roman - NDC Copenhagen 2026",
-      "url": "https://www.youtube.com/watch?v=VNAYu-8p804",
-      "video_id": "VNAYu-8p804",
-      "channel": "NDC Conferences",
-      "summary": "In this video, Dr. Mihaela Gheorghe-Roman, a Senior Software Architect, presents a case study on designing and building a collaborative rich-text editor tailored for highly secure defense environments. She details the unique engineering challenges of enabling real-time document collaboration within air-gapped, disconnected networks where servers must seamlessly merge offline edits after months of isolation. Additionally, the talk addresses the need for granular security access controls down to individual paragraphs and maintaining multi-year backward compatibility across diverse military hardware. This presentation is highly valuable for software architects, distributed systems engineers, and developers interested in secure document synchronization and resilient offline-first applications.",
-      "added": "2026-07-04",
-      "times_shown": 0
-    },
-    {
       "slug": "focus-in-a-fragmented-world-a-developers-guide-to-staying-productive-susanne-bac",
       "title": "Focus in a Fragmented World: A Developer\u2019s Guide to Staying Productive - Susanne Bach Ladefoged Hou",
       "url": "https://www.youtube.com/watch?v=FLAGyOq_i2U",
