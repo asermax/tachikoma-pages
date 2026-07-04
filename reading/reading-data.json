@@ -116,7 +116,7 @@
       "category": "ai",
       "summary": "Same author as Encoding Team Standards (Rahul Garg, Martin Fowler series). Argues teams plateau with AI tools because individual learnings never become shared practice. Framework: 4 signal types (context gaps, instruction patterns, workflow discoveries, failures with root causes) mapped to 4 cadences (after-session reflection, daily stand-up, sprint retro, quarterly audit). Metrics that matter: first-pass acceptance rate, iteration cycles, post-merge rework — not lines generated. Key insight: the other practices in the series are passive surfaces; the flywheel is what makes them compound over time. Treat shared AI artifacts like dependencies — maintain them or they become liabilities.",
       "added": "2026-04-14",
-      "times_shown": 3
+      "times_shown": 4
     },
     {
       "slug": "httpswalkinglabsgithubiolearn-harness-engineeringen",
@@ -152,7 +152,7 @@
       "category": "ai",
       "summary": "Introduces Structured-Prompt-Driven Development (SPDD), a method that treats AI prompts as first-class delivery artifacts — version-controlled, reviewed, and reusable. Built around the REASONS Canvas (Requirements, Entities, Approach, Structure, Operations, Norms, Safeguards) and a six-step workflow that brings prompts into the same discipline as code. Developed by Thoughtworks to address the gap between individual AI speed and system-level throughput. Includes a worked billing engine example, core skill identification (abstraction-first, alignment, iterative review), and fitness assessment for where SPDD pays off vs. falls short.",
       "added": "2026-05-15",
-      "times_shown": 6
+      "times_shown": 7
     },
     {
       "slug": "httpsxcomistatus2058014104854626490",
@@ -170,7 +170,7 @@
       "category": "ai",
       "summary": "Mitchell Hashimoto (co-founder of HashiCorp) shares his personal, six-step journey of gradually adopting AI coding agents, emphasizing that he forced himself through initial inefficiency to reach genuine productivity gains. He starts by urging developers to stop using chatbot interfaces for coding and instead adopt agentic tools (like Claude Code) that can read files, execute programs, and make HTTP requests in a loop.\n\nHis early approach was disciplined: he literally duplicated his manual commits by fighting agents to reproduce the same results, which built expertise from first principles. Key lessons included breaking work into small, clear tasks; separating planning from execution sessions; and giving agents ways to verify their own work. A notable tactic was blocking the last 30 minutes of each day to spin up agents for deep research, parallel exploration of vague ideas, and issue triage -- giving him a 'warm start' each morning.\n\nThe real inflection came when he began outsourcing high-confidence tasks to agents while simultaneously doing his own deep work, turning off agent notifications to avoid context-switching costs. He introduces the concept of 'harness engineering' -- systematically building safeguards (AGENTS.md files, custom scripts) so that whenever an agent makes a mistake, you engineer a solution to prevent it from recurring. His current goal is to always have an agent running, though he estimates he only achieves this 10-20% of the workday.\n\nThe piece is notably measured and hype-free. Hashimoto has no financial stake in AI companies, explicitly acknowledges concerns about skill formation (especially for junior developers), and frames the whole journey as simply a craftsman trying to build things more effectively. The core takeaway is that AI adoption requires deliberate, uncomfortable practice and structural workflow changes -- it does not deliver value through a chatbot alone.",
       "added": "2026-05-30",
-      "times_shown": 2
+      "times_shown": 3
     },
     {
       "slug": "addy-osmani-tweet-2059844244907696186",
@@ -314,6 +314,15 @@
       "category": "creativity",
       "summary": "A deep exploration of idea generation as an exercisable muscle. Sankalp argues that creativity isn't mystical — it requires direct exposure to sources (not AI-mediated), tight feedback loops through doing, and having a concrete problem statement or scaffold to push against. Key insights: ideas emerge from inside active work, not from passive consumption; consumption-maxxing without processing is a common trap; you need to put in time building 'embedding space' in your mind through high-resolution engagement with material; people and conversations act as mirrors and portals for creativity; and breaking through blocks requires zooming out, reframing, and sometimes switching to parallel projects. Strong references to Henrik Karlsson, Richard Hamming, and Jack Morris.",
       "added": "2026-06-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "better-models-worse-tools",
+      "title": "Better Models: Worse Tools",
+      "url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+      "category": "ai-philosophy",
+      "summary": "Armin Ronacher highlights a frustrating regression in newer Claude models, like Opus 4.8, which frequently fail to respect custom, nested tool schemas by appending invented JSON parameters. He argues that this issue stems from the models being post-trained on forgiving environments like Claude Code that silently repair malformed outputs, making strict grammar-constrained decoding increasingly essential for alternative developer tools.",
+      "added": "2026-07-04",
       "times_shown": 0
     }
   ],
