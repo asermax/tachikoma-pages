@@ -1180,6 +1180,76 @@
       "summary": "This video features Ted Johnson, co-founder of joinin.ai, exploring why interacting with AI through prompting often feels unnatural, arguing that modern prompts are structurally similar to historical punch cards. He explains this mismatch using three concepts\u2014the channel, the expression, and the protocol\u2014highlighting that we are still using an outdated \"batch\" protocol originally designed for weaving looms rather than true conversation. Ultimately, Johnson challenges developers to design systems where AI can participate as an active conversational partner rather than just responding to pre-packaged commands. This video is highly beneficial for AI engineers, product designers, and anyone interested in the future of human-computer interaction (HCI).",
       "added": "2026-07-03",
       "times_shown": 0
+    },
+    {
+      "slug": "above-the-cloud-building-data-centers-in-space-richard-campbell-ndc-copenhagen-2",
+      "title": "Above the Cloud: Building Data Centers in Space - Richard Campbell - NDC Copenhagen 2026",
+      "url": "https://www.youtube.com/watch?v=eo7MEPgWGic",
+      "video_id": "eo7MEPgWGic",
+      "channel": "NDC Conferences",
+      "summary": "In this presentation, Richard Campbell discusses the feasibility of establishing cloud computing infrastructure in orbit in his talk, Above the Cloud: Building Data Centers in Space. He evaluates current real-world attempts, such as Starcloud launching a GPU into space, but ultimately argues that the massive scale of solar panels required and the complex orbital mechanics of low, medium, and geostationary earth orbits make large-scale space data centers highly impractical. This video is ideal for tech enthusiasts, software developers, and space hobbyists interested in understanding the realistic engineering limitations behind next-generation aerospace and cloud technology.",
+      "added": "2026-07-04",
+      "times_shown": 0
+    },
+    {
+      "slug": "building-a-real-time-collaborative-editor-mihaela-gheorghe-roman-ndc-copenhagen",
+      "title": "Building a real-time collaborative editor - Mihaela Gheorghe-Roman - NDC Copenhagen 2026",
+      "url": "https://www.youtube.com/watch?v=VNAYu-8p804",
+      "video_id": "VNAYu-8p804",
+      "channel": "NDC Conferences",
+      "summary": "In this video, Dr. Mihaela Gheorghe-Roman, a Senior Software Architect, presents a case study on designing and building a collaborative rich-text editor tailored for highly secure defense environments. She details the unique engineering challenges of enabling real-time document collaboration within air-gapped, disconnected networks where servers must seamlessly merge offline edits after months of isolation. Additionally, the talk addresses the need for granular security access controls down to individual paragraphs and maintaining multi-year backward compatibility across diverse military hardware. This presentation is highly valuable for software architects, distributed systems engineers, and developers interested in secure document synchronization and resilient offline-first applications.",
+      "added": "2026-07-04",
+      "times_shown": 0
+    },
+    {
+      "slug": "focus-in-a-fragmented-world-a-developers-guide-to-staying-productive-susanne-bac",
+      "title": "Focus in a Fragmented World: A Developer\u2019s Guide to Staying Productive - Susanne Bach Ladefoged Hou",
+      "url": "https://www.youtube.com/watch?v=FLAGyOq_i2U",
+      "video_id": "FLAGyOq_i2U",
+      "channel": "NDC Conferences",
+      "summary": "In this presentation from NDC Copenhagen 2026, software engineer Susanne Bach Ladefoged Hou discusses the challenges of maintaining focus and productivity in a highly distracting modern world. Drawing from her personal experience as a developer diagnosed with ADHD, she explains the neural mechanisms of attention and how constant interruptions deplete our cognitive capacity. Hou introduces a practical, battle-tested toolkit designed to help viewers manage their time and energy, overcome procrastination, and handle the high cognitive cost of task switching. This talk is highly beneficial for developers, engineers, and anyone looking to implement sustainable strategies to reclaim their attention and optimize their daily workflow.",
+      "added": "2026-07-04",
+      "times_shown": 0
+    },
+    {
+      "slug": "machines-learning-and-machine-learning-dylan-beattie-ndc-copenhagen-2026",
+      "title": "Machines, Learning, and Machine Learning - Dylan Beattie - NDC Copenhagen 2026",
+      "url": "https://www.youtube.com/watch?v=xunx7VvlOgs",
+      "video_id": "xunx7VvlOgs",
+      "channel": "NDC Conferences",
+      "summary": "In this keynote address from NDC Copenhagen, speaker Dylan Beattie explores the relationship between humans and technology under the theme of Machines, Learning (& Machine Learning). Using humorous personal anecdotes, such as mistaking a blood pressure monitor's date display for a health score, he illustrates the human tendency to project intelligence and meaning onto simple machines. Beattie argues that the true value of technology lies in its ability to automate labor-intensive survival tasks, thereby granting humans the freedom to choose how they spend their time. This presentation is highly beneficial for software engineers, tech professionals, and anyone interested in the intersection of technology, human psychology, and lifestyle.",
+      "added": "2026-07-04",
+      "times_shown": 0
+    },
+    {
+      "slug": "platform-engineering-in-the-age-of-generative-ai-will-velida-ndc-sydney-2026",
+      "title": "Platform Engineering in the age of Generative AI - Will Velida - NDC Sydney 2026",
+      "url": "https://www.youtube.com/watch?v=NdGBsn8tRzs",
+      "video_id": "NdGBsn8tRzs",
+      "channel": "NDC Conferences",
+      "summary": "This video explores the intersection of platform engineering and generative AI, discussing how AI tools are transforming the developer experience. The presenter, Microsoft Senior Software Engineer Will Velida, contrasts the hype of AI-driven development\u2014such as the promise of hyper-fast coding\u2014with actual data showing issues like increased security vulnerabilities and productivity bottlenecks. Software engineers, DevOps professionals, and platform architects will benefit from watching this video to gain a realistic, data-backed perspective on the challenges and realities of integrating generative AI into development lifecycles.",
+      "added": "2026-07-04",
+      "times_shown": 0
+    },
+    {
+      "slug": "stop-writing-software-like-its-1999-hannes-lowette-ndc-copenhagen-2026",
+      "title": "Stop writing software like it's 1999! - Hannes Lowette - NDC Copenhagen 2026",
+      "url": "https://www.youtube.com/watch?v=_1LEFUgHFJI",
+      "video_id": "_1LEFUgHFJI",
+      "channel": "NDC Conferences",
+      "summary": "In this presentation from NDC Copenhagen, speaker Hannes Lowette argues that many modern software development teams are still relying on architectural patterns, such as tightly layered code structures, that were designed in the late 1990s. He explains that while these layered architectures once made sense under waterfall development models and specialized developer roles, they now lead to frequent regressions, bugs, and coupling issues in today's rapid, iterative environments. This talk is highly beneficial for software developers, system architects, and tech leads looking to understand why legacy structural habits fail in modern, full-stack environments and how to adapt their design trade-offs for the modern era.",
+      "added": "2026-07-04",
+      "times_shown": 0
+    },
+    {
+      "slug": "where-thinking-stops-yngve-bakken-nilsen-ndc-ai-2026",
+      "title": "Where thinking stops - Yngve Bakken Nilsen - NDC AI 2026",
+      "url": "https://www.youtube.com/watch?v=ZpTl_uDoSsw",
+      "video_id": "ZpTl_uDoSsw",
+      "channel": "NDC Conferences",
+      "summary": "This video features a talk by Yngve Bakken-Nilsen at the NDC { AI } 2026 conference, where he shares his insights on using AI-assisted development to rebuild a software system. While AI-generated code significantly boosted productivity and successfully passed tests, the speaker noticed a growing conceptual incoherence in the system, which he attributes to a lack of shared implicit boundaries and hidden decisions. He argues that the rapid speed of AI development eliminates the natural social friction\u2014such as peer reviews and hesitations\u2014that typically forces developers to clarify architectural details and define clear boundaries. This presentation is highly valuable for software developers, architects, and technical leaders who want to understand the cognitive and architectural risks of over-relying on AI for code generation.",
+      "added": "2026-07-04",
+      "times_shown": 0
     }
   ],
   "archive": [
