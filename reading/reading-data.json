@@ -315,15 +315,6 @@
       "summary": "A deep exploration of idea generation as an exercisable muscle. Sankalp argues that creativity isn't mystical — it requires direct exposure to sources (not AI-mediated), tight feedback loops through doing, and having a concrete problem statement or scaffold to push against. Key insights: ideas emerge from inside active work, not from passive consumption; consumption-maxxing without processing is a common trap; you need to put in time building 'embedding space' in your mind through high-resolution engagement with material; people and conversations act as mirrors and portals for creativity; and breaking through blocks requires zooming out, reframing, and sometimes switching to parallel projects. Strong references to Henrik Karlsson, Richard Hamming, and Jack Morris.",
       "added": "2026-06-29",
       "times_shown": 0
-    },
-    {
-      "slug": "better-models-worse-tools",
-      "title": "Better Models: Worse Tools",
-      "url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
-      "category": "ai-philosophy",
-      "summary": "Armin Ronacher highlights a frustrating regression in newer Claude models, like Opus 4.8, which frequently fail to respect custom, nested tool schemas by appending invented JSON parameters. He argues that this issue stems from the models being post-trained on forgiving environments like Claude Code that silently repair malformed outputs, making strict grammar-constrained decoding increasingly essential for alternative developer tools.",
-      "added": "2026-07-04",
-      "times_shown": 0
     }
   ],
   "archive": [
@@ -866,6 +857,16 @@
       "added": "2026-07-03",
       "read": "2026-07-03",
       "has_notes": false
+    },
+    {
+      "slug": "better-models-worse-tools",
+      "title": "Better Models: Worse Tools",
+      "url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+      "category": "ai-philosophy",
+      "summary": "Armin Ronacher highlights a frustrating regression in newer Claude models, like Opus 4.8, which frequently fail to respect custom, nested tool schemas by appending invented JSON parameters. He argues that this issue stems from the models being post-trained on forgiving environments like Claude Code that silently repair malformed outputs, making strict grammar-constrained decoding increasingly essential for alternative developer tools.",
+      "added": "2026-07-04",
+      "read": "2026-07-04",
+      "has_notes": true
     }
   ]
 }
