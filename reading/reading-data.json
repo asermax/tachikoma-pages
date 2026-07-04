@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03",
+  "generated_at": "2026-07-04",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -837,6 +837,26 @@
       "added": "2026-06-28",
       "read": "2026-06-28",
       "has_notes": true
+    },
+    {
+      "slug": "knowing-your-unknowns-working-with-claude-fable-5-thariq",
+      "title": "Knowing your unknowns — working with Claude Fable 5 (Thariq)",
+      "url": "https://x.com/trq212/status/2073100352921215386",
+      "category": "ai-engineering",
+      "summary": "Thariq (@trq212) argues that working with Claude Fable 5 has made the quality of agentic coding bottlenecked by the human's ability to clarify unknowns. He frames this using the known-known/known-unknown/unknown-known/unknown-unknown framework applied to prompting: your prompt is the map, the codebase is the territory, and the gap is your unknowns. The best agentic coders reduce these unknowns through several techniques: blind spot passes (asking Claude to find your unknown unknowns), brainstorming with HTML prototypes, interviews (having Claude question you about ambiguities), references (pointing at source code as the richest context), and implementation plans focused on likely-to-change decisions. During implementation, he recommends keeping an implementation-notes.md for tracking deviations. Post-implementation, he uses Claude to generate pitches and quizzes to validate understanding before merging. The core thesis: every explainer, brainstorm, prototype, and reference is a cheap way to discover what you didn't know before it gets expensive to fix.",
+      "added": "2026-07-03",
+      "read": "2026-07-03",
+      "has_notes": true
+    },
+    {
+      "slug": "pis-edit-tool-design-why-its-intentionally-boring-mitsuhiko-thread",
+      "title": "Pi's edit tool design — why it's intentionally boring (mitsuhiko thread)",
+      "url": "https://x.com/i/status/2072955230862332106",
+      "category": "ai-engineering",
+      "summary": "Armin Ronacher (@mitsuhiko) explains Pi's edit tool design philosophy: a deliberately simple text-replacement tool (path + edits[] of oldText/newText pairs) that works across multiple LLMs rather than being optimized for one provider's patch format. The tool relies on uniqueness of the target block rather than checksums or line hashes. Pi tries exact match first, then falls back to normalized matching (line endings, trailing whitespace, Unicode normalization) to handle common model errors. However, it deliberately fails on ambiguous cases — missing, duplicated, empty, or overlapping changes — rather than silently patching, since silent recovery means the model builds on stale context. The failure is returned so the model can re-read the file and issue a corrected edit, enabling in-context learning. Recent improvements preserve user file formatting (line endings, UTF-8 BOM) and only rewrite touched lines during fuzzy matching. Ronacher acknowledges this is a compromise and the next step is evals to understand failure modes across models. Thread discussion highlights that the edits[] array format forces JSON escaping which hurts some models, and some users report models falling back to Python scripts after repeated edit failures.",
+      "added": "2026-07-03",
+      "read": "2026-07-03",
+      "has_notes": false
     }
   ]
 }
