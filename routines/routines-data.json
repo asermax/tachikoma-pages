@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-03T02:01:15.486701-03:00",
+  "generated_at": "2026-07-03T21:31:12.554714-03:00",
   "week_start": "2026-06-28",
   "week_label": "June 28 - July 04, 2026",
-  "last_updated": "Friday, July 03, 2026 at 02:01",
+  "last_updated": "Friday, July 03, 2026 at 21:31",
   "stats": {
-    "completed": 10.0,
-    "planned": 12,
-    "display": "10 / 12"
+    "completed": 11.0,
+    "planned": 13,
+    "display": "11 / 13"
   },
   "daily": {
     "Sunday": {
@@ -31,8 +31,8 @@
     },
     "Thursday": {
       "status": "done",
-      "completed": 2,
-      "total": 2
+      "completed": 3,
+      "total": 3
     },
     "Friday": {
       "status": "empty",
@@ -101,14 +101,18 @@
           "status": "skipped"
         },
         {
+          "day": "Thu",
+          "status": "done"
+        },
+        {
           "day": "Sat",
           "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
-      "total": 2
+      "done": 1,
+      "total": 3
     },
     {
       "id": "piano-practice",
@@ -191,7 +195,7 @@
     "state": "thriving",
     "emoji": "\ud83d\udc27",
     "title": "\ud83d\udc27 Pixel Penguin",
-    "image": "assets/thriving.jpg",
+    "image": "assets/thriving.webp",
     "description": "Your pixel penguin stands tall with a crown of ice crystals, bright vibrant colors, snowflakes swirling happily around it \u2014 triumphant and full of energy."
   }
 }
