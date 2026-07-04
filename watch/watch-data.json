@@ -1182,16 +1182,6 @@
       "times_shown": 0
     },
     {
-      "slug": "above-the-cloud-building-data-centers-in-space-richard-campbell-ndc-copenhagen-2",
-      "title": "Above the Cloud: Building Data Centers in Space - Richard Campbell - NDC Copenhagen 2026",
-      "url": "https://www.youtube.com/watch?v=eo7MEPgWGic",
-      "video_id": "eo7MEPgWGic",
-      "channel": "NDC Conferences",
-      "summary": "In this presentation, Richard Campbell discusses the feasibility of establishing cloud computing infrastructure in orbit in his talk, Above the Cloud: Building Data Centers in Space. He evaluates current real-world attempts, such as Starcloud launching a GPU into space, but ultimately argues that the massive scale of solar panels required and the complex orbital mechanics of low, medium, and geostationary earth orbits make large-scale space data centers highly impractical. This video is ideal for tech enthusiasts, software developers, and space hobbyists interested in understanding the realistic engineering limitations behind next-generation aerospace and cloud technology.",
-      "added": "2026-07-04",
-      "times_shown": 0
-    },
-    {
       "slug": "building-a-real-time-collaborative-editor-mihaela-gheorghe-roman-ndc-copenhagen",
       "title": "Building a real-time collaborative editor - Mihaela Gheorghe-Roman - NDC Copenhagen 2026",
       "url": "https://www.youtube.com/watch?v=VNAYu-8p804",
@@ -1504,6 +1494,17 @@
       "summary": "Richard Campbell (NDC Copenhagen) explores the history and realities of AI, arguing the term itself is flawed and that sci-fi tropes have fueled misconceptions. He traces neural networks from the 1950s through 2010s breakthroughs in image/voice recognition that enabled modern genAI companies like OpenAI. Aimed at developers and tech professionals looking to separate real AI capabilities from marketing hype.",
       "added": "2026-07-03",
       "watched": "2026-07-03",
+      "has_notes": true
+    },
+    {
+      "slug": "above-the-cloud-building-data-centers-in-space-richard-campbell-ndc-copenhagen-2",
+      "title": "Above the Cloud: Building Data Centers in Space - Richard Campbell - NDC Copenhagen 2026",
+      "url": "https://www.youtube.com/watch?v=eo7MEPgWGic",
+      "video_id": "eo7MEPgWGic",
+      "channel": "NDC Conferences",
+      "summary": "In this presentation, Richard Campbell discusses the feasibility of establishing cloud computing infrastructure in orbit in his talk, Above the Cloud: Building Data Centers in Space. He evaluates current real-world attempts, such as Starcloud launching a GPU into space, but ultimately argues that the massive scale of solar panels required and the complex orbital mechanics of low, medium, and geostationary earth orbits make large-scale space data centers highly impractical. This video is ideal for tech enthusiasts, software developers, and space hobbyists interested in understanding the realistic engineering limitations behind next-generation aerospace and cloud technology.",
+      "added": "2026-07-04",
+      "watched": "2026-07-04",
       "has_notes": true
     }
   ]
