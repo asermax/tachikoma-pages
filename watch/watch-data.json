@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03",
+  "generated_at": "2026-07-04",
   "queue": [
     {
       "slug": "harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan",
@@ -1423,6 +1423,17 @@
       "summary": "This podcast episode of \"The Next Token\" features software engineers Dillon Mulroy, Rhys Sullivan, and Sunil Pai as they discuss the real-world impact of advanced AI models\u2014specifically Anthropic's Claude Fable 5\u2014on modern software development. The hosts debate the high financial cost of running these complex models versus their actual utility, noting that while AI can be helpful for large, complex tasks, it is often too expensive and inefficient for daily developer workflows. A key takeaway is the critical observation that despite the widespread hype and integration of AI tools, everyday consumer software has not noticeably improved in quality. Software developers, engineering managers, and tech enthusiasts would benefit from watching this video to gain a realistic perspective on the limitations and expenses of AI-assisted coding.",
       "added": "2026-06-29",
       "watched": "2026-06-29",
+      "has_notes": true
+    },
+    {
+      "slug": "keynote-after-the-ai-hype-whats-real-and-whats-next-richard-campbell-2026",
+      "title": "Keynote: After the AI Hype \u2013 What\u2019s Real, and What\u2019s Next - Richard Campbell - 2026",
+      "url": "https://www.youtube.com/watch?v=uWnUnMphmPM",
+      "video_id": "uWnUnMphmPM",
+      "channel": "NDC Conferences",
+      "summary": "Richard Campbell (NDC Copenhagen) explores the history and realities of AI, arguing the term itself is flawed and that sci-fi tropes have fueled misconceptions. He traces neural networks from the 1950s through 2010s breakthroughs in image/voice recognition that enabled modern genAI companies like OpenAI. Aimed at developers and tech professionals looking to separate real AI capabilities from marketing hype.",
+      "added": "2026-07-03",
+      "watched": "2026-07-03",
       "has_notes": true
     }
   ]
