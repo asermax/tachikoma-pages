@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-05T02:01:10.422805-03:00",
-  "week_start": "2026-06-28",
-  "week_label": "June 28 - July 04, 2026",
-  "last_updated": "Sunday, July 05, 2026 at 02:01",
+  "generated_at": "2026-07-05T11:29:01.652445-03:00",
+  "week_start": "2026-07-05",
+  "week_label": "July 05 - July 11, 2026",
+  "last_updated": "Sunday, July 05, 2026 at 11:29",
   "stats": {
-    "completed": 12.0,
-    "planned": 17,
-    "display": "12 / 17"
+    "completed": 0,
+    "planned": 0,
+    "display": "0 / 0"
   },
   "daily": {
     "Sunday": {
@@ -15,24 +15,24 @@
       "total": 0
     },
     "Monday": {
-      "status": "partial",
-      "completed": 1,
-      "total": 2
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Tuesday": {
-      "status": "done",
-      "completed": 2,
-      "total": 2
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Wednesday": {
-      "status": "partial",
-      "completed": 3,
-      "total": 4
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Thursday": {
-      "status": "done",
-      "completed": 3,
-      "total": 3
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Friday": {
       "status": "empty",
@@ -40,162 +40,35 @@
       "total": 0
     },
     "Saturday": {
-      "status": "partial",
-      "completed": 1,
-      "total": 4
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     }
   },
   "goals": [
     {
       "name": "Trumpet Practice",
       "emoji": "",
-      "status": "done",
-      "accumulated": "75min",
+      "status": "pending",
+      "accumulated": "0min",
       "target": "60min",
-      "progress_pct": 100
+      "progress_pct": 0
     },
     {
       "name": "Reading",
       "emoji": "",
-      "status": "done",
-      "accumulated": "60min",
+      "status": "pending",
+      "accumulated": "0min",
       "target": "60min",
-      "progress_pct": 100
+      "progress_pct": 0
     }
   ],
-  "routines": [
-    {
-      "id": "basic-workout",
-      "name": "Basic Workout",
-      "emoji": "\ud83d\udcaa",
-      "sessions": [
-        {
-          "day": "Tue",
-          "status": "done"
-        },
-        {
-          "day": "Wed",
-          "status": "done"
-        },
-        {
-          "day": "Thu",
-          "status": "done"
-        },
-        {
-          "day": "Sat",
-          "status": "skipped"
-        }
-      ],
-      "metrics_total": "",
-      "comparison": "",
-      "done": 3,
-      "total": 4
-    },
-    {
-      "id": "music-practice",
-      "name": "Music Practice",
-      "emoji": "\ud83c\udfb7",
-      "sessions": [
-        {
-          "day": "Wed",
-          "status": "skipped"
-        },
-        {
-          "day": "Thu",
-          "status": "done"
-        },
-        {
-          "day": "Sat",
-          "status": "done"
-        }
-      ],
-      "metrics_total": "1h",
-      "comparison": "",
-      "done": 2,
-      "total": 3
-    },
-    {
-      "id": "piano-practice",
-      "name": "Piano Practice",
-      "emoji": "\ud83c\udfb9",
-      "sessions": [
-        {
-          "day": "Mon",
-          "status": "done"
-        }
-      ],
-      "metrics_total": "",
-      "comparison": "",
-      "done": 1,
-      "total": 1
-    },
-    {
-      "id": "rock-climbing",
-      "name": "Rock Climbing",
-      "emoji": "\ud83e\uddd7",
-      "sessions": [
-        {
-          "day": "Tue",
-          "status": "done"
-        },
-        {
-          "day": "Thu",
-          "status": "done"
-        }
-      ],
-      "metrics_total": "",
-      "comparison": "",
-      "done": 2,
-      "total": 2
-    },
-    {
-      "id": "running",
-      "name": "Running",
-      "emoji": "\ud83c\udfc3",
-      "sessions": [
-        {
-          "day": "Wed",
-          "status": "done"
-        },
-        {
-          "day": "Sat",
-          "status": "skipped"
-        }
-      ],
-      "metrics_total": "2.0km, 16min, 145bpm, 145bpm, 197kcal",
-      "comparison": "",
-      "done": 1,
-      "total": 2
-    },
-    {
-      "id": "yoga",
-      "name": "Yoga",
-      "emoji": "\ud83e\uddd8",
-      "sessions": [
-        {
-          "day": "Mon",
-          "status": "skipped"
-        },
-        {
-          "day": "Wed",
-          "status": "done"
-        },
-        {
-          "day": "Sat",
-          "status": "skipped"
-        }
-      ],
-      "metrics_total": "",
-      "comparison": "",
-      "done": 1,
-      "total": 3
-    }
-  ],
+  "routines": [],
   "spirit": {
-    "state": "content",
-    "emoji": "\ud83d\udc27",
-    "title": "\ud83d\udc27 Pixel Penguin",
-    "image": "assets/content.webp",
-    "description": "Your pixel penguin rests calmly on its ice floe, soft pastel tones, gentle smile and peaceful expression \u2014 satisfied with the week so far."
+    "state": "dormant",
+    "emoji": "\ud83d\udc0e",
+    "title": "\ud83d\udc0e Ice Kirin",
+    "image": "assets/dormant.webp",
+    "description": "Your ice kirin sleeps curled up in deep snow, starry night sky and soft moonlight above \u2014 peaceful, quiet rest."
   }
 }
