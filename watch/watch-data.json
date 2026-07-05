@@ -1230,6 +1230,16 @@
       "summary": "This video features a talk by Yngve Bakken-Nilsen at the NDC { AI } 2026 conference, where he shares his insights on using AI-assisted development to rebuild a software system. While AI-generated code significantly boosted productivity and successfully passed tests, the speaker noticed a growing conceptual incoherence in the system, which he attributes to a lack of shared implicit boundaries and hidden decisions. He argues that the rapid speed of AI development eliminates the natural social friction\u2014such as peer reviews and hesitations\u2014that typically forces developers to clarify architectural details and define clear boundaries. This presentation is highly valuable for software developers, architects, and technical leaders who want to understand the cognitive and architectural risks of over-relying on AI for code generation.",
       "added": "2026-07-04",
       "times_shown": 0
+    },
+    {
+      "slug": "the-next-steps-to-becoming-a-space-faring-civilization-richard-campbell-ndc-sydn",
+      "title": "The Next Steps to Becoming a Space-Faring Civilization - Richard Campbell - NDC Sydney 2026",
+      "url": "https://www.youtube.com/watch?v=H3TMugtJbaA",
+      "video_id": "H3TMugtJbaA",
+      "channel": "NDC Conferences",
+      "summary": "In this presentation from NDC Sydney, podcaster Richard Campbell explores the realistic path toward becoming a spacefaring civilization, moving past science fiction to analyze current aerospace capabilities. He highlights planetary defense as a primary motivator for space exploration, detailing how NASA's DART mission successfully altered an asteroid's orbit, which also opens the door for future resource extraction and asteroid mining. Campbell discusses the physics and engineering challenges of reaching orbit, explaining why space elevators are currently impractical due to radiation belts and showcasing how reusable rocket technology from companies like SpaceX and Blue Origin is drastically lowering the cost of space travel. This talk is ideal for tech professionals, space enthusiasts, and anyone interested in the practical engineering behind modern spaceflight.",
+      "added": "2026-07-05",
+      "times_shown": 0
     }
   ],
   "archive": [
