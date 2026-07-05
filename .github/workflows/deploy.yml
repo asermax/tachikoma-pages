@@ -34,3 +34,15 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        continue-on-error: true
+
+      - name: Retry deploy (attempt 2)
+        if: ${{ steps.deployment.outcome == 'failure' }}
+        uses: actions/deploy-pages@v4
+        id: deployment2
+        continue-on-error: true
+
+      - name: Retry deploy (attempt 3)
+        if: ${{ steps.deployment2.outcome == 'failure' }}
+        uses: actions/deploy-pages@v4
+        id: deployment3
