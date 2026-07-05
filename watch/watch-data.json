@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04",
+  "generated_at": "2026-07-05",
   "queue": [
     {
       "slug": "harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan",
@@ -1495,6 +1495,17 @@
       "summary": "In this presentation, Richard Campbell discusses the feasibility of establishing cloud computing infrastructure in orbit in his talk, Above the Cloud: Building Data Centers in Space. He evaluates current real-world attempts, such as Starcloud launching a GPU into space, but ultimately argues that the massive scale of solar panels required and the complex orbital mechanics of low, medium, and geostationary earth orbits make large-scale space data centers highly impractical. This video is ideal for tech enthusiasts, software developers, and space hobbyists interested in understanding the realistic engineering limitations behind next-generation aerospace and cloud technology.",
       "added": "2026-07-04",
       "watched": "2026-07-04",
+      "has_notes": true
+    },
+    {
+      "slug": "ep-01-i-want-your-product-to-enable-my-agent",
+      "title": "Ep 01 - \"I Want Your Product to Enable My Agent\"",
+      "url": "https://www.youtube.com/watch?v=AvjACmiik8U",
+      "video_id": "AvjACmiik8U",
+      "channel": "Next Token",
+      "summary": "This video is the second episode of \"The Next Token\" podcast, where hosts Dillon, Sunil, and Rhys discuss the latest in AI engineering, focusing on the AI Engineer World's Fair conference. They explore the naming conventions of OpenAI's GPT-5.6 models (Sol, Terra, and Luna) compared to Anthropic's Claude models, and critique the effectiveness of model routing tools like Magnitude. Tech developers, AI enthusiasts, and anyone interested in the evolving landscape of large language models would find this discussion highly informative.",
+      "added": "2026-07-05",
+      "watched": "2026-07-05",
       "has_notes": true
     }
   ]
