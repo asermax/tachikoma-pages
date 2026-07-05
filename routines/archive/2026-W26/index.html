@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>June 28 - July 04, 2026 | Routines Archive | Tachikoma</title>
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        header p { opacity: 0.9; }
+        main { padding: 2rem; }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.9rem;
+        }
+        .back-button:hover { background: #e9ecef; }
+
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .stat-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+        .stat-number { font-size: 2rem; font-weight: bold; color: #667eea; }
+        .stat-label { color: #666; font-size: 0.9rem; margin-top: 0.25rem; }
+
+        /* Sections */
+        .category { margin-bottom: 2rem; }
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #eee;
+        }
+        .category-icon { font-size: 1.5rem; }
+        .category-header h2 { font-size: 1.3rem; color: #333; }
+
+        /* Week Grid */
+        .week-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 0.5rem;
+            text-align: center;
+        }
+        .day-column { display: flex; flex-direction: column; align-items: center; }
+        .day-header { font-size: 0.85rem; color: #666; margin-bottom: 0.5rem; font-weight: 500; }
+        .day-cell {
+            width: 32px; height: 32px; border-radius: 50%;
+            background: #e9ecef;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.75rem; color: #666;
+        }
+        .day-cell.done { background: #28a745; color: white; }
+        .day-cell.partial { background: #ffc107; color: #333; }
+        .day-cell.missed { background: #dc3545; color: white; }
+        .day-cell.today { border: 2px solid #667eea; }
+
+        /* Routine Cards */
+        .routine-cards { display: flex; flex-direction: column; gap: 1rem; }
+        .routine-card {
+            background: #f8f9fa;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .routine-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+        .routine-name { font-weight: 600; font-size: 1rem; }
+        .routine-count { color: #666; font-size: 0.85rem; }
+        .routine-punch-card { display: flex; gap: 0.4rem; margin-bottom: 0.5rem; }
+        .punch {
+            width: 28px; height: 28px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.7rem; font-weight: 600;
+        }
+        .punch.done { background: #28a745; color: white; }
+        .punch.pending { background: #e9ecef; color: #999; }
+        .punch.skipped { background: #f8d7da; color: #dc3545; }
+        .routine-metrics { color: #495057; font-size: 0.9rem; font-weight: 500; }
+        .routine-comparison { color: #28a745; font-size: 0.8rem; margin-top: 0.25rem; }
+        .routine-comparison.negative { color: #dc3545; }
+
+        /* Goal Cards */
+        .goal-cards { display: flex; flex-direction: column; gap: 1rem; }
+        .goal-card {
+            background: #f8f9fa;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        .goal-card.done { border-left-color: #28a745; }
+        .goal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        .goal-name { font-weight: 600; font-size: 1rem; }
+        .goal-progress {
+            width: 100%; height: 8px;
+            background: #e9ecef; border-radius: 4px;
+            overflow: hidden; margin-bottom: 0.5rem;
+        }
+        .goal-bar {
+            height: 100%; background: #ffc107;
+            border-radius: 4px; transition: width 0.3s ease;
+        }
+        .goal-card.done .goal-bar { background: #28a745; }
+        .goal-detail { color: #495057; font-size: 0.85rem; }
+
+        /* Spirit Companion */
+        .spirit-section {
+            background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            text-align: center;
+            border: 2px solid #ffd700;
+        }
+        .spirit-title { font-size: 1.5rem; color: #856404; margin-bottom: 1rem; }
+        .spirit-image {
+            width: 200px; height: 200px; border-radius: 50%;
+            object-fit: cover; border: 4px solid #ffd700;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-bottom: 1rem;
+        }
+        .spirit-state {
+            font-size: 1.2rem; font-weight: bold;
+            color: #856404; margin-bottom: 0.5rem;
+            text-transform: capitalize;
+        }
+        .spirit-description { color: #666; max-width: 500px; margin: 0 auto; }
+
+        /* Archive */
+        .archive-section {
+            text-align: center;
+            margin: 2rem 0;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+        .archive-link { color: #667eea; text-decoration: none; font-size: 0.95rem; }
+        .archive-link:hover { text-decoration: underline; }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #f8f9fa;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .loading { text-align: center; color: #999; padding: 3rem 0; }
+
+        @media (max-width: 600px) {
+            body { padding: 1rem; }
+            .week-grid { font-size: 0.75rem; }
+        }
+    </style>
+    <script src="../assets/tachikoma.js?v=4e37b477ab801357"></script>
+</head>
+<body>
+    <div style="max-width: 900px; margin: 0 auto 1rem; padding: 0 2rem;">
+        <a href="../" class="back-button" style="background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <span>&larr;</span> Back to Home
+        </a>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>&#128197; Routines Tracker</h1>
+            <p>Weekly activity tracking and accountability</p>
+        </header>
+
+        <main>
+            <div id="content" class="loading">Loading...</div>
+        </main>
+
+        <footer>
+            <p id="last-updated"></p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;">&#128375; Tracked by Tachi</p>
+        </footer>
+    </div>
+
+    <script>
+    var DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    var DAY_SHORT = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    var DAY_INITIAL = ['S','M','T','W','T','F','S'];
+
+    async function load() {
+        try {
+            var res = await fetch('./routines-data.json');
+            var data = await res.json();
+        } catch (e) {
+            document.getElementById('content').innerHTML = '<div class="loading">Failed to load dashboard.</div>';
+            return;
+        }
+        render(data);
+    }
+
+    function esc(s) {
+        var d = document.createElement('div');
+        d.textContent = s || '';
+        return d.innerHTML;
+    }
+
+    function render(d) {
+        var h = '';
+
+        // Stats
+        h += '<div class="stats-grid">';
+        h += '<div class="stat-card"><div class="stat-number">' + esc(d.stats.display) + '</div><div class="stat-label">Completed / Planned</div></div>';
+        h += '</div>';
+
+        // Week grid
+        h += '<div class="category"><div class="category-header"><span class="category-icon">&#128202;</span><h2>This Week</h2></div>';
+        h += '<div class="week-grid">';
+        var today = new Date();
+        var todayDay = DAYS[today.getDay()];
+        for (var i = 0; i < 7; i++) {
+            var dayName = DAYS[i];
+            var day = d.daily[dayName];
+            var isToday = dayName === todayDay;
+            var cls = 'day-cell';
+            var label = '&middot;';
+            if (day) {
+                cls += ' ' + (day.status || '');
+                if (day.completed > 0) label = day.completed;
+                if (isToday) cls += ' today';
+            }
+            h += '<div class="day-column"><div class="day-header">' + DAY_SHORT[i] + '</div><div class="' + cls + '">' + label + '</div></div>';
+        }
+        h += '</div></div>';
+
+        // Goals
+        if (d.goals && d.goals.length > 0) {
+            h += '<div class="category"><div class="category-header"><span class="category-icon">&#127919;</span><h2>Weekly Goals</h2></div>';
+            h += '<div class="goal-cards">';
+            for (var g = 0; g < d.goals.length; g++) {
+                var goal = d.goals[g];
+                var doneCls = goal.status === 'done' ? ' done' : '';
+                var pct = goal.progress_pct || 0;
+                var emoji = goal.emoji ? goal.emoji + ' ' : '';
+                h += '<div class="goal-card' + doneCls + '" data-tachi-actions="goals" data-tachi-slug="' + esc(goal.name) + '">';
+                h += '<div class="goal-header"><span class="goal-name">' + emoji + esc(goal.name) + '</span></div>';
+                h += '<div class="goal-progress"><div class="goal-bar" style="width: ' + pct + '%;"></div></div>';
+                h += '<div class="goal-detail">' + esc(goal.accumulated) + ' / ' + esc(goal.target) + ' (' + pct + '%)</div>';
+                h += '</div>';
+            }
+            h += '</div></div>';
+        }
+
+        // Routines
+        if (d.routines && d.routines.length > 0) {
+            h += '<div class="category"><div class="category-header"><span class="category-icon">&#128221;</span><h2>Routines</h2></div>';
+            h += '<div class="routine-cards">';
+            for (var r = 0; r < d.routines.length; r++) {
+                var rt = d.routines[r];
+                var isWorkout = rt.id.indexOf('basic-workout') === 0;
+                if (isWorkout) {
+                    h += '<a href="workout.html" style="text-decoration:none;color:inherit;display:block;">';
+                }
+                h += '<div class="routine-card" data-tachi-actions="routines" data-tachi-slug="' + esc(rt.id) + '">';
+                h += '<div class="routine-header"><span class="routine-name">' + esc(rt.emoji) + ' ' + esc(rt.name) + '</span>';
+                h += '<span class="routine-count">' + rt.done + '/' + rt.total + ' sessions</span></div>';
+
+                // Punch card
+                if (rt.sessions && rt.sessions.length > 0) {
+                    h += '<div class="routine-punch-card">';
+                    for (var s = 0; s < rt.sessions.length; s++) {
+                        var sess = rt.sessions[s];
+                        var initial = sess.day ? sess.day.charAt(0) : '?';
+                        h += '<div class="punch ' + sess.status + '" title="' + esc(sess.day) + '">' + initial + '</div>';
+                    }
+                    h += '</div>';
+                }
+
+                if (rt.metrics_total) {
+                    h += '<div class="routine-metrics">' + esc(rt.metrics_total) + '</div>';
+                }
+                if (rt.comparison) {
+                    var isNeg = rt.comparison.charAt(0) === '-';
+                    h += '<div class="routine-comparison' + (isNeg ? ' negative' : '') + '">' + esc(rt.comparison) + ' vs last week</div>';
+                }
+
+                h += '</div>';
+                if (isWorkout) {
+                    h += '</a>';
+                }
+            }
+            h += '</div></div>';
+        }
+
+        // Spirit
+        if (d.spirit) {
+            h += '<div class="spirit-section">';
+            h += '<div class="spirit-title">' + esc(d.spirit.title) + '</div>';
+            h += '<img src="' + esc(d.spirit.image) + '" alt="Spirit Companion" class="spirit-image">';
+            h += '<div class="spirit-state">' + esc(d.spirit.state) + '</div>';
+            h += '<div class="spirit-description">' + esc(d.spirit.description) + '</div>';
+            h += '</div>';
+        }
+
+        // Archive link
+        h += '<div class="archive-section"><a href="../archive/" class="archive-link">&#128218; View Archive &rarr;</a></div>';
+
+        document.getElementById('content').innerHTML = h;
+
+        // Footer
+        if (d.last_updated) {
+            document.getElementById('last-updated').textContent = 'Last updated: ' + d.last_updated;
+        }
+
+        // Refresh action buttons
+        if (window.Tachikoma && Tachikoma.refresh) Tachikoma.refresh();
+    }
+
+    load();
+    </script>
+</body>
+</html>
