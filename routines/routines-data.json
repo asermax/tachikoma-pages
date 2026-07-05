@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-04T02:01:06.035102-03:00",
+  "generated_at": "2026-07-05T02:01:10.422805-03:00",
   "week_start": "2026-06-28",
   "week_label": "June 28 - July 04, 2026",
-  "last_updated": "Saturday, July 04, 2026 at 02:01",
+  "last_updated": "Sunday, July 05, 2026 at 02:01",
   "stats": {
-    "completed": 10.9,
-    "planned": 13,
-    "display": "10.9 / 13"
+    "completed": 12.0,
+    "planned": 17,
+    "display": "12 / 17"
   },
   "daily": {
     "Sunday": {
@@ -40,19 +40,19 @@
       "total": 0
     },
     "Saturday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "partial",
+      "completed": 1,
+      "total": 4
     }
   },
   "goals": [
     {
       "name": "Trumpet Practice",
       "emoji": "",
-      "status": "pending",
-      "accumulated": "45min",
+      "status": "done",
+      "accumulated": "75min",
       "target": "60min",
-      "progress_pct": 75
+      "progress_pct": 100
     },
     {
       "name": "Reading",
@@ -83,7 +83,7 @@
         },
         {
           "day": "Sat",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -106,12 +106,12 @@
         },
         {
           "day": "Sat",
-          "status": "pending"
+          "status": "done"
         }
       ],
-      "metrics_total": "",
+      "metrics_total": "1h",
       "comparison": "",
-      "done": 1,
+      "done": 2,
       "total": 3
     },
     {
@@ -159,7 +159,7 @@
         },
         {
           "day": "Sat",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "2.0km, 16min, 145bpm, 145bpm, 197kcal",
@@ -182,7 +182,7 @@
         },
         {
           "day": "Sat",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -192,10 +192,10 @@
     }
   ],
   "spirit": {
-    "state": "thriving",
+    "state": "content",
     "emoji": "\ud83d\udc27",
     "title": "\ud83d\udc27 Pixel Penguin",
-    "image": "assets/thriving.webp",
-    "description": "Your pixel penguin stands tall with a crown of ice crystals, bright vibrant colors, snowflakes swirling happily around it \u2014 triumphant and full of energy."
+    "image": "assets/content.webp",
+    "description": "Your pixel penguin rests calmly on its ice floe, soft pastel tones, gentle smile and peaceful expression \u2014 satisfied with the week so far."
   }
 }
