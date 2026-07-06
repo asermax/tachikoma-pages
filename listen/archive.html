@@ -72,6 +72,12 @@
             font-size: 0.85rem;
             color: #999;
         }
+        .archive-item .archive-time {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 0.85rem;
+            color: #bbb;
+            margin-left: 0.5rem;
+        }
         .archive-item .saved-badge {
             display: inline-block;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -116,7 +122,26 @@ ARTICLES.forEach(a => {
         badge = ` <span class="saved-badge">${label}</span>`;
     }
 
+    const timeSpan = document.createElement('span');
+    timeSpan.className = 'archive-time';
+    const cached = localStorage.getItem('listen_time_' + a.slug);
+    if (cached) {
+        timeSpan.textContent = cached;
+    } else {
+        timeSpan.textContent = '…';
+        const audio = new Audio(`${a.slug}.ogg`);
+        audio.addEventListener('loadedmetadata', () => {
+            const m = Math.floor(audio.duration / 60);
+            const s = Math.floor(audio.duration % 60);
+            const label = `${m}:${s.toString().padStart(2, '0')}`;
+            timeSpan.textContent = label;
+            localStorage.setItem('listen_time_' + a.slug, label);
+        });
+        audio.addEventListener('error', () => { timeSpan.textContent = ''; });
+    }
+
     div.innerHTML = `<h3>${a.title}${badge}</h3><div class="archive-meta">${a.meta}</div>`;
+    div.querySelector('.archive-meta').appendChild(timeSpan);
     div.addEventListener('click', () => {
         window.location.href = `./?article=${a.slug}`;
     });
