@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'software-design-in-the-agentic-age', title: 'Software Design in the Agentic Age: Place Your Bets', meta: 'Mathias Verraes · July 2026', time: '4:02' },
     { slug: 'feedback-flywheel', title: 'Feedback Flywheel', meta: 'Rahul Garg · April 2026', time: '17:05' },
     { slug: 'the-primitive-is-the-product', title: 'The primitive is the product', meta: 'Lenny Pruss · June 2025' },
     { slug: 'on-idea-generation', title: 'On Exercising the Idea Muscle', meta: 'Sankalp · June 2026', time: '18:14' },
