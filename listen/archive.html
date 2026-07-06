@@ -122,26 +122,9 @@ ARTICLES.forEach(a => {
         badge = ` <span class="saved-badge">${label}</span>`;
     }
 
-    const timeSpan = document.createElement('span');
-    timeSpan.className = 'archive-time';
-    const cached = localStorage.getItem('listen_time_' + a.slug);
-    if (cached) {
-        timeSpan.textContent = cached;
-    } else {
-        timeSpan.textContent = '…';
-        const audio = new Audio(`${a.slug}.ogg`);
-        audio.addEventListener('loadedmetadata', () => {
-            const m = Math.floor(audio.duration / 60);
-            const s = Math.floor(audio.duration % 60);
-            const label = `${m}:${s.toString().padStart(2, '0')}`;
-            timeSpan.textContent = label;
-            localStorage.setItem('listen_time_' + a.slug, label);
-        });
-        audio.addEventListener('error', () => { timeSpan.textContent = ''; });
-    }
+    const timeHtml = a.time ? ` <span class="archive-time">${a.time}</span>` : '';
 
-    div.innerHTML = `<h3>${a.title}${badge}</h3><div class="archive-meta">${a.meta}</div>`;
-    div.querySelector('.archive-meta').appendChild(timeSpan);
+    div.innerHTML = `<h3>${a.title}${badge}</h3><div class="archive-meta">${a.meta}${timeHtml}</div>`;
     div.addEventListener('click', () => {
         window.location.href = `./?article=${a.slug}`;
     });
