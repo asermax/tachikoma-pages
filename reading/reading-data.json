@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05",
+  "generated_at": "2026-07-06",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -71,7 +71,7 @@
       "category": "engineering",
       "summary": "Lalit Maganti's experience building syntaqlite — high-fidelity SQLite developer tools (formatter, linter, language server) — using AI coding agents across ~250 hours. Two phases: first month of vibe-coding produced a functional but unmaintainable prototype requiring total rewrite; second phase using Rust + disciplined AI-as-autocomplete yielded the 0.1 release. Key framework: AI excels at overcoming procrastination, obvious code generation, teaching unfamiliar domains, and shipping last-mile features. Costs include addictive feedback loops, erosion of mental models, and deferred hard design decisions. Core insight: AI is excellent for tasks with verifiable answers but poor for tasks requiring taste and judgment (architecture, API design).",
       "added": "2026-04-06",
-      "times_shown": 2
+      "times_shown": 3
     },
     {
       "slug": "httpsopensubstackcompubsebastianraschkapcomponents-of-a-coding-agentutm-sourcesh",
@@ -116,7 +116,7 @@
       "category": "ai",
       "summary": "Same author as Encoding Team Standards (Rahul Garg, Martin Fowler series). Argues teams plateau with AI tools because individual learnings never become shared practice. Framework: 4 signal types (context gaps, instruction patterns, workflow discoveries, failures with root causes) mapped to 4 cadences (after-session reflection, daily stand-up, sprint retro, quarterly audit). Metrics that matter: first-pass acceptance rate, iteration cycles, post-merge rework — not lines generated. Key insight: the other practices in the series are passive surfaces; the flywheel is what makes them compound over time. Treat shared AI artifacts like dependencies — maintain them or they become liabilities.",
       "added": "2026-04-14",
-      "times_shown": 4
+      "times_shown": 5
     },
     {
       "slug": "httpswalkinglabsgithubiolearn-harness-engineeringen",
@@ -152,7 +152,7 @@
       "category": "ai",
       "summary": "Introduces Structured-Prompt-Driven Development (SPDD), a method that treats AI prompts as first-class delivery artifacts — version-controlled, reviewed, and reusable. Built around the REASONS Canvas (Requirements, Entities, Approach, Structure, Operations, Norms, Safeguards) and a six-step workflow that brings prompts into the same discipline as code. Developed by Thoughtworks to address the gap between individual AI speed and system-level throughput. Includes a worked billing engine example, core skill identification (abstraction-first, alignment, iterative review), and fitness assessment for where SPDD pays off vs. falls short.",
       "added": "2026-05-15",
-      "times_shown": 7
+      "times_shown": 8
     },
     {
       "slug": "httpsxcomistatus2058014104854626490",
@@ -161,7 +161,7 @@
       "category": "ai",
       "summary": "Nate Berkopec reflects on the state of LLMs ~5 months after Opus 4.5. He's fully transitioned to coding via LLMs, argues 'intelligence' is the wrong lens — LLMs have 'jagged intelligence' that grows more jagged. Identifies 4 characteristics of successful LLM workflows: verifiable output, brute-force loops, repetitive drudgery targets, rapid prototypes. Key insight: LLMs are 'compressed information stores' with lossy decompression; real opportunity is 'making the thing which makes the thing.'",
       "added": "2026-05-24",
-      "times_shown": 5
+      "times_shown": 6
     },
     {
       "slug": "my-ai-adoption-journey",
@@ -170,25 +170,25 @@
       "category": "ai",
       "summary": "Mitchell Hashimoto (co-founder of HashiCorp) shares his personal, six-step journey of gradually adopting AI coding agents, emphasizing that he forced himself through initial inefficiency to reach genuine productivity gains. He starts by urging developers to stop using chatbot interfaces for coding and instead adopt agentic tools (like Claude Code) that can read files, execute programs, and make HTTP requests in a loop.\n\nHis early approach was disciplined: he literally duplicated his manual commits by fighting agents to reproduce the same results, which built expertise from first principles. Key lessons included breaking work into small, clear tasks; separating planning from execution sessions; and giving agents ways to verify their own work. A notable tactic was blocking the last 30 minutes of each day to spin up agents for deep research, parallel exploration of vague ideas, and issue triage -- giving him a 'warm start' each morning.\n\nThe real inflection came when he began outsourcing high-confidence tasks to agents while simultaneously doing his own deep work, turning off agent notifications to avoid context-switching costs. He introduces the concept of 'harness engineering' -- systematically building safeguards (AGENTS.md files, custom scripts) so that whenever an agent makes a mistake, you engineer a solution to prevent it from recurring. His current goal is to always have an agent running, though he estimates he only achieves this 10-20% of the workday.\n\nThe piece is notably measured and hype-free. Hashimoto has no financial stake in AI companies, explicitly acknowledges concerns about skill formation (especially for junior developers), and frames the whole journey as simply a craftsman trying to build things more effectively. The core takeaway is that AI adoption requires deliberate, uncomfortable practice and structural workflow changes -- it does not deliver value through a chatbot alone.",
       "added": "2026-05-30",
-      "times_shown": 3
+      "times_shown": 4
     },
     {
       "slug": "addy-osmani-tweet-2059844244907696186",
-      "title": "Addy Osmani tweet (2059844244907696186)",
+      "title": "The Orchestration Tax — Why Running More Agents Doesn't Mean More of You",
       "url": "https://x.com/addyosmani/status/2059844244907696186",
       "category": "ai",
       "summary": "Addy Osmani argues that spawning multiple AI agents creates an 'orchestration tax' — starting agents is cheap, but reviewing, reconciling, and merging their output routes through you as a single serial bottleneck, like the GIL in Python. The key insight is that you must architect your attention as a scarce serial resource rather than optimizing the part that was never the constraint.",
       "added": "2026-05-31",
-      "times_shown": 1
+      "times_shown": 2
     },
     {
       "slug": "arxiv-260506445v1",
-      "title": "arXiv 2605.06445v1",
+      "title": "Constraint Decay — The Fragility of LLM Agents in Backend Code Generation",
       "url": "https://arxiv.org/html/2605.06445v1",
       "category": "ai",
       "summary": "This paper introduces 'constraint decay,' showing that LLM coding agents perform well on unconstrained backend generation but degrade substantially — losing an average of 30 percentage points in assertion pass rates — when forced to adhere to structural requirements like Clean Architecture patterns, specific databases, and ORM integration across eight web frameworks.",
       "added": "2026-05-31",
-      "times_shown": 1
+      "times_shown": 2
     },
     {
       "slug": "could-a-large-language-model-be-conscious",
@@ -197,16 +197,16 @@
       "category": "ai",
       "summary": "Philosopher David Chalmers examines the evidence for and against consciousness in large language models, concluding that current LLMs probably are not conscious but that extended multimodal LLM+ systems may become serious candidates for consciousness within a decade. He outlines a research program of engineering challenges and emphasizes the profound ethical stakes of potentially creating conscious AI.",
       "added": "2026-05-31",
-      "times_shown": 1
+      "times_shown": 2
     },
     {
       "slug": "hexednobility-tweet-2059974055294316574",
-      "title": "Hexednobility tweet (2059974055294316574)",
+      "title": "The Coloring Book Method — How to Make Things with LLMs",
       "url": "https://x.com/hexednobility/status/2059974055294316574",
       "category": "ai",
       "summary": "A practical framework for effective LLM use built around a three-step loop: outline (define what you want clearly), fill (let the model complete the bounded task), and refine (verify and polish the output). The argument is that skill with LLMs resides not in model selection or tooling, but in the human ability to structure work and critically evaluate results.",
       "added": "2026-05-31",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "japanese-verb-conjugation-the-simple-hard-way",
@@ -215,7 +215,7 @@
       "category": "japanese",
       "summary": "A unified stem-plus-suffix model for Japanese verb conjugation that replaces memorization-heavy group tables. Every verb has a stem (like tabe or nom*) and you append suffixes to it, with a wildcard vowel concept where stems ending with * absorb the suffix's secret vowel. Covers five rules for all basic conjugations including sound collapses for past forms, and extends elegantly to dictionary, conditional, and causative forms using secret consonants that disappear on wildcards.",
       "added": "2026-06-02",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "physics-as-a-game-loop",
@@ -224,7 +224,7 @@
       "category": "physics",
       "summary": "The article reimagines classical physics as reverse-engineering the game loop of the universe, using JavaScript pseudocode to express physical laws as update functions that evolve state over time. It progresses from Newtonian mechanics through wave physics to Maxwell's equations, showing how electric and magnetic fields locked in mutual transformation via curl produce light. Closes with a quantum mechanics teaser — the double-slit experiment with single electrons producing interference patterns, raising the question 'where are the waves?'",
       "added": "2026-06-02",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "communities-of-not",
