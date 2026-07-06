@@ -315,6 +315,51 @@
       "summary": "A deep exploration of idea generation as an exercisable muscle. Sankalp argues that creativity isn't mystical — it requires direct exposure to sources (not AI-mediated), tight feedback loops through doing, and having a concrete problem statement or scaffold to push against. Key insights: ideas emerge from inside active work, not from passive consumption; consumption-maxxing without processing is a common trap; you need to put in time building 'embedding space' in your mind through high-resolution engagement with material; people and conversations act as mirrors and portals for creativity; and breaking through blocks requires zooming out, reframing, and sometimes switching to parallel projects. Strong references to Henrik Karlsson, Richard Hamming, and Jack Morris.",
       "added": "2026-06-29",
       "times_shown": 0
+    },
+    {
+      "slug": "make-ai-boring-again",
+      "title": "Make AI Boring Again",
+      "url": "https://charitydotwtf.substack.com/p/make-ai-boring-again",
+      "category": "AI",
+      "summary": "Majors argues AI is just technology, not uniquely evil, and that the gap between a tool's appearance and our ability to govern it is reason to engage rather than abstain. She rejects purity politics, urging tech workers to learn AI deeply and help shape the next generation of tooling.",
+      "added": "2026-07-06",
+      "times_shown": 0
+    },
+    {
+      "slug": "mechanical-sympathy",
+      "title": "Mechanical Sympathy",
+      "url": "https://martinfowler.com/bliki/MechanicalSympathy.html",
+      "category": "AI",
+      "summary": "Fowler defines Mechanical Sympathy, a term coined by F1 champion Jackie Stewart for a driver's intuitive understanding of a car, and imported into software by Martin Thompson to describe developers needing a rough grasp of hardware to build efficient systems.",
+      "added": "2026-07-06",
+      "times_shown": 0
+    },
+    {
+      "slug": "notes-from-fose-europe",
+      "title": "Notes from FOSE Europe",
+      "url": "https://overwatering.org/blog/2026/07/notes-from-fose-europe/",
+      "category": "AI",
+      "summary": "Reflecting on the FOSE Europe unconference, the author notes a marked shift from the hesitant Deer Valley event to confidence that agentic engineering's value is now proven. He contrasts two org models and observes engineering rigour relocating into tests, BDD, and formal models.",
+      "added": "2026-07-06",
+      "times_shown": 0
+    },
+    {
+      "slug": "software-design-in-the-agentic-age",
+      "title": "Software Design in the Agentic Age",
+      "url": "https://verraes.net/2026/07/software-design-in-the-agentic-age/",
+      "category": "AI",
+      "summary": "Drawing on the Thoughtworks FOSE retreat, Verraes argues that low-level code quality still matters because agents benefit from clear structure, face the same context-window limits as humans, and amplify existing bad patterns. High-level design (domain models, bounded contexts, ubiquitous language) remains firmly human territory, and he predicts a shift toward specifications as the source of truth.",
+      "added": "2026-07-06",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-ai-tokenpocalypse-is-here",
+      "title": "The AI Tokenpocalypse Is Here",
+      "url": "https://www.404media.co/companies-are-throttling-employees-ai-use-because-its-too-expensive/",
+      "category": "AI",
+      "summary": "404 Media reports that companies including Amazon and Citi are throttling employee AI use and pushing workers toward cheaper models as token costs spiral, with one firm's monthly spend tripling past 15 million dollars.",
+      "added": "2026-07-06",
+      "times_shown": 0
     }
   ],
   "archive": [
@@ -866,6 +911,16 @@
       "summary": "Armin Ronacher highlights a frustrating regression in newer Claude models, like Opus 4.8, which frequently fail to respect custom, nested tool schemas by appending invented JSON parameters. He argues that this issue stems from the models being post-trained on forgiving environments like Claude Code that silently repair malformed outputs, making strict grammar-constrained decoding increasingly essential for alternative developer tools.",
       "added": "2026-07-04",
       "read": "2026-07-04",
+      "has_notes": true
+    },
+    {
+      "slug": "code-for-humans-and-machines",
+      "title": "Code for Humans and Machines",
+      "url": "https://adamtornhill.substack.com/p/welcome-to-code-for-humans-and-machines",
+      "category": "AI",
+      "summary": "Tornhill argues that in the agentic era code must be not just human-readable but machine-legible and transformable, and his research shows AI agents demand higher code quality than humans do to minimize defects and token costs. Programming may be dead, but software design is more relevant than ever.",
+      "added": "2026-07-06",
+      "read": "2026-07-06",
       "has_notes": true
     }
   ]
