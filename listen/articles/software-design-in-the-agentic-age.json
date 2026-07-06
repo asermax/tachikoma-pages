@@ -1,0 +1,54 @@
+{
+  "title": "Software Design in the Agentic Age: Place Your Bets",
+  "meta": "Mathias Verraes · July 2026",
+  "body": "<div class=\"chunk\"><h1>Software Design in the Agentic Age: Place Your Bets</h1>\n</div>\n<div class=\"chunk\"><p>An evaluation of the role of software design in retrospect of Thoughtworks' Future of Software Engineering retreat.</p>\n</div>\n<div class=\"chunk\"><p>By Mathias Verraes, Published July 2, 2026</p>\n</div>\n<div class=\"chunk\"><p>This week, I participated in Thoughtworks' Future of Software Engineering retreat in Engelberg, Switzerland. It was an invite-only event with about 60 industry leaders, hosted by Martin Fowler. The event used an open space format, where all sessions had the form of group debates, mostly focused on agentic development. Here are some of my observations on the changing role of software design.</p>\n</div>\n<div class=\"chunk\"><p>The participants' styles ranged from humans programming with small changes delegated to the LLM, through LLM pair programming, automated generation with human verification, automated generation with automated verification, to full dark factory pipelines. Regardless of style, many agreed on the value of harness engineering as a way to guarantee outcomes.</p>\n</div>\n<div class=\"chunk\"><p>A recurring question was how much we should still care about software design at the granularity of code. I can roughly group the participants' opinions into two opposing arguments:</p>\n</div>\n<div class=\"chunk\"><p>First, these concerns exist for human readability and understandability of the code, and impact the cost of change. Agents significantly lower the cost of change, and have no need for such design principles.</p>\n</div>\n<div class=\"chunk\"><p>Second, agents benefit from well-structured and well-designed code.</p>\n</div>\n<div class=\"chunk\"><p>The people in the second camp offered some compelling arguments. LLMs have been trained on human languages, and have some limitations that are similar to human programmers. Clarity matters as much to LLMs as to us. As with humans, code quality doesn't matter much on short-lived projects, but has a huge impact on the long term maintainability and changeability of the code. LLMs context windows are limited, and more accidental complexity in the code increases the context. Complexity increases the token cost. Humans may need to debug the code when the LLM can't, and good design will be crucial. And perhaps the most interesting observation: LLMs reinforce bad code. They mimic the style and patterns of the existing code when generating new code.</p>\n</div>\n<div class=\"chunk\"><p>So my money is on code design quality: if camp one is wrong, they will have to catch up on quality. If camp two is wrong, they can easily remove their quality infrastructure at low cost. If camp two is right, they will save money and have a major advantage.</p>\n</div>\n<div class=\"chunk\"><p>The good news is that agentic code quality seems to be working well with a multi-pipeline approach: generate code in one pipeline and verify whether it works. In a second pipeline, do static analysis with strict settings. Feed code smells to a third pipeline where an agent assesses whether the fix is worth it. Then a final pipeline refactors the offending code with atomic commits.</p>\n</div>\n<div class=\"chunk\"><p>For high level design, the essential qualities remain: a clear domain model, a well-defined Ubiquitous Language, Bounded Contexts, and a continuous process of updating language and models as the domain evolves.</p>\n</div>\n<div class=\"chunk\"><p>One of the most divisive questions was whether code is still ground truth. One camp treats code as the single source of truth. The other treats specifications as the single source of truth, where software engineering becomes specification engineering.</p>\n</div>\n<div class=\"chunk\"><p>My bets: low level code quality is likely still important but automatable. High level software design remains human territory with AI assists. The focus shifts away from code to domain models and specifications. Rigour and engineering practices remain crucial. And we should hedge against the risk of AI dependency by building systems that are well-documented enough to revert to human engineering if needed.</p>\n</div>\n",
+  "audio": "software-design-in-the-agentic-age.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      16.147,
+      40.075,
+      64.362,
+      94.89,
+      141.697,
+      159.625,
+      184.672,
+      215.519
+    ],
+    "chunkMap": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5,
+        6,
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        13
+      ]
+    ],
+    "prefixOffset": 0
+  }
+}
