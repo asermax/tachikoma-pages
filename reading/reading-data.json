@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06",
+  "generated_at": "2026-07-07",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -921,6 +921,16 @@
       "summary": "Tornhill argues that in the agentic era code must be not just human-readable but machine-legible and transformable, and his research shows AI agents demand higher code quality than humans do to minimize defects and token costs. Programming may be dead, but software design is more relevant than ever.",
       "added": "2026-07-06",
       "read": "2026-07-06",
+      "has_notes": true
+    },
+    {
+      "slug": "designing-loops-for-claude-code",
+      "title": "Designing Loops for Claude Code",
+      "url": "https://x.com/ClaudeDevs/status/2074208949205881033",
+      "category": "AI",
+      "summary": "The Claude Code team defines loops as agents repeating work cycles until a stop condition is met. They categorize four loop types: turn-based (user-triggered, good for short tasks), goal-based (verifiable exit criteria with turn caps), time-based (recurring work via /loop and /schedule), and proactive (event-driven routines running autonomously). Key advice: encode verification in SKILL.md files, use deterministic success criteria, run scripts for deterministic work, and pilot before scaling. Written by @delba_oliveira.",
+      "added": "2026-07-06",
+      "read": "2026-07-07",
       "has_notes": true
     }
   ]
