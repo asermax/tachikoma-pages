@@ -1250,6 +1250,36 @@
       "summary": "Companies are scrambling to rein in spiraling AI token consumption. Leaked internal audio from Accenture reveals that the biggest source of expensive token chewing comes from non-technical employees using AI for mundane tasks like converting PDFs into slides. The economic gap between AI hype and everyday corporate reality is stark.",
       "added": "2026-07-06",
       "times_shown": 0
+    },
+    {
+      "slug": "field-guide-to-fable-thariq-shihipar-anthropic",
+      "title": "Field Guide to Fable \u2014 Thariq Shihipar, Anthropic",
+      "url": "https://www.youtube.com/watch?v=9fubhllmsBU",
+      "video_id": "9fubhllmsBU",
+      "channel": "AI Engineer",
+      "summary": "In this presentation from the AI Engineer World's Fair, Thariq Shihapar, a member of the technical staff at Anthropic, discusses the evolution and future of AI agents, focusing on their newer models like Claude and \"Fable.\" Shihapar highlights that AI models are \"grown, not designed,\" meaning that their capabilities expand in organic, often unexpected ways that developers must learn to guide rather than strictly constrain. A key takeaway is the shift toward smaller system prompts and fewer examples, which allows these smarter models to act more imaginatively and proactively. This video is highly beneficial for AI engineers, developers, and tech enthusiasts interested in the practical methodologies and theoretical frameworks behind building and utilizing next-generation AI agents.",
+      "added": "2026-07-07",
+      "times_shown": 0
+    },
+    {
+      "slug": "growing-on-purpose-the-work-that-makes-you-jeremy-howard-on-human-flourishing-in",
+      "title": "Growing on Purpose: The Work That Makes You. Jeremy Howard on human flourishing in the time of AI.",
+      "url": "https://www.youtube.com/watch?v=SUZwYV5JYBM",
+      "video_id": "SUZwYV5JYBM",
+      "channel": "Jeremy Howard",
+      "summary": "In this presentation titled \"Growing on Purpose,\" Jeremy Howard explores how the work we choose shapes our psychological well-being, focusing on Self-Determination Theory (SDT). He highlights the contrast between Eudaimonia (fully actualizing one's capacities) and Hedonia (passive ease), emphasizing that authentic motivation stems from autonomy, mastery, relatedness, and purpose. Howard also discusses the importance of achieving \"positive flow\" in our activities while avoiding addictive \"junk flow\" that doesn't promote personal growth. This talk is highly beneficial for developers, AI engineers, and tech professionals seeking to find deeper meaning, authentic motivation, and fulfillment in their careers.",
+      "added": "2026-07-07",
+      "times_shown": 0
+    },
+    {
+      "slug": "lets-build-an-ai-agent-phil-nash-ndc-copenhagen-2026",
+      "title": "Let's build an AI agent - Phil Nash - NDC Copenhagen 2026",
+      "url": "https://www.youtube.com/watch?v=2r47_vCEkyo",
+      "video_id": "2r47_vCEkyo",
+      "channel": "NDC Conferences",
+      "summary": "In this presentation from NDC Copenhagen, developer relations engineer Phil Nash demystifies the inner workings of AI agents by demonstrating how to build one from scratch. He defines AI agents as applications that run tools in a loop to achieve goals, bridging the gap between a Large Language Model's (LLM) text-generation capabilities and the external world. Through a live coding demonstration in JavaScript, Nash shows how to transition from a simple echo bot to a functioning agent connected to an LLM (such as Google's Gemini). This session is highly beneficial for software developers, engineers, and tech enthusiasts looking to understand the core concepts of AI orchestration and agent design.",
+      "added": "2026-07-07",
+      "times_shown": 0
     }
   ],
   "archive": [
