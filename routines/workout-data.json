@@ -9,7 +9,7 @@
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "8",
+          "target": "10",
           "unit": "",
           "weight": "10 kg"
         },
@@ -20,7 +20,7 @@
           "type": "reps",
           "target": "12",
           "unit": "",
-          "weight": null
+          "weight": "5 kg"
         },
         {
           "name": "Knee push-ups",
@@ -36,7 +36,7 @@
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "8",
+          "target": "20",
           "unit": "",
           "weight": null
         },
