@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-06T22:06:07.637034-03:00",
+  "generated_at": "2026-07-07T02:01:24.294874-03:00",
   "week_start": "2026-07-05",
   "week_label": "July 05 - July 11, 2026",
-  "last_updated": "Monday, July 06, 2026 at 22:06",
+  "last_updated": "Tuesday, July 07, 2026 at 02:01",
   "stats": {
-    "completed": 0,
-    "planned": 0,
-    "display": "0 / 0"
+    "completed": 5.0,
+    "planned": 6,
+    "display": "5 / 6"
   },
   "daily": {
     "Sunday": {
@@ -15,8 +15,8 @@
       "total": 0
     },
     "Monday": {
-      "status": "missed",
-      "completed": 0,
+      "status": "done",
+      "completed": 4,
       "total": 4
     },
     "Tuesday": {
@@ -58,9 +58,9 @@
       "name": "Reading",
       "emoji": "",
       "status": "pending",
-      "accumulated": "15min",
+      "accumulated": "35min",
       "target": "60min",
-      "progress_pct": 25
+      "progress_pct": 58
     }
   ],
   "routines": [
@@ -71,7 +71,7 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Tue",
@@ -92,7 +92,7 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 5
     },
     {
@@ -121,12 +121,12 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         }
       ],
-      "metrics_total": "",
+      "metrics_total": "1h",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -155,7 +155,7 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Wed",
@@ -166,9 +166,9 @@
           "status": "pending"
         }
       ],
-      "metrics_total": "",
-      "comparison": "",
-      "done": 0,
+      "metrics_total": "2.0km, 16min, 163bpm, 163bpm, 230kcal",
+      "comparison": "+18bpm, +18bpm, +33kcal",
+      "done": 1,
       "total": 3
     },
     {
@@ -178,7 +178,7 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Wed",
@@ -191,15 +191,15 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 3
     }
   ],
   "spirit": {
-    "state": "dormant",
+    "state": "thriving",
     "emoji": "\ud83d\udc0e",
     "title": "\ud83d\udc0e Ice Kirin",
-    "image": "assets/dormant.webp",
-    "description": "Your ice kirin sleeps curled up in deep snow, starry night sky and soft moonlight above \u2014 peaceful, quiet rest."
+    "image": "assets/thriving.webp",
+    "description": "Your ice kirin stands proud, golden sunlight breaking through with spring buds growing at its hooves \u2014 vibrant, confident, and full of energy."
   }
 }
