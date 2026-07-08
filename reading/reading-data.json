@@ -317,15 +317,6 @@
       "times_shown": 0
     },
     {
-      "slug": "make-ai-boring-again",
-      "title": "Make AI Boring Again",
-      "url": "https://charitydotwtf.substack.com/p/make-ai-boring-again",
-      "category": "AI",
-      "summary": "Majors argues AI is just technology, not uniquely evil, and that the gap between a tool's appearance and our ability to govern it is reason to engage rather than abstain. She rejects purity politics, urging tech workers to learn AI deeply and help shape the next generation of tooling.",
-      "added": "2026-07-06",
-      "times_shown": 0
-    },
-    {
       "slug": "mechanical-sympathy",
       "title": "Mechanical Sympathy",
       "url": "https://martinfowler.com/bliki/MechanicalSympathy.html",
@@ -386,6 +377,15 @@
       "category": "ai",
       "summary": "Birgitta Böckeler evaluates the practicality of running local LLMs for agentic coding on Apple Silicon (M3 Max 48GB and M5 Pro 64GB), analyzing how RAM, context windows, model architecture, and quantization affect feasibility. She tested Qwen3 and Gemma 4 models across formats (GGUF, MLX) using LM Studio with OpenCode and Pi harnesses.\n\nKey findings: RAM is the core constraint — models between 15-25GB work but push limits when combined with the 32-64K context windows needed for agentic coding. Response speed has improved dramatically from a year ago. Tool calling remains the weakest point for local models — they often emit malformed calls but can self-recover. Quality of outcomes is hit-and-miss, nowhere near big model capability.\n\nInteresting discovery: the same model produced better code on the 64GB machine vs 48GB, suggesting hardware affects output quality not just speed. Reasoning mode was often counterproductive for smaller models — switching it off produced same or slightly better results with faster responses. Her recommendation: Qwen3.6 35B MoE offers the best balance of capability, speed, and RAM footprint. Overall conclusion: still not plug-and-play ready for developers who don't want to spend time tweaking configurations.",
       "added": "2026-07-07",
+      "times_shown": 0
+    },
+    {
+      "slug": "experiences-with-local-models-for-coding",
+      "title": "Experiences with local models for coding",
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-experiences.html",
+      "category": "AI Development",
+      "summary": "Birgitta Böckeler's hands-on evaluation of running small AI models locally (M3 Max 48GB / M5 Pro 64GB) for agentic coding. Tests Qwen 3.6 35B, Gemma 4 26B/31B, and Qwen Coder Next 80B across structured tasks and day-to-day use. Key finding: local models can work for small, well-defined tasks (especially bash/Python scripts, single-file edits) but struggle with JavaScript tasks requiring multi-file changes or code discovery. The choice of task matters enormously — specificity of instructions, number of files, and tech stack all affect viability. A surprising result: the same model settings produced very different success rates on different hardware (M3 vs M5), likely due to RAM constraints affecting output quality. She finds local model use surprisingly enjoyable as a 'detox' from over-relying on powerful models — it forces more careful review and slower, more deliberate work. Default setup: Qwen 3.6 35B 4-bit, reasoning off, max context window, via OpenCode or Pi harness.",
+      "added": "2026-07-08",
       "times_shown": 0
     }
   ],
@@ -958,6 +958,16 @@
       "summary": "The Claude Code team defines loops as agents repeating work cycles until a stop condition is met. They categorize four loop types: turn-based (user-triggered, good for short tasks), goal-based (verifiable exit criteria with turn caps), time-based (recurring work via /loop and /schedule), and proactive (event-driven routines running autonomously). Key advice: encode verification in SKILL.md files, use deterministic success criteria, run scripts for deterministic work, and pilot before scaling. Written by @delba_oliveira.",
       "added": "2026-07-06",
       "read": "2026-07-07",
+      "has_notes": true
+    },
+    {
+      "slug": "make-ai-boring-again",
+      "title": "Make AI Boring Again",
+      "url": "https://charitydotwtf.substack.com/p/make-ai-boring-again",
+      "category": "AI",
+      "summary": "Majors argues AI is just technology, not uniquely evil, and that the gap between a tool's appearance and our ability to govern it is reason to engage rather than abstain. She rejects purity politics, urging tech workers to learn AI deeply and help shape the next generation of tooling.",
+      "added": "2026-07-06",
+      "read": "2026-07-08",
       "has_notes": true
     }
   ]
