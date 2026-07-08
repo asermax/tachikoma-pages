@@ -380,6 +380,15 @@
       "times_shown": 0
     },
     {
+      "slug": "auto-research-with-codex-how-i-achieved-a-212x-faster-kernel-over-baseline",
+      "title": "Auto-research with codex: How I achieved a 212x Faster Kernel over baseline with Codex in GPU Mode's qr_v2 problem",
+      "url": "https://sankalp.bearblog.dev/autoresearch/",
+      "category": "ai",
+      "summary": "Detailed retrospective of an auto-research contest placing 12th/183: using OpenAI Codex (GPT-5.5) + Claude Pro to iteratively optimize a batched Householder QR factorization kernel from ~419ms cuSolver baseline to ~1.8ms (212x speedup) over 14 days and 1500+ submissions. Key insight: blocked Householder QR with trailing WY representation converts serial work to GEMM-shaped steps that fully utilize tensor cores. Workflow emphasis on agent harness design (AGENTS.md, logs, standing instructions) and human-in-the-loop steering. Catalogs 10 structural breakthroughs (CUDA graph replay, fused layout assembly, superpanels) and honestly lists misses. Concludes that auto-research is now highly accessible and domain expertise + research taste are the next frontier for agentic systems.",
+      "added": "2026-07-08",
+      "times_shown": 0
+    },
+    {
       "slug": "experiences-with-local-models-for-coding",
       "title": "Experiences with local models for coding",
       "url": "https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-experiences.html",
