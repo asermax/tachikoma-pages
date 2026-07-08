@@ -1,4 +1,8 @@
-const ARTICLES = [    { slug: 'make-ai-boring-again-listen', title: 'Is it ethical to use AI? Make AI Boring Again', meta: 'Charity Majors · June 2026', time: '4:02' },
+const ARTICLES = [
+    { slug: 'viability-of-local-models-for-coding', title: 'Viability of local models for coding', meta: 'Birgitta Böckeler · Martin Fowler · July 2026' },
+    { slug: 'ai-enthusiasts-are-in-a-race-against', title: 'AI enthusiasts are in a race against time, AI skeptics are in a race against entropy', meta: 'Charity Majors · June 2026' },
+    { slug: 'ai-demands-more-engineering-discipline', title: 'AI Demands More Engineering Discipline. Not Less', meta: 'Charity Majors · June 2026' },
+    { slug: 'make-ai-boring-again-listen', title: 'Is it ethical to use AI? Make AI Boring Again', meta: 'Charity Majors · June 2026', time: '4:02' },
     { slug: 'software-design-in-the-agentic-age', title: 'Software Design in the Agentic Age: Place Your Bets', meta: 'Mathias Verraes · July 2026', time: '4:02' },
     { slug: 'feedback-flywheel', title: 'Feedback Flywheel', meta: 'Rahul Garg · April 2026', time: '17:05' },
     { slug: 'the-primitive-is-the-product', title: 'The primitive is the product', meta: 'Lenny Pruss · June 2025' },
