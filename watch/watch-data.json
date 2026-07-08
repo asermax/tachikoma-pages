@@ -1280,6 +1280,36 @@
       "summary": "In this presentation from NDC Copenhagen, developer relations engineer Phil Nash demystifies the inner workings of AI agents by demonstrating how to build one from scratch. He defines AI agents as applications that run tools in a loop to achieve goals, bridging the gap between a Large Language Model's (LLM) text-generation capabilities and the external world. Through a live coding demonstration in JavaScript, Nash shows how to transition from a simple echo bot to a functioning agent connected to an LLM (such as Google's Gemini). This session is highly beneficial for software developers, engineers, and tech enthusiasts looking to understand the core concepts of AI orchestration and agent design.",
       "added": "2026-07-07",
       "times_shown": 0
+    },
+    {
+      "slug": "beyond-the-harness-a-journey-towards-adaptative-engineering-rajiv-chandegra-anni",
+      "title": "Beyond the Harness: A Journey Towards Adaptative Engineering - Rajiv Chandegra, Annicha Labs",
+      "url": "https://www.youtube.com/watch?v=qdZzND79mcg",
+      "video_id": "qdZzND79mcg",
+      "channel": "AI Engineer",
+      "summary": "This video introduces \"Adaptive Engineering,\" a new design philosophy for AI engineering that advocates for moving beyond the rigid, pre-defined \"harnesses\" currently used to steer AI agents. The presenter argues that while fixed harnessing is highly reliable and auditable for closed, deterministic problems, it is too brittle for complex, dynamic real-world scenarios. Instead, future systems should allow harnesses to organically emerge and adapt during runtime based on designed constraints and selection pressures. This presentation is highly beneficial for AI engineers, developers, and researchers interested in the future of multi-agent orchestration and building resilient AI systems.",
+      "added": "2026-07-08",
+      "times_shown": 0
+    },
+    {
+      "slug": "build-ai-systems-for-discernment-not-approval-angel-ortmann-lee-duolingo",
+      "title": "Build AI Systems for Discernment, Not Approval - Angel Ortmann Lee, Duolingo",
+      "url": "https://www.youtube.com/watch?v=CDqzWpwkSls",
+      "video_id": "CDqzWpwkSls",
+      "channel": "AI Engineer",
+      "summary": "This video presentation by Duolingo Software Engineer Angel Ortmann Lee explores \"cognitive surrender,\" a form of automation bias where human reviewers in human-in-the-loop AI systems blindly trust and approve AI outputs without critical evaluation. Using a case study from the Duolingo English Test, Lee shows how skilled proctors initially approved fake AI-generated cheating signals at a coin-flip rate of 50%, but significantly improved their accuracy once guidelines were updated to emphasize independent human verification. The key takeaway is that the design of the human-AI interaction loop directly shapes human behavior and decision quality, meaning developers should build systems that prompt human discernment rather than simple approval. AI developers, software engineers, and product designers working on human-in-the-loop systems would benefit most from watching this video to learn how to optimize human-AI collaboration.",
+      "added": "2026-07-08",
+      "times_shown": 0
+    },
+    {
+      "slug": "platform-engineering-in-the-age-of-generative-ai",
+      "title": "Platform Engineering in the age of Generative AI -",
+      "url": "https://www.youtube.com/watch?v=S66a51BuOIo",
+      "video_id": "S66a51BuOIo",
+      "channel": "NDC Conferences",
+      "summary": "This presentation by Will Velida, a Senior Software Engineer at Microsoft, explores the evolving landscape of platform engineering and how it is being transformed by generative AI tools. Velida explains that platform engineering aims to reduce cognitive overload for developers by establishing standardized, self-service paths, though the rise of AI-assisted coding has created a divide between high expectations and real-world implementation challenges. The talk highlights the transition from traditional DevOps to structured platform practices in an increasingly automated environment. This video is highly beneficial for software developers, DevOps professionals, and platform engineers seeking to understand how to effectively integrate AI into their development workflows.",
+      "added": "2026-07-08",
+      "times_shown": 0
     }
   ],
   "archive": [
