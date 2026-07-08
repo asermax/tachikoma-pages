@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07",
+  "generated_at": "2026-07-08",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -116,7 +116,7 @@
       "category": "ai",
       "summary": "Same author as Encoding Team Standards (Rahul Garg, Martin Fowler series). Argues teams plateau with AI tools because individual learnings never become shared practice. Framework: 4 signal types (context gaps, instruction patterns, workflow discoveries, failures with root causes) mapped to 4 cadences (after-session reflection, daily stand-up, sprint retro, quarterly audit). Metrics that matter: first-pass acceptance rate, iteration cycles, post-merge rework — not lines generated. Key insight: the other practices in the series are passive surfaces; the flywheel is what makes them compound over time. Treat shared AI artifacts like dependencies — maintain them or they become liabilities.",
       "added": "2026-04-14",
-      "times_shown": 5
+      "times_shown": 6
     },
     {
       "slug": "httpswalkinglabsgithubiolearn-harness-engineeringen",
@@ -152,7 +152,7 @@
       "category": "ai",
       "summary": "Introduces Structured-Prompt-Driven Development (SPDD), a method that treats AI prompts as first-class delivery artifacts — version-controlled, reviewed, and reusable. Built around the REASONS Canvas (Requirements, Entities, Approach, Structure, Operations, Norms, Safeguards) and a six-step workflow that brings prompts into the same discipline as code. Developed by Thoughtworks to address the gap between individual AI speed and system-level throughput. Includes a worked billing engine example, core skill identification (abstraction-first, alignment, iterative review), and fitness assessment for where SPDD pays off vs. falls short.",
       "added": "2026-05-15",
-      "times_shown": 8
+      "times_shown": 9
     },
     {
       "slug": "httpsxcomistatus2058014104854626490",
@@ -188,7 +188,7 @@
       "category": "ai",
       "summary": "This paper introduces 'constraint decay,' showing that LLM coding agents perform well on unconstrained backend generation but degrade substantially — losing an average of 30 percentage points in assertion pass rates — when forced to adhere to structural requirements like Clean Architecture patterns, specific databases, and ORM integration across eight web frameworks.",
       "added": "2026-05-31",
-      "times_shown": 2
+      "times_shown": 3
     },
     {
       "slug": "could-a-large-language-model-be-conscious",
@@ -359,6 +359,33 @@
       "category": "AI",
       "summary": "404 Media reports that companies including Amazon and Citi are throttling employee AI use and pushing workers toward cheaper models as token costs spiral, with one firm's monthly spend tripling past 15 million dollars.",
       "added": "2026-07-06",
+      "times_shown": 0
+    },
+    {
+      "slug": "ai-demands-more-engineering-discipline",
+      "title": "AI Demands More Engineering Discipline",
+      "url": "https://open.substack.com/pub/charitydotwtf/p/ai-demands-more-engineering-discipline",
+      "category": "ai",
+      "summary": "Charity Majors argues that AI's impact on software development mirrors the shift from handcrafted server pets to immutable infrastructure in the 2010s. In 2025, the economics of code production were inverted — generating code went from expensive and slow to effectively free and instant, making lines of code disposable and regenerable rather than treasured artifacts.\n\nDrawing on Chad Fowler's Phoenix Architectures concept, she draws a parallel between immutable infrastructure principles and what AI enables for application code: when rewriting is cheap, editing in place becomes risky because mutation accumulates entropy while replacement resets it. The key insight is that code becomes precious only when it's the only place knowledge lives — and that's actually an evaluation problem, not a code problem.\n\nThe real product of engineering teams, she argues from an SRE perspective, is production — not shared understanding in developers' heads. Minds are forgetful, habituated containers that diverge from reality. AI forcing nondeterministic code into production is finally pushing teams toward observability, behavioral tests, characterization tests, and other practices that encode what systems actually do rather than what developers think they do.\n\nShe concludes that 2026 is shaping up as a return to engineering discipline after 2025's vibe coding phase. Humans should not hang their value on being quality gates — machines are better at validation. Instead, engineers should focus on creativity, architecture, and encoding intent into systems through better specifications and tests. The opportunity is to bring proper engineering values (short feedback loops, observability, immutable practices) to the mainstream of software development.",
+      "added": "2026-07-07",
+      "times_shown": 0
+    },
+    {
+      "slug": "ai-enthusiasts-are-in-a-race-against-time-ai-skeptics-are-in-a-race-against-entr",
+      "title": "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy",
+      "url": "https://charity.wtf/p/ai-enthusiasts-are-in-a-race-against",
+      "category": "ai",
+      "summary": "Charity Majors examines the widening rift between AI enthusiasts and skeptics in software teams, arguing both sides are responding to real existential threats — enthusiasts to being left behind by competitors, skeptics to systems degrading from shipping code faster than it can be understood.\n\nShe observes that the core problem is a broken feedback loop: wins and costs accrue to different groups. Enthusiasts see impressive velocity gains while downstream cleanup falls on skeptics who never asked for it. Conference talks celebrate breakthroughs without mentioning the chaos left behind. This asymmetry is structural, not malicious — wins get trumpeted in all-hands and blog posts while costs surface in SRE meetings and on-call rotations.\n\nDrawing on Fin (Intercom)'s published results — 3x'd output in 9 months with downtime down 35% and defect backlog halved — she shows what disciplined AI adoption looks like. Their success was built on pre-existing engineering discipline, fast feedback loops, and a culture of measurement, not on AI magic.\n\nHer two prescriptions: first, tell the whole story — enthusiasts should actively seek out and acknowledge downstream costs, skeptics should surface concerns in the same forums where wins are announced. Second, treat disagreements as engineering problems with concrete conditions to investigate ('What would it take for you to feel comfortable shipping code without reading it?') rather than rhetorical battles about AI's future.",
+      "added": "2026-07-07",
+      "times_shown": 0
+    },
+    {
+      "slug": "viability-of-local-models-for-coding",
+      "title": "Viability of local models for coding",
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-factors.html",
+      "category": "ai",
+      "summary": "Birgitta Böckeler evaluates the practicality of running local LLMs for agentic coding on Apple Silicon (M3 Max 48GB and M5 Pro 64GB), analyzing how RAM, context windows, model architecture, and quantization affect feasibility. She tested Qwen3 and Gemma 4 models across formats (GGUF, MLX) using LM Studio with OpenCode and Pi harnesses.\n\nKey findings: RAM is the core constraint — models between 15-25GB work but push limits when combined with the 32-64K context windows needed for agentic coding. Response speed has improved dramatically from a year ago. Tool calling remains the weakest point for local models — they often emit malformed calls but can self-recover. Quality of outcomes is hit-and-miss, nowhere near big model capability.\n\nInteresting discovery: the same model produced better code on the 64GB machine vs 48GB, suggesting hardware affects output quality not just speed. Reasoning mode was often counterproductive for smaller models — switching it off produced same or slightly better results with faster responses. Her recommendation: Qwen3.6 35B MoE offers the best balance of capability, speed, and RAM footprint. Overall conclusion: still not plug-and-play ready for developers who don't want to spend time tweaking configurations.",
+      "added": "2026-07-07",
       "times_shown": 0
     }
   ],
