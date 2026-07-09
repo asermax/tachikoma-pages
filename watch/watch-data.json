@@ -1252,16 +1252,6 @@
       "times_shown": 0
     },
     {
-      "slug": "field-guide-to-fable-thariq-shihipar-anthropic",
-      "title": "Field Guide to Fable \u2014 Thariq Shihipar, Anthropic",
-      "url": "https://www.youtube.com/watch?v=9fubhllmsBU",
-      "video_id": "9fubhllmsBU",
-      "channel": "AI Engineer",
-      "summary": "In this presentation from the AI Engineer World's Fair, Thariq Shihapar, a member of the technical staff at Anthropic, discusses the evolution and future of AI agents, focusing on their newer models like Claude and \"Fable.\" Shihapar highlights that AI models are \"grown, not designed,\" meaning that their capabilities expand in organic, often unexpected ways that developers must learn to guide rather than strictly constrain. A key takeaway is the shift toward smaller system prompts and fewer examples, which allows these smarter models to act more imaginatively and proactively. This video is highly beneficial for AI engineers, developers, and tech enthusiasts interested in the practical methodologies and theoretical frameworks behind building and utilizing next-generation AI agents.",
-      "added": "2026-07-07",
-      "times_shown": 0
-    },
-    {
       "slug": "growing-on-purpose-the-work-that-makes-you-jeremy-howard-on-human-flourishing-in",
       "title": "Growing on Purpose: The Work That Makes You. Jeremy Howard on human flourishing in the time of AI.",
       "url": "https://www.youtube.com/watch?v=SUZwYV5JYBM",
