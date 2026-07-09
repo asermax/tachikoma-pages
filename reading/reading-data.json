@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08",
+  "generated_at": "2026-07-09",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -395,6 +395,15 @@
       "category": "AI Development",
       "summary": "Birgitta Böckeler's hands-on evaluation of running small AI models locally (M3 Max 48GB / M5 Pro 64GB) for agentic coding. Tests Qwen 3.6 35B, Gemma 4 26B/31B, and Qwen Coder Next 80B across structured tasks and day-to-day use. Key finding: local models can work for small, well-defined tasks (especially bash/Python scripts, single-file edits) but struggle with JavaScript tasks requiring multi-file changes or code discovery. The choice of task matters enormously — specificity of instructions, number of files, and tech stack all affect viability. A surprising result: the same model settings produced very different success rates on different hardware (M3 vs M5), likely due to RAM constraints affecting output quality. She finds local model use surprisingly enjoyable as a 'detox' from over-relying on powerful models — it forces more careful review and slower, more deliberate work. Default setup: Qwen 3.6 35B 4-bit, reasoning off, max context window, via OpenCode or Pi harness.",
       "added": "2026-07-08",
+      "times_shown": 0
+    },
+    {
+      "slug": "addy-osmani-tweet",
+      "title": "Don't build agents you can't answer for (Addy Osmani — closing keynote, AI Engineer World's Fair 2026)",
+      "url": "https://x.com/addyosmani/status/2074927530482835916",
+      "category": "ai",
+      "summary": "Addy Osmani's closing keynote at AI Engineer World's Fair argues that as AI agents take over more of the mechanics of software development, the scarce and valuable skill shifts from producing code to being able to 'answer for' the work — to explain it, verify the evidence behind it, understand the risk, and stand behind the result. The central framing splits responsibilities: agents run the inner loop (investigate, implement, test, report) while engineers own the outer loop (decide, verify, approve, redirect, own consequences). Three failure modes to watch: cognitive surrender (agent's answer becomes yours before reasoning), cognitive debt (codebase grows faster than understanding), and orchestration tax (more agents generate more decisions than humans can integrate). The talk is ultimately optimistic — the new work is loop design, evidence design, verification, and brownfield stewardship.",
+      "added": "2026-07-09",
       "times_shown": 0
     }
   ],
