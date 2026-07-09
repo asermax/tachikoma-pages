@@ -1,0 +1,42 @@
+{
+  "title": "Own the Outer Loop",
+  "meta": "Addy Osmani · July 2026 · ~2 min listen",
+  "body": "<div class=\"chunk\"><p>I gave the closing keynote at AI Engineer World's Fair. The talk was called &quot;Don't build agents you can't answer for.&quot;</p>\n</div>\n<div class=\"chunk\"><p>It was my attempt to share what I believe agentic engineers will focus on next: designing systems where agents can do real work inside harnesses, loops, software factories, and feedback systems, while engineers still own what reaches users and ultimately the verdict on what is good enough to ship.</p>\n</div>\n<div class=\"chunk\"><p>There's a lot of talk about loop engineering and building software factories these days, where you run hundreds or thousands of agents to build software. I think what's often missing here is the nuance of how to think about quality and verification, as well as the kinds of codebases where these ideas work best. Evergreen is super different to brownfield.</p>\n</div>\n<div class=\"chunk\"><p>The core framing for the talk was:</p>\n</div>\n<div class=\"chunk\"><p>Agents run the inner loop: investigate, implement, test, report.</p>\n</div>\n<div class=\"chunk\"><p>Engineers own the outer loop: decide, verify, approve, redirect, and own the consequences.</p>\n</div>\n<div class=\"chunk\"><p>As generation gets cheaper, the bottleneck moves. The scarce thing is no longer code. It is answerability: can we explain the work, verify the evidence, understand the risk, and stand behind the result?</p>\n</div>\n<div class=\"chunk\"><p>I talked about a few failure modes I think teams will need to watch closely:</p>\n</div>\n<div class=\"chunk\"><p>Cognitive surrender: when the agent's answer quietly becomes yours before you formed one.</p>\n</div>\n<div class=\"chunk\"><p>Cognitive debt: when the codebase grows faster than anyone's understanding of it.</p>\n</div>\n<div class=\"chunk\"><p>Orchestration tax: when running more agents creates more decisions than one human can integrate.</p>\n</div>\n<div class=\"chunk\"><p>But the talk was ultimately optimistic. Every major wave of abstraction has automated one layer of work and created new work at the next level. I think this wave is similar.</p>\n</div>\n<div class=\"chunk\"><p>The new work is loop design, evidence design, verification, brownfield stewardship, and building systems where agent work is legible, durable, and worth shipping.</p>\n</div>\n<div class=\"chunk\"><p>Build the factory. Keep the lights on. Own the verdict.</p>\n</div>\n",
+  "audio": "own-the-outer-loop.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      27.347,
+      54.995,
+      79.762,
+      111.85
+    ],
+    "chunkMap": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        5,
+        6,
+        7
+      ],
+      [
+        8,
+        9,
+        10,
+        11
+      ],
+      [
+        12,
+        13
+      ]
+    ],
+    "prefixOffset": 0
+  }
+}
