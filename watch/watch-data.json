@@ -1310,6 +1310,56 @@
       "summary": "This presentation by Will Velida, a Senior Software Engineer at Microsoft, explores the evolving landscape of platform engineering and how it is being transformed by generative AI tools. Velida explains that platform engineering aims to reduce cognitive overload for developers by establishing standardized, self-service paths, though the rise of AI-assisted coding has created a divide between high expectations and real-world implementation challenges. The talk highlights the transition from traditional DevOps to structured platform practices in an increasingly automated environment. This video is highly beneficial for software developers, DevOps professionals, and platform engineers seeking to understand how to effectively integrate AI into their development workflows.",
       "added": "2026-07-08",
       "times_shown": 0
+    },
+    {
+      "slug": "building-an-acp-compatible-agent-live-bennet-fenner-zed",
+      "title": "Building an ACP-Compatible Agent Live \u2014 Bennet Fenner, Zed",
+      "url": "https://www.youtube.com/watch?v=HsxQICTLF84",
+      "video_id": "HsxQICTLF84",
+      "channel": "AI Engineer",
+      "summary": "In this presentation, Bennet Fenner demonstrates how to build a coding agent compatible with the Agent/Client Protocol (ACP), which allows AI agents and client interfaces like the Zed code editor to communicate through a unified standard. Fenner live-codes a minimal TypeScript agent, implementing crucial functions such as initialization, session management, prompting, and streaming message updates to showcase how to integrate ACP with an external model API. This presentation is highly valuable for software developers interested in AI-driven coding agents, protocol design, and tool integration for modern IDEs.",
+      "added": "2026-07-09",
+      "times_shown": 0
+    },
+    {
+      "slug": "running-a-chess-youtube-channel-entirely-by-ai-stephan-steinfurt-tng",
+      "title": "Running a Chess YouTube Channel entirely by AI \u2014\u00a0Stephan Steinfurt, TNG",
+      "url": "https://www.youtube.com/watch?v=BqZrTdgBaPw",
+      "video_id": "BqZrTdgBaPw",
+      "channel": "AI Engineer",
+      "summary": "Here is a summary of the video:\n\nThis presentation introduces an AI agent-based system designed to analyze and explain chess games in a human-friendly format, bridging the gap between powerful chess engines that lack explanation capabilities and large language models (LLMs) that struggle with deep chess reasoning. The speaker details how they integrate advanced LLMs with a suite of custom programmatic tools (such as \"checks, captures, and threats\" analysis) to enable the agent to understand and articulate tactical positions accurately. This integrated system is used to automatically generate educational, annotated chess videos featuring natural voice narrations of game highlights, tactics, and blunders. AI developers, chess programmers, and digital content creators interested in combining LLMs with structured programming tools would benefit from watching this presentation.",
+      "added": "2026-07-09",
+      "times_shown": 0
+    },
+    {
+      "slug": "think-you-can-build-a-game-with-ai-think-again-danielle-an-david-hoe-meta",
+      "title": "Think You Can Build a Game with AI? Think Again! - Danielle An & David Hoe, Meta",
+      "url": "https://www.youtube.com/watch?v=grdoOC1BT1s",
+      "video_id": "grdoOC1BT1s",
+      "channel": "AI Engineer",
+      "summary": "This video discusses the future of AI-driven game creation, highlighting how generative AI tools are lowering the barriers to entry for both developers and artists. The presenters argue that while AI enables rapid prototyping, human elements like \"taste,\" aesthetic cohesion, and good game design remain essential to creating truly outstanding games. They also demonstrate the potential of runtime LLMs to introduce dynamic, unscripted gameplay through AI-driven NPCs. Aspiring game developers, AI engineers, and creative professionals interested in the evolution of game design will find this presentation particularly valuable.",
+      "added": "2026-07-09",
+      "times_shown": 0
+    },
+    {
+      "slug": "your-agent-is-blindfolded-johan-lajili-poolside-ai",
+      "title": "Your agent is blindfolded \u2014\u00a0Johan Lajili, Poolside AI",
+      "url": "https://www.youtube.com/watch?v=iRcX54EO5g8",
+      "video_id": "iRcX54EO5g8",
+      "channel": "AI Engineer",
+      "summary": "In this presentation from the AI Engineer Europe conference, Johan Lajili from Poolside discusses how improving the feedback loops and \"eyes\" of AI coding agents is crucial for their success on complex, legacy projects. He argues that while AI agents perform well on simple \"greenfield\" projects, they often struggle on \"brownfield\" codebases due to a lack of real-world validation tools, and introduces \"Spoolside,\" a CLI tool designed to help AI agents test, reproduce bugs, and verify their code within a running application. Software developers and AI engineers will benefit from this talk, as it highlights the shifting role of developers toward \"aiX engineering\"\u2014the practice of building the infrastructure and environments that enable AI to build products effectively.",
+      "added": "2026-07-09",
+      "times_shown": 0
+    },
+    {
+      "slug": "your-coding-agent-doesnt-always-follow-your-rules-talha-sheikh-checkoutcom",
+      "title": "Your coding agent doesn't always follow your rules \u2014 Talha Sheikh, Checkout.com",
+      "url": "https://www.youtube.com/watch?v=MpZzWMdmQCE",
+      "video_id": "MpZzWMdmQCE",
+      "channel": "AI Engineer",
+      "summary": "This presentation by Talha Sheikh at the AI Engineer Europe conference explores the necessity of verification layers, or \"harnesses,\" when working with AI coding agents. Sheikh argues that while frontier models are becoming highly capable, they are not inherently reliable, meaning developers must transition their focus from prompt engineering to deterministic output verification. He demonstrates that implementing robust guardrails allows developers to achieve reliable results using smaller, more cost-effective models, significantly lowering inference costs. AI engineers, developers, and product managers building applications with LLM agents would benefit from watching this video to learn how to design more reliable and efficient AI workflows.",
+      "added": "2026-07-09",
+      "times_shown": 0
     }
   ],
   "archive": [
