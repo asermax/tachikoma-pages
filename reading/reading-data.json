@@ -987,6 +987,16 @@
       "added": "2026-07-06",
       "read": "2026-07-08",
       "has_notes": true
+    },
+    {
+      "slug": "httpsethandingsubstackcompai-subscriptions-get-short-squeezed",
+      "title": "Untitled",
+      "url": "https://ethanding.substack.com/p/ai-subscriptions-get-short-squeezed",
+      "category": "uncategorized",
+      "summary": "Flat-rate AI subscriptions face a margin 'short squeeze' from variable compute costs — companies pay per token but charge flat monthly fees, making heavy users unprofitable. The author argues for transitioning to usage-based pricing or dramatically lowering costs through smaller specialized models.",
+      "added": "2026-07-09",
+      "read": "2026-07-09",
+      "has_notes": false
     }
   ]
 }
