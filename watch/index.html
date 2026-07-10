@@ -186,6 +186,22 @@
         let page = 0;
         let sortOrder = 'newest';
 
+        function parseState() {
+            const p = new URLSearchParams(location.search);
+            sortOrder = p.get('sort') || 'newest';
+            page = Math.max(0, parseInt(p.get('page') || '0', 10) - 1);
+        }
+
+        function pushState() {
+            const p = new URLSearchParams();
+            if (sortOrder !== 'newest') p.set('sort', sortOrder);
+            if (page > 0) p.set('page', page + 1);
+            const qs = p.toString();
+            history.replaceState(null, '', qs ? '?' + qs : location.pathname);
+        }
+
+        parseState();
+
         async function load() {
             try {
                 const res = await fetch('watch-data.json');
@@ -198,6 +214,7 @@
         }
 
         function render() {
+            pushState();
             const queue = (data.queue || []).sort((a, b) =>
                 sortOrder === 'newest'
                     ? b.added.localeCompare(a.added)
@@ -259,6 +276,7 @@
 
         function go(p) {
             page = p;
+            pushState();
             render();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
