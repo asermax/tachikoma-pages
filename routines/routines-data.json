@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-09T02:01:09.382093-03:00",
+  "generated_at": "2026-07-10T02:02:15.958534-03:00",
   "week_start": "2026-07-05",
   "week_label": "July 05 - July 11, 2026",
-  "last_updated": "Thursday, July 09, 2026 at 02:01",
+  "last_updated": "Friday, July 10, 2026 at 02:02",
   "stats": {
-    "completed": 7.0,
+    "completed": 6.875,
     "planned": 12,
-    "display": "7 / 12"
+    "display": "6.9 / 12"
   },
   "daily": {
     "Sunday": {
@@ -80,20 +80,12 @@
         {
           "day": "Wed",
           "status": "skipped"
-        },
-        {
-          "day": "Thu",
-          "status": "pending"
-        },
-        {
-          "day": "Sat",
-          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
       "done": 2,
-      "total": 5
+      "total": 3
     },
     {
       "id": "music-practice",
@@ -103,16 +95,12 @@
         {
           "day": "Wed",
           "status": "skipped"
-        },
-        {
-          "day": "Sat",
-          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
       "done": 0,
-      "total": 2
+      "total": 1
     },
     {
       "id": "piano-practice",
@@ -137,16 +125,12 @@
         {
           "day": "Tue",
           "status": "done"
-        },
-        {
-          "day": "Thu",
-          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
       "done": 1,
-      "total": 2
+      "total": 1
     },
     {
       "id": "running",
@@ -160,16 +144,12 @@
         {
           "day": "Wed",
           "status": "skipped"
-        },
-        {
-          "day": "Sat",
-          "status": "pending"
         }
       ],
       "metrics_total": "2.0km, 16min, 163bpm, 163bpm, 230kcal",
       "comparison": "+18bpm, +18bpm, +33kcal",
       "done": 1,
-      "total": 3
+      "total": 2
     },
     {
       "id": "yoga",
@@ -183,16 +163,12 @@
         {
           "day": "Wed",
           "status": "skipped"
-        },
-        {
-          "day": "Sat",
-          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
       "done": 1,
-      "total": 3
+      "total": 2
     }
   ],
   "spirit": {
