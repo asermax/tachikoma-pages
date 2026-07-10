@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'building-a-software-factory-with-claude-code', title: 'Building a Software Factory with Claude Code', meta: 'Pierson Marks · July 2026 · ~7 min listen', time: '7:26' },
     { slug: 'my-thoughts-on-the-bun-in-rust-rewrite', title: 'My Thoughts on the Bun Rust Rewrite', meta: 'Andrew Kelley · July 2026 · ~10 min listen', time: '9:38' },
     { slug: 'own-the-outer-loop', title: 'Own the Outer Loop', meta: 'Addy Osmani · July 2026 · ~2 min listen', time: '2:02' },
     { slug: 'viability-of-local-models-for-coding', title: 'Viability of local models for coding', meta: 'Birgitta Böckeler · Martin Fowler · July 2026', time: '11:51' },
