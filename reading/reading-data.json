@@ -414,6 +414,15 @@
       "summary": "Jarred Sumner details why and how Bun was rewritten from Zig to Rust — persistent memory-safety bugs (use-after-free, double-free, leaks) were structurally hard to prevent in Zig's manual memory management when mixed with JavaScriptCore's GC. Rust's borrow checker turns these into compiler errors. A manual rewrite of 535K lines would have taken a year, so they used Claude Fable 5 + Claude Code workflows: 64 parallel instances across 4 worktrees over 11 days, with adversarial multi-agent review catching subtle bugs. Result: 128 bug fixes, zero memory leaks, 20% smaller binaries, 2-5% faster, only 4% unsafe, ~$165K in API tokens. First widely-deployed large-scale production rewrite executed almost entirely by AI agents.",
       "added": "2026-07-10",
       "times_shown": 0
+    },
+    {
+      "slug": "my-thoughts-on-the-bun-in-rust-rewrite",
+      "title": "My Thoughts on the Bun Rust Rewrite",
+      "url": "https://andrewkelley.me/post/my-thoughts-bun-rust-rewrite.html",
+      "category": "engineering",
+      "summary": "Andrew Kelley, Zig's creator, responds to Bun's Rust rewrite announcement. He describes Bun's codebase as reckless 'hacks on top of hacks' that became a reputational liability for Zig, recounts dysfunctional management at Oven, and says ZSF felt relief at the Anthropic acquisition. He dismantles several Bun blog post claims: the false style-guide-vs-language dichotomy (TigerBeetle succeeded in Zig through engineering effort), test suite contradictions, LTO being available in Zig all along, admitted lack of fuzzing, and binary size work being unrelated to the rewrite. Compilation speed was conspicuously omitted. His conclusion: the core issue was relationship breakdown and management, not language deficiency. No personal ill will toward Jarred.",
+      "added": "2026-07-10",
+      "times_shown": 0
     }
   ],
   "archive": [
