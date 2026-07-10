@@ -407,6 +407,15 @@
       "times_shown": 0
     },
     {
+      "slug": "building-a-software-factory-with-claude-code",
+      "title": "I Built a Software Factory That Actually Works",
+      "url": "https://x.com/piersonmarks/status/2075361336381555096",
+      "category": "engineering",
+      "summary": "Pierson Marks shares a detailed breakdown of building a 'software factory' — an automated pipeline using AI agents to identify and implement work — running entirely on a Claude Code subscription. Architecture: two phases connected by Linear as source of truth. Pre-triage: scheduled agent loops feeding issues — daily health checks (Posthog/Vercel), weekly UX feedback (Intercom + session replays), daily churn analysis (Stripe + Supabase + Posthog). Implementation: 'auto' label on Linear triggers webhook → Hono API → remote Claude Code session with reusable /do skill for full SDLC. Key advice: start small with a single pre-triage loop.",
+      "added": "2026-07-10",
+      "times_shown": 0
+    },
+    {
       "slug": "bun-in-rust",
       "title": "Rewriting Bun in Rust",
       "url": "https://bun.com/blog/bun-in-rust",
