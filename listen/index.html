@@ -472,12 +472,9 @@ function setupChunks(articleSync) {
         // Pre-compute cumulative char ratios for sub-chunk highlighting
         syncCharWeights = syncData.chunkMap.map(group => {
             const chars = group.map(i => paragraphs[i]?.textContent.length || 1);
-            // Include pause tag overhead (13 chars) for all but the last chunk
-            const PAUSE_LEN = 13;
-            const adjusted = chars.map((c, i) => i < chars.length - 1 ? c + PAUSE_LEN : c);
-            const total = adjusted.reduce((a, b) => a + b, 0);
+            const total = chars.reduce((a, b) => a + b, 0);
             let cum = 0;
-            return adjusted.map(c => { cum += c / total; return cum; });
+            return chars.map(c => { cum += c / total; return cum; });
         });
     } else {
         syncData = null;
