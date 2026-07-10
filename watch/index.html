@@ -209,20 +209,20 @@
                 if (queue.length === 0) return '';
                 return `
                 <div class="toolbar toolbar-${pos}">
-                    <select onchange="sortOrder=this.value;page=0;render();">
-                        <option value="newest" ${sortOrder === 'newest' ? 'selected' : ''}>Newest first</option>
-                        <option value="oldest" ${sortOrder === 'oldest' ? 'selected' : ''}>Oldest first</option>
-                    </select>
                     ${totalPages > 1 ? `
                     <div class="pagination">
                         <button onclick="go(${page - 1})" ${page === 0 ? 'disabled' : ''}>&larr; Prev</button>
                         <select onchange="go(parseInt(this.value)-1);">
                             ${Array.from({length: totalPages}, (_, i) =>
-                                `<option value="${i + 1}" ${page === i ? 'selected' : ''}>Page ${i + 1} of ${totalPages}</option>`
+                                `<option value="${i + 1}" ${page === i ? 'selected' : ''}>${i + 1} of ${totalPages}</option>`
                             ).join('')}
                         </select>
                         <button onclick="go(${page + 1})" ${page >= totalPages - 1 ? 'disabled' : ''}>Next &rarr;</button>
                     </div>` : ''}
+                    <select onchange="sortOrder=this.value;page=0;render();">
+                        <option value="newest" ${sortOrder === 'newest' ? 'selected' : ''}>Newest first</option>
+                        <option value="oldest" ${sortOrder === 'oldest' ? 'selected' : ''}>Oldest first</option>
+                    </select>
                 </div>`;
             };
 
