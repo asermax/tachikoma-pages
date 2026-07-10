@@ -95,22 +95,43 @@
             margin-top: 0.5rem;
         }
 
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+        }
+        .toolbar-top { margin-bottom: 1.25rem; }
+        .toolbar-bottom { margin-top: 1.5rem; }
+
+        .toolbar select {
+            padding: 0.35rem 0.5rem;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 6px;
+            color: #555;
+            font-size: 0.85rem;
+        }
+
         .pagination {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 1rem;
-            margin-top: 2rem;
-            font-size: 0.9rem;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: #888;
         }
 
         .pagination button {
-            padding: 0.4rem 1rem;
+            padding: 0.35rem 0.75rem;
             border: 1px solid #ddd;
             background: white;
             border-radius: 6px;
             cursor: pointer;
             color: #555;
+            font-size: 0.85rem;
         }
         .pagination button:hover:not(:disabled) {
             background: #f5f5f5;
@@ -118,6 +139,15 @@
         .pagination button:disabled {
             opacity: 0.4;
             cursor: default;
+        }
+
+        .pagination select {
+            padding: 0.35rem 0.5rem;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 6px;
+            color: #555;
+            font-size: 0.85rem;
         }
 
         .empty {
@@ -144,8 +174,9 @@
     </div>
 
     <div class="container">
+        <div id="toolbar-top"></div>
         <div id="cards" class="loading">Loading...</div>
-        <div id="pagination" class="pagination"></div>
+        <div id="toolbar-bottom"></div>
     </div>
 
     <script src="../assets/tachikoma.js?v=4e37b477ab801357"></script>
@@ -153,6 +184,7 @@
         const PER_PAGE = 10;
         let data = null;
         let page = 0;
+        let sortOrder = 'newest';
 
         async function load() {
             try {
@@ -166,12 +198,38 @@
         }
 
         function render() {
-            const queue = (data.queue || []).sort((a, b) => b.added.localeCompare(a.added));
+            const queue = (data.queue || []).sort((a, b) =>
+                sortOrder === 'newest'
+                    ? b.added.localeCompare(a.added)
+                    : a.added.localeCompare(b.added)
+            );
             const totalPages = Math.ceil(queue.length / PER_PAGE);
+
+            const toolbarHtml = (pos) => {
+                if (queue.length === 0) return '';
+                return `
+                <div class="toolbar toolbar-${pos}">
+                    <select onchange="sortOrder=this.value;page=0;render();">
+                        <option value="newest" ${sortOrder === 'newest' ? 'selected' : ''}>Newest first</option>
+                        <option value="oldest" ${sortOrder === 'oldest' ? 'selected' : ''}>Oldest first</option>
+                    </select>
+                    ${totalPages > 1 ? `
+                    <div class="pagination">
+                        <button onclick="go(${page - 1})" ${page === 0 ? 'disabled' : ''}>&larr; Prev</button>
+                        <select onchange="go(parseInt(this.value)-1);">
+                            ${Array.from({length: totalPages}, (_, i) =>
+                                `<option value="${i + 1}" ${page === i ? 'selected' : ''}>Page ${i + 1} of ${totalPages}</option>`
+                            ).join('')}
+                        </select>
+                        <button onclick="go(${page + 1})" ${page >= totalPages - 1 ? 'disabled' : ''}>Next &rarr;</button>
+                    </div>` : ''}
+                </div>`;
+            };
 
             if (queue.length === 0) {
                 document.getElementById('cards').innerHTML = '<div class="empty">No videos in queue.</div>';
-                document.getElementById('pagination').innerHTML = '';
+                document.getElementById('toolbar-top').innerHTML = '';
+                document.getElementById('toolbar-bottom').innerHTML = '';
                 return;
             }
 
@@ -195,17 +253,8 @@
             }
             document.getElementById('cards').innerHTML = html;
             Tachikoma.refresh();
-
-            if (totalPages <= 1) {
-                document.getElementById('pagination').innerHTML = '';
-                return;
-            }
-
-            document.getElementById('pagination').innerHTML = `
-                <button onclick="go(${page - 1})" ${page === 0 ? 'disabled' : ''}>&larr; Prev</button>
-                <span>Page ${page + 1} of ${totalPages}</span>
-                <button onclick="go(${page + 1})" ${page >= totalPages - 1 ? 'disabled' : ''}>Next &rarr;</button>
-            `;
+            document.getElementById('toolbar-top').innerHTML = toolbarHtml('top');
+            document.getElementById('toolbar-bottom').innerHTML = toolbarHtml('bottom');
         }
 
         function go(p) {
