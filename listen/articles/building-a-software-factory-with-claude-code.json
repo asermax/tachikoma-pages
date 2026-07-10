@@ -1,0 +1,113 @@
+{
+  "title": "Building a Software Factory with Claude Code",
+  "meta": "Pierson Marks · July 2026 · ~7 min listen",
+  "body": "<div class=\"chunk\"><h1>Building a Software Factory with Claude Code</h1>\n</div>\n<div class=\"chunk\"><p>Software factories have been all the rage these last few weeks. So I built one. Here's what I learned, how it works, and how you can build one in an afternoon.</p>\n</div>\n<div class=\"chunk\"><h2>My Goals</h2>\n</div>\n<div class=\"chunk\"><p>It needed to be really simple, something that just worked and didn't require a bunch of babysitting. Ideally, it would run entirely on my existing Claude subscription.</p>\n</div>\n<div class=\"chunk\"><p>It sounds naive, but essentially unless it integrates easily into my existing workflow, it's not going to be something that sticks around. I don't want to build this and have to change all my existing habits just to use this new system. I know from experience that if that happens, it won't work for me long term and will fade into irrelevance.</p>\n</div>\n<div class=\"chunk\"><p>So instead of attacking this as one big effort, I split it up into two distinct phases:</p>\n</div>\n<div class=\"chunk\"><p><strong>Pre-triage</strong> — figuring out the stuff &quot;to do&quot;</p>\n</div>\n<div class=\"chunk\"><p><strong>Implementation</strong> — actually &quot;doing&quot; the stuff</p>\n</div>\n<div class=\"chunk\"><p>In the center is Linear, the source of truth of what work needs to be done.</p>\n</div>\n<div class=\"chunk\"><p>Every software factory needs to have this centralized repository of work to be done, whether that's GitHub issues, Linear, or something else. It should be what you already use so it's easily extensible for any system to add work for either agents or humans to pick up and complete later.</p>\n</div>\n<div class=\"chunk\"><p>The pipeline has intentionally defined seams that make the process of building a software factory actually manageable:</p>\n</div>\n<div class=\"chunk\"><ul>\n<li><strong>Create work</strong> (loops with MCPs)</li>\n<li><strong>Store work</strong> (Linear)</li>\n<li><strong>Complete work</strong> (SDLC agent)</li>\n</ul>\n</div>\n<div class=\"chunk\"><p>By splitting it up, you don't have to build both the pre-triage and implementation sides at once (and I actually recommend against it to avoid over-engineering). Linear makes the interface between what &quot;to do&quot; and what we're currently &quot;doing&quot; well defined and easy to extend.</p>\n</div>\n<div class=\"chunk\"><h2>Pre-Triage Step</h2>\n</div>\n<div class=\"chunk\"><p>In the above diagram, the work progresses from left to right. The left side is where work's created and contains any number of systems (either humans, agents, or APIs) that adds to what needs to be done. All outputs created in this pre-triage step is put into our Linear.</p>\n</div>\n<div class=\"chunk\"><p>In this step, we have three main loops:</p>\n</div>\n<div class=\"chunk\"><ul>\n<li><strong>System Health Check Loop</strong> (a bug finder) — this loop runs daily at 5am and is connected to a few MCP servers: Posthog for error tracking; Vercel for system diagnostics; and Linear for creating issues.</li>\n<li><strong>UX Improvements and Customer Feedback Loop</strong> — this loop runs weekly on Monday at 9am, and scans every new piece of feedback, every customer support chat from Intercom/Fin, and all Posthog session replays. Session replays are a goldmine. You can see where rage clicks happen or where users are struggling and confused.</li>\n<li><strong>Churn Analysis Loop</strong> — this runs daily at 6am and investigates every customer that clicked cancel in the last 24 hours. It pulls payment and user data from Stripe (including their email and location), and then looks at this customer's session replay in Posthog to see what they were doing before they cancelled. We pull their usage from Supabase to see if it was a wrong ICP, never experienced that &quot;wow&quot; moment, or hit bugs. The report is sent to Slack and the agent creates or comments on issues if they are related to customers churning to bump priority.</li>\n</ul>\n</div>\n<div class=\"chunk\"><p>To actually run these agents consistently, I kept it simple and used Claude Code Cloud Routines.</p>\n</div>\n<div class=\"chunk\"><p>No over-engineering with a Hetzner VPS, a caffeinated mac mini, etc. It's by far the easiest way I've found to leverage your existing Claude Code subscription and create always-on agents that can be triggered on a schedule or via a webhook event.</p>\n</div>\n<div class=\"chunk\"><p>Another reason to use Claude Code Cloud Routines is that Anthropic's cloud environments have close parity with Claude running locally. Obviously they don't have your env vars (which can be added to the cloud environment setup, if needed) but if you set up an MCP connection via the Desktop App's connectors, both your local Claude CLI and remote Claude can use them, unlike Codex. This was the killer feature for me and is what makes these pre-triage agent loops work so well. It also makes it easy to run a bunch of sessions in parallel without worrying about your laptop's memory.</p>\n</div>\n<div class=\"chunk\"><p>If you just implement this pre-triage step, you'll still get a lot of leverage even if you don't build the next step where the work is completed.</p>\n</div>\n<div class=\"chunk\"><p>Start small with a single loop, try it out, refine it, then add more. Figure out what routines you can create today that put new, high-quality work into your existing issue tracker and then do whatever you currently do today for implementation.</p>\n</div>\n<div class=\"chunk\"><h2>Implementation Step</h2>\n</div>\n<div class=\"chunk\"><p>The most basic version of step two is to give your agent an issue ID and say to go complete it. This is what most people already do today when working with agents, however, it probably isn't what you want if you're reading this, because you're now the bottleneck in the loop, kicking off an agent directly in a session.</p>\n</div>\n<div class=\"chunk\"><p>Instead what I did was build a way to trigger remote Claude Code sessions directly from Linear.</p>\n</div>\n<div class=\"chunk\"><p>It works like this:</p>\n</div>\n<div class=\"chunk\"><p>First, identify how you want to trigger a new Claude session. For us, we add an 'auto' label to a Linear issue that kicks this new task off.</p>\n</div>\n<div class=\"chunk\"><p>Then, Linear sends a webhook event to our internal webhook API service (a newly-created internal Hono app) that parses the event and then forwards the correct information to the Claude Routine.</p>\n</div>\n<div class=\"chunk\"><p>Finally, this lightweight API service makes a POST request to Anthropic that triggers the Claude routine with an initial prompt.</p>\n</div>\n<div class=\"chunk\"><p>Using an 'auto' label as the trigger allows us to control automatic execution of new Claude sessions.</p>\n</div>\n<div class=\"chunk\"><p>By default, we do not have pre-triage steps include these 'auto' labels and require a human to add the label that triggers the agent to start work (keeping the human-in-the-loop). That's why we call step 1 the pre-triage step, because something is still figuring out what to actually work on, either via human involvement or some agent looping and watching new issues being added and kicking off new implementation sessions.</p>\n</div>\n<div class=\"chunk\"><p>However, because adding a label is also easily done by an agent, we could have pre-triage loops create new issues with the 'auto' label by default, which kicks off a new Claude session. Using a label becomes a very flexible way to start new implementation work either automatically by an agent or by us humans.</p>\n</div>\n<div class=\"chunk\"><p>Because Linear supports webhooks, the whole &quot;push when a label is added&quot; works. The only downside is we need to have a public API that routes and accepts these webhooks and formats the events and payload data to trigger Claude Code. This new service also adds the correct authentication headers which is why you can't have Linear trigger the routine directly.</p>\n</div>\n<div class=\"chunk\"><p>Alternatively, you could have a scheduled routine that starts every so often and tries to implement any new issues not in progress with the auto label.</p>\n</div>\n<div class=\"chunk\"><p>For the actual routine prompt, I recommend building a reusable skill that walks through the entire SDLC, named something like implement or do, that makes it easy to just say &quot;implement ISSUE-NNN&quot;, which documents how to correctly go through the steps of fetching issue context, implementing the work, verifying in browser, creating the PR, and watching for comments.</p>\n</div>\n<div class=\"chunk\"><p>The Claude routine prompt, triggered by the Linear event, can just have a very simple prompt:</p>\n</div>\n<div class=\"chunk\"><p>Retrieve the provided issue and use the implement skill to implement the requested change and create a pull request. Only fetch the exact issue provided. If it's already complete or in progress, stop.</p>\n</div>\n<div class=\"chunk\"><p>When you start work, comment on the issue, set it to &quot;In Progress&quot;, and update the issue with anything meaningful as you progress.</p>\n</div>\n<div class=\"chunk\"><p>So at this point you have parallel Claude sessions triggered via API, implementing issues, opening PRs and hopefully verifying their work via Playwright or Agent Browser.</p>\n</div>\n<div class=\"chunk\"><p>It's essentially a full software factory that is fully observable, runs while you sleep, and works entirely on your Claude Code subscription.</p>\n</div>\n",
+  "audio": "building-a-software-factory-with-claude-code.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      23.347,
+      48.915,
+      76.842,
+      92.09,
+      109.857,
+      129.305,
+      192.672,
+      213.519,
+      244.447,
+      268.134,
+      290.342,
+      317.229,
+      324.156,
+      348.524,
+      369.251,
+      389.259,
+      399.386,
+      425.234,
+      446.681
+    ],
+    "chunkMap": [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7,
+        8,
+        9
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        16
+      ],
+      [
+        17,
+        18
+      ],
+      [
+        19
+      ],
+      [
+        20,
+        21,
+        22
+      ],
+      [
+        23,
+        24,
+        25
+      ],
+      [
+        26,
+        27,
+        28
+      ],
+      [
+        29
+      ],
+      [
+        30
+      ],
+      [
+        31
+      ],
+      [
+        32
+      ],
+      [
+        33
+      ],
+      [
+        34,
+        35
+      ],
+      [
+        36,
+        37
+      ],
+      [
+        38,
+        39
+      ]
+    ],
+    "prefixOffset": 0
+  }
+}
