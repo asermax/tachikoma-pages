@@ -405,6 +405,15 @@
       "summary": "Addy Osmani's closing keynote at AI Engineer World's Fair argues that as AI agents take over more of the mechanics of software development, the scarce and valuable skill shifts from producing code to being able to 'answer for' the work — to explain it, verify the evidence behind it, understand the risk, and stand behind the result. The central framing splits responsibilities: agents run the inner loop (investigate, implement, test, report) while engineers own the outer loop (decide, verify, approve, redirect, own consequences). Three failure modes to watch: cognitive surrender (agent's answer becomes yours before reasoning), cognitive debt (codebase grows faster than understanding), and orchestration tax (more agents generate more decisions than humans can integrate). The talk is ultimately optimistic — the new work is loop design, evidence design, verification, and brownfield stewardship.",
       "added": "2026-07-09",
       "times_shown": 0
+    },
+    {
+      "slug": "bun-in-rust",
+      "title": "Rewriting Bun in Rust",
+      "url": "https://bun.com/blog/bun-in-rust",
+      "category": "engineering",
+      "summary": "Jarred Sumner details why and how Bun was rewritten from Zig to Rust — persistent memory-safety bugs (use-after-free, double-free, leaks) were structurally hard to prevent in Zig's manual memory management when mixed with JavaScriptCore's GC. Rust's borrow checker turns these into compiler errors. A manual rewrite of 535K lines would have taken a year, so they used Claude Fable 5 + Claude Code workflows: 64 parallel instances across 4 worktrees over 11 days, with adversarial multi-agent review catching subtle bugs. Result: 128 bug fixes, zero memory leaks, 20% smaller binaries, 2-5% faster, only 4% unsafe, ~$165K in API tokens. First widely-deployed large-scale production rewrite executed almost entirely by AI agents.",
+      "added": "2026-07-10",
+      "times_shown": 0
     }
   ],
   "archive": [
