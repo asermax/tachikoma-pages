@@ -416,15 +416,6 @@
       "times_shown": 0
     },
     {
-      "slug": "my-thoughts-on-the-bun-in-rust-rewrite",
-      "title": "My Thoughts on the Bun Rust Rewrite",
-      "url": "https://andrewkelley.me/post/my-thoughts-bun-rust-rewrite.html",
-      "category": "engineering",
-      "summary": "Andrew Kelley, Zig's creator, responds to Bun's Rust rewrite announcement. He describes Bun's codebase as reckless 'hacks on top of hacks' that became a reputational liability for Zig, recounts dysfunctional management at Oven, and says ZSF felt relief at the Anthropic acquisition. He dismantles several Bun blog post claims: the false style-guide-vs-language dichotomy (TigerBeetle succeeded in Zig through engineering effort), test suite contradictions, LTO being available in Zig all along, admitted lack of fuzzing, and binary size work being unrelated to the rewrite. Compilation speed was conspicuously omitted. His conclusion: the core issue was relationship breakdown and management, not language deficiency. No personal ill will toward Jarred.",
-      "added": "2026-07-10",
-      "times_shown": 0
-    },
-    {
       "slug": "how-genai-shifts-concern-from-technical-to-cognitive-debt",
       "title": "How GenAI Shifts Concern from Technical to Cognitive Debt",
       "url": "https://margaretstorey.com/blog/2026/02/09/cognitive-debt/",
@@ -1067,6 +1058,16 @@
       "url": "https://x.com/piersonmarks/status/2075361336381555096",
       "category": "engineering",
       "summary": "Pierson Marks shares a detailed breakdown of building a 'software factory' — an automated pipeline using AI agents to identify and implement work — running entirely on a Claude Code subscription. Architecture: two phases connected by Linear as source of truth. Pre-triage: scheduled agent loops feeding issues — daily health checks (Posthog/Vercel), weekly UX feedback (Intercom + session replays), daily churn analysis (Stripe + Supabase + Posthog). Implementation: 'auto' label on Linear triggers webhook → Hono API → remote Claude Code session with reusable /do skill for full SDLC. Key advice: start small with a single pre-triage loop.",
+      "added": "2026-07-10",
+      "read": "2026-07-11",
+      "has_notes": true
+    },
+    {
+      "slug": "my-thoughts-on-the-bun-in-rust-rewrite",
+      "title": "My Thoughts on the Bun Rust Rewrite",
+      "url": "https://andrewkelley.me/post/my-thoughts-bun-rust-rewrite.html",
+      "category": "engineering",
+      "summary": "Andrew Kelley, Zig's creator, responds to Bun's Rust rewrite announcement. He describes Bun's codebase as reckless 'hacks on top of hacks' that became a reputational liability for Zig, recounts dysfunctional management at Oven, and says ZSF felt relief at the Anthropic acquisition. He dismantles several Bun blog post claims: the false style-guide-vs-language dichotomy (TigerBeetle succeeded in Zig through engineering effort), test suite contradictions, LTO being available in Zig all along, admitted lack of fuzzing, and binary size work being unrelated to the rewrite. Compilation speed was conspicuously omitted. His conclusion: the core issue was relationship breakdown and management, not language deficiency. No personal ill will toward Jarred.",
       "added": "2026-07-10",
       "read": "2026-07-11",
       "has_notes": true
