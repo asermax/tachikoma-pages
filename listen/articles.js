@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'cognitive-debt', title: 'How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive Debt', meta: 'Margaret-Anne Storey · February 2026 · ~5 min listen', time: '5:10' },
     { slug: 'building-a-software-factory-with-claude-code', title: 'Building a Software Factory with Claude Code', meta: 'Pierson Marks · July 2026 · ~7 min listen', time: '7:26' },
     { slug: 'my-thoughts-on-the-bun-in-rust-rewrite', title: 'My Thoughts on the Bun Rust Rewrite', meta: 'Andrew Kelley · July 2026 · ~10 min listen', time: '9:38' },
     { slug: 'own-the-outer-loop', title: 'Own the Outer Loop', meta: 'Addy Osmani · July 2026 · ~2 min listen', time: '2:02' },
