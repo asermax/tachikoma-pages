@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'coding-as-craft-going-back-to-the-old-gym', title: 'Coding as Craft: Going Back to the Old Gym', meta: 'Christian Ekrem · April 2025 · ~7 min listen', time: '6:55' },
     { slug: 'programming-as-theory-building-part-ii', title: 'Programming as Theory Building, Part II: When Institutions Crumble', meta: 'Christian Ekrem · January 2026 · ~14 min listen', time: '14:07' },
     { slug: 'programming-as-theory-building-naur', title: 'Programming as Theory Building: Why Senior Developers Are More Valuable Than Ever', meta: 'Christian Ekrem · June 2025 · ~10 min listen', time: '9:52' },
     { slug: 'own-the-outer-loop', title: 'Own the Outer Loop', meta: 'Addy Osmani · July 2026 · ~2 min listen', time: '2:02' },
