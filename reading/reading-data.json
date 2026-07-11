@@ -101,15 +101,6 @@
       "times_shown": 0
     },
     {
-      "slug": "human-ai-giles-thomas",
-      "title": "Human-AI (Giles Thomas)",
-      "url": "https://gilest.org/notes/2026/human-ai/",
-      "category": "ai",
-      "summary": "Explores why AI is a terrible writer: it defaults to cliches because it's trained on internet text saturated with them. The core argument is that human writing has 'tiny sprinklings of poetry' — subtle literary flourishes like alliteration, gentle puns, and callbacks that make text memorable. AI cannot calibrate these touches; it either writes a full poem or flat generic prose. The practical conclusion: if you must use AI for first drafts, carefully edit the output with a human eye and get feedback from humans, not other AI. The goal is for humans to read, absorb, and remember.",
-      "added": "2026-04-08",
-      "times_shown": 0
-    },
-    {
       "slug": "httpsmartinfowlercomarticlesreduce-friction-aifeedback-flywheelhtml",
       "title": "Feedback Flywheel",
       "url": "https://martinfowler.com/articles/reduce-friction-ai/feedback-flywheel.html",
@@ -421,6 +412,24 @@
       "url": "https://margaretstorey.com/blog/2026/02/09/cognitive-debt/",
       "category": "engineering",
       "summary": "Introduces cognitive debt as more pressing than technical debt in the GenAI era — code may be clean but humans no longer understand why decisions were made or how pieces fit together. Draws on Naur's notion that a program is a 'theory' held in developers' minds. Calls for deliberate slowing-down practices and better detection of cognitive-debt warning signs as shared understanding becomes the bottleneck.",
+      "added": "2026-07-11",
+      "times_shown": 0
+    },
+    {
+      "slug": "httpscekremgithubiopostscoding-as-craft-going-back-to-the-old-gym",
+      "title": "Untitled",
+      "url": "https://cekrem.github.io/posts/coding-as-craft-going-back-to-the-old-gym/",
+      "category": "engineering",
+      "summary": "Argues against 'reflexive AI usage' in coding, drawing a parallel to Rocky III's 'back to the old gym' metaphor. The author advocates for intentional collaboration with AI — using it for boring parts while preserving cognitive struggle for the craft of programming. The 'aha' moments from wrestling with hard problems create permanent growth that AI-generated solutions can't replicate.",
+      "added": "2026-07-11",
+      "times_shown": 0
+    },
+    {
+      "slug": "programming-as-theory-building-part-ii",
+      "title": "Programming as Theory Building Part II",
+      "url": "https://cekrem.github.io/posts/programming-as-theory-building-part-ii/",
+      "category": "engineering",
+      "summary": "This article, the second in a series by Christian Ekrem, extends Naur's \"Programming as Theory Building\" thesis to the institutional level. Ekrem draws on Hartzog and Silbey's \"How AI Destroys Institutions\" paper, mapping three destructive affordances of AI onto software teams. First, AI undermines expertise: juniors bypass mentoring pipelines by accepting uncomprehended AI output, never building theory. Second, AI short-circuits decision-making: AI-generated code arrives in a \"theoretical vacuum\" with no ownership, no PR discussion, importing architectural decisions nobody made—productive friction of code reviews is lost. Third, AI isolates humans: it displaces pairing and questions with a sycophantic alternative, eroding institutional trust. Ekrem endorses constrained AI use where \"the human sets the theory, and the AI executes within it\"—boilerplate, test scaffolding within established patterns. The article closes warning that teams fully embracing reflexive AI usage will find expertise pipelines broken, decision-making hollowed, and connections atrophied—code remaining that nobody understands, with no institutions left to produce the senior developers eventually needed again.",
       "added": "2026-07-11",
       "times_shown": 0
     },
@@ -1071,6 +1080,16 @@
       "added": "2026-07-10",
       "read": "2026-07-11",
       "has_notes": true
+    },
+    {
+      "slug": "programming-as-theory-building-naur",
+      "title": "Programming as Theory Building (Naur)",
+      "url": "https://cekrem.github.io/posts/programming-as-theory-building-naur/",
+      "category": "engineering",
+      "summary": "This article by Christian Ekrem revisits Peter Naur's 1985 essay \"Programming as Theory Building\" in the context of modern AI-assisted development. Naur's central thesis is that a program is not its source code—rather, programming is fundamentally about building a theory: a shared mental model of how and why a system works, including intent, design decisions, trade-offs, and architectural reasoning. The source code is a lossy representation of this theory, and critical knowledge lives mainly in the minds of the builders. When those people leave, the theory dies with them, even though the code remains. Ekrem argues that today's development landscape has created a \"theory-loss crisis.\" Reflexive AI usage, where developers instinctively accept LLM-generated code without the cognitive struggle that builds understanding, is now the norm. LLM-generated code is \"nobody's theory\"—it emerges from statistical patterns without grasping the business domain or the trade-offs encoded by domain experts. The article makes the case that senior developers have become critically important: as domain theory builders, architectural theory guardians, intentional AI collaborators, and theory teachers. Documentation, ADRs, and clean code help but cannot fully capture what a program is, does, and means. The main takeaway: the question is not whether LLMs can write code, but whether teams can maintain the human theoretical frameworks that transform scattered code into coherent, domain-aware, lasting programs.\n\n**Reflections:** Naur's theory-building idea resonates deeply — understanding the system and knowing where to go or where issues come from is a core strength. Noticed that agent-assisted coding, especially spec-driven/vibe coding where code isn't read at all, directly erodes this ability. The high-level shape is gained but the tactile understanding of how and why pieces fit is lost, leaving you debugging blind when something breaks.",
+      "added": "2026-07-11",
+      "read": "2026-07-11",
+      "has_notes": false
     }
   ]
 }
