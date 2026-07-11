@@ -1640,6 +1640,17 @@
       "has_notes": true
     },
     {
+      "slug": "how-agents-quietly-break-architecture",
+      "title": "How Agents Quietly Break Architecture",
+      "url": "https://www.youtube.com/watch?v=oTDcJcvrfCU",
+      "video_id": "oTDcJcvrfCU",
+      "channel": "LambdaX.1",
+      "summary": "A 20-minute talk about how AI coding agents can preserve local correctness while quietly degrading global architectural invariants, using an example of temporal point vs. interval semantics in an agentic video editor. Advocates for using formal models in Lean as a compiled, enforceable source of truth alongside the implementation to prevent agents from silently breaking architecture.\n\n**Reflections:** Connects to ongoing struggles with maintaining system understanding and preventing architectural drift. Several personal ideas \u2014 validating architecture, finding representations to communicate with agents, keeping invariants intact \u2014 are aimed at the same problem: how to prevent systems from spiraling into chaos as agents modify code. The formal methods (Lean) approach is one heavy answer; raises the question of whether lighter-weight approaches exist between full trust and full proofs.",
+      "added": "2026-07-11",
+      "watched": "2026-07-11",
+      "has_notes": false
+    },
+    {
       "slug": "understanding-is-the-new-bottleneck-geoffrey-litt-notion",
       "title": "Understanding is the new bottleneck \u2014 Geoffrey Litt, Notion",
       "url": "https://www.youtube.com/watch?v=WkBPX-oDMnA",
