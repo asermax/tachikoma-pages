@@ -1,4 +1,7 @@
-const ARTICLES = [    { slug: 'own-the-outer-loop', title: 'Own the Outer Loop', meta: 'Addy Osmani · July 2026 · ~2 min listen', time: '2:02' },
+const ARTICLES = [
+    { slug: 'programming-as-theory-building-part-ii', title: 'Programming as Theory Building, Part II: When Institutions Crumble', meta: 'Christian Ekrem · January 2026 · ~13 min listen', time: '13:28' },
+    { slug: 'programming-as-theory-building-naur', title: 'Programming as Theory Building: Why Senior Developers Are More Valuable Than Ever', meta: 'Christian Ekrem · June 2025 · ~10 min listen', time: '9:51' },
+    { slug: 'own-the-outer-loop', title: 'Own the Outer Loop', meta: 'Addy Osmani · July 2026 · ~2 min listen', time: '2:02' },
     { slug: 'viability-of-local-models-for-coding', title: 'Viability of local models for coding', meta: 'Birgitta Böckeler · Martin Fowler · July 2026', time: '11:51' },
     { slug: 'ai-enthusiasts-are-in-a-race-against', title: 'AI enthusiasts are in a race against time, AI skeptics are in a race against entropy', meta: 'Charity Majors · June 2026', time: '11:50' },
     { slug: 'ai-demands-more-engineering-discipline', title: 'AI Demands More Engineering Discipline. Not Less', meta: 'Charity Majors · June 2026', time: '18:10' },
