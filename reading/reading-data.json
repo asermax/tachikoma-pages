@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10",
+  "generated_at": "2026-07-11",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -116,7 +116,7 @@
       "category": "ai",
       "summary": "Same author as Encoding Team Standards (Rahul Garg, Martin Fowler series). Argues teams plateau with AI tools because individual learnings never become shared practice. Framework: 4 signal types (context gaps, instruction patterns, workflow discoveries, failures with root causes) mapped to 4 cadences (after-session reflection, daily stand-up, sprint retro, quarterly audit). Metrics that matter: first-pass acceptance rate, iteration cycles, post-merge rework — not lines generated. Key insight: the other practices in the series are passive surfaces; the flywheel is what makes them compound over time. Treat shared AI artifacts like dependencies — maintain them or they become liabilities.",
       "added": "2026-04-14",
-      "times_shown": 6
+      "times_shown": 7
     },
     {
       "slug": "httpswalkinglabsgithubiolearn-harness-engineeringen",
@@ -152,7 +152,7 @@
       "category": "ai",
       "summary": "Introduces Structured-Prompt-Driven Development (SPDD), a method that treats AI prompts as first-class delivery artifacts — version-controlled, reviewed, and reusable. Built around the REASONS Canvas (Requirements, Entities, Approach, Structure, Operations, Norms, Safeguards) and a six-step workflow that brings prompts into the same discipline as code. Developed by Thoughtworks to address the gap between individual AI speed and system-level throughput. Includes a worked billing engine example, core skill identification (abstraction-first, alignment, iterative review), and fitness assessment for where SPDD pays off vs. falls short.",
       "added": "2026-05-15",
-      "times_shown": 9
+      "times_shown": 10
     },
     {
       "slug": "httpsxcomistatus2058014104854626490",
@@ -197,7 +197,7 @@
       "category": "ai",
       "summary": "Philosopher David Chalmers examines the evidence for and against consciousness in large language models, concluding that current LLMs probably are not conscious but that extended multimodal LLM+ systems may become serious candidates for consciousness within a decade. He outlines a research program of engineering challenges and emphasizes the profound ethical stakes of potentially creating conscious AI.",
       "added": "2026-05-31",
-      "times_shown": 2
+      "times_shown": 3
     },
     {
       "slug": "hexednobility-tweet-2059974055294316574",
@@ -407,15 +407,6 @@
       "times_shown": 0
     },
     {
-      "slug": "building-a-software-factory-with-claude-code",
-      "title": "I Built a Software Factory That Actually Works",
-      "url": "https://x.com/piersonmarks/status/2075361336381555096",
-      "category": "engineering",
-      "summary": "Pierson Marks shares a detailed breakdown of building a 'software factory' — an automated pipeline using AI agents to identify and implement work — running entirely on a Claude Code subscription. Architecture: two phases connected by Linear as source of truth. Pre-triage: scheduled agent loops feeding issues — daily health checks (Posthog/Vercel), weekly UX feedback (Intercom + session replays), daily churn analysis (Stripe + Supabase + Posthog). Implementation: 'auto' label on Linear triggers webhook → Hono API → remote Claude Code session with reusable /do skill for full SDLC. Key advice: start small with a single pre-triage loop.",
-      "added": "2026-07-10",
-      "times_shown": 0
-    },
-    {
       "slug": "bun-in-rust",
       "title": "Rewriting Bun in Rust",
       "url": "https://bun.com/blog/bun-in-rust",
@@ -431,6 +422,51 @@
       "category": "engineering",
       "summary": "Andrew Kelley, Zig's creator, responds to Bun's Rust rewrite announcement. He describes Bun's codebase as reckless 'hacks on top of hacks' that became a reputational liability for Zig, recounts dysfunctional management at Oven, and says ZSF felt relief at the Anthropic acquisition. He dismantles several Bun blog post claims: the false style-guide-vs-language dichotomy (TigerBeetle succeeded in Zig through engineering effort), test suite contradictions, LTO being available in Zig all along, admitted lack of fuzzing, and binary size work being unrelated to the rewrite. Compilation speed was conspicuously omitted. His conclusion: the core issue was relationship breakdown and management, not language deficiency. No personal ill will toward Jarred.",
       "added": "2026-07-10",
+      "times_shown": 0
+    },
+    {
+      "slug": "how-genai-shifts-concern-from-technical-to-cognitive-debt",
+      "title": "How GenAI Shifts Concern from Technical to Cognitive Debt",
+      "url": "https://margaretstorey.com/blog/2026/02/09/cognitive-debt/",
+      "category": "engineering",
+      "summary": "Introduces cognitive debt as more pressing than technical debt in the GenAI era — code may be clean but humans no longer understand why decisions were made or how pieces fit together. Draws on Naur's notion that a program is a 'theory' held in developers' minds. Calls for deliberate slowing-down practices and better detection of cognitive-debt warning signs as shared understanding becomes the bottleneck.",
+      "added": "2026-07-11",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-missing-stop-sign",
+      "title": "The Missing Stop Sign",
+      "url": "https://margaretstorey.com/blog/2026/06/09/missing-stop-sign/",
+      "category": "engineering",
+      "summary": "Uses a 'missing stop sign' analogy to explain how a project can have low cognitive debt (team shares tacit understanding) but high intent debt (rationale never written down). In the era of agentic development, an 'outsider' arrives every time Claude starts a new session — lacking hallway conversations and domain knowledge. Not a critique of Agile, but a recognition that teams must externalize context as humans and AI agents cycle through projects.",
+      "added": "2026-07-11",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-signs-are-there-but-were-still-lost",
+      "title": "The Signs Are There, But We're Still Lost",
+      "url": "https://margaretstorey.com/blog/2026/06/15/signs-but-lost/",
+      "category": "engineering",
+      "summary": "Storey describes the opposite failure mode: projects thoroughly documented yet developers still confused because information is fragmented, lacks context, and fails to build coherent mental models. Documentation alone doesn't create understanding — mental models are built through active interaction. Calls for tools like Cognitive Tours that help developers navigate documentation layers and surface the right information at the right moment.",
+      "added": "2026-07-11",
+      "times_shown": 0
+    },
+    {
+      "slug": "three-debts-three-threats-to-meaning",
+      "title": "Three Debts, Three Threats to Meaning",
+      "url": "https://margaretstorey.com/blog/2026/06/23/three-threats-to-meaning/",
+      "category": "engineering",
+      "summary": "Margaret-Anne Storey draws on Peirce's triadic semiotic model as a lens for the Triple Debt Model of software health: technical debt degrades the system, intent debt degrades the signs communicating rationale, and cognitive debt degrades developers' shared understanding. Especially urgent in the age of agentic development where AI-generated code demands better 'signs' and cognitive support tools for human supervisors.",
+      "added": "2026-07-11",
+      "times_shown": 0
+    },
+    {
+      "slug": "what-im-hearing-about-cognitive-debt",
+      "title": "What I'm Hearing About Cognitive Debt",
+      "url": "https://margaretstorey.com/blog/2026/02/18/cognitive-debt-revisited/",
+      "category": "ai",
+      "summary": "Synthesizes practitioner feedback on cognitive debt — velocity outpacing understanding manifests as lost confidence, heavier reviews, debugging friction, slower onboarding, and burnout. Repayment means maintaining the distributed theory of the system across people, docs, tests, conversations, and AI agents. Notes emerging mitigations and the open question of how high-performing teams will adapt as shared understanding becomes the bottleneck.",
+      "added": "2026-07-11",
       "times_shown": 0
     }
   ],
@@ -1024,6 +1060,16 @@
       "added": "2026-07-09",
       "read": "2026-07-09",
       "has_notes": false
+    },
+    {
+      "slug": "building-a-software-factory-with-claude-code",
+      "title": "I Built a Software Factory That Actually Works",
+      "url": "https://x.com/piersonmarks/status/2075361336381555096",
+      "category": "engineering",
+      "summary": "Pierson Marks shares a detailed breakdown of building a 'software factory' — an automated pipeline using AI agents to identify and implement work — running entirely on a Claude Code subscription. Architecture: two phases connected by Linear as source of truth. Pre-triage: scheduled agent loops feeding issues — daily health checks (Posthog/Vercel), weekly UX feedback (Intercom + session replays), daily churn analysis (Stripe + Supabase + Posthog). Implementation: 'auto' label on Linear triggers webhook → Hono API → remote Claude Code session with reusable /do skill for full SDLC. Key advice: start small with a single pre-triage loop.",
+      "added": "2026-07-10",
+      "read": "2026-07-11",
+      "has_notes": true
     }
   ]
 }
