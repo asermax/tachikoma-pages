@@ -3,7 +3,7 @@ const ARTICLES = [
     { slug: 'programming-as-theory-building-part-ii', title: 'Programming as Theory Building, Part II: When Institutions Crumble', meta: 'Christian Ekrem · January 2026 · ~14 min listen', time: '14:07' },
     { slug: 'own-the-outer-loop', title: 'Own the Outer Loop', meta: 'Addy Osmani · July 2026 · ~2 min listen', time: '2:02' },
     { slug: 'viability-of-local-models-for-coding', title: 'Viability of local models for coding', meta: 'Birgitta Böckeler · Martin Fowler · July 2026', time: '11:51' },
-    { slug: 'ai-enthusiasts-are-in-a-race-against', title: 'AI enthusiasts are in a race against time, AI skeptics are in a race against entropy', meta: 'Charity Majors · June 2026', time: '11:50' },
+    { slug: 'ai-enthusiasts-are-in-a-race-against', title: 'AI enthusiasts are in a race against time, AI skeptics are in a race against entropy', meta: 'Charity Majors · June 2026 · ~12 min listen', time: '12:08' },
     { slug: 'ai-demands-more-engineering-discipline', title: 'AI Demands More Engineering Discipline. Not Less', meta: 'Charity Majors · June 2026', time: '18:10' },
     { slug: 'software-design-in-the-agentic-age', title: 'Software Design in the Agentic Age: Place Your Bets', meta: 'Mathias Verraes · July 2026', time: '4:02' },
     { slug: 'feedback-flywheel', title: 'Feedback Flywheel', meta: 'Rahul Garg · April 2026', time: '17:05' },
