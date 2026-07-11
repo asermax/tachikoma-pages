@@ -1,5 +1,4 @@
-const ARTICLES = [    { slug: 'cognitive-debt', title: 'How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive Debt', meta: 'Margaret-Anne Storey · February 2026 · ~5 min listen', time: '5:35' },
-    { slug: 'my-thoughts-on-the-bun-in-rust-rewrite', title: 'My Thoughts on the Bun Rust Rewrite', meta: 'Andrew Kelley · July 2026 · ~10 min listen', time: '9:38' },
+const ARTICLES = [    { slug: 'my-thoughts-on-the-bun-in-rust-rewrite', title: 'My Thoughts on the Bun Rust Rewrite', meta: 'Andrew Kelley · July 2026 · ~10 min listen', time: '9:38' },
     { slug: 'own-the-outer-loop', title: 'Own the Outer Loop', meta: 'Addy Osmani · July 2026 · ~2 min listen', time: '2:02' },
     { slug: 'viability-of-local-models-for-coding', title: 'Viability of local models for coding', meta: 'Birgitta Böckeler · Martin Fowler · July 2026', time: '11:51' },
     { slug: 'ai-enthusiasts-are-in-a-race-against', title: 'AI enthusiasts are in a race against time, AI skeptics are in a race against entropy', meta: 'Charity Majors · June 2026', time: '11:50' },
