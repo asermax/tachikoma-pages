@@ -497,7 +497,7 @@ function getCurrentChunk(pct) {
     return Math.max(0, chunkBoundaries.length - 2);
 }
 
-function getSyncChunk(time) {
+function getSyncChunk(time, duration) {
     if (!syncData) return -1;
     const ts = syncData.timestamps;
     let lo = 0, hi = ts.length - 1;
@@ -512,7 +512,7 @@ function getSyncChunk(time) {
 
     // Calculate progress within this TTS chunk
     const chunkStart = ts[lo];
-    const chunkEnd = lo + 1 < ts.length ? ts[lo + 1] : chunkStart + 60;
+    const chunkEnd = lo + 1 < ts.length ? ts[lo + 1] : duration;
     const progress = Math.max(0, Math.min(1, (time - chunkStart) / (chunkEnd - chunkStart)));
 
     // Find sub-chunk by cumulative char weight
@@ -600,7 +600,7 @@ audio.addEventListener('timeupdate', () => {
 
     if (!isUserScrolling && isPlaying) {
         if (syncData) {
-            const newChunk = getSyncChunk(audio.currentTime);
+            const newChunk = getSyncChunk(audio.currentTime, audio.duration);
             if (newChunk !== currentChunkIndex) {
                 currentChunkIndex = newChunk;
                 highlightChunk(newChunk);
@@ -701,7 +701,7 @@ followBtn.addEventListener('click', () => {
             const chunkStart = syncData.timestamps[ttsIdx];
             const chunkEnd = ttsIdx + 1 < syncData.timestamps.length
                 ? syncData.timestamps[ttsIdx + 1]
-                : chunkStart + 60;
+                : audio.duration;
             audio.currentTime = chunkStart + startWeight * (chunkEnd - chunkStart);
             currentChunkIndex = closestChunk;
             highlightChunk(closestChunk);
