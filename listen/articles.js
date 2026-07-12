@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'prompt-caching-10x-cheaper-llm-tokens-but-how', title: 'Prompt caching: 10x cheaper LLM tokens, but how?', meta: 'Sam Rose · ngrok · December 2025 · ~8 min listen', time: '8:01' },
     { slug: 'pace-layers-and-ai-integration', title: 'Pace Layers and AI Integration', meta: 'Chad Fowler · December 2025 · ~12 min listen', time: '11:40' },
     { slug: 'the-death-and-rebirth-of-programming', title: 'The Death and Rebirth of Programming', meta: 'Chad Fowler · December 2025 · ~7 min listen', time: '7:05' },
     { slug: '2x-nine-months-later-we-did-it', title: '2× – nine months later: We did it', meta: 'Darragh Curran · April 2026', time: '15:22' },
