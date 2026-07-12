@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11",
+  "generated_at": "2026-07-12",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -349,15 +349,6 @@
       "url": "https://open.substack.com/pub/charitydotwtf/p/ai-demands-more-engineering-discipline",
       "category": "ai",
       "summary": "Charity Majors argues that AI's impact on software development mirrors the shift from handcrafted server pets to immutable infrastructure in the 2010s. In 2025, the economics of code production were inverted — generating code went from expensive and slow to effectively free and instant, making lines of code disposable and regenerable rather than treasured artifacts.\n\nDrawing on Chad Fowler's Phoenix Architectures concept, she draws a parallel between immutable infrastructure principles and what AI enables for application code: when rewriting is cheap, editing in place becomes risky because mutation accumulates entropy while replacement resets it. The key insight is that code becomes precious only when it's the only place knowledge lives — and that's actually an evaluation problem, not a code problem.\n\nThe real product of engineering teams, she argues from an SRE perspective, is production — not shared understanding in developers' heads. Minds are forgetful, habituated containers that diverge from reality. AI forcing nondeterministic code into production is finally pushing teams toward observability, behavioral tests, characterization tests, and other practices that encode what systems actually do rather than what developers think they do.\n\nShe concludes that 2026 is shaping up as a return to engineering discipline after 2025's vibe coding phase. Humans should not hang their value on being quality gates — machines are better at validation. Instead, engineers should focus on creativity, architecture, and encoding intent into systems through better specifications and tests. The opportunity is to bring proper engineering values (short feedback loops, observability, immutable practices) to the mainstream of software development.",
-      "added": "2026-07-07",
-      "times_shown": 0
-    },
-    {
-      "slug": "ai-enthusiasts-are-in-a-race-against-time-ai-skeptics-are-in-a-race-against-entr",
-      "title": "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy",
-      "url": "https://charity.wtf/p/ai-enthusiasts-are-in-a-race-against",
-      "category": "ai",
-      "summary": "Charity Majors examines the widening rift between AI enthusiasts and skeptics in software teams, arguing both sides are responding to real existential threats — enthusiasts to being left behind by competitors, skeptics to systems degrading from shipping code faster than it can be understood.\n\nShe observes that the core problem is a broken feedback loop: wins and costs accrue to different groups. Enthusiasts see impressive velocity gains while downstream cleanup falls on skeptics who never asked for it. Conference talks celebrate breakthroughs without mentioning the chaos left behind. This asymmetry is structural, not malicious — wins get trumpeted in all-hands and blog posts while costs surface in SRE meetings and on-call rotations.\n\nDrawing on Fin (Intercom)'s published results — 3x'd output in 9 months with downtime down 35% and defect backlog halved — she shows what disciplined AI adoption looks like. Their success was built on pre-existing engineering discipline, fast feedback loops, and a culture of measurement, not on AI magic.\n\nHer two prescriptions: first, tell the whole story — enthusiasts should actively seek out and acknowledge downstream costs, skeptics should surface concerns in the same forums where wins are announced. Second, treat disagreements as engineering problems with concrete conditions to investigate ('What would it take for you to feel comfortable shipping code without reading it?') rather than rhetorical battles about AI's future.",
       "added": "2026-07-07",
       "times_shown": 0
     },
@@ -1049,6 +1040,16 @@
       "summary": "Majors argues AI is just technology, not uniquely evil, and that the gap between a tool's appearance and our ability to govern it is reason to engage rather than abstain. She rejects purity politics, urging tech workers to learn AI deeply and help shape the next generation of tooling.",
       "added": "2026-07-06",
       "read": "2026-07-08",
+      "has_notes": true
+    },
+    {
+      "slug": "ai-enthusiasts-are-in-a-race-against-time-ai-skeptics-are-in-a-race-against-entr",
+      "title": "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy",
+      "url": "https://charity.wtf/p/ai-enthusiasts-are-in-a-race-against",
+      "category": "ai",
+      "summary": "Charity Majors examines the widening rift between AI enthusiasts and skeptics in software teams, arguing both sides are responding to real existential threats — enthusiasts to being left behind by competitors, skeptics to systems degrading from shipping code faster than it can be understood.\n\nShe observes that the core problem is a broken feedback loop: wins and costs accrue to different groups. Enthusiasts see impressive velocity gains while downstream cleanup falls on skeptics who never asked for it. Conference talks celebrate breakthroughs without mentioning the chaos left behind. This asymmetry is structural, not malicious — wins get trumpeted in all-hands and blog posts while costs surface in SRE meetings and on-call rotations.\n\nDrawing on Fin (Intercom)'s published results — 3x'd output in 9 months with downtime down 35% and defect backlog halved — she shows what disciplined AI adoption looks like. Their success was built on pre-existing engineering discipline, fast feedback loops, and a culture of measurement, not on AI magic.\n\nHer two prescriptions: first, tell the whole story — enthusiasts should actively seek out and acknowledge downstream costs, skeptics should surface concerns in the same forums where wins are announced. Second, treat disagreements as engineering problems with concrete conditions to investigate ('What would it take for you to feel comfortable shipping code without reading it?') rather than rhetorical battles about AI's future.",
+      "added": "2026-07-07",
+      "read": "2026-07-12",
       "has_notes": true
     },
     {
