@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-11T02:00:57.021016-03:00",
+  "generated_at": "2026-07-12T02:00:38.721884-03:00",
   "week_start": "2026-07-05",
   "week_label": "July 05 - July 11, 2026",
-  "last_updated": "Saturday, July 11, 2026 at 02:00",
+  "last_updated": "Sunday, July 12, 2026 at 02:00",
   "stats": {
-    "completed": 6.7,
+    "completed": 6.583333333333333,
     "planned": 12,
-    "display": "6.7 / 12"
+    "display": "6.6 / 12"
   },
   "daily": {
     "Sunday": {
@@ -147,7 +147,7 @@
         }
       ],
       "metrics_total": "2.0km, 16min, 163bpm, 163bpm, 230kcal",
-      "comparison": "+18bpm, +18bpm, +33kcal",
+      "comparison": "",
       "done": 1,
       "total": 2
     },
