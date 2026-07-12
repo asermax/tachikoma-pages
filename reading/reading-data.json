@@ -459,6 +459,15 @@
       "summary": "Darragh Curran (CTO of Fin/Intercom) shares results from their explicit goal to 2x R&D productivity in 12 months using AI. They 3x'd output in 9 months (measured by merged PRs per R&D head). Key results: 93.6% of PRs are agent-driven, 19.2% are AI-approved (86% of those are ≤20 lines — feature flag cleanups, small fixes), downtime from breaking changes down 35%, product defect backlog shrunk 54%, code quality declining then recovering after 18 months. They built a private Claude Code plugin marketplace (267 skills, 31% of R&D contributing), dedicated a team (team-2x), and pushed for near-universal agent adoption. The approach was methodical: start with lowest-risk auto-approvals, invest in infrastructure first, maintain velocity-as-safety culture. The piece is transparent about uneven distribution of impact across the team and the upfront costs of the transition.",
       "added": "2026-07-12",
       "times_shown": 0
+    },
+    {
+      "slug": "regenerative-software",
+      "title": "Regenerative Software",
+      "url": "https://aicoding.leaflet.pub/3majnyfydzs2y",
+      "category": "engineering",
+      "summary": "Chad Fowler introduces the concept of 'regenerative software' — systems designed around the premise that code is disposable when generation is cheap. The central paradox: the most durable AI-era systems will be built from code meant to die. Rather than preserving implementations, we should preserve intent through durable interfaces, behavioral evaluations, and automation that assumes replacement is normal. He draws on parallels to immutable infrastructure: just as servers became cattle, code becomes a consumable input. The goal is immortality of intent, not immortality of code. He warns that using AI as a productivity multiplier inside old mental models works briefly but accelerates entropy — larger codebases, lower comprehension, more fragile systems. The piece is a manifesto for the Phoenix Architecture blog: pace layers, evaluations as true source code, rewriting over refactoring, and cultural comfort with deletion.",
+      "added": "2026-07-12",
+      "times_shown": 0
     }
   ],
   "archive": [
