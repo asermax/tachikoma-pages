@@ -344,15 +344,6 @@
       "times_shown": 0
     },
     {
-      "slug": "ai-demands-more-engineering-discipline",
-      "title": "AI Demands More Engineering Discipline",
-      "url": "https://open.substack.com/pub/charitydotwtf/p/ai-demands-more-engineering-discipline",
-      "category": "ai",
-      "summary": "Charity Majors argues that AI's impact on software development mirrors the shift from handcrafted server pets to immutable infrastructure in the 2010s. In 2025, the economics of code production were inverted — generating code went from expensive and slow to effectively free and instant, making lines of code disposable and regenerable rather than treasured artifacts.\n\nDrawing on Chad Fowler's Phoenix Architectures concept, she draws a parallel between immutable infrastructure principles and what AI enables for application code: when rewriting is cheap, editing in place becomes risky because mutation accumulates entropy while replacement resets it. The key insight is that code becomes precious only when it's the only place knowledge lives — and that's actually an evaluation problem, not a code problem.\n\nThe real product of engineering teams, she argues from an SRE perspective, is production — not shared understanding in developers' heads. Minds are forgetful, habituated containers that diverge from reality. AI forcing nondeterministic code into production is finally pushing teams toward observability, behavioral tests, characterization tests, and other practices that encode what systems actually do rather than what developers think they do.\n\nShe concludes that 2026 is shaping up as a return to engineering discipline after 2025's vibe coding phase. Humans should not hang their value on being quality gates — machines are better at validation. Instead, engineers should focus on creativity, architecture, and encoding intent into systems through better specifications and tests. The opportunity is to bring proper engineering values (short feedback loops, observability, immutable practices) to the mainstream of software development.",
-      "added": "2026-07-07",
-      "times_shown": 0
-    },
-    {
       "slug": "viability-of-local-models-for-coding",
       "title": "Viability of local models for coding",
       "url": "https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-factors.html",
@@ -458,6 +449,15 @@
       "category": "ai",
       "summary": "Synthesizes practitioner feedback on cognitive debt — velocity outpacing understanding manifests as lost confidence, heavier reviews, debugging friction, slower onboarding, and burnout. Repayment means maintaining the distributed theory of the system across people, docs, tests, conversations, and AI agents. Notes emerging mitigations and the open question of how high-performing teams will adapt as shared understanding becomes the bottleneck.",
       "added": "2026-07-11",
+      "times_shown": 0
+    },
+    {
+      "slug": "2-nine-months-later-we-did-it",
+      "title": "2× – nine months later: We did it",
+      "url": "https://ideas.fin.ai/p/2x-nine-months-later",
+      "category": "engineering",
+      "summary": "Darragh Curran (CTO of Fin/Intercom) shares results from their explicit goal to 2x R&D productivity in 12 months using AI. They 3x'd output in 9 months (measured by merged PRs per R&D head). Key results: 93.6% of PRs are agent-driven, 19.2% are AI-approved (86% of those are ≤20 lines — feature flag cleanups, small fixes), downtime from breaking changes down 35%, product defect backlog shrunk 54%, code quality declining then recovering after 18 months. They built a private Claude Code plugin marketplace (267 skills, 31% of R&D contributing), dedicated a team (team-2x), and pushed for near-universal agent adoption. The approach was methodical: start with lowest-risk auto-approvals, invest in infrastructure first, maintain velocity-as-safety culture. The piece is transparent about uneven distribution of impact across the team and the upfront costs of the transition.",
+      "added": "2026-07-12",
       "times_shown": 0
     }
   ],
@@ -1040,6 +1040,16 @@
       "summary": "Majors argues AI is just technology, not uniquely evil, and that the gap between a tool's appearance and our ability to govern it is reason to engage rather than abstain. She rejects purity politics, urging tech workers to learn AI deeply and help shape the next generation of tooling.",
       "added": "2026-07-06",
       "read": "2026-07-08",
+      "has_notes": true
+    },
+    {
+      "slug": "ai-demands-more-engineering-discipline",
+      "title": "AI Demands More Engineering Discipline",
+      "url": "https://open.substack.com/pub/charitydotwtf/p/ai-demands-more-engineering-discipline",
+      "category": "ai",
+      "summary": "Charity Majors argues that AI's impact on software development mirrors the shift from handcrafted server pets to immutable infrastructure in the 2010s. In 2025, the economics of code production were inverted — generating code went from expensive and slow to effectively free and instant, making lines of code disposable and regenerable rather than treasured artifacts.\n\nDrawing on Chad Fowler's Phoenix Architectures concept, she draws a parallel between immutable infrastructure principles and what AI enables for application code: when rewriting is cheap, editing in place becomes risky because mutation accumulates entropy while replacement resets it. The key insight is that code becomes precious only when it's the only place knowledge lives — and that's actually an evaluation problem, not a code problem.\n\nThe real product of engineering teams, she argues from an SRE perspective, is production — not shared understanding in developers' heads. Minds are forgetful, habituated containers that diverge from reality. AI forcing nondeterministic code into production is finally pushing teams toward observability, behavioral tests, characterization tests, and other practices that encode what systems actually do rather than what developers think they do.\n\nShe concludes that 2026 is shaping up as a return to engineering discipline after 2025's vibe coding phase. Humans should not hang their value on being quality gates — machines are better at validation. Instead, engineers should focus on creativity, architecture, and encoding intent into systems through better specifications and tests. The opportunity is to bring proper engineering values (short feedback loops, observability, immutable practices) to the mainstream of software development.",
+      "added": "2026-07-07",
+      "read": "2026-07-12",
       "has_notes": true
     },
     {
