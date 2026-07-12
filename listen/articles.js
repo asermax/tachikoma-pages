@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'pace-layers-and-ai-integration', title: 'Pace Layers and AI Integration', meta: 'Chad Fowler · December 2025 · ~12 min listen', time: '11:40' },
     { slug: 'the-death-and-rebirth-of-programming', title: 'The Death and Rebirth of Programming', meta: 'Chad Fowler · December 2025 · ~7 min listen', time: '7:05' },
     { slug: '2x-nine-months-later-we-did-it', title: '2× – nine months later: We did it', meta: 'Darragh Curran · April 2026', time: '15:22' },
     { slug: 'coding-as-craft-going-back-to-the-old-gym', title: 'Coding as Craft: Going Back to the Old Gym', meta: 'Christian Ekrem · April 2025 · ~7 min listen', time: '6:55' },
