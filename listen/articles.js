@@ -1,5 +1,4 @@
 const ARTICLES = [
-    { slug: 'regenerative-software', title: 'Regenerative Software', meta: 'Chad Fowler · December 2025 · ~6 min listen', time: '6:18' },
     { slug: '2x-nine-months-later-we-did-it', title: '2× – nine months later: We did it', meta: 'Darragh Curran · April 2026', time: '15:22' },
     { slug: 'coding-as-craft-going-back-to-the-old-gym', title: 'Coding as Craft: Going Back to the Old Gym', meta: 'Christian Ekrem · April 2025 · ~7 min listen', time: '6:55' },
     { slug: 'own-the-outer-loop', title: 'Own the Outer Loop', meta: 'Addy Osmani · July 2026 · ~2 min listen', time: '2:02' },
