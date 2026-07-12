@@ -1,98 +1,7 @@
 {
-  "week": "2026-W27",
+  "week": "2026-W28",
   "days": {
     "Monday": {
-      "location": "Home - Dumbbells",
-      "exercises": [
-        {
-          "name": "Dumbbell reverse lunges",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "10",
-          "unit": "",
-          "weight": "10 kg"
-        },
-        {
-          "name": "Dumbbell reverse flyes",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "12",
-          "unit": "",
-          "weight": "5 kg"
-        },
-        {
-          "name": "Knee push-ups",
-          "detail": "wide",
-          "sets": 3,
-          "type": "reps",
-          "target": "15",
-          "unit": "",
-          "weight": null
-        },
-        {
-          "name": "Dead bug",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "20",
-          "unit": "",
-          "weight": null
-        },
-        {
-          "name": "Plank",
-          "detail": null,
-          "sets": 3,
-          "type": "time",
-          "target": "30",
-          "unit": "s",
-          "weight": null
-        }
-      ]
-    },
-    "Tuesday": {
-      "location": "Climbing Gym - Bar",
-      "exercises": [
-        {
-          "name": "Chin-ups",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "4",
-          "unit": "",
-          "weight": null
-        },
-        {
-          "name": "Hanging knee raises",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "10",
-          "unit": "",
-          "weight": null
-        },
-        {
-          "name": "Knee push-ups",
-          "detail": "diamond",
-          "sets": 3,
-          "type": "reps",
-          "target": "12",
-          "unit": "",
-          "weight": null
-        },
-        {
-          "name": "Scapular pulls",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "6",
-          "unit": "",
-          "weight": null
-        }
-      ]
-    },
-    "Wednesday": {
       "location": "Home - Dumbbells",
       "exercises": [
         {
@@ -133,6 +42,47 @@
         },
         {
           "name": "\"No-money\" external rotations",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "10",
+          "unit": "",
+          "weight": null
+        }
+      ]
+    },
+    "Tuesday": {
+      "location": "Climbing Gym - Bar",
+      "exercises": [
+        {
+          "name": "Chin-ups",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "4",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Hanging knee raises",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "10",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Knee push-ups",
+          "detail": "diamond",
+          "sets": 3,
+          "type": "reps",
+          "target": "12",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Scapular pulls",
           "detail": null,
           "sets": 3,
           "type": "reps",
@@ -209,22 +159,22 @@
           "weight": "10 kg"
         },
         {
-          "name": "Knee push-ups",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "15",
-          "unit": "",
-          "weight": null
-        },
-        {
-          "name": "Dumbbell rows",
+          "name": "Dumbbell overhead press",
           "detail": null,
           "sets": 3,
           "type": "reps",
           "target": "10",
           "unit": "",
-          "weight": "10 kg"
+          "weight": "6 kg"
+        },
+        {
+          "name": "Dumbbell reverse flyes",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "12",
+          "unit": "",
+          "weight": "5 kg"
         },
         {
           "name": "Side plank",
