@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'control-the-ideas-not-the-code', title: 'Control the ideas, not the code', meta: 'Salvatore Sanfilippo (antirez) · July 2025 · ~8 min listen', time: '7:36' },
     { slug: 'old-and-new-apps-via-modern-coding-agents', title: 'Old and new apps, via modern coding agents', meta: 'Terence Tao · July 2026', time: '3:56' },
     { slug: 'pace-layers-and-ai-integration', title: 'Pace Layers and AI Integration', meta: 'Chad Fowler · December 2025 · ~12 min listen', time: '11:40' },
     { slug: 'the-death-and-rebirth-of-programming', title: 'The Death and Rebirth of Programming', meta: 'Chad Fowler · December 2025 · ~7 min listen', time: '7:05' },
