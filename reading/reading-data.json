@@ -125,7 +125,7 @@
       "category": "engineering",
       "summary": "Andrew Quinn describes replacing a 3 GB SQLite database with a 10 MB finite state transducer (FST) binary in his Finnish-English dictionary app Taskusanakirja, achieving a roughly 300x reduction in size. The original Go version used a trie for prefix search, which worked for base words but couldn't scale to Finnish's 40-60 million inflected forms. After rewriting in Rust and discovering BurntSushi's fst crate, he found FSTs compress both prefixes and suffixes — making them ideal for agglutinative languages where a handful of inflectional suffixes repeat across tens of thousands of words. The key lesson: shipping the 'bad easy thing' first made it cheap to experiment and discover the far better solution later.",
       "added": "2026-05-10",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "httpsopensubstackcompubpragmaticengineerprevisiting-no-silver-bullets-in-theutm",
@@ -269,7 +269,7 @@
       "category": "ai",
       "summary": "David Curlewis argues that the AI industry has regressed to using volume-based metrics -- like percentage of code written by AI and raw line counts -- to measure engineering productivity, despite the software industry spending two decades learning that such metrics are meaningless. He points to recent claims from Google (75% AI-generated code), Anthropic (~80% Claude-written code, 8x more code shipped), OpenAI (~80%), and Cursor (100M+ lines/day) as repackaged lines-of-code vanity metrics that only track adoption, not outcomes.\n\nCurlewis contrasts these with earlier outcome-based claims, such as GitHub's original finding that Copilot helped developers complete tasks 55% faster. He traces the shift to volume metrics to the fact that outcome evidence became complicated: while Cui et al. found a 26% task completion boost, GitClear observed rising code churn, and organizational-level surveys show roughly 10% productivity gains on average -- useful but far from transformative. He highlights Anthropic's own RCT showing AI-assisted developers scored 17% lower on code comprehension with no significant productivity gain.\n\nThe article's core concern is real-world impact: these vanity metrics are influencing budgets, headcount decisions, and layoffs at companies like Block and Atlassian. Curlewis advocates measuring AI-assisted engineering with battle-tested outcome metrics -- DORA metrics, reliability, rate of meaningful change, revenue, and customer value -- rather than adoption intensity dressed up as maturity.",
       "added": "2026-06-13",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "httpsxcomaddyosmanistatus2066595308629594363",
@@ -278,7 +278,7 @@
       "category": "ai",
       "summary": "Addy Osmani's deep dive on how code review became the bottleneck in agentic engineering. Key data: 4x code output for ~10% more value (GitClear), churn up 861%, zero-review merges up 31% (Faros). Argues review shifted from checking reasoning to reconstructing missing intent. Recommends: tier review by blast radius not author, run multiple heterogeneous AI reviewers (they catch different bugs with near-zero overlap), require intent statements before review, and treat AI review as sensor data not verdicts. Human moves from reading every diff to owning accountability and sampling.",
       "added": "2026-06-15",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "why-ai-hasnt-replaced-software-engineers-and-wont",
@@ -467,6 +467,15 @@
       "category": "engineering",
       "summary": "Chad Fowler argues that programming's core constraint dissolved when AI made code abundant. The center of gravity shifted from writing code to understanding/verifying it. Introduces the shift from code ownership to system stewardship, n=1 development as an indicator species, and the psychological shock of losing craftsman identity. The asset is no longer the codebase but the system's ability to keep working.",
       "added": "2026-07-12",
+      "times_shown": 0
+    },
+    {
+      "slug": "control-the-ideas-not-the-code",
+      "title": "Control the ideas, not the code",
+      "url": "http://antirez.com/news/169",
+      "category": "ai",
+      "summary": "In this essay, antirez (Salvatore Sanfilippo, creator of Redis) argues that programmers should stop treating line-by-line code review of AI-generated output as a core responsibility. He offers three main reasons: the sheer volume of AI code makes comprehensive review impractical; LLMs excel at local code but are weaker at design, so review should focus on big-picture design and mental models; and hours spent reviewing steals time from thinking about direction, features, optimization, and thorough QA. He advocates for rigorous design plus testing aided by AI, writing DESIGN.md files for future maintainers, and investing in QA. His sole reservation is for junior programmers who should still learn fundamentals.",
+      "added": "2026-07-13",
       "times_shown": 0
     },
     {
