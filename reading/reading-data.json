@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12",
+  "generated_at": "2026-07-13",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -71,7 +71,7 @@
       "category": "engineering",
       "summary": "Lalit Maganti's experience building syntaqlite — high-fidelity SQLite developer tools (formatter, linter, language server) — using AI coding agents across ~250 hours. Two phases: first month of vibe-coding produced a functional but unmaintainable prototype requiring total rewrite; second phase using Rust + disciplined AI-as-autocomplete yielded the 0.1 release. Key framework: AI excels at overcoming procrastination, obvious code generation, teaching unfamiliar domains, and shipping last-mile features. Costs include addictive feedback loops, erosion of mental models, and deferred hard design decisions. Core insight: AI is excellent for tasks with verifiable answers but poor for tasks requiring taste and judgment (architecture, API design).",
       "added": "2026-04-06",
-      "times_shown": 3
+      "times_shown": 0
     },
     {
       "slug": "httpsopensubstackcompubsebastianraschkapcomponents-of-a-coding-agentutm-sourcesh",
@@ -107,7 +107,7 @@
       "category": "ai",
       "summary": "Same author as Encoding Team Standards (Rahul Garg, Martin Fowler series). Argues teams plateau with AI tools because individual learnings never become shared practice. Framework: 4 signal types (context gaps, instruction patterns, workflow discoveries, failures with root causes) mapped to 4 cadences (after-session reflection, daily stand-up, sprint retro, quarterly audit). Metrics that matter: first-pass acceptance rate, iteration cycles, post-merge rework — not lines generated. Key insight: the other practices in the series are passive surfaces; the flywheel is what makes them compound over time. Treat shared AI artifacts like dependencies — maintain them or they become liabilities.",
       "added": "2026-04-14",
-      "times_shown": 7
+      "times_shown": 0
     },
     {
       "slug": "httpswalkinglabsgithubiolearn-harness-engineeringen",
@@ -143,7 +143,7 @@
       "category": "ai",
       "summary": "Introduces Structured-Prompt-Driven Development (SPDD), a method that treats AI prompts as first-class delivery artifacts — version-controlled, reviewed, and reusable. Built around the REASONS Canvas (Requirements, Entities, Approach, Structure, Operations, Norms, Safeguards) and a six-step workflow that brings prompts into the same discipline as code. Developed by Thoughtworks to address the gap between individual AI speed and system-level throughput. Includes a worked billing engine example, core skill identification (abstraction-first, alignment, iterative review), and fitness assessment for where SPDD pays off vs. falls short.",
       "added": "2026-05-15",
-      "times_shown": 10
+      "times_shown": 0
     },
     {
       "slug": "httpsxcomistatus2058014104854626490",
@@ -152,7 +152,7 @@
       "category": "ai",
       "summary": "Nate Berkopec reflects on the state of LLMs ~5 months after Opus 4.5. He's fully transitioned to coding via LLMs, argues 'intelligence' is the wrong lens — LLMs have 'jagged intelligence' that grows more jagged. Identifies 4 characteristics of successful LLM workflows: verifiable output, brute-force loops, repetitive drudgery targets, rapid prototypes. Key insight: LLMs are 'compressed information stores' with lossy decompression; real opportunity is 'making the thing which makes the thing.'",
       "added": "2026-05-24",
-      "times_shown": 6
+      "times_shown": 0
     },
     {
       "slug": "my-ai-adoption-journey",
@@ -161,7 +161,7 @@
       "category": "ai",
       "summary": "Mitchell Hashimoto (co-founder of HashiCorp) shares his personal, six-step journey of gradually adopting AI coding agents, emphasizing that he forced himself through initial inefficiency to reach genuine productivity gains. He starts by urging developers to stop using chatbot interfaces for coding and instead adopt agentic tools (like Claude Code) that can read files, execute programs, and make HTTP requests in a loop.\n\nHis early approach was disciplined: he literally duplicated his manual commits by fighting agents to reproduce the same results, which built expertise from first principles. Key lessons included breaking work into small, clear tasks; separating planning from execution sessions; and giving agents ways to verify their own work. A notable tactic was blocking the last 30 minutes of each day to spin up agents for deep research, parallel exploration of vague ideas, and issue triage -- giving him a 'warm start' each morning.\n\nThe real inflection came when he began outsourcing high-confidence tasks to agents while simultaneously doing his own deep work, turning off agent notifications to avoid context-switching costs. He introduces the concept of 'harness engineering' -- systematically building safeguards (AGENTS.md files, custom scripts) so that whenever an agent makes a mistake, you engineer a solution to prevent it from recurring. His current goal is to always have an agent running, though he estimates he only achieves this 10-20% of the workday.\n\nThe piece is notably measured and hype-free. Hashimoto has no financial stake in AI companies, explicitly acknowledges concerns about skill formation (especially for junior developers), and frames the whole journey as simply a craftsman trying to build things more effectively. The core takeaway is that AI adoption requires deliberate, uncomfortable practice and structural workflow changes -- it does not deliver value through a chatbot alone.",
       "added": "2026-05-30",
-      "times_shown": 4
+      "times_shown": 0
     },
     {
       "slug": "addy-osmani-tweet-2059844244907696186",
@@ -170,7 +170,7 @@
       "category": "ai",
       "summary": "Addy Osmani argues that spawning multiple AI agents creates an 'orchestration tax' — starting agents is cheap, but reviewing, reconciling, and merging their output routes through you as a single serial bottleneck, like the GIL in Python. The key insight is that you must architect your attention as a scarce serial resource rather than optimizing the part that was never the constraint.",
       "added": "2026-05-31",
-      "times_shown": 2
+      "times_shown": 0
     },
     {
       "slug": "arxiv-260506445v1",
@@ -179,7 +179,7 @@
       "category": "ai",
       "summary": "This paper introduces 'constraint decay,' showing that LLM coding agents perform well on unconstrained backend generation but degrade substantially — losing an average of 30 percentage points in assertion pass rates — when forced to adhere to structural requirements like Clean Architecture patterns, specific databases, and ORM integration across eight web frameworks.",
       "added": "2026-05-31",
-      "times_shown": 3
+      "times_shown": 0
     },
     {
       "slug": "could-a-large-language-model-be-conscious",
@@ -188,7 +188,7 @@
       "category": "ai",
       "summary": "Philosopher David Chalmers examines the evidence for and against consciousness in large language models, concluding that current LLMs probably are not conscious but that extended multimodal LLM+ systems may become serious candidates for consciousness within a decade. He outlines a research program of engineering challenges and emphasizes the profound ethical stakes of potentially creating conscious AI.",
       "added": "2026-05-31",
-      "times_shown": 3
+      "times_shown": 0
     },
     {
       "slug": "hexednobility-tweet-2059974055294316574",
@@ -197,7 +197,7 @@
       "category": "ai",
       "summary": "A practical framework for effective LLM use built around a three-step loop: outline (define what you want clearly), fill (let the model complete the bounded task), and refine (verify and polish the output). The argument is that skill with LLMs resides not in model selection or tooling, but in the human ability to structure work and critically evaluate results.",
       "added": "2026-05-31",
-      "times_shown": 1
+      "times_shown": 0
     },
     {
       "slug": "japanese-verb-conjugation-the-simple-hard-way",
@@ -206,7 +206,7 @@
       "category": "japanese",
       "summary": "A unified stem-plus-suffix model for Japanese verb conjugation that replaces memorization-heavy group tables. Every verb has a stem (like tabe or nom*) and you append suffixes to it, with a wildcard vowel concept where stems ending with * absorb the suffix's secret vowel. Covers five rules for all basic conjugations including sound collapses for past forms, and extends elegantly to dictionary, conditional, and causative forms using secret consonants that disappear on wildcards.",
       "added": "2026-06-02",
-      "times_shown": 1
+      "times_shown": 0
     },
     {
       "slug": "physics-as-a-game-loop",
@@ -215,7 +215,7 @@
       "category": "physics",
       "summary": "The article reimagines classical physics as reverse-engineering the game loop of the universe, using JavaScript pseudocode to express physical laws as update functions that evolve state over time. It progresses from Newtonian mechanics through wave physics to Maxwell's equations, showing how electric and magnetic fields locked in mutual transformation via curl produce light. Closes with a quantum mechanics teaser — the double-slit experiment with single electrons producing interference patterns, raising the question 'where are the waves?'",
       "added": "2026-06-02",
-      "times_shown": 1
+      "times_shown": 0
     },
     {
       "slug": "communities-of-not",
@@ -398,24 +398,6 @@
       "times_shown": 0
     },
     {
-      "slug": "httpscekremgithubiopostscoding-as-craft-going-back-to-the-old-gym",
-      "title": "Untitled",
-      "url": "https://cekrem.github.io/posts/coding-as-craft-going-back-to-the-old-gym/",
-      "category": "engineering",
-      "summary": "Argues against 'reflexive AI usage' in coding, drawing a parallel to Rocky III's 'back to the old gym' metaphor. The author advocates for intentional collaboration with AI — using it for boring parts while preserving cognitive struggle for the craft of programming. The 'aha' moments from wrestling with hard problems create permanent growth that AI-generated solutions can't replicate.",
-      "added": "2026-07-11",
-      "times_shown": 0
-    },
-    {
-      "slug": "programming-as-theory-building-part-ii",
-      "title": "Programming as Theory Building Part II",
-      "url": "https://cekrem.github.io/posts/programming-as-theory-building-part-ii/",
-      "category": "engineering",
-      "summary": "This article, the second in a series by Christian Ekrem, extends Naur's \"Programming as Theory Building\" thesis to the institutional level. Ekrem draws on Hartzog and Silbey's \"How AI Destroys Institutions\" paper, mapping three destructive affordances of AI onto software teams. First, AI undermines expertise: juniors bypass mentoring pipelines by accepting uncomprehended AI output, never building theory. Second, AI short-circuits decision-making: AI-generated code arrives in a \"theoretical vacuum\" with no ownership, no PR discussion, importing architectural decisions nobody made—productive friction of code reviews is lost. Third, AI isolates humans: it displaces pairing and questions with a sycophantic alternative, eroding institutional trust. Ekrem endorses constrained AI use where \"the human sets the theory, and the AI executes within it\"—boilerplate, test scaffolding within established patterns. The article closes warning that teams fully embracing reflexive AI usage will find expertise pipelines broken, decision-making hollowed, and connections atrophied—code remaining that nobody understands, with no institutions left to produce the senior developers eventually needed again.",
-      "added": "2026-07-11",
-      "times_shown": 0
-    },
-    {
       "slug": "the-missing-stop-sign",
       "title": "The Missing Stop Sign",
       "url": "https://margaretstorey.com/blog/2026/06/09/missing-stop-sign/",
@@ -461,12 +443,39 @@
       "times_shown": 0
     },
     {
-      "slug": "regenerative-software",
-      "title": "Regenerative Software",
-      "url": "https://aicoding.leaflet.pub/3majnyfydzs2y",
+      "slug": "pace-layers-and-ai-integration",
+      "title": "Pace Layers and AI Integration",
+      "url": "https://aicoding.leaflet.pub/3maob46kbz22v",
       "category": "engineering",
-      "summary": "Chad Fowler introduces the concept of 'regenerative software' — systems designed around the premise that code is disposable when generation is cheap. The central paradox: the most durable AI-era systems will be built from code meant to die. Rather than preserving implementations, we should preserve intent through durable interfaces, behavioral evaluations, and automation that assumes replacement is normal. He draws on parallels to immutable infrastructure: just as servers became cattle, code becomes a consumable input. The goal is immortality of intent, not immortality of code. He warns that using AI as a productivity multiplier inside old mental models works briefly but accelerates entropy — larger codebases, lower comprehension, more fragile systems. The piece is a manifesto for the Phoenix Architecture blog: pace layers, evaluations as true source code, rewriting over refactoring, and cultural comfort with deletion.",
+      "summary": "Chad Fowler applies Stewart Brand's pace layers to AI-era software. Different layers should change at different speeds — fast layers (UI, glue code) benefit from aggressive regeneration; slow layers (infrastructure, data models, security) need strict constraints. The hard problem is finding the actual layers — AI will expose false bottoms (code that was hard to change due to poor factoring, not genuine importance). Architecture must encode layer boundaries explicitly.",
       "added": "2026-07-12",
+      "times_shown": 0
+    },
+    {
+      "slug": "prompt-caching-10x-cheaper-llm-tokens-but-how",
+      "title": "Prompt caching: 10x cheaper LLM tokens, but how?",
+      "url": "https://ngrok.com/blog/prompt-caching",
+      "category": "engineering",
+      "summary": "Deep explainer on what prompt caching actually caches: the K and V matrices from the transformer attention mechanism. Walks through tokenization, embeddings, and attention step-by-step with matrix math to show that during inference, previous tokens' K and V matrices are recomputed unnecessarily. KV caching stores these between requests so only the new token's matrices need computing. Anthropic offers explicit cache control (100% hit rate); OpenAI auto-caches (~50% hit rate). Caching unaffected by temperature/top_p since those affect token selection after attention. Author: Sam Rose.",
+      "added": "2026-07-12",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-death-and-rebirth-of-programming",
+      "title": "The Death and Rebirth of Programming",
+      "url": "https://aicoding.leaflet.pub/3malrv6poy22a",
+      "category": "engineering",
+      "summary": "Chad Fowler argues that programming's core constraint dissolved when AI made code abundant. The center of gravity shifted from writing code to understanding/verifying it. Introduces the shift from code ownership to system stewardship, n=1 development as an indicator species, and the psychological shock of losing craftsman identity. The asset is no longer the codebase but the system's ability to keep working.",
+      "added": "2026-07-12",
+      "times_shown": 0
+    },
+    {
+      "slug": "old-and-new-apps-via-modern-coding-agents",
+      "title": "Old and new apps, via modern coding agents",
+      "url": "https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/",
+      "category": "engineering",
+      "summary": "Terence Tao ports his 25-year-old Java 1.0 math applets to JavaScript using AI coding agents in a matter of hours — all now functional with graphical upgrades. Also builds new apps: a special relativity visualization he'd abandoned in 1999, and a Gilbreath conjecture tool for a recent paper. Notes that agents found 2 bugs in original code vs 1 minor bug introduced. Key takeaway: domain expertise and high-level design decisions remain essential; agents automate low-level syntax and implementation. Language/spec precision matters less now that porting friction is near zero. Plans to add interactive visualizations as supplements for future papers.",
+      "added": "2026-07-13",
       "times_shown": 0
     }
   ],
@@ -1102,6 +1111,16 @@
       "has_notes": true
     },
     {
+      "slug": "httpscekremgithubiopostscoding-as-craft-going-back-to-the-old-gym",
+      "title": "Untitled",
+      "url": "https://cekrem.github.io/posts/coding-as-craft-going-back-to-the-old-gym/",
+      "category": "engineering",
+      "summary": "Argues against 'reflexive AI usage' in coding, drawing a parallel to Rocky III's 'back to the old gym' metaphor. The author advocates for intentional collaboration with AI — using it for boring parts while preserving cognitive struggle for the craft of programming. The 'aha' moments from wrestling with hard problems create permanent growth that AI-generated solutions can't replicate.",
+      "added": "2026-07-11",
+      "read": "2026-07-12",
+      "has_notes": false
+    },
+    {
       "slug": "programming-as-theory-building-naur",
       "title": "Programming as Theory Building (Naur)",
       "url": "https://cekrem.github.io/posts/programming-as-theory-building-naur/",
@@ -1110,6 +1129,36 @@
       "added": "2026-07-11",
       "read": "2026-07-11",
       "has_notes": false
+    },
+    {
+      "slug": "programming-as-theory-building-part-ii",
+      "title": "Programming as Theory Building Part II",
+      "url": "https://cekrem.github.io/posts/programming-as-theory-building-part-ii/",
+      "category": "engineering",
+      "summary": "This article, the second in a series by Christian Ekrem, extends Naur's \"Programming as Theory Building\" thesis to the institutional level. Ekrem draws on Hartzog and Silbey's \"How AI Destroys Institutions\" paper, mapping three destructive affordances of AI onto software teams. First, AI undermines expertise: juniors bypass mentoring pipelines by accepting uncomprehended AI output, never building theory. Second, AI short-circuits decision-making: AI-generated code arrives in a \"theoretical vacuum\" with no ownership, no PR discussion, importing architectural decisions nobody made—productive friction of code reviews is lost. Third, AI isolates humans: it displaces pairing and questions with a sycophantic alternative, eroding institutional trust. Ekrem endorses constrained AI use where \"the human sets the theory, and the AI executes within it\"—boilerplate, test scaffolding within established patterns. The article closes warning that teams fully embracing reflexive AI usage will find expertise pipelines broken, decision-making hollowed, and connections atrophied—code remaining that nobody understands, with no institutions left to produce the senior developers eventually needed again.",
+      "added": "2026-07-11",
+      "read": "2026-07-12",
+      "has_notes": true
+    },
+    {
+      "slug": "regenerative-software",
+      "title": "Regenerative Software",
+      "url": "https://aicoding.leaflet.pub/3majnyfydzs2y",
+      "category": "engineering",
+      "summary": "Chad Fowler introduces the concept of 'regenerative software' — systems designed around the premise that code is disposable when generation is cheap. The central paradox: the most durable AI-era systems will be built from code meant to die. Rather than preserving implementations, we should preserve intent through durable interfaces, behavioral evaluations, and automation that assumes replacement is normal. He draws on parallels to immutable infrastructure: just as servers became cattle, code becomes a consumable input. The goal is immortality of intent, not immortality of code. He warns that using AI as a productivity multiplier inside old mental models works briefly but accelerates entropy — larger codebases, lower comprehension, more fragile systems. The piece is a manifesto for the Phoenix Architecture blog: pace layers, evaluations as true source code, rewriting over refactoring, and cultural comfort with deletion.",
+      "added": "2026-07-12",
+      "read": "2026-07-12",
+      "has_notes": true
+    },
+    {
+      "slug": "the-reverse-information-paradox",
+      "title": "The Reverse Information Paradox",
+      "url": "https://x.com/satyanadella/status/2076323181154230284",
+      "category": "ai-industry",
+      "summary": "Satya Nadella argues AI inverts Arrow's information paradox: buyers give away proprietary knowledge (prompts, corrections, evals, institutional context) to make AI products useful, while model providers learn continuously from customer 'exhaust.' He calls for every enterprise to establish a hard trust boundary protecting their learning loop, built on five principles: Control (own evals/traces), Capability (proprietary tuning environments), Choice (decouple orchestration from any single model), Cost (optimize efficiently), and Compound (self-reinforcing learning loop). In the cloud era firms accumulated data; in the AI era they accumulate learning — and must own it.",
+      "added": "2026-07-13",
+      "read": "2026-07-13",
+      "has_notes": true
     }
   ]
 }
