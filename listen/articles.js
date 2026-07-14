@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'the-tower-keeps-rising', title: 'The Tower Keeps Rising', meta: 'Armin Ronacher · July 2026 · ~4 min listen', time: '4:26' },
     { slug: 'old-and-new-apps-via-modern-coding-agents', title: 'Old and new apps, via modern coding agents', meta: 'Terence Tao · July 2026', time: '3:56' },
     { slug: 'pace-layers-and-ai-integration', title: 'Pace Layers and AI Integration', meta: 'Chad Fowler · December 2025 · ~12 min listen', time: '11:40' },
     { slug: 'the-death-and-rebirth-of-programming', title: 'The Death and Rebirth of Programming', meta: 'Chad Fowler · December 2025 · ~7 min listen', time: '7:05' },
