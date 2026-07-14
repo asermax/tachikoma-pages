@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13",
+  "generated_at": "2026-07-14",
   "queue": [
     {
       "slug": "harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan",
@@ -1660,6 +1660,17 @@
       "added": "2026-07-11",
       "watched": "2026-07-11",
       "has_notes": true
+    },
+    {
+      "slug": "in-code-they-act-in-proof-we-trust-erik-meijer-leibniz-labs",
+      "title": "In Code They Act, In Proof We Trust \u2014 Erik Meijer, Leibniz Labs",
+      "url": "https://www.youtube.com/watch?v=-CnA2lGfymY",
+      "video_id": "-CnA2lGfymY",
+      "channel": "AI Engineer",
+      "summary": "Erik Meijer explores the risks of autonomous AI agents and proposes using formal verification and type systems (Lean, Dafny) to make AI provably safe. He argues traditional alignment methods are insufficient because AI models can't distinguish code from text, leaving them vulnerable to prompt injection. He demonstrates how mathematical constraints and type-based proof systems can construct a secure 'harness' for AI agents. Relevant for AI engineers and anyone interested in formal methods for AI safety.",
+      "added": "2026-07-14",
+      "watched": "2026-07-14",
+      "has_notes": false
     }
   ]
 }
