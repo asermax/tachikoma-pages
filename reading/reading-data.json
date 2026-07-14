@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13",
+  "generated_at": "2026-07-14",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -467,15 +467,6 @@
       "category": "engineering",
       "summary": "Chad Fowler argues that programming's core constraint dissolved when AI made code abundant. The center of gravity shifted from writing code to understanding/verifying it. Introduces the shift from code ownership to system stewardship, n=1 development as an indicator species, and the psychological shock of losing craftsman identity. The asset is no longer the codebase but the system's ability to keep working.",
       "added": "2026-07-12",
-      "times_shown": 0
-    },
-    {
-      "slug": "control-the-ideas-not-the-code",
-      "title": "Control the ideas, not the code",
-      "url": "http://antirez.com/news/169",
-      "category": "ai",
-      "summary": "In this essay, antirez (Salvatore Sanfilippo, creator of Redis) argues that programmers should stop treating line-by-line code review of AI-generated output as a core responsibility. He offers three main reasons: the sheer volume of AI code makes comprehensive review impractical; LLMs excel at local code but are weaker at design, so review should focus on big-picture design and mental models; and hours spent reviewing steals time from thinking about direction, features, optimization, and thorough QA. He advocates for rigorous design plus testing aided by AI, writing DESIGN.md files for future maintainers, and investing in QA. His sole reservation is for junior programmers who should still learn fundamentals.",
-      "added": "2026-07-13",
       "times_shown": 0
     },
     {
@@ -1157,6 +1148,16 @@
       "summary": "Chad Fowler introduces the concept of 'regenerative software' — systems designed around the premise that code is disposable when generation is cheap. The central paradox: the most durable AI-era systems will be built from code meant to die. Rather than preserving implementations, we should preserve intent through durable interfaces, behavioral evaluations, and automation that assumes replacement is normal. He draws on parallels to immutable infrastructure: just as servers became cattle, code becomes a consumable input. The goal is immortality of intent, not immortality of code. He warns that using AI as a productivity multiplier inside old mental models works briefly but accelerates entropy — larger codebases, lower comprehension, more fragile systems. The piece is a manifesto for the Phoenix Architecture blog: pace layers, evaluations as true source code, rewriting over refactoring, and cultural comfort with deletion.",
       "added": "2026-07-12",
       "read": "2026-07-12",
+      "has_notes": true
+    },
+    {
+      "slug": "control-the-ideas-not-the-code",
+      "title": "Control the ideas, not the code",
+      "url": "http://antirez.com/news/169",
+      "category": "ai",
+      "summary": "In this essay, antirez (Salvatore Sanfilippo, creator of Redis) argues that programmers should stop treating line-by-line code review of AI-generated output as a core responsibility. He offers three main reasons: the sheer volume of AI code makes comprehensive review impractical; LLMs excel at local code but are weaker at design, so review should focus on big-picture design and mental models; and hours spent reviewing steals time from thinking about direction, features, optimization, and thorough QA. He advocates for rigorous design plus testing aided by AI, writing DESIGN.md files for future maintainers, and investing in QA. His sole reservation is for junior programmers who should still learn fundamentals.",
+      "added": "2026-07-13",
+      "read": "2026-07-14",
       "has_notes": true
     },
     {
