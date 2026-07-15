@@ -1370,6 +1370,16 @@
       "summary": "This presentation by Will Brown from Prime Intellect introduces \"The Prime Intellect Stack,\" a set of open-source tools designed to simplify and enhance post-training for AI models. The talk outlines their \"open superintelligence stack,\" highlighting how libraries like verifiers and prime-rl function within the iterative loop of building, evaluating, training, and deploying models. A key takeaway is the importance of efficient, large-scale training and utilizing custom algorithms to refine open-source models for specific real-world tasks. AI engineers, researchers, and tech developers looking to leverage open-source resources to customize and optimize AI model performance would benefit most from watching this video.",
       "added": "2026-07-14",
       "times_shown": 0
+    },
+    {
+      "slug": "the-engineer-of-the-future-is-the-person-who-is-able-to-choose-what-is-worth-doi",
+      "title": "\"The engineer of the future is the person who is able to choose what is worth doing.\" \u2014\u00a0Addy Osmani",
+      "url": "https://www.youtube.com/watch?v=n97BCfyFIvw",
+      "video_id": "n97BCfyFIvw",
+      "channel": "AI Engineer",
+      "summary": "This video explores the changing landscape of software engineering as AI agents increasingly automate code generation. The presenter argues that instead of writing code, future engineers will focus on \"owning the verdict,\" using their qualitative \"taste\" to decide what to build and taking accountability for the results. Key takeaways include the need to prioritize code verification and human judgment as the gap between human and AI capabilities (\"alpha\") inevitably shrinks. Software developers and tech leaders looking to stay effective and adaptable in an AI-driven industry will benefit most from watching this presentation.",
+      "added": "2026-07-15",
+      "times_shown": 0
     }
   ],
   "archive": [
