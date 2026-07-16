@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15",
+  "generated_at": "2026-07-16",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -1186,6 +1186,16 @@
       "category": "ai",
       "summary": "In this essay, Armin Ronacher draws an extended analogy between AI-assisted programming (vibecoding) and the biblical Tower of Babel. The core argument is that large software projects are limited by how well people coordinate their understanding of the system, not by individual coding speed. AI agents remove the friction that historically maintained shared understanding, allowing independent changes that are reasonable in isolation but erode collective architectural knowledge. The key twist: unlike Babel, construction continues even after shared understanding collapses because there is no immediate failure — every developer has a tireless translator, and the tower just keeps rising.",
       "added": "2026-07-14",
+      "read": "2026-07-15",
+      "has_notes": true
+    },
+    {
+      "slug": "dsls-enable-reliable-use-of-llms",
+      "title": "DSLs Enable Reliable Use of LLMs",
+      "url": "https://martinfowler.com/articles/llm-and-dsls.html",
+      "category": "engineering",
+      "summary": "Explores how Domain-Specific Languages act as highly effective natural language interfaces for LLMs. DSLs strip away general-purpose language variation and leverage deterministic validators, constraining the AI's output space to make generated code far more reliable. Covers code as conceptual model, upfront specification limits, and custom tooling with LLMs using YAML schemas and diagram engines.",
+      "added": "2026-07-15",
       "read": "2026-07-15",
       "has_notes": true
     }
