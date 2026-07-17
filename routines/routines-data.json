@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-16T02:00:49.756202-03:00",
+  "generated_at": "2026-07-17T02:01:03.976848-03:00",
   "week_start": "2026-07-12",
   "week_label": "July 12 - July 18, 2026",
-  "last_updated": "Thursday, July 16, 2026 at 02:00",
+  "last_updated": "Friday, July 17, 2026 at 02:01",
   "stats": {
     "completed": 3.0,
-    "planned": 7,
-    "display": "3 / 7"
+    "planned": 9,
+    "display": "3 / 9"
   },
   "daily": {
     "Sunday": {
@@ -30,9 +30,9 @@
       "total": 2
     },
     "Thursday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 2
     },
     "Friday": {
       "status": "empty",
@@ -75,7 +75,7 @@
         },
         {
           "day": "Thu",
-          "status": "pending"
+          "status": "skipped"
         },
         {
           "day": "Sat",
@@ -94,7 +94,7 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -128,7 +128,7 @@
         },
         {
           "day": "Thu",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -158,7 +158,7 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "skipped"
         },
         {
           "day": "Sat",
@@ -172,10 +172,10 @@
     }
   ],
   "spirit": {
-    "state": "tired",
+    "state": "critical",
     "emoji": "\ud83d\udc0e",
     "title": "\ud83d\udc0e Ice Kirin",
-    "image": "assets/tired.webp",
-    "description": "Your ice kirin droops under grey clouds and cold drizzle, muted tones, sleepy eyes \u2014 low energy but still standing."
+    "image": "assets/critical.webp",
+    "description": "Your ice kirin huddles against a dark stormy sky, harsh winds and heavy ink tones \u2014 worried, hunched, and wilting. Needs a break."
   }
 }
