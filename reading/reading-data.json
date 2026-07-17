@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16",
+  "generated_at": "2026-07-17",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -269,7 +269,7 @@
       "category": "ai",
       "summary": "David Curlewis argues that the AI industry has regressed to using volume-based metrics -- like percentage of code written by AI and raw line counts -- to measure engineering productivity, despite the software industry spending two decades learning that such metrics are meaningless. He points to recent claims from Google (75% AI-generated code), Anthropic (~80% Claude-written code, 8x more code shipped), OpenAI (~80%), and Cursor (100M+ lines/day) as repackaged lines-of-code vanity metrics that only track adoption, not outcomes.\n\nCurlewis contrasts these with earlier outcome-based claims, such as GitHub's original finding that Copilot helped developers complete tasks 55% faster. He traces the shift to volume metrics to the fact that outcome evidence became complicated: while Cui et al. found a 26% task completion boost, GitClear observed rising code churn, and organizational-level surveys show roughly 10% productivity gains on average -- useful but far from transformative. He highlights Anthropic's own RCT showing AI-assisted developers scored 17% lower on code comprehension with no significant productivity gain.\n\nThe article's core concern is real-world impact: these vanity metrics are influencing budgets, headcount decisions, and layoffs at companies like Block and Atlassian. Curlewis advocates measuring AI-assisted engineering with battle-tested outcome metrics -- DORA metrics, reliability, rate of meaningful change, revenue, and customer value -- rather than adoption intensity dressed up as maturity.",
       "added": "2026-06-13",
-      "times_shown": 1
+      "times_shown": 2
     },
     {
       "slug": "httpsxcomaddyosmanistatus2066595308629594363",
@@ -287,7 +287,7 @@
       "category": "AI & Software Engineering",
       "summary": "Narayanan & Kapoor argue AI won't cause mass SWE layoffs. 'AI-driven layoffs' at Block, Snap, Intuit were mostly AI washing — financial pressure was the real driver. Their 'decide-execute-deliver sandwich' model shows AI compresses the middle (code writing) but leaves decision-making and accountability layers intact, which resist automation for non-capability reasons. Writing code was never the bottleneck (devs spend 9-61% time coding). Vibe coding ≠ agentic engineering. Software demand may actually increase as cheaper production drives more building.",
       "added": "2026-06-17",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "prompt-injection-as-role-confusion",
@@ -485,6 +485,15 @@
       "category": "ai",
       "summary": "\"Loop engineering\" is a recently trending term in the AI coding world, coined after prominent figures at Anthropic and OpenAI revealed they had stopped writing prompts and instead started designing loops. The concept traces back to Geoffrey Huntley's \"Ralph Wiggum\" technique — a simple Bash loop that continuously re-runs an agent with a fresh context window until a goal is met. As models improved, Matt Pocock refined it into a \"dynamic Kanban\" where each loop iteration picks the next feature, ensures tests pass, updates a master plan, and commits. The core motivation was practical — context windows were limited, so work had to be broken into smaller runs with state persisted to minimize context rot. Codex later shipped a \"Goals\" feature formalizing this pattern. The article surveys real-world usage and takes a critical turn: some devs reject looping after finding agents drift, and that paying API token prices makes looping expensive fast. One distinguished engineer speculates loops may have been a temporary hack while harnesses caught up.",
       "added": "2026-07-14",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-human-in-the-loop-is-tired",
+      "title": "The Human in the Loop is Tired",
+      "url": "https://pydantic.dev/articles/the-human-in-the-loop-is-tired",
+      "category": "opinion",
+      "summary": "Laura Summers (a designer-engineer at Pydantic) articulates the under-discussed emotional reality of LLM-assisted programming: while genuinely productive, it replaces the small dopamine rewards of hands-on coding with the draining cognitive load of constant review and supervision — a shift she frames as 'the human reward function problem.' Drawing on colleagues' experiences, a Berkeley study on work intensity, and a historical parallel to the responsive-design transition, she argues that engineering craft isn't dying but evolving, and that taste, architectural judgment, and coherent vision are the actual scarce resources being exposed.",
+      "added": "2026-07-16",
       "times_shown": 0
     }
   ],
