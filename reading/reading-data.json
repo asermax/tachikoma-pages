@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17",
+  "generated_at": "2026-07-18",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -476,15 +476,6 @@
       "category": "engineering",
       "summary": "Terence Tao ports his 25-year-old Java 1.0 math applets to JavaScript using AI coding agents in a matter of hours — all now functional with graphical upgrades. Also builds new apps: a special relativity visualization he'd abandoned in 1999, and a Gilbreath conjecture tool for a recent paper. Notes that agents found 2 bugs in original code vs 1 minor bug introduced. Key takeaway: domain expertise and high-level design decisions remain essential; agents automate low-level syntax and implementation. Language/spec precision matters less now that porting friction is near zero. Plans to add interactive visualizations as supplements for future papers.",
       "added": "2026-07-13",
-      "times_shown": 0
-    },
-    {
-      "slug": "what-is-loop-engineering",
-      "title": "What Is Loop Engineering?",
-      "url": "https://open.substack.com/pub/pragmaticengineer/p/what-is-loop-engineering",
-      "category": "ai",
-      "summary": "\"Loop engineering\" is a recently trending term in the AI coding world, coined after prominent figures at Anthropic and OpenAI revealed they had stopped writing prompts and instead started designing loops. The concept traces back to Geoffrey Huntley's \"Ralph Wiggum\" technique — a simple Bash loop that continuously re-runs an agent with a fresh context window until a goal is met. As models improved, Matt Pocock refined it into a \"dynamic Kanban\" where each loop iteration picks the next feature, ensures tests pass, updates a master plan, and commits. The core motivation was practical — context windows were limited, so work had to be broken into smaller runs with state persisted to minimize context rot. Codex later shipped a \"Goals\" feature formalizing this pattern. The article surveys real-world usage and takes a critical turn: some devs reject looping after finding agents drift, and that paying API token prices makes looping expensive fast. One distinguished engineer speculates loops may have been a temporary hack while harnesses caught up.",
-      "added": "2026-07-14",
       "times_shown": 0
     },
     {
@@ -1196,6 +1187,16 @@
       "summary": "In this essay, Armin Ronacher draws an extended analogy between AI-assisted programming (vibecoding) and the biblical Tower of Babel. The core argument is that large software projects are limited by how well people coordinate their understanding of the system, not by individual coding speed. AI agents remove the friction that historically maintained shared understanding, allowing independent changes that are reasonable in isolation but erode collective architectural knowledge. The key twist: unlike Babel, construction continues even after shared understanding collapses because there is no immediate failure — every developer has a tireless translator, and the tower just keeps rising.",
       "added": "2026-07-14",
       "read": "2026-07-15",
+      "has_notes": true
+    },
+    {
+      "slug": "what-is-loop-engineering",
+      "title": "What Is Loop Engineering?",
+      "url": "https://open.substack.com/pub/pragmaticengineer/p/what-is-loop-engineering",
+      "category": "ai",
+      "summary": "\"Loop engineering\" is a recently trending term in the AI coding world, coined after prominent figures at Anthropic and OpenAI revealed they had stopped writing prompts and instead started designing loops. The concept traces back to Geoffrey Huntley's \"Ralph Wiggum\" technique — a simple Bash loop that continuously re-runs an agent with a fresh context window until a goal is met. As models improved, Matt Pocock refined it into a \"dynamic Kanban\" where each loop iteration picks the next feature, ensures tests pass, updates a master plan, and commits. The core motivation was practical — context windows were limited, so work had to be broken into smaller runs with state persisted to minimize context rot. Codex later shipped a \"Goals\" feature formalizing this pattern. The article surveys real-world usage and takes a critical turn: some devs reject looping after finding agents drift, and that paying API token prices makes looping expensive fast. One distinguished engineer speculates loops may have been a temporary hack while harnesses caught up.",
+      "added": "2026-07-14",
+      "read": "2026-07-18",
       "has_notes": true
     },
     {
