@@ -1208,6 +1208,16 @@
       "added": "2026-07-15",
       "read": "2026-07-15",
       "has_notes": true
+    },
+    {
+      "slug": "not-holding-back-the-ocean",
+      "title": "Not Holding Back the Ocean",
+      "url": "https://ethanniser.dev/blog/not-holding-back-the-ocean",
+      "category": "ai",
+      "summary": "In this short reflective essay, software engineer Ethan Niser shares his personal realization that AI has already, irreversibly, changed what it means to be a 'best possible' software engineer. He opens with a candid admission: while AI is exciting, his initial reaction was not entirely positive, because he was genuinely excellent at the 'old' style of software engineering — a skill that brought him speed, credibility, influence, and financial reward. Niser frames his current view through two observations: rapidly evolving AI tools that others are adopting faster than him, and work that once differentiated him becoming normalized. He draws an analogy to film editors who physically spliced reels by hand — when digital tools arrived, they had to choose whether to evolve or be left behind. Today a single person with a $500 iPhone can produce film quality that once required an entire team. His core question: do you like cutting film, or do you like making movies? He genuinely loved writing code by hand, but loves building incredible software even more. The traits that helped him succeed before — working hard, constantly learning, producing tangible output — will continue to serve him in the AI era. The takeaway: don't try to hold back the ocean.",
+      "added": "2026-07-18",
+      "read": "2026-07-18",
+      "has_notes": true
     }
   ]
 }
