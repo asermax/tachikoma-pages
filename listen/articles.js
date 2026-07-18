@@ -1,5 +1,4 @@
 const ARTICLES = [
-    { slug: 'the-human-in-the-loop-is-tired', title: 'The Human in the Loop is Tired', meta: 'Pydantic Blog · July 2026 · ~13 min listen', time: '13:03' },
     { slug: 'what-is-loop-engineering', title: 'What is "Loop Engineering?"', meta: 'Gergely Orosz · July 2026', time: '17:39' },
     { slug: 'the-tower-keeps-rising', title: 'The Tower Keeps Rising', meta: 'Armin Ronacher · July 2026 · ~4 min listen', time: '4:26' },
     { slug: 'old-and-new-apps-via-modern-coding-agents', title: 'Old and new apps, via modern coding agents', meta: 'Terence Tao · July 2026', time: '3:56' },
