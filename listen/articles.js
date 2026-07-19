@@ -1,5 +1,4 @@
 const ARTICLES = [
-    { slug: 'give-your-agent-a-computer', title: 'Give your agent a computer', meta: 'Matt Carey · 2026-07-19', time: '5:23' },
     { slug: 'ai-mania-is-eviscerating-global-decision-making', title: 'AI Mania Is Eviscerating Global Decision-Making', meta: 'Nik Suresh · 2026-07-19', time: '32:50' },
     { slug: 'old-and-new-apps-via-modern-coding-agents', title: 'Old and new apps, via modern coding agents', meta: 'Terence Tao · July 2026', time: '3:56' },
     { slug: 'pace-layers-and-ai-integration', title: 'Pace Layers and AI Integration', meta: 'Chad Fowler · December 2025 · ~12 min listen', time: '11:40' },
