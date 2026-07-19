@@ -1,0 +1,181 @@
+{
+  "generated_at": "2026-07-19T02:01:03.000869-03:00",
+  "week_start": "2026-07-12",
+  "week_label": "July 12 - July 18, 2026",
+  "last_updated": "Sunday, July 19, 2026 at 02:01",
+  "stats": {
+    "completed": 3.0,
+    "planned": 12,
+    "display": "3 / 12"
+  },
+  "daily": {
+    "Sunday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Monday": {
+      "status": "done",
+      "completed": 1,
+      "total": 1
+    },
+    "Tuesday": {
+      "status": "done",
+      "completed": 2,
+      "total": 2
+    },
+    "Wednesday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 2
+    },
+    "Thursday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 2
+    },
+    "Friday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Saturday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 3
+    }
+  },
+  "goals": [
+    {
+      "name": "Trumpet Practice",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "0min",
+      "target": "60min",
+      "progress_pct": 0
+    },
+    {
+      "name": "Reading",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "0min",
+      "target": "60min",
+      "progress_pct": 0
+    }
+  ],
+  "routines": [
+    {
+      "id": "basic-workout",
+      "name": "Basic Workout",
+      "emoji": "\ud83d\udcaa",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "done"
+        },
+        {
+          "day": "Thu",
+          "status": "skipped"
+        },
+        {
+          "day": "Sat",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 3
+    },
+    {
+      "id": "music-practice",
+      "name": "Music Practice",
+      "emoji": "\ud83c\udfb7",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 1
+    },
+    {
+      "id": "piano-practice",
+      "name": "Piano Practice",
+      "emoji": "\ud83c\udfb9",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "1h",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "rock-climbing",
+      "name": "Rock Climbing",
+      "emoji": "\ud83e\uddd7",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "done"
+        },
+        {
+          "day": "Thu",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 2
+    },
+    {
+      "id": "running",
+      "name": "Running",
+      "emoji": "\ud83c\udfc3",
+      "sessions": [
+        {
+          "day": "Sat",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 1
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga",
+      "emoji": "\ud83e\uddd8",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "skipped"
+        },
+        {
+          "day": "Sat",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 2
+    }
+  ],
+  "spirit": {
+    "state": "critical",
+    "emoji": "\ud83d\udc0e",
+    "title": "\ud83d\udc0e Ice Kirin",
+    "image": "assets/critical.webp",
+    "description": "Your ice kirin huddles against a dark stormy sky, harsh winds and heavy ink tones \u2014 worried, hunched, and wilting. Needs a break."
+  }
+}
