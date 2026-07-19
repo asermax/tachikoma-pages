@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-18T02:01:01.002282-03:00",
+  "generated_at": "2026-07-19T02:01:03.000869-03:00",
   "week_start": "2026-07-12",
   "week_label": "July 12 - July 18, 2026",
-  "last_updated": "Saturday, July 18, 2026 at 02:01",
+  "last_updated": "Sunday, July 19, 2026 at 02:01",
   "stats": {
     "completed": 3.0,
-    "planned": 9,
-    "display": "3 / 9"
+    "planned": 12,
+    "display": "3 / 12"
   },
   "daily": {
     "Sunday": {
@@ -40,9 +40,9 @@
       "total": 0
     },
     "Saturday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 3
     }
   },
   "goals": [
@@ -79,7 +79,7 @@
         },
         {
           "day": "Sat",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -143,7 +143,7 @@
       "sessions": [
         {
           "day": "Sat",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -162,7 +162,7 @@
         },
         {
           "day": "Sat",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
