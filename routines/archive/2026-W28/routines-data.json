@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-19T11:16:00.821468-03:00",
-  "week_start": "2026-07-19",
-  "week_label": "July 19 - July 25, 2026",
-  "last_updated": "Sunday, July 19, 2026 at 11:16",
+  "generated_at": "2026-07-19T02:01:03.000869-03:00",
+  "week_start": "2026-07-12",
+  "week_label": "July 12 - July 18, 2026",
+  "last_updated": "Sunday, July 19, 2026 at 02:01",
   "stats": {
-    "completed": 0,
-    "planned": 0,
-    "display": "0 / 0"
+    "completed": 3.0,
+    "planned": 12,
+    "display": "3 / 12"
   },
   "daily": {
     "Sunday": {
@@ -15,24 +15,24 @@
       "total": 0
     },
     "Monday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 1,
+      "total": 1
     },
     "Tuesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 2,
+      "total": 2
     },
     "Wednesday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 2
     },
     "Thursday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 2
     },
     "Friday": {
       "status": "empty",
@@ -40,9 +40,9 @@
       "total": 0
     },
     "Saturday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 3
     }
   },
   "goals": [
@@ -70,21 +70,21 @@
       "emoji": "\ud83d\udcaa",
       "sessions": [
         {
-          "day": "Mon",
-          "status": "pending"
-        },
-        {
           "day": "Tue",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Thu",
-          "status": "pending"
+          "status": "skipped"
+        },
+        {
+          "day": "Sat",
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 3
     },
     {
@@ -94,7 +94,7 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -109,12 +109,12 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         }
       ],
-      "metrics_total": "",
+      "metrics_total": "1h",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -124,16 +124,16 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Thu",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 2
     },
     {
@@ -142,8 +142,8 @@
       "emoji": "\ud83c\udfc3",
       "sessions": [
         {
-          "day": "Mon",
-          "status": "pending"
+          "day": "Sat",
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -157,12 +157,12 @@
       "emoji": "\ud83e\uddd8",
       "sessions": [
         {
-          "day": "Mon",
-          "status": "pending"
+          "day": "Wed",
+          "status": "skipped"
         },
         {
-          "day": "Wed",
-          "status": "pending"
+          "day": "Sat",
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -172,10 +172,10 @@
     }
   ],
   "spirit": {
-    "state": "dormant",
+    "state": "critical",
     "emoji": "\ud83d\udc0e",
     "title": "\ud83d\udc0e Ice Kirin",
-    "image": "assets/dormant.webp",
-    "description": "Your ice kirin sleeps curled up in deep snow, starry night sky and soft moonlight above \u2014 peaceful, quiet rest."
+    "image": "assets/critical.webp",
+    "description": "Your ice kirin huddles against a dark stormy sky, harsh winds and heavy ink tones \u2014 worried, hunched, and wilting. Needs a break."
   }
 }
