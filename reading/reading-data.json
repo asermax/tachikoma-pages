@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18",
+  "generated_at": "2026-07-19",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -476,15 +476,6 @@
       "category": "engineering",
       "summary": "Terence Tao ports his 25-year-old Java 1.0 math applets to JavaScript using AI coding agents in a matter of hours — all now functional with graphical upgrades. Also builds new apps: a special relativity visualization he'd abandoned in 1999, and a Gilbreath conjecture tool for a recent paper. Notes that agents found 2 bugs in original code vs 1 minor bug introduced. Key takeaway: domain expertise and high-level design decisions remain essential; agents automate low-level syntax and implementation. Language/spec precision matters less now that porting friction is near zero. Plans to add interactive visualizations as supplements for future papers.",
       "added": "2026-07-13",
-      "times_shown": 0
-    },
-    {
-      "slug": "the-human-in-the-loop-is-tired",
-      "title": "The Human in the Loop is Tired",
-      "url": "https://pydantic.dev/articles/the-human-in-the-loop-is-tired",
-      "category": "opinion",
-      "summary": "Laura Summers (a designer-engineer at Pydantic) articulates the under-discussed emotional reality of LLM-assisted programming: while genuinely productive, it replaces the small dopamine rewards of hands-on coding with the draining cognitive load of constant review and supervision — a shift she frames as 'the human reward function problem.' Drawing on colleagues' experiences, a Berkeley study on work intensity, and a historical parallel to the responsive-design transition, she argues that engineering craft isn't dying but evolving, and that taste, architectural judgment, and coherent vision are the actual scarce resources being exposed.",
-      "added": "2026-07-16",
       "times_shown": 0
     }
   ],
@@ -1190,23 +1181,23 @@
       "has_notes": true
     },
     {
-      "slug": "what-is-loop-engineering",
-      "title": "What Is Loop Engineering?",
-      "url": "https://open.substack.com/pub/pragmaticengineer/p/what-is-loop-engineering",
-      "category": "ai",
-      "summary": "\"Loop engineering\" is a recently trending term in the AI coding world, coined after prominent figures at Anthropic and OpenAI revealed they had stopped writing prompts and instead started designing loops. The concept traces back to Geoffrey Huntley's \"Ralph Wiggum\" technique — a simple Bash loop that continuously re-runs an agent with a fresh context window until a goal is met. As models improved, Matt Pocock refined it into a \"dynamic Kanban\" where each loop iteration picks the next feature, ensures tests pass, updates a master plan, and commits. The core motivation was practical — context windows were limited, so work had to be broken into smaller runs with state persisted to minimize context rot. Codex later shipped a \"Goals\" feature formalizing this pattern. The article surveys real-world usage and takes a critical turn: some devs reject looping after finding agents drift, and that paying API token prices makes looping expensive fast. One distinguished engineer speculates loops may have been a temporary hack while harnesses caught up.",
-      "added": "2026-07-14",
-      "read": "2026-07-18",
-      "has_notes": true
-    },
-    {
       "slug": "dsls-enable-reliable-use-of-llms",
       "title": "DSLs Enable Reliable Use of LLMs",
       "url": "https://martinfowler.com/articles/llm-and-dsls.html",
       "category": "engineering",
       "summary": "Explores how Domain-Specific Languages act as highly effective natural language interfaces for LLMs. DSLs strip away general-purpose language variation and leverage deterministic validators, constraining the AI's output space to make generated code far more reliable. Covers code as conceptual model, upfront specification limits, and custom tooling with LLMs using YAML schemas and diagram engines.",
       "added": "2026-07-15",
-      "read": "2026-07-15",
+      "read": "2026-07-19",
+      "has_notes": true
+    },
+    {
+      "slug": "the-human-in-the-loop-is-tired",
+      "title": "The Human in the Loop is Tired",
+      "url": "https://pydantic.dev/articles/the-human-in-the-loop-is-tired",
+      "category": "opinion",
+      "summary": "Laura Summers (a designer-engineer at Pydantic) articulates the under-discussed emotional reality of LLM-assisted programming: while genuinely productive, it replaces the small dopamine rewards of hands-on coding with the draining cognitive load of constant review and supervision — a shift she frames as 'the human reward function problem.' Drawing on colleagues' experiences, a Berkeley study on work intensity, and a historical parallel to the responsive-design transition, she argues that engineering craft isn't dying but evolving, and that taste, architectural judgment, and coherent vision are the actual scarce resources being exposed.",
+      "added": "2026-07-16",
+      "read": "2026-07-18",
       "has_notes": true
     },
     {
