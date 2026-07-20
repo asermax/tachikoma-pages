@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-19T11:16:00.821468-03:00",
+  "generated_at": "2026-07-20T02:01:45.960038-03:00",
   "week_start": "2026-07-19",
   "week_label": "July 19 - July 25, 2026",
-  "last_updated": "Sunday, July 19, 2026 at 11:16",
+  "last_updated": "Monday, July 20, 2026 at 02:01",
   "stats": {
     "completed": 0,
     "planned": 0,
@@ -58,9 +58,9 @@
       "name": "Reading",
       "emoji": "",
       "status": "pending",
-      "accumulated": "0min",
+      "accumulated": "20min",
       "target": "60min",
-      "progress_pct": 0
+      "progress_pct": 33
     }
   ],
   "routines": [
