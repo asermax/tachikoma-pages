@@ -1,3 +1,4 @@
+
 const ARTICLES = [
     { slug: 'ai-mania-is-eviscerating-global-decision-making', title: 'AI Mania Is Eviscerating Global Decision-Making', meta: 'Nik Suresh · 2026-07-19', time: '32:50' },
     { slug: 'old-and-new-apps-via-modern-coding-agents', title: 'Old and new apps, via modern coding agents', meta: 'Terence Tao · July 2026', time: '3:56' },
