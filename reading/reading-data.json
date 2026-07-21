@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20",
+  "generated_at": "2026-07-21",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -476,6 +476,15 @@
       "category": "ai",
       "summary": "This essay, written by a consultant who has led sales and technical engagements across hundreds of organizations ranging from small service businesses to Fortune 500 executives, argues that the current obsession with AI has triggered a \"mass psychosis\" across global institutions. The author claims that leaders in banks, hospitals, and government either have no real plan or are simply keeping their heads down while organizations are captured by people in \"frothing excitement,\" with saner employees living in fear.\n\nThe author's core empirical claim is that essentially every AI project his team has observed over 18 months has failed—a 0% success rate—whether internally-facing chatbots that employees ignore (because company documentation is poor and LLMs aren't psychic) or customer-facing bots that game metrics without delivering real outcomes. He argues that it is in nearly everyone's interest—boards, executives, employees, vendors, consultants—to obfuscate these failures, leading to widespread false public claims of \"massive productivity gains\" that are often backed by nothing more than the purchase of Copilot licenses. Companies, he notes, are typically bad at software projects already, and AI projects inherit all those failure modes plus additional novelty risk.\n\nThe piece describes a chilling social dynamic: expressing skepticism about AI has become professionally dangerous, with employees fired for visible doubt while others \"AI-wash\" their work, falsely attributing it to LLMs to satisfy managers, or game \"token leaderboards\" by running AI in pointless loops while watching Netflix. He highlights a coordination problem among executives—each must repeat implausible claims because contradicting a customer's or partner's executive would be perceived as heresy and could cost contracts or jobs, creating a \"distributed government by assassination\" where no one can be the first to admit the truth. Even flashy demos act as a \"mind-killer,\" causing previously lukewarm clients to abandon millions of dollars in sound non-AI value to frantically buy underperforming chatbots.\n\nThe practical consequence, the author argues, is that large organizations can no longer buy sensible software, hire competent talent, communicate honestly about projects, or pursue sensible initiatives—everything must be reframed as \"AI-native,\" and routine work like database migrations gets relabeled as AI-driven successes to pass ideological purity tests. The essay closes with survival advice: conduct skepticism in private one-on-one settings rather than groups, use anonymous polling to surface dissenting views, talk to people on the ground who actually use the tools, avoid challenging broad AI claims until you've earned trust, and—if you're just trying to survive—consider switching to contracting, limiting consumption of AI news, and quietly starting a job search if you're being asked to max out token usage or review endless AI-generated code.",
       "added": "2026-07-19",
+      "times_shown": 0
+    },
+    {
+      "slug": "agent-swarm-model-economics",
+      "title": "Agent swarms and the new model economics",
+      "url": "https://cursor.com/blog/agent-swarm-model-economics",
+      "category": "ai",
+      "summary": "Cursor reports on an engineered improvement to its multi-agent swarm system for autonomous software engineering, validated by building SQLite from scratch in Rust using only the 835-page documentation. The new harness beat the old one in every model configuration. The swarm uses tree-like decomposition with planner agents that split goals and worker agents that execute leaves. Real scaling advantage is context efficiency over raw parallelism. Custom VCS handles ~1,000 commits/sec. Economic findings: similar output quality but costs ranged from ,339 (Opus/Composer hybrid) to 0,565 (GPT-5.5 alone). Framed as a probabilistic compiler.",
+      "added": "2026-07-21",
       "times_shown": 0
     }
   ],
