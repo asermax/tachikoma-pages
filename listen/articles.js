@@ -20,7 +20,6 @@ const ARTICLES = [
     { slug: 'what-is-code', title: 'What Is Code?', meta: 'Srujana Pundi · May 2026', time: '7:50' },
     { slug: 'conductors-to-orchestrators', title: 'Conductors to Orchestrators: The Future of Agentic Coding', meta: 'Addy Osmani · November 2025', time: '27:39' },
     { slug: '80-problem-agentic-coding', title: 'The 80% Problem in Agentic Coding', meta: 'Addy Osmani · January 2026', time: '20:47' },
-    { slug: 'human-ai', title: 'AI and the Human Voice', meta: 'Giles Thomas · March 2026', time: '5:49' },
     { slug: 'absurd-workflows', title: 'Absurd Workflows: Durable Execution With Just Postgres', meta: 'Armin Ronacher · November 2025', time: '3:39' },
     { slug: 'syntaqlite-ai', title: 'Eight Years of Wanting, Three Months of Building with AI', meta: 'Lalit Maganti · April 2026', time: '20:40' },
     { slug: 'components-of-a-coding-agent', title: 'Components of A Coding Agent', meta: 'Sebastian Raschka · April 2026', time: '11:59' },
