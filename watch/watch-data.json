@@ -1702,6 +1702,17 @@
       "added": "2026-07-15",
       "watched": "2026-07-20",
       "has_notes": true
+    },
+    {
+      "slug": "a-year-of-agents-armin-ronacher-codecrafts-2026",
+      "title": "A Year of Agents | Armin Ronacher | CodeCrafts 2026",
+      "url": "https://www.youtube.com/watch?v=u_k9cwDNPcM",
+      "video_id": "u_k9cwDNPcM",
+      "channel": "SQUER Solutions",
+      "summary": "Armin Ronacher reflects on a year of designing and building AI agents. He defines agents through the framework of loops, tools, and environments, and introduces 'agent psychosis' \u2014 the human tendency to over-rely on or misinterpret the agency of AI systems. He argues true agency must remain with humans, highlighting friction points when developers use coding agents to build other agents. Highly relevant for software engineers and AI developers interested in realistic design and limitations of agentic AI.",
+      "added": "2026-07-21",
+      "watched": "2026-07-21",
+      "has_notes": true
     }
   ]
 }
