@@ -1,7 +1,7 @@
 const ARTICLES = [
     { slug: 'practical-astar', title: 'Pathfinding Demystified (Part IV): Practical A*', meta: 'Gabriel Gambetta · Jul 2026', time: '5:01' },
     { slug: 'search-strategies', title: 'Pathfinding Demystified (Part II): Search Strategies', meta: 'Gabriel Gambetta · Jul 2026', time: '3:22' },
-    { slug: 'generic-search', title: 'Pathfinding Demystified (Part I): Generic Search Algorithm', meta: 'Gabriel Gambetta · Jul 2026', time: '7:34' },
+    { slug: 'generic-search', title: 'Generic Search', meta: 'Gabriel Gambetta · Jul 2026', time: '422.1' },
     { slug: 'lag-compensation', title: 'Lag Compensation', meta: 'Gabriel Gambetta · Jul 2026', time: '238.375' },
     { slug: 'entity-interpolation', title: 'Entity Interpolation', meta: 'Gabriel Gambetta · Jul 2026', time: '551.875' },
     { slug: 'astar-demystified', title: 'A* Demystified', meta: 'Gabriel Gambetta · Jul 2026', time: '252.2' },
