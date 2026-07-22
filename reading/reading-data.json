@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21",
+  "generated_at": "2026-07-22",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -479,12 +479,75 @@
       "times_shown": 0
     },
     {
-      "slug": "agent-swarm-model-economics",
-      "title": "Agent swarms and the new model economics",
-      "url": "https://cursor.com/blog/agent-swarm-model-economics",
-      "category": "ai",
-      "summary": "Cursor reports on an engineered improvement to its multi-agent swarm system for autonomous software engineering, validated by building SQLite from scratch in Rust using only the 835-page documentation. The new harness beat the old one in every model configuration. The swarm uses tree-like decomposition with planner agents that split goals and worker agents that execute leaves. Real scaling advantage is context efficiency over raw parallelism. Custom VCS handles ~1,000 commits/sec. Economic findings: similar output quality but costs ranged from ,339 (Opus/Composer hybrid) to 0,565 (GPT-5.5 alone). Framed as a probabilistic compiler.",
-      "added": "2026-07-21",
+      "slug": "a-demystified",
+      "title": "A* Demystified",
+      "url": "https://www.gabrielgambetta.com/a-star-demystified.html",
+      "category": "engineering",
+      "summary": "This article finally introduces the A* algorithm by deriving it from the generic search skeleton. The key insight is replacing a hypothetical 'magic chip' that could divine the cost-to-goal with an optimistic guess — a heuristic that never overestimates the true remaining cost. Adding this estimate to the known cost-so-far and picking the lowest total each iteration is A*.\n\nGambetta includes full pseudocode for the complete algorithm alongside the specific choose_node implementation. The article closes with a live demo showing how, unlike Uniform Cost Search, A* wastes very little effort exploring directions that move away from the goal. The correctness requirement is that the heuristic must be admissible — it can never overestimate.",
+      "added": "2026-07-22",
+      "times_shown": 0
+    },
+    {
+      "slug": "client-server-game-architecture",
+      "title": "Client-Server Game Architecture",
+      "url": "https://www.gabrielgambetta.com/client-server-game-architecture.html",
+      "category": "engineering",
+      "summary": "This article is the introductory installment of a series by Gabriel Gambetta exploring the techniques and algorithms that make fast-paced multiplayer games possible. It frames the foundational problem of networked game design around two constraints: human nature (cheating) and physics (network latency).\n\nThe first core problem is cheating. In competitive multiplayer, cheating degrades the experience for everyone. Gambetta argues that the single most meaningful defense is an authoritative server architecture, in which a central server runs the entire game and clients are essentially privileged spectators that send inputs and render results.\n\nThe authoritative server works well for slow games or on a LAN, but breaks down for fast-paced games over the internet. Gambetta walks through the physics of latency: real-world conditions push round-trip delays to 100-500ms, rendering games unplayable. The article closes by setting up the rest of the series: how to retain the cheat-resistant authoritative server model while minimizing perceived delay.",
+      "added": "2026-07-22",
+      "times_shown": 0
+    },
+    {
+      "slug": "client-side-prediction-and-server-reconciliation",
+      "title": "Client-Side Prediction and Server Reconciliation",
+      "url": "https://www.gabrielgambetta.com/client-side-prediction-server-reconciliation.html",
+      "category": "engineering",
+      "summary": "This article explains how to eliminate the perceived delay between player inputs and on-screen effects in a client-server multiplayer game. The key technique is client-side prediction: if the game world is deterministic enough, the client can immediately process inputs locally while waiting for the server's authoritative state, making the game feel responsive.\n\nThe article then addresses synchronization issues that arise when the client's predicted state diverges from the server's authoritative state. The solution is server reconciliation: clients tag each input with a sequence number, and the server includes the last processed sequence number in its replies. When a mismatch occurs, the client discards acknowledged inputs, reapplies the authoritative state, and replays any unprocessed inputs on top.\n\nGambetta extends the principle beyond movement to combat, health updates, and other state changes, emphasizing that even in deterministic worlds with no cheating, reconciliation discrepancies can still occur in multi-player scenarios. The article provides interactive demos showing the techniques in action.",
+      "added": "2026-07-22",
+      "times_shown": 0
+    },
+    {
+      "slug": "entity-interpolation",
+      "title": "Entity Interpolation",
+      "url": "https://www.gabrielgambetta.com/entity-interpolation.html",
+      "category": "engineering",
+      "summary": "This article tackles the harder problem of rendering other players smoothly when the authoritative server only broadcasts state updates at a low fixed frequency (e.g., 10Hz). It presents two complementary solutions: dead reckoning (extrapolating position using velocity and heading for predictable entities like vehicles) and entity interpolation (deliberately rendering other players slightly in the past by interpolating between known authoritative positions).\n\nEntity interpolation trades a small, usually imperceptible delay for genuinely smooth motion — every player sees themselves in the present and everyone else slightly behind. Gambetta closes by flagging the one place where this delay bites: aiming and shooting, since opponents are rendered 100ms behind their actual position, a problem deferred to the next article on lag compensation.",
+      "added": "2026-07-22",
+      "times_shown": 0
+    },
+    {
+      "slug": "generic-search",
+      "title": "Generic Search",
+      "url": "https://www.gabrielgambetta.com/generic-search.html",
+      "category": "engineering",
+      "summary": "This first article in the Pathfinding Demystified series reframes any game environment as a graph of nodes (states) connected by directional edges (transitions). Gambetta walks through a general search algorithm that maintains reachable and explored lists, repeatedly picks a node, checks if it's the goal, and expands its neighbors while recording how each was reached via previous pointers.\n\nThe centerpiece is a deliberately simple pseudocode algorithm that Gambetta calls the most important part of the series: the entire essence of pathfinding. A* and other specific algorithms are framed as mere details — different strategies for implementing the single choose_node step. This decomposition sets up the subsequent articles on search strategies and A*.",
+      "added": "2026-07-22",
+      "times_shown": 0
+    },
+    {
+      "slug": "lag-compensation",
+      "title": "Lag Compensation",
+      "url": "https://www.gabrielgambetta.com/lag-compensation.html",
+      "category": "engineering",
+      "summary": "This final article in the series tackles why perfectly aimed shots sometimes miss in networked shooters. Because entity interpolation renders opponents slightly in the past, players aim at where enemies were, not where they are. The solution is server-side lag compensation: when a player shoots, the client sends the shot timestamp and aim to the server, which rewinds its world state to that exact moment and evaluates the shot against where the enemy was from the shooter's perspective.\n\nThe article candidly discusses the tradeoff: while the shooter is rewarded for what looked like a clean hit, the target can experience the disorienting 'shot behind cover' problem. Gambetta frames this as an acceptable compromise — far less frustrating than landing a perfect shot only to see it disappear, and bounded to a few hundred milliseconds. The article credits foundational work by Yahn Bernier and Glenn Fiedler.",
+      "added": "2026-07-22",
+      "times_shown": 0
+    },
+    {
+      "slug": "practical-a",
+      "title": "Practical A*",
+      "url": "https://www.gabrielgambetta.com/practical-a-star.html",
+      "category": "engineering",
+      "summary": "This final pathfinding article moves beyond theory to practical application. Key insights include: the cost function can minimize any quantity (fuel, time, terrain difficulty), the goal can be a predicate matching multiple acceptable destinations, and the graph need not be explicit — neighbors can be constructed on the fly inside get_adjacent_nodes, making A* viable for infinite or continuous worlds.\n\nGambetta shows that a search node's state can encode heading, health, ammo, or any dimension, turning a 2D grid into a higher-dimensional search space. The tradeoff is that richer states demand more sophisticated heuristics. The article closes by reiterating the series's aim: to demystify A* and show it derives straightforwardly from first principles.",
+      "added": "2026-07-22",
+      "times_shown": 0
+    },
+    {
+      "slug": "search-strategies",
+      "title": "Search Strategies",
+      "url": "https://www.gabrielgambetta.com/search-strategies.html",
+      "category": "engineering",
+      "summary": "This article focuses on the single function — choose_node(reachable) — that differentiates all search algorithms. It first fixes an oversight by introducing path costs, ensuring the algorithm always retains the shortest known path by updating a node's previous pointer and cost whenever a cheaper route is found.\n\nWith costs in place, the article introduces Uniform Cost Search: pick the reachable node with the lowest cost from the start. This causes the search to expand radially outward, reliably producing the shortest path. However, it explores uniformly in all directions, even away from the goal — a weakness that motivates A*'s heuristic-guided search in the next article.",
+      "added": "2026-07-22",
       "times_shown": 0
     }
   ],
@@ -1237,6 +1300,16 @@
       "summary": "This short essay argues that agentic engineering is about building reliable systems on top of unreliable components, drawing an analogy to early computing hardware. AI agents can be useful while simultaneously being wrong or noisy. Rather than chasing stronger models, engineers should treat agents as noisy components and redesign the surrounding system — using small pairwise judgments instead of big ones, diversity of approaches, and modular separation of voting from aggregation. The biggest gains come from environment design, not model swapping.",
       "added": "2026-07-19",
       "read": "2026-07-19",
+      "has_notes": true
+    },
+    {
+      "slug": "agent-swarm-model-economics",
+      "title": "Agent swarms and the new model economics",
+      "url": "https://cursor.com/blog/agent-swarm-model-economics",
+      "category": "ai",
+      "summary": "Cursor reports on an engineered improvement to its multi-agent swarm system for autonomous software engineering, validated by building SQLite from scratch in Rust using only the 835-page documentation. The new harness beat the old one in every model configuration. The swarm uses tree-like decomposition with planner agents that split goals and worker agents that execute leaves. Real scaling advantage is context efficiency over raw parallelism. Custom VCS handles ~1,000 commits/sec. Economic findings: similar output quality but costs ranged from ,339 (Opus/Composer hybrid) to 0,565 (GPT-5.5 alone). Framed as a probabilistic compiler.",
+      "added": "2026-07-21",
+      "read": "2026-07-22",
       "has_notes": true
     }
   ]
