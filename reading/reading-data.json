@@ -497,6 +497,15 @@
       "times_shown": 0
     },
     {
+      "slug": "everyone-should-know-simd",
+      "title": "Everyone Should Know SIMD",
+      "url": "https://mitchellh.com/writing/everyone-should-know-simd",
+      "category": "engineering",
+      "summary": "Mitchell Hashimoto argues that SIMD is not too complex for everyday programming — once you learn the basics, writing 'process N values at a time' code is nearly as easy as a for loop. He presents a five-step pattern that nearly all everyday SIMD code follows: broadcast constants, loop over input in vector-width chunks, perform operations across all lanes in parallel, reduce/store results, and handle the scalar tail. Walks through a real example from Ghostty (scanning Unicode codepoints for control characters) that yields ~5x real-world speedup. Compilers are generally poor at auto-vectorization, so explicit SIMD matters for hot loops. With good language support like Zig's generic vectors, developers need not know assembly to get significant improvements.",
+      "added": "2026-07-22",
+      "times_shown": 0
+    },
+    {
       "slug": "generic-search",
       "title": "Generic Search",
       "url": "https://www.gabrielgambetta.com/generic-search.html",
