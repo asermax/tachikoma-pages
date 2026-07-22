@@ -287,7 +287,7 @@
       "category": "ai",
       "summary": "Research paper showing LLMs identify roles by writing style rather than structural tags, enabling CoT Forgery attacks where fake reasoning is mistaken for genuine thoughts. Proposes roles as a key abstraction for AI safety research.",
       "added": "2026-06-23",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "on-idea-generation",
@@ -296,7 +296,7 @@
       "category": "creativity",
       "summary": "A deep exploration of idea generation as an exercisable muscle. Sankalp argues that creativity isn't mystical — it requires direct exposure to sources (not AI-mediated), tight feedback loops through doing, and having a concrete problem statement or scaffold to push against. Key insights: ideas emerge from inside active work, not from passive consumption; consumption-maxxing without processing is a common trap; you need to put in time building 'embedding space' in your mind through high-resolution engagement with material; people and conversations act as mirrors and portals for creativity; and breaking through blocks requires zooming out, reframing, and sometimes switching to parallel projects. Strong references to Henrik Karlsson, Richard Hamming, and Jack Morris.",
       "added": "2026-06-29",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "mechanical-sympathy",
@@ -323,7 +323,7 @@
       "category": "AI",
       "summary": "Drawing on the Thoughtworks FOSE retreat, Verraes argues that low-level code quality still matters because agents benefit from clear structure, face the same context-window limits as humans, and amplify existing bad patterns. High-level design (domain models, bounded contexts, ubiquitous language) remains firmly human territory, and he predicts a shift toward specifications as the source of truth.",
       "added": "2026-07-06",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "the-ai-tokenpocalypse-is-here",
@@ -529,6 +529,15 @@
       "url": "https://www.gabrielgambetta.com/lag-compensation.html",
       "category": "engineering",
       "summary": "This final article in the series tackles why perfectly aimed shots sometimes miss in networked shooters. Because entity interpolation renders opponents slightly in the past, players aim at where enemies were, not where they are. The solution is server-side lag compensation: when a player shoots, the client sends the shot timestamp and aim to the server, which rewinds its world state to that exact moment and evaluates the shot against where the enemy was from the shooter's perspective.\n\nThe article candidly discusses the tradeoff: while the shooter is rewarded for what looked like a clean hit, the target can experience the disorienting 'shot behind cover' problem. Gambetta frames this as an acceptable compromise — far less frustrating than landing a perfect shot only to see it disappear, and bounded to a few hundred milliseconds. The article credits foundational work by Yahn Bernier and Glenn Fiedler.",
+      "added": "2026-07-22",
+      "times_shown": 0
+    },
+    {
+      "slug": "not-just-development-distribution-of-software-may-change-as-well",
+      "title": "Not just development, distribution of software may change as well",
+      "url": "http://antirez.com/news/170",
+      "category": "ai",
+      "summary": "In this essay, Redis creator Salvatore Sanfilippo (antirez) argues that AI coding tools are transforming not only how software is written, but how it is distributed and consumed. Traditionally, open source projects followed a predictable rhythm: develop on an unstable branch, freeze it, fix bugs, and eventually cut a polished stable release. Sanfilippo contends this model is becoming outdated because the recipients of software now have access to AI coding agents and can themselves modify, specialize, and adapt code to their own requirements. A key shift is that a code repository can function less as a finished product and more as a template or reference implementation. Sanfilippo illustrates this with Redis: a pull request delivering strong memory savings might take weeks to reach stable, but a user whose cloud bill depends on that optimization may prefer a 95%-ready branch from day one to test and refine themselves. He extends the argument using DwarfStar (a local-inference engine). Testing every GPU/model combination is impractical. Instead, providing solid reference implementations lets coding agents extrapolate and generate support for other backends. GPT 5.6 wrote the implementation for a newly released model in about two hours. This fluidity means the simple split between main and unstable branches is no longer sufficient. Projects may need many experimental branches published as integral parts. Documentation must also evolve to serve coding agents, not just humans. The main takeaway: software has become more malleable than ever, enabling fluid, branch-rich distribution models.",
       "added": "2026-07-22",
       "times_shown": 0
     },
