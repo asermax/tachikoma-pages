@@ -15,7 +15,7 @@ const ARTICLES = [
     { slug: 'software-design-in-the-agentic-age', title: 'Software Design in the Agentic Age: Place Your Bets', meta: 'Mathias Verraes · July 2026', time: '4:02' },
     { slug: 'feedback-flywheel', title: 'Feedback Flywheel', meta: 'Rahul Garg · April 2026', time: '17:05' },
     { slug: 'the-primitive-is-the-product', title: 'The primitive is the product', meta: 'Lenny Pruss · June 2025', time: '9:47' },
-    { slug: 'on-idea-generation', title: 'On Exercising the Idea Muscle', meta: 'Sankalp · June 2026', time: '18:14' },
+    { slug: 'on-idea-generation', title: 'one must imagine sisyphus full of ideas: on exercising the idea muscle', meta: 'Sankalp · Jun 2026', time: '23:30' },
     { slug: 'prompt-injection-as-role-confusion', title: 'A Theory of Prompt Injection (and Why You Should Study Roles)', meta: 'Charles Ye et al. · June 2026', time: '9:45' },
     { slug: 'why-ai-hasnt-replaced-software-engineers', title: 'Why AI hasn\'t replaced software engineers, and won\'t', meta: 'Narayanan & Kapoor · June 2026', time: '14:05' },
     { slug: 'agent-context', title: 'Agent Context', meta: 'Sankalp · June 2026', time: '6:21' },
