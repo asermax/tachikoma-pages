@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'ai-making', title: 'On Making', meta: 'Beej · Jul 2026', time: '14:54' },
     { slug: 'client-side-prediction-server-reconciliation', title: 'Fast-Paced Multiplayer (Part II): Client-Side Prediction and Server Reconciliation', meta: 'Gabriel Gambetta · Jul 2026', time: '6:59' },
     { slug: 'practical-astar', title: 'Practical A*', meta: 'Gabriel Gambetta · Jul 2026', time: '5:24' },
     { slug: 'search-strategies', title: 'Search Strategies', meta: 'Gabriel Gambetta · Jul 2026', time: '3:45' },
