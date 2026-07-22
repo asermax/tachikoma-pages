@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'client-server-game-architecture', title: 'Fast-Paced Multiplayer (Part I): Client-Server Game Architecture', meta: 'Gabriel Gambetta · Jul 2026', time: '5:21' },
     { slug: 'not-just-development-distribution-of-software-may-change-as-well', title: 'Not just development, distribution of software may change as well', meta: 'Salvatore Sanfilippo · Jul 2026', time: '5:08' },
     { slug: 'practical-astar', title: 'Practical A*', meta: 'Gabriel Gambetta · Jul 2026', time: '5:24' },
     { slug: 'search-strategies', title: 'Search Strategies', meta: 'Gabriel Gambetta · Jul 2026', time: '3:45' },
@@ -6,8 +7,6 @@ const ARTICLES = [
     { slug: 'lag-compensation', title: 'Lag Compensation', meta: 'Gabriel Gambetta · Jul 2026', time: '3:58' },
     { slug: 'entity-interpolation', title: 'Entity Interpolation', meta: 'Gabriel Gambetta · Jul 2026', time: '9:12' },
     { slug: 'astar-demystified', title: 'A* Demystified', meta: 'Gabriel Gambetta · Jul 2026', time: '4:12' },
-    { slug: 'client-side-prediction-server-reconciliation', title: 'Client-Side Prediction and Server Reconciliation', meta: 'Gabriel Gambetta · Jul 2026', time: '7:33' },
-    { slug: 'client-server-game-architecture', title: 'Client-Server Game Architecture', meta: 'Gabriel Gambetta · Jul 2026', time: '6:06' },
     { slug: 'old-and-new-apps-via-modern-coding-agents', title: 'Old and new apps, via modern coding agents', meta: 'Terence Tao · July 2026', time: '3:56' },
     { slug: 'pace-layers-and-ai-integration', title: 'Pace Layers and AI Integration', meta: 'Chad Fowler · December 2025 · ~12 min listen', time: '11:40' },
     { slug: 'the-death-and-rebirth-of-programming', title: 'The Death and Rebirth of Programming', meta: 'Chad Fowler · December 2025 · ~7 min listen', time: '7:05' },
