@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'not-just-development-distribution-of-software-may-change-as-well', title: 'Not just development, distribution of software may change as well', meta: 'Salvatore Sanfilippo · Jul 2026', time: '5:08' },
     { slug: 'practical-astar', title: 'Practical A*', meta: 'Gabriel Gambetta · Jul 2026', time: '5:24' },
     { slug: 'search-strategies', title: 'Search Strategies', meta: 'Gabriel Gambetta · Jul 2026', time: '3:45' },
     { slug: 'generic-search', title: 'Generic Search', meta: 'Gabriel Gambetta · Jul 2026', time: '7:02' },
