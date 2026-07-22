@@ -479,6 +479,15 @@
       "times_shown": 0
     },
     {
+      "slug": "ai-making",
+      "title": "On Making",
+      "url": "https://beej.us/blog/data/ai-making/",
+      "category": "ai",
+      "summary": "Beej Jorgensen Hall opens by showcasing his recent creations — a sci-fi novel, woodcut painting, rebuilt deck, and Rust roguelike — then admits all were AI-generated (except the deck, built by contractors). The essay explores the discomfort of claiming to have 'made' things you merely requested from an AI. His central argument: there is a meaningful distinction between making something and asking someone to make it for you. Prompting involves real skills (vision, judgment, communication) but is leadership, not making. He contrasts this with a flash card app he wrote by hand — 50x longer, but genuine pride because he actually built it. He tests the abstraction layer boundary by having Claude convert C to x86_64 assembly — which works perfectly — and still feels he authored it, suggesting the difference is the relationship (tool vs. agent). Not a polemic against AI, but an honest meditation on the loss of fulfillment from delegating the act of making.",
+      "added": "2026-07-22",
+      "times_shown": 0
+    },
+    {
       "slug": "client-side-prediction-and-server-reconciliation",
       "title": "Client-Side Prediction and Server Reconciliation",
       "url": "https://www.gabrielgambetta.com/client-side-prediction-server-reconciliation.html",
