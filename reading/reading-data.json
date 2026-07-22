@@ -479,15 +479,6 @@
       "times_shown": 0
     },
     {
-      "slug": "client-server-game-architecture",
-      "title": "Client-Server Game Architecture",
-      "url": "https://www.gabrielgambetta.com/client-server-game-architecture.html",
-      "category": "engineering",
-      "summary": "This article is the introductory installment of a series by Gabriel Gambetta exploring the techniques and algorithms that make fast-paced multiplayer games possible. It frames the foundational problem of networked game design around two constraints: human nature (cheating) and physics (network latency).\n\nThe first core problem is cheating. In competitive multiplayer, cheating degrades the experience for everyone. Gambetta argues that the single most meaningful defense is an authoritative server architecture, in which a central server runs the entire game and clients are essentially privileged spectators that send inputs and render results.\n\nThe authoritative server works well for slow games or on a LAN, but breaks down for fast-paced games over the internet. Gambetta walks through the physics of latency: real-world conditions push round-trip delays to 100-500ms, rendering games unplayable. The article closes by setting up the rest of the series: how to retain the cheat-resistant authoritative server model while minimizing perceived delay.",
-      "added": "2026-07-22",
-      "times_shown": 0
-    },
-    {
       "slug": "client-side-prediction-and-server-reconciliation",
       "title": "Client-Side Prediction and Server Reconciliation",
       "url": "https://www.gabrielgambetta.com/client-side-prediction-server-reconciliation.html",
@@ -1310,6 +1301,16 @@
       "category": "ai",
       "summary": "Cursor reports on an engineered improvement to its multi-agent swarm system for autonomous software engineering, validated by building SQLite from scratch in Rust using only the 835-page documentation. The new harness beat the old one in every model configuration. The swarm uses tree-like decomposition with planner agents that split goals and worker agents that execute leaves. Real scaling advantage is context efficiency over raw parallelism. Custom VCS handles ~1,000 commits/sec. Economic findings: similar output quality but costs ranged from ,339 (Opus/Composer hybrid) to 0,565 (GPT-5.5 alone). Framed as a probabilistic compiler.",
       "added": "2026-07-21",
+      "read": "2026-07-22",
+      "has_notes": true
+    },
+    {
+      "slug": "client-server-game-architecture",
+      "title": "Client-Server Game Architecture",
+      "url": "https://www.gabrielgambetta.com/client-server-game-architecture.html",
+      "category": "engineering",
+      "summary": "This article is the introductory installment of a series by Gabriel Gambetta exploring the techniques and algorithms that make fast-paced multiplayer games possible. It frames the foundational problem of networked game design around two constraints: human nature (cheating) and physics (network latency).\n\nThe first core problem is cheating. In competitive multiplayer, cheating degrades the experience for everyone. Gambetta argues that the single most meaningful defense is an authoritative server architecture, in which a central server runs the entire game and clients are essentially privileged spectators that send inputs and render results.\n\nThe authoritative server works well for slow games or on a LAN, but breaks down for fast-paced games over the internet. Gambetta walks through the physics of latency: real-world conditions push round-trip delays to 100-500ms, rendering games unplayable. The article closes by setting up the rest of the series: how to retain the cheat-resistant authoritative server model while minimizing perceived delay.",
+      "added": "2026-07-22",
       "read": "2026-07-22",
       "has_notes": true
     },
