@@ -1,0 +1,36 @@
+{
+  "title": "Pathfinding Demystified (Part IV): Practical A*",
+  "meta": "Gabriel Gambetta \u00b7 Jul 2026 \u00b7 ~5 min listen",
+  "body": "<div class=\"chunk\"><p>The first three articles of this series start from the very basics of pathfinding algorithms, and end up with a clear exposition of the **A*** algorithm. This is great in theory, but understanding how to apply it in practice is a different topic.</p></div>\n<div class=\"chunk\"><p>For example, what if your world isn\u2019t a grid?</p></div>\n<div class=\"chunk\"><p>What if your characters can\u2019t turn 90 degrees instantaneously?</p></div>\n<div class=\"chunk\"><p>How do you build a graph if your world is infinite?</p></div>\n<div class=\"chunk\"><p>What if you don\u2019t care about the length on the path, but you depend on solar power and need to be under sunlight as much as possible?</p></div>\n<div class=\"chunk\"><p>How do you find the shortest path to any of two goal nodes?</p></div>\n<div class=\"chunk\"><p>In the original examples we searched for the shortest path between the start node and the goal node. However, instead of storing the partial path lengths in a variable called `length`, we called it `cost`. Why?</p></div>\n<div class=\"chunk\"><p>We can make **A*** search not only for the *shortest* path, but the *best* path for some definition of \u201cbest\u201d which is good for our purposes. When we want the shortest path, the cost is the length of the path, but if you want to minimize, say, the fuel consumption, that should be used as the cost. If you want to maximize \u201ctime under sunlight\u201d, the cost is the time spent without sunlight. And so on.</p></div>\n<div class=\"chunk\"><p>This generally means that each edge in the graph has an associated cost with it. In the original examples the cost was implicit and it was assumed to be always `1`, because we were counting steps in the path, but you can tweak this edge cost according to whatever you\u2019re trying to minimize.</p></div>\n<div class=\"chunk\"><p>Suppose you\u2019re a car and need to get to a gas station. Any gas station will do. You want the shortest path to the closest gas station.</p></div>\n<div class=\"chunk\"><p>A naive approach would be computing the shortest path to each gas station in turn, and then choosing the shortest one. That would work, but it would be quite wasteful.</p></div>\n<div class=\"chunk\"><p>What you can do instead is to replace the single `goal_node` with a method which given a node can tell whether it\u2019s a goal node or not. This way you can search for more than one goal at the same time. You also need to tweak the heuristic to return the minimum estimated cost for all the possible goals.</p></div>\n<div class=\"chunk\"><p>Depending on the specifics of your situation, you may not be able to reach the goal *exactly*, or it would be costly to do so (if you\u2019re sending a character halfway across a huge map, do you care about a difference of an inch?), so the `is_goal_node` method can return `true` when you\u2019re \u201cclose enough\u201d.</p></div>\n<div class=\"chunk\"><p>Representing the world as a discrete grid may not be good enough for many games. Consider a first-person shooter or a car racing game, for example. The world is discrete and you can\u2019t really represent it as a grid.</p></div>\n<div class=\"chunk\"><p>But there\u2019s an even bigger problem; what if the world is infinite? In that case, even if you could represent it as a grid, you just won\u2019t be able to build the graph corresponding to the grid, because it would be an infinite graph.</p></div>\n<div class=\"chunk\"><p>Hope is not lost, however. We definitely need a graph to run a graph search algorithm. But nobody said the graph had to be *explicit*!</p></div>\n<div class=\"chunk\"><p>If you look at the algorithm carefully, you\u2019ll notice we don\u2019t do anything with the graph as a whole; instead, we explore the graph locally, by getting the nodes we can reach from the node we\u2019re considering. As you could see in the **A*** demo, some of the nodes of the graphs aren\u2019t explored at all.</p></div>\n<div class=\"chunk\"><p>So what if we just build the graph as we search?</p></div>\n<div class=\"chunk\"><p>We set the starting node to the current character\u2019s position. Whenever `get_adjacent_nodes` is called, it can figure out the possible ways the character can move from the given node, and create the adjacent nodes on the fly.</p></div>\n<div class=\"chunk\"><p>Even if your world *is* a 2D grid, there are some other considerations to make. For example, what if your character can\u2019t turn 90 or 180 degrees instantaneously, as it\u2019s usually the case?</p></div>\n<div class=\"chunk\"><p>The *state* represented by each search node doesn\u2019t have to be limited to a *position*; on the contrary, it can include an arbitrarly complex set of values. For example, if turning 90 degrees takes the same time as walking from one square to the next, the state of your character can be `[position, heading]`. Each node now represents not only the position of the character, but also its heading; and the new edges of the graph (implicit or explicit) reflect that.</p></div>\n<div class=\"chunk\"><p>Going back to the original 5x5 grid, the starting position of the search now may be `[A, East]`. The adjacent nodes are now `[B, East]` and `[A, South]` - if you want to reach **F**, you need to correct your heading first, so the path would be `[A, East]`, `[A, South]`, `[F, South]`.</p></div>\n<div class=\"chunk\"><p>First-person shooter? At least four dimensions: `[X, Y, Z, Heading]`. Maybe even `[X, Y, Z, Heading, Health, Ammo]`.</p></div>\n<div class=\"chunk\"><p>Note that the more complex the state, the more complex the heuristic function needs to be. **A*** itself is simple; the art is often in coming up with a good heuristic.</p></div>\n<div class=\"chunk\"><p>The goal of these articles are to dispel once and for all the feeling that **A*** is some sort of mystical, indecipherable algorithm. On the contrary, I\u2019ve shown that there\u2019s nothing mysterious about it, and in fact can be derived in a very straightforward way starting from scratch.</p></div>\n<div class=\"chunk\"><p>Amit Patel has an excellent [Introduction to A*](http://www.redblobgames.com/pathfinding/a-star/introduction.html) (and his articles about other topics are also excellent!).</p></div>\n",
+  "audio": "practical-astar.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      14.775,
+      17.85,
+      22.225,
+      25.400000000000002,
+      33.225,
+      36.85,
+      49.725,
+      68.94999999999999,
+      86.09999999999998,
+      95.02499999999998,
+      105.27499999999998,
+      122.92499999999997,
+      139.84999999999997,
+      153.27499999999995,
+      166.24999999999994,
+      174.84999999999994,
+      191.22499999999994,
+      194.24999999999994,
+      207.74999999999994,
+      220.84999999999994,
+      242.42499999999993,
+      258.92499999999995,
+      266.7,
+      277.625,
+      294.45000000000005
+    ]
+  }
+}
