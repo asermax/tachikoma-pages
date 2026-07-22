@@ -524,15 +524,6 @@
       "times_shown": 0
     },
     {
-      "slug": "not-just-development-distribution-of-software-may-change-as-well",
-      "title": "Not just development, distribution of software may change as well",
-      "url": "http://antirez.com/news/170",
-      "category": "ai",
-      "summary": "In this essay, Redis creator Salvatore Sanfilippo (antirez) argues that AI coding tools are transforming not only how software is written, but how it is distributed and consumed. Traditionally, open source projects followed a predictable rhythm: develop on an unstable branch, freeze it, fix bugs, and eventually cut a polished stable release. Sanfilippo contends this model is becoming outdated because the recipients of software now have access to AI coding agents and can themselves modify, specialize, and adapt code to their own requirements. A key shift is that a code repository can function less as a finished product and more as a template or reference implementation. Sanfilippo illustrates this with Redis: a pull request delivering strong memory savings might take weeks to reach stable, but a user whose cloud bill depends on that optimization may prefer a 95%-ready branch from day one to test and refine themselves. He extends the argument using DwarfStar (a local-inference engine). Testing every GPU/model combination is impractical. Instead, providing solid reference implementations lets coding agents extrapolate and generate support for other backends. GPT 5.6 wrote the implementation for a newly released model in about two hours. This fluidity means the simple split between main and unstable branches is no longer sufficient. Projects may need many experimental branches published as integral parts. Documentation must also evolve to serve coding agents, not just humans. The main takeaway: software has become more malleable than ever, enabling fluid, branch-rich distribution models.",
-      "added": "2026-07-22",
-      "times_shown": 0
-    },
-    {
       "slug": "practical-a",
       "title": "Practical A*",
       "url": "https://www.gabrielgambetta.com/practical-a-star.html",
@@ -1319,6 +1310,16 @@
       "category": "ai",
       "summary": "Cursor reports on an engineered improvement to its multi-agent swarm system for autonomous software engineering, validated by building SQLite from scratch in Rust using only the 835-page documentation. The new harness beat the old one in every model configuration. The swarm uses tree-like decomposition with planner agents that split goals and worker agents that execute leaves. Real scaling advantage is context efficiency over raw parallelism. Custom VCS handles ~1,000 commits/sec. Economic findings: similar output quality but costs ranged from ,339 (Opus/Composer hybrid) to 0,565 (GPT-5.5 alone). Framed as a probabilistic compiler.",
       "added": "2026-07-21",
+      "read": "2026-07-22",
+      "has_notes": true
+    },
+    {
+      "slug": "not-just-development-distribution-of-software-may-change-as-well",
+      "title": "Not just development, distribution of software may change as well",
+      "url": "http://antirez.com/news/170",
+      "category": "ai",
+      "summary": "In this essay, Redis creator Salvatore Sanfilippo (antirez) argues that AI coding tools are transforming not only how software is written, but how it is distributed and consumed. Traditionally, open source projects followed a predictable rhythm: develop on an unstable branch, freeze it, fix bugs, and eventually cut a polished stable release. Sanfilippo contends this model is becoming outdated because the recipients of software now have access to AI coding agents and can themselves modify, specialize, and adapt code to their own requirements. A key shift is that a code repository can function less as a finished product and more as a template or reference implementation. Sanfilippo illustrates this with Redis: a pull request delivering strong memory savings might take weeks to reach stable, but a user whose cloud bill depends on that optimization may prefer a 95%-ready branch from day one to test and refine themselves. He extends the argument using DwarfStar (a local-inference engine). Testing every GPU/model combination is impractical. Instead, providing solid reference implementations lets coding agents extrapolate and generate support for other backends. GPT 5.6 wrote the implementation for a newly released model in about two hours. This fluidity means the simple split between main and unstable branches is no longer sufficient. Projects may need many experimental branches published as integral parts. Documentation must also evolve to serve coding agents, not just humans. The main takeaway: software has become more malleable than ever, enabling fluid, branch-rich distribution models.",
+      "added": "2026-07-22",
       "read": "2026-07-22",
       "has_notes": true
     }
