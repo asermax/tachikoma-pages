@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22",
+  "generated_at": "2026-07-23",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -548,6 +548,15 @@
       "category": "engineering",
       "summary": "This article focuses on the single function — choose_node(reachable) — that differentiates all search algorithms. It first fixes an oversight by introducing path costs, ensuring the algorithm always retains the shortest known path by updating a node's previous pointer and cost whenever a cheaper route is found.\n\nWith costs in place, the article introduces Uniform Cost Search: pick the reachable node with the lowest cost from the start. This causes the search to expand radially outward, reliably producing the shortest path. However, it explores uniformly in all directions, even away from the goal — a weakness that motivates A*'s heuristic-guided search in the next article.",
       "added": "2026-07-22",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-future-worth-building-is-human",
+      "title": "The Future Worth Building Is Human",
+      "url": "https://thinkingmachines.ai/blog/the-future-worth-building-is-human/",
+      "category": "ai",
+      "summary": "In this mission-defining essay, Thinking Machines Lab argues that AI should be built to extend human will and judgment, not to replace it. The piece makes the case that the dominant trajectory of AI development — toward centralized, autonomous systems trained in a handful of places and then frozen — crowds people out and concentrates power, turning humans into passive observers. The company instead commits to building AI that is as diverse and distributed as the people it serves. Drawing on Polanyi and Hayek, it contends that productive knowledge is tacit, local, and continuously updated by people doing the work — no central intelligence can aggregate this knowledge. Human participation is framed as a technical challenge rather than a concession, with the company betting on live multimodal interaction models and decentralized alignment encoding users' values directly in model weights. The future, they conclude, is not a binary choice between human dominance and obsolescence, but a road where \"the born and the made\" walk together.",
+      "added": "2026-07-23",
       "times_shown": 0
     }
   ],
