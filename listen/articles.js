@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'prompt-caching', title: 'Prompt Caching In Agents', meta: 'Earendil · Jul 2026', time: '19:47' },
     { slug: 'the-future-worth-building-is-human', title: 'The Future Worth Building Is Human', meta: 'Thinking Machines Lab · Jul 2026', time: '13:02' },
     { slug: 'ai-making', title: 'On Making', meta: 'Beej · Jul 2026', time: '14:54' },
     { slug: 'client-side-prediction-server-reconciliation', title: 'Fast-Paced Multiplayer (Part II): Client-Side Prediction and Server Reconciliation', meta: 'Gabriel Gambetta · Jul 2026', time: '6:59' },
