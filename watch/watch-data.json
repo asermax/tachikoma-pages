@@ -1370,6 +1370,26 @@
       "summary": "This presentation by Will Brown from Prime Intellect introduces \"The Prime Intellect Stack,\" a set of open-source tools designed to simplify and enhance post-training for AI models. The talk outlines their \"open superintelligence stack,\" highlighting how libraries like verifiers and prime-rl function within the iterative loop of building, evaluating, training, and deploying models. A key takeaway is the importance of efficient, large-scale training and utilizing custom algorithms to refine open-source models for specific real-world tasks. AI engineers, researchers, and tech developers looking to leverage open-source resources to customize and optimize AI model performance would benefit most from watching this video.",
       "added": "2026-07-14",
       "times_shown": 0
+    },
+    {
+      "slug": "every-harness-will-become-a-claw-sam-bhagwat-mastra",
+      "title": "Every Harness Will Become A Claw \u2014 Sam Bhagwat, Mastra",
+      "url": "https://www.youtube.com/watch?v=8qWIPUia2O8",
+      "video_id": "8qWIPUia2O8",
+      "channel": "AI Engineer",
+      "summary": "This video features Sam Bhagwat, Co-founder and CEO of Mastra, discussing the evolution and future of agentic systems. He outlines a spectrum of development that progresses from LLMs to Agents, then Harnesses, and ultimately to \"Claws\" which feature persistent, always-on capabilities with active learning and initiative. The key takeaway is \"Steinberger's Law,\" which posits that every agentic harness will naturally expand in complexity and autonomy until it becomes a fully capable \"claw.\" This talk is highly beneficial for AI engineers, developers building agentic systems, and anyone interested in the architectural future of AI-native applications.",
+      "added": "2026-07-23",
+      "times_shown": 0
+    },
+    {
+      "slug": "from-napkin-math-to-turbopuffer",
+      "title": "From \"napkin math\" to turbopuffer",
+      "url": "https://www.youtube.com/watch?v=h8TBLKyo7Rs",
+      "video_id": "h8TBLKyo7Rs",
+      "channel": "The Pragmatic Engineer",
+      "summary": "This video features an interview with Simon Eriksson, the founder and CEO of Turbopuffer, sharing his unique, self-taught journey into computer science. Eriksson discusses how his childhood curiosity with HTML and a viral blog post led to him being recruited by Shopify while still in high school, emphasizing the value of deep, self-directed study to overcome imposter syndrome. He also details the technical challenges of managing database scaling and infrastructure during Shopify's rapid growth period. Aspiring developers, self-taught programmers, and tech founders will benefit from watching this to gain insights on non-traditional career paths and real-world system architecture.",
+      "added": "2026-07-23",
+      "times_shown": 0
     }
   ],
   "archive": [
