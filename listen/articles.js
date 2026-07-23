@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'self-hosting-deepseek-v4-flash', title: 'How we self-host DeepSeek V4 Flash on AWS spot instances', meta: 'Miguel Salinas · Jul 2026', time: '10:06' },
     { slug: 'prompt-caching', title: 'Prompt Caching In Agents', meta: 'Earendil · Jul 2026', time: '19:47' },
     { slug: 'the-future-worth-building-is-human', title: 'The Future Worth Building Is Human', meta: 'Thinking Machines Lab · Jul 2026', time: '13:02' },
     { slug: 'ai-making', title: 'On Making', meta: 'Beej · Jul 2026', time: '14:54' },
