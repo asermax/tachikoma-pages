@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'codeberg-divides', title: 'Codeberg Divides', meta: 'Armin Ronacher · Jul 2026', time: '3:18' },
     { slug: 'protecting-floss-commons-from-llms', title: 'Protecting our FLOSS commons from LLMs', meta: 'Codeberg · Jul 2026', time: '13:28' },
     { slug: 'self-hosting-deepseek-v4-flash', title: 'How we self-host DeepSeek V4 Flash on AWS spot instances', meta: 'Miguel Salinas · Jul 2026', time: '10:06' },
     { slug: 'prompt-caching', title: 'Prompt Caching In Agents', meta: 'Earendil · Jul 2026', time: '19:47' },
