@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23",
+  "generated_at": "2026-07-24",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -551,11 +551,38 @@
       "times_shown": 0
     },
     {
+      "slug": "prompt-caching",
+      "title": "Prompt Caching In Agents",
+      "url": "https://earendil.com/posts/prompt-caching/",
+      "category": "ai",
+      "summary": "This article from Earendil (the makers of the Pi coding agent) explains how prompt caching works inside large language model inference and why it is a first-class concern for coding agents. Because most agent turns append only a small amount of new content to a long, repeated prompt (system prompt, tools, conversation history), caching the KV state of that stable prefix is what makes sessions economically and practically feasible. The piece walks through the mechanics, failure modes, cost implications, and product decisions that caching forces on agent designers.",
+      "added": "2026-07-23",
+      "times_shown": 0
+    },
+    {
+      "slug": "protecting-our-foss-commons-from-llms",
+      "title": "Protecting our FLOSS commons from LLMs",
+      "url": "https://blog.codeberg.org/protecting-our-floss-commons-from-llms.html",
+      "category": "ai",
+      "summary": "Codeberg e.V. announces two member motions on LLMs: a commitment to never use user/project data for AI training, and a controversial ToS amendment (358-144) banning 'vibe-coded projects' — software generated largely by LLMs with minimal human oversight. The article argues LLMs externalize costs onto everyone: aggressive AI crawlers strain infrastructure, hardware prices have skyrocketed (SSDs from €700 to €3,700), environmental impact from data centers, and social erosion of FOSS collaboration through low-effort contributions, trust erosion, and license laundering. The ban won't cause mass deletions — active communities and projects with human oversight are safe; targets are autonomous LLM-generated ghost projects consuming disproportionate resources.",
+      "added": "2026-07-23",
+      "times_shown": 0
+    },
+    {
       "slug": "the-future-worth-building-is-human",
       "title": "The Future Worth Building Is Human",
       "url": "https://thinkingmachines.ai/blog/the-future-worth-building-is-human/",
       "category": "ai",
       "summary": "In this mission-defining essay, Thinking Machines Lab argues that AI should be built to extend human will and judgment, not to replace it. The piece makes the case that the dominant trajectory of AI development — toward centralized, autonomous systems trained in a handful of places and then frozen — crowds people out and concentrates power, turning humans into passive observers. The company instead commits to building AI that is as diverse and distributed as the people it serves. Drawing on Polanyi and Hayek, it contends that productive knowledge is tacit, local, and continuously updated by people doing the work — no central intelligence can aggregate this knowledge. Human participation is framed as a technical challenge rather than a concession, with the company betting on live multimodal interaction models and decentralized alignment encoding users' values directly in model weights. The future, they conclude, is not a binary choice between human dominance and obsolescence, but a road where \"the born and the made\" walk together.",
+      "added": "2026-07-23",
+      "times_shown": 0
+    },
+    {
+      "slug": "we-recently-launched-a-free-tier-powered-by-a-self-hosted-deepseek-v4-flash",
+      "title": "How we self-host DeepSeek V4 Flash on AWS spot instances",
+      "url": "https://x.com/i/status/2080326597757087859",
+      "category": "ai",
+      "summary": "Miguel Salinas explains how camelAI built a free tier by self-hosting DeepSeek V4 Flash on AWS spot GPU instances. The model (284B total, 13B active per token, MXFP4 quantized) runs on four RTX PRO 6000 Blackwell GPUs (g7e.24xlarge). Key optimizations: DSpark speculative decoding for ~300 tok/s single-stream, compressed attention KV cache with offloading and sticky routing, and same-region S3 weights for fast spot recovery. The core argument is that self-hosting converts per-token variable costs into fixed infrastructure costs — more users means slower responses, not bigger bills. Spot instances run -6K/month vs 2K on-demand, and cloud credits make cash cost near zero during growth.",
       "added": "2026-07-23",
       "times_shown": 0
     }
