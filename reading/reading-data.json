@@ -488,15 +488,6 @@
       "times_shown": 0
     },
     {
-      "slug": "client-side-prediction-and-server-reconciliation",
-      "title": "Client-Side Prediction and Server Reconciliation",
-      "url": "https://www.gabrielgambetta.com/client-side-prediction-server-reconciliation.html",
-      "category": "engineering",
-      "summary": "This article explains how to eliminate the perceived delay between player inputs and on-screen effects in a client-server multiplayer game. The key technique is client-side prediction: if the game world is deterministic enough, the client can immediately process inputs locally while waiting for the server's authoritative state, making the game feel responsive.\n\nThe article then addresses synchronization issues that arise when the client's predicted state diverges from the server's authoritative state. The solution is server reconciliation: clients tag each input with a sequence number, and the server includes the last processed sequence number in its replies. When a mismatch occurs, the client discards acknowledged inputs, reapplies the authoritative state, and replays any unprocessed inputs on top.\n\nGambetta extends the principle beyond movement to combat, health updates, and other state changes, emphasizing that even in deterministic worlds with no cheating, reconciliation discrepancies can still occur in multi-player scenarios. The article provides interactive demos showing the techniques in action.",
-      "added": "2026-07-22",
-      "times_shown": 0
-    },
-    {
       "slug": "entity-interpolation",
       "title": "Entity Interpolation",
       "url": "https://www.gabrielgambetta.com/entity-interpolation.html",
@@ -1367,6 +1358,16 @@
       "added": "2026-07-22",
       "read": "2026-07-22",
       "has_notes": true
+    },
+    {
+      "slug": "client-side-prediction-and-server-reconciliation",
+      "title": "Client-Side Prediction and Server Reconciliation",
+      "url": "https://www.gabrielgambetta.com/client-side-prediction-server-reconciliation.html",
+      "category": "engineering",
+      "summary": "This article explains how to eliminate the perceived delay between player inputs and on-screen effects in a client-server multiplayer game. The key technique is client-side prediction: if the game world is deterministic enough, the client can immediately process inputs locally while waiting for the server's authoritative state, making the game feel responsive.\n\nThe article then addresses synchronization issues that arise when the client's predicted state diverges from the server's authoritative state. The solution is server reconciliation: clients tag each input with a sequence number, and the server includes the last processed sequence number in its replies. When a mismatch occurs, the client discards acknowledged inputs, reapplies the authoritative state, and replays any unprocessed inputs on top.\n\nGambetta extends the principle beyond movement to combat, health updates, and other state changes, emphasizing that even in deterministic worlds with no cheating, reconciliation discrepancies can still occur in multi-player scenarios. The article provides interactive demos showing the techniques in action.",
+      "added": "2026-07-22",
+      "read": "2026-07-24",
+      "has_notes": false
     },
     {
       "slug": "not-just-development-distribution-of-software-may-change-as-well",
