@@ -1360,6 +1360,76 @@
       "summary": "This video features an interview with Simon Eriksson, the founder and CEO of Turbopuffer, sharing his unique, self-taught journey into computer science. Eriksson discusses how his childhood curiosity with HTML and a viral blog post led to him being recruited by Shopify while still in high school, emphasizing the value of deep, self-directed study to overcome imposter syndrome. He also details the technical challenges of managing database scaling and infrastructure during Shopify's rapid growth period. Aspiring developers, self-taught programmers, and tech founders will benefit from watching this to gain insights on non-traditional career paths and real-world system architecture.",
       "added": "2026-07-23",
       "times_shown": 0
+    },
+    {
+      "slug": "claude-for-long-horizon-tasks-lance-martin-anthropic",
+      "title": "Claude for Long-Horizon Tasks \u2014 Lance Martin, Anthropic",
+      "url": "https://www.youtube.com/watch?v=9QebvrrY3KY",
+      "video_id": "9QebvrrY3KY",
+      "channel": "AI Engineer",
+      "summary": "In this presentation from the AI Engineer World's Fair, Lance Martin from Anthropic discusses the technical evolution and architectural design of asynchronous, long-horizon AI agents. He highlights two key design principles: decoupling the 'brain' (a stateless orchestration harness) from the 'hands' (isolated execution sandboxes) to improve security and state recovery, and using separate 'verifier' agents to objectively evaluate task completion. By separating execution from evaluation in iterative loops, developers can enable AI systems to self-correct more reliably over long periods. This talk is highly beneficial for AI software engineers, systems architects, and developers seeking to design robust, autonomous, and secure LLM-based agentic workflows.",
+      "added": "2026-07-24",
+      "times_shown": 0
+    },
+    {
+      "slug": "from-systems-of-record-to-systems-of-context-omri-bruchim-tomer-ast-mondaycom",
+      "title": "From Systems of Record to Systems of Context \u2014 Omri Bruchim & Tomer Ast, monday.com",
+      "url": "https://www.youtube.com/watch?v=Btk8wDUVs74",
+      "video_id": "Btk8wDUVs74",
+      "channel": "AI Engineer",
+      "summary": "This presentation by monday.com AI engineers Tomer Ast and Omri Bruchim details the shift from building AI as a mere 'system of record' to developing it as a 'system of context and understanding.' The speakers introduce 'Monday Sidekick' and its underlying 'World Model,' which goes beyond simple data retrieval to comprehend user intent, work history, and true priority. They explain how this context is processed ahead of time using a 'slow engine' to learn long-term user patterns and a 'fast engine' to monitor real-time actions. This video is highly beneficial for software developers, AI engineers, and product managers interested in building context-aware enterprise AI applications.",
+      "added": "2026-07-24",
+      "times_shown": 0
+    },
+    {
+      "slug": "notions-token-town-sarah-sachs-notion",
+      "title": "Notion's Token Town \u2014 Sarah Sachs, Notion",
+      "url": "https://www.youtube.com/watch?v=-I5W5QVAT8E",
+      "video_id": "-I5W5QVAT8E",
+      "channel": "AI Engineer",
+      "summary": "In this keynote presentation, Sarah, the head of AI engineering at Notion, discusses the economic challenges of building AI-native products, warning companies about becoming 'AI-poor' due to high token costs. She highlights how the current AI market structure is unfavorable to buyers, especially smaller companies, and urges businesses to view their AI suppliers as potential competitors. The key takeaway is that sustainable success relies on winning on the product itself\u2014by building unique user interfaces, data flywheels, and product moats\u2014rather than relying strictly on the most expensive, frontier models. This video is highly valuable for AI developers, startup founders, and product managers navigating the costly landscape of AI integration.",
+      "added": "2026-07-24",
+      "times_shown": 0
+    },
+    {
+      "slug": "perception-agents-antje-barth-amazon-agi-lab",
+      "title": "Perception Agents \u2014 Antje Barth, Amazon AGI Lab",
+      "url": "https://www.youtube.com/watch?v=2JX6JYyQG4Y",
+      "video_id": "2JX6JYyQG4Y",
+      "channel": "AI Engineer",
+      "summary": "In this presentation from the AI Engineer World's Fair, Antje Barth from the Amazon AGI Lab discusses the evolution of AI agents, highlighting that while they have acquired the capability to use tools, achieving end-to-end reliability remains a major obstacle. She explains that coding agents have progressed rapidly because code is easily verifiable, whereas most real-world knowledge work is messy and lacks clear metrics for verification. To solve this, Barth proposes developing 'perception agents' that operate similarly to robotics by continuously perceiving, planning, and acting within a shared visual context. This video is highly beneficial for AI developers, engineers, and tech leaders interested in the next generation of autonomous digital agents.",
+      "added": "2026-07-24",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-unreasonable-effectiveness-of-separating-the-task-from-the-model-maxime-rive",
+      "title": "The Unreasonable Effectiveness of Separating the Task from the Model \u2014 Maxime Rivest & Isaac Miller",
+      "url": "https://www.youtube.com/watch?v=GgLQ02aO-hs",
+      "video_id": "GgLQ02aO-hs",
+      "channel": "AI Engineer",
+      "summary": "In this presentation from the AI Engineer World's Fair, Maxime Rivest and Isaac Miller introduce DSPy, an open-source Python framework designed to make AI programs behave like modular software functions. They argue that by separating an AI task's high-level specifications and evaluation metrics from its underlying implementation details (like prompts and models), developers can easily automate optimizations and swap out components as technology evolves. This decoupled approach is shown to significantly reduce costs and improve scalability in real-world production environments at companies like Dropbox and Shopify. AI engineers, software developers, and product builders working with large language models will find this video highly beneficial for improving their development workflows.",
+      "added": "2026-07-24",
+      "times_shown": 0
+    },
+    {
+      "slug": "why-we-killed-our-multi-agent-pipeline-subbiah-sethuraman-and-abhilash-asokan-zs",
+      "title": "Why We Killed Our Multi-Agent Pipeline \u2014 Subbiah Sethuraman and Abhilash Asokan, ZS Associates",
+      "url": "https://www.youtube.com/watch?v=u6jJcIFDLE4",
+      "video_id": "u6jJcIFDLE4",
+      "channel": "AI Engineer",
+      "summary": "In this presentation, 'Why We Killed Our Multi-Agent Pipeline,' AI engineering leaders Subbiah Sethuraman and Abhilash Asokan share lessons learned from building AI systems for pharmaceutical commercial teams. They explain how their initial multi-agent pipeline failed due to context loss during handoffs, a lack of shared domain knowledge, and the incorrect application of LLMs to tasks better suited for deterministic statistics. To resolve these issues, they consolidated reasoning into a single 'analyst agent,' offloaded signal detection to deterministic pipelines, and structured business context using a knowledge graph. This video is highly beneficial for AI engineers, developers, and tech leads looking to build reliable, high-performing LLM architectures in complex business domains.",
+      "added": "2026-07-24",
+      "times_shown": 0
+    },
+    {
+      "slug": "your-agent-architecture-has-a-half-life-of-6-months-dan-farrelly-cto-inngest",
+      "title": "Your agent architecture has a half-life of 6 months \u2014 Dan Farrelly, CTO, Inngest",
+      "url": "https://www.youtube.com/watch?v=X1kp-ABIIxQ",
+      "video_id": "X1kp-ABIIxQ",
+      "channel": "AI Engineer",
+      "summary": "In this presentation, Dan Farrelly (CTO of Inngest) argues that because AI models, tools, and prompts change so rapidly, the architecture of AI agents has a 'half-life' of only six months. To build future-proof systems, Farrelly proposes decoupling agent architectures into three distinct layers: Execution (the brain), Context (the knowledge), and Compute (the hands). By isolating the 'Execution layer' as a stable, durable foundation for state management and orchestration, developers can easily swap out models or runtimes without needing to rewrite their entire system. This video is ideal for software engineers, AI developers, and system architects who want to build resilient and scalable AI-driven applications.",
+      "added": "2026-07-24",
+      "times_shown": 0
     }
   ],
   "archive": [
