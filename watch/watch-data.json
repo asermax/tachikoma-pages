@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23",
+  "generated_at": "2026-07-24",
   "queue": [
     {
       "slug": "harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan",
@@ -8,26 +8,6 @@
       "video_id": "am_oeAoUhew",
       "channel": "AI Engineer",
       "summary": "Ryan Lopopolo from OpenAI explores the paradigm shift where AI agents handle code implementation. He argues that human engineers must evolve from writing code to steering systems, designing guardrails, and managing AI agent teams. Key takeaway: human attention is now the most scarce resource in engineering. Beneficial for software engineers and tech leaders adapting to AI-assisted development.",
-      "added": "2026-04-18",
-      "times_shown": 0
-    },
-    {
-      "slug": "how-the-iran-war-spiked-oil-prices",
-      "title": "How the Iran War Spiked Oil Prices",
-      "url": "https://www.youtube.com/watch?v=5qjvluMnyAw",
-      "video_id": "5qjvluMnyAw",
-      "channel": "Wendover Productions",
-      "summary": "Examines the geopolitical and economic consequences of shutting down the Strait of Hormuz. While the Strait handles 20% of the world's oil, global production only fell by 8% due to strategic bypass pipelines. Discusses demand elasticity to explain why even small supply drops cause massive price spikes. Beneficial for students of economics, geopolitics, and international relations.",
-      "added": "2026-04-18",
-      "times_shown": 0
-    },
-    {
-      "slug": "rezero-season-3-full-recap-everything-you-need-to-know-for-season-4",
-      "title": "Re:ZERO Season 3 Full Recap | Everything You Need To Know For Season 4",
-      "url": "https://www.youtube.com/watch?v=_OLyeDp73x0",
-      "video_id": "_OLyeDp73x0",
-      "channel": "AniNews",
-      "summary": "This video provides a detailed summary of the Watergate City of Priestella arc from Re:Zero, covering the Emilia camp's diplomatic mission and the ensuing battle against the Witch Cult. It highlights major plot points, such as Subaru's limited use of Return by Death and his evolution into a hero for the masses, while resolving personal subplots for characters like Wilhelm and Garfield. Fans of the series looking for a concise refresher on character growth and arc outcomes before continuing the story will find this summary particularly beneficial.",
       "added": "2026-04-18",
       "times_shown": 0
     },
@@ -58,16 +38,6 @@
       "video_id": "_gVFUEdhCyI",
       "channel": "AI Engineer",
       "summary": "Overview of Gemma 4, the latest family of open-source AI models from Google DeepMind. Sizes range from 2B to 32B parameters, enabling high performance on consumer GPUs and mobile devices. Key features include on-device offline coding, advanced multimodal understanding across text/images/audio, multilingual support for 140+ languages, and an Apache 2.0 license for community collaboration.",
-      "added": "2026-04-21",
-      "times_shown": 0
-    },
-    {
-      "slug": "nuevo-claude-design-un-antes-y-despu\u00e9s-en-mi-forma-de-trabajar",
-      "title": "\u00a1NUEVO CLAUDE DESIGN! Un ANTES y DESPU\u00c9S en mi forma de TRABAJAR...",
-      "url": "https://www.youtube.com/watch?v=j1oJi1Pfobs",
-      "video_id": "j1oJi1Pfobs",
-      "channel": "Dot CSV Lab ",
-      "summary": "Anthropic has launched Claude Design, a new AI-powered platform for creating websites, documents, and interactive animations through automated HTML programming. Supports custom design systems including color palettes and logos for consistent branding. Simplifies complex workflows like motion graphics with features such as interactive sliders and 3D effects, significantly reducing time for manual design and coding tasks.",
       "added": "2026-04-21",
       "times_shown": 0
     },
@@ -1732,6 +1702,28 @@
       "summary": "Armin Ronacher reflects on a year of designing and building AI agents. He defines agents through the framework of loops, tools, and environments, and introduces 'agent psychosis' \u2014 the human tendency to over-rely on or misinterpret the agency of AI systems. He argues true agency must remain with humans, highlighting friction points when developers use coding agents to build other agents. Highly relevant for software engineers and AI developers interested in realistic design and limitations of agentic AI.",
       "added": "2026-07-21",
       "watched": "2026-07-21",
+      "has_notes": true
+    },
+    {
+      "slug": "harness-engineering-is-not-enough-why-software-factories-fail-dex-horthy-humanla",
+      "title": "Harness Engineering is not Enough: Why Software Factories Fail \u2014 Dex Horthy, HumanLayer",
+      "url": "https://www.youtube.com/watch?v=Ib5GBkD555M",
+      "video_id": "Ib5GBkD555M",
+      "channel": "AI Engineer",
+      "summary": "This video features a presentation by Dex Horthy, Co-founder and CEO of humanlayer, exploring why fully automated software factories driven by AI coding agents ultimately fail. Horthy argues that while AI models excel at solving isolated coding tasks, they lack the capacity to maintain and improve overall codebase quality over time, leading to increased bugs, technical debt, and production incidents. He suggests that simply spending more tokens or automating code reviews cannot substitute for human oversight in managing complex codebases.",
+      "added": "2026-07-23",
+      "watched": "2026-07-23",
+      "has_notes": true
+    },
+    {
+      "slug": "ep-02-ive-never-seen-a-model-say-this-file-is-getting-too-big",
+      "title": "Ep 02 - \u201cI\u2019ve Never Seen a Model Say \u2018This File Is Getting Too Big'",
+      "url": "https://www.youtube.com/watch?v=-DKSg1-v1Gg",
+      "video_id": "-DKSg1-v1Gg",
+      "channel": "Next Token",
+      "summary": "Next Token podcast episode discussing competitive dynamics between OpenAI and Anthropic, rate limits, Claude Fable 5 access, and GPT 5.6 release impact on Anthropic's scaling decisions.",
+      "added": "2026-07-24",
+      "watched": "2026-07-24",
       "has_notes": true
     }
   ]
