@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'how-coding-agents-read-your-code', title: 'How coding agents read your code (and how to write for them)', meta: 'Ben Vinegar · Jul 2026', time: '37:04' },
     { slug: 'codeberg-divides', title: 'Codeberg Divides', meta: 'Armin Ronacher · Jul 2026', time: '3:18' },
     { slug: 'protecting-floss-commons-from-llms', title: 'Protecting our FLOSS commons from LLMs', meta: 'Codeberg · Jul 2026', time: '13:28' },
     { slug: 'self-hosting-deepseek-v4-flash', title: 'How we self-host DeepSeek V4 Flash on AWS spot instances', meta: 'Miguel Salinas · Jul 2026', time: '10:06' },
