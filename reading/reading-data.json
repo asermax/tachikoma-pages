@@ -488,15 +488,6 @@
       "times_shown": 0
     },
     {
-      "slug": "entity-interpolation",
-      "title": "Entity Interpolation",
-      "url": "https://www.gabrielgambetta.com/entity-interpolation.html",
-      "category": "engineering",
-      "summary": "This article tackles the harder problem of rendering other players smoothly when the authoritative server only broadcasts state updates at a low fixed frequency (e.g., 10Hz). It presents two complementary solutions: dead reckoning (extrapolating position using velocity and heading for predictable entities like vehicles) and entity interpolation (deliberately rendering other players slightly in the past by interpolating between known authoritative positions).\n\nEntity interpolation trades a small, usually imperceptible delay for genuinely smooth motion — every player sees themselves in the present and everyone else slightly behind. Gambetta closes by flagging the one place where this delay bites: aiming and shooting, since opponents are rendered 100ms behind their actual position, a problem deferred to the next article on lag compensation.",
-      "added": "2026-07-22",
-      "times_shown": 0
-    },
-    {
       "slug": "everyone-should-know-simd",
       "title": "Everyone Should Know SIMD",
       "url": "https://mitchellh.com/writing/everyone-should-know-simd",
@@ -1377,6 +1368,16 @@
       "added": "2026-07-22",
       "read": "2026-07-24",
       "has_notes": false
+    },
+    {
+      "slug": "entity-interpolation",
+      "title": "Entity Interpolation",
+      "url": "https://www.gabrielgambetta.com/entity-interpolation.html",
+      "category": "engineering",
+      "summary": "This article tackles the harder problem of rendering other players smoothly when the authoritative server only broadcasts state updates at a low fixed frequency (e.g., 10Hz). It presents two complementary solutions: dead reckoning (extrapolating position using velocity and heading for predictable entities like vehicles) and entity interpolation (deliberately rendering other players slightly in the past by interpolating between known authoritative positions).\n\nEntity interpolation trades a small, usually imperceptible delay for genuinely smooth motion — every player sees themselves in the present and everyone else slightly behind. Gambetta closes by flagging the one place where this delay bites: aiming and shooting, since opponents are rendered 100ms behind their actual position, a problem deferred to the next article on lag compensation.",
+      "added": "2026-07-22",
+      "read": "2026-07-24",
+      "has_notes": true
     },
     {
       "slug": "not-just-development-distribution-of-software-may-change-as-well",
