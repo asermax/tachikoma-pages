@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'argentina-world-cup-racism-players', title: 'Argentina World Cup Racism Players', meta: 'AFP via Al Jazeera · Jul 2026', time: '4:20' },
     { slug: 'should-still-design-code-humans', title: 'Should we still design code for humans?', meta: 'Valentina Servile · Jul 2026', time: '20:40' },
     { slug: 'how-coding-agents-read-your-code', title: 'How coding agents read your code (and how to write for them)', meta: 'Ben Vinegar · Jul 2026', time: '37:04' },
     { slug: 'protecting-floss-commons-from-llms', title: 'Protecting our FLOSS commons from LLMs', meta: 'Codeberg · Jul 2026', time: '13:28' },
