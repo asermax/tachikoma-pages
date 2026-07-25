@@ -287,7 +287,7 @@
       "category": "ai",
       "summary": "Research paper showing LLMs identify roles by writing style rather than structural tags, enabling CoT Forgery attacks where fake reasoning is mistaken for genuine thoughts. Proposes roles as a key abstraction for AI safety research.",
       "added": "2026-06-23",
-      "times_shown": 1
+      "times_shown": 2
     },
     {
       "slug": "on-idea-generation",
@@ -314,7 +314,7 @@
       "category": "AI",
       "summary": "Reflecting on the FOSE Europe unconference, the author notes a marked shift from the hesitant Deer Valley event to confidence that agentic engineering's value is now proven. He contrasts two org models and observes engineering rigour relocating into tests, BDD, and formal models.",
       "added": "2026-07-06",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "software-design-in-the-agentic-age",
@@ -332,7 +332,7 @@
       "category": "AI",
       "summary": "404 Media reports that companies including Amazon and Citi are throttling employee AI use and pushing workers toward cheaper models as token costs spiral, with one firm's monthly spend tripling past 15 million dollars.",
       "added": "2026-07-06",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "viability-of-local-models-for-coding",
@@ -575,15 +575,6 @@
       "category": "engineering",
       "summary": "In this Thoughtworks blog post, Principal Software Engineer Valentina Servile argues that good software design remains essential even as AI coding agents take on more of the work of writing code. She pushes back against the view that specifications will become the new abstraction above source code, rendering code an ephemeral artifact humans never need to read.\n\nServile challenges the abstraction analogy: AI agents are fundamentally different from compilers because they are non-deterministic and lack reliability. Coding agents were trained on thoughtfully designed, human-readable code, so the patterns of good design are exactly what agents rely on to navigate and modify codebases. When agents encounter poorly structured code, they make more mistakes, burn more context, and cost more tokens — technical debt can now be quantified by the team's monthly AI token bill.\n\nShe identifies three limitations of fully autonomous agentic workflows: agent-generated code degrades faster than human-written code (agents compound tech debt at machine speed); writing specs precise enough to constrain agents resembles writing code itself (natural language is inherently ambiguous); and agents are non-deterministic, so humans must still judge design trade-offs. Her conclusion: good design cannot be specified once and delegated indefinitely — that approach has a name: Waterfall. The audience for well-designed code has expanded from humans alone to humans and agents, raising rather than lowering the bar for design skill.",
       "added": "2026-07-24",
-      "times_shown": 0
-    },
-    {
-      "slug": "argentina-world-cup-racism-players",
-      "title": "Argentina World Cup Racism Players",
-      "url": "https://www.nytimes.com/2026/07/24/world/americas/argentina-world-cup-racism-players.html",
-      "category": "uncategorized",
-      "summary": "This New York Times article examines the wave of international criticism directed at Argentina following their World Cup final loss. The backlash centers on two themes: Argentina's on-field conduct condemned as violent and unsportsmanlike (repeated fouls, brawls, turning backs during Spain's trophy ceremony), and racism accusations around the team and fans (the chant mocking Black French players, monkey gestures, FIFA condemnation after a fan told IShowSpeed to 'cry at the zoo', Samuel L. Jackson calling Argentina one of the most racist countries). The piece balances these charges with Argentine perspectives — many frame the behavior as passionate irreverence worn as a badge of honor, while sociologist Iván Schuliaquer cautions against conflating football-culture provocation with broader national character. Argentina ended the tournament cast as its villain — defiant about its identity but forced to confront uncomfortable questions about sportsmanship and race.",
-      "added": "2026-07-25",
       "times_shown": 0
     }
   ],
@@ -1417,6 +1408,16 @@
       "added": "2026-07-24",
       "read": "2026-07-24",
       "has_notes": true
+    },
+    {
+      "slug": "argentina-world-cup-racism-players",
+      "title": "Argentina World Cup Racism Players",
+      "url": "https://www.nytimes.com/2026/07/24/world/americas/argentina-world-cup-racism-players.html",
+      "category": "uncategorized",
+      "summary": "This New York Times article examines the wave of international criticism directed at Argentina following their World Cup final loss. The backlash centers on two themes: Argentina's on-field conduct condemned as violent and unsportsmanlike (repeated fouls, brawls, turning backs during Spain's trophy ceremony), and racism accusations around the team and fans (the chant mocking Black French players, monkey gestures, FIFA condemnation after a fan told IShowSpeed to 'cry at the zoo', Samuel L. Jackson calling Argentina one of the most racist countries). The piece balances these charges with Argentine perspectives — many frame the behavior as passionate irreverence worn as a badge of honor, while sociologist Iván Schuliaquer cautions against conflating football-culture provocation with broader national character. Argentina ended the tournament cast as its villain — defiant about its identity but forced to confront uncomfortable questions about sportsmanship and race.",
+      "added": "2026-07-25",
+      "read": "2026-07-25",
+      "has_notes": false
     }
   ]
 }
