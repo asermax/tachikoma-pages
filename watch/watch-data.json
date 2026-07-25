@@ -1430,6 +1430,26 @@
       "summary": "In this presentation, Dan Farrelly (CTO of Inngest) argues that because AI models, tools, and prompts change so rapidly, the architecture of AI agents has a 'half-life' of only six months. To build future-proof systems, Farrelly proposes decoupling agent architectures into three distinct layers: Execution (the brain), Context (the knowledge), and Compute (the hands). By isolating the 'Execution layer' as a stable, durable foundation for state management and orchestration, developers can easily swap out models or runtimes without needing to rewrite their entire system. This video is ideal for software engineers, AI developers, and system architects who want to build resilient and scalable AI-driven applications.",
       "added": "2026-07-24",
       "times_shown": 0
+    },
+    {
+      "slug": "from-signal-to-pr-anatomy-of-a-self-improving-agent-jason-lopatecki-arize",
+      "title": "From Signal to PR: Anatomy of a Self-Improving Agent \u2014 Jason Lopatecki, Arize",
+      "url": "https://www.youtube.com/watch?v=9HbzAWnKbo4",
+      "video_id": "9HbzAWnKbo4",
+      "channel": "AI Engineer",
+      "summary": "This presentation from the AI Engineer World's Fair explores the future of software observability, focusing on how AI agents can automate the debugging and system-improvement processes. The speaker discusses the shift from human-centric troubleshooting to an inverted loop where autonomous agents investigate issues, utilize telemetry data, and write pull requests for humans to review. By demonstrating how their own agent, Alyx, identifies bugs from traces, the speaker highlights how developers can move from first responders to reviewers. This video is highly beneficial for AI engineers, software developers, and DevOps professionals interested in leveraging AI to build self-improving systems.",
+      "added": "2026-07-25",
+      "times_shown": 0
+    },
+    {
+      "slug": "how-evals-and-prompts-shape-agent-behavior-preetika-bhateja-daniel-bump-youtube",
+      "title": "How Evals and Prompts Shape Agent Behavior \u2014 Preetika Bhateja & Daniel Bump, YouTube Ads",
+      "url": "https://www.youtube.com/watch?v=xyL2Ltkh-SA",
+      "video_id": "xyL2Ltkh-SA",
+      "channel": "AI Engineer",
+      "summary": "This presentation, titled \"Model Whisperers: Evals for Production Agents,\" explores the challenges and best practices of building reliable AI agents, drawing from the presenters' hands-on experience on the YouTube Ads team. The speakers argue that establishing agent reliability is a function of combining agent capabilities, guardrails, and robust evaluation systems (evals). They emphasize that developers should start small using intuition-based, non-scalable \"vibing\" evaluations to iterate quickly before scaling up to more rigorous frameworks involving human raters and LLM judges. AI engineers, machine learning developers, and product managers working on production-grade LLM applications will benefit greatly from these practical, real-world strategies for establishing robust evaluation pipelines.",
+      "added": "2026-07-25",
+      "times_shown": 0
     }
   ],
   "archive": [
