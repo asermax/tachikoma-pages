@@ -9,7 +9,6 @@ const ARTICLES = [
     { slug: 'practical-astar', title: 'Practical A*', meta: 'Gabriel Gambetta · Jul 2026', time: '5:24' },
     { slug: 'search-strategies', title: 'Search Strategies', meta: 'Gabriel Gambetta · Jul 2026', time: '3:45' },
     { slug: 'generic-search', title: 'Generic Search', meta: 'Gabriel Gambetta · Jul 2026', time: '7:02' },
-    { slug: 'lag-compensation', title: 'Lag Compensation', meta: 'Gabriel Gambetta · Jul 2026', time: '3:58' },
     { slug: 'astar-demystified', title: 'A* Demystified', meta: 'Gabriel Gambetta · Jul 2026', time: '4:12' },
     { slug: 'old-and-new-apps-via-modern-coding-agents', title: 'Old and new apps, via modern coding agents', meta: 'Terence Tao · July 2026', time: '3:56' },
     { slug: 'pace-layers-and-ai-integration', title: 'Pace Layers and AI Integration', meta: 'Chad Fowler · December 2025 · ~12 min listen', time: '11:40' },
