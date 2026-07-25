@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24",
+  "generated_at": "2026-07-25",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -502,15 +502,6 @@
       "url": "https://www.gabrielgambetta.com/generic-search.html",
       "category": "engineering",
       "summary": "This first article in the Pathfinding Demystified series reframes any game environment as a graph of nodes (states) connected by directional edges (transitions). Gambetta walks through a general search algorithm that maintains reachable and explored lists, repeatedly picks a node, checks if it's the goal, and expands its neighbors while recording how each was reached via previous pointers.\n\nThe centerpiece is a deliberately simple pseudocode algorithm that Gambetta calls the most important part of the series: the entire essence of pathfinding. A* and other specific algorithms are framed as mere details — different strategies for implementing the single choose_node step. This decomposition sets up the subsequent articles on search strategies and A*.",
-      "added": "2026-07-22",
-      "times_shown": 0
-    },
-    {
-      "slug": "lag-compensation",
-      "title": "Lag Compensation",
-      "url": "https://www.gabrielgambetta.com/lag-compensation.html",
-      "category": "engineering",
-      "summary": "This final article in the series tackles why perfectly aimed shots sometimes miss in networked shooters. Because entity interpolation renders opponents slightly in the past, players aim at where enemies were, not where they are. The solution is server-side lag compensation: when a player shoots, the client sends the shot timestamp and aim to the server, which rewinds its world state to that exact moment and evaluates the shot against where the enemy was from the shooter's perspective.\n\nThe article candidly discusses the tradeoff: while the shooter is rewarded for what looked like a clean hit, the target can experience the disorienting 'shot behind cover' problem. Gambetta frames this as an acceptable compromise — far less frustrating than landing a perfect shot only to see it disappear, and bounded to a few hundred milliseconds. The article credits foundational work by Yahn Bernier and Glenn Fiedler.",
       "added": "2026-07-22",
       "times_shown": 0
     },
@@ -1386,6 +1377,16 @@
       "summary": "This article tackles the harder problem of rendering other players smoothly when the authoritative server only broadcasts state updates at a low fixed frequency (e.g., 10Hz). It presents two complementary solutions: dead reckoning (extrapolating position using velocity and heading for predictable entities like vehicles) and entity interpolation (deliberately rendering other players slightly in the past by interpolating between known authoritative positions).\n\nEntity interpolation trades a small, usually imperceptible delay for genuinely smooth motion — every player sees themselves in the present and everyone else slightly behind. Gambetta closes by flagging the one place where this delay bites: aiming and shooting, since opponents are rendered 100ms behind their actual position, a problem deferred to the next article on lag compensation.",
       "added": "2026-07-22",
       "read": "2026-07-24",
+      "has_notes": true
+    },
+    {
+      "slug": "lag-compensation",
+      "title": "Lag Compensation",
+      "url": "https://www.gabrielgambetta.com/lag-compensation.html",
+      "category": "engineering",
+      "summary": "This final article in the series tackles why perfectly aimed shots sometimes miss in networked shooters. Because entity interpolation renders opponents slightly in the past, players aim at where enemies were, not where they are. The solution is server-side lag compensation: when a player shoots, the client sends the shot timestamp and aim to the server, which rewinds its world state to that exact moment and evaluates the shot against where the enemy was from the shooter's perspective.\n\nThe article candidly discusses the tradeoff: while the shooter is rewarded for what looked like a clean hit, the target can experience the disorienting 'shot behind cover' problem. Gambetta frames this as an acceptable compromise — far less frustrating than landing a perfect shot only to see it disappear, and bounded to a few hundred milliseconds. The article credits foundational work by Yahn Bernier and Glenn Fiedler.",
+      "added": "2026-07-22",
+      "read": "2026-07-25",
       "has_notes": true
     },
     {
