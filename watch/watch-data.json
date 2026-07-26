@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25",
+  "generated_at": "2026-07-26",
   "queue": [
     {
       "slug": "harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan",
@@ -1814,6 +1814,17 @@
       "summary": "Next Token podcast episode discussing competitive dynamics between OpenAI and Anthropic, rate limits, Claude Fable 5 access, and GPT 5.6 release impact on Anthropic's scaling decisions.",
       "added": "2026-07-24",
       "watched": "2026-07-24",
+      "has_notes": true
+    },
+    {
+      "slug": "loop-engineering-from-first-principles-kyle-mistele-humanlayer",
+      "title": "Loop Engineering from First Principles \u2014 Kyle Mistele, HumanLayer",
+      "url": "https://www.youtube.com/watch?v=xIt_mTQp6mY",
+      "video_id": "xIt_mTQp6mY",
+      "channel": "AI Engineer",
+      "summary": "In this presentation from the AI Engineer World's Fair, Kyle Mistele, co-founder of Human Layer, discusses \"Loop Engineering from First Principles.\" He argues that current hype-driven approaches to building agentic code loops often result in excessively large, unreviewable pull requests and high token costs. To address this, he proposes applying the concepts of control theory to software engineering, advocating for \"agentic control loops\" that utilize sensors and controllers to make incremental, feedback-driven, and low-risk changes to complex codebases. This talk is highly beneficial for software engineers, AI developers, and system architects looking to design more stable, cost-effective, and human-compatible AI agent workflows.",
+      "added": "2026-07-26",
+      "watched": "2026-07-26",
       "has_notes": true
     }
   ]
