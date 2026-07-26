@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-26T16:13:47.979622-03:00",
-  "week_start": "2026-07-26",
-  "week_label": "July 26 - August 01, 2026",
-  "last_updated": "Sunday, July 26, 2026 at 16:13",
+  "generated_at": "2026-07-26T02:01:26.811527-03:00",
+  "week_start": "2026-07-19",
+  "week_label": "July 19 - July 25, 2026",
+  "last_updated": "Sunday, July 26, 2026 at 02:01",
   "stats": {
-    "completed": 0,
-    "planned": 0,
-    "display": "0 / 0"
+    "completed": 7.5,
+    "planned": 12,
+    "display": "7.5 / 12"
   },
   "daily": {
     "Sunday": {
@@ -15,24 +15,24 @@
       "total": 0
     },
     "Monday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "partial",
+      "completed": 2,
+      "total": 4
     },
     "Tuesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "partial",
+      "completed": 1,
+      "total": 2
     },
     "Wednesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "partial",
+      "completed": 1,
+      "total": 2
     },
     "Thursday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 2,
+      "total": 2
     },
     "Friday": {
       "status": "empty",
@@ -50,17 +50,17 @@
       "name": "Trumpet Practice",
       "emoji": "",
       "status": "pending",
-      "accumulated": "0min",
+      "accumulated": "30min",
       "target": "60min",
-      "progress_pct": 0
+      "progress_pct": 50
     },
     {
       "name": "Reading",
       "emoji": "",
-      "status": "pending",
-      "accumulated": "0min",
-      "target": "120min",
-      "progress_pct": 0
+      "status": "done",
+      "accumulated": "60min",
+      "target": "60min",
+      "progress_pct": 100
     }
   ],
   "routines": [
@@ -70,18 +70,22 @@
       "emoji": "\ud83d\udcaa",
       "sessions": [
         {
-          "day": "Tue",
-          "status": "pending"
+          "day": "Mon",
+          "status": "skipped"
         },
         {
-          "day": "Sat",
-          "status": "pending"
+          "day": "Tue",
+          "status": "skipped"
+        },
+        {
+          "day": "Thu",
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
-      "total": 2
+      "done": 1,
+      "total": 3
     },
     {
       "id": "music-practice",
@@ -90,12 +94,12 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -105,12 +109,12 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         }
       ],
-      "metrics_total": "",
+      "metrics_total": "1h",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -120,13 +124,17 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "pending"
+          "status": "done"
+        },
+        {
+          "day": "Thu",
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
-      "total": 1
+      "done": 2,
+      "total": 2
     },
     {
       "id": "running",
@@ -134,8 +142,8 @@
       "emoji": "\ud83c\udfc3",
       "sessions": [
         {
-          "day": "Sat",
-          "status": "pending"
+          "day": "Mon",
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -150,28 +158,24 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Wed",
-          "status": "pending"
-        },
-        {
-          "day": "Sat",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
-      "total": 3
+      "done": 1,
+      "total": 2
     }
   ],
   "spirit": {
-    "state": "dormant",
+    "state": "content",
     "emoji": "\ud83d\udc0e",
     "title": "\ud83d\udc0e Ice Kirin",
-    "image": "assets/dormant.webp",
-    "description": "Your ice kirin sleeps curled up in deep snow, starry night sky and soft moonlight above \u2014 peaceful, quiet rest."
+    "image": "assets/content.webp",
+    "description": "Your ice kirin rests calmly, gentle snow falling softly around it, overcast winter sky \u2014 peaceful, quiet, and satisfied."
   }
 }
