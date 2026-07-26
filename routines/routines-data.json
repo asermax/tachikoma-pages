@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-26T16:13:47.979622-03:00",
+  "generated_at": "2026-07-26T16:26:17.295328-03:00",
   "week_start": "2026-07-26",
   "week_label": "July 26 - August 01, 2026",
-  "last_updated": "Sunday, July 26, 2026 at 16:13",
+  "last_updated": "Sunday, July 26, 2026 at 16:26",
   "stats": {
     "completed": 0,
     "planned": 0,
@@ -169,9 +169,9 @@
   ],
   "spirit": {
     "state": "dormant",
-    "emoji": "\ud83d\udc0e",
-    "title": "\ud83d\udc0e Ice Kirin",
+    "emoji": "\ud83e\udd8e",
+    "title": "\ud83e\udd8e Clay Fire Salamander",
     "image": "assets/dormant.webp",
-    "description": "Your ice kirin sleeps curled up in deep snow, starry night sky and soft moonlight above \u2014 peaceful, quiet rest."
+    "description": "Your fire salamander sleeps curled in its snowy hollow, moonlight and stars above, breath visible in the cold air \u2014 peaceful, quiet rest."
   }
 }
