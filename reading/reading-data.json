@@ -1428,6 +1428,16 @@
       "added": "2026-07-25",
       "read": "2026-07-27",
       "has_notes": true
+    },
+    {
+      "slug": "adding-herdr-support-to-a-pi-extension",
+      "title": "Adding herdr support to a Pi extension",
+      "url": "https://aliou.me/posts/adding-herdr-support-to-a-pi-extension/",
+      "category": "engineering",
+      "summary": "The article walks through how pi-guardrails v0.16.0 added integration with Herdr (a tmux-alternative terminal multiplexer) so that when a Guardrails approval prompt is waiting on the user, the corresponding Herdr pane shows a blocked status — letting the author monitor multiple agents across projects without opening each pane. The implementation relies on Pi's event bus: Guardrails emits guardrails:prompt:opened/closed events, a small adapter translates those into Herdr's expected herdr:blocked events, and the Herdr Pi extension writes the resulting state over a unix socket to Herdr.",
+      "added": "2026-07-27",
+      "read": "2026-07-27",
+      "has_notes": false
     }
   ]
 }
