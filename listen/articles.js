@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'context-anchoring', title: 'Context Anchoring', meta: 'Rahul Garg · Jul 2026', time: '16:05' },
     { slug: 'pi-coding-agent', title: 'What I learned building an opinionated and minimal coding agent', meta: 'Mario Zechner · Nov 2025', time: '32:35' },
     { slug: 'should-still-design-code-humans', title: 'Should we still design code for humans?', meta: 'Valentina Servile · Jul 2026', time: '20:40' },
     { slug: 'how-coding-agents-read-your-code', title: 'How coding agents read your code (and how to write for them)', meta: 'Ben Vinegar · Jul 2026', time: '37:04' },
