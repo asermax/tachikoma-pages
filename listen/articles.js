@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'anthropics-position-on-open-weight-models', title: 'Our position on open-weights models', meta: 'Dario Amodei · Jul 2026', time: '8:09' },
     { slug: 'harness-engineering', title: 'Harness engineering for coding agent users', meta: 'Birgitta Böckeler · Jul 2026', time: '16:05' },
     { slug: 'the-orchestrators-tax', title: 'The Orchestrator\'s Tax', meta: 'Rahul Garg · Jul 2026', time: '17:04' },
     { slug: 'the-real-ai-risk-is-inside-the-labs', title: 'The real AI risk is inside the labs', meta: 'Salvatore Sanfilippo · Jul 2026', time: '6:42' },
