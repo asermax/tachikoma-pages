@@ -578,6 +578,15 @@
       "times_shown": 0
     },
     {
+      "slug": "context-anchoring",
+      "title": "Context Anchoring",
+      "url": "https://martinfowler.com/articles/reduce-friction-ai/context-anchoring.html",
+      "category": "ai",
+      "summary": "Rahul Garg addresses a fundamental friction point in AI-assisted development: AI conversations are ephemeral, so decisions made early in a session fade as it lengthens, and nothing survives across session boundaries. The root problem is that LLM context windows degrade predictably — the reasoning behind decisions degrades faster than the decisions themselves. The proposed solution is context anchoring: externalizing decision context into a living feature document that persists outside the conversation, acting as a real-time evolving ADR. The core thesis is a shift from chat-driven to document-driven development: the conversation remains the medium for making decisions, but the document becomes the record.",
+      "added": "2026-07-28",
+      "times_shown": 0
+    },
+    {
       "slug": "httpsmariozechneratposts2025-11-30-pi-coding-agent",
       "title": "What I learned building an opinionated and minimal coding agent",
       "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/",
