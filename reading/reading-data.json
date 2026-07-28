@@ -578,6 +578,15 @@
       "times_shown": 0
     },
     {
+      "slug": "anthropics-position-on-open-weight-models",
+      "title": "Our position on open-weights models",
+      "url": "https://www.anthropic.com/news/position-open-weights-models",
+      "category": "ai",
+      "summary": "Anthropic CEO Dario Amodei responds to speculation that the company is pushing for a ban on open-weights models, stating plainly that Anthropic has never advocated for such a ban. He lays out two nightmare scenarios: authoritarian governments building superior AI for military or surveillance use, and misuse for cyberattacks, biological attacks, or alignment failures. Rather than banning open weights, he advocates three targeted measures: restricting chip sales to China, cracking down on industrial-scale distillation operations, and mandatory pre-release safety testing of all sufficiently capable models. He agrees with much of the industry open letter supporting open weights but pushes back on claims that open weights necessarily make safeguards easier, arguing such questions should be resolved empirically.",
+      "added": "2026-07-28",
+      "times_shown": 0
+    },
+    {
       "slug": "context-anchoring",
       "title": "Context Anchoring",
       "url": "https://martinfowler.com/articles/reduce-friction-ai/context-anchoring.html",
@@ -610,15 +619,6 @@
       "url": "https://martinfowler.com/articles/orchestrator-tax.html",
       "category": "ai",
       "summary": "Rahul Garg investigates the real costs of multi-agent LLM coding sessions, finding that the largest expense is not duplicated orientation work but context pollution in the orchestrator's working memory when raw subagent transcripts are pulled into the main thread. He derives the concept of 'cognitive locality' — tasks sharing the same mental model should stay together — and reframes subagents as tools for protecting the orchestrator's working memory rather than just parallelism. Standing rules include 2-4 agents per wave, no status polling that fetches full transcripts, and treating overlapping file ownership as a consolidation signal.",
-      "added": "2026-07-28",
-      "times_shown": 0
-    },
-    {
-      "slug": "the-real-ai-risk-is-inside-the-labs",
-      "title": "The real AI risk is inside the labs",
-      "url": "http://antirez.com/news/172",
-      "category": "ai",
-      "summary": "Antirez (Salvatore Sanfilippo) responds to Anthropic CEO Dario Amodei's blog post on AI risks, arguing that the real danger lies inside frontier AI labs — via leaks by insiders — not in open-weight models. He contends that restricting open models harms defensive cybersecurity while attackers retain frontier access, and that the most catastrophic scenarios are rogue individuals or AI escaping control, not government-driven. He calls for an international, jointly recognized AI safety organization, arguing that no single company should independently declare a model safe enough.",
       "added": "2026-07-28",
       "times_shown": 0
     }
@@ -1482,6 +1482,16 @@
       "summary": "The article walks through how pi-guardrails v0.16.0 added integration with Herdr (a tmux-alternative terminal multiplexer) so that when a Guardrails approval prompt is waiting on the user, the corresponding Herdr pane shows a blocked status — letting the author monitor multiple agents across projects without opening each pane. The implementation relies on Pi's event bus: Guardrails emits guardrails:prompt:opened/closed events, a small adapter translates those into Herdr's expected herdr:blocked events, and the Herdr Pi extension writes the resulting state over a unix socket to Herdr.",
       "added": "2026-07-27",
       "read": "2026-07-27",
+      "has_notes": false
+    },
+    {
+      "slug": "the-real-ai-risk-is-inside-the-labs",
+      "title": "The real AI risk is inside the labs",
+      "url": "http://antirez.com/news/172",
+      "category": "ai",
+      "summary": "Antirez (Salvatore Sanfilippo) responds to Anthropic CEO Dario Amodei's blog post on AI risks, arguing that the real danger lies inside frontier AI labs — via leaks by insiders — not in open-weight models. He contends that restricting open models harms defensive cybersecurity while attackers retain frontier access, and that the most catastrophic scenarios are rogue individuals or AI escaping control, not government-driven. He calls for an international, jointly recognized AI safety organization, arguing that no single company should independently declare a model safe enough.",
+      "added": "2026-07-28",
+      "read": "2026-07-28",
       "has_notes": false
     }
   ]
