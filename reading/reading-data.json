@@ -587,11 +587,38 @@
       "times_shown": 0
     },
     {
+      "slug": "harness-engineering",
+      "title": "Harness Engineering for Coding Agent Users",
+      "url": "https://martinfowler.com/articles/harness-engineering.html",
+      "category": "engineering",
+      "summary": "Birgitta Böckeler introduces 'harness engineering' — the practice of building everything around an AI coding agent (other than the model itself) that increases confidence in its output. She distinguishes feedforward guides (AGENTS.md, skills) from feedback sensors (linters, tests), and computational controls (deterministic, cheap) from inferential ones (AI code review, costlier). Three regulation categories: maintainability (most mature), architecture fitness (fitness functions), and behaviour (hardest, still unsolved). The human role is reframed as steering: continuously iterating on the harness whenever issues recur.",
+      "added": "2026-07-28",
+      "times_shown": 0
+    },
+    {
       "slug": "httpsmariozechneratposts2025-11-30-pi-coding-agent",
       "title": "What I learned building an opinionated and minimal coding agent",
       "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/",
       "category": "ai",
       "summary": "Mario Zechner recounts building 'pi,' his own minimal coding agent harness, after dissatisfaction with bloated mainstream tools. He built four packages (pi-ai, pi-agent-core, pi-tui, pi-coding-agent) with a sub-1000-token system prompt, just 4 tools (read, write, edit, bash), full YOLO mode, no MCP, no sub-agents. Competitive Terminal-Bench 2.0 results prove frontier models need little scaffolding. The takeaway: building your own harness gives full control over context and observability, and minimalism beats complexity.",
+      "added": "2026-07-28",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-orchestrators-tax",
+      "title": "The Orchestrator's Tax",
+      "url": "https://martinfowler.com/articles/orchestrator-tax.html",
+      "category": "ai",
+      "summary": "Rahul Garg investigates the real costs of multi-agent LLM coding sessions, finding that the largest expense is not duplicated orientation work but context pollution in the orchestrator's working memory when raw subagent transcripts are pulled into the main thread. He derives the concept of 'cognitive locality' — tasks sharing the same mental model should stay together — and reframes subagents as tools for protecting the orchestrator's working memory rather than just parallelism. Standing rules include 2-4 agents per wave, no status polling that fetches full transcripts, and treating overlapping file ownership as a consolidation signal.",
+      "added": "2026-07-28",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-real-ai-risk-is-inside-the-labs",
+      "title": "The real AI risk is inside the labs",
+      "url": "http://antirez.com/news/172",
+      "category": "ai",
+      "summary": "Antirez (Salvatore Sanfilippo) responds to Anthropic CEO Dario Amodei's blog post on AI risks, arguing that the real danger lies inside frontier AI labs — via leaks by insiders — not in open-weight models. He contends that restricting open models harms defensive cybersecurity while attackers retain frontier access, and that the most catastrophic scenarios are rogue individuals or AI escaping control, not government-driven. He calls for an international, jointly recognized AI safety organization, arguing that no single company should independently declare a model safe enough.",
       "added": "2026-07-28",
       "times_shown": 0
     }
