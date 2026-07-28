@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-27T02:01:01.143596-03:00",
+  "generated_at": "2026-07-28T02:01:25.520288-03:00",
   "week_start": "2026-07-26",
   "week_label": "July 26 - August 01, 2026",
-  "last_updated": "Monday, July 27, 2026 at 02:01",
+  "last_updated": "Tuesday, July 28, 2026 at 02:01",
   "stats": {
-    "completed": 0,
-    "planned": 0,
-    "display": "0 / 0"
+    "completed": 1.75,
+    "planned": 4,
+    "display": "1.8 / 4"
   },
   "daily": {
     "Sunday": {
@@ -15,9 +15,9 @@
       "total": 0
     },
     "Monday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "partial",
+      "completed": 1,
+      "total": 2
     },
     "Tuesday": {
       "status": "empty",
@@ -58,9 +58,9 @@
       "name": "Reading",
       "emoji": "",
       "status": "pending",
-      "accumulated": "0min",
+      "accumulated": "15min",
       "target": "120min",
-      "progress_pct": 0
+      "progress_pct": 12
     }
   ],
   "routines": [
@@ -105,12 +105,12 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         }
       ],
-      "metrics_total": "",
+      "metrics_total": "1h",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -150,7 +150,7 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "skipped"
         },
         {
           "day": "Wed",
@@ -168,10 +168,10 @@
     }
   ],
   "spirit": {
-    "state": "dormant",
+    "state": "tired",
     "emoji": "\ud83e\udd8e",
     "title": "\ud83e\udd8e Clay Fire Salamander",
-    "image": "assets/dormant.webp",
-    "description": "Your fire salamander sleeps curled in its snowy hollow, moonlight and stars above, breath visible in the cold air \u2014 peaceful, quiet rest."
+    "image": "assets/tired.webp",
+    "description": "Your fire salamander droops on a frost-covered branch, grey fog and heavy skies, muted colors \u2014 low energy, needing rest."
   }
 }
