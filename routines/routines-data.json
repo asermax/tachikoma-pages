@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-28T02:01:25.520288-03:00",
+  "generated_at": "2026-07-29T02:01:02.821208-03:00",
   "week_start": "2026-07-26",
   "week_label": "July 26 - August 01, 2026",
-  "last_updated": "Tuesday, July 28, 2026 at 02:01",
+  "last_updated": "Wednesday, July 29, 2026 at 02:01",
   "stats": {
-    "completed": 1.75,
-    "planned": 4,
-    "display": "1.8 / 4"
+    "completed": 1.375,
+    "planned": 6,
+    "display": "1.4 / 6"
   },
   "daily": {
     "Sunday": {
@@ -20,9 +20,9 @@
       "total": 2
     },
     "Tuesday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 2
     },
     "Wednesday": {
       "status": "empty",
@@ -168,10 +168,10 @@
     }
   ],
   "spirit": {
-    "state": "tired",
+    "state": "critical",
     "emoji": "\ud83e\udd8e",
     "title": "\ud83e\udd8e Clay Fire Salamander",
-    "image": "assets/tired.webp",
-    "description": "Your fire salamander droops on a frost-covered branch, grey fog and heavy skies, muted colors \u2014 low energy, needing rest."
+    "image": "assets/critical.webp",
+    "description": "Your fire salamander curls up defensively on dark ice, storm raging overhead, wind whipping snow \u2014 cold, struggling, needs a break."
   }
 }
