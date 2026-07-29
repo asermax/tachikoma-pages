@@ -623,6 +623,15 @@
       "times_shown": 0
     },
     {
+      "slug": "agents-are-hard",
+      "title": "Agent Design Is Still Hard",
+      "url": "https://lucumr.pocoo.org/2025/11/21/agents-are-hard/",
+      "category": "ai",
+      "summary": "In this practical post, Armin Ronacher shares hard-won lessons from building production AI agents at Earendil. Despite the basic agent pattern being just a loop, real-world tool use exposes enough subtle differences between models, caching strategies, and failure modes that no existing SDK abstraction gets it right. His recommendation is to target raw provider SDKs until the landscape settles. On caching, he advocates Anthropic's explicit manual cache-point management for predictable costs and conversation flexibility. Two techniques get emphasis: reinforcement in the loop (injecting reminders and hints after each tool invocation) and failure isolation (running error-prone subtasks in subagents). He argues for a shared virtual file system as backbone for data exchange between tools. The post closes with sobering realities: dedicated output tools are hard to steer, model choice still matters significantly, and testing/evals remain the hardest unsolved problem.",
+      "added": "2026-07-29",
+      "times_shown": 0
+    },
+    {
       "slug": "how-i-almost-lost-my-hands",
       "title": "How I almost lost my hands",
       "url": "https://x.com/jxnlco/status/2081949140024488013",
