@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'how-i-almost-lost-my-hands', title: 'How I almost lost my hands', meta: 'Jason Wei · Jul 2026', time: '11:24' },
     { slug: 'anthropics-position-on-open-weight-models', title: 'Our position on open-weights models', meta: 'Dario Amodei · Jul 2026', time: '8:09' },
     { slug: 'harness-engineering', title: 'Harness engineering for coding agent users', meta: 'Birgitta Böckeler · Jul 2026', time: '16:05' },
     { slug: 'the-orchestrators-tax', title: 'The Orchestrator\'s Tax', meta: 'Rahul Garg · Jul 2026', time: '17:04' },
