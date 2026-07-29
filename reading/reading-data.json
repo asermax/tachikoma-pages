@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28",
+  "generated_at": "2026-07-29",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -620,6 +620,15 @@
       "category": "ai",
       "summary": "Rahul Garg investigates the real costs of multi-agent LLM coding sessions, finding that the largest expense is not duplicated orientation work but context pollution in the orchestrator's working memory when raw subagent transcripts are pulled into the main thread. He derives the concept of 'cognitive locality' — tasks sharing the same mental model should stay together — and reframes subagents as tools for protecting the orchestrator's working memory rather than just parallelism. Standing rules include 2-4 agents per wave, no status polling that fetches full transcripts, and treating overlapping file ownership as a consolidation signal.",
       "added": "2026-07-28",
+      "times_shown": 0
+    },
+    {
+      "slug": "how-i-almost-lost-my-hands",
+      "title": "How I almost lost my hands",
+      "url": "https://x.com/jxnlco/status/2081949140024488013",
+      "category": "productivity",
+      "summary": "Jason Wei recounts how pandemic-era overwork at Stitch Fix (12-15 hour days, 7am-2am coding cycles) led to debilitating hand cramps that stripped his ability to grip, type, or perform basic tasks. He frames the descent through Borges's Aleph and Zahir: work that opened the world became the only thing he could see. The injury triggered an existential crisis rooted in patriarchal values equating self-worth with economic output. Recovery took ~2 years across acupuncture, physiotherapy, and stem cells. He pivoted to open source and consulting, draws on Byung-Chul Han's 'Burnout Society' and Sartrean existentialism to reframe work as purposeful engagement over compulsive production. Three years later, he still deals with residual pain.",
+      "added": "2026-07-29",
       "times_shown": 0
     }
   ],
