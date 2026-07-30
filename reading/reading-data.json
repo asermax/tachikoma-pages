@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29",
+  "generated_at": "2026-07-30",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -601,15 +601,6 @@
       "url": "https://martinfowler.com/articles/harness-engineering.html",
       "category": "engineering",
       "summary": "Birgitta Böckeler introduces 'harness engineering' — the practice of building everything around an AI coding agent (other than the model itself) that increases confidence in its output. She distinguishes feedforward guides (AGENTS.md, skills) from feedback sensors (linters, tests), and computational controls (deterministic, cheap) from inferential ones (AI code review, costlier). Three regulation categories: maintainability (most mature), architecture fitness (fitness functions), and behaviour (hardest, still unsolved). The human role is reframed as steering: continuously iterating on the harness whenever issues recur.",
-      "added": "2026-07-28",
-      "times_shown": 0
-    },
-    {
-      "slug": "httpsmariozechneratposts2025-11-30-pi-coding-agent",
-      "title": "What I learned building an opinionated and minimal coding agent",
-      "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/",
-      "category": "ai",
-      "summary": "Mario Zechner recounts building 'pi,' his own minimal coding agent harness, after dissatisfaction with bloated mainstream tools. He built four packages (pi-ai, pi-agent-core, pi-tui, pi-coding-agent) with a sub-1000-token system prompt, just 4 tools (read, write, edit, bash), full YOLO mode, no MCP, no sub-agents. Competitive Terminal-Bench 2.0 results prove frontier models need little scaffolding. The takeaway: building your own harness gives full control over context and observability, and minimalism beats complexity.",
       "added": "2026-07-28",
       "times_shown": 0
     },
@@ -1510,6 +1501,16 @@
       "added": "2026-07-27",
       "read": "2026-07-27",
       "has_notes": false
+    },
+    {
+      "slug": "httpsmariozechneratposts2025-11-30-pi-coding-agent",
+      "title": "What I learned building an opinionated and minimal coding agent",
+      "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/",
+      "category": "ai",
+      "summary": "Mario Zechner recounts building 'pi,' his own minimal coding agent harness, after dissatisfaction with bloated mainstream tools. He built four packages (pi-ai, pi-agent-core, pi-tui, pi-coding-agent) with a sub-1000-token system prompt, just 4 tools (read, write, edit, bash), full YOLO mode, no MCP, no sub-agents. Competitive Terminal-Bench 2.0 results prove frontier models need little scaffolding. The takeaway: building your own harness gives full control over context and observability, and minimalism beats complexity.",
+      "added": "2026-07-28",
+      "read": "2026-07-30",
+      "has_notes": true
     },
     {
       "slug": "the-real-ai-risk-is-inside-the-labs",
