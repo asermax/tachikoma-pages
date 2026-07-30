@@ -1,4 +1,7 @@
 const ARTICLES = [
+    { slug: 'the-economic-benefit-of-refactoring', title: 'The Economic Benefit of Refactoring', meta: 'Martin Fowler · Jul 2026', time: '30:18' },
+    { slug: 'employers-warn-college-students-critical-thinking-skills-are-atrophying-due-to-a', title: 'Bosses Horrified as AI Native College Graduates Hit the Workplace', meta: 'Futurism · Jul 2026', time: '2:32' },
+    { slug: 'should-you-use-ai-for-a-task-heres-a-simple-way-to-decide', title: 'Should You Use AI for a Task? Here\'s a Simple Way to Decide', meta: 'Bruce Schneier · Jul 2026', time: '6:23' },
     { slug: 'agents-are-hard', title: 'Agent Design Is Still Hard', meta: 'Armin Ronacher · Nov 2025', time: '12:51' },
     { slug: 'superlogical', title: 'Superlogical', meta: 'Mitchell Hashimoto · Jul 2025', time: '5:05' },
     { slug: 'how-i-almost-lost-my-hands', title: 'How I almost lost my hands', meta: 'Jason Wei · Jul 2026', time: '11:24' },
