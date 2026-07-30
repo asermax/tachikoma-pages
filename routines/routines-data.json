@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-29T02:01:02.821208-03:00",
+  "generated_at": "2026-07-30T02:01:28.875185-03:00",
   "week_start": "2026-07-26",
   "week_label": "July 26 - August 01, 2026",
-  "last_updated": "Wednesday, July 29, 2026 at 02:01",
+  "last_updated": "Thursday, July 30, 2026 at 02:01",
   "stats": {
-    "completed": 1.375,
-    "planned": 6,
-    "display": "1.4 / 6"
+    "completed": 3.75,
+    "planned": 8,
+    "display": "3.8 / 8"
   },
   "daily": {
     "Sunday": {
@@ -25,9 +25,9 @@
       "total": 2
     },
     "Wednesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "partial",
+      "completed": 1,
+      "total": 2
     },
     "Thursday": {
       "status": "empty",
@@ -50,17 +50,17 @@
       "name": "Trumpet Practice",
       "emoji": "",
       "status": "pending",
-      "accumulated": "0min",
+      "accumulated": "30min",
       "target": "60min",
-      "progress_pct": 0
+      "progress_pct": 50
     },
     {
       "name": "Reading",
       "emoji": "",
       "status": "pending",
-      "accumulated": "15min",
+      "accumulated": "45min",
       "target": "120min",
-      "progress_pct": 12
+      "progress_pct": 37
     }
   ],
   "routines": [
@@ -90,12 +90,12 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         }
       ],
-      "metrics_total": "",
+      "metrics_total": "1h",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -154,7 +154,7 @@
         },
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "skipped"
         },
         {
           "day": "Sat",
@@ -168,10 +168,10 @@
     }
   ],
   "spirit": {
-    "state": "critical",
+    "state": "tired",
     "emoji": "\ud83e\udd8e",
     "title": "\ud83e\udd8e Clay Fire Salamander",
-    "image": "assets/critical.webp",
-    "description": "Your fire salamander curls up defensively on dark ice, storm raging overhead, wind whipping snow \u2014 cold, struggling, needs a break."
+    "image": "assets/tired.webp",
+    "description": "Your fire salamander droops on a frost-covered branch, grey fog and heavy skies, muted colors \u2014 low energy, needing rest."
   }
 }
