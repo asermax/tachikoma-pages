@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'session-portability', title: 'The Session You Cannot Take With You', meta: 'Earendil · Jul 2026', time: '16:50' },
     { slug: 'the-economic-benefit-of-refactoring', title: 'The Economic Benefit of Refactoring', meta: 'Martin Fowler · Jul 2026', time: '30:18' },
     { slug: 'employers-warn-college-students-critical-thinking-skills-are-atrophying-due-to-a', title: 'Bosses Horrified as AI Native College Graduates Hit the Workplace', meta: 'Futurism · Jul 2026', time: '2:32' },
     { slug: 'should-you-use-ai-for-a-task-heres-a-simple-way-to-decide', title: 'Should You Use AI for a Task? Here\'s a Simple Way to Decide', meta: 'Bruce Schneier · Jul 2026', time: '6:23' },
