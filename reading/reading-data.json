@@ -287,7 +287,7 @@
       "category": "ai",
       "summary": "Research paper showing LLMs identify roles by writing style rather than structural tags, enabling CoT Forgery attacks where fake reasoning is mistaken for genuine thoughts. Proposes roles as a key abstraction for AI safety research.",
       "added": "2026-06-23",
-      "times_shown": 3
+      "times_shown": 4
     },
     {
       "slug": "on-idea-generation",
@@ -296,7 +296,7 @@
       "category": "creativity",
       "summary": "A deep exploration of idea generation as an exercisable muscle. Sankalp argues that creativity isn't mystical — it requires direct exposure to sources (not AI-mediated), tight feedback loops through doing, and having a concrete problem statement or scaffold to push against. Key insights: ideas emerge from inside active work, not from passive consumption; consumption-maxxing without processing is a common trap; you need to put in time building 'embedding space' in your mind through high-resolution engagement with material; people and conversations act as mirrors and portals for creativity; and breaking through blocks requires zooming out, reframing, and sometimes switching to parallel projects. Strong references to Henrik Karlsson, Richard Hamming, and Jack Morris.",
       "added": "2026-06-29",
-      "times_shown": 1
+      "times_shown": 2
     },
     {
       "slug": "mechanical-sympathy",
@@ -323,7 +323,7 @@
       "category": "AI",
       "summary": "Drawing on the Thoughtworks FOSE retreat, Verraes argues that low-level code quality still matters because agents benefit from clear structure, face the same context-window limits as humans, and amplify existing bad patterns. High-level design (domain models, bounded contexts, ubiquitous language) remains firmly human territory, and he predicts a shift toward specifications as the source of truth.",
       "added": "2026-07-06",
-      "times_shown": 1
+      "times_shown": 2
     },
     {
       "slug": "the-ai-tokenpocalypse-is-here",
@@ -1557,6 +1557,16 @@
       "added": "2026-07-28",
       "read": "2026-07-28",
       "has_notes": false
+    },
+    {
+      "slug": "the-conductor-developer",
+      "title": "The Conductor Developer",
+      "url": "https://martinfowler.com/rachels-ramblings/conductor-developer.html",
+      "category": "ai",
+      "summary": "Rachel Laycock (CTO at Thoughtworks) argues that AI hasn't changed what great software looks like, but it has changed what's scarce—the new bottleneck in software development is no longer coding or design, but human attention. Drawing an analogy to a symphony conductor (inspired by Jacob Collier), she observes that the best developers now spend their days orchestrating many parallel AI agents rather than writing code in deep flow states, deciding which agent tackles which problem, providing context, and evaluating results. This shift mirrors the demands of executive leadership: managing cognitive load, context switching, and energy rather than time.",
+      "added": "2026-07-31",
+      "read": "2026-07-31",
+      "has_notes": true
     }
   ]
 }
