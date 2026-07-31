@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'the-conductor-developer', title: 'The Conductor Developer', meta: 'Rachel Laycock · Martin Fowler', time: '5:35' },
     { slug: 'session-portability', title: 'The Session You Cannot Take With You', meta: 'Earendil · Jul 2026', time: '16:50' },
     { slug: 'the-economic-benefit-of-refactoring', title: 'The Economic Benefit of Refactoring', meta: 'Martin Fowler · Jul 2026', time: '30:18' },
     { slug: 'employers-warn-college-students-critical-thinking-skills-are-atrophying-due-to-a', title: 'Bosses Horrified as AI Native College Graduates Hit the Workplace', meta: 'Futurism · Jul 2026', time: '2:32' },
