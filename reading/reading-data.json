@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01",
+  "generated_at": "2026-08-02",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -296,7 +296,7 @@
       "category": "creativity",
       "summary": "A deep exploration of idea generation as an exercisable muscle. Sankalp argues that creativity isn't mystical — it requires direct exposure to sources (not AI-mediated), tight feedback loops through doing, and having a concrete problem statement or scaffold to push against. Key insights: ideas emerge from inside active work, not from passive consumption; consumption-maxxing without processing is a common trap; you need to put in time building 'embedding space' in your mind through high-resolution engagement with material; people and conversations act as mirrors and portals for creativity; and breaking through blocks requires zooming out, reframing, and sometimes switching to parallel projects. Strong references to Henrik Karlsson, Richard Hamming, and Jack Morris.",
       "added": "2026-06-29",
-      "times_shown": 2
+      "times_shown": 3
     },
     {
       "slug": "mechanical-sympathy",
@@ -332,7 +332,7 @@
       "category": "AI",
       "summary": "404 Media reports that companies including Amazon and Citi are throttling employee AI use and pushing workers toward cheaper models as token costs spiral, with one firm's monthly spend tripling past 15 million dollars.",
       "added": "2026-07-06",
-      "times_shown": 1
+      "times_shown": 2
     },
     {
       "slug": "viability-of-local-models-for-coding",
@@ -341,7 +341,7 @@
       "category": "ai",
       "summary": "Birgitta Böckeler evaluates the practicality of running local LLMs for agentic coding on Apple Silicon (M3 Max 48GB and M5 Pro 64GB), analyzing how RAM, context windows, model architecture, and quantization affect feasibility. She tested Qwen3 and Gemma 4 models across formats (GGUF, MLX) using LM Studio with OpenCode and Pi harnesses.\n\nKey findings: RAM is the core constraint — models between 15-25GB work but push limits when combined with the 32-64K context windows needed for agentic coding. Response speed has improved dramatically from a year ago. Tool calling remains the weakest point for local models — they often emit malformed calls but can self-recover. Quality of outcomes is hit-and-miss, nowhere near big model capability.\n\nInteresting discovery: the same model produced better code on the 64GB machine vs 48GB, suggesting hardware affects output quality not just speed. Reasoning mode was often counterproductive for smaller models — switching it off produced same or slightly better results with faster responses. Her recommendation: Qwen3.6 35B MoE offers the best balance of capability, speed, and RAM footprint. Overall conclusion: still not plug-and-play ready for developers who don't want to spend time tweaking configurations.",
       "added": "2026-07-07",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "auto-research-with-codex-how-i-achieved-a-212x-faster-kernel-over-baseline",
