@@ -1,9 +1,55 @@
 {
-  "week": "2026-W30",
+  "week": "2026-W31",
   "days": {
     "Monday": {
       "location": "Home - Dumbbells",
-      "exercises": []
+      "exercises": [
+        {
+          "name": "Dumbbell Romanian deadlift",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "10",
+          "unit": "",
+          "weight": "10 kg"
+        },
+        {
+          "name": "Dumbbell rows",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "10",
+          "unit": "",
+          "weight": "10 kg"
+        },
+        {
+          "name": "Knee push-ups",
+          "detail": "wide",
+          "sets": 3,
+          "type": "reps",
+          "target": "15",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Hollow-body hold",
+          "detail": null,
+          "sets": 3,
+          "type": "time",
+          "target": "20",
+          "unit": "s",
+          "weight": null
+        },
+        {
+          "name": "\"No-money\" external rotations",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "10",
+          "unit": "",
+          "weight": null
+        }
+      ]
     },
     "Tuesday": {
       "location": "Climbing Gym - Bar",
@@ -48,7 +94,44 @@
     },
     "Thursday": {
       "location": "Climbing Gym - Bar",
-      "exercises": []
+      "exercises": [
+        {
+          "name": "Pull-ups",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "4",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Toes-to-bar",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "8",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Knee push-ups",
+          "detail": "wide",
+          "sets": 3,
+          "type": "reps",
+          "target": "15",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Dead hang",
+          "detail": null,
+          "sets": 3,
+          "type": "time",
+          "target": "25",
+          "unit": "s",
+          "weight": null
+        }
+      ]
     },
     "Friday": {
       "location": "Rest",
