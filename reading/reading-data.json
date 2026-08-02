@@ -287,7 +287,7 @@
       "category": "ai",
       "summary": "Research paper showing LLMs identify roles by writing style rather than structural tags, enabling CoT Forgery attacks where fake reasoning is mistaken for genuine thoughts. Proposes roles as a key abstraction for AI safety research.",
       "added": "2026-06-23",
-      "times_shown": 4
+      "times_shown": 0
     },
     {
       "slug": "on-idea-generation",
@@ -296,7 +296,7 @@
       "category": "creativity",
       "summary": "A deep exploration of idea generation as an exercisable muscle. Sankalp argues that creativity isn't mystical — it requires direct exposure to sources (not AI-mediated), tight feedback loops through doing, and having a concrete problem statement or scaffold to push against. Key insights: ideas emerge from inside active work, not from passive consumption; consumption-maxxing without processing is a common trap; you need to put in time building 'embedding space' in your mind through high-resolution engagement with material; people and conversations act as mirrors and portals for creativity; and breaking through blocks requires zooming out, reframing, and sometimes switching to parallel projects. Strong references to Henrik Karlsson, Richard Hamming, and Jack Morris.",
       "added": "2026-06-29",
-      "times_shown": 3
+      "times_shown": 0
     },
     {
       "slug": "mechanical-sympathy",
@@ -665,15 +665,6 @@
       "category": "ai",
       "summary": "In this article, Giles Edwards-Alexander (CTO for EMEI at Thoughtworks) presents an experiment testing whether refactoring code reduces the token cost of future AI-driven changes. The author built a ~150,000-line application entirely through agentic coding (mostly Claude Code), and observed that the data access layer had ballooned into a single 17,155-line Rust file. Treating this as a refactoring target, he measured how a sequence of refactorings affected the token consumption of an agent repeatedly making an identical, representative change.\n\nThe experiment method exploited a unique property of agents: unlike human engineers, a fresh agent does not learn from previous iterations. After establishing a baseline cost, the author applied successive refactoring steps following Martin Fowler Refactoring 2nd ed., and after each step prompted a fresh sub-agent to implement the exact same feature change, recording token usage. Because agents had no memory of prior runs, each measurement was untainted. The refactoring sequence moved from local de-duplication to file decomposition splitting the monolith into 19 files across module directories.\n\nThe results were stark: input tokens for the same change fell from 159,564 at baseline to 27,360 after the final step, an 83% reduction. Crucially, total data-access-layer LoC stayed roughly constant, meaning the savings came from the agent reading less code per change, not from there being less code overall. This worked because the agent could identify the smallest relevant subset of files. Output tokens barely moved, since the change to be written was the same size regardless of code factoring. The biggest drop occurred at the final step, where the largest file shrank dramatically and the agent could read a small, focused subset.\n\nThe author notes that Claude was not good at independently identifying or applying refactorings, a human had to actively guide it, and mechanical refactoring was done via Python/sed scripts that frequently mishandled indentation. He acknowledges this is a single experiment on greenfield code, but argues it demonstrates a concrete, measurable economic case for refactoring agentic codebases: spend tokens now to lower per-change token cost indefinitely going forward.",
       "added": "2026-07-30",
-      "times_shown": 0
-    },
-    {
-      "slug": "session-portability",
-      "title": "The Session You Cannot Take With You",
-      "url": "https://earendil.com/posts/session-portability/",
-      "category": "ai",
-      "summary": "This article argues that AI inference APIs are systematically eroding the portability of conversation sessions. Originally, an inference API exchanged inputs for outputs, letting users keep and own a complete transcript that could be inspected, archived, replayed, or handed to another model. The article contends that providers are increasingly returning a mixture of text and provider-bound state: encrypted reasoning blobs, hidden web-search evidence, opaque context compaction, encrypted subagent messages, and server-keyed references, so that a session operational state now belongs to the inference provider rather than the user.\n\nThe authors propose a practical definition of portability: an exported transcript must contain enough intelligible information for another model to continue the work without dereferencing a server ID, decrypting a blob, or recalling a search result. From this they derive five tests: inspection, export, replay, audit, and deletion, and apply them across concrete examples. They critique OpenAI default-stored Responses API, encrypted reasoning and server-side compaction, hosted web search that hides the actual evidence from the client, and the Codex/Responses multi-agent beta where inter-agent messages are encrypted payloads the user cannot read. They contrast this with more open alternatives, noting that Anthropic returns readable compaction summaries and that client-side search and compaction preserve portability at the cost of some lossiness.\n\nThe article also connects session lock-in to a broader asymmetry around distillation: the largest US labs train freely on public human work and on their own models, but prohibit customers from using outputs to train competing models, framing external distillation as an attack. The authors argue distillation should be supported as a legitimate path to cheaper, locally-runnable, competitive models.\n\nThe main takeaway is a set of seven rules the authors want providers and agent builders to adopt: the local event log is canonical, storage is explicit and ideally off by default, no opaque item is the sole carrier of meaning, hosted tools emit full-fidelity logs, subagent communication is auditable, compaction is inspectable, and artifacts are exportable. Their core position is that better performance should not be coupled to reduced user control, and that a user should always be able to close an account, keep the session, and hand it to another model without staring at ciphertext.",
-      "added": "2026-07-31",
       "times_shown": 0
     }
   ],
@@ -1557,6 +1548,16 @@
       "added": "2026-07-28",
       "read": "2026-07-28",
       "has_notes": false
+    },
+    {
+      "slug": "session-portability",
+      "title": "The Session You Cannot Take With You",
+      "url": "https://earendil.com/posts/session-portability/",
+      "category": "ai",
+      "summary": "This article argues that AI inference APIs are systematically eroding the portability of conversation sessions. Originally, an inference API exchanged inputs for outputs, letting users keep and own a complete transcript that could be inspected, archived, replayed, or handed to another model. The article contends that providers are increasingly returning a mixture of text and provider-bound state: encrypted reasoning blobs, hidden web-search evidence, opaque context compaction, encrypted subagent messages, and server-keyed references, so that a session operational state now belongs to the inference provider rather than the user.\n\nThe authors propose a practical definition of portability: an exported transcript must contain enough intelligible information for another model to continue the work without dereferencing a server ID, decrypting a blob, or recalling a search result. From this they derive five tests: inspection, export, replay, audit, and deletion, and apply them across concrete examples. They critique OpenAI default-stored Responses API, encrypted reasoning and server-side compaction, hosted web search that hides the actual evidence from the client, and the Codex/Responses multi-agent beta where inter-agent messages are encrypted payloads the user cannot read. They contrast this with more open alternatives, noting that Anthropic returns readable compaction summaries and that client-side search and compaction preserve portability at the cost of some lossiness.\n\nThe article also connects session lock-in to a broader asymmetry around distillation: the largest US labs train freely on public human work and on their own models, but prohibit customers from using outputs to train competing models, framing external distillation as an attack. The authors argue distillation should be supported as a legitimate path to cheaper, locally-runnable, competitive models.\n\nThe main takeaway is a set of seven rules the authors want providers and agent builders to adopt: the local event log is canonical, storage is explicit and ideally off by default, no opaque item is the sole carrier of meaning, hosted tools emit full-fidelity logs, subagent communication is auditable, compaction is inspectable, and artifacts are exportable. Their core position is that better performance should not be coupled to reduced user control, and that a user should always be able to close an account, keep the session, and hand it to another model without staring at ciphertext.",
+      "added": "2026-07-31",
+      "read": "2026-08-02",
+      "has_notes": true
     },
     {
       "slug": "the-conductor-developer",
