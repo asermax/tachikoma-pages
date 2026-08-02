@@ -1,0 +1,49 @@
+{
+  "title": "We Are Not Cleared for Takeoff. Yet.",
+  "meta": "Ian Butler (@kinglycrow) · Aug 2026 · ~2.5 min listen",
+  "body": "<div class=\"chunk\"><p>Intelligence too spiky, verifiers too brittle, horizons too short. The conditions for take off are not yet reached. We're still missing the &quot;G&quot; in AGI. — Ian Butler, referencing SlopCodeBench (arXiv:2603.24755)</p></div>\n\n<div class=\"article-img\"><img src=\"wright-flyer.jpg\" alt=\"Wright Flyer engineering blueprint\" loading=\"lazy\"><p class=\"img-caption\">The Wright Flyer: an aircraft that could fly — briefly, unreliably. The metaphor for today's AI.</p></div>\n\n<div class=\"chunk\"><p>Butler uses an early aviation metaphor to make his case: just as the Wright Brothers' biplane was far from reliable commercial flight, today's AI systems are missing fundamental capabilities needed for true general intelligence. He points to three specific problems.</p></div>\n<div class=\"chunk\"><p>SlopCodeBench is a benchmark of 36 problems and 196 checkpoints where AI coding agents repeatedly extend their own solutions. Unlike prior iterative benchmarks, the evolving specifications demand architectural decisions but leave internal structure to the agent.</p></div>\n<div class=\"chunk\"><p>The paper measures two forms of degradation: structural erosion (concentrated complexity) and verbosity (redundant code). Evaluating 15 coding agents across open and closed models, they find that no agent fully solves any problem end-to-end, and the best agent passes only 14.8% of checkpoints.</p></div>\n<div class=\"chunk\"><p>Quality degrades across checkpoints: structural erosion rises in 77% of trajectories and verbosity in 75.5%. Compared to 473 open-source Python repositories, agent code is 2.3x more verbose and 2.0x more eroded. Human repositories degrade less often and by smaller margins across their git histories.</p></div>\n\n<div class=\"article-img\"><img src=\"slopcode-table.jpg\" alt=\"SlopCodeBench model comparison table\" loading=\"lazy\"><p class=\"img-caption\">GPT 5.5 leads with 14.29% strict solve rate, but erosion remains high across all models.</p></div>\n<div class=\"article-img\"><img src=\"slopcode-results.jpg\" alt=\"SlopCodeBench evaluation: no clean finishes\" loading=\"lazy\"><p class=\"img-caption\">\"Four runs. No clean finish.\" — Every challenge ended with at least one hidden test failing.</p></div>\n\n<div class=\"chunk\"><p>Butler's tweet landed amid a wave of &quot;takeoff&quot; optimism. Andrew Curran pointed to OpenAI's improving stack efficiency, dropping prices, accelerating release cadence, and sudden math breakthroughs as signs of imminent intelligence explosion. Karpathy, meanwhile, expressed skepticism about the training paradigm itself, calling reinforcement learning &quot;sucking supervision through a straw&quot; and pointing to the fundamental noise in reward signals.</p></div>\n\n<div class=\"article-img\"><img src=\"curran-tweet.jpg\" alt=\"Tweet by Andrew Curran on AI takeoff\" loading=\"lazy\"><p class=\"img-caption\">The opposing view: \"The steadily increasing cadence in model releases. The sudden breakthroughs in math. It's all the same thing.\"</p></div>\n<div class=\"article-img\"><img src=\"karpathy-rl.jpg\" alt=\"Karpathy on RL limitations\" loading=\"lazy\"><p class=\"img-caption\">Karpathy: \"RL is sucking supervision through a straw.\" Noisy rewards and inconsistent feedback loops.</p></div>\n\n<div class=\"chunk\"><p>Explicit quality guidance reduces initial verbosity and erosion by up to a third, without affecting degradation rates. The benchmark reveals that agents pass individual checkpoints while producing code that steadily erodes and bloats with each turn — a fundamental limitation of current agentic coding systems over long-horizon tasks.</p></div>\n<div class=\"chunk\"><p>Butler's argument isn't that progress isn't happening, but that the specific conditions required for takeoff — consistent intelligence across domains, reliable verification, and sustained long-horizon performance — are demonstrably absent.</p></div>\n<div class=\"chunk\"><p>Paper: <a href=\"https://arxiv.org/abs/2603.24755\">arXiv:2603.24755</a> — SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks</p></div>",
+  "audio": "we-are-not-cleared-for-takeoff.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      15.775,
+      31.6,
+      48.775,
+      67.1,
+      88.525,
+      111.825,
+      131.25,
+      145.3
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ]
+    ],
+    "prefixOffset": 0
+  }
+}
