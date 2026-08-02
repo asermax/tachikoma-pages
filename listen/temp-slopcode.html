@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SlopCodeBench: How Coding Agents Degrade Over Long-Horizon Tasks</title>
+<style>
+body { font-family: Georgia, serif; max-width: 680px; margin: 2rem auto; padding: 0 1rem; line-height: 1.7; color: #1a1a1a; }
+h1 { font-size: 1.6rem; margin-bottom: 0.3rem; }
+.meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+blockquote { border-left: 3px solid #ccc; margin: 1.5rem 0; padding: 0.5rem 1rem; color: #444; font-style: italic; }
+blockquote cite { display: block; font-style: normal; font-size: 0.85rem; color: #888; margin-top: 0.5rem; }
+h2 { font-size: 1.2rem; margin-top: 2rem; }
+p { margin: 1rem 0; }
+img { max-width: 100%; height: auto; margin: 1.5rem 0; border-radius: 4px; }
+.figcaption { font-size: 0.85rem; color: #666; text-align: center; margin-top: -1rem; margin-bottom: 1.5rem; }
+a { color: #0066cc; }
+hr { border: none; border-top: 1px solid #ddd; margin: 2rem 0; }
+</style>
+</head>
+<body>
+
+<h1>Intelligence too spiky, verifiers too brittle, horizons too short.</h1>
+<div class="meta">Ian Butler (@kinglycrow) — August 2, 2026</div>
+
+<blockquote>
+Intelligence too spiky, verifiers too brittle, horizons too short. The conditions for take off are not yet reached. We're still missing the "G" in AGI.
+<cite>— Ian Butler, referencing <a href="https://arxiv.org/abs/2603.24755">SlopCodeBench</a></cite>
+</blockquote>
+
+<h2>The Paper: SlopCodeBench</h2>
+
+<p>SlopCodeBench is a benchmark of 36 problems and 196 checkpoints where AI coding agents repeatedly extend their own solutions. Unlike prior iterative benchmarks, the evolving specifications demand architectural decisions but leave internal structure to the agent.</p>
+
+<p>The paper measures two forms of degradation: <strong>structural erosion</strong> (concentrated complexity) and <strong>verbosity</strong> (redundant code). Evaluating 15 coding agents across open and closed models, they find that no agent fully solves any problem end-to-end, and the best agent passes only 14.8% of checkpoints.</p>
+
+<p>Quality degrades across checkpoints: structural erosion rises in 77% of trajectories and verbosity in 75.5%. Compared to 473 open-source Python repositories, agent code is 2.3x more verbose and 2.0x more eroded. Human repositories degrade less often and by smaller margins across their git histories.</p>
+
+<img src="temp-slopcode-1.jpg" alt="Benchmark overview">
+<img src="temp-slopcode-2.jpg" alt="Degradation metrics">
+<img src="temp-slopcode-3.jpg" alt="Agent comparison results">
+<img src="temp-slopcode-4.jpg" alt="Structural erosion analysis">
+<img src="temp-slopcode-5.jpg" alt="Verbosity analysis">
+
+<h2>Key Findings</h2>
+
+<p>Explicit quality guidance reduces initial verbosity and erosion by up to a third, without affecting degradation rates. The benchmark reveals that agents pass individual checkpoints while producing code that steadily erodes and bloats with each turn — a fundamental limitation of current agentic coding systems over long-horizon tasks.</p>
+
+<hr>
+
+<p style="font-size: 0.85rem; color: #888;">Paper: <a href="https://arxiv.org/abs/2603.24755">arXiv:2603.24755</a> — SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks</p>
+
+</body>
+</html>
