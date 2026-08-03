@@ -10,7 +10,6 @@ const ARTICLES = [
     { slug: 'how-i-almost-lost-my-hands', title: 'How I almost lost my hands', meta: 'Jason Wei · Jul 2026', time: '11:24' },
     { slug: 'anthropics-position-on-open-weight-models', title: 'Our position on open-weights models', meta: 'Dario Amodei · Jul 2026', time: '8:09' },
     { slug: 'harness-engineering', title: 'Harness engineering for coding agent users', meta: 'Birgitta Böckeler · Jul 2026', time: '16:05' },
-    { slug: 'the-orchestrators-tax', title: 'The Orchestrator\'s Tax', meta: 'Rahul Garg · Jul 2026', time: '17:04' },
     { slug: 'the-real-ai-risk-is-inside-the-labs', title: 'The real AI risk is inside the labs', meta: 'Salvatore Sanfilippo · Jul 2026', time: '6:42' },
     { slug: 'context-anchoring', title: 'Context Anchoring', meta: 'Rahul Garg · Jul 2026', time: '16:05' },
     { slug: 'should-still-design-code-humans', title: 'Should we still design code for humans?', meta: 'Valentina Servile · Jul 2026', time: '20:40' },
