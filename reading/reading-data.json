@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02",
+  "generated_at": "2026-08-03",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -605,15 +605,6 @@
       "times_shown": 0
     },
     {
-      "slug": "the-orchestrators-tax",
-      "title": "The Orchestrator's Tax",
-      "url": "https://martinfowler.com/articles/orchestrator-tax.html",
-      "category": "ai",
-      "summary": "Rahul Garg investigates the real costs of multi-agent LLM coding sessions, finding that the largest expense is not duplicated orientation work but context pollution in the orchestrator's working memory when raw subagent transcripts are pulled into the main thread. He derives the concept of 'cognitive locality' — tasks sharing the same mental model should stay together — and reframes subagents as tools for protecting the orchestrator's working memory rather than just parallelism. Standing rules include 2-4 agents per wave, no status polling that fetches full transcripts, and treating overlapping file ownership as a consolidation signal.",
-      "added": "2026-07-28",
-      "times_shown": 0
-    },
-    {
       "slug": "agents-are-hard",
       "title": "Agent Design Is Still Hard",
       "url": "https://lucumr.pocoo.org/2025/11/21/agents-are-hard/",
@@ -665,6 +656,33 @@
       "category": "ai",
       "summary": "In this article, Giles Edwards-Alexander (CTO for EMEI at Thoughtworks) presents an experiment testing whether refactoring code reduces the token cost of future AI-driven changes. The author built a ~150,000-line application entirely through agentic coding (mostly Claude Code), and observed that the data access layer had ballooned into a single 17,155-line Rust file. Treating this as a refactoring target, he measured how a sequence of refactorings affected the token consumption of an agent repeatedly making an identical, representative change.\n\nThe experiment method exploited a unique property of agents: unlike human engineers, a fresh agent does not learn from previous iterations. After establishing a baseline cost, the author applied successive refactoring steps following Martin Fowler Refactoring 2nd ed., and after each step prompted a fresh sub-agent to implement the exact same feature change, recording token usage. Because agents had no memory of prior runs, each measurement was untainted. The refactoring sequence moved from local de-duplication to file decomposition splitting the monolith into 19 files across module directories.\n\nThe results were stark: input tokens for the same change fell from 159,564 at baseline to 27,360 after the final step, an 83% reduction. Crucially, total data-access-layer LoC stayed roughly constant, meaning the savings came from the agent reading less code per change, not from there being less code overall. This worked because the agent could identify the smallest relevant subset of files. Output tokens barely moved, since the change to be written was the same size regardless of code factoring. The biggest drop occurred at the final step, where the largest file shrank dramatically and the agent could read a small, focused subset.\n\nThe author notes that Claude was not good at independently identifying or applying refactorings, a human had to actively guide it, and mechanical refactoring was done via Python/sed scripts that frequently mishandled indentation. He acknowledges this is a single experiment on greenfield code, but argues it demonstrates a concrete, measurable economic case for refactoring agentic codebases: spend tokens now to lower per-change token cost indefinitely going forward.",
       "added": "2026-07-30",
+      "times_shown": 0
+    },
+    {
+      "slug": "we-are-not-cleared-for-takeoff-slopcodebench-agi-imminence",
+      "title": "We Are Not Cleared for Takeoff — SlopCodeBench & AGI Imminence",
+      "url": "https://x.com/kinglycrow/status/2083973355913580888",
+      "category": "ai",
+      "summary": "Ian Butler argues that the conditions for AGI takeoff are not yet met, using an early aviation metaphor and citing the SlopCodeBench paper (arXiv:2603.24755). The paper benchmarks 15 coding agents across 36 problems and 196 checkpoints where agents repeatedly extend their own solutions. No agent fully solves any problem end-to-end — the best passes only 14.8% of checkpoints. Two forms of degradation are measured: structural erosion (rising in 77% of trajectories) and verbosity (rising in 75.5%). Agent code is 2.3x more verbose and 2.0x more eroded than human-written code. Butler identifies three missing ingredients: intelligence that is consistent rather than spiky, verifiers that are robust rather than brittle, and planning horizons that are long rather than short. The tweet sparked debate against a wave of takeoff optimism from Andrew Curran and skepticism about RL from Karpathy. Explicit quality guidance reduces initial degradation by up to a third but doesn't change the degradation rate.",
+      "added": "2026-08-02",
+      "times_shown": 0
+    },
+    {
+      "slug": "claude-is-not-a-compiler",
+      "title": "Claude Is Not a Compiler",
+      "url": "https://blog.exe.dev/claude-is-not-a-compiler",
+      "category": "ai",
+      "summary": "Josh Bleecher Snyder argues treating an LLM agent as just a compiler is a category error — it can reason across the entire stack without scheduling meetings. He demonstrates by building a geographically distributed DNS server in a week, using competing LLM implementations and differential spec analysis to identify decisions that genuinely mattered. Distinguishes vibe-coding (handing off to agents) from vibe-engineering (using agents as vertically integrated resources across every layer). Closing thesis: vibe-engineering is just engineering.",
+      "added": "2026-08-03",
+      "times_shown": 0
+    },
+    {
+      "slug": "devtools-must-be-open-source",
+      "title": "Devtools must be open source",
+      "url": "https://blog.exe.dev/devtools-must-be-open-source",
+      "category": "engineering",
+      "summary": "David Crawshaw argues that AI coding agents have changed the economics of customizing software. Agents can learn a codebase, make modifications, and automate rebasing against upstream — shrinking both upfront cost and maintenance. Traditional customization mechanisms like config files, plugin systems, and extension APIs become unnecessary when agents can edit source directly. Open-source agents can be personalized through their source code while closed-source ones hit a wall — users are limited to vendor-exposed hooks. Thesis: source code access is the prerequisite for making tools genuinely yours.",
+      "added": "2026-08-03",
       "times_shown": 0
     }
   ],
