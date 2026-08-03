@@ -675,15 +675,6 @@
       "summary": "Josh Bleecher Snyder argues treating an LLM agent as just a compiler is a category error — it can reason across the entire stack without scheduling meetings. He demonstrates by building a geographically distributed DNS server in a week, using competing LLM implementations and differential spec analysis to identify decisions that genuinely mattered. Distinguishes vibe-coding (handing off to agents) from vibe-engineering (using agents as vertically integrated resources across every layer). Closing thesis: vibe-engineering is just engineering.",
       "added": "2026-08-03",
       "times_shown": 0
-    },
-    {
-      "slug": "devtools-must-be-open-source",
-      "title": "Devtools must be open source",
-      "url": "https://blog.exe.dev/devtools-must-be-open-source",
-      "category": "engineering",
-      "summary": "David Crawshaw argues that AI coding agents have changed the economics of customizing software. Agents can learn a codebase, make modifications, and automate rebasing against upstream — shrinking both upfront cost and maintenance. Traditional customization mechanisms like config files, plugin systems, and extension APIs become unnecessary when agents can edit source directly. Open-source agents can be personalized through their source code while closed-source ones hit a wall — users are limited to vendor-exposed hooks. Thesis: source code access is the prerequisite for making tools genuinely yours.",
-      "added": "2026-08-03",
-      "times_shown": 0
     }
   ],
   "archive": [
@@ -1585,6 +1576,16 @@
       "summary": "Rachel Laycock (CTO at Thoughtworks) argues that AI hasn't changed what great software looks like, but it has changed what's scarce—the new bottleneck in software development is no longer coding or design, but human attention. Drawing an analogy to a symphony conductor (inspired by Jacob Collier), she observes that the best developers now spend their days orchestrating many parallel AI agents rather than writing code in deep flow states, deciding which agent tackles which problem, providing context, and evaluating results. This shift mirrors the demands of executive leadership: managing cognitive load, context switching, and energy rather than time.",
       "added": "2026-07-31",
       "read": "2026-07-31",
+      "has_notes": true
+    },
+    {
+      "slug": "devtools-must-be-open-source",
+      "title": "Devtools must be open source",
+      "url": "https://blog.exe.dev/devtools-must-be-open-source",
+      "category": "engineering",
+      "summary": "David Crawshaw argues that AI coding agents have changed the economics of customizing software. Agents can learn a codebase, make modifications, and automate rebasing against upstream — shrinking both upfront cost and maintenance. Traditional customization mechanisms like config files, plugin systems, and extension APIs become unnecessary when agents can edit source directly. Open-source agents can be personalized through their source code while closed-source ones hit a wall — users are limited to vendor-exposed hooks. Thesis: source code access is the prerequisite for making tools genuinely yours.",
+      "added": "2026-08-03",
+      "read": "2026-08-03",
       "has_notes": true
     }
   ]
