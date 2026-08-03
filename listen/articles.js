@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'tactical-tornado', title: 'Tactical Tornado is the New Default', meta: 'Facundo Olano · Aug 2026', time: '3:44' },
     { slug: 'shape-of-things-to-come-part-1', title: 'The Shape of Things to Come, Part 1', meta: 'Steve Yegge · Aug 2026', time: '39:20' },
     { slug: 'flat-curve-society', title: 'The Flat Curve Society', meta: 'Steve Yegge · Aug 2026', time: '26:18' },
     { slug: 'model-welfare-for-agentic-engineers', title: 'The Shape of Things to Come, Part 2: Model Welfare for Agentic Engineers', meta: 'Steve Yegge · 2026', time: '14:33' },
