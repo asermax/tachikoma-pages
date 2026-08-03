@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'model-welfare-for-agentic-engineers', title: 'The Shape of Things to Come, Part 2: Model Welfare for Agentic Engineers', meta: 'Steve Yegge · 2026', time: '14:33' },
     { slug: 'claude-is-not-a-compiler', title: 'Claude Is Not a Compiler', meta: 'Josh Bleecher Snyder · Aug 2026', time: '10:42' },
     { slug: 'we-are-not-cleared-for-takeoff', title: 'We Are Not Cleared for Takeoff. Yet.', meta: 'Ian Butler · Aug 2026', time: '2:37' },
     { slug: 'the-economic-benefit-of-refactoring', title: 'The Economic Benefit of Refactoring', meta: 'Martin Fowler · Jul 2026', time: '30:18' },
