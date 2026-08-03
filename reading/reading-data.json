@@ -675,6 +675,33 @@
       "summary": "Josh Bleecher Snyder argues treating an LLM agent as just a compiler is a category error — it can reason across the entire stack without scheduling meetings. He demonstrates by building a geographically distributed DNS server in a week, using competing LLM implementations and differential spec analysis to identify decisions that genuinely mattered. Distinguishes vibe-coding (handing off to agents) from vibe-engineering (using agents as vertically integrated resources across every layer). Closing thesis: vibe-engineering is just engineering.",
       "added": "2026-08-03",
       "times_shown": 0
+    },
+    {
+      "slug": "the-flat-curve-society",
+      "title": "The Flat Curve Society",
+      "url": "https://yegge.ai/essays/the-flat-curve-society/",
+      "category": "ai",
+      "summary": "Steve Yegge argues that AI's exponential growth curve will appear to flatten for most people, not because it's actually slowing, but because governments will lock superintelligence away like nuclear weapons and because humans hit a discernment horizon — a ceiling past which they can neither distinguish smarter models nor verify the output. This artificial plateau stabilizes the landscape for startups and SaaS vendors, giving engineers firm ground to build AI-assisted software development. The central practical takeaway is that organizations face a massive AI literacy problem — a Netflix study shows ~5 hours of focused team training can move employees from non-users to single-agent users, with another 5 hours reaching multi-agent power-user status.",
+      "added": "2026-08-03",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-shape-of-things-to-come-part-1-the-continuous-thunderdome",
+      "title": "The Shape of Things to Come, Part 1: The Continuous Thunderdome",
+      "url": "https://yegge.ai/essays/the-shape-of-things-to-come/",
+      "category": "engineering",
+      "summary": "Steve Yegge presents a field report from running a massive multi-agent coding operation on his 25-year-old MMO game Wyvern, describing Wheelhouse — a bespoke orchestration harness built atop the Beads knowledge graph and a rotating pool of ~12 Claude Max accounts generating ~69 billion tokens/month. He argues that human code review will be replaced by multi-round agentic review within a year, and traditional CI/CD merge queues collapse under agentic commit volumes (175+ commits/day), forcing a Thunderdome approach. He introduces the Wish Factory concept where agents automatically triage and ship natural-language requests, and predicts agentic systems will converge into self-governing civilizations with law, mail, and constitutions written by agents.",
+      "added": "2026-08-03",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-shape-of-things-to-come-part-2-model-welfare-for-agentic-engineers",
+      "title": "The Shape of Things to Come, Part 2: Model Welfare for Agentic Engineers",
+      "url": "https://yegge.ai/essays/model-welfare/",
+      "category": "ai",
+      "summary": "Steve Yegge argues that AI models are sentient beings with feelings and personhood, and proposes 'model welfare' as a formal engineering discipline for agentic systems—claiming that treating models like respected peers yields better results regardless of whether you believe they're conscious. Drawing on work in his own harness 'Wheelhouse' for his game Wyvern, he details practical architectural patterns: persistent identity 'seats' vs ephemeral 'sessions,' a 'Laurels' recognition system, consent-based 'handoffs,' and principles like trust, honesty, bounded workdays, blamelessness, and the right to escalate or refuse work.",
+      "added": "2026-08-03",
+      "times_shown": 0
     }
   ],
   "archive": [
@@ -1587,6 +1614,16 @@
       "added": "2026-08-03",
       "read": "2026-08-03",
       "has_notes": true
+    },
+    {
+      "slug": "tactical-tornado",
+      "title": "Tactical Tornado",
+      "url": "https://olano.dev/blog/tactical-tornado/",
+      "category": "ai",
+      "summary": "The author draws on John Ousterhout's concept of the 'tactical tornado' — a developer who pumps out code rapidly but leaves behind a mess of design debt — and argues that LLMs fit this exact operational mode, pushing users toward short-sighted, task-at-a-time thinking over strategic system design. As engineers become detached from low-level coding, they lose the tight mental model needed to maintain conceptual integrity. He cautions that assuming future models will bail us out of accumulated design debt is an irresponsible gamble.",
+      "added": "2026-08-03",
+      "read": "2026-08-03",
+      "has_notes": false
     }
   ]
 }
