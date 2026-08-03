@@ -1,6 +1,5 @@
 const ARTICLES = [
     { slug: 'claude-is-not-a-compiler', title: 'Claude Is Not a Compiler', meta: 'Josh Bleecher Snyder · Aug 2026', time: '10:42' },
-    { slug: 'devtools-must-be-open-source', title: 'Devtools must be open source', meta: 'David Crawshaw · Aug 2026', time: '8:08' },
     { slug: 'we-are-not-cleared-for-takeoff', title: 'We Are Not Cleared for Takeoff. Yet.', meta: 'Ian Butler · Aug 2026', time: '2:37' },
     { slug: 'the-economic-benefit-of-refactoring', title: 'The Economic Benefit of Refactoring', meta: 'Martin Fowler · Jul 2026', time: '30:18' },
     { slug: 'employers-warn-college-students-critical-thinking-skills-are-atrophying-due-to-a', title: 'Bosses Horrified as AI Native College Graduates Hit the Workplace', meta: 'Futurism · Jul 2026', time: '2:32' },
