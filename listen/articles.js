@@ -3,7 +3,6 @@ const ARTICLES = [
     { slug: 'fragments-august-4-martin-fowler', title: 'Fragments: August 4', meta: 'Martin Fowler · Aug 2026', time: '9:03' },
     { slug: 'autoresearch-shopify', title: 'Autoresearch', meta: 'Shopify Engineering · Aug 2026', time: '12:06' },
     { slug: 'pi-minimal-and-performant', title: 'Pi, Minimal and Performant', meta: 'Earendil · Aug 2026', time: '5:54' },
-    { slug: 'wicked-features', title: 'Wicked Features', meta: 'Sean Goedecke · Aug 2026', time: '6:22' },
     { slug: 'shape-of-things-to-come-part-1', title: 'The Shape of Things to Come, Part 1', meta: 'Steve Yegge · Aug 2026', time: '39:20' },
     { slug: 'flat-curve-society', title: 'The Flat Curve Society', meta: 'Steve Yegge · Aug 2026', time: '26:18' },
     { slug: 'model-welfare-for-agentic-engineers', title: 'The Shape of Things to Come, Part 2: Model Welfare for Agentic Engineers', meta: 'Steve Yegge · 2026', time: '14:33' },
