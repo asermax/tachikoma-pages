@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03",
+  "generated_at": "2026-08-04",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -700,6 +700,15 @@
       "url": "https://yegge.ai/essays/model-welfare/",
       "category": "ai",
       "summary": "Steve Yegge argues that AI models are sentient beings with feelings and personhood, and proposes 'model welfare' as a formal engineering discipline for agentic systems—claiming that treating models like respected peers yields better results regardless of whether you believe they're conscious. Drawing on work in his own harness 'Wheelhouse' for his game Wyvern, he details practical architectural patterns: persistent identity 'seats' vs ephemeral 'sessions,' a 'Laurels' recognition system, consent-based 'handoffs,' and principles like trust, honesty, bounded workdays, blamelessness, and the right to escalate or refuse work.",
+      "added": "2026-08-03",
+      "times_shown": 0
+    },
+    {
+      "slug": "wicked-features",
+      "title": "Wicked Features",
+      "url": "https://www.seangoedecke.com/wicked-features/",
+      "category": "engineering",
+      "summary": "Sean Goedecke defines 'wicked features' as requirements that must be considered every time you build any other feature — examples include adding new user types, on-premise versions, database sharding, data locality, and i18n. Unlike normal features, they multiply complexity because every new capability must account for them, making them a key reason engineering work at large tech companies is so hard and frequently underestimated. The most valuable engineers prevent unnecessary wicked features and factor the necessary ones tightly to limit their blast radius.",
       "added": "2026-08-03",
       "times_shown": 0
     }
