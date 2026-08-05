@@ -1,5 +1,4 @@
 const ARTICLES = [
-    { slug: 'normalization-of-deviance-in-ai', title: 'The Normalization of Deviance in AI', meta: 'Johann Rehberger · 2025', time: '8:45' },
     { slug: 'fragments-august-4-martin-fowler', title: 'Fragments: August 4', meta: 'Martin Fowler · Aug 2026', time: '9:03' },
     { slug: 'autoresearch-shopify', title: 'Autoresearch', meta: 'Shopify Engineering · Aug 2026', time: '12:06' },
     { slug: 'pi-minimal-and-performant', title: 'Pi, Minimal and Performant', meta: 'Earendil · Aug 2026', time: '5:54' },
