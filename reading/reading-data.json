@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04",
+  "generated_at": "2026-08-05",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -305,7 +305,7 @@
       "category": "AI",
       "summary": "Fowler defines Mechanical Sympathy, a term coined by F1 champion Jackie Stewart for a driver's intuitive understanding of a car, and imported into software by Martin Thompson to describe developers needing a rough grasp of hardware to build efficient systems.",
       "added": "2026-07-06",
-      "times_shown": 1
+      "times_shown": 2
     },
     {
       "slug": "notes-from-fose-europe",
@@ -350,7 +350,7 @@
       "category": "ai",
       "summary": "Detailed retrospective of an auto-research contest placing 12th/183: using OpenAI Codex (GPT-5.5) + Claude Pro to iteratively optimize a batched Householder QR factorization kernel from ~419ms cuSolver baseline to ~1.8ms (212x speedup) over 14 days and 1500+ submissions. Key insight: blocked Householder QR with trailing WY representation converts serial work to GEMM-shaped steps that fully utilize tensor cores. Workflow emphasis on agent harness design (AGENTS.md, logs, standing instructions) and human-in-the-loop steering. Catalogs 10 structural breakthroughs (CUDA graph replay, fused layout assembly, superpanels) and honestly lists misses. Concludes that auto-research is now highly accessible and domain expertise + research taste are the next frontier for agentic systems.",
       "added": "2026-07-08",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "experiences-with-local-models-for-coding",
@@ -359,7 +359,7 @@
       "category": "AI Development",
       "summary": "Birgitta Böckeler's hands-on evaluation of running small AI models locally (M3 Max 48GB / M5 Pro 64GB) for agentic coding. Tests Qwen 3.6 35B, Gemma 4 26B/31B, and Qwen Coder Next 80B across structured tasks and day-to-day use. Key finding: local models can work for small, well-defined tasks (especially bash/Python scripts, single-file edits) but struggle with JavaScript tasks requiring multi-file changes or code discovery. The choice of task matters enormously — specificity of instructions, number of files, and tech stack all affect viability. A surprising result: the same model settings produced very different success rates on different hardware (M3 vs M5), likely due to RAM constraints affecting output quality. She finds local model use surprisingly enjoyable as a 'detox' from over-relying on powerful models — it forces more careful review and slower, more deliberate work. Default setup: Qwen 3.6 35B 4-bit, reasoning off, max context window, via OpenCode or Pi harness.",
       "added": "2026-07-08",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "addy-osmani-tweet",
@@ -704,12 +704,30 @@
       "times_shown": 0
     },
     {
-      "slug": "wicked-features",
-      "title": "Wicked Features",
-      "url": "https://www.seangoedecke.com/wicked-features/",
-      "category": "engineering",
-      "summary": "Sean Goedecke defines 'wicked features' as requirements that must be considered every time you build any other feature — examples include adding new user types, on-premise versions, database sharding, data locality, and i18n. Unlike normal features, they multiply complexity because every new capability must account for them, making them a key reason engineering work at large tech companies is so hard and frequently underestimated. The most valuable engineers prevent unnecessary wicked features and factor the necessary ones tightly to limit their blast radius.",
-      "added": "2026-08-03",
+      "slug": "httpsearendilcompostspi-autoresearch-and-databricks",
+      "title": "Untitled",
+      "url": "https://earendil.com/posts/pi-autoresearch-and-databricks/",
+      "category": "uncategorized",
+      "summary": "This article argues that AI coding harnesses should prioritize minimalism and extensibility over complex feature bloat. Drawing on benchmarking from Databricks and Shopify, it demonstrates how the lightweight Pi harness lowers costs through context discipline while enabling custom workflows.",
+      "added": "2026-08-04",
+      "times_shown": 0
+    },
+    {
+      "slug": "httpsmartinfowlercomfragments2026-08-04html",
+      "title": "Untitled",
+      "url": "https://martinfowler.com/fragments/2026-08-04.html",
+      "category": "uncategorized",
+      "summary": "Martin Fowler reflects on immediate AI risks — loose controls over rogue agents and warning signs of a financial bubble. Despite systemic concerns, he highlights practical utility like using agents to extract data from legacy databases, urging cautious navigation of the hype.",
+      "added": "2026-08-04",
+      "times_shown": 0
+    },
+    {
+      "slug": "httpsshopifyengineeringautoresearch",
+      "title": "Untitled",
+      "url": "https://shopify.engineering/autoresearch",
+      "category": "uncategorized",
+      "summary": "Shopify engineers argue that the Autoresearch concept can be generalized beyond model training to automate everyday software engineering metrics. By building pi-autoresearch, they successfully reduced build times and accelerated test suites across major codebases.",
+      "added": "2026-08-04",
       "times_shown": 0
     }
   ],
@@ -1633,6 +1651,26 @@
       "added": "2026-08-03",
       "read": "2026-08-03",
       "has_notes": false
+    },
+    {
+      "slug": "wicked-features",
+      "title": "Wicked Features",
+      "url": "https://www.seangoedecke.com/wicked-features/",
+      "category": "engineering",
+      "summary": "Sean Goedecke defines 'wicked features' as requirements that must be considered every time you build any other feature — examples include adding new user types, on-premise versions, database sharding, data locality, and i18n. Unlike normal features, they multiply complexity because every new capability must account for them, making them a key reason engineering work at large tech companies is so hard and frequently underestimated. The most valuable engineers prevent unnecessary wicked features and factor the necessary ones tightly to limit their blast radius.",
+      "added": "2026-08-03",
+      "read": "2026-08-04",
+      "has_notes": true
+    },
+    {
+      "slug": "httpsembracetheredcomblogposts2025the-normalization-of-deviance-in-ai",
+      "title": "Untitled",
+      "url": "https://embracethered.com/blog/posts/2025/the-normalization-of-deviance-in-ai/",
+      "category": "uncategorized",
+      "summary": "Warns that the AI industry is normalizing security flaws by relying on untrusted LLM outputs in agentic workflows. Drawing parallels to the Challenger disaster, the author urges strict downstream security controls and human oversight rather than assuming models behave correctly.",
+      "added": "2026-08-04",
+      "read": "2026-08-05",
+      "has_notes": true
     }
   ]
 }
