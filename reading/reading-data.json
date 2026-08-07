@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06",
+  "generated_at": "2026-08-07",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -709,15 +709,6 @@
       "url": "https://martinfowler.com/fragments/2026-08-04.html",
       "category": "uncategorized",
       "summary": "Martin Fowler reflects on immediate AI risks — loose controls over rogue agents and warning signs of a financial bubble. Despite systemic concerns, he highlights practical utility like using agents to extract data from legacy databases, urging cautious navigation of the hype.",
-      "added": "2026-08-04",
-      "times_shown": 0
-    },
-    {
-      "slug": "httpsshopifyengineeringautoresearch",
-      "title": "Untitled",
-      "url": "https://shopify.engineering/autoresearch",
-      "category": "uncategorized",
-      "summary": "Shopify engineers argue that the Autoresearch concept can be generalized beyond model training to automate everyday software engineering metrics. By building pi-autoresearch, they successfully reduced build times and accelerated test suites across major codebases.",
       "added": "2026-08-04",
       "times_shown": 0
     }
@@ -1671,6 +1662,16 @@
       "summary": "Warns that the AI industry is normalizing security flaws by relying on untrusted LLM outputs in agentic workflows. Drawing parallels to the Challenger disaster, the author urges strict downstream security controls and human oversight rather than assuming models behave correctly.",
       "added": "2026-08-04",
       "read": "2026-08-05",
+      "has_notes": true
+    },
+    {
+      "slug": "httpsshopifyengineeringautoresearch",
+      "title": "Untitled",
+      "url": "https://shopify.engineering/autoresearch",
+      "category": "uncategorized",
+      "summary": "Shopify engineers argue that the Autoresearch concept can be generalized beyond model training to automate everyday software engineering metrics. By building pi-autoresearch, they successfully reduced build times and accelerated test suites across major codebases.",
+      "added": "2026-08-04",
+      "read": "2026-08-07",
       "has_notes": true
     }
   ]
