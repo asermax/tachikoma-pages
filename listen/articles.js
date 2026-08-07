@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'how-to-keep-thinking', title: 'How to keep thinking', meta: 'Sean Goedecke · 2026', time: '5:21' },
     { slug: 'fragments-august-4-martin-fowler', title: 'Fragments: August 4', meta: 'Martin Fowler · Aug 2026', time: '9:03' },
     { slug: 'pi-minimal-and-performant', title: 'Pi, Minimal and Performant', meta: 'Earendil · Aug 2026', time: '5:54' },
     { slug: 'shape-of-things-to-come-part-1', title: 'The Shape of Things to Come, Part 1', meta: 'Steve Yegge · Aug 2026', time: '39:20' },
