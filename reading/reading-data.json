@@ -729,6 +729,15 @@
       "summary": "In this essay, Senko Rašić pushes back against the increasingly common refrain that 'coding is easy; figuring out what to build is the hard part' — a sentiment often voiced as LLMs become capable of generating code. He argues that dismissing the difficulty of coding is a gross insult to programmers, and proceeds to stress-test both halves of that claim through a series of pointed rhetorical questions. Rather than picking a side, Rašić advocates holding both truths at once: deeply understanding the system being built and understanding why it's being built are both essential. He closes with a warning: never outsource your understanding, judgment, empathy, and taste to AI.",
       "added": "2026-08-08",
       "times_shown": 0
+    },
+    {
+      "slug": "i-got-an-email-about-resistance",
+      "title": "I got an email about resistance",
+      "url": "https://www.seangoedecke.com/i-got-an-email-about-resistance/",
+      "category": "ai",
+      "summary": "Sean Goedecke responds to a reader who accused him of defeatist writing about AI's impact on software engineering. He draws an analogy to the Industrial Revolution, arguing that programmers are like framework-knitters facing automation. While acknowledging his anti-revolutionary stance, he defends his pragmatic tone as protecting vulnerable engineers from career-destroying choices — arguing that someone needs to help scared junior devs navigate the changing landscape rather than foment resistance.",
+      "added": "2026-08-09",
+      "times_shown": 0
     }
   ],
   "archive": [
