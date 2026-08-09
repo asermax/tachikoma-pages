@@ -1,4 +1,9 @@
 const ARTICLES = [
+    { slug: 'luddites-and-ai-datacenters', title: 'Blood in the datacenter', meta: 'Sean Goedecke · Aug 2026', time: '18:05' },
+    { slug: 'anti-ai-nostalgia', title: 'Anti-AI nostalgia and the cult of the past', meta: 'Sean Goedecke · Aug 2026', time: '13:43' },
+    { slug: 'the-just-say-no-engineer-was-a-zirp-phenomenon', title: 'The just-say-no engineer was a ZIRP phenomenon', meta: 'Sean Goedecke · Aug 2026', time: '13:16' },
+    { slug: 'how-to-influence-politics', title: 'How I influence tech company politics', meta: 'Sean Goedecke · Aug 2026', time: '10:18' },
+    { slug: 'seeing-like-a-software-company', title: 'Seeing like a software company', meta: 'Sean Goedecke · Aug 2026', time: '24:46' },
     { slug: 'code-was-never-the-hard-part-is-an-insult-to-all-programmers', title: '"Code was never the hard part" is an insult to all programmers', meta: 'Senko Rašić · Aug 2026', time: '8:31' },
     { slug: 'how-to-keep-thinking', title: 'How to keep thinking', meta: 'Sean Goedecke · 2026', time: '5:21' },
     { slug: 'fragments-august-4-martin-fowler', title: 'Fragments: August 4', meta: 'Martin Fowler · Aug 2026', time: '9:03' },
