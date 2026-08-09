@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08",
+  "generated_at": "2026-08-09",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -719,6 +719,15 @@
       "category": "productivity",
       "summary": "In \"How to keep thinking,\" software engineer Sean Goedecke reflects on how working with AI in 2026 has changed the texture of daily engineering work. He paints a vivid picture of the modern software job as a frenetic \"game show\" where you constantly spin off tasks to AI agents and rapidly context-switch between their outputs, skimming and judging results rather than engaging in slow, careful reflection. While this mode of work isn't exactly mindless—it requires real skill—it crowds out the deep \"hammock time\" needed for genuine creativity.\n\nGoedecke argues that slowing down at work is easier said than done. Carefully close-reading LLM output is a miserable experience, and the economic incentives of the tech industry push engineers to use every \"solve this ten times faster\" button available, lest they be outcompeted by peers. He worries that this is making him \"dumber\" in a specific sense: biasing him toward quick skimming-and-judging and away from slow, deliberate thought—though he acknowledges the tech industry's frenzy has broader economic roots beyond just LLMs.\n\nHis prescription is twofold. First, write more—specifically, write in your own words. Writing with an LLM doesn't count, because the act of forcing yourself to articulate thoughts is itself the thinking. He pushes back on the cliché that \"ideas are easy, execution is everything,\" arguing that most so-called ideas are merely fragments until writing forces them into existence. Second, read dense non-fiction books, which are the \"antithesis of AI slop.\" He finds his brain craving information-dense content the way a sodium-deficient body craves salt, and combining the two—reading a book, then writing about it—has become exactly the practice he needs to feel his mind stretching again.\n\nThe main takeaway is that the era of being paid to think slowly at work may be ending, but losing the habit of slow reflection would be a serious mistake. Even today, plenty of problems remain too hard for LLMs to solve tastefully on their own (large refactors on complex codebases being his prime example). Goedecke's conclusion is practical and clear: we will increasingly need to carve out time outside of work to keep the muscles of deep thought alive.",
       "added": "2026-08-07",
+      "times_shown": 0
+    },
+    {
+      "slug": "code-was-never-the-hard-part-is-an-insult-to-all-programmers",
+      "title": "Code Was Never The Hard Part Is An Insult To All Programmers",
+      "url": "https://blog.senko.net/code-was-never-the-hard-part-is-an-insult-to-all-programmers",
+      "category": "ai",
+      "summary": "In this essay, Senko Rašić pushes back against the increasingly common refrain that 'coding is easy; figuring out what to build is the hard part' — a sentiment often voiced as LLMs become capable of generating code. He argues that dismissing the difficulty of coding is a gross insult to programmers, and proceeds to stress-test both halves of that claim through a series of pointed rhetorical questions. Rather than picking a side, Rašić advocates holding both truths at once: deeply understanding the system being built and understanding why it's being built are both essential. He closes with a warning: never outsource your understanding, judgment, empathy, and taste to AI.",
+      "added": "2026-08-08",
       "times_shown": 0
     }
   ],
