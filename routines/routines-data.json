@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-08T02:00:49.556404-03:00",
+  "generated_at": "2026-08-09T02:00:33.685465-03:00",
   "week_start": "2026-08-02",
   "week_label": "August 02 - August 08, 2026",
-  "last_updated": "Saturday, August 08, 2026 at 02:00",
+  "last_updated": "Sunday, August 09, 2026 at 02:00",
   "stats": {
-    "completed": 10.814285714285715,
-    "planned": 17,
-    "display": "10.8 / 17"
+    "completed": 11.821428571428571,
+    "planned": 22,
+    "display": "11.8 / 22"
   },
   "daily": {
     "Sunday": {
@@ -35,14 +35,14 @@
       "total": 3
     },
     "Friday": {
-      "status": "missed",
-      "completed": 0,
+      "status": "done",
+      "completed": 1,
       "total": 1
     },
     "Saturday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 5
     }
   },
   "goals": [
@@ -50,9 +50,9 @@
       "name": "Wind-Down Routine",
       "emoji": "",
       "status": "pending",
-      "accumulated": "3 nights",
+      "accumulated": "4 nights",
       "target": "7 nights",
-      "progress_pct": 42
+      "progress_pct": 57
     },
     {
       "name": "Trumpet Practice",
@@ -83,7 +83,7 @@
         },
         {
           "day": "Sat",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -102,7 +102,7 @@
         },
         {
           "day": "Sat",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -152,16 +152,16 @@
         },
         {
           "day": "Fri",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Sat",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
-      "metrics_total": "90min",
+      "metrics_total": "110min",
       "comparison": "",
-      "done": 4,
+      "done": 5,
       "total": 7
     },
     {
@@ -194,7 +194,7 @@
         },
         {
           "day": "Sat",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -213,7 +213,7 @@
         },
         {
           "day": "Sat",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -223,10 +223,10 @@
     }
   ],
   "spirit": {
-    "state": "content",
+    "state": "tired",
     "emoji": "\ud83e\udd8e",
     "title": "\ud83e\udd8e Clay Fire Salamander",
-    "image": "assets/content.webp",
-    "description": "Your fire salamander sits peacefully on its stone, soft snowflakes drifting down, gentle overcast sky \u2014 calm, cozy, and satisfied."
+    "image": "assets/tired.webp",
+    "description": "Your fire salamander droops on a frost-covered branch, grey fog and heavy skies, muted colors \u2014 low energy, needing rest."
   }
 }
