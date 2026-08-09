@@ -1,55 +1,9 @@
 {
-  "week": "2026-W31",
+  "week": "2026-W32",
   "days": {
     "Monday": {
       "location": "Home - Dumbbells",
-      "exercises": [
-        {
-          "name": "Dumbbell Romanian deadlift",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "10",
-          "unit": "",
-          "weight": "10 kg"
-        },
-        {
-          "name": "Dumbbell rows",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "10",
-          "unit": "",
-          "weight": "10 kg"
-        },
-        {
-          "name": "Knee push-ups",
-          "detail": "wide",
-          "sets": 3,
-          "type": "reps",
-          "target": "15",
-          "unit": "",
-          "weight": null
-        },
-        {
-          "name": "Hollow-body hold",
-          "detail": null,
-          "sets": 3,
-          "type": "time",
-          "target": "20",
-          "unit": "s",
-          "weight": null
-        },
-        {
-          "name": "\"No-money\" external rotations",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "10",
-          "unit": "",
-          "weight": null
-        }
-      ]
+      "exercises": []
     },
     "Tuesday": {
       "location": "Climbing Gym - Bar",
@@ -139,53 +93,7 @@
     },
     "Saturday": {
       "location": "Home - Dumbbells",
-      "exercises": [
-        {
-          "name": "Goblet squats",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "10",
-          "unit": "",
-          "weight": "10 kg"
-        },
-        {
-          "name": "Dumbbell split squats",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "8",
-          "unit": "",
-          "weight": "10 kg"
-        },
-        {
-          "name": "Dumbbell overhead press",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "10",
-          "unit": "",
-          "weight": "6 kg"
-        },
-        {
-          "name": "Dumbbell reverse flyes",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "12",
-          "unit": "",
-          "weight": "5 kg"
-        },
-        {
-          "name": "Side plank",
-          "detail": null,
-          "sets": 3,
-          "type": "time",
-          "target": "20",
-          "unit": "s",
-          "weight": null
-        }
-      ]
+      "exercises": []
     }
   }
 }
