@@ -1,0 +1,232 @@
+{
+  "generated_at": "2026-08-09T02:00:33.685465-03:00",
+  "week_start": "2026-08-02",
+  "week_label": "August 02 - August 08, 2026",
+  "last_updated": "Sunday, August 09, 2026 at 02:00",
+  "stats": {
+    "completed": 11.821428571428571,
+    "planned": 22,
+    "display": "11.8 / 22"
+  },
+  "daily": {
+    "Sunday": {
+      "status": "done",
+      "completed": 1,
+      "total": 1
+    },
+    "Monday": {
+      "status": "partial",
+      "completed": 2,
+      "total": 5
+    },
+    "Tuesday": {
+      "status": "done",
+      "completed": 3,
+      "total": 3
+    },
+    "Wednesday": {
+      "status": "partial",
+      "completed": 1,
+      "total": 2
+    },
+    "Thursday": {
+      "status": "done",
+      "completed": 3,
+      "total": 3
+    },
+    "Friday": {
+      "status": "done",
+      "completed": 1,
+      "total": 1
+    },
+    "Saturday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 5
+    }
+  },
+  "goals": [
+    {
+      "name": "Wind-Down Routine",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "4 nights",
+      "target": "7 nights",
+      "progress_pct": 57
+    },
+    {
+      "name": "Trumpet Practice",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "15min",
+      "target": "60min",
+      "progress_pct": 25
+    }
+  ],
+  "routines": [
+    {
+      "id": "basic-workout",
+      "name": "Basic Workout",
+      "emoji": "\ud83d\udcaa",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "skipped"
+        },
+        {
+          "day": "Tue",
+          "status": "done"
+        },
+        {
+          "day": "Thu",
+          "status": "done"
+        },
+        {
+          "day": "Sat",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 2,
+      "total": 4
+    },
+    {
+      "id": "music-practice",
+      "name": "Music Practice",
+      "emoji": "\ud83c\udfb7",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "skipped"
+        },
+        {
+          "day": "Sat",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 2
+    },
+    {
+      "id": "piano-practice",
+      "name": "Piano Practice",
+      "emoji": "\ud83c\udfb9",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "1h",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "reading",
+      "name": "Reading",
+      "emoji": "\ud83d\udcd6",
+      "sessions": [
+        {
+          "day": "Sun",
+          "status": "done"
+        },
+        {
+          "day": "Mon",
+          "status": "skipped"
+        },
+        {
+          "day": "Tue",
+          "status": "done"
+        },
+        {
+          "day": "Wed",
+          "status": "done"
+        },
+        {
+          "day": "Thu",
+          "status": "done"
+        },
+        {
+          "day": "Fri",
+          "status": "done"
+        },
+        {
+          "day": "Sat",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "110min",
+      "comparison": "",
+      "done": 5,
+      "total": 7
+    },
+    {
+      "id": "rock-climbing",
+      "name": "Rock Climbing",
+      "emoji": "\ud83e\uddd7",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "done"
+        },
+        {
+          "day": "Thu",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 2,
+      "total": 2
+    },
+    {
+      "id": "running",
+      "name": "Running",
+      "emoji": "\ud83c\udfc3",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "skipped"
+        },
+        {
+          "day": "Sat",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 2
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga",
+      "emoji": "\ud83e\uddd8",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        },
+        {
+          "day": "Sat",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 2
+    }
+  ],
+  "spirit": {
+    "state": "tired",
+    "emoji": "\ud83e\udd8e",
+    "title": "\ud83e\udd8e Clay Fire Salamander",
+    "image": "assets/tired.webp",
+    "description": "Your fire salamander droops on a frost-covered branch, grey fog and heavy skies, muted colors \u2014 low energy, needing rest."
+  }
+}
