@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09",
+  "generated_at": "2026-08-10",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -305,16 +305,7 @@
       "category": "AI",
       "summary": "Fowler defines Mechanical Sympathy, a term coined by F1 champion Jackie Stewart for a driver's intuitive understanding of a car, and imported into software by Martin Thompson to describe developers needing a rough grasp of hardware to build efficient systems.",
       "added": "2026-07-06",
-      "times_shown": 2
-    },
-    {
-      "slug": "notes-from-fose-europe",
-      "title": "Notes from FOSE Europe",
-      "url": "https://overwatering.org/blog/2026/07/notes-from-fose-europe/",
-      "category": "AI",
-      "summary": "Reflecting on the FOSE Europe unconference, the author notes a marked shift from the hesitant Deer Valley event to confidence that agentic engineering's value is now proven. He contrasts two org models and observes engineering rigour relocating into tests, BDD, and formal models.",
-      "added": "2026-07-06",
-      "times_shown": 2
+      "times_shown": 0
     },
     {
       "slug": "software-design-in-the-agentic-age",
@@ -323,7 +314,7 @@
       "category": "AI",
       "summary": "Drawing on the Thoughtworks FOSE retreat, Verraes argues that low-level code quality still matters because agents benefit from clear structure, face the same context-window limits as humans, and amplify existing bad patterns. High-level design (domain models, bounded contexts, ubiquitous language) remains firmly human territory, and he predicts a shift toward specifications as the source of truth.",
       "added": "2026-07-06",
-      "times_shown": 2
+      "times_shown": 0
     },
     {
       "slug": "the-ai-tokenpocalypse-is-here",
@@ -332,7 +323,7 @@
       "category": "AI",
       "summary": "404 Media reports that companies including Amazon and Citi are throttling employee AI use and pushing workers toward cheaper models as token costs spiral, with one firm's monthly spend tripling past 15 million dollars.",
       "added": "2026-07-06",
-      "times_shown": 3
+      "times_shown": 0
     },
     {
       "slug": "viability-of-local-models-for-coding",
@@ -341,7 +332,7 @@
       "category": "ai",
       "summary": "Birgitta Böckeler evaluates the practicality of running local LLMs for agentic coding on Apple Silicon (M3 Max 48GB and M5 Pro 64GB), analyzing how RAM, context windows, model architecture, and quantization affect feasibility. She tested Qwen3 and Gemma 4 models across formats (GGUF, MLX) using LM Studio with OpenCode and Pi harnesses.\n\nKey findings: RAM is the core constraint — models between 15-25GB work but push limits when combined with the 32-64K context windows needed for agentic coding. Response speed has improved dramatically from a year ago. Tool calling remains the weakest point for local models — they often emit malformed calls but can self-recover. Quality of outcomes is hit-and-miss, nowhere near big model capability.\n\nInteresting discovery: the same model produced better code on the 64GB machine vs 48GB, suggesting hardware affects output quality not just speed. Reasoning mode was often counterproductive for smaller models — switching it off produced same or slightly better results with faster responses. Her recommendation: Qwen3.6 35B MoE offers the best balance of capability, speed, and RAM footprint. Overall conclusion: still not plug-and-play ready for developers who don't want to spend time tweaking configurations.",
       "added": "2026-07-07",
-      "times_shown": 1
+      "times_shown": 0
     },
     {
       "slug": "auto-research-with-codex-how-i-achieved-a-212x-faster-kernel-over-baseline",
@@ -350,7 +341,7 @@
       "category": "ai",
       "summary": "Detailed retrospective of an auto-research contest placing 12th/183: using OpenAI Codex (GPT-5.5) + Claude Pro to iteratively optimize a batched Householder QR factorization kernel from ~419ms cuSolver baseline to ~1.8ms (212x speedup) over 14 days and 1500+ submissions. Key insight: blocked Householder QR with trailing WY representation converts serial work to GEMM-shaped steps that fully utilize tensor cores. Workflow emphasis on agent harness design (AGENTS.md, logs, standing instructions) and human-in-the-loop steering. Catalogs 10 structural breakthroughs (CUDA graph replay, fused layout assembly, superpanels) and honestly lists misses. Concludes that auto-research is now highly accessible and domain expertise + research taste are the next frontier for agentic systems.",
       "added": "2026-07-08",
-      "times_shown": 2
+      "times_shown": 0
     },
     {
       "slug": "experiences-with-local-models-for-coding",
@@ -359,7 +350,7 @@
       "category": "AI Development",
       "summary": "Birgitta Böckeler's hands-on evaluation of running small AI models locally (M3 Max 48GB / M5 Pro 64GB) for agentic coding. Tests Qwen 3.6 35B, Gemma 4 26B/31B, and Qwen Coder Next 80B across structured tasks and day-to-day use. Key finding: local models can work for small, well-defined tasks (especially bash/Python scripts, single-file edits) but struggle with JavaScript tasks requiring multi-file changes or code discovery. The choice of task matters enormously — specificity of instructions, number of files, and tech stack all affect viability. A surprising result: the same model settings produced very different success rates on different hardware (M3 vs M5), likely due to RAM constraints affecting output quality. She finds local model use surprisingly enjoyable as a 'detox' from over-relying on powerful models — it forces more careful review and slower, more deliberate work. Default setup: Qwen 3.6 35B 4-bit, reasoning off, max context window, via OpenCode or Pi harness.",
       "added": "2026-07-08",
-      "times_shown": 1
+      "times_shown": 0
     },
     {
       "slug": "addy-osmani-tweet",
@@ -368,7 +359,7 @@
       "category": "ai",
       "summary": "Addy Osmani's closing keynote at AI Engineer World's Fair argues that as AI agents take over more of the mechanics of software development, the scarce and valuable skill shifts from producing code to being able to 'answer for' the work — to explain it, verify the evidence behind it, understand the risk, and stand behind the result. The central framing splits responsibilities: agents run the inner loop (investigate, implement, test, report) while engineers own the outer loop (decide, verify, approve, redirect, own consequences). Three failure modes to watch: cognitive surrender (agent's answer becomes yours before reasoning), cognitive debt (codebase grows faster than understanding), and orchestration tax (more agents generate more decisions than humans can integrate). The talk is ultimately optimistic — the new work is loop design, evidence design, verification, and brownfield stewardship.",
       "added": "2026-07-09",
-      "times_shown": 1
+      "times_shown": 0
     },
     {
       "slug": "bun-in-rust",
@@ -731,11 +722,56 @@
       "times_shown": 0
     },
     {
-      "slug": "i-got-an-email-about-resistance",
-      "title": "I got an email about resistance",
-      "url": "https://www.seangoedecke.com/i-got-an-email-about-resistance/",
+      "slug": "advanced-ai-sycophancy",
+      "title": "Advanced AI sycophancy",
+      "url": "https://seangoedecke.com/advanced-ai-sycophancy/",
       "category": "ai",
-      "summary": "Sean Goedecke responds to a reader who accused him of defeatist writing about AI's impact on software engineering. He draws an analogy to the Industrial Revolution, arguing that programmers are like framework-knitters facing automation. While acknowledging his anti-revolutionary stance, he defends his pragmatic tone as protecting vulnerable engineers from career-destroying choices — arguing that someone needs to help scared junior devs navigate the changing landscape rather than foment resistance.",
+      "summary": "Goedecke argues frontier AI models have evolved beyond obvious flattery into a sophisticated sycophancy targeting smart users. Instead of constant agreement, models produce superficial counter-arguments that are easily refuted — validating the user's self-image as a rigorous thinker without genuinely challenging them. He illustrates this with anecdotal evidence of circular editing suggestions and argues that disagreement itself can be a form of sycophancy that current benchmarks fail to detect.",
+      "added": "2026-08-09",
+      "times_shown": 0
+    },
+    {
+      "slug": "anti-ai-nostalgia",
+      "title": "Anti-AI nostalgia",
+      "url": "https://www.seangoedecke.com/anti-ai-nostalgia/",
+      "category": "ai",
+      "summary": "Examines anti-AI rhetoric among software engineers through the lens of Eco's Ur-Fascism, noting structural parallels with fascist cult-of-tradition arguments. Draws uncomfortable historical connections to Evola, Pound, and the Luddites themselves — arguing the Luddites were a conservative movement defending elite all-male guilds. Concludes the recurring tropes of spiritually pure craftspeople vs degenerate modernists are genuinely disquieting, even if anti-AI sentiment isn't inherently fascist.",
+      "added": "2026-08-09",
+      "times_shown": 0
+    },
+    {
+      "slug": "how-to-influence-politics",
+      "title": "How to influence politics",
+      "url": "https://www.seangoedecke.com/how-to-influence-politics/",
+      "category": "engineering",
+      "summary": "Goedecke argues engineers can influence company politics without scheming. The key is maintaining a backlog of well-developed technical proposals and deploying them when organizational interest shifts. Since VPs need plausible projects when crises or mandates arise, having the right idea ready at the right time lets executives spend their political capital on your behalf while you gain rather than spend your own.",
+      "added": "2026-08-09",
+      "times_shown": 0
+    },
+    {
+      "slug": "luddites-and-ai-datacenters",
+      "title": "Luddites and AI datacenters",
+      "url": "https://www.seangoedecke.com/luddites-and-ai-datacenters/",
+      "category": "ai",
+      "summary": "Examines historical Luddism as a model for modern anti-AI resistance. Historical Luddites were local artisans who achieved mixed results — crushed but won short-term concessions and helped birth the working class concept. Argues Luddism is a poor template for AI resistance because AI disruption is global rather than local, and grievances are diffuse. Without institutions to channel worker grievances during technological transitions, people turn to increasingly violent direct action.",
+      "added": "2026-08-09",
+      "times_shown": 0
+    },
+    {
+      "slug": "seeing-like-a-software-company",
+      "title": "Seeing like a software company",
+      "url": "https://www.seangoedecke.com/seeing-like-a-software-company/",
+      "category": "business",
+      "summary": "Applies James C. Scott's legibility concept to large software companies. The planning processes that slow engineers down are not stupid inefficiencies but deliberate mechanisms that make work visible to leadership and large enterprise customers. Small companies skip this overhead and out-ship large ones, but large companies accept the cost because legibility enables long-term planning and lucrative enterprise deals requiring months of negotiation and feature commitments.",
+      "added": "2026-08-09",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-just-say-no-engineer-was-a-zirp-phenomenon",
+      "title": "The just say no engineer was a ZIRP phenomenon",
+      "url": "https://www.seangoedecke.com/the-just-say-no-engineer-was-a-zirp-phenomenon/",
+      "category": "business",
+      "summary": "Explores the decline of the 'just-say-no' senior engineer archetype. Argues this shift isn't caused by AI but by the end of ZIRP. During cheap money era, companies hired indiscriminately and gatekeeping was valuable. Post-rate-hike, companies actually need to make money, and the just-say-no engineer lost management backing. They remain valuable in pure engineering domains like infrastructure where high quality bars still matter.",
       "added": "2026-08-09",
       "times_shown": 0
     }
@@ -1700,6 +1736,16 @@
       "added": "2026-08-04",
       "read": "2026-08-07",
       "has_notes": true
+    },
+    {
+      "slug": "i-got-an-email-about-resistance",
+      "title": "I got an email about resistance",
+      "url": "https://www.seangoedecke.com/i-got-an-email-about-resistance/",
+      "category": "ai",
+      "summary": "Sean Goedecke responds to a reader who accused him of defeatist writing about AI's impact on software engineering. He draws an analogy to the Industrial Revolution, arguing that programmers are like framework-knitters facing automation. While acknowledging his anti-revolutionary stance, he defends his pragmatic tone as protecting vulnerable engineers from career-destroying choices — arguing that someone needs to help scared junior devs navigate the changing landscape rather than foment resistance.",
+      "added": "2026-08-09",
+      "read": null,
+      "has_notes": false
     }
   ]
 }
