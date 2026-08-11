@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10",
+  "generated_at": "2026-08-11",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -323,7 +323,7 @@
       "category": "AI",
       "summary": "404 Media reports that companies including Amazon and Citi are throttling employee AI use and pushing workers toward cheaper models as token costs spiral, with one firm's monthly spend tripling past 15 million dollars.",
       "added": "2026-07-06",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "viability-of-local-models-for-coding",
@@ -332,7 +332,7 @@
       "category": "ai",
       "summary": "Birgitta Böckeler evaluates the practicality of running local LLMs for agentic coding on Apple Silicon (M3 Max 48GB and M5 Pro 64GB), analyzing how RAM, context windows, model architecture, and quantization affect feasibility. She tested Qwen3 and Gemma 4 models across formats (GGUF, MLX) using LM Studio with OpenCode and Pi harnesses.\n\nKey findings: RAM is the core constraint — models between 15-25GB work but push limits when combined with the 32-64K context windows needed for agentic coding. Response speed has improved dramatically from a year ago. Tool calling remains the weakest point for local models — they often emit malformed calls but can self-recover. Quality of outcomes is hit-and-miss, nowhere near big model capability.\n\nInteresting discovery: the same model produced better code on the 64GB machine vs 48GB, suggesting hardware affects output quality not just speed. Reasoning mode was often counterproductive for smaller models — switching it off produced same or slightly better results with faster responses. Her recommendation: Qwen3.6 35B MoE offers the best balance of capability, speed, and RAM footprint. Overall conclusion: still not plug-and-play ready for developers who don't want to spend time tweaking configurations.",
       "added": "2026-07-07",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "auto-research-with-codex-how-i-achieved-a-212x-faster-kernel-over-baseline",
@@ -341,7 +341,7 @@
       "category": "ai",
       "summary": "Detailed retrospective of an auto-research contest placing 12th/183: using OpenAI Codex (GPT-5.5) + Claude Pro to iteratively optimize a batched Householder QR factorization kernel from ~419ms cuSolver baseline to ~1.8ms (212x speedup) over 14 days and 1500+ submissions. Key insight: blocked Householder QR with trailing WY representation converts serial work to GEMM-shaped steps that fully utilize tensor cores. Workflow emphasis on agent harness design (AGENTS.md, logs, standing instructions) and human-in-the-loop steering. Catalogs 10 structural breakthroughs (CUDA graph replay, fused layout assembly, superpanels) and honestly lists misses. Concludes that auto-research is now highly accessible and domain expertise + research taste are the next frontier for agentic systems.",
       "added": "2026-07-08",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "experiences-with-local-models-for-coding",
@@ -773,6 +773,33 @@
       "category": "business",
       "summary": "Explores the decline of the 'just-say-no' senior engineer archetype. Argues this shift isn't caused by AI but by the end of ZIRP. During cheap money era, companies hired indiscriminately and gatekeeping was valuable. Post-rate-hike, companies actually need to make money, and the just-say-no engineer lost management backing. They remain valuable in pure engineering domains like infrastructure where high quality bars still matter.",
       "added": "2026-08-09",
+      "times_shown": 0
+    },
+    {
+      "slug": "futzing-fraction",
+      "title": "The Futzing Fraction",
+      "url": "https://blog.glyph.im/2025/08/futzing-fraction.html",
+      "category": "ai",
+      "summary": "Proposes a quantitative framework—the 'Futzing Fraction' (FF)—for evaluating whether genAI tools deliver positive ROI. FF = (W + I + C + E) / (P × H), where H is unaided human time, I is inference time, C is checking cost, P is correctness probability, W is prompt-writing time, and E is per-inference cost in human-time equivalents. The hardest-to-measure terms (C and P) are systematically mis-estimated: checking costs are far larger than intuition suggests due to LLMs exploiting credibility heuristics, and accuracy rates are inflated by benchmark-gaming vendors. Even with deliberately optimistic numbers, FF crosses 1 (net loss) at roughly five prompts per task. Calls for disciplined measurement of checking costs, real success rates, and second-order effects on team dynamics and skill atrophy.",
+      "added": "2026-08-11",
+      "times_shown": 0
+    },
+    {
+      "slug": "no-local-models-will-not-win",
+      "title": "No, local models will not win",
+      "url": "https://seangoedecke.com/local-models-will-not-win/",
+      "category": "ai",
+      "summary": "Argues that local AI models will remain a niche despite recurring enthusiasm. Two core arguments: (1) local models will always lag behind frontier models because user expectations rise faster than hardware improvements, and people gravitate to the strongest available model; (2) datacenter inference is fundamentally cheaper — batching lets a GPU serve hundreds of users nearly as cheaply as one, and datacenter GPUs deliver 3-4x performance per watt over consumer hardware, making local inference roughly 30x more resource-intensive. Acknowledges narrow niches for local models (latency-sensitive voice chat, full control/offline needs, steerability) but sees these as permanent minority use cases. Finds counter-scenarios (government bans, progress stalling, models so capable that small ones suffice) all unlikely.",
+      "added": "2026-08-11",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-dark-night-of-mathematics",
+      "title": "The Dark Night of Mathematics",
+      "url": "https://open.substack.com/pub/kirwinhampshire/p/the-dark-night-of-mathematics?utm_source=share&utm_medium=android&r=7mo5z",
+      "category": "ai",
+      "summary": "In this deeply personal essay, mathematician Kirwin Hampshire describes a profound spiritual and emotional crisis triggered by recent developments in which large language models produced counterexamples to significant, long-standing mathematical conjectures. Rather than engaging with technical details or predictions about the future, Hampshire frames the piece as a 'dark night of the soul,' an attempt to honestly articulate the existential anguish he and other mathematicians are experiencing as AI encroaches on mathematical discovery. He argues that common coping narratives are evasive — mathematicians are paid to prove theorems, and mathematical discovery is fundamentally a way humans access the ineffable and the divine. Stripping mathematicians of original discovery removes something essential to the discipline's spiritual texture, regardless of whether AI-generated results are correct or beautiful. The piece is less an argument than a raw confession of grief over a channel to the sacred being sealed forever.",
+      "added": "2026-08-11",
       "times_shown": 0
     }
   ],
