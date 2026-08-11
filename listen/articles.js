@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'no-local-models-will-not-win', title: 'No, local models will not win', meta: 'Sean Goedecke · Aug 2026', time: '8:38' },
     { slug: 'futzing-fraction', title: 'The Futzing Fraction', meta: 'Glyph · Aug 2025', time: '34:00' },
     { slug: 'the-dark-night-of-mathematics', title: 'The Dark Night of Mathematics', meta: 'Kirwin Hampshire · Aug 2026', time: '6:41' },
     { slug: 'luddites-and-ai-datacenters', title: 'Blood in the datacenter', meta: 'Sean Goedecke · Aug 2026', time: '18:05' },
