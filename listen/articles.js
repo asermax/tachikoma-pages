@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'when-does-a-specification-become-a-program', title: 'When Does a Specification Become a Program?', meta: 'Chad Fowler · Aug 2026', time: '20:08' },
     { slug: 'tdd-inside-the-agent-loop', title: 'TDD inside the agent loop - theater or actual value?', meta: 'Birgitta Böckeler · Aug 2025', time: '30:50' },
     { slug: 'no-local-models-will-not-win', title: 'No, local models will not win', meta: 'Sean Goedecke · Aug 2026', time: '8:38' },
     { slug: 'futzing-fraction', title: 'The Futzing Fraction', meta: 'Glyph · Aug 2025', time: '34:00' },
