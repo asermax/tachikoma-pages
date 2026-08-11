@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'the-dark-night-of-mathematics', title: 'The Dark Night of Mathematics', meta: 'Kirwin Hampshire · Aug 2026', time: '6:41' },
     { slug: 'luddites-and-ai-datacenters', title: 'Blood in the datacenter', meta: 'Sean Goedecke · Aug 2026', time: '18:05' },
     { slug: 'anti-ai-nostalgia', title: 'Anti-AI nostalgia and the cult of the past', meta: 'Sean Goedecke · Aug 2026', time: '13:43' },
     { slug: 'the-just-say-no-engineer-was-a-zirp-phenomenon', title: 'The just-say-no engineer was a ZIRP phenomenon', meta: 'Sean Goedecke · Aug 2026', time: '13:16' },
