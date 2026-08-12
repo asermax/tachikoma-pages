@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11",
+  "generated_at": "2026-08-12",
   "queue": [
     {
       "slug": "harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan",
@@ -1847,6 +1847,17 @@
       "summary": "Gergely Orosz interviews formal methods consultant Hillel Wayne on the relationship between software development and traditional engineering, and the utility of formal verification. Wayne discusses his Crossover Project, explaining that software development shares the same core tension as other fields: balancing the cost of mistakes against the speed of iteration. Full formal verification is often too complex for practical use, making lightweight formal methods, property-based testing, and deterministic simulation testing the ideal middle ground.",
       "added": "2026-07-31",
       "watched": "2026-07-31",
+      "has_notes": true
+    },
+    {
+      "slug": "ep-03-im-tired-of-the-uncertainty-of-where-this-is-going",
+      "title": "Ep 03 - \u201cI'm Tired of the Uncertainty of Where This Is Going\"",
+      "url": "https://www.youtube.com/watch?v=2bE93tynluk",
+      "video_id": "2bE93tynluk",
+      "channel": "Next Token",
+      "summary": "Discussion on AI-driven burnout in software engineering. The hosts critique AI-influenced language patterns (Claudisms, ChatGPTisms) diluting authentic communication. Core topic: how AI tools boost output but erode job satisfaction through constant context-switching and loss of deep immersion. They reference WHO's burnout definition and Maslach's research on systemic job-person mismatches. Key takeaway: autonomous agentic systems feel isolating compared to early collaborative LLMs. Decompression strategies include intentional tech disconnection and solo movie theater visits.",
+      "added": "2026-08-11",
+      "watched": "2026-08-11",
       "has_notes": true
     }
   ]
