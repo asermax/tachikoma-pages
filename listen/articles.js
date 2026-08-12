@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'ai-removing-middle-class-software-engineering', title: 'AI is removing the middle class of software engineering', meta: 'Florian Herrengt · Aug 2026', time: '8:40' },
     { slug: 'compression-is-prediction', title: 'Compression is Prediction', meta: 'ngrok Blog · Aug 2026', time: '21:53' },
     { slug: 'why-go-is-an-ideal-language-for-ai-assisted-software-engineering', title: 'Why Go is an Ideal Language for AI-Assisted Software Engineering', meta: 'Google Developers Blog · Aug 2026', time: '14:55' },
     { slug: 'when-does-a-specification-become-a-program', title: 'When Does a Specification Become a Program?', meta: 'Chad Fowler · Aug 2026', time: '20:08' },
