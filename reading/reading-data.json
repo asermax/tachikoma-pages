@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12",
+  "generated_at": "2026-08-13",
   "queue": [
     {
       "slug": "80-problem-agentic-coding",
@@ -818,6 +818,33 @@
       "category": "ai",
       "summary": "In this deeply personal essay, mathematician Kirwin Hampshire describes a profound spiritual and emotional crisis triggered by recent developments in which large language models produced counterexamples to significant, long-standing mathematical conjectures. Rather than engaging with technical details or predictions about the future, Hampshire frames the piece as a 'dark night of the soul,' an attempt to honestly articulate the existential anguish he and other mathematicians are experiencing as AI encroaches on mathematical discovery. He argues that common coping narratives are evasive — mathematicians are paid to prove theorems, and mathematical discovery is fundamentally a way humans access the ineffable and the divine. Stripping mathematicians of original discovery removes something essential to the discipline's spiritual texture, regardless of whether AI-generated results are correct or beautiful. The piece is less an argument than a raw confession of grief over a channel to the sacred being sealed forever.",
       "added": "2026-08-11",
+      "times_shown": 0
+    },
+    {
+      "slug": "ai-removing-middle-class-software-engineering",
+      "title": "AI removing middle-class software engineering",
+      "url": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
+      "category": "engineering",
+      "summary": "AI coding tools have removed the natural speed limit on code production, causing teams with weak engineering culture to collapse faster than before. Implementation is now cheap while judgment is scarce — top engineers become more valuable, while weaker engineers who could hide behind slow manual coding become a liability. Herrengt predicts engineering salaries will diverge further as 'the bar you have to clear is whatever the current best model can do.'",
+      "added": "2026-08-12",
+      "times_shown": 0
+    },
+    {
+      "slug": "compression-is-prediction",
+      "title": "Compression Is Prediction",
+      "url": "https://ngrok.com/blog/compression-is-prediction",
+      "category": "science",
+      "summary": "This article reveals the deep mathematical equivalence between data compression and large language models: both are fundamentally trying to predict what comes next. It walks through how compressors work via transforms, models, and entropy coders (arithmetic coding), showing that better prediction quality drives better compression. The key insight is that LLMs are essentially the ultimate compression models—GPT-2 compressed a Dickens passage to 10% of its size vs. 24% for a simpler model. Despite this elegance, LLMs aren't used for practical compression due to the impracticality of shipping multi-gigabyte models to save kilobytes. Compression and language modeling are two expressions of the same underlying math.",
+      "added": "2026-08-12",
+      "times_shown": 0
+    },
+    {
+      "slug": "why-go-is-an-ideal-language-for-ai-assisted-software-engineering",
+      "title": "Why Go Is an Ideal Language for AI-Assisted Software Engineering",
+      "url": "https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/",
+      "category": "engineering",
+      "summary": "This Google Developers Blog post argues that as AI shifts software engineering from writing code to reviewing and verifying it, Go's design principles become a major advantage. Go's strengths—its end-to-end toolchain, opinionated simplicity, and enforcement of a single standardized format (gofmt)—help AI produce higher-quality code while making human verification easier. Key advantages include Go's strict static type system and fast compile times for efficient AI self-correction, its comprehensive standard library reducing risky dependency hallucinations, and its unbreakable backward-compatibility promise keeping codebases maintainable under high-velocity AI output.",
+      "added": "2026-08-12",
       "times_shown": 0
     }
   ],
