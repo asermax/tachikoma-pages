@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-12T02:00:51.982503-03:00",
+  "generated_at": "2026-08-13T02:00:38.135009-03:00",
   "week_start": "2026-08-09",
   "week_label": "August 09 - August 15, 2026",
-  "last_updated": "Wednesday, August 12, 2026 at 02:00",
+  "last_updated": "Thursday, August 13, 2026 at 02:00",
   "stats": {
-    "completed": 4.428571428571429,
-    "planned": 7,
-    "display": "4.4 / 7"
+    "completed": 5.571428571428571,
+    "planned": 10,
+    "display": "5.6 / 10"
   },
   "daily": {
     "Sunday": {
@@ -25,9 +25,9 @@
       "total": 3
     },
     "Wednesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "partial",
+      "completed": 1,
+      "total": 3
     },
     "Thursday": {
       "status": "empty",
@@ -50,9 +50,9 @@
       "name": "Wind-Down Routine",
       "emoji": "",
       "status": "pending",
-      "accumulated": "1 nights",
+      "accumulated": "2 nights",
       "target": "7 nights",
-      "progress_pct": 14
+      "progress_pct": 28
     }
   ],
   "routines": [
@@ -82,12 +82,12 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         }
       ],
-      "metrics_total": "",
+      "metrics_total": "1h",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -176,10 +176,10 @@
     }
   ],
   "spirit": {
-    "state": "content",
+    "state": "tired",
     "emoji": "\ud83e\udd8e",
     "title": "\ud83e\udd8e Clay Fire Salamander",
-    "image": "assets/content.webp",
-    "description": "Your fire salamander sits peacefully on its stone, soft snowflakes drifting down, gentle overcast sky \u2014 calm, cozy, and satisfied."
+    "image": "assets/tired.webp",
+    "description": "Your fire salamander droops on a frost-covered branch, grey fog and heavy skies, muted colors \u2014 low energy, needing rest."
   }
 }
