@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-16T02:01:03.856767-03:00",
-  "week_start": "2026-08-09",
-  "week_label": "August 09 - August 15, 2026",
-  "last_updated": "Sunday, August 16, 2026 at 02:01",
+  "generated_at": "2026-08-16T12:51:55.267019-03:00",
+  "week_start": "2026-08-16",
+  "week_label": "August 16 - August 22, 2026",
+  "last_updated": "Sunday, August 16, 2026 at 12:51",
   "stats": {
-    "completed": 5.428571428571429,
-    "planned": 14,
-    "display": "5.4 / 14"
+    "completed": 0,
+    "planned": 0,
+    "display": "0 / 0"
   },
   "daily": {
     "Sunday": {
@@ -15,29 +15,29 @@
       "total": 0
     },
     "Monday": {
-      "status": "partial",
-      "completed": 1,
-      "total": 3
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Tuesday": {
-      "status": "done",
-      "completed": 3,
-      "total": 3
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Wednesday": {
-      "status": "partial",
-      "completed": 1,
-      "total": 3
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Thursday": {
-      "status": "missed",
+      "status": "empty",
       "completed": 0,
-      "total": 3
+      "total": 0
     },
     "Friday": {
-      "status": "missed",
+      "status": "empty",
       "completed": 0,
-      "total": 1
+      "total": 0
     },
     "Saturday": {
       "status": "empty",
@@ -50,9 +50,17 @@
       "name": "Wind-Down Routine",
       "emoji": "",
       "status": "pending",
-      "accumulated": "3 nights",
-      "target": "7 nights",
-      "progress_pct": 42
+      "accumulated": "0 nights",
+      "target": "3 nights",
+      "progress_pct": 0
+    },
+    {
+      "name": "Trumpet Practice",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "0min",
+      "target": "15min",
+      "progress_pct": 0
     }
   ],
   "routines": [
@@ -63,16 +71,16 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "done"
+          "status": "pending"
         },
         {
           "day": "Thu",
-          "status": "skipped"
+          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 1,
+      "done": 0,
       "total": 2
     },
     {
@@ -82,12 +90,12 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "done"
+          "status": "pending"
         }
       ],
-      "metrics_total": "1h",
+      "metrics_total": "",
       "comparison": "",
-      "done": 1,
+      "done": 0,
       "total": 1
     },
     {
@@ -97,12 +105,12 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "done"
+          "status": "pending"
         }
       ],
-      "metrics_total": "1h",
+      "metrics_total": "",
       "comparison": "",
-      "done": 1,
+      "done": 0,
       "total": 1
     },
     {
@@ -116,25 +124,21 @@
         },
         {
           "day": "Tue",
-          "status": "done"
-        },
-        {
-          "day": "Wed",
-          "status": "skipped"
-        },
-        {
-          "day": "Thu",
           "status": "pending"
         },
         {
-          "day": "Fri",
+          "day": "Wed",
+          "status": "pending"
+        },
+        {
+          "day": "Thu",
           "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 1,
-      "total": 5
+      "done": 0,
+      "total": 4
     },
     {
       "id": "rock-climbing",
@@ -143,16 +147,16 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "done"
+          "status": "pending"
         },
         {
           "day": "Thu",
-          "status": "skipped"
+          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 1,
+      "done": 0,
       "total": 2
     },
     {
@@ -162,7 +166,7 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "skipped"
+          "status": "pending"
         },
         {
           "day": "Wed",
@@ -176,10 +180,10 @@
     }
   ],
   "spirit": {
-    "state": "critical",
+    "state": "dormant",
     "emoji": "\ud83e\udd8e",
     "title": "\ud83e\udd8e Clay Fire Salamander",
-    "image": "assets/critical.webp",
-    "description": "Your fire salamander curls up defensively on dark ice, storm raging overhead, wind whipping snow \u2014 cold, struggling, needs a break."
+    "image": "assets/dormant.webp",
+    "description": "Your fire salamander sleeps curled in its snowy hollow, moonlight and stars above, breath visible in the cold air \u2014 peaceful, quiet rest."
   }
 }
