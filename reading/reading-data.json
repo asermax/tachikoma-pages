@@ -305,7 +305,7 @@
       "category": "AI",
       "summary": "Fowler defines Mechanical Sympathy, a term coined by F1 champion Jackie Stewart for a driver's intuitive understanding of a car, and imported into software by Martin Thompson to describe developers needing a rough grasp of hardware to build efficient systems.",
       "added": "2026-07-06",
-      "times_shown": 1
+      "times_shown": 0
     },
     {
       "slug": "software-design-in-the-agentic-age",
@@ -314,7 +314,7 @@
       "category": "AI",
       "summary": "Drawing on the Thoughtworks FOSE retreat, Verraes argues that low-level code quality still matters because agents benefit from clear structure, face the same context-window limits as humans, and amplify existing bad patterns. High-level design (domain models, bounded contexts, ubiquitous language) remains firmly human territory, and he predicts a shift toward specifications as the source of truth.",
       "added": "2026-07-06",
-      "times_shown": 1
+      "times_shown": 0
     },
     {
       "slug": "the-ai-tokenpocalypse-is-here",
@@ -323,7 +323,7 @@
       "category": "AI",
       "summary": "404 Media reports that companies including Amazon and Citi are throttling employee AI use and pushing workers toward cheaper models as token costs spiral, with one firm's monthly spend tripling past 15 million dollars.",
       "added": "2026-07-06",
-      "times_shown": 3
+      "times_shown": 0
     },
     {
       "slug": "viability-of-local-models-for-coding",
@@ -332,7 +332,7 @@
       "category": "ai",
       "summary": "Birgitta Böckeler evaluates the practicality of running local LLMs for agentic coding on Apple Silicon (M3 Max 48GB and M5 Pro 64GB), analyzing how RAM, context windows, model architecture, and quantization affect feasibility. She tested Qwen3 and Gemma 4 models across formats (GGUF, MLX) using LM Studio with OpenCode and Pi harnesses.\n\nKey findings: RAM is the core constraint — models between 15-25GB work but push limits when combined with the 32-64K context windows needed for agentic coding. Response speed has improved dramatically from a year ago. Tool calling remains the weakest point for local models — they often emit malformed calls but can self-recover. Quality of outcomes is hit-and-miss, nowhere near big model capability.\n\nInteresting discovery: the same model produced better code on the 64GB machine vs 48GB, suggesting hardware affects output quality not just speed. Reasoning mode was often counterproductive for smaller models — switching it off produced same or slightly better results with faster responses. Her recommendation: Qwen3.6 35B MoE offers the best balance of capability, speed, and RAM footprint. Overall conclusion: still not plug-and-play ready for developers who don't want to spend time tweaking configurations.",
       "added": "2026-07-07",
-      "times_shown": 1
+      "times_shown": 0
     },
     {
       "slug": "auto-research-with-codex-how-i-achieved-a-212x-faster-kernel-over-baseline",
@@ -341,7 +341,7 @@
       "category": "ai",
       "summary": "Detailed retrospective of an auto-research contest placing 12th/183: using OpenAI Codex (GPT-5.5) + Claude Pro to iteratively optimize a batched Householder QR factorization kernel from ~419ms cuSolver baseline to ~1.8ms (212x speedup) over 14 days and 1500+ submissions. Key insight: blocked Householder QR with trailing WY representation converts serial work to GEMM-shaped steps that fully utilize tensor cores. Workflow emphasis on agent harness design (AGENTS.md, logs, standing instructions) and human-in-the-loop steering. Catalogs 10 structural breakthroughs (CUDA graph replay, fused layout assembly, superpanels) and honestly lists misses. Concludes that auto-research is now highly accessible and domain expertise + research taste are the next frontier for agentic systems.",
       "added": "2026-07-08",
-      "times_shown": 1
+      "times_shown": 0
     },
     {
       "slug": "experiences-with-local-models-for-coding",
@@ -350,7 +350,7 @@
       "category": "AI Development",
       "summary": "Birgitta Böckeler's hands-on evaluation of running small AI models locally (M3 Max 48GB / M5 Pro 64GB) for agentic coding. Tests Qwen 3.6 35B, Gemma 4 26B/31B, and Qwen Coder Next 80B across structured tasks and day-to-day use. Key finding: local models can work for small, well-defined tasks (especially bash/Python scripts, single-file edits) but struggle with JavaScript tasks requiring multi-file changes or code discovery. The choice of task matters enormously — specificity of instructions, number of files, and tech stack all affect viability. A surprising result: the same model settings produced very different success rates on different hardware (M3 vs M5), likely due to RAM constraints affecting output quality. She finds local model use surprisingly enjoyable as a 'detox' from over-relying on powerful models — it forces more careful review and slower, more deliberate work. Default setup: Qwen 3.6 35B 4-bit, reasoning off, max context window, via OpenCode or Pi harness.",
       "added": "2026-07-08",
-      "times_shown": 1
+      "times_shown": 0
     },
     {
       "slug": "addy-osmani-tweet",
@@ -359,7 +359,7 @@
       "category": "ai",
       "summary": "Addy Osmani's closing keynote at AI Engineer World's Fair argues that as AI agents take over more of the mechanics of software development, the scarce and valuable skill shifts from producing code to being able to 'answer for' the work — to explain it, verify the evidence behind it, understand the risk, and stand behind the result. The central framing splits responsibilities: agents run the inner loop (investigate, implement, test, report) while engineers own the outer loop (decide, verify, approve, redirect, own consequences). Three failure modes to watch: cognitive surrender (agent's answer becomes yours before reasoning), cognitive debt (codebase grows faster than understanding), and orchestration tax (more agents generate more decisions than humans can integrate). The talk is ultimately optimistic — the new work is loop design, evidence design, verification, and brownfield stewardship.",
       "added": "2026-07-09",
-      "times_shown": 1
+      "times_shown": 0
     },
     {
       "slug": "bun-in-rust",
