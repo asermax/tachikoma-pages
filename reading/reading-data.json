@@ -1828,6 +1828,16 @@
       "added": "2026-08-12",
       "read": "2026-08-13",
       "has_notes": true
+    },
+    {
+      "slug": "httpsnolanlawsoncom20260816you-can-just-choose-how-many-bugs-you-want-now",
+      "title": "You can just choose how many bugs you want now",
+      "url": "https://nolanlawson.com/2026/08/16/you-can-just-choose-how-many-bugs-you-want-now/",
+      "category": "ai",
+      "summary": "Nolan Lawson argues that AI code review agents have made bug finding nearly free — you can essentially decide how many bugs you want your software to have. However, fixing them isn't free: agents tend to pile on patches rather than simplify, and industry incentives haven't changed, so overall software polish hasn't improved. He suggests mitigations like strong test suites, human-driven simplification, and designing systems where whole classes of bugs simply can't occur.",
+      "added": "2026-08-17",
+      "read": "2026-08-17",
+      "has_notes": false
     }
   ]
 }
