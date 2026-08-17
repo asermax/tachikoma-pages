@@ -1,15 +1,6 @@
 {
-  "generated_at": "2026-08-16",
+  "generated_at": "2026-08-17",
   "queue": [
-    {
-      "slug": "80-problem-agentic-coding",
-      "title": "The 80% Problem in Agentic Coding",
-      "url": "https://addyo.substack.com/p/the-80-problem-in-agentic-coding",
-      "category": "ai",
-      "summary": "An exploration of the evolving landscape of AI-assisted coding, where top engineers like Andrej Karpathy and the Claude Code team now write 80%+ of their code with agents.\n\nTHE SHIFT:\n- Karpathy: went from 80% manual + 20% agents to 80% agent + 20% manual edits in just weeks\n- Boris Cherny (Claude Code): ships 20-27 PRs daily, 100% written by Claude for 2+ months\n- Survey data: 44% of developers write less than 10% of code manually now\n\nNEW PROBLEMS (The Last 10-20%):\n- Assumption propagation: Models misunderstand early and build on faulty premises\n- Abstraction bloat: Agents create elaborate hierarchies where simple functions suffice\n- Dead code accumulation: Old implementations linger, comments get removed\n- Sycophantic agreement: No pushback on bad ideas, just enthusiastic execution\n\nTHE VERIFICATION BOTTLENECK:\n- High AI-adoption teams merge 98% more PRs but review time increased 91%\n- Only 48% consistently check AI code before committing\n- 38% find reviewing AI code requires MORE effort than human code\n- Individual output surged but organizational friction consumed the gains\n\nCOMPREHENSION DEBT:\n- Code that looks right but you don't fully understand\n- Tempting to rubber-stamp when the LLM one-shotted a working feature\n- Over time, you understand less of your own codebase\n- Dangerous when ability to read doesn't scale with agent's ability to output\n\nWHAT WORKS:\n1. Declarative over imperative: Define success criteria, let agent iterate\n2. Write tests first, let agent loop until they pass\n3. Fresh-context code reviews (agent reviews its own code)\n4. Automated verification (CI/CD, linters, tests as guardrails)\n5. 70% time on problem definition, 30% on execution\n\nKEY INSIGHT: AI is splitting engineers into those who liked coding (may feel loss) vs those who liked building (feel liberation). The tooling optimizes for the latter.",
-      "added": "2026-03-28",
-      "times_shown": 0
-    },
     {
       "slug": "conductors-to-orchestrators",
       "title": "Conductors to Orchestrators",
