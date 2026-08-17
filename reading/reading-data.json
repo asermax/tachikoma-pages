@@ -1821,6 +1821,16 @@
       "has_notes": true
     },
     {
+      "slug": "httpschristianekremcomblogthere-is-still-no-silver-bullet",
+      "title": "There Is Still No Silver Bullet",
+      "url": "https://christianekrem.com/blog/there-is-still-no-silver-bullet",
+      "category": "ai",
+      "summary": "Forty years after Fred Brooks' 'No Silver Bullet,' Christian Ekrem argues its core distinction — between essence (specification, design) and accident (boilerplate, typing) — remains undefeated, and that LLMs are merely the most effective accident compressor ever built. He cites METR's 2025 RCT where experienced developers were 19% slower with AI despite feeling faster, and concludes the real leverage is growing great designers through apprenticeship, review, and protected design time.",
+      "added": "2026-08-14",
+      "read": "2026-08-17",
+      "has_notes": true
+    },
+    {
       "slug": "httpsnolanlawsoncom20260816you-can-just-choose-how-many-bugs-you-want-now",
       "title": "You can just choose how many bugs you want now",
       "url": "https://nolanlawson.com/2026/08/16/you-can-just-choose-how-many-bugs-you-want-now/",
