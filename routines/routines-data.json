@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-16T12:51:55.267019-03:00",
+  "generated_at": "2026-08-16T22:08:37.308611-03:00",
   "week_start": "2026-08-16",
   "week_label": "August 16 - August 22, 2026",
-  "last_updated": "Sunday, August 16, 2026 at 12:51",
+  "last_updated": "Sunday, August 16, 2026 at 22:08",
   "stats": {
     "completed": 0,
     "planned": 0,
@@ -51,15 +51,7 @@
       "emoji": "",
       "status": "pending",
       "accumulated": "0 nights",
-      "target": "3 nights",
-      "progress_pct": 0
-    },
-    {
-      "name": "Trumpet Practice",
-      "emoji": "",
-      "status": "pending",
-      "accumulated": "0min",
-      "target": "15min",
+      "target": "7 nights",
       "progress_pct": 0
     }
   ],
