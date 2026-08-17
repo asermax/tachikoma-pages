@@ -1,5 +1,4 @@
 const ARTICLES = [
-    { slug: 'there-is-still-no-silver-bullet', title: 'There Is Still No Silver Bullet', meta: 'Christian Ekrem · Aug 2026', time: '15:14' },
     { slug: 'compaction-in-pi', title: 'How Compaction Works in Pi', meta: 'Earendil · Aug 2026', time: '6:19' },
     { slug: 'how-to-keep-thinking', title: 'How to keep thinking', meta: 'Sean Goedecke · 2026', time: '6:05' },
     { slug: 'compression-is-prediction', title: 'Compression is Prediction', meta: 'ngrok Blog · Aug 2026', time: '21:53' },
