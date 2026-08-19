@@ -1,4 +1,6 @@
 const ARTICLES = [
+    { slug: 'ai-coding-insights', title: 'The Specification Is Not a Document', meta: 'leaflet.pub · Aug 2026', time: '33:39' },
+    { slug: 'what-is-reasoning', title: 'What is Reasoning?', meta: 'Armin Ronacher · Aug 2026', time: '3:33' },
     { slug: 'compaction-in-pi', title: 'How Compaction Works in Pi', meta: 'Earendil · Aug 2026', time: '6:19' },
     { slug: 'compression-is-prediction', title: 'Compression is Prediction', meta: 'ngrok Blog · Aug 2026', time: '21:53' },
     { slug: 'why-go-is-an-ideal-language-for-ai-assisted-software-engineering', title: 'Why Go is an Ideal Language for AI-Assisted Software Engineering', meta: 'Google Developers Blog · Aug 2026', time: '14:55' },
@@ -51,7 +53,7 @@ const ARTICLES = [
     { slug: 'the-primitive-is-the-product', title: 'The primitive is the product', meta: 'Lenny Pruss · June 2025', time: '9:47' },
     { slug: 'on-idea-generation', title: 'one must imagine sisyphus full of ideas: on exercising the idea muscle', meta: 'Sankalp · Jun 2026', time: '23:30' },
     { slug: 'prompt-injection-as-role-confusion', title: 'A Theory of Prompt Injection (and Why You Should Study Roles)', meta: 'Charles Ye et al. · June 2026', time: '9:45' },
-    { slug: 'why-ai-hasnt-replaced-software-engineers', title: 'Why AI hasn\'t replaced software engineers, and won\'t', meta: 'Narayanan & Kapoor · June 2026', time: '14:05' },
+    { slug: 'why-ai-hasnt-replaced-software-engineers', title: 'Why AI Hasnt Replaced Software Engineers', meta: 'Normal Tech · Jun 2026', time: '27:50' },
     { slug: 'agent-context', title: 'Agent Context', meta: 'Sankalp · June 2026', time: '6:21' },
     { slug: 'policy-on-the-ai-exponential', title: 'Policy on the AI Exponential', meta: 'Dario Amodei · June 2026', time: '16:47' },
     { slug: 'loop-engineering', title: 'Loop Engineering', meta: 'Addy Osmani · June 2026', time: '10:40' },
