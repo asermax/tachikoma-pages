@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-18T02:00:55.612117-03:00",
+  "generated_at": "2026-08-19T02:00:46.819235-03:00",
   "week_start": "2026-08-16",
   "week_label": "August 16 - August 22, 2026",
-  "last_updated": "Tuesday, August 18, 2026 at 02:00",
+  "last_updated": "Wednesday, August 19, 2026 at 02:00",
   "stats": {
-    "completed": 2.857142857142857,
-    "planned": 4,
-    "display": "2.9 / 4"
+    "completed": 5.857142857142858,
+    "planned": 7,
+    "display": "5.9 / 7"
   },
   "daily": {
     "Sunday": {
@@ -15,14 +15,14 @@
       "total": 0
     },
     "Monday": {
-      "status": "partial",
-      "completed": 2,
+      "status": "done",
+      "completed": 3,
       "total": 3
     },
     "Tuesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "partial",
+      "completed": 2,
+      "total": 3
     },
     "Wednesday": {
       "status": "empty",
@@ -50,9 +50,9 @@
       "name": "Wind-Down Routine",
       "emoji": "",
       "status": "pending",
-      "accumulated": "1 nights",
+      "accumulated": "2 nights",
       "target": "7 nights",
-      "progress_pct": 14
+      "progress_pct": 28
     }
   ],
   "routines": [
@@ -63,7 +63,7 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Thu",
@@ -72,7 +72,7 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 2
     },
     {
@@ -112,7 +112,7 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Tue",
@@ -127,9 +127,9 @@
           "status": "pending"
         }
       ],
-      "metrics_total": "",
+      "metrics_total": "30min",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 4
     },
     {
@@ -139,7 +139,7 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Thu",
@@ -148,7 +148,7 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 2
     },
     {
@@ -172,10 +172,10 @@
     }
   ],
   "spirit": {
-    "state": "content",
+    "state": "thriving",
     "emoji": "\ud83e\udd8e",
     "title": "\ud83e\udd8e Clay Fire Salamander",
-    "image": "assets/content.webp",
-    "description": "Your fire salamander sits peacefully on its stone, soft snowflakes drifting down, gentle overcast sky \u2014 calm, cozy, and satisfied."
+    "image": "assets/thriving.webp",
+    "description": "Your fire salamander stands tall on its snow-covered rock, bright winter sunlight streaming down, warm glow radiating \u2014 energetic, triumphant, and fully alive."
   }
 }
