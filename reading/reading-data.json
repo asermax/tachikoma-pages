@@ -251,7 +251,7 @@
       "category": "ai",
       "summary": "David Curlewis argues that the AI industry has regressed to using volume-based metrics -- like percentage of code written by AI and raw line counts -- to measure engineering productivity, despite the software industry spending two decades learning that such metrics are meaningless. He points to recent claims from Google (75% AI-generated code), Anthropic (~80% Claude-written code, 8x more code shipped), OpenAI (~80%), and Cursor (100M+ lines/day) as repackaged lines-of-code vanity metrics that only track adoption, not outcomes.\n\nCurlewis contrasts these with earlier outcome-based claims, such as GitHub's original finding that Copilot helped developers complete tasks 55% faster. He traces the shift to volume metrics to the fact that outcome evidence became complicated: while Cui et al. found a 26% task completion boost, GitClear observed rising code churn, and organizational-level surveys show roughly 10% productivity gains on average -- useful but far from transformative. He highlights Anthropic's own RCT showing AI-assisted developers scored 17% lower on code comprehension with no significant productivity gain.\n\nThe article's core concern is real-world impact: these vanity metrics are influencing budgets, headcount decisions, and layoffs at companies like Block and Atlassian. Curlewis advocates measuring AI-assisted engineering with battle-tested outcome metrics -- DORA metrics, reliability, rate of meaningful change, revenue, and customer value -- rather than adoption intensity dressed up as maturity.",
       "added": "2026-06-13",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "httpsxcomaddyosmanistatus2066595308629594363",
@@ -260,7 +260,7 @@
       "category": "ai",
       "summary": "Addy Osmani's deep dive on how code review became the bottleneck in agentic engineering. Key data: 4x code output for ~10% more value (GitClear), churn up 861%, zero-review merges up 31% (Faros). Argues review shifted from checking reasoning to reconstructing missing intent. Recommends: tier review by blast radius not author, run multiple heterogeneous AI reviewers (they catch different bugs with near-zero overlap), require intent statements before review, and treat AI review as sensor data not verdicts. Human moves from reading every diff to owning accountability and sampling.",
       "added": "2026-06-15",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "why-ai-hasnt-replaced-software-engineers-and-wont",
@@ -269,7 +269,7 @@
       "category": "AI & Software Engineering",
       "summary": "Narayanan & Kapoor argue AI won't cause mass SWE layoffs. 'AI-driven layoffs' at Block, Snap, Intuit were mostly AI washing — financial pressure was the real driver. Their 'decide-execute-deliver sandwich' model shows AI compresses the middle (code writing) but leaves decision-making and accountability layers intact, which resist automation for non-capability reasons. Writing code was never the bottleneck (devs spend 9-61% time coding). Vibe coding ≠ agentic engineering. Software demand may actually increase as cheaper production drives more building.",
       "added": "2026-06-17",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "prompt-injection-as-role-confusion",
@@ -827,6 +827,24 @@
       "category": "ai",
       "summary": "Explains how compaction works in coding agents like Pi, Claude Code, and Codex — where the agent uses an LLM request to summarize older conversation history into a compressed representation once a session approaches the context window limit. Pi retains a configurable token budget of recent messages unchanged, serializes older messages, and sends a standalone request for a structured summary covering goal, progress, and key decisions. Compaction breaks prompt caching since retained turns shift to a new prefix, but caching resumes on subsequent requests.",
       "added": "2026-08-13",
+      "times_shown": 0
+    },
+    {
+      "slug": "ai-coding-insights",
+      "title": "AI Coding Insights",
+      "url": "https://aicoding.leaflet.pub/3mtgs36dnq22o",
+      "category": "engineering",
+      "summary": "This essay argues that in the era of generative software, a system specification should be a connected body of queryable knowledge — claims, decisions, incidents, and evaluations linked with provenance. Drawing parallels to Codd relational model and BIM, it contends that LLMs should serve as an interface to this memory rather than be the memory itself, and that documentation becomes a projection of underlying knowledge rather than a separate artifact.",
+      "added": "2026-08-19",
+      "times_shown": 0
+    },
+    {
+      "slug": "what-is-reasoning-armin-ronacher",
+      "title": "What is Reasoning? - Armin Ronacher",
+      "url": "https://lucumr.pocoo.org/2026/8/19/what-is-reasoning/",
+      "category": "ai",
+      "summary": "Armin Ronacher demystifies LLM \"reasoning traces,\" explaining that they are not exotic hidden machinery but simply ordinary text the model emits into a scratchpad-style channel before its final answer. He shows that reasoning \"effort\" is not a special sampling property but is baked into the system prompt via training, and because keeping scratch work out of the final channel is a learned convention, models can be tricked into leaking or misplacing reasoning.",
+      "added": "2026-08-19",
       "times_shown": 0
     }
   ],
