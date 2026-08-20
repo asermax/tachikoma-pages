@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19",
+  "generated_at": "2026-08-20",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -845,6 +845,15 @@
       "category": "ai",
       "summary": "Armin Ronacher demystifies LLM \"reasoning traces,\" explaining that they are not exotic hidden machinery but simply ordinary text the model emits into a scratchpad-style channel before its final answer. He shows that reasoning \"effort\" is not a special sampling property but is baked into the system prompt via training, and because keeping scratch work out of the final channel is a learned convention, models can be tricked into leaking or misplacing reasoning.",
       "added": "2026-08-19",
+      "times_shown": 0
+    },
+    {
+      "slug": "extensible-software-in-the-age-of-llms",
+      "title": "Extensible Software in the age of LLMs",
+      "url": "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/",
+      "category": "engineering",
+      "summary": "Most web software is static: devs build for the top of the demand curve, leaving a long tail of unmet needs. LLM-assisted coding now lets users fill that tail themselves (\"Software for One\" / YC's \"Small Software\"), and agent harnesses like pi show the pattern — a battle-tested core users extend just by asking. Morrell's thesis: Extensible Software is now viable because LLMs radically lower the cost of authoring extensions while modern sandbox primitives lower deployment cost and provide security boundaries. Use cases: agent harnesses, internal corporate platforms, support and observability platforms. The hard part is running untrusted user code (crashes, loops, exfiltration, DoS, Spectre, mining) — Salesforce Apex proves it works at scale. The needed primitive: cheap, fast cold starts, limits, isolation, plus safe actions — where he argues for object-capability (narrow function refs instead of API keys/proxies), more token-efficient for LLMs than OpenAPI specs. Surveying interpreters, V8 isolates, microVMs, and WASM, he highlights Cloudflare Dynamic Workers (his employer) as closest to production-ready, demoing by turning his blog into a small vibe-coding platform with capability-gated scrapers.",
+      "added": "2026-08-20",
       "times_shown": 0
     }
   ],
