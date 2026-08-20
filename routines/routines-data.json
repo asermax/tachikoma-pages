@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-19T02:00:46.819235-03:00",
+  "generated_at": "2026-08-20T02:01:19.321248-03:00",
   "week_start": "2026-08-16",
   "week_label": "August 16 - August 22, 2026",
-  "last_updated": "Wednesday, August 19, 2026 at 02:00",
+  "last_updated": "Thursday, August 20, 2026 at 02:01",
   "stats": {
-    "completed": 5.857142857142858,
-    "planned": 7,
-    "display": "5.9 / 7"
+    "completed": 6.857142857142857,
+    "planned": 10,
+    "display": "6.9 / 10"
   },
   "daily": {
     "Sunday": {
@@ -25,9 +25,9 @@
       "total": 3
     },
     "Wednesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "partial",
+      "completed": 1,
+      "total": 3
     },
     "Thursday": {
       "status": "empty",
@@ -50,9 +50,9 @@
       "name": "Wind-Down Routine",
       "emoji": "",
       "status": "pending",
-      "accumulated": "2 nights",
+      "accumulated": "3 nights",
       "target": "7 nights",
-      "progress_pct": 28
+      "progress_pct": 42
     }
   ],
   "routines": [
@@ -82,12 +82,12 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         }
       ],
-      "metrics_total": "",
+      "metrics_total": "1h",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -162,7 +162,7 @@
         },
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -172,10 +172,10 @@
     }
   ],
   "spirit": {
-    "state": "thriving",
+    "state": "content",
     "emoji": "\ud83e\udd8e",
     "title": "\ud83e\udd8e Clay Fire Salamander",
-    "image": "assets/thriving.webp",
-    "description": "Your fire salamander stands tall on its snow-covered rock, bright winter sunlight streaming down, warm glow radiating \u2014 energetic, triumphant, and fully alive."
+    "image": "assets/content.webp",
+    "description": "Your fire salamander sits peacefully on its stone, soft snowflakes drifting down, gentle overcast sky \u2014 calm, cozy, and satisfied."
   }
 }
