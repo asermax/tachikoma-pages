@@ -90,6 +90,16 @@
       "summary": "In this presentation from the AI Engineer World's Fair, Lance Martin from Anthropic discusses the technical evolution and architectural design of asynchronous, long-horizon AI agents. He highlights two key design principles: decoupling the 'brain' (a stateless orchestration harness) from the 'hands' (isolated execution sandboxes) to improve security and state recovery, and using separate 'verifier' agents to objectively evaluate task completion. By separating execution from evaluation in iterative loops, developers can enable AI systems to self-correct more reliably over long periods. This talk is highly beneficial for AI software engineers, systems architects, and developers seeking to design robust, autonomous, and secure LLM-based agentic workflows.",
       "added": "2026-07-24",
       "times_shown": 0
+    },
+    {
+      "slug": "claude-code-is-overkill-pi-is-all-you-need",
+      "title": "Claude Code is overkill - Pi is All you Need",
+      "url": "https://www.youtube.com/watch?v=AEmHcFH1UgQ",
+      "video_id": "AEmHcFH1UgQ",
+      "channel": "Syntax",
+      "summary": "This video features a podcast episode of *Syntax* where hosts Wes Bos and Scott Tolinski interview developers Mario Zechner and Armin Ronacher about **Pi**, a minimal and highly extensible AI coding agent harness. The creators explain that Pi relies on a simple loop structure utilizing bash commands and basic file tools, arguing that a minimalist design makes the agent more predictable and adaptable to unique developer workflows. They also discuss broader trends in autonomous agents, the capabilities of modern models like Anthropic's Claude, and the persistent security challenge of prompt injection in agentic workflows.\n\nWho would benefit from watching: This video is highly beneficial for software engineers, web developers, AI enthusiasts, and cybersecurity professionals interested in the practical development, security challenges, and future direction of autonomous AI coding assistants.",
+      "added": "2026-08-20",
+      "times_shown": 0
     }
   ],
   "archive": [
