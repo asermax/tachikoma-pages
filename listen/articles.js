@@ -1,7 +1,6 @@
 const ARTICLES = [
     { slug: 'extensible-software-in-the-age-of-llms', title: 'Extensible Software in the age of LLMs', meta: 'Jeremy Morrell · Aug 2026', time: '29:19' },
     { slug: 'ai-coding-insights', title: 'The Specification Is Not a Document', meta: 'leaflet.pub · Aug 2026', time: '33:39' },
-    { slug: 'what-is-reasoning', title: 'What is Reasoning?', meta: 'Armin Ronacher · Aug 2026', time: '3:33' },
     { slug: 'compaction-in-pi', title: 'How Compaction Works in Pi', meta: 'Earendil · Aug 2026', time: '6:19' },
     { slug: 'compression-is-prediction', title: 'Compression is Prediction', meta: 'ngrok Blog · Aug 2026', time: '21:53' },
     { slug: 'why-go-is-an-ideal-language-for-ai-assisted-software-engineering', title: 'Why Go is an Ideal Language for AI-Assisted Software Engineering', meta: 'Google Developers Blog · Aug 2026', time: '14:55' },
