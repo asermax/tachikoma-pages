@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'extensible-software-in-the-age-of-llms', title: 'Extensible Software in the age of LLMs', meta: 'Jeremy Morrell · Aug 2026', time: '29:19' },
     { slug: 'ai-coding-insights', title: 'The Specification Is Not a Document', meta: 'leaflet.pub · Aug 2026', time: '33:39' },
     { slug: 'what-is-reasoning', title: 'What is Reasoning?', meta: 'Armin Ronacher · Aug 2026', time: '3:33' },
     { slug: 'compaction-in-pi', title: 'How Compaction Works in Pi', meta: 'Earendil · Aug 2026', time: '6:19' },
