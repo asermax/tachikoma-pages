@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'ai-slop-isnt-a-model-problem-treat-your-codebase-as-a-black-box', title: 'AI slop isn\'t a model problem — treat your codebase as a black box', meta: 'David Zhang (@dzhng) · Aug 2026', time: '12:36' },
     { slug: 'extensible-software-in-the-age-of-llms', title: 'Extensible Software in the age of LLMs', meta: 'Jeremy Morrell · Aug 2026', time: '29:19' },
     { slug: 'ai-coding-insights', title: 'The Specification Is Not a Document', meta: 'leaflet.pub · Aug 2026', time: '33:39' },
     { slug: 'compaction-in-pi', title: 'How Compaction Works in Pi', meta: 'Earendil · Aug 2026', time: '6:19' },
