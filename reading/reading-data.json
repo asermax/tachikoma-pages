@@ -848,11 +848,29 @@
       "times_shown": 0
     },
     {
+      "slug": "good-writing-is-obvious-not-original",
+      "title": "Good writing is obvious, not original",
+      "url": "https://www.seangoedecke.com/good-writing-is-obvious-not-original/",
+      "category": "Writing",
+      "summary": "Goedecke argues writers should aim to say things that are obviously true rather than straining for originality — ironically the best path to genuinely original writing. Every important idea has already been discussed by smart people, so restricting yourself to brand-new ideas means restricting yourself to trivia. Writing about obvious things is hard because our most fundamental beliefs are like glasses: we look with them, not at them, so articulating them takes real work but helps readers examine their own assumptions. He illustrates with his most popular post, where hours of writing revealed an unexamined definition of 'shipping' that all his advice flowed from. Drawing on Keith Johnstone's Impro: trying to be original produces boring pattern-matched transgression, while reflecting on your own concrete experience yields writing that actually sounds original.",
+      "added": "2026-08-20",
+      "times_shown": 0
+    },
+    {
       "slug": "httpsxcomdzhngstatus2090252351533973768",
       "title": "AI slop isn't a model problem — treat your codebase as a black box",
       "url": "https://x.com/dzhng/status/2090252351533973768",
       "category": "Software & AI",
       "summary": "Zhang argues AI slop arises not from poor model quality but from the structural mismatch between unbounded AI code generation and human reading as the fixed-rate verification step — and that code itself will become progressively less readable (Claude-speak, AI-native languages, machine code), breaking the SDLC assumption that someone can open a file and understand it. His proposal: treat the codebase as an interpretability problem, not a review problem — slice it into domain-specific pieces with well-defined inputs/outputs ('seams'), attach sensors, run functions and interrogate outputs, never read the implementation. Human-readable artifacts move up a level: invariants, traces, attack surfaces, and especially a 'decision ledger' where the agent reports every choice it made where the spec was silent, ranked least-confident first, audited by an independent sub-agent — effectively 'compiling' intent down to code and inspecting intent and behavior rather than the artifact. Skills at github.com/dzhng/skills.",
+      "added": "2026-08-20",
+      "times_shown": 0
+    },
+    {
+      "slug": "what-is-a-harness",
+      "title": "What is a Harness?",
+      "url": "https://earendil.com/posts/what-is-a-harness/",
+      "category": "Software & AI",
+      "summary": "A beginner-friendly explainer defining an 'agent harness' by analogy to a climbing harness — equipment connecting a climber to ropes and safety systems. An agent harness is software providing the environment an AI model operates within, doing four things: supplying a system prompt, describing and providing callable tools, establishing the agentic loop where the model iteratively assesses its results and re-invokes tools, and offering a translation layer for models from different providers. Unlike AI models, harnesses can be owned and customized by end users (citing the open-source Pi harness and its 5,000+ community extensions) — neutral, open-source harnesses shift power away from AI labs toward individual agency: 'ensuring that we wield the hammer, the hammer does not wield us.'",
       "added": "2026-08-20",
       "times_shown": 0
     }
