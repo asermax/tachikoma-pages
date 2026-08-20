@@ -839,15 +839,6 @@
       "times_shown": 0
     },
     {
-      "slug": "what-is-reasoning-armin-ronacher",
-      "title": "What is Reasoning? - Armin Ronacher",
-      "url": "https://lucumr.pocoo.org/2026/8/19/what-is-reasoning/",
-      "category": "ai",
-      "summary": "Armin Ronacher demystifies LLM \"reasoning traces,\" explaining that they are not exotic hidden machinery but simply ordinary text the model emits into a scratchpad-style channel before its final answer. He shows that reasoning \"effort\" is not a special sampling property but is baked into the system prompt via training, and because keeping scratch work out of the final channel is a learned convention, models can be tricked into leaking or misplacing reasoning.",
-      "added": "2026-08-19",
-      "times_shown": 0
-    },
-    {
       "slug": "extensible-software-in-the-age-of-llms",
       "title": "Extensible Software in the age of LLMs",
       "url": "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/",
@@ -1866,6 +1857,16 @@
       "summary": "Nolan Lawson argues that AI code review agents have made bug finding nearly free — you can essentially decide how many bugs you want your software to have. However, fixing them isn't free: agents tend to pile on patches rather than simplify, and industry incentives haven't changed, so overall software polish hasn't improved. He suggests mitigations like strong test suites, human-driven simplification, and designing systems where whole classes of bugs simply can't occur.",
       "added": "2026-08-17",
       "read": "2026-08-17",
+      "has_notes": false
+    },
+    {
+      "slug": "what-is-reasoning-armin-ronacher",
+      "title": "What is Reasoning? - Armin Ronacher",
+      "url": "https://lucumr.pocoo.org/2026/8/19/what-is-reasoning/",
+      "category": "ai",
+      "summary": "Armin Ronacher demystifies LLM \"reasoning traces,\" explaining that they are not exotic hidden machinery but simply ordinary text the model emits into a scratchpad-style channel before its final answer. He shows that reasoning \"effort\" is not a special sampling property but is baked into the system prompt via training, and because keeping scratch work out of the final channel is a learned convention, models can be tricked into leaking or misplacing reasoning.",
+      "added": "2026-08-19",
+      "read": "2026-08-20",
       "has_notes": false
     }
   ]
