@@ -873,6 +873,15 @@
       "summary": "A beginner-friendly explainer defining an 'agent harness' by analogy to a climbing harness — equipment connecting a climber to ropes and safety systems. An agent harness is software providing the environment an AI model operates within, doing four things: supplying a system prompt, describing and providing callable tools, establishing the agentic loop where the model iteratively assesses its results and re-invokes tools, and offering a translation layer for models from different providers. Unlike AI models, harnesses can be owned and customized by end users (citing the open-source Pi harness and its 5,000+ community extensions) — neutral, open-source harnesses shift power away from AI labs toward individual agency: 'ensuring that we wield the hammer, the hammer does not wield us.'",
       "added": "2026-08-20",
       "times_shown": 0
+    },
+    {
+      "slug": "most-of-your-architecture-was-just-expensive-code",
+      "title": "Most of Your Architecture Was Just Expensive Code",
+      "url": "https://aicoding.leaflet.pub/3mtmk6ot6oc2i",
+      "category": "Software Engineering",
+      "summary": "The article argues that much of what we called \"architecture\" was never real architectural intent — it was simply the cost of change wearing a disguise: decisions (frameworks, databases, boundaries) only felt architectural because reimplementation was expensive. Now that AI code generation makes implementation cheap, verification rather than generation is the new bottleneck. The author proposes a \"regeneration test\" — \"If I regenerated the system tomorrow and this changed, would I care?\" — to separate accidental irreversibility from intentional durability, and redefines architecture as the set of constraints on how a system is allowed to change: when code was expensive, architecture helped us build it; when code is cheap, architecture helps us reject implementations (via executable constraints like fitness functions). The piece closes by warning that cheap code makes semantically significant changes look mechanically trivial, so architectural intent and provenance must be made explicit outside the code itself — regenerating the constraints gives you your system back, while regenerating only the code gives you a different program that happens to pass the same tests.",
+      "added": "2026-08-21",
+      "times_shown": 0
     }
   ],
   "archive": [
