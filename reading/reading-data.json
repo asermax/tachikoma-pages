@@ -1904,6 +1904,16 @@
       "added": "2026-08-19",
       "read": "2026-08-20",
       "has_notes": false
+    },
+    {
+      "slug": "prevent-cognitive-debt-by-manually-retyping-llm-generated-code",
+      "title": "Prevent cognitive debt by manually retyping LLM-generated code",
+      "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
+      "category": "AI & Agents",
+      "summary": "Ankur Sethi argues that letting coding assistants edit his personal projects freely creates \"cognitive debt\" — he loses understanding of his own code, and reviewing hundreds of lines of AI-generated PRs is no fun either. His solution: he instructs the LLM via agent files to never touch his files directly, but instead show all proposed edits and commands in chat so he can retype them manually. Typing each line himself makes him only ~2x faster instead of 10x, but it builds a mental model and spatial map of the codebase, helps him catch hallucinations and bad design, and lets him clean up the code to his own taste — the same way programmers traditionally learned by typing out examples rather than copy-pasting. He fears the industry is accumulating cognitive debt it will soon have to repay, and considers fully understanding the software you ship a matter of professional responsibility.",
+      "added": "2026-08-22",
+      "read": "2026-08-22",
+      "has_notes": true
     }
   ]
 }
