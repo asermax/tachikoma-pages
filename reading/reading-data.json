@@ -873,15 +873,6 @@
       "summary": "A beginner-friendly explainer defining an 'agent harness' by analogy to a climbing harness — equipment connecting a climber to ropes and safety systems. An agent harness is software providing the environment an AI model operates within, doing four things: supplying a system prompt, describing and providing callable tools, establishing the agentic loop where the model iteratively assesses its results and re-invokes tools, and offering a translation layer for models from different providers. Unlike AI models, harnesses can be owned and customized by end users (citing the open-source Pi harness and its 5,000+ community extensions) — neutral, open-source harnesses shift power away from AI labs toward individual agency: 'ensuring that we wield the hammer, the hammer does not wield us.'",
       "added": "2026-08-20",
       "times_shown": 0
-    },
-    {
-      "slug": "fast-and-hard-code",
-      "title": "Fast and Hard Code",
-      "url": "https://lucumr.pocoo.org/2026/8/22/fast-hard-code/",
-      "category": "ai",
-      "summary": "Armin Ronacher argues LLMs changed how developers choose languages: agents don't suffer unfamiliarity friction, so language choice is less consequential and increasingly driven by marketing/performance vibes. Two shifts drive hard-language adoption: cultural demand for fast software and LLMs being excellent at optimization. Rust and Zig benefit (Cloudflare's Zig Git engine, Vercel's fx agent), and developers now tackle gatekept tech like eBPF, DWARF, custom crypto. May produce more slop, but also more devs building fast, small software.",
-      "added": "2026-08-22",
-      "times_shown": 0
     }
   ],
   "archive": [
@@ -1914,6 +1905,16 @@
       "added": "2026-08-21",
       "read": "2026-08-22",
       "has_notes": false
+    },
+    {
+      "slug": "fast-and-hard-code",
+      "title": "Fast and Hard Code",
+      "url": "https://lucumr.pocoo.org/2026/8/22/fast-hard-code/",
+      "category": "ai",
+      "summary": "Armin Ronacher argues LLMs changed how developers choose languages: agents don't suffer unfamiliarity friction, so language choice is less consequential and increasingly driven by marketing/performance vibes. Two shifts drive hard-language adoption: cultural demand for fast software and LLMs being excellent at optimization. Rust and Zig benefit (Cloudflare's Zig Git engine, Vercel's fx agent), and developers now tackle gatekept tech like eBPF, DWARF, custom crypto. May produce more slop, but also more devs building fast, small software.",
+      "added": "2026-08-22",
+      "read": "2026-08-22",
+      "has_notes": true
     },
     {
       "slug": "prevent-cognitive-debt-by-manually-retyping-llm-generated-code",
