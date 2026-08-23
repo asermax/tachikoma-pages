@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-23T14:12:45.527456-03:00",
+  "generated_at": "2026-08-23T15:09:14.302905-03:00",
   "week_start": "2026-08-23",
   "week_label": "August 23 - August 29, 2026",
-  "last_updated": "Sunday, August 23, 2026 at 14:12",
+  "last_updated": "Sunday, August 23, 2026 at 15:09",
   "stats": {
     "completed": 0,
     "planned": 0,
@@ -165,9 +165,9 @@
   ],
   "spirit": {
     "state": "dormant",
-    "emoji": "\ud83e\udd8e",
-    "title": "\ud83e\udd8e Clay Fire Salamander",
+    "emoji": "\ud83e\udd85",
+    "title": "\ud83e\udd85 Andean Condor",
     "image": "assets/dormant.webp",
-    "description": "Your fire salamander sleeps curled in its snowy hollow, moonlight and stars above, breath visible in the cold air \u2014 peaceful, quiet rest."
+    "description": "Your condor sleeps with head tucked into its feathers, moonlight and stars over the silent Andes \u2014 deep, peaceful rest."
   }
 }
