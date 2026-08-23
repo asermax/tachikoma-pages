@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-23T02:01:03.969146-03:00",
-  "week_start": "2026-08-16",
-  "week_label": "August 16 - August 22, 2026",
-  "last_updated": "Sunday, August 23, 2026 at 02:01",
+  "generated_at": "2026-08-23T14:12:45.527456-03:00",
+  "week_start": "2026-08-23",
+  "week_label": "August 23 - August 29, 2026",
+  "last_updated": "Sunday, August 23, 2026 at 14:12",
   "stats": {
-    "completed": 9.857142857142858,
-    "planned": 13,
-    "display": "9.9 / 13"
+    "completed": 0,
+    "planned": 0,
+    "display": "0 / 0"
   },
   "daily": {
     "Sunday": {
@@ -15,24 +15,24 @@
       "total": 0
     },
     "Monday": {
-      "status": "done",
-      "completed": 3,
-      "total": 3
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Tuesday": {
-      "status": "partial",
-      "completed": 2,
-      "total": 3
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Wednesday": {
-      "status": "partial",
-      "completed": 2,
-      "total": 3
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Thursday": {
-      "status": "partial",
-      "completed": 2,
-      "total": 3
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Friday": {
       "status": "empty",
@@ -50,9 +50,9 @@
       "name": "Wind-Down Routine",
       "emoji": "",
       "status": "pending",
-      "accumulated": "6 nights",
-      "target": "7 nights",
-      "progress_pct": 85
+      "accumulated": "0 ",
+      "target": "6 nights",
+      "progress_pct": 0
     }
   ],
   "routines": [
@@ -63,17 +63,13 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "done"
-        },
-        {
-          "day": "Thu",
-          "status": "done"
+          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 2,
-      "total": 2
+      "done": 0,
+      "total": 1
     },
     {
       "id": "music-practice",
@@ -82,12 +78,12 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "done"
+          "status": "pending"
         }
       ],
-      "metrics_total": "1h",
+      "metrics_total": "",
       "comparison": "",
-      "done": 1,
+      "done": 0,
       "total": 1
     },
     {
@@ -97,12 +93,12 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "done"
+          "status": "pending"
         }
       ],
-      "metrics_total": "1h",
+      "metrics_total": "",
       "comparison": "",
-      "done": 1,
+      "done": 0,
       "total": 1
     },
     {
@@ -112,7 +108,7 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "done"
+          "status": "pending"
         },
         {
           "day": "Tue",
@@ -120,16 +116,16 @@
         },
         {
           "day": "Wed",
-          "status": "done"
+          "status": "pending"
         },
         {
           "day": "Thu",
           "status": "pending"
         }
       ],
-      "metrics_total": "60min",
+      "metrics_total": "",
       "comparison": "",
-      "done": 2,
+      "done": 0,
       "total": 4
     },
     {
@@ -139,17 +135,13 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "done"
-        },
-        {
-          "day": "Thu",
-          "status": "done"
+          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 2,
-      "total": 2
+      "done": 0,
+      "total": 1
     },
     {
       "id": "yoga",
@@ -158,24 +150,24 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "done"
+          "status": "pending"
         },
         {
           "day": "Wed",
-          "status": "skipped"
+          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 1,
+      "done": 0,
       "total": 2
     }
   ],
   "spirit": {
-    "state": "content",
+    "state": "dormant",
     "emoji": "\ud83e\udd8e",
     "title": "\ud83e\udd8e Clay Fire Salamander",
-    "image": "assets/content.webp",
-    "description": "Your fire salamander sits peacefully on its stone, soft snowflakes drifting down, gentle overcast sky \u2014 calm, cozy, and satisfied."
+    "image": "assets/dormant.webp",
+    "description": "Your fire salamander sleeps curled in its snowy hollow, moonlight and stars above, breath visible in the cold air \u2014 peaceful, quiet rest."
   }
 }
