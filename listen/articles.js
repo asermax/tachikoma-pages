@@ -1,4 +1,9 @@
 const ARTICLES = [
+    { slug: 'harnesses-are-situated-agents', title: 'Harnesses are Situated Agents', meta: 'Drew Breunig · Aug 2026', time: '4:23' },
+    { slug: 'manage-your-agents-loadout-with-dr-skill', title: 'Manage Your Agent’s Loadout with Dr. Skill', meta: 'Drew Breunig · Aug 2026', time: '3:23' },
+    { slug: 'ai-ecosystem-pace-layers', title: 'Understanding the Dynamics of the AI Ecosystem with Pace Layers', meta: 'Drew Breunig · Aug 2026', time: '4:28' },
+    { slug: 'the-problem-is-prompt-debt', title: 'The Problem is Prompt Debt', meta: 'Drew Breunig · Aug 2026', time: '8:51' },
+    { slug: 'what-do-humans-need-from-docs', title: 'What Do Humans Need From Docs?', meta: 'Drew Breunig · Aug 2026', time: '5:39' },
     { slug: 'good-writing-is-obvious-not-original', title: 'Good writing is obvious, not original', meta: 'Sean Goedecke · Aug 2026', time: '4:57' },
     { slug: 'what-is-a-harness', title: 'What is a Harness?', meta: 'Earendil · Aug 2026', time: '10:09' },
     { slug: 'ai-slop-isnt-a-model-problem-treat-your-codebase-as-a-black-box', title: 'AI slop isn\'t a model problem — treat your codebase as a black box', meta: 'David Zhang (@dzhng) · Aug 2026', time: '12:36' },
