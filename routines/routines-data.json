@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-23T15:09:14.302905-03:00",
+  "generated_at": "2026-08-23T15:37:26.972439-03:00",
   "week_start": "2026-08-23",
   "week_label": "August 23 - August 29, 2026",
-  "last_updated": "Sunday, August 23, 2026 at 15:09",
+  "last_updated": "Sunday, August 23, 2026 at 15:37",
   "stats": {
     "completed": 0,
     "planned": 0,
@@ -10,9 +10,9 @@
   },
   "daily": {
     "Sunday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 1
     },
     "Monday": {
       "status": "empty",
@@ -107,6 +107,10 @@
       "emoji": "\ud83d\udcd6",
       "sessions": [
         {
+          "day": "Sun",
+          "status": "pending"
+        },
+        {
           "day": "Mon",
           "status": "pending"
         },
@@ -121,12 +125,16 @@
         {
           "day": "Thu",
           "status": "pending"
+        },
+        {
+          "day": "Fri",
+          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
       "done": 0,
-      "total": 4
+      "total": 6
     },
     {
       "id": "rock-climbing",
