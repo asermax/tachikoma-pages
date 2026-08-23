@@ -1,5 +1,5 @@
 {
-  "week": "2026-W33",
+  "week": "2026-W34",
   "days": {
     "Monday": {
       "location": "Home - Dumbbells",
@@ -13,7 +13,7 @@
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "4",
+          "target": "5",
           "unit": "",
           "weight": null
         },
@@ -22,7 +22,7 @@
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "10",
+          "target": "12",
           "unit": "",
           "weight": null
         },
@@ -31,7 +31,7 @@
           "detail": "diamond",
           "sets": 3,
           "type": "reps",
-          "target": "12",
+          "target": "10",
           "unit": "",
           "weight": null
         },
@@ -40,7 +40,7 @@
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "10",
+          "target": "12",
           "unit": "",
           "weight": null
         }
@@ -48,44 +48,7 @@
     },
     "Thursday": {
       "location": "Climbing Gym - Bar",
-      "exercises": [
-        {
-          "name": "Pull-ups",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "4",
-          "unit": "",
-          "weight": null
-        },
-        {
-          "name": "Toes-to-bar",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "8",
-          "unit": "",
-          "weight": null
-        },
-        {
-          "name": "Knee push-ups",
-          "detail": "wide",
-          "sets": 3,
-          "type": "reps",
-          "target": "15",
-          "unit": "",
-          "weight": null
-        },
-        {
-          "name": "Dead hang",
-          "detail": null,
-          "sets": 3,
-          "type": "time",
-          "target": "25",
-          "unit": "s",
-          "weight": null
-        }
-      ]
+      "exercises": []
     },
     "Friday": {
       "location": "Rest",
