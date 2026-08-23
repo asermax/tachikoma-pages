@@ -873,6 +873,15 @@
       "summary": "A beginner-friendly explainer defining an 'agent harness' by analogy to a climbing harness — equipment connecting a climber to ropes and safety systems. An agent harness is software providing the environment an AI model operates within, doing four things: supplying a system prompt, describing and providing callable tools, establishing the agentic loop where the model iteratively assesses its results and re-invokes tools, and offering a translation layer for models from different providers. Unlike AI models, harnesses can be owned and customized by end users (citing the open-source Pi harness and its 5,000+ community extensions) — neutral, open-source harnesses shift power away from AI labs toward individual agency: 'ensuring that we wield the hammer, the hammer does not wield us.'",
       "added": "2026-08-20",
       "times_shown": 0
+    },
+    {
+      "slug": "fable-the-end-of-the-free-lunch",
+      "title": "Fable & The End of the Free Lunch",
+      "url": "https://www.dbreunig.com/2026/08/23/fable-the-end-of-moore-s-law.html",
+      "category": "ai",
+      "summary": "Drew Breunig argues that Anthropic's powerful-but-expensive model 'Fable' marks a turning point for agentic coding analogous to the end of Moore's Law. Before Fable, optimizing your coding harness felt wasteful — the next model drop would paper over most problems at the same price. Fable's high cost made cheaper models (Opus, 5.6, K3, GLM) 'good enough' for most code, forcing deliberate routing: interrogating designs with Fable, then handing briefs to GLM (~1/9th cost) for implementation. He's skeptical inference price drops will reverse this — efficiency gains also benefit cheap models, and better harnesses make weaker models sufficient. Fable's access controls and data retention requirements further pushed companies toward deliberate routing and trace/token sourcing. The era of reflexively sending everything to frontier models is over; context engineering and work placement are the new maturity.",
+      "added": "2026-08-23",
+      "times_shown": 0
     }
   ],
   "archive": [
