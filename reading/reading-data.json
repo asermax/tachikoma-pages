@@ -873,15 +873,6 @@
       "summary": "A beginner-friendly explainer defining an 'agent harness' by analogy to a climbing harness — equipment connecting a climber to ropes and safety systems. An agent harness is software providing the environment an AI model operates within, doing four things: supplying a system prompt, describing and providing callable tools, establishing the agentic loop where the model iteratively assesses its results and re-invokes tools, and offering a translation layer for models from different providers. Unlike AI models, harnesses can be owned and customized by end users (citing the open-source Pi harness and its 5,000+ community extensions) — neutral, open-source harnesses shift power away from AI labs toward individual agency: 'ensuring that we wield the hammer, the hammer does not wield us.'",
       "added": "2026-08-20",
       "times_shown": 0
-    },
-    {
-      "slug": "fable-the-end-of-the-free-lunch",
-      "title": "Fable & The End of the Free Lunch",
-      "url": "https://www.dbreunig.com/2026/08/23/fable-the-end-of-moore-s-law.html",
-      "category": "ai",
-      "summary": "Drew Breunig argues that Anthropic's powerful-but-expensive model 'Fable' marks a turning point for agentic coding analogous to the end of Moore's Law. Before Fable, optimizing your coding harness felt wasteful — the next model drop would paper over most problems at the same price. Fable's high cost made cheaper models (Opus, 5.6, K3, GLM) 'good enough' for most code, forcing deliberate routing: interrogating designs with Fable, then handing briefs to GLM (~1/9th cost) for implementation. He's skeptical inference price drops will reverse this — efficiency gains also benefit cheap models, and better harnesses make weaker models sufficient. Fable's access controls and data retention requirements further pushed companies toward deliberate routing and trace/token sourcing. The era of reflexively sending everything to frontier models is over; context engineering and work placement are the new maturity.",
-      "added": "2026-08-23",
-      "times_shown": 0
     }
   ],
   "archive": [
@@ -1943,6 +1934,16 @@
       "summary": "Sean Goedecke argues that visible anger at work is toxic: angry engineers become problems to be routed around, get excluded from decisions, and the \"nobody listens to me\" complaint they make is rarely true, since effective engineers do get heard. Paradoxically, anger stems from caring, and caring a lot makes engineers competent — but excessive caring \"overflows\" into anger, so the solutions are to calibrate your investment (rich personal life) or align what you care about with what the organization cares about. He allows that strategically *showing* a little frustration can be useful, but being genuinely angry is always a mistake, and warns against copying angry role models like Linus Torvalds or Bryan Cantrill, since most engineers lack their power and only see celebrities at peak emotional intensity. Anger feels like proof you matter, but it's only a local maximum: dropping it makes you more effective and better positioned to have impact on problems that actually matter.",
       "added": "2026-08-22",
       "read": "2026-08-22",
+      "has_notes": true
+    },
+    {
+      "slug": "fable-the-end-of-the-free-lunch",
+      "title": "Fable & The End of the Free Lunch",
+      "url": "https://www.dbreunig.com/2026/08/23/fable-the-end-of-moore-s-law.html",
+      "category": "ai",
+      "summary": "Drew Breunig argues that Anthropic's powerful-but-expensive model 'Fable' marks a turning point for agentic coding analogous to the end of Moore's Law. Before Fable, optimizing your coding harness felt wasteful — the next model drop would paper over most problems at the same price. Fable's high cost made cheaper models (Opus, 5.6, K3, GLM) 'good enough' for most code, forcing deliberate routing: interrogating designs with Fable, then handing briefs to GLM (~1/9th cost) for implementation. He's skeptical inference price drops will reverse this — efficiency gains also benefit cheap models, and better harnesses make weaker models sufficient. Fable's access controls and data retention requirements further pushed companies toward deliberate routing and trace/token sourcing. The era of reflexively sending everything to frontier models is over; context engineering and work placement are the new maturity.\n\n**Notes:** Agustin agrees with the routing thesis and adds a further driver: he's waiting for the end of subscription subsidizing. Right now everyone happily spends inference as if there's no tomorrow because the real cost isn't being paid — once subsidies end, the economics will make routing to cheaper models even more appealing, reinforcing Breunig's argument.",
+      "added": "2026-08-23",
+      "read": "2026-08-23",
       "has_notes": true
     }
   ]
