@@ -873,6 +873,51 @@
       "summary": "A beginner-friendly explainer defining an 'agent harness' by analogy to a climbing harness — equipment connecting a climber to ropes and safety systems. An agent harness is software providing the environment an AI model operates within, doing four things: supplying a system prompt, describing and providing callable tools, establishing the agentic loop where the model iteratively assesses its results and re-invokes tools, and offering a translation layer for models from different providers. Unlike AI models, harnesses can be owned and customized by end users (citing the open-source Pi harness and its 5,000+ community extensions) — neutral, open-source harnesses shift power away from AI labs toward individual agency: 'ensuring that we wield the hammer, the hammer does not wield us.'",
       "added": "2026-08-20",
       "times_shown": 0
+    },
+    {
+      "slug": "harnesses-are-situated-agents",
+      "title": "Harnesses are Situated Agents",
+      "url": "https://www.dbreunig.com/2026/08/14/harnesses-are-situated-agents.html",
+      "category": "ai",
+      "summary": "Breunig defines the agent \"harness\" as a \"situated agent\" — the system managing everything around an agent's core loop (system prompt, planning tool, file system, subagents, per Harrison Chase). Surveying the new wave of harnesses (Omnigent, DeepSeek Harness, Buzz, QM, Flue, Muse Code), he finds they're more alike than different and extracts an eight-layer zoom-out: Session, Environment, Repo, Memory, Skills, Team, Organization, Model — each layer outward used by more people and changed less often. Harnesses, not models, create lock-in: switching from Claude Code to Codex is trivial, but shifting once a team has systems managing all layers is very hard. The network effects AI labs have been searching for may look just like SaaS-era network effects — something Cursor and Copilot already understood.",
+      "added": "2026-08-23",
+      "times_shown": 0
+    },
+    {
+      "slug": "manage-your-agents-loadout-with-dr-skill",
+      "title": "Manage Your Agent's Loadout with Dr. Skill",
+      "url": "https://www.dbreunig.com/2026/07/24/manage-your-agent-s-loadout-with-dr-skill.html",
+      "category": "ai",
+      "summary": "Breunig introduces drskill, an open-source tool to audit and manage the skills and MCP servers loaded into agent environments. The problem: skills accumulate silently, degrading performance before a user types a word — he cites an enterprise agent loading 600+ skills, and his own Hermes agent shipping ~100 with one note-taking skill stubbornly misbehaving. drskill offers three commands: scan (checks 34 issue categories, from missing descriptions to duplicate installs; --deep adds LLM judgment on overlapping skills), list (shows the current loadout, filterable by harness), and audit (scans trace logs to report which skills are actually used). Early users diagnose wrong-skill routing, config risks (secrets, unpinned packages), loadout drift, and description collisions. The takeaway: managing the loadout — not just adding to it — keeps context clean and agent behavior predictable.",
+      "added": "2026-08-23",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-problem-is-prompt-debt",
+      "title": "The Problem is Prompt Debt",
+      "url": "https://www.dbreunig.com/2026/06/22/the-problem-is-prompt-debt.html",
+      "category": "ai",
+      "summary": "Breunig argues that relying on natural-language prompts as the specification for durable system behavior creates \"prompt debt\" — an accumulating cost that arrives slowly, disguised as progress, until the application can barely move. Three escalating symptoms: iteration slows (patching prompts with repeated instructions makes them brittle), the team is incapacitated (all-caps-threat prompts become illegible), and the app locks to a single model (hand-tuned fixes fail on others; Datadog shows GPT-4o still most-used). Root causes: natural language's imprecision meets probabilistic models — rephrased intent flips behavior, and \"fighting the weights\" via repeated instructions (Claude Code tells Opus seven times to batch tool calls) only binds to one model. The fix: specify behavior with measurements (evals, metrics, typed specs) and use automated prompt optimization (DSPy, GEPA) instead of hand-writing prompts — making model swaps a chore measured in hours.",
+      "added": "2026-08-23",
+      "times_shown": 0
+    },
+    {
+      "slug": "understanding-the-dynamics-of-the-ai-ecosystem-with-pace-layers",
+      "title": "Understanding the Dynamics of the AI Ecosystem with Pace Layers",
+      "url": "https://www.dbreunig.com/2026/07/03/ai-ecosytem-pace-layers.html",
+      "category": "ai",
+      "summary": "Breunig uses Stewart Brand's \"Pace Layers\" framework (via The Clock of the Long Now) to make sense of AI's dizzying speed: fast layers learn and propose, slow layers remember and dispose. He maps the AI ecosystem from fastest to slowest: prompts, skills/tools, harnesses/apps, synthetic data, model weights, hired expert data, training methods, chip design, adopting organizations, governance, universities, fabrication, energy, organic human data. This explains current tensions: the AI backlash comes from investment forcing slow layers (data centers, energy) to move faster than culture can absorb; model progress depends on hired/synthetic data because organic human data is tapped out (\"we're not going to get another internet\"); and fast layers are cut off from the sustaining base of organizations, governance, and education. The insider/outsider disconnect over data centers is a predictable pace-layer imbalance, not an anomaly.",
+      "added": "2026-08-23",
+      "times_shown": 0
+    },
+    {
+      "slug": "what-do-humans-need-from-docs",
+      "title": "What Do Humans Need From Docs?",
+      "url": "https://www.dbreunig.com/2026/05/31/what-do-humans-need-from-docs.html",
+      "category": "ai",
+      "summary": "Drew Breunig examines how AI agents are reshaping documentation: \"no one wanted to write documentation, but everyone is writing skills\" — Anthropic Skills are Markdown files agents load dynamically, structurally \"kinda like docs.\" He gives four reasons skills took off where docs didn't: the agent does most of the work, skills iterate and hot-fix in use, they deliver immediate value in the next session, and agents are forgiving readers. Drawing on rewriting the DSPy docs, he proposes human docs should build mental models (not exhaustive references), teach the art of the possible, explain the why, detail design decisions including deliberate non-choices, and avoid completeness — the goal being \"to prepare your audience to prompt an agent effectively.\" He closes with scaffold-docs, his iterative skill for writing human-centric docs enforcing a Getting Started / Diving Deeper / Reference three-tier structure.",
+      "added": "2026-08-23",
+      "times_shown": 0
     }
   ],
   "archive": [
