@@ -89,7 +89,7 @@
       "category": "engineering",
       "summary": "Introduces Absurd, an open-source library for durable workflow execution using only Postgres as its backing store — no extensions, compiler plugins, or third-party services. Explains durable execution fundamentals: queue system + state store with SELECT FOR UPDATE SKIP LOCKED for queue semantics. Tasks decompose into sequential steps with checkpointed results; on failure, replays from last checkpoint. Maps naturally onto AI agent patterns — agents dynamically decide their own path, and Absurd handles this by auto-incrementing step names and storing message deltas. Supports sleeping, suspending for external events, and timeouts. The argument: not every problem needs Temporal-scale complexity — a single SQL file + thin SDK suffices for many real-world use cases, especially self-hosted software.",
       "added": "2026-04-08",
-      "times_shown": 1
+      "times_shown": 0
     },
     {
       "slug": "httpsmartinfowlercomarticlesreduce-friction-aifeedback-flywheelhtml",
@@ -251,7 +251,7 @@
       "category": "ai",
       "summary": "David Curlewis argues that the AI industry has regressed to using volume-based metrics -- like percentage of code written by AI and raw line counts -- to measure engineering productivity, despite the software industry spending two decades learning that such metrics are meaningless. He points to recent claims from Google (75% AI-generated code), Anthropic (~80% Claude-written code, 8x more code shipped), OpenAI (~80%), and Cursor (100M+ lines/day) as repackaged lines-of-code vanity metrics that only track adoption, not outcomes.\n\nCurlewis contrasts these with earlier outcome-based claims, such as GitHub's original finding that Copilot helped developers complete tasks 55% faster. He traces the shift to volume metrics to the fact that outcome evidence became complicated: while Cui et al. found a 26% task completion boost, GitClear observed rising code churn, and organizational-level surveys show roughly 10% productivity gains on average -- useful but far from transformative. He highlights Anthropic's own RCT showing AI-assisted developers scored 17% lower on code comprehension with no significant productivity gain.\n\nThe article's core concern is real-world impact: these vanity metrics are influencing budgets, headcount decisions, and layoffs at companies like Block and Atlassian. Curlewis advocates measuring AI-assisted engineering with battle-tested outcome metrics -- DORA metrics, reliability, rate of meaningful change, revenue, and customer value -- rather than adoption intensity dressed up as maturity.",
       "added": "2026-06-13",
-      "times_shown": 1
+      "times_shown": 0
     },
     {
       "slug": "httpsxcomaddyosmanistatus2066595308629594363",
@@ -260,7 +260,7 @@
       "category": "ai",
       "summary": "Addy Osmani's deep dive on how code review became the bottleneck in agentic engineering. Key data: 4x code output for ~10% more value (GitClear), churn up 861%, zero-review merges up 31% (Faros). Argues review shifted from checking reasoning to reconstructing missing intent. Recommends: tier review by blast radius not author, run multiple heterogeneous AI reviewers (they catch different bugs with near-zero overlap), require intent statements before review, and treat AI review as sensor data not verdicts. Human moves from reading every diff to owning accountability and sampling.",
       "added": "2026-06-15",
-      "times_shown": 2
+      "times_shown": 0
     },
     {
       "slug": "why-ai-hasnt-replaced-software-engineers-and-wont",
@@ -269,7 +269,7 @@
       "category": "AI & Software Engineering",
       "summary": "Narayanan & Kapoor argue AI won't cause mass SWE layoffs. 'AI-driven layoffs' at Block, Snap, Intuit were mostly AI washing — financial pressure was the real driver. Their 'decide-execute-deliver sandwich' model shows AI compresses the middle (code writing) but leaves decision-making and accountability layers intact, which resist automation for non-capability reasons. Writing code was never the bottleneck (devs spend 9-61% time coding). Vibe coding ≠ agentic engineering. Software demand may actually increase as cheaper production drives more building.",
       "added": "2026-06-17",
-      "times_shown": 2
+      "times_shown": 0
     },
     {
       "slug": "prompt-injection-as-role-confusion",
