@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'anger-anxiety-and-agency', title: 'Anger, Anxiety and Agency', meta: 'Armin Ronacher · Aug 2026', time: '5:12' },
     { slug: 'i-will-fucking-piledrive-you-if-you-mention-ai-again', title: 'I Will Fucking Piledrive You If You Mention AI Again', meta: 'Ludicity · Aug 2026', time: '23:41' },
     { slug: 'the-worlds-left-to-conquer', title: 'The Worlds Left To Conquer', meta: 'Ludicity · Aug 2026', time: '12:31' },
     { slug: 'asteroid-hitting-frontend-web-development', title: 'The asteroid currently hitting frontend web development', meta: 'Nolan Lawson · Aug 2026', time: '14:44' },
