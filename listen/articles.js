@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'asteroid-hitting-frontend-web-development', title: 'The asteroid currently hitting frontend web development', meta: 'Nolan Lawson · Aug 2026', time: '14:44' },
     { slug: 'harnesses-are-situated-agents', title: 'Harnesses are Situated Agents', meta: 'Drew Breunig · Aug 2026', time: '4:23' },
     { slug: 'manage-your-agents-loadout-with-dr-skill', title: 'Manage Your Agent’s Loadout with Dr. Skill', meta: 'Drew Breunig · Aug 2026', time: '3:23' },
     { slug: 'ai-ecosystem-pace-layers', title: 'Understanding the Dynamics of the AI Ecosystem with Pace Layers', meta: 'Drew Breunig · Aug 2026', time: '4:28' },
