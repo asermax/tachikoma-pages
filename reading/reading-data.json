@@ -911,15 +911,6 @@
       "times_shown": 0
     },
     {
-      "slug": "what-do-humans-need-from-docs",
-      "title": "What Do Humans Need From Docs?",
-      "url": "https://www.dbreunig.com/2026/05/31/what-do-humans-need-from-docs.html",
-      "category": "ai",
-      "summary": "Drew Breunig examines how AI agents are reshaping documentation: \"no one wanted to write documentation, but everyone is writing skills\" — Anthropic Skills are Markdown files agents load dynamically, structurally \"kinda like docs.\" He gives four reasons skills took off where docs didn't: the agent does most of the work, skills iterate and hot-fix in use, they deliver immediate value in the next session, and agents are forgiving readers. Drawing on rewriting the DSPy docs, he proposes human docs should build mental models (not exhaustive references), teach the art of the possible, explain the why, detail design decisions including deliberate non-choices, and avoid completeness — the goal being \"to prepare your audience to prompt an agent effectively.\" He closes with scaffold-docs, his iterative skill for writing human-centric docs enforcing a Getting Started / Diving Deeper / Reference three-tier structure.",
-      "added": "2026-08-23",
-      "times_shown": 0
-    },
-    {
       "slug": "i-will-fucking-piledrive-you-if-you-mention-ai-again",
       "title": "I Will Fucking Piledrive You If You Mention AI Again",
       "url": "https://ludic.mataroa.blog/blog/i-will-fucking-piledrive-you-if-you-mention-ai-again/",
@@ -2016,6 +2007,16 @@
       "summary": "Drew Breunig argues that Anthropic's powerful-but-expensive model 'Fable' marks a turning point for agentic coding analogous to the end of Moore's Law. Before Fable, optimizing your coding harness felt wasteful — the next model drop would paper over most problems at the same price. Fable's high cost made cheaper models (Opus, 5.6, K3, GLM) 'good enough' for most code, forcing deliberate routing: interrogating designs with Fable, then handing briefs to GLM (~1/9th cost) for implementation. He's skeptical inference price drops will reverse this — efficiency gains also benefit cheap models, and better harnesses make weaker models sufficient. Fable's access controls and data retention requirements further pushed companies toward deliberate routing and trace/token sourcing. The era of reflexively sending everything to frontier models is over; context engineering and work placement are the new maturity.\n\n**Notes:** Agustin agrees with the routing thesis and adds a further driver: he's waiting for the end of subscription subsidizing. Right now everyone happily spends inference as if there's no tomorrow because the real cost isn't being paid — once subsidies end, the economics will make routing to cheaper models even more appealing, reinforcing Breunig's argument.",
       "added": "2026-08-23",
       "read": "2026-08-23",
+      "has_notes": true
+    },
+    {
+      "slug": "what-do-humans-need-from-docs",
+      "title": "What Do Humans Need From Docs?",
+      "url": "https://www.dbreunig.com/2026/05/31/what-do-humans-need-from-docs.html",
+      "category": "ai",
+      "summary": "Drew Breunig examines how AI agents are reshaping documentation: \"no one wanted to write documentation, but everyone is writing skills\" — Anthropic Skills are Markdown files agents load dynamically, structurally \"kinda like docs.\" He gives four reasons skills took off where docs didn't: the agent does most of the work, skills iterate and hot-fix in use, they deliver immediate value in the next session, and agents are forgiving readers. Drawing on rewriting the DSPy docs, he proposes human docs should build mental models (not exhaustive references), teach the art of the possible, explain the why, detail design decisions including deliberate non-choices, and avoid completeness — the goal being \"to prepare your audience to prompt an agent effectively.\" He closes with scaffold-docs, his iterative skill for writing human-centric docs enforcing a Getting Started / Diving Deeper / Reference three-tier structure.\n\n**Notes:** Agustin disagrees that skills double as documentation — they document processes and rules, not intent and structure (even if they overlap a little). He agrees docs should be one level of abstraction higher and always should have been; but feels Breunig writes from a library-maintainer perspective (documenting an API), which isn't the usual idea of docs — even his scaffold-docs skill reads that way (\"who writes a 'getting started' for an internal API?\").",
+      "added": "2026-08-23",
+      "read": "2026-08-24",
       "has_notes": true
     }
   ]
