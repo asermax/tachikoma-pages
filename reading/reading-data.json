@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23",
+  "generated_at": "2026-08-24",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -917,6 +917,15 @@
       "category": "ai",
       "summary": "Drew Breunig examines how AI agents are reshaping documentation: \"no one wanted to write documentation, but everyone is writing skills\" — Anthropic Skills are Markdown files agents load dynamically, structurally \"kinda like docs.\" He gives four reasons skills took off where docs didn't: the agent does most of the work, skills iterate and hot-fix in use, they deliver immediate value in the next session, and agents are forgiving readers. Drawing on rewriting the DSPy docs, he proposes human docs should build mental models (not exhaustive references), teach the art of the possible, explain the why, detail design decisions including deliberate non-choices, and avoid completeness — the goal being \"to prepare your audience to prompt an agent effectively.\" He closes with scaffold-docs, his iterative skill for writing human-centric docs enforcing a Getting Started / Diving Deeper / Reference three-tier structure.",
       "added": "2026-08-23",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-asteroid-currently-hitting-frontend-web-development",
+      "title": "The asteroid currently hitting frontend web development",
+      "url": "https://nolanlawson.com/2026/08/23/the-asteroid-currently-hitting-frontend-web-development/",
+      "category": "ai",
+      "summary": "Nolan Lawson reflects on AI disrupting frontend development as a discipline and career: prominent educators (Rauschmayer, Alam-Naylor, Comeau) are bowing out while others pivot to AI. He posed his favorite Chrome trace brain-teaser (high Style Calculation, low Layout cost) to Claude Sonnet and got an admirable answer covering selector complexity, invalidation scope, and Selector Stats — he'd now just hand traces to Claude Code at work. Trends working against frontend expertise: frontend code is low-risk to hand to agents unsupervised; \"agent experience\" now beats developer experience (React dominates training weights, explaining Cursor/Viget migrations to React); and DX-oriented standards efforts will fade relative to capabilities and performance. Positive directions: educating agents on big-picture architecture (MPAs over default SPAs), making sites agent-readable (Vercel's is-agentic — ironically reinforcing server rendering, accessibility, page speed), and consulting on vibe-coded monstrosities where money and compliance are at stake. The asteroid (AI) has already hit; ignoring the crater is the worst form of denial.",
+      "added": "2026-08-24",
       "times_shown": 0
     }
   ],
