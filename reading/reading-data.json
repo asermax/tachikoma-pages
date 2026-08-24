@@ -920,11 +920,29 @@
       "times_shown": 0
     },
     {
+      "slug": "i-will-fucking-piledrive-you-if-you-mention-ai-again",
+      "title": "I Will Fucking Piledrive You If You Mention AI Again",
+      "url": "https://ludic.mataroa.blog/blog/i-will-fucking-piledrive-you-if-you-mention-ai-again/",
+      "category": "ai",
+      "summary": "A profanity-laced Ludicity polemic by a trained data scientist (who left the field in 2021 finding it largely fraudulent): the corporate AI gold rush is driven by grift and hype, not use cases — most companies pushing AI have leaders who haven't spent 30 minutes understanding it. His argument: most organizations can't ship basic CRUD, suffer institutional retrograde amnesia from 1-2 year engineer tenures, and don't test backups — they're operationally incapable of benefiting from AI, and companies that genuinely need it already have it baked into their software supply chains. He dismisses industry success claims as implausible (Scale's \"8% failure\" report, faked FAANG demos, \"AI\" products that were humans), lays out three AI futures (intelligence explosion, stagnation, genuine transformation), and concludes tepid corporate preparation is pointless in every scenario — either do cutting-edge research or continue normal work with minor LLM concessions. He doesn't hate LLMs (Copilot is fine for boilerplate, not \"programming is designing\") — he hates hype-chasing executives hopping from blockchain to quantum to AI. Fix your fundamentals instead of funding AI theater.",
+      "added": "2026-08-24",
+      "times_shown": 0
+    },
+    {
       "slug": "the-asteroid-currently-hitting-frontend-web-development",
       "title": "The asteroid currently hitting frontend web development",
       "url": "https://nolanlawson.com/2026/08/23/the-asteroid-currently-hitting-frontend-web-development/",
       "category": "ai",
       "summary": "Nolan Lawson reflects on AI disrupting frontend development as a discipline and career: prominent educators (Rauschmayer, Alam-Naylor, Comeau) are bowing out while others pivot to AI. He posed his favorite Chrome trace brain-teaser (high Style Calculation, low Layout cost) to Claude Sonnet and got an admirable answer covering selector complexity, invalidation scope, and Selector Stats — he'd now just hand traces to Claude Code at work. Trends working against frontend expertise: frontend code is low-risk to hand to agents unsupervised; \"agent experience\" now beats developer experience (React dominates training weights, explaining Cursor/Viget migrations to React); and DX-oriented standards efforts will fade relative to capabilities and performance. Positive directions: educating agents on big-picture architecture (MPAs over default SPAs), making sites agent-readable (Vercel's is-agentic — ironically reinforcing server rendering, accessibility, page speed), and consulting on vibe-coded monstrosities where money and compliance are at stake. The asteroid (AI) has already hit; ignoring the crater is the worst form of denial.",
+      "added": "2026-08-24",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-worlds-left-to-conquer",
+      "title": "The Worlds Left To Conquer",
+      "url": "https://ludic.mataroa.blog/blog/the-worlds-left-to-conquer/",
+      "category": "business",
+      "summary": "A candid Ludicity reflection from a data consultant 18 months into their own consultancy: building a successful business was \"more-or-less trivial\" — by Feb 2026 revenue lasted through 2027, exceeded corporate salary, and billed over $1,000/hour. The central argument: professional software is dominated by staggering institutional incompetence — vendors who don't check inboxes, competitors who can't stand up basic databases; responding to email within 24 hours is a competitive advantage (\"the bar is subterranean\"), so competent actors are allies rather than enemies. The ease produces an existential crisis rather than satisfaction — winning feels like taking candy from babies, raising the question of whether trivially easy data platforms are all there is for forty years. The conclusion, inspired by an inverted \"Alexander wept\" (Alexander at the beginning of his conquest), is to use profits to conquer new markets: first technical recruiting (\"densely populated with defenseless money piñatas\"), then knocking out incompetent incumbents causing negligent misery and redirecting proceeds toward causes worth caring about.",
       "added": "2026-08-24",
       "times_shown": 0
     }
