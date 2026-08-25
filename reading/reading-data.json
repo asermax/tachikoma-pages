@@ -956,6 +956,15 @@
       "times_shown": 0
     },
     {
+      "slug": "dont-answer-the-first-question",
+      "title": "Don't answer the first question",
+      "url": "https://lalitm.com/post/dont-answer-the-first-question/",
+      "category": "engineering",
+      "summary": "In this post, Lalit Maganti (a Senior Staff engineer at Google working on Perfetto, a performance debugging tool) describes one of his \"golden rules\" for handling user questions: when someone asks something unusual, don't answer the first version of the question. Instead, probe for the wider problem behind it. He argues this goes a step beyond the classic \"XY problem\" framing — rather than treating the question as a puzzle to decode and answer once, the confusion itself is an opportunity: the user leaves with a better mental model of the tool, the engineer learns where the product confuses people, and sometimes the product itself turns out to need changing.\n\nMaganti runs a mental checklist when a question feels off: whether he's seen it before, whether it sounds reasonable compared to typical asks, and whether the user is unknowingly fighting the tool's architecture. He then asks for missing context, e.g., answering the literal question briefly but asking what's driving it. These conversations typically land in one of three places: the user is missing the philosophy of the tool, the right path exists but is hidden, or the product genuinely needs to change.\n\nFor the first case, he gives the example of teams trying to use traces to compute every conceivable metric, not understanding that traces are expensive to collect and dedicated metric systems exist for that. For the second, the recurring \"trace splitting\" request turns out to be solved by Perfetto's existing periodic trace snapshots — users are solving a problem they shouldn't have at all. For the third, he advocates patience: don't build until not having the feature hurts, because initial asks rarely articulate the real need. He illustrates with two Perfetto examples: shipping ad-hoc UI customization too early created a year of technical debt before a proper plugin API was built (the real need was per-team personalization without affecting other users), while deferring trace merging until the problem space was well understood let them build it right once.\n\nThe main takeaway: the first version of a question is rarely the real one, so ask why before answering. The answer may teach the user the tool's intended use, reveal a hidden path, show there's nothing worth building yet, or set you up to build the next big thing correctly the first time. The technique is simple but easy to skip because answering quickly always feels productive — yet taking that small step back almost always leaves both sides with more than they started with.",
+      "added": "2026-08-25",
+      "times_shown": 0
+    },
+    {
       "slug": "saas-isnt-dead-sameness-is",
       "title": "SaaS Isn't Dead. Sameness Is.",
       "url": "https://aicoding.leaflet.pub/3mtu6c5wsvc2n",
