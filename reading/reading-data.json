@@ -911,15 +911,6 @@
       "times_shown": 0
     },
     {
-      "slug": "anger-anxiety-and-agency",
-      "title": "Anger, Anxiety and Agency",
-      "url": "https://lucumr.pocoo.org/2026/8/24/anger-anxiety-agency/",
-      "category": "uncategorized",
-      "summary": "",
-      "added": "2026-08-24",
-      "times_shown": 0
-    },
-    {
       "slug": "i-will-fucking-piledrive-you-if-you-mention-ai-again",
       "title": "I Will Fucking Piledrive You If You Mention AI Again",
       "url": "https://ludic.mataroa.blog/blog/i-will-fucking-piledrive-you-if-you-mention-ai-again/",
@@ -2054,6 +2045,16 @@
       "summary": "This article by Lalit Maganti is a rebuttal to an argument made by Antirez, the creator of Redis, who suggested that expert programmers using AI should think of themselves as Linus Torvalds—with LLMs and agents acting as the maintainers of individual subsystems. Maganti argues that this analogy fails as applied to today's AI systems.\n\nHis core objection comes down to trust. Linus can delegate to subsystem maintainers because they have earned his confidence by consistently exercising good judgment over long periods, allowing him to focus on the big picture. In the author's experience, every time he has given current LLMs the opportunity to prove themselves in this way, he has regretted it—disliking too many of their decisions, even in domains where he feels qualified to evaluate AI output (performance, databases, developer tool UX). He references his detailed account of building Syntaqlite with AI, plus extensive LLM use at work and on side projects, as evidence.\n\nHe also dismisses the idea that tests or static verification can fill the trust gap. The decisions he most often dislikes are precisely the ones that cannot be easily checked: choosing the wrong abstraction, producing an unpleasant API, writing code that will be hard to change in three years, or solving entirely the wrong problem. Staying involved while the design takes shape is far cheaper than discovering at the end that a series of plausible local decisions added up to the wrong system.\n\nThe takeaway is measured rather than dismissive: AI remains an extremely capable bounded implementer when given clear parameters and enough steering, and it has substantially changed what the author can build—he uses it daily. But calling it a maintainer is a step too far. Because it cannot be trusted to exercise independent judgment, the developer must still own the code. At best, today's AI helps implement decisions; it does not free the programmer to be Linus.",
       "added": "2026-08-24",
       "read": "2026-08-24",
+      "has_notes": true
+    },
+    {
+      "slug": "anger-anxiety-and-agency",
+      "title": "Anger, Anxiety and Agency",
+      "url": "https://lucumr.pocoo.org/2026/8/24/anger-anxiety-agency/",
+      "category": "uncategorized",
+      "summary": "",
+      "added": "2026-08-24",
+      "read": "2026-08-25",
       "has_notes": true
     },
     {
