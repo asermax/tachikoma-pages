@@ -63,6 +63,15 @@
             margin-bottom: 2rem;
         }
 
+        #article .meta a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        #article .meta a:hover {
+            text-decoration: underline;
+        }
+
         .article-footer {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             text-align: center;
@@ -768,13 +777,32 @@ resetBtn.addEventListener('click', () => {
 
 // ── Article loading ──
 
+function renderMeta(el, meta, sourceUrl) {
+    // "Author · Aug 2026 · ~5 min listen" — author+date links to the original, listen time stays plain
+    el.textContent = '';
+    if (!sourceUrl || !meta) { el.textContent = meta; return; }
+    var parts = meta.split(' · ');
+    var linkText = meta, suffix = '';
+    if (parts.length >= 2 && /listen/i.test(parts[parts.length - 1])) {
+        linkText = parts.slice(0, -1).join(' · ');
+        suffix = ' · ' + parts[parts.length - 1];
+    }
+    var a = document.createElement('a');
+    a.href = sourceUrl;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.textContent = linkText;
+    el.appendChild(a);
+    if (suffix) el.appendChild(document.createTextNode(suffix));
+}
+
 async function loadArticle(slug) {
     try {
         const res = await fetch(`articles/${slug}.json`);
         const data = await res.json();
 
         document.getElementById('articleTitle').textContent = data.title;
-        document.getElementById('articleMeta').textContent = data.meta || '';
+        renderMeta(document.getElementById('articleMeta'), data.meta || '', data.sourceUrl);
         document.getElementById('articleBody').innerHTML = data.body;
         document.title = `${data.title} | Listen | Tachikoma Pages`;
 
