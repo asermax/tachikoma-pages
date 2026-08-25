@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-08-24T02:01:32.641544-03:00",
+  "generated_at": "2026-08-25T02:01:12.013168-03:00",
   "week_start": "2026-08-23",
   "week_label": "August 23 - August 29, 2026",
-  "last_updated": "Monday, August 24, 2026 at 02:01",
+  "last_updated": "Tuesday, August 25, 2026 at 02:01",
   "stats": {
-    "completed": 0,
-    "planned": 1,
-    "display": "0 / 1"
+    "completed": 2.0,
+    "planned": 5,
+    "display": "2 / 5"
   },
   "daily": {
     "Sunday": {
-      "status": "missed",
-      "completed": 0,
+      "status": "done",
+      "completed": 1,
       "total": 1
     },
     "Monday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "partial",
+      "completed": 1,
+      "total": 3
     },
     "Tuesday": {
       "status": "empty",
@@ -93,12 +93,12 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         }
       ],
-      "metrics_total": "",
+      "metrics_total": "1h",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -108,7 +108,7 @@
       "sessions": [
         {
           "day": "Sun",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Mon",
@@ -131,9 +131,9 @@
           "status": "pending"
         }
       ],
-      "metrics_total": "",
-      "comparison": "",
-      "done": 0,
+      "metrics_total": "30min",
+      "comparison": "-30min",
+      "done": 1,
       "total": 6
     },
     {
@@ -172,10 +172,10 @@
     }
   ],
   "spirit": {
-    "state": "critical",
+    "state": "tired",
     "emoji": "\ud83e\udd85",
     "title": "\ud83e\udd85 Andean Condor",
-    "image": "assets/critical.webp",
-    "description": "Your condor hunches against the harsh winter storm, feathers ruffled by freezing wind and black clouds \u2014 struggling, worn down."
+    "image": "assets/tired.webp",
+    "description": "Your condor droops on the frost-covered ridge, grey fog and drizzle hanging heavy \u2014 weary wings, needing rest."
   }
 }
