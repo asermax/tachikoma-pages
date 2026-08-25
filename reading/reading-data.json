@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24",
+  "generated_at": "2026-08-25",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -953,6 +953,15 @@
       "category": "business",
       "summary": "A candid Ludicity reflection from a data consultant 18 months into their own consultancy: building a successful business was \"more-or-less trivial\" — by Feb 2026 revenue lasted through 2027, exceeded corporate salary, and billed over $1,000/hour. The central argument: professional software is dominated by staggering institutional incompetence — vendors who don't check inboxes, competitors who can't stand up basic databases; responding to email within 24 hours is a competitive advantage (\"the bar is subterranean\"), so competent actors are allies rather than enemies. The ease produces an existential crisis rather than satisfaction — winning feels like taking candy from babies, raising the question of whether trivially easy data platforms are all there is for forty years. The conclusion, inspired by an inverted \"Alexander wept\" (Alexander at the beginning of his conquest), is to use profits to conquer new markets: first technical recruiting (\"densely populated with defenseless money piñatas\"), then knocking out incompetent incumbents causing negligent misery and redirecting proceeds toward causes worth caring about.",
       "added": "2026-08-24",
+      "times_shown": 0
+    },
+    {
+      "slug": "saas-isnt-dead-sameness-is",
+      "title": "SaaS Isn't Dead. Sameness Is.",
+      "url": "https://aicoding.leaflet.pub/3mtu6c5wsvc2n",
+      "category": "business",
+      "summary": "This essay, published on The Phoenix Architecture, argues against the popular \"SaaS is dead\" narrative (fueled by stories like Klarna replacing Salesforce and Gartner's estimate that $234 billion in enterprise app spending faces \"agentic arbitrage\" by 2030). The author contends that what generative AI actually threatens is not SaaS itself, but the assumption that ten thousand companies should use substantially the same application. The prediction: the next SaaS company may run one shared service underneath ten thousand different applications — \"mass-customized SaaS.\"\n\nThe core argument is historical and economic. Standardized enterprise software existed because variation was expensive: for decades, adapting the organization to the software was cheaper than adapting the software to the organization, and \"configure, don't customize\" was a coping strategy for costly code. As AI makes customer-specific software cheap to produce and reproduce, that bargain changes. The minimum viable market shrinks — software no longer needs a market to deserve to exist, potentially down to a single department or person — and \"more software may mean fewer software companies\" as firms generate bespoke internal tools that replace SaaS contracts.\n\nWhat survives, the author argues, is the substrate beneath the visible application: hosting, security, authoritative data, regulatory logic, trust, auditability, and operational accountability. The seat was never the value, so pricing shifts toward outcomes (employees processed, money moved, filings completed). Using Stewart Brand's pace layers, the proposed architecture is to standardize slow layers (identity, authoritative data, domain semantics, audit trails) while generating fast layers (workflows, interfaces, reports, agent behavior) — enabling \"customization without forks\" if durable artifacts like intent, policies, and evaluations can regenerate implementations. This also reframes build-vs-buy as a layer-by-layer decision: buy, share, generate, and regenerate at the right pace.\n\nThe main takeaway is a three-era framing of business software: bespoke (good fit, bad economics), standardized (scale at the cost of uniformity), and an emerging hybrid combining shared slow layers with bespoke fast layers, achieving economies of scale while restoring variation. The industry's defining question shifts from \"What application can ten thousand companies share?\" to \"What must ten thousand companies share so that everything else can safely be different?\" The author's advice to founders: ask what part of your product customers would still need to share if every one of them had a bespoke application tomorrow.",
+      "added": "2026-08-25",
       "times_shown": 0
     }
   ],
