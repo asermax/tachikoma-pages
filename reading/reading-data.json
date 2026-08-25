@@ -920,15 +920,6 @@
       "times_shown": 0
     },
     {
-      "slug": "the-asteroid-currently-hitting-frontend-web-development",
-      "title": "The asteroid currently hitting frontend web development",
-      "url": "https://nolanlawson.com/2026/08/23/the-asteroid-currently-hitting-frontend-web-development/",
-      "category": "ai",
-      "summary": "Nolan Lawson reflects on AI disrupting frontend development as a discipline and career: prominent educators (Rauschmayer, Alam-Naylor, Comeau) are bowing out while others pivot to AI. He posed his favorite Chrome trace brain-teaser (high Style Calculation, low Layout cost) to Claude Sonnet and got an admirable answer covering selector complexity, invalidation scope, and Selector Stats — he'd now just hand traces to Claude Code at work. Trends working against frontend expertise: frontend code is low-risk to hand to agents unsupervised; \"agent experience\" now beats developer experience (React dominates training weights, explaining Cursor/Viget migrations to React); and DX-oriented standards efforts will fade relative to capabilities and performance. Positive directions: educating agents on big-picture architecture (MPAs over default SPAs), making sites agent-readable (Vercel's is-agentic — ironically reinforcing server rendering, accessibility, page speed), and consulting on vibe-coded monstrosities where money and compliance are at stake. The asteroid (AI) has already hit; ignoring the crater is the worst form of denial.",
-      "added": "2026-08-24",
-      "times_shown": 0
-    },
-    {
       "slug": "the-worlds-left-to-conquer",
       "title": "The Worlds Left To Conquer",
       "url": "https://ludic.mataroa.blog/blog/the-worlds-left-to-conquer/",
@@ -2063,6 +2054,16 @@
       "url": "https://lalitm.com/post/find-problems-staff-engineer/",
       "category": "engineering",
       "summary": "In this post, Lalit Maganti (a Senior Staff engineer at Google, working on Perfetto) answers a mentee's question about how to find problems worth working on as a staff engineer. His core method is to \"act like a sponge\": rather than blocking out calendar time to \"think strategically,\" he listens to the stream of day-to-day conversations, absorbs the problems people complain about, and lets them sit in his mind until patterns and connections emerge. He notes this matters because the most impactful projects of his career were ones where he found and solved important problems his leaders didn't yet know existed. He caveats that his experience comes from infrastructure and developer-tools teams with strong bottom-up autonomy, which may not translate to more top-down environments.\n\nA key discipline is absorbing problems rather than requests. Users frequently ask for a specific solution instead of explaining their root issue, so the author keeps digging (\"If X existed, would it solve your problem?\"), sits with teams to watch their workflows, and even works through their bugs himself. He also seeks out people with a wider view of the organization — owners of critical systems and engineers spanning multiple teams — since they often have already spotted the same issue in several places. Just as important is letting problems accumulate rather than acting immediately: he has been burned building features for vocal teams that turned out to be low priority or stale requests, so he waits for problems to recur across teams or reveal a shared shape before treating them as important.\n\nOnce enough evidence piles up, the task is to find the \"common shape\" connecting the retained problems. A Perfetto example illustrates this: years of seemingly unrelated UI requests (pinning tracks, opening zoomed to a location, custom aggregations, bookmarklet workarounds) were all really a desire to personalize the tool without imposing choices on others — which became macros and extension servers now used by dozens of Google teams and other companies. But he warns that a common shape is only a hypothesis and \"elegance is not evidence,\" citing a caching-system design that had to be split into two when the unified solution proved wrong.\n\nBefore building, he pressure-tests ideas at a scale matching his confidence: shipping low-risk improvements directly, building throwaway prototypes to expose failure points, or committing fully to big ideas through RFCs, 1:1s, and talks. Sometimes the honest answer is to drop or park an idea, and he doesn't need to own the implementation himself — finding and shaping the right problem has impact regardless. The process is also self-reinforcing: solving useful problems earns trust and brings people to him earlier, widening his organizational view and letting him influence roadmaps without owning every project. His overall takeaway is that finding problems worth solving isn't separate from the job — it comes from staying engaged with people's work long enough to see what no single request can show you.",
+      "added": "2026-08-24",
+      "read": "2026-08-25",
+      "has_notes": true
+    },
+    {
+      "slug": "the-asteroid-currently-hitting-frontend-web-development",
+      "title": "The asteroid currently hitting frontend web development",
+      "url": "https://nolanlawson.com/2026/08/23/the-asteroid-currently-hitting-frontend-web-development/",
+      "category": "ai",
+      "summary": "Nolan Lawson reflects on AI disrupting frontend development as a discipline and career: prominent educators (Rauschmayer, Alam-Naylor, Comeau) are bowing out while others pivot to AI. He posed his favorite Chrome trace brain-teaser (high Style Calculation, low Layout cost) to Claude Sonnet and got an admirable answer covering selector complexity, invalidation scope, and Selector Stats — he'd now just hand traces to Claude Code at work. Trends working against frontend expertise: frontend code is low-risk to hand to agents unsupervised; \"agent experience\" now beats developer experience (React dominates training weights, explaining Cursor/Viget migrations to React); and DX-oriented standards efforts will fade relative to capabilities and performance. Positive directions: educating agents on big-picture architecture (MPAs over default SPAs), making sites agent-readable (Vercel's is-agentic — ironically reinforcing server rendering, accessibility, page speed), and consulting on vibe-coded monstrosities where money and compliance are at stake. The asteroid (AI) has already hit; ignoring the crater is the worst form of denial.",
       "added": "2026-08-24",
       "read": "2026-08-25",
       "has_notes": true
