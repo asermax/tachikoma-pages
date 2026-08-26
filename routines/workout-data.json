@@ -11,7 +11,7 @@
         {
           "name": "Chin-ups",
           "detail": null,
-          "sets": 3,
+          "sets": 2,
           "type": "reps",
           "target": "5",
           "unit": "",
@@ -20,7 +20,7 @@
         {
           "name": "Hanging knee raises",
           "detail": null,
-          "sets": 3,
+          "sets": 2,
           "type": "reps",
           "target": "12",
           "unit": "",
@@ -29,7 +29,7 @@
         {
           "name": "Knee push-ups",
           "detail": "diamond",
-          "sets": 3,
+          "sets": 2,
           "type": "reps",
           "target": "10",
           "unit": "",
@@ -38,7 +38,7 @@
         {
           "name": "Scapular pulls",
           "detail": null,
-          "sets": 3,
+          "sets": 2,
           "type": "reps",
           "target": "12",
           "unit": "",
