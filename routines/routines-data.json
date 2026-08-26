@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-25T02:01:12.013168-03:00",
+  "generated_at": "2026-08-26T02:01:11.167698-03:00",
   "week_start": "2026-08-23",
   "week_label": "August 23 - August 29, 2026",
-  "last_updated": "Tuesday, August 25, 2026 at 02:01",
+  "last_updated": "Wednesday, August 26, 2026 at 02:01",
   "stats": {
-    "completed": 2.0,
-    "planned": 5,
-    "display": "2 / 5"
+    "completed": 6.5,
+    "planned": 8,
+    "display": "6.5 / 8"
   },
   "daily": {
     "Sunday": {
@@ -15,14 +15,14 @@
       "total": 1
     },
     "Monday": {
-      "status": "partial",
-      "completed": 1,
+      "status": "done",
+      "completed": 3,
       "total": 3
     },
     "Tuesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "partial",
+      "completed": 2,
+      "total": 3
     },
     "Wednesday": {
       "status": "empty",
@@ -50,9 +50,9 @@
       "name": "Wind-Down Routine",
       "emoji": "",
       "status": "pending",
-      "accumulated": "0 ",
+      "accumulated": "1 nights",
       "target": "6 nights",
-      "progress_pct": 0
+      "progress_pct": 16
     }
   ],
   "routines": [
@@ -63,12 +63,12 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -112,7 +112,7 @@
         },
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Tue",
@@ -131,9 +131,9 @@
           "status": "pending"
         }
       ],
-      "metrics_total": "30min",
-      "comparison": "-30min",
-      "done": 1,
+      "metrics_total": "60min",
+      "comparison": "",
+      "done": 2,
       "total": 6
     },
     {
@@ -143,12 +143,12 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -158,7 +158,7 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Wed",
@@ -167,15 +167,15 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 2
     }
   ],
   "spirit": {
-    "state": "tired",
+    "state": "thriving",
     "emoji": "\ud83e\udd85",
     "title": "\ud83e\udd85 Andean Condor",
-    "image": "assets/tired.webp",
-    "description": "Your condor droops on the frost-covered ridge, grey fog and drizzle hanging heavy \u2014 weary wings, needing rest."
+    "image": "assets/thriving.webp",
+    "description": "Your condor spreads its wings wide atop the snowy peak, bright winter dawn streaming golden light \u2014 triumphant, regal, soaring high."
   }
 }
