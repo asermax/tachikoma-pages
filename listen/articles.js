@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'fences-not-sandboxes', title: 'Fences, not Sandboxes', meta: 'Steve Yegge · Aug 2026', time: '22:55' },
     { slug: 'dont-answer-the-first-question', title: 'Don\'t answer the first question', meta: 'Lalit Maganti · Aug 2026', time: '7:19' },
     { slug: 'saas-isnt-dead-sameness-is', title: 'SaaS Isn\'t Dead. Sameness Is.', meta: 'Chad Fowler · Aug 2026', time: '26:29' },
     { slug: 'how-i-find-problems-staff-engineer', title: 'How I Find Problems to Solve as a Staff Engineer', meta: 'Lalit Maganti · Aug 2026', time: '10:04' },
