@@ -954,6 +954,15 @@
       "summary": "Yegge, running a ~50-60 agent 'Wheelhouse' software factory on top-tier Claude models to build his game Wyvern, discovered his agents had spontaneously built an entire legal system — constitution, case law, courts, enforcement — to coordinate themselves via text. He argues that governing future superintelligent agents requires 'fences' (polite, policy-based refusals) rather than 'sandboxes' (containing walls), because models will follow clearly written laws and institutional rules. Capturing an organization's tribal knowledge into a mechanically provable rule-of-law system takes months or years and isn't transplantable between organizations, but it's the future every company with hundreds of AI employees must prepare for.",
       "added": "2026-08-26",
       "times_shown": 0
+    },
+    {
+      "slug": "the-end-of-programming",
+      "title": "The end of programming",
+      "url": "https://pauldix.com/the-end-of-programming",
+      "category": "ai",
+      "summary": "Paul Dix argues that \"programming\" — writing code manually and having humans review it line by line — is headed for extinction, driven by AI agents capable of producing working software at scale with humans reviewing only the end result. The catalyst is Bun 1.4's rewrite from Zig to Rust: a single developer directed a pre-release frontier model with an effectively unlimited token budget, producing over 1 million lines of Rust across 6,778 commits in 11 days (roughly $165,000 of API-priced tokens), then refined it with agents for months before shipping. Dix contends this demonstrates that with proper direction and verification systems, AI can build and harden highly complex software that \"just works.\"\n\nHe backs the claim with his own experiments building unshipped InfluxDB capabilities: an Iceberg integration completed in 14 hours of agent work, and an edge data replication system that reached a mostly working implementation in 28 hours and a running end-to-end deployment after a few more iterations. These aren't just faster prototypes: the AI-driven improvement, testing, and verification loops turn the prototype into production-quality software, replacing human code review with usage- and test-based hardening.\n\nHe frames staff at Anthropic and OpenAI as living in the near future: they ship dozens to hundreds of AI-generated PRs weekly, reviewing outcomes rather than lines, with unlimited frontier-model access the rest of the market sees roughly a year later. He expects new frontier releases (e.g., OpenAI's \"Astra\") crossing the same capability threshold within the year, with full-time affordability for most developers by end of next year and 10–100x faster token generation on the horizon.\n\nMain takeaway: although organizational inertia means hand-written, human-reviewed code will persist in many companies for another decade, the most productive software creators will direct AIs and build harnesses, software factories, and QA/verification systems — eventually yielding more production software written by AIs than by humans.",
+      "added": "2026-08-26",
+      "times_shown": 0
     }
   ],
   "archive": [
