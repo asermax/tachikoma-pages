@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'the-end-of-programming', title: 'The end of programming', meta: 'Paul Dix · Aug 2026', time: '11:48' },
     { slug: 'fences-not-sandboxes', title: 'Fences, not Sandboxes', meta: 'Steve Yegge · Aug 2026', time: '22:55' },
     { slug: 'dont-answer-the-first-question', title: 'Don\'t answer the first question', meta: 'Lalit Maganti · Aug 2026', time: '7:19' },
     { slug: 'saas-isnt-dead-sameness-is', title: 'SaaS Isn\'t Dead. Sameness Is.', meta: 'Chad Fowler · Aug 2026', time: '26:29' },
