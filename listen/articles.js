@@ -1,4 +1,6 @@
 const ARTICLES = [
+    { slug: 'breaking-claude-code-opus-5-and-automode', title: 'Breaking Claude Code Opus 5 Auto Mode', meta: 'Embrace The Red · Aug 2026', time: '17:26' },
+    { slug: 'making-your-data-ready-for-agentic-ai', title: 'Making Your Data Ready for Agentic AI', meta: 'Pramod Sadalage & Prem Chandrasekaran · Martin Fowler · Aug 2026', time: '63:42' },
     { slug: 'six-months-of-writing-code-exclusively-with-agents', title: 'Six Months of Writing Code Exclusively With Agents', meta: 'Maisem Ali · exe.dev blog · Aug 2026', time: '20:34' },
     { slug: 'the-end-of-programming', title: 'The end of programming', meta: 'Paul Dix · Aug 2026', time: '11:48' },
     { slug: 'fences-not-sandboxes', title: 'Fences, not Sandboxes', meta: 'Steve Yegge · Aug 2026', time: '22:55' },
