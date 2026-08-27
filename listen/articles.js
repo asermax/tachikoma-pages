@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'six-months-of-writing-code-exclusively-with-agents', title: 'Six Months of Writing Code Exclusively With Agents', meta: 'Maisem Ali · exe.dev blog · Aug 2026', time: '20:34' },
     { slug: 'the-end-of-programming', title: 'The end of programming', meta: 'Paul Dix · Aug 2026', time: '11:48' },
     { slug: 'fences-not-sandboxes', title: 'Fences, not Sandboxes', meta: 'Steve Yegge · Aug 2026', time: '22:55' },
     { slug: 'dont-answer-the-first-question', title: 'Don\'t answer the first question', meta: 'Lalit Maganti · Aug 2026', time: '7:19' },
