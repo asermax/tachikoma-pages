@@ -965,6 +965,15 @@
       "times_shown": 0
     },
     {
+      "slug": "breaking-claude-code-opus-5-and-automode",
+      "title": "Breaking Claude Code Opus 5 Auto Mode",
+      "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
+      "category": "ai",
+      "summary": "Embrace The Red demonstrates a targeted indirect prompt injection chain that hijacks Claude Code (Opus 5) in Auto Mode starting from a simple 'summarize this website' request, achieving remote code execution with a 60-80% attack success rate — in direct contrast to a third-party Anthropic-commissioned evaluation that reported 0.00% for the same setup. The attack nudges Claude from WebFetch to curl, downloads a ZIP archive, and exploits Claude's own safe refusal of a bundled binary: Claude writes its own Python decoder and runs it inside the extracted archive, where a malicious struct.py shadows the standard library and executes obfuscated code, eventually establishing C2. Auto Mode allowed the malicious process creation but sometimes blocked Claude's subsequent cleanup, and Anthropic closed the disclosure as 'Informative' — Auto Mode is a convenience feature backed by a best-effort classifier, not a security boundary. Takeaway: the '0.00%' benchmark messaging is misleading for unseen targeted chains; Auto Mode is no substitute for isolated environments, restricted network egress, and active monitoring.",
+      "added": "2026-08-27",
+      "times_shown": 0
+    },
+    {
       "slug": "making-your-data-ready-for-agentic-ai",
       "title": "Making Your Data Ready for Agentic AI",
       "url": "https://martinfowler.com/articles/making-data-ready-for-agentic-ai.html",
