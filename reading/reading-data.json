@@ -965,6 +965,15 @@
       "times_shown": 0
     },
     {
+      "slug": "making-your-data-ready-for-agentic-ai",
+      "title": "Making Your Data Ready for Agentic AI",
+      "url": "https://martinfowler.com/articles/making-data-ready-for-agentic-ai.html",
+      "category": "ai",
+      "summary": "Pramod Sadalage and Prem Chandrasekaran argue that data architecture built for human analysts won't work for autonomous agents — agents lack the implicit context and skepticism humans use to work around bad data, so they confidently act on whatever they receive. They define five attributes of AI-ready data (trusted, contextual, traceable, governed, operational) mapped to a bottom-up stack: data contracts with freshness SLAs and quarantine gates; agentic lineage and staged autonomy for auditability; a context layer combining domain, semantic, and capability models so agents use governed definitions instead of guessing; and a tiered access spectrum (retrieval → real-time query → write-back) exposed through well-designed capabilities. Key takeaways: instrument observability from day one, treat data and definitions as version-controlled products, prioritize the context layer (a semantic layer lifted text-to-SQL accuracy from under 20% to over 92% on the same model) — when agents become the primary data consumers, your data architecture becomes your AI architecture.",
+      "added": "2026-08-27",
+      "times_shown": 0
+    },
+    {
       "slug": "six-months-of-writing-code-exclusively-with-agents",
       "title": "Six Months of Writing Code Exclusively With Agents",
       "url": "https://blog.exe.dev/engineering-with-ai",
