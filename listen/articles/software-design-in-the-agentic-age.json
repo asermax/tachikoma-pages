@@ -1,24 +1,87 @@
 {
   "title": "Software Design in the Agentic Age: Place Your Bets",
-  "meta": "Mathias Verraes · July 2026",
-  "body": "<div class=\"chunk\"><h1>Software Design in the Agentic Age: Place Your Bets</h1>\n</div>\n<div class=\"chunk\"><p>An evaluation of the role of software design in retrospect of Thoughtworks' Future of Software Engineering retreat.</p>\n</div>\n<div class=\"chunk\"><p>By Mathias Verraes, Published July 2, 2026</p>\n</div>\n<div class=\"chunk\"><p>This week, I participated in Thoughtworks' Future of Software Engineering retreat in Engelberg, Switzerland. It was an invite-only event with about 60 industry leaders, hosted by Martin Fowler. The event used an open space format, where all sessions had the form of group debates, mostly focused on agentic development. Here are some of my observations on the changing role of software design.</p>\n</div>\n<div class=\"chunk\"><p>The participants' styles ranged from humans programming with small changes delegated to the LLM, through LLM pair programming, automated generation with human verification, automated generation with automated verification, to full dark factory pipelines. Regardless of style, many agreed on the value of harness engineering as a way to guarantee outcomes.</p>\n</div>\n<div class=\"chunk\"><p>A recurring question was how much we should still care about software design at the granularity of code. I can roughly group the participants' opinions into two opposing arguments:</p>\n</div>\n<div class=\"chunk\"><p>First, these concerns exist for human readability and understandability of the code, and impact the cost of change. Agents significantly lower the cost of change, and have no need for such design principles.</p>\n</div>\n<div class=\"chunk\"><p>Second, agents benefit from well-structured and well-designed code.</p>\n</div>\n<div class=\"chunk\"><p>The people in the second camp offered some compelling arguments. LLMs have been trained on human languages, and have some limitations that are similar to human programmers. Clarity matters as much to LLMs as to us. As with humans, code quality doesn't matter much on short-lived projects, but has a huge impact on the long term maintainability and changeability of the code. LLMs context windows are limited, and more accidental complexity in the code increases the context. Complexity increases the token cost. Humans may need to debug the code when the LLM can't, and good design will be crucial. And perhaps the most interesting observation: LLMs reinforce bad code. They mimic the style and patterns of the existing code when generating new code.</p>\n</div>\n<div class=\"chunk\"><p>So my money is on code design quality: if camp one is wrong, they will have to catch up on quality. If camp two is wrong, they can easily remove their quality infrastructure at low cost. If camp two is right, they will save money and have a major advantage.</p>\n</div>\n<div class=\"chunk\"><p>The good news is that agentic code quality seems to be working well with a multi-pipeline approach: generate code in one pipeline and verify whether it works. In a second pipeline, do static analysis with strict settings. Feed code smells to a third pipeline where an agent assesses whether the fix is worth it. Then a final pipeline refactors the offending code with atomic commits.</p>\n</div>\n<div class=\"chunk\"><p>For high level design, the essential qualities remain: a clear domain model, a well-defined Ubiquitous Language, Bounded Contexts, and a continuous process of updating language and models as the domain evolves.</p>\n</div>\n<div class=\"chunk\"><p>One of the most divisive questions was whether code is still ground truth. One camp treats code as the single source of truth. The other treats specifications as the single source of truth, where software engineering becomes specification engineering.</p>\n</div>\n<div class=\"chunk\"><p>My bets: low level code quality is likely still important but automatable. High level software design remains human territory with AI assists. The focus shifts away from code to domain models and specifications. Rigour and engineering practices remain crucial. And we should hedge against the risk of AI dependency by building systems that are well-documented enough to revert to human engineering if needed.</p>\n</div>\n",
+  "meta": "Mathias Verraes · Jul 2026 · ~14 min listen",
+  "body": "<div class=\"chunk\"><p><strong>Summary</strong></p></div>\n<div class=\"chunk\"><ul>\n<li>Code quality is likely still important, but is automatable.</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>High level software design remains human territory with AI assists.</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>Focus shifts away from code to domain models and specifications.</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>Specifications could replace code as the single source of truth.</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>Rigour and engineering practices remain crucial.</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>Hedge against AI’s risks by building systems that can revert to human engineering.</li>\n</ul></div>\n<div class=\"chunk\"><p><em>This week, I participated in Thoughtworks’ Future of Software Engineering retreat in Engelberg, Switzerland. It was an invite-only event with about 60 industry leaders, hosted by Martin Fowler. The event used an open space format, where all sessions had the form of group debates, mostly focused on agentic development. Here are some of my observations on the changing role of software design.</em></p></div>\n<div class=\"chunk\"><h3>The retreat’s participants</h3></div>\n<div class=\"chunk\"><p>The participants had widely varied backgrounds, and their use of agentic development was equally varied. Some were using it for small projects and proofs of concept, others for parts of their production environment, and a few were using it on mission-critical systems and highly regulated environments.</p></div>\n<div class=\"chunk\"><p>The participants’ styles ranged from humans programming with small changes delegated to the LLM, through LLM pair programming, automated generation with human verification, automated generation with automated verification, to full dark factory pipelines. (In manufacturing, a dark factory is a fully automated facility where humans are not allowed). In this style, human oversight is almost exclusively limited to improving the quality of the pipelines. Regardless of style, many agreed on the value of harness engineering as a way to guarantee outcomes.</p></div>\n<div class=\"chunk\"><h3>Low level code quality</h3></div>\n<div class=\"chunk\"><p>A recurring question was how much we should still care about software design at the granularity of code. These are concerns such as naming, code duplication, dead code, mixing responsibilities, modularity, coupling, and cohesion. I can roughly group the participants’ opinions into two opposing arguments:</p></div>\n<div class=\"chunk\"><ul>\n<li>These concerns exist for human readability and understandability of the code, and impact the cost of change. Agents significantly lower the cost of change, and have no need for such design principles.</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>Agents benefit from well-structured and well-designed code.</li>\n</ul></div>\n<div class=\"chunk\"><p>The people in the second camp offered some compelling arguments.</p></div>\n<div class=\"chunk\"><ul>\n<li>LLMs have been trained on human languages, and have some limitations that are similar to human programmers. Clarity matters as much to LLMs as to us.</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>As with humans, code quality doesn’t matter much on short-lived projects, but has a huge impact on the long term maintainability and changeability of the code. Camp 1 is therefore not looking far enough ahead.</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>LLMs’ context windows are limited. More accidental complexity in the code increases the context.</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>Complexity increases the token cost.</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>Humans may need to debug the code when the LLM can’t. The humans will be unfamiliar with the code, so good design will be crucial.</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>And perhaps the most interesting observation: LLMs reinforce bad code. They mimic the style and patterns of the existing code when generating new code.</li>\n</ul></div>\n<div class=\"chunk\"><p>I want to make a speculative side argument here: As we improve the quality of generated code, the number of production issues should go down in relative terms. However, the amount of production code will increase exponentially, and the issues will go up in absolute terms. The issues that are easily solvable could be solved with agents. What’s left for the humans will be the most complex issues with the most dramatic outcomes. (See <a href=\"https://en.wikipedia.org/wiki/Ironies_of_Automation\" target=\"_blank\" rel=\"noopener\">Bainbridge’s Ironies of Automation</a>)</p></div>\n<div class=\"chunk\"><p>So my money is on code design quality:</p></div>\n<div class=\"chunk\"><ul>\n<li>If camp 1 is wrong, they will have to catch up on quality, and will need to spend a lot to repair their existing code.</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>If camp 2 is wrong, they can easily remove their quality infrastructure at low cost.</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>If camp 1 is right, they will have saved money but won’t have anything else in terms of competitive advantage compared to camp 2.</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>If camp 2 is right, they will save money and they will have a major advantage.</li>\n</ul></div>\n<div class=\"chunk\"><h3>Achieving code quality</h3></div>\n<div class=\"chunk\"><p>The good news is that people seemed to feel that agentic code quality was working well. This seems to be a great setup:</p></div>\n<div class=\"chunk\"><ul>\n<li>Generate code in one pipeline, and verify only whether it works. Commit these changes atomically.</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>In a second pipeline, do static analysis on the code, using traditional deterministic tools. Configure them to their most strict settings, even if that produces false positives.</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>Feed each code smell from the second pipeline to a third pipeline. An agent assesses whether the recommendation is valid, and whether it is worth fixing.</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>The final pipeline refactors the offending code, one smell at a time, and does atomic commits for each fix.</li>\n</ul></div>\n<div class=\"chunk\"><p>Agentic refactoring seems to have the same constraint as human refactoring: you need high test coverage to ensure that each refactor changes only the form of the system, and not its behaviour. The driver for these multiple pipelines is that generating high quality code in one step is harder than splitting up the process. (Newer models seem better optimised for code quality, so perhaps this is a temporary constraint.) Note that the process resembles TDD: write a working implementation, and only then refactor. Or in the words of the late great Joe Armstrong: <em>“Make it work, then make it beautiful, then if you really, really have to, make it fast. Ninety percent of the time, if you make it beautiful, it will already be fast. So really, just make it beautiful!”</em></p></div>\n<div class=\"chunk\"><h3>High level software design</h3></div>\n<div class=\"chunk\"><p>If code quality is automatable, what about the high level design? <a href=\"https://verraes.net/2021/09/what-is-domain-driven-design-ddd/\" target=\"_blank\" rel=\"noopener\">These are some of the essential qualities in non-trivial, critical systems</a>:</p></div>\n<div class=\"chunk\"><ul>\n<li>A clear domain model, expressed in all the artefacts including the code, the tests, the documentation, the user interface, and the conversations between business stakeholders and engineers</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>An unambiguous, well-defined, and agreed-upon Ubiquitous Language, inspired by the domain language, that captures all concepts, jargon, and <a href=\"https://verraes.net/2021/12/models-and-metaphors/\" target=\"_blank\" rel=\"noopener\">metaphors</a>.</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>Bounded Contexts that put a boundary around the language and model, while <a href=\"https://verraes.net/2025/08/domain-and-bounded-contexts-dont-map-one-on-one/\" target=\"_blank\" rel=\"noopener\">pragmatically serving the needs of the system designers.</a></li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>A continuous process of updating language, models, and boundaries, as the domain evolves and our insight into the domain improves.</li>\n</ul></div>\n<div class=\"chunk\"><p>Let’s work our way through these backwards.</p></div>\n<div class=\"chunk\"><p>It’s fairly self-evident to me that organisations will always want evolvability, as it’s essential to being competitive. Model drift is the growing distance between the (mental and documented) domain models, and how the code actually works. This increases the cognitive load on engineers significantly and increases the cost of change. Obviously, there isn’t much data on long term evolvability with agentic development, as the LLM space is young and changing rapidly.</p></div>\n<div class=\"chunk\"><p>Bounded Contexts seem useful for the same reason as the modularity argument before: a smaller scope means a smaller context window and a smaller token cost. With a documented definition of that scope, agents can be instructed to warn when a feature request violates the scope.</p></div>\n<div class=\"chunk\"><p>Defining boundaries remains an art: too large and it becomes hard to make changes; too small and all changes affect multiple Bounded Contexts simultaneously. Not coincidentally, the art of defining Bounded Contexts depends heavily on the quality of your modelling and the design of your Ubiquitous Language.</p></div>\n<div class=\"chunk\"><p>But does language matter? Again there’s the argument that the machine doesn’t care. All names in your code could be random IDs, and it wouldn’t affect the compiler, and perhaps it wouldn’t affect the LLM either. But the argument in favour is that language is not just for code and agents. Human conversation, specifications, diagrams, user interfaces, APIs, and MCPs all need to share that language. Some people at the event argued that we could create programming languages and inter-agent interfacing languages that are not human readable. The counterargument is that LLMs are trained on massive amounts of human language, and there is not enough training data for these hypothetical new languages. LLMs simulate human reasoning.</p></div>\n<div class=\"chunk\"><p>Do we still need domain models? In my own experiments, feeding the agent a domain model first, before oneshotting an application, yielded much better results than just prompting my requirements. Without a model, the agent regularly made dubious choices for the code structure and database schemas. The code worked, but was harder for me to understand, and decreased the database performance. Participants at the event reported that they iterated over domain models with an agent, and only instructed it to write code after these had been settled. Some would build a mix of text descriptions and text-based diagrams (using tools like PlantUML, Mermaid…) and feed these to the agent.</p></div>\n<div class=\"chunk\"><p>Formal modelling is on the rise as well: it has long been a small niche in software engineering, as it has a steeper learning curve, but agents can create and explain these models for us, and then use them to verify their outputs.</p></div>\n<div class=\"chunk\"><h3>Specifications or code?</h3></div>\n<div class=\"chunk\"><p>One of the most divisive questions at the event was whether code is still ground truth. Again I can roughly separate two camps:</p></div>\n<div class=\"chunk\"><ul>\n<li>Treat the code as the single source of truth. Iterate over code with atomic changes. Verify it using agents as well as traditional methods like code reviews, automated tests, acceptance tests.</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>Specifications are the single source of truth. The code is not for humans anymore. Iterate over specifications instead, and verify whether the application satisfies them.</li>\n</ul></div>\n<div class=\"chunk\"><p>The first camp keeps the way software engineering has been done for decades, and extends it with agents. The second camp represents a radical shift. Software engineering becomes specification engineering.</p></div>\n<div class=\"chunk\"><p>Participants reported different styles of doing specification engineering. Many used agents in some way to assist writing specifications, but there was a split over whether the specifications are only text, only executable specifications, or a mix (which undermines the goal of having a single source of truth). In any case, the quality and rigour of the specifications is critical.</p></div>\n<div class=\"chunk\"><p>An interesting question then is whether the code becomes disposable. Some people would iterate on the specifications and have the agent patch the code (and then perhaps use automated code quality pipelines like I described above). Others would iterate over the specifications and the code, and then throw the code away as soon as the agent had trouble patching it. Then they would simply regenerate the code from the latest specifications. The debate was about whether throwing away code made the whole thing less deterministic, and whether the token cost of frequent regeneration was higher or lower than the cost of patching code.</p></div>\n<div class=\"chunk\"><h3>Placing your bets</h3></div>\n<div class=\"chunk\"><p>As a long-time advocate of automated tests, I feel a strong attraction to Spec-Driven Development with executable specs. I’m an engineer and I like deterministic systems, and if we let non-deterministic agents loose on our code, at least the verification of the code should predictably find faults. The specifications need to be (sufficiently) human readable so we can verify them. And therefore they need clear language, models, and boundaries, whether the LLM cares about those or not. I’m less convinced that we can throw away the code and regenerate it at will. It seems that regeneration not only has its own cost, but it could also increase the cost of verifying functional and non-functional requirements (such as security and performance) of each regeneration. I’m also not sure whether investing in low level code quality will matter much in its own right, apart from token cost. Still, I’ll bet on it, for the reasons below.</p></div>\n<div class=\"chunk\"><p>People running dark factories reported that presently, these are very hard to set up and require highly skilled engineers and an established high-quality engineering culture. Someone expressed the concern that many organisations will want to set up dark factories without having these skills and culture, and risk high costs or even major accidents. (I’ve often made a similar argument about Domain-Driven Design. If you have no tests, code quality, agility, engineering process, and communication channels with the domain experts, slapping DDD onto it will not give you all it promises. But even bad DDD is not as risky as pushing unverified code to production.) Make sure you cover your fundamentals of quality and design first. As one participant, <a href=\"https://intertwingly.net/blog/2026/07/01/What-Survived-Contact.html\" target=\"_blank\" rel=\"noopener\">Sam Ruby, wrote about the event</a>: “<em>rigor doesn’t vanish when the agent writes the code — it migrates. Upstream into specifications, down into test suites treated as first-class artifacts, into type systems and constraints, into tiering code by how much damage a mistake could do.”</em></p></div>\n<div class=\"chunk\"><p>But there’s another reason why I would stick to building systems that have high test coverage, sound models and boundaries, and great code quality. The externalities of AI are huge:</p></div>\n<div class=\"chunk\"><ul>\n<li>threatening demands on energy and water;</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>data centres also impact communities through noise, air pollution, and land usage;</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>the <a href=\"https://en.wikipedia.org/wiki/Empire_of_AI\" target=\"_blank\" rel=\"noopener\">exploitation of labour</a> in developing countries to train AI;</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>worries of declining cognition and critical thinking skills in frequent AI users;</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>AI companies burning funds that they will need to recoup somehow;</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>the risk of an economic bubble imploding.</li>\n</ul></div>\n<div class=\"chunk\"><p>AI may become too expensive for all but the wealthiest companies, and even if that doesn’t happen, these are valid arguments for regulating AI. I want to be able to revert from agentic code generation to human engineering, and I want to set up my systems in ways that make this easy. There’s no reason why all technology should progress forward, and we may finally meet its limits.</p></div>\n<div class=\"chunk\"><p>I’d like to thank Thoughtworks for the invitation. I deeply enjoyed debating AI in terms of engineering, design, ethics, and philosophy, with an exceptional and fun group of experts.</p></div>\n<div class=\"chunk\"><p><em>(No AI was used for writing this article, only for improving readability and identifying issues with the content.)</em></p></div>\n",
   "audio": "software-design-in-the-agentic-age.ogg",
   "sync": {
     "timestamps": [
       0.0,
-      16.147,
-      40.075,
-      64.362,
-      94.89,
-      141.697,
-      159.625,
-      184.672,
-      215.519
+      1.35,
+      5.45,
+      10.45,
+      15.2,
+      19.55,
+      23.0,
+      28.7,
+      49.75,
+      51.825,
+      69.55,
+      99.475,
+      101.5,
+      120.8,
+      133.85,
+      137.625,
+      141.7,
+      152.7,
+      166.325,
+      173.875,
+      176.725,
+      185.825,
+      196.725,
+      219.05,
+      221.8,
+      229.375,
+      235.375,
+      243.525,
+      248.35,
+      250.325,
+      258.075,
+      264.95,
+      276.8,
+      286.65,
+      293.925,
+      334.175,
+      336.325,
+      345.75,
+      357.925,
+      368.35,
+      376.5,
+      385.525,
+      388.15,
+      411.2,
+      428.975,
+      448.1,
+      488.5,
+      526.65,
+      541.1,
+      543.275,
+      551.7,
+      565.2,
+      576.925,
+      590.175,
+      611.175,
+      644.325,
+      645.875,
+      690.375,
+      745.45,
+      757.275,
+      759.95,
+      765.6,
+      770.25,
+      776.0,
+      780.3,
+      783.2,
+      803.525,
+      815.45
     ],
     "chunkMap": [
       [
-        0,
-        1,
+        0
+      ],
+      [
+        1
+      ],
+      [
         2
       ],
       [
@@ -28,8 +91,12 @@
         4
       ],
       [
-        5,
-        6,
+        5
+      ],
+      [
+        6
+      ],
+      [
         7
       ],
       [
@@ -42,11 +109,175 @@
         10
       ],
       [
-        11,
+        11
+      ],
+      [
         12
       ],
       [
         13
+      ],
+      [
+        14
+      ],
+      [
+        15
+      ],
+      [
+        16
+      ],
+      [
+        17
+      ],
+      [
+        18
+      ],
+      [
+        19
+      ],
+      [
+        20
+      ],
+      [
+        21
+      ],
+      [
+        22
+      ],
+      [
+        23
+      ],
+      [
+        24
+      ],
+      [
+        25
+      ],
+      [
+        26
+      ],
+      [
+        27
+      ],
+      [
+        28
+      ],
+      [
+        29
+      ],
+      [
+        30
+      ],
+      [
+        31
+      ],
+      [
+        32
+      ],
+      [
+        33
+      ],
+      [
+        34
+      ],
+      [
+        35
+      ],
+      [
+        36
+      ],
+      [
+        37
+      ],
+      [
+        38
+      ],
+      [
+        39
+      ],
+      [
+        40
+      ],
+      [
+        41
+      ],
+      [
+        42
+      ],
+      [
+        43
+      ],
+      [
+        44
+      ],
+      [
+        45
+      ],
+      [
+        46
+      ],
+      [
+        47
+      ],
+      [
+        48
+      ],
+      [
+        49
+      ],
+      [
+        50
+      ],
+      [
+        51
+      ],
+      [
+        52
+      ],
+      [
+        53
+      ],
+      [
+        54
+      ],
+      [
+        55
+      ],
+      [
+        56
+      ],
+      [
+        57
+      ],
+      [
+        58
+      ],
+      [
+        59
+      ],
+      [
+        60
+      ],
+      [
+        61
+      ],
+      [
+        62
+      ],
+      [
+        63
+      ],
+      [
+        64
+      ],
+      [
+        65
+      ],
+      [
+        66
+      ],
+      [
+        67
       ]
     ],
     "prefixOffset": 0

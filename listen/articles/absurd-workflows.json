@@ -1,7 +1,114 @@
 {
   "title": "Absurd Workflows: Durable Execution With Just Postgres",
-  "meta": "Armin Ronacher · November 2025 · ~7 min listen",
-  "body": "<div class=\"chunk\"><p>It's probably no surprise to you that we're building agents somewhere. Everybody does it. Building a good agent, however, brings back some of the historic challenges involving durable execution.</p>\n</div>\n<div class=\"chunk\"><p>Entirely unsurprisingly, a lot of people are now building durable execution systems. Many of these, however, are incredibly complex and require you to sign up for another third-party service. I generally try to avoid bringing in extra complexity if I can avoid it, so I wanted to see how far I can go with just Postgres. To this end, I wrote Absurd, a tiny SQL-only library with a very thin SDK to enable durable workflows on top of just Postgres — no extension needed.</p>\n</div>\n<div class=\"chunk\"><p>Durable execution, or durable workflows, is a way to run long-lived, reliable functions that can survive crashes, restarts, and network failures without losing state or duplicating work. Durable execution can be thought of as the combination of a queue system and a state store that remembers the most recently seen execution state.</p>\n</div>\n<div class=\"chunk\"><p>Because Postgres is excellent at queues thanks to SELECT FOR UPDATE SKIP LOCKED, you can use it for the queue. And because it's a database, you can also use it to store the state.</p>\n</div>\n<div class=\"chunk\"><p>The state is important. With durable execution, instead of running your logic in memory, the goal is to decompose a task into smaller pieces, step functions, and record every step and decision. When the process stops, whether it fails, intentionally suspends, or a machine dies, the engine can replay those events to restore the exact state and continue where it left off, as if nothing happened.</p>\n</div>\n<div class=\"chunk\"><p>Absurd at the core is a single SQL file which needs to be applied to a database of your choice. That SQL file's goal is to move the complexity of SDKs into the database. SDKs then make the system convenient by abstracting the low-level operations in a way that leverages the ergonomics of the language you are working with.</p>\n</div>\n<div class=\"chunk\"><p>The system is very simple. A task dispatches onto a given queue from where a worker picks it up to work on. Tasks are subdivided into steps, which are executed in sequence by the worker. Tasks can be suspended or fail, and when that happens, they execute again, a run. The result of a step is stored in the database, a checkpoint. To avoid repeating work, checkpoints are automatically loaded from the state storage in Postgres again.</p>\n</div>\n<div class=\"chunk\"><p>Additionally, tasks can sleep or suspend for events and wait until they are emitted. Events are cached, which means they are race-free.</p>\n</div>\n<div class=\"chunk\"><p>What is the relationship of agents with workflows? Normally, workflows are DAGs defined by a human ahead of time. AI agents, on the other hand, define their own adventure as they go. That means they are basically a workflow with mostly a single step that iterates over changing state until it determines that it has completed. Absurd enables this by automatically counting up steps if they are repeated.</p>\n</div>\n<div class=\"chunk\"><p>This defines a single task, and it has just a single step. The return value is the changed state, but the current state is passed in as an argument. Every time the step function is executed, the data is looked up first from the checkpoint store. The first checkpoint will be iteration, the second iteration number 2, iteration number 3, and so on. Each state only stores the new messages it generated, not the entire message history.</p>\n</div>\n<div class=\"chunk\"><p>If a step fails, the task fails and will be retried. And because of checkpoint storage, if you crash in step 5, the first 4 steps will be loaded automatically from the store. Steps are never retried, only tasks.</p>\n</div>\n<div class=\"chunk\"><p>And like Temporal and other solutions, you can yield if you want. If you want to come back to a problem in 7 days, you can do so with a sleep call. Or if you want to wait for an event, you can wait for an event with a timeout. Which someone else can emit.</p>\n</div>\n<div class=\"chunk\"><p>Really, that's it. There is really not much to it. It's just a queue and a state store. That's all you need. There is no compiler plugin and no separate service or whole runtime integration. Just Postgres. That's not to throw shade on these other solutions; they are great. But not every problem necessarily needs to scale to that level of complexity, and you can get quite far with much less. Particularly if you want to build software that other people should be able to self-host, that might be quite appealing.</p>\n</div>\n",
+  "meta": "Armin Ronacher · Nov 2025 · ~7 min listen",
+  "body": "<div class=\"chunk image-chunk\"><img src=\"images/absurd-workflows/image-1.webp\" alt=\"\" loading=\"lazy\" /></div>\n<div class=\"chunk\"><p>written on November 03, 2025</p></div>\n<div class=\"chunk\"><p>It’s probably no surprise to you that we’re building <a href=\"https://www.anthropic.com/engineering/building-effective-agents\" target=\"_blank\" rel=\"noopener\">agents</a> somewhere.  Everybody does it.  Building a good agent, however, brings back some of the historic challenges involving durable execution.</p></div>\n<div class=\"chunk\"><p>Entirely unsurprisingly, a lot of people are now building durable execution systems.  Many of these, however, are incredibly complex and require you to sign up for another third-party service.  I generally try to avoid bringing in extra complexity if I can avoid it, so I wanted to see how far I can go with just Postgres.  To this end, I wrote <a href=\"https://github.com/earendil-works/absurd\" target=\"_blank\" rel=\"noopener\">Absurd</a>  1, a tiny SQL-only library with a very thin SDK to enable durable workflows on top of just Postgres — no extension needed.</p></div>\n<div class=\"chunk\"><p>Durable execution (or durable workflows) is a way to run long-lived, reliable functions that can survive crashes, restarts, and network failures without losing state or duplicating work. Durable execution can be thought of as the combination of a queue system and a state store that remembers the most recently seen execution state.</p></div>\n<div class=\"chunk\"><p>Because Postgres <a href=\"https://web.archive.org/web/20190530143429/https://www.2ndquadrant.com/en/blog/what-is-select-skip-locked-for-in-postgresql-9-5/\" target=\"_blank\" rel=\"noopener\">is excellent at queues</a> thanks to <code>SELECT ... FOR UPDATE SKIP LOCKED</code>, you can use it for the queue (e.g., with <a href=\"https://github.com/pgmq/pgmq\" target=\"_blank\" rel=\"noopener\">pgmq</a>).  And because it’s a database, you can also use it to store the state.</p></div>\n<div class=\"chunk\"><p>The state is important. With durable execution, instead of running your logic in memory, the goal is to decompose a task into smaller pieces (step functions) and record every step and decision. When the process stops (whether it fails, intentionally suspends, or a machine dies) the engine can replay those events to restore the exact state and continue where it left off, as if nothing happened.</p></div>\n<div class=\"chunk\"><p>Absurd at the core is a single <code>.sql</code> file (<a href=\"https://github.com/earendil-works/absurd/blob/main/sql/absurd.sql\" target=\"_blank\" rel=\"noopener\"> absurd.sql</a>) which needs to be applied to a database of your choice.  That SQL file’s goal is to move the complexity of SDKs into the database.  SDKs then make the system convenient by abstracting the low-level operations in a way that leverages the ergonomics of the language you are working with.</p></div>\n<div class=\"chunk\"><p>The system is very simple: A <em>task</em> dispatches onto a given <em>queue</em> from where a <em>worker</em> picks it up to work on.  Tasks are subdivided into <em>steps</em>, which are executed in sequence by the worker.  Tasks can be suspended or fail, and when that happens, they execute again (a <em>run</em>).  The result of a step is stored in the database (a <em>checkpoint</em>).  To avoid repeating work, checkpoints are automatically loaded from the state storage in Postgres again.</p></div>\n<div class=\"chunk\"><p>Additionally, tasks can <em>sleep</em> or <em>suspend for events</em> and wait until they are emitted.  Events are cached, which means they are race-free.</p></div>\n<div class=\"chunk\"><p>What is the relationship of agents with workflows? Normally, workflows are DAGs defined by a human ahead of time. AI agents, on the other hand, define their own adventure as they go. That means they are basically a workflow with mostly a single step that iterates over changing state until it determines that it has completed. Absurd enables this by automatically counting up steps if they are repeated:</p></div>\n<div class=\"chunk\"><pre><code>absurd.registerTask({name: &quot;my-agent&quot;}, async (params, ctx) =&gt; {\n  let messages = [{role: &quot;user&quot;, content: params.prompt}];\n  let step = 0;\n  while (step++ &lt; 20) {\n    const { newMessages, finishReason } = await ctx.step(&quot;iteration&quot;, async () =&gt; {\n      return await singleStep(messages);\n    });\n    messages.push(...newMessages);\n    if (finishReason !== &quot;tool-calls&quot;) {\n      break;\n    }\n  }\n});\n</code></pre></div>\n<div class=\"chunk\"><p>This defines a single task named <code>my-agent</code>, and it has just a single step.  The return value is the changed state, but the current state is passed in as an argument.  Every time the step function is executed, the data is looked up first from the checkpoint store.  The first checkpoint will be <code>iteration</code>, the second <code>iteration#2</code>, <code>iteration#3</code>, etc.  Each state only stores the new messages it generated, not the entire message history.</p></div>\n<div class=\"chunk\"><p>If a step fails, the task fails and will be retried. And because of checkpoint storage, if you crash in step 5, the first 4 steps will be loaded automatically from the store. Steps are never retried, only tasks.</p></div>\n<div class=\"chunk\"><p>How do you kick it off? Simply enqueue it:</p></div>\n<div class=\"chunk\"><p>await absurd.spawn(&quot;my-agent&quot;, { prompt: &quot;What's the weather like in Boston?&quot; }, { maxAttempts: 3, });</p></div>\n<div class=\"chunk\"><p>And if you are curious, this is an example implementation of the <code>singleStep</code> function used above:</p></div>\n<div class=\"chunk\"><p>async function singleStep(messages) { const result = await generateText({ model: anthropic(&quot;claude-haiku-4-5&quot;), system: &quot;You are a helpful agent&quot;, messages, tools: { getWeather: { /* tool definition here <em>/ } }, }); const newMessages = (await result.response).messages; const finishReason = await result.finishReason; if (finishReason === &quot;tool-calls&quot;) { const toolResults = []; for (const toolCall of result.toolCalls) { /</em> handle tool calls here */ if (toolCall.toolName === &quot;getWeather&quot;) { const toolOutput = await getWeather(toolCall.input); toolResults.push({ toolName: toolCall.toolName, toolCallId: toolCall.toolCallId, type: &quot;tool-result&quot;, output: {type: &quot;text&quot;, value: toolOutput}, }); } } newMessages.push({ role: &quot;tool&quot;, content: toolResults }); } return { newMessages, finishReason }; }</p></div>\n<div class=\"chunk\"><p>And like Temporal and other solutions, you can yield if you want. If you want to come back to a problem in 7 days, you can do so:</p></div>\n<div class=\"chunk\"><p>await ctx.sleep(60 * 60 * 24 * 7); // sleep for 7 days</p></div>\n<div class=\"chunk\"><p>Or if you want to wait for an event:</p></div>\n<div class=\"chunk\"><pre><code>const eventName = `email-confirmation-${userId}`;\ntry {\n  const payload = await ctx.waitForEvent(eventName, {timeout: 60 * 5});\n  // handle event payload\n} catch (e) {\n  if (e instanceof TimeoutError) {\n    // handle timeout\n  } else {\n    throw e;\n  }\n}\n</code></pre></div>\n<div class=\"chunk\"><p>Which someone else can emit:</p></div>\n<div class=\"chunk\"><p>const eventName = <code>email-confirmation-${userId}</code>; await absurd.emitEvent(eventName, { confirmedAt: new Date().toISOString() });</p></div>\n<div class=\"chunk\"><p>Really, that’s it.  There is really not much to it.  It’s just a queue and a state store — that’s all you need.  There is <a href=\"https://useworkflow.dev/\" target=\"_blank\" rel=\"noopener\">no compiler plugin</a> and no <a href=\"https://www.inngest.com/\" target=\"_blank\" rel=\"noopener\">separate service</a> or <a href=\"https://temporal.io/\" target=\"_blank\" rel=\"noopener\">whole runtime integration</a>.  Just Postgres.  That’s not to throw shade on these other solutions; they are great.  But not every problem necessarily needs to scale to that level of complexity, and you can get quite far with much less.  Particularly if you want to build software that other people should be able to self-host, that might be quite appealing.</p></div>\n",
   "audio": "absurd-workflows.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      16.5,
+      20.125,
+      32.475,
+      65.3,
+      88.025,
+      101.625,
+      126.8,
+      150.025,
+      176.9,
+      185.95,
+      211.65,
+      223.125,
+      251.075,
+      265.9,
+      268.975,
+      276.2,
+      282.825,
+      337.05,
+      346.15,
+      352.525,
+      355.15,
+      360.225,
+      362.375,
+      373.425
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14
+      ],
+      [
+        15
+      ],
+      [
+        16
+      ],
+      [
+        17
+      ],
+      [
+        18
+      ],
+      [
+        19
+      ],
+      [
+        20
+      ],
+      [
+        21
+      ],
+      [
+        22
+      ],
+      [
+        23
+      ],
+      [
+        24
+      ]
+    ],
+    "prefixOffset": 0
+  },
   "sourceUrl": "https://lucumr.pocoo.org/2025/11/3/absurd-workflows/"
 }
