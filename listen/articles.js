@@ -75,7 +75,6 @@ const ARTICLES = [
     { slug: 'why-ai-hasnt-replaced-software-engineers', title: 'Why AI Hasnt Replaced Software Engineers', meta: 'Normal Tech · Jun 2026', time: '27:50' },
     { slug: 'agent-context', title: 'Agent Context', meta: 'Sankalp · June 2026', time: '6:21' },
     { slug: 'policy-on-the-ai-exponential', title: 'Policy on the AI Exponential', meta: 'Dario Amodei · June 2026', time: '16:47' },
-    { slug: 'loop-engineering', title: 'Loop Engineering', meta: 'Addy Osmani · June 2026', time: '10:40' },
     { slug: 'my-ai-adoption-journey', title: 'My AI Adoption Journey', meta: 'Mitchell Hashimoto · 2025 · 11 min', time: '10:47' },
     { slug: 'what-is-code', title: 'What Is Code?', meta: 'Srujana Pundi · May 2026', time: '7:50' },
     { slug: 'conductors-to-orchestrators', title: 'Conductors to Orchestrators: The Future of Agentic Coding', meta: 'Addy Osmani · November 2025', time: '27:39' },
