@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28",
+  "generated_at": "2026-08-29",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -979,15 +979,6 @@
       "url": "https://martinfowler.com/articles/making-data-ready-for-agentic-ai.html",
       "category": "ai",
       "summary": "Pramod Sadalage and Prem Chandrasekaran argue that data architecture built for human analysts won't work for autonomous agents — agents lack the implicit context and skepticism humans use to work around bad data, so they confidently act on whatever they receive. They define five attributes of AI-ready data (trusted, contextual, traceable, governed, operational) mapped to a bottom-up stack: data contracts with freshness SLAs and quarantine gates; agentic lineage and staged autonomy for auditability; a context layer combining domain, semantic, and capability models so agents use governed definitions instead of guessing; and a tiered access spectrum (retrieval → real-time query → write-back) exposed through well-designed capabilities. Key takeaways: instrument observability from day one, treat data and definitions as version-controlled products, prioritize the context layer (a semantic layer lifted text-to-SQL accuracy from under 20% to over 92% on the same model) — when agents become the primary data consumers, your data architecture becomes your AI architecture.",
-      "added": "2026-08-27",
-      "times_shown": 0
-    },
-    {
-      "slug": "six-months-of-writing-code-exclusively-with-agents",
-      "title": "Six Months of Writing Code Exclusively With Agents",
-      "url": "https://blog.exe.dev/engineering-with-ai",
-      "category": "ai",
-      "summary": "Maisem Ali (exe.dev) spent six months writing no code by hand — only directing AI agents — after newer models (GPT-5.3, Opus 4.6) became capable of handling large changes with minimal steering. Running a dozen-plus agents in parallel forced escalating isolation (Git worktrees, containers, disposable Linux VMs) plus tooling to manage agents, validation, and security risks like prompt injection and the 'lethal trifecta'. Central distinction: 'vibe coding' (accepting agent output you don't understand) vs 'agentic engineering' (working with agents on architecture, interfaces, and tradeoffs first) — peer code review is dead because the review that matters happens earlier, in design and contracts, not diffs. He shipped more than ever, failed more too (botd collapsed from being vibe-coded), and concludes: 'I stopped writing code by hand. I didn't stop engineering.'",
       "added": "2026-08-27",
       "times_shown": 0
     },
@@ -2120,6 +2111,16 @@
       "summary": "Nolan Lawson reflects on AI disrupting frontend development as a discipline and career: prominent educators (Rauschmayer, Alam-Naylor, Comeau) are bowing out while others pivot to AI. He posed his favorite Chrome trace brain-teaser (high Style Calculation, low Layout cost) to Claude Sonnet and got an admirable answer covering selector complexity, invalidation scope, and Selector Stats — he'd now just hand traces to Claude Code at work. Trends working against frontend expertise: frontend code is low-risk to hand to agents unsupervised; \"agent experience\" now beats developer experience (React dominates training weights, explaining Cursor/Viget migrations to React); and DX-oriented standards efforts will fade relative to capabilities and performance. Positive directions: educating agents on big-picture architecture (MPAs over default SPAs), making sites agent-readable (Vercel's is-agentic — ironically reinforcing server rendering, accessibility, page speed), and consulting on vibe-coded monstrosities where money and compliance are at stake. The asteroid (AI) has already hit; ignoring the crater is the worst form of denial.",
       "added": "2026-08-24",
       "read": "2026-08-25",
+      "has_notes": true
+    },
+    {
+      "slug": "six-months-of-writing-code-exclusively-with-agents",
+      "title": "Six Months of Writing Code Exclusively With Agents",
+      "url": "https://blog.exe.dev/engineering-with-ai",
+      "category": "ai",
+      "summary": "Maisem Ali (exe.dev) spent six months writing no code by hand — only directing AI agents — after newer models (GPT-5.3, Opus 4.6) became capable of handling large changes with minimal steering. Running a dozen-plus agents in parallel forced escalating isolation (Git worktrees, containers, disposable Linux VMs) plus tooling to manage agents, validation, and security risks like prompt injection and the 'lethal trifecta'. Central distinction: 'vibe coding' (accepting agent output you don't understand) vs 'agentic engineering' (working with agents on architecture, interfaces, and tradeoffs first) — peer code review is dead because the review that matters happens earlier, in design and contracts, not diffs. He shipped more than ever, failed more too (botd collapsed from being vibe-coded), and concludes: 'I stopped writing code by hand. I didn't stop engineering.'",
+      "added": "2026-08-27",
+      "read": "2026-08-29",
       "has_notes": true
     }
   ]
