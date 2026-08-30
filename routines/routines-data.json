@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-30T10:33:51.796338-03:00",
+  "generated_at": "2026-08-30T10:48:44.731877-03:00",
   "week_start": "2026-08-30",
   "week_label": "August 30 - September 05, 2026",
-  "last_updated": "Sunday, August 30, 2026 at 10:33",
+  "last_updated": "Sunday, August 30, 2026 at 10:48",
   "stats": {
     "completed": 0,
     "planned": 0,
@@ -181,9 +181,9 @@
   ],
   "spirit": {
     "state": "dormant",
-    "emoji": "\ud83e\udd85",
-    "title": "\ud83e\udd85 Andean Condor",
+    "emoji": "\ud83d\udc17",
+    "title": "\ud83d\udc17 Winter Boar Piglet",
     "image": "assets/dormant.webp",
-    "description": "Your condor sleeps with head tucked into its feathers, moonlight and stars over the silent Andes \u2014 deep, peaceful rest."
+    "description": "Your boar piglet sleeps curled beneath the moon and stars in the quiet clearing \u2014 deep, peaceful rest."
   }
 }
