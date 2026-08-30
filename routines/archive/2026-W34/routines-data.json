@@ -1,0 +1,181 @@
+{
+  "generated_at": "2026-08-30T02:01:08.195230-03:00",
+  "week_start": "2026-08-23",
+  "week_label": "August 23 - August 29, 2026",
+  "last_updated": "Sunday, August 30, 2026 at 02:01",
+  "stats": {
+    "completed": 7.5,
+    "planned": 13,
+    "display": "7.5 / 13"
+  },
+  "daily": {
+    "Sunday": {
+      "status": "done",
+      "completed": 1,
+      "total": 1
+    },
+    "Monday": {
+      "status": "done",
+      "completed": 3,
+      "total": 3
+    },
+    "Tuesday": {
+      "status": "done",
+      "completed": 3,
+      "total": 3
+    },
+    "Wednesday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 3
+    },
+    "Thursday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 1
+    },
+    "Friday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 1
+    },
+    "Saturday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    }
+  },
+  "goals": [
+    {
+      "name": "Wind-Down Routine",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "3 nights",
+      "target": "6 nights",
+      "progress_pct": 50
+    }
+  ],
+  "routines": [
+    {
+      "id": "basic-workout",
+      "name": "Basic Workout",
+      "emoji": "\ud83d\udcaa",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "music-practice",
+      "name": "Music Practice",
+      "emoji": "\ud83c\udfb7",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 1
+    },
+    {
+      "id": "piano-practice",
+      "name": "Piano Practice",
+      "emoji": "\ud83c\udfb9",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "1h",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "reading",
+      "name": "Reading",
+      "emoji": "\ud83d\udcd6",
+      "sessions": [
+        {
+          "day": "Sun",
+          "status": "done"
+        },
+        {
+          "day": "Mon",
+          "status": "done"
+        },
+        {
+          "day": "Tue",
+          "status": "done"
+        },
+        {
+          "day": "Wed",
+          "status": "skipped"
+        },
+        {
+          "day": "Thu",
+          "status": "skipped"
+        },
+        {
+          "day": "Fri",
+          "status": "pending"
+        }
+      ],
+      "metrics_total": "90min",
+      "comparison": "",
+      "done": 3,
+      "total": 6
+    },
+    {
+      "id": "rock-climbing",
+      "name": "Rock Climbing",
+      "emoji": "\ud83e\uddd7",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga",
+      "emoji": "\ud83e\uddd8",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        },
+        {
+          "day": "Wed",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 2
+    }
+  ],
+  "spirit": {
+    "state": "tired",
+    "emoji": "\ud83e\udd85",
+    "title": "\ud83e\udd85 Andean Condor",
+    "image": "assets/tired.webp",
+    "description": "Your condor droops on the frost-covered ridge, grey fog and drizzle hanging heavy \u2014 weary wings, needing rest."
+  }
+}
