@@ -1,5 +1,5 @@
 {
-  "week": "2026-W34",
+  "week": "2026-W35",
   "days": {
     "Monday": {
       "location": "Home - Dumbbells",
@@ -11,7 +11,7 @@
         {
           "name": "Chin-ups",
           "detail": null,
-          "sets": 2,
+          "sets": 3,
           "type": "reps",
           "target": "5",
           "unit": "",
@@ -20,7 +20,7 @@
         {
           "name": "Hanging knee raises",
           "detail": null,
-          "sets": 2,
+          "sets": 3,
           "type": "reps",
           "target": "12",
           "unit": "",
@@ -29,7 +29,7 @@
         {
           "name": "Knee push-ups",
           "detail": "diamond",
-          "sets": 2,
+          "sets": 3,
           "type": "reps",
           "target": "10",
           "unit": "",
@@ -38,7 +38,7 @@
         {
           "name": "Scapular pulls",
           "detail": null,
-          "sets": 2,
+          "sets": 3,
           "type": "reps",
           "target": "12",
           "unit": "",
@@ -46,9 +46,41 @@
         }
       ]
     },
+    "Wednesday": {
+      "location": "Home - Dumbbells",
+      "exercises": []
+    },
     "Thursday": {
       "location": "Climbing Gym - Bar",
-      "exercises": []
+      "exercises": [
+        {
+          "name": "Pull-ups",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "5",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Knee push-ups",
+          "detail": "wide",
+          "sets": 3,
+          "type": "reps",
+          "target": "12",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Dead hang",
+          "detail": null,
+          "sets": 3,
+          "type": "time",
+          "target": "20",
+          "unit": "s",
+          "weight": null
+        }
+      ]
     },
     "Friday": {
       "location": "Rest",
