@@ -37,7 +37,6 @@ const ARTICLES = [
     { slug: 'fragments-august-4-martin-fowler', title: 'Fragments: August 4', meta: 'Martin Fowler · Aug 2026', time: '9:03' },
     { slug: 'pi-minimal-and-performant', title: 'Pi, Minimal and Performant', meta: 'Earendil · Aug 2026', time: '5:54' },
     { slug: 'shape-of-things-to-come-part-1', title: 'The Shape of Things to Come, Part 1', meta: 'Steve Yegge · Aug 2026', time: '39:20' },
-    { slug: 'flat-curve-society', title: 'The Flat Curve Society', meta: 'Steve Yegge · Aug 2026', time: '26:18' },
     { slug: 'claude-is-not-a-compiler', title: 'Claude Is Not a Compiler', meta: 'Josh Bleecher Snyder · Aug 2026', time: '10:42' },
     { slug: 'we-are-not-cleared-for-takeoff', title: 'We Are Not Cleared for Takeoff. Yet.', meta: 'Ian Butler · Aug 2026', time: '2:37' },
     { slug: 'the-economic-benefit-of-refactoring', title: 'The Economic Benefit of Refactoring', meta: 'Martin Fowler · Jul 2026', time: '30:18' },
