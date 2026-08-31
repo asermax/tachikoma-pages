@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'pstack-part-1-verification-is-all-you-need', title: 'pstack Part 1: Verification is all you need', meta: 'Lauren Tan · Aug 2026', time: '14:43' },
     { slug: 'on-not-becoming-a-cyborg', title: 'On not becoming a cyborg', meta: 'Nolan Lawson · Aug 2026', time: '7:19' },
     { slug: 'who-taught-the-models-to-do-that', title: 'Who Taught the Models to Do That?', meta: 'Drew Breunig · Aug 2026', time: '7:21' },
     { slug: 'revisiting-joels-test', title: 'Revisiting Joel\'s Test', meta: 'Philip Zeyliger · Aug 2026', time: '7:53' },
