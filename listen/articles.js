@@ -11,7 +11,6 @@ const ARTICLES = [
     { slug: 'anger-anxiety-and-agency', title: 'Anger, Anxiety and Agency', meta: 'Armin Ronacher · Aug 2026', time: '5:12' },
     { slug: 'i-will-fucking-piledrive-you-if-you-mention-ai-again', title: 'I Will Fucking Piledrive You If You Mention AI Again', meta: 'Ludicity · Aug 2026', time: '23:41' },
     { slug: 'the-worlds-left-to-conquer', title: 'The Worlds Left To Conquer', meta: 'Ludicity · Aug 2026', time: '12:31' },
-    { slug: 'asteroid-hitting-frontend-web-development', title: 'The asteroid currently hitting frontend web development', meta: 'Nolan Lawson · Aug 2026', time: '14:44' },
     { slug: 'harnesses-are-situated-agents', title: 'Harnesses are Situated Agents', meta: 'Drew Breunig · Aug 2026', time: '4:23' },
     { slug: 'manage-your-agents-loadout-with-dr-skill', title: 'Manage Your Agent’s Loadout with Dr. Skill', meta: 'Drew Breunig · Aug 2026', time: '3:23' },
     { slug: 'ai-ecosystem-pace-layers', title: 'Understanding the Dynamics of the AI Ecosystem with Pace Layers', meta: 'Drew Breunig · Aug 2026', time: '4:28' },
