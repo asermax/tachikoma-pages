@@ -992,6 +992,15 @@
       "times_shown": 0
     },
     {
+      "slug": "on-not-becoming-a-cyborg",
+      "title": "On not becoming a cyborg",
+      "url": "https://nolanlawson.com/2026/08/31/on-not-becoming-a-cyborg/",
+      "category": "ai",
+      "summary": "Nolan Lawson reflects on how LLM language is seeping into his own writing — Claude-isms like 'load-bearing' and 'belt-and-suspenders' popping into his prose after daily exposure to agent output. Framed through linguistic immersion (accents, thinking in French), he worries AI influence may quietly hollow out his voice like Google Maps did navigation. His prescriptions: be deliberate about where AI is allowed (never his writing, even spellchecking), accept the lost voice in code, and mark AI-authored text at work. Closes acknowledging the fight may be Quixotic but resolving to protect an inner sanctum of human voice.",
+      "added": "2026-08-31",
+      "times_shown": 0
+    },
+    {
       "slug": "revisiting-joels-test",
       "title": "Revisiting Joel's Test",
       "url": "https://blog.exe.dev/revisiting-joel",
