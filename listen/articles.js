@@ -1,5 +1,4 @@
 const ARTICLES = [
-    { slug: 'you-have-to-beat-the-models-at-something', title: 'You have to beat the models at something', meta: 'Sean Goedecke · Aug 2026', time: '11:04' },
     { slug: 'why-you-dont-have-1000-agents-running-for-you', title: 'Why You Don\'t Have 1,000 Agents Running For You', meta: 'David Ondrej · Aug 28 2026', time: '9:14' },
     { slug: 'how-warp-builds-self-improving-agents', title: 'How Warp builds self-improving agents on Claude', meta: 'Michael Segner · Aug 2026', time: '7:06' },
     { slug: 'breaking-claude-code-opus-5-and-automode', title: 'Breaking Claude Code Opus 5 Auto Mode', meta: 'Embrace The Red · Aug 2026', time: '17:26' },
