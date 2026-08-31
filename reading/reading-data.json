@@ -650,15 +650,6 @@
       "times_shown": 1
     },
     {
-      "slug": "the-flat-curve-society",
-      "title": "The Flat Curve Society",
-      "url": "https://yegge.ai/essays/the-flat-curve-society/",
-      "category": "ai",
-      "summary": "Steve Yegge argues that AI's exponential growth curve will appear to flatten for most people, not because it's actually slowing, but because governments will lock superintelligence away like nuclear weapons and because humans hit a discernment horizon — a ceiling past which they can neither distinguish smarter models nor verify the output. This artificial plateau stabilizes the landscape for startups and SaaS vendors, giving engineers firm ground to build AI-assisted software development. The central practical takeaway is that organizations face a massive AI literacy problem — a Netflix study shows ~5 hours of focused team training can move employees from non-users to single-agent users, with another 5 hours reaching multi-agent power-user status.",
-      "added": "2026-08-03",
-      "times_shown": 0
-    },
-    {
       "slug": "the-shape-of-things-to-come-part-1-the-continuous-thunderdome",
       "title": "The Shape of Things to Come, Part 1: The Continuous Thunderdome",
       "url": "https://yegge.ai/essays/the-shape-of-things-to-come/",
@@ -1949,6 +1940,16 @@
       "added": "2026-08-03",
       "read": "2026-08-03",
       "has_notes": false
+    },
+    {
+      "slug": "the-flat-curve-society",
+      "title": "The Flat Curve Society",
+      "url": "https://yegge.ai/essays/the-flat-curve-society/",
+      "category": "ai",
+      "summary": "Steve Yegge argues that AI's exponential growth curve will appear to flatten for most people, not because it's actually slowing, but because governments will lock superintelligence away like nuclear weapons and because humans hit a discernment horizon — a ceiling past which they can neither distinguish smarter models nor verify the output. This artificial plateau stabilizes the landscape for startups and SaaS vendors, giving engineers firm ground to build AI-assisted software development. The central practical takeaway is that organizations face a massive AI literacy problem — a Netflix study shows ~5 hours of focused team training can move employees from non-users to single-agent users, with another 5 hours reaching multi-agent power-user status.",
+      "added": "2026-08-03",
+      "read": "2026-08-31",
+      "has_notes": true
     },
     {
       "slug": "wicked-features",
