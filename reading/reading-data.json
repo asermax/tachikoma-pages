@@ -983,6 +983,24 @@
       "times_shown": 0
     },
     {
+      "slug": "agents-should-leave-receipts",
+      "title": "Agents Should Leave Receipts",
+      "url": "https://x.com/JoshARosen/status/2093364211837493358",
+      "category": "ai",
+      "summary": "Josh Rosen argues we don't trust agents with consequential work because we can't verify what they did. Fix: agents should leave receipts — typed, immutable work artifacts (evidence, hypotheses, assessments, recommendations, approvals) required by the system as work happens, with explicit references to the exact upstream artifact versions used. Relationships are enforced structurally (a recommendation without an assessment reference is rejected), so agents can't skip steps or redefine 'done'. The artifacts form a work graph — distinct from traces, it shows what was established and on what basis — enabling agent continuation, collaboration, governance, and reverse traversal when upstream work proves wrong.",
+      "added": "2026-08-31",
+      "times_shown": 0
+    },
+    {
+      "slug": "how-software-factories-break-down-work",
+      "title": "How Software Factories Break Down Work",
+      "url": "https://x.com/JoshARosen/status/2094467582614962345",
+      "category": "ai",
+      "summary": "Josh Rosen surveys five approaches to work decomposition in software factories: (1) subagent delegation (Claude Code, Codex recursive spawning, Vercel Eve) — structure lives only in prompts; (2) tracked tasks (Gemini CLI tracker, Claude Agent Teams, OpenAI Symphony+Linear) — task objects with dependencies enforced by schedulers; (3) factory-shaped work (Warp) — the factory supplies an opinionated schema of stages, roles, and approvals; (4) outcome-linked work (Factory's Missions) — validation contracts of behavioral assertions catch gaps between intent and work before execution; (5) dynamic work graphs — the plan is a hypothesis, revised as agents discover reality. Argues neither orchestrator-owned nor agent-owned decomposition suffices; calls for symmetric work schemas both can operate on.",
+      "added": "2026-08-31",
+      "times_shown": 0
+    },
+    {
       "slug": "on-not-becoming-a-cyborg",
       "title": "On not becoming a cyborg",
       "url": "https://nolanlawson.com/2026/08/31/on-not-becoming-a-cyborg/",
