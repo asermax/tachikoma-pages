@@ -884,15 +884,6 @@
       "times_shown": 0
     },
     {
-      "slug": "manage-your-agents-loadout-with-dr-skill",
-      "title": "Manage Your Agent's Loadout with Dr. Skill",
-      "url": "https://www.dbreunig.com/2026/07/24/manage-your-agent-s-loadout-with-dr-skill.html",
-      "category": "ai",
-      "summary": "Breunig introduces drskill, an open-source tool to audit and manage the skills and MCP servers loaded into agent environments. The problem: skills accumulate silently, degrading performance before a user types a word — he cites an enterprise agent loading 600+ skills, and his own Hermes agent shipping ~100 with one note-taking skill stubbornly misbehaving. drskill offers three commands: scan (checks 34 issue categories, from missing descriptions to duplicate installs; --deep adds LLM judgment on overlapping skills), list (shows the current loadout, filterable by harness), and audit (scans trace logs to report which skills are actually used). Early users diagnose wrong-skill routing, config risks (secrets, unpinned packages), loadout drift, and description collisions. The takeaway: managing the loadout — not just adding to it — keeps context clean and agent behavior predictable.",
-      "added": "2026-08-23",
-      "times_shown": 0
-    },
-    {
       "slug": "the-problem-is-prompt-debt",
       "title": "The Problem is Prompt Debt",
       "url": "https://www.dbreunig.com/2026/06/22/the-problem-is-prompt-debt.html",
