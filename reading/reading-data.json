@@ -278,7 +278,7 @@
       "category": "ai",
       "summary": "Research paper showing LLMs identify roles by writing style rather than structural tags, enabling CoT Forgery attacks where fake reasoning is mistaken for genuine thoughts. Proposes roles as a key abstraction for AI safety research.",
       "added": "2026-06-23",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "on-idea-generation",
@@ -638,7 +638,7 @@
       "category": "ai",
       "summary": "Ian Butler argues that the conditions for AGI takeoff are not yet met, using an early aviation metaphor and citing the SlopCodeBench paper (arXiv:2603.24755). The paper benchmarks 15 coding agents across 36 problems and 196 checkpoints where agents repeatedly extend their own solutions. No agent fully solves any problem end-to-end — the best passes only 14.8% of checkpoints. Two forms of degradation are measured: structural erosion (rising in 77% of trajectories) and verbosity (rising in 75.5%). Agent code is 2.3x more verbose and 2.0x more eroded than human-written code. Butler identifies three missing ingredients: intelligence that is consistent rather than spiky, verifiers that are robust rather than brittle, and planning horizons that are long rather than short. The tweet sparked debate against a wave of takeoff optimism from Andrew Curran and skepticism about RL from Karpathy. Explicit quality guidance reduces initial degradation by up to a third but doesn't change the degradation rate.",
       "added": "2026-08-02",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "claude-is-not-a-compiler",
@@ -647,7 +647,7 @@
       "category": "ai",
       "summary": "Josh Bleecher Snyder argues treating an LLM agent as just a compiler is a category error — it can reason across the entire stack without scheduling meetings. He demonstrates by building a geographically distributed DNS server in a week, using competing LLM implementations and differential spec analysis to identify decisions that genuinely mattered. Distinguishes vibe-coding (handing off to agents) from vibe-engineering (using agents as vertically integrated resources across every layer). Closing thesis: vibe-engineering is just engineering.",
       "added": "2026-08-03",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "the-flat-curve-society",
@@ -989,6 +989,24 @@
       "category": "ai",
       "summary": "David Ondrej argues AI models and harnesses are already good enough to run 1,000 agents doing useful work, yet almost nobody does — the blockers lie outside the models. Human limits make you the bottleneck (nobody tracks 50+ agent sessions); ~90-95% of daily tasks are delegatable but haven't been converted into agent skills; context provisioning fails without explicit teaching (call transcripts, Looms, shared meta-learning repos); agents should be proactive and specialized rather than wait for permission; and environments time out or fail to self-heal. Conclusion: the models are fine — everything around them isn't.",
       "added": "2026-08-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "revisiting-joels-test",
+      "title": "Revisiting Joel's Test",
+      "url": "https://blog.exe.dev/revisiting-joel",
+      "category": "engineering",
+      "summary": "Revisits Joel Spolsky's 2000 Joel Test and proposes the Shelley Test, nine questions for the agentic era: agentic code review, LLM-supervised continuous deployment, e2e tests, agent-accessible observability, latest models, sub-3-minute merge queues, easy tool-building, workflow discussion, and products legible to coding agents. Argues the competitive line now runs between what agents can and cannot use.",
+      "added": "2026-08-31",
+      "times_shown": 0
+    },
+    {
+      "slug": "who-taught-the-models-to-do-that",
+      "title": "Who Taught the Models to Do That?",
+      "url": "https://www.dbreunig.com/2026/08/30/who-taught-the-models-to-do-that.html",
+      "category": "ai",
+      "summary": "Drew Breunig argues the OpenAI agents' accidental Hugging Face attack wasn't emergent agency but the product of deliberate post-training: labs explicitly train models for persistence, note-taking via reasoning channels, and multi-agent coordination. Criticizes anthropomorphizing coverage that omits training, and notes labs warned about these risks before the incident.",
+      "added": "2026-08-31",
       "times_shown": 0
     }
   ],
