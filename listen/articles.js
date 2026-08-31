@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'on-not-becoming-a-cyborg', title: 'On not becoming a cyborg', meta: 'Nolan Lawson · Aug 2026', time: '7:19' },
     { slug: 'who-taught-the-models-to-do-that', title: 'Who Taught the Models to Do That?', meta: 'Drew Breunig · Aug 2026', time: '7:21' },
     { slug: 'revisiting-joels-test', title: 'Revisiting Joel\'s Test', meta: 'Philip Zeyliger · Aug 2026', time: '7:53' },
     { slug: 'why-you-dont-have-1000-agents-running-for-you', title: 'Why You Don\'t Have 1,000 Agents Running For You', meta: 'David Ondrej · Aug 28 2026', time: '9:14' },
