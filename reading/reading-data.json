@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30",
+  "generated_at": "2026-08-31",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -998,15 +998,6 @@
       "category": "ai",
       "summary": "David Ondrej argues AI models and harnesses are already good enough to run 1,000 agents doing useful work, yet almost nobody does — the blockers lie outside the models. Human limits make you the bottleneck (nobody tracks 50+ agent sessions); ~90-95% of daily tasks are delegatable but haven't been converted into agent skills; context provisioning fails without explicit teaching (call transcripts, Looms, shared meta-learning repos); agents should be proactive and specialized rather than wait for permission; and environments time out or fail to self-heal. Conclusion: the models are fine — everything around them isn't.",
       "added": "2026-08-29",
-      "times_shown": 0
-    },
-    {
-      "slug": "you-have-to-beat-the-models-at-something",
-      "title": "You have to beat the models at something",
-      "url": "https://seangoedecke.com/you-have-to-beat-the-models-at-something/",
-      "category": "careers",
-      "summary": "Sean Goedecke argues that software engineers should be evaluated by \"value over replacement\" — and in the LLM era, the replacement baseline is now a frontier AI model that can write code for a hundred bucks a month. Rather than denying AI coding ability or retreating to \"hard engineering\" niches (only a short-term defense, since anything models can learn in principle they will eventually do), engineers should focus on what models structurally do not improve at. He identifies two durable skills: deep familiarity with the codebase — LLM errors are now mostly \"errors of ignorance\" and \"errors of paranoia\" that only someone with real system context can catch, requiring the courage to confidently disagree with convincing agents (AI-on-AI review does not work, as models share the same failure modes) — and technical communication, because good writing is not a verifiable training domain and labs have prioritized raw capability, degrading output style as a side effect of optimized reasoning. The takeaway: engineers must deliberately figure out what they can do better than the models, since value now means exceeding an AI baseline rather than merely doing the tickets in the queue.",
-      "added": "2026-08-30",
       "times_shown": 0
     }
   ],
@@ -2139,6 +2130,16 @@
       "summary": "Maisem Ali (exe.dev) spent six months writing no code by hand — only directing AI agents — after newer models (GPT-5.3, Opus 4.6) became capable of handling large changes with minimal steering. Running a dozen-plus agents in parallel forced escalating isolation (Git worktrees, containers, disposable Linux VMs) plus tooling to manage agents, validation, and security risks like prompt injection and the 'lethal trifecta'. Central distinction: 'vibe coding' (accepting agent output you don't understand) vs 'agentic engineering' (working with agents on architecture, interfaces, and tradeoffs first) — peer code review is dead because the review that matters happens earlier, in design and contracts, not diffs. He shipped more than ever, failed more too (botd collapsed from being vibe-coded), and concludes: 'I stopped writing code by hand. I didn't stop engineering.'",
       "added": "2026-08-27",
       "read": "2026-08-29",
+      "has_notes": true
+    },
+    {
+      "slug": "you-have-to-beat-the-models-at-something",
+      "title": "You have to beat the models at something",
+      "url": "https://seangoedecke.com/you-have-to-beat-the-models-at-something/",
+      "category": "careers",
+      "summary": "Sean Goedecke argues that software engineers should be evaluated by \"value over replacement\" — and in the LLM era, the replacement baseline is now a frontier AI model that can write code for a hundred bucks a month. Rather than denying AI coding ability or retreating to \"hard engineering\" niches (only a short-term defense, since anything models can learn in principle they will eventually do), engineers should focus on what models structurally do not improve at. He identifies two durable skills: deep familiarity with the codebase — LLM errors are now mostly \"errors of ignorance\" and \"errors of paranoia\" that only someone with real system context can catch, requiring the courage to confidently disagree with convincing agents (AI-on-AI review does not work, as models share the same failure modes) — and technical communication, because good writing is not a verifiable training domain and labs have prioritized raw capability, degrading output style as a side effect of optimized reasoning. The takeaway: engineers must deliberately figure out what they can do better than the models, since value now means exceeding an AI baseline rather than merely doing the tickets in the queue.",
+      "added": "2026-08-30",
+      "read": "2026-08-31",
       "has_notes": true
     }
   ]
