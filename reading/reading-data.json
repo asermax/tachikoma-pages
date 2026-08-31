@@ -999,6 +999,15 @@
       "summary": "David Ondrej argues AI models and harnesses are already good enough to run 1,000 agents doing useful work, yet almost nobody does — the blockers lie outside the models. Human limits make you the bottleneck (nobody tracks 50+ agent sessions); ~90-95% of daily tasks are delegatable but haven't been converted into agent skills; context provisioning fails without explicit teaching (call transcripts, Looms, shared meta-learning repos); agents should be proactive and specialized rather than wait for permission; and environments time out or fail to self-heal. Conclusion: the models are fine — everything around them isn't.",
       "added": "2026-08-29",
       "times_shown": 0
+    },
+    {
+      "slug": "the-anatomy-of-a-software-factory",
+      "title": "The Anatomy of a Software Factory",
+      "url": "https://x.com/JoshARosen/status/2094075909242294713",
+      "category": "ai",
+      "summary": "Josh Rosen surveys the \"software factory\" products now shipping — Factory.ai, Warp Factories, and Vercel's Foreman — and extracts six shared architectural patterns. Today's factories are not giant AI engineers that return finished software; they are distributed systems around capable AI workers: (1) the factory owns the outer loop (triage, spec, implementation, review, verification, shipping) while workers own the how; (2) workers are ephemeral and sandboxed rather than long-lived sessions; (3) work state lives outside the agent — in work items, branches, shared knowledge, and version-controlled factory definitions; (4) vendors are split between integrated stacks (Factory) and open orchestration that treats models/harnesses as interchangeable (Warp); (5) verification is a core factory function, with independent reviewers checking work against acceptance criteria rather than trusting the implementer's diff; (6) full autonomy remains aspirational — humans are moved to selected checkpoints, not removed. A closing section argues this creates a strategic problem for OpenAI and Anthropic: a strong third-party factory layer commoditizes Codex and Claude into replaceable workers underneath someone else's customer relationship.",
+      "added": "2026-08-31",
+      "times_shown": 0
     }
   ],
   "archive": [
