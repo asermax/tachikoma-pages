@@ -83,6 +83,5 @@ const ARTICLES = [
     { slug: 'absurd-workflows', title: 'Absurd Workflows: Durable Execution With Just Postgres', meta: 'Armin Ronacher · Nov 2025', time: '6:44' },
     { slug: 'tdd-inside-the-agent-loop', title: 'TDD inside the agent loop - theater or actual value?', meta: 'Birgitta Böckeler · Aug 2025', time: '30:50' },
     { slug: 'futzing-fraction', title: 'The Futzing Fraction', meta: 'Glyph · Aug 2025', time: '34:00' },
-    { slug: 'superlogical', title: 'Superlogical', meta: 'Mitchell Hashimoto · Jul 2025', time: '5:05' },
     { slug: 'my-ai-adoption-journey', title: 'My AI Adoption Journey', meta: 'Mitchell Hashimoto · 2025', time: '12:21' },
 ];
