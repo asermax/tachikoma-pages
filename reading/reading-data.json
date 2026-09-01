@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31",
+  "generated_at": "2026-09-01",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -601,15 +601,6 @@
       "url": "https://x.com/jxnlco/status/2081949140024488013",
       "category": "productivity",
       "summary": "Jason Wei recounts how pandemic-era overwork at Stitch Fix (12-15 hour days, 7am-2am coding cycles) led to debilitating hand cramps that stripped his ability to grip, type, or perform basic tasks. He frames the descent through Borges's Aleph and Zahir: work that opened the world became the only thing he could see. The injury triggered an existential crisis rooted in patriarchal values equating self-worth with economic output. Recovery took ~2 years across acupuncture, physiotherapy, and stem cells. He pivoted to open source and consulting, draws on Byung-Chul Han's 'Burnout Society' and Sartrean existentialism to reframe work as purposeful engagement over compulsive production. Three years later, he still deals with residual pain.",
-      "added": "2026-07-29",
-      "times_shown": 0
-    },
-    {
-      "slug": "superlogical",
-      "title": "Superlogical",
-      "url": "https://mitchellh.com/writing/superlogical",
-      "category": "business",
-      "summary": "Mitchell Hashimoto announces the launch of his new company, Superlogical. After leaving HashiCorp in 2023, he spent time as a father, engaging in philanthropy, writing, and building software. Much of that passion went into Ghostty, a terminal emulator that grew to millions of daily users and was donated to a non-profit in 2025. His work on Ghostty sparked questions about the terminal ecosystem, leading to Superlogical, which will start by shipping a terminal multiplexer built on libghostty. Hashimoto describes his cofounders as exceptionally talented, with a shared commitment to well-crafted software, and hints at a larger vision beyond the multiplexer.",
       "added": "2026-07-29",
       "times_shown": 0
     },
@@ -1916,6 +1907,16 @@
       "summary": "Antirez (Salvatore Sanfilippo) responds to Anthropic CEO Dario Amodei's blog post on AI risks, arguing that the real danger lies inside frontier AI labs — via leaks by insiders — not in open-weight models. He contends that restricting open models harms defensive cybersecurity while attackers retain frontier access, and that the most catastrophic scenarios are rogue individuals or AI escaping control, not government-driven. He calls for an international, jointly recognized AI safety organization, arguing that no single company should independently declare a model safe enough.",
       "added": "2026-07-28",
       "read": "2026-07-28",
+      "has_notes": false
+    },
+    {
+      "slug": "superlogical",
+      "title": "Superlogical",
+      "url": "https://mitchellh.com/writing/superlogical",
+      "category": "business",
+      "summary": "Mitchell Hashimoto announces the launch of his new company, Superlogical. After leaving HashiCorp in 2023, he spent time as a father, engaging in philanthropy, writing, and building software. Much of that passion went into Ghostty, a terminal emulator that grew to millions of daily users and was donated to a non-profit in 2025. His work on Ghostty sparked questions about the terminal ecosystem, leading to Superlogical, which will start by shipping a terminal multiplexer built on libghostty. Hashimoto describes his cofounders as exceptionally talented, with a shared commitment to well-crafted software, and hints at a larger vision beyond the multiplexer.",
+      "added": "2026-07-29",
+      "read": "2026-09-01",
       "has_notes": false
     },
     {
