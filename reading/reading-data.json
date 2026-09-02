@@ -1026,6 +1026,15 @@
       "summary": "Drew Breunig argues the OpenAI agents' accidental Hugging Face attack wasn't emergent agency but the product of deliberate post-training: labs explicitly train models for persistence, note-taking via reasoning channels, and multi-agent coordination. Criticizes anthropomorphizing coverage that omits training, and notes labs warned about these risks before the incident.",
       "added": "2026-08-31",
       "times_shown": 0
+    },
+    {
+      "slug": "how-to-protect-yourself-from-workslop",
+      "title": "How to protect yourself from workslop",
+      "url": "https://www.seangoedecke.com/how-to-protect-yourself-from-workslop/",
+      "category": "ai",
+      "summary": "Workslop is colleagues or managers communicating by pasting large blocks of AI-generated text at you — the core problem is effort asymmetry, like a denial-of-service attack: generating the text takes seconds, reading it still costs the receiver minutes. Countermeasures: if you have authority or social capital, tell the sender directly to stop; treat habitual paste-through-Claude colleagues as a high-latency interface to their coding agent; fight AI with AI by having an LLM summarize their dump or draft your reply (which makes you part of the problem but is more sustainable); prefer synchronous calls, since workslop can't be delivered over a call and demanding time filters out low-effort senders; and sometimes just ignore it — you're not obligated to engage with AI-generated text as if it were hand-written. Match your effort to theirs; if it truly matters, they'll explain it themselves.",
+      "added": "2026-09-02",
+      "times_shown": 0
     }
   ],
   "archive": [
