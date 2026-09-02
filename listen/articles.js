@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'how-to-protect-yourself-from-workslop', title: 'How to protect yourself from workslop', meta: 'Sean Goedecke · Sep 2026', time: '3:51' },
     { slug: 'how-software-factories-break-down-work', title: 'How Software Factories Break Down Work', meta: 'Josh Rosen · Aug 2026', time: '12:10' },
     { slug: 'agents-should-leave-receipts', title: 'Agents Should Leave Receipts', meta: 'Josh Rosen · Aug 2026', time: '11:31' },
     { slug: 'pstack-part-1-verification-is-all-you-need', title: 'pstack Part 1: Verification is all you need', meta: 'Lauren Tan · Aug 2026', time: '14:43' },
