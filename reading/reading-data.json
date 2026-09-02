@@ -1035,6 +1035,15 @@
       "summary": "Workslop is colleagues or managers communicating by pasting large blocks of AI-generated text at you — the core problem is effort asymmetry, like a denial-of-service attack: generating the text takes seconds, reading it still costs the receiver minutes. Countermeasures: if you have authority or social capital, tell the sender directly to stop; treat habitual paste-through-Claude colleagues as a high-latency interface to their coding agent; fight AI with AI by having an LLM summarize their dump or draft your reply (which makes you part of the problem but is more sustainable); prefer synchronous calls, since workslop can't be delivered over a call and demanding time filters out low-effort senders; and sometimes just ignore it — you're not obligated to engage with AI-generated text as if it were hand-written. Match your effort to theirs; if it truly matters, they'll explain it themselves.",
       "added": "2026-09-02",
       "times_shown": 0
+    },
+    {
+      "slug": "maybe-we-shouldnt-be-reviewing-all-this-code",
+      "title": "Maybe We Shouldn't Be Reviewing All This Code",
+      "url": "https://martinfowler.com/rachels-ramblings/code-review.html",
+      "category": "engineering",
+      "summary": "Rachel Laycock argues AI-generated code volume is collapsing traditional code review — Meta saw a 106% jump in significant lines per human-landed diff in a year, and median PR sizes grew 64%. Rather than automating review or bottlenecking on seniors, she proposes shifting judgment left: do design exploration before implementation, move mentoring/knowledge-sharing/ownership into pairing, mob programming, and whiteboard design sessions, automate formatting/linting entirely, encode architectural constraints as fitness functions, and reserve human review for exceptions — high-risk changes, sensitive security boundaries, huge blast radius, or where the team lacks confidence. She takes seriously the worry about cognitive/intent debt but doubts mandatory PRs defend against it. Code review has long been overloaded with responsibilities that only worked when human output speed limited code volume; the real question isn't reviewing faster, it's why the important conversations wait until review at all.",
+      "added": "2026-09-02",
+      "times_shown": 0
     }
   ],
   "archive": [
