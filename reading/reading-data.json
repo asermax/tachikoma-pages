@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01",
+  "generated_at": "2026-09-02",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -278,7 +278,7 @@
       "category": "ai",
       "summary": "Research paper showing LLMs identify roles by writing style rather than structural tags, enabling CoT Forgery attacks where fake reasoning is mistaken for genuine thoughts. Proposes roles as a key abstraction for AI safety research.",
       "added": "2026-06-23",
-      "times_shown": 1
+      "times_shown": 2
     },
     {
       "slug": "on-idea-generation",
@@ -287,7 +287,7 @@
       "category": "creativity",
       "summary": "A deep exploration of idea generation as an exercisable muscle. Sankalp argues that creativity isn't mystical — it requires direct exposure to sources (not AI-mediated), tight feedback loops through doing, and having a concrete problem statement or scaffold to push against. Key insights: ideas emerge from inside active work, not from passive consumption; consumption-maxxing without processing is a common trap; you need to put in time building 'embedding space' in your mind through high-resolution engagement with material; people and conversations act as mirrors and portals for creativity; and breaking through blocks requires zooming out, reframing, and sometimes switching to parallel projects. Strong references to Henrik Karlsson, Richard Hamming, and Jack Morris.",
       "added": "2026-06-29",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "mechanical-sympathy",
@@ -629,7 +629,7 @@
       "category": "ai",
       "summary": "Ian Butler argues that the conditions for AGI takeoff are not yet met, using an early aviation metaphor and citing the SlopCodeBench paper (arXiv:2603.24755). The paper benchmarks 15 coding agents across 36 problems and 196 checkpoints where agents repeatedly extend their own solutions. No agent fully solves any problem end-to-end — the best passes only 14.8% of checkpoints. Two forms of degradation are measured: structural erosion (rising in 77% of trajectories) and verbosity (rising in 75.5%). Agent code is 2.3x more verbose and 2.0x more eroded than human-written code. Butler identifies three missing ingredients: intelligence that is consistent rather than spiky, verifiers that are robust rather than brittle, and planning horizons that are long rather than short. The tweet sparked debate against a wave of takeoff optimism from Andrew Curran and skepticism about RL from Karpathy. Explicit quality guidance reduces initial degradation by up to a third but doesn't change the degradation rate.",
       "added": "2026-08-02",
-      "times_shown": 1
+      "times_shown": 2
     },
     {
       "slug": "claude-is-not-a-compiler",
@@ -2198,6 +2198,16 @@
       "added": "2026-08-31",
       "read": "2026-08-31",
       "has_notes": true
+    },
+    {
+      "slug": "bad-code-is-kudzu",
+      "title": "Bad code is kudzu",
+      "url": "https://vickiboykis.com/2026/09/01/bad-code-is-kudzu/",
+      "category": "engineering",
+      "summary": "Vicki Boykis uses kudzu (the invasive vine) as a metaphor for unused software features: they stick to the codebase because other code gets built on top and deletion is thankless work that never shows up in promo packets. She argues AI makes this worse — without deliberate pruning, codebases drown in 'generated kudzu slop' — and walks through her own case study: she deleted her ML-powered hashtag-bubbles feature after Plausible analytics showed nobody used it. Takeaway: plan feature removal as part of shipping, since git makes restoring easy.",
+      "added": "2026-09-02",
+      "read": "2026-09-02",
+      "has_notes": false
     }
   ]
 }
