@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01",
+  "generated_at": "2026-09-02",
   "queue": [
     {
       "slug": "nigel-cheese-down-the-rabbit-hole",
@@ -531,6 +531,17 @@
       "added": "2026-08-18",
       "watched": "2026-08-18",
       "has_notes": true
+    },
+    {
+      "slug": "the-most-cited-paper-of-the-century-is-a-brilliant-hack",
+      "title": "The most cited paper of the century is a brilliant hack",
+      "url": "https://www.youtube.com/watch?v=QgH9sr7G13Q",
+      "video_id": "QgH9sr7G13Q",
+      "channel": "Welch Labs",
+      "summary": "Explores the historical challenge of scaling deep neural networks, focusing on the degradation problem researchers hit around 2015. It visually walks through how a standard CNN processes images (convolution, ReLU, downsampling) and shows via training curves that going deeper \u2014 26 up to 74 layers \u2014 actually hurt accuracy compared to shallower nets, despite deeper networks theoretically being able to learn identity mappings. Great for ML students, developers, and researchers wanting a clear visual explanation of CNN mechanics and the optimization problem that motivated ResNets.",
+      "added": "2026-09-02",
+      "watched": "2026-09-02",
+      "has_notes": false
     }
   ]
 }
