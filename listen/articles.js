@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'there-are-many-agent-harnesses-but-this-one-is-mine', title: 'There are many agent harnesses, but this one is mine.', meta: 'Jakob · Earendil', time: '4:10' },
     { slug: 'maybe-we-shouldnt-be-reviewing-all-this-code', title: 'Maybe We Shouldn\'t Be Reviewing All This Code', meta: 'Rachel Laycock · Aug 2026', time: '7:14' },
     { slug: 'how-to-protect-yourself-from-workslop', title: 'How to protect yourself from workslop', meta: 'Sean Goedecke · Sep 2026', time: '3:51' },
     { slug: 'how-software-factories-break-down-work', title: 'How Software Factories Break Down Work', meta: 'Josh Rosen · Aug 2026', time: '12:10' },
