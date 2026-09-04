@@ -1001,15 +1001,6 @@
       "times_shown": 0
     },
     {
-      "slug": "pstack-part-1-verification-is-all-you-need",
-      "title": "pstack Part 1: Verification is all you need",
-      "url": "https://x.com/poteto/status/2094457600259842065",
-      "category": "ai",
-      "summary": "Lauren Tan explains how her pstack skill system lets her ship 2,000 PRs/month with high confidence, as gardener of Grok Bot's codebase. Core thesis: a verification skill — agents verifying their own work and closing the loop without a human bottleneck — is critical infrastructure, worth 100-1000x team output. Key practices: Build the Lever (agent-friendly debug CLIs over markdown), rich debugging runtimes matter so much she'd switch stacks for them, cloud agents over git worktrees for parallelism, Feature Maps as token-efficient materialized memory, and routines that auto-reproduce user reports. Treat the verification skill like infra, even with an oncall rotation.",
-      "added": "2026-08-31",
-      "times_shown": 0
-    },
-    {
       "slug": "revisiting-joels-test",
       "title": "Revisiting Joel's Test",
       "url": "https://blog.exe.dev/revisiting-joel",
@@ -2232,6 +2223,16 @@
       "summary": "Sean Goedecke argues that software engineers should be evaluated by \"value over replacement\" — and in the LLM era, the replacement baseline is now a frontier AI model that can write code for a hundred bucks a month. Rather than denying AI coding ability or retreating to \"hard engineering\" niches (only a short-term defense, since anything models can learn in principle they will eventually do), engineers should focus on what models structurally do not improve at. He identifies two durable skills: deep familiarity with the codebase — LLM errors are now mostly \"errors of ignorance\" and \"errors of paranoia\" that only someone with real system context can catch, requiring the courage to confidently disagree with convincing agents (AI-on-AI review does not work, as models share the same failure modes) — and technical communication, because good writing is not a verifiable training domain and labs have prioritized raw capability, degrading output style as a side effect of optimized reasoning. The takeaway: engineers must deliberately figure out what they can do better than the models, since value now means exceeding an AI baseline rather than merely doing the tickets in the queue.",
       "added": "2026-08-30",
       "read": "2026-08-31",
+      "has_notes": true
+    },
+    {
+      "slug": "pstack-part-1-verification-is-all-you-need",
+      "title": "pstack Part 1: Verification is all you need",
+      "url": "https://x.com/poteto/status/2094457600259842065",
+      "category": "ai",
+      "summary": "Lauren Tan explains how her pstack skill system lets her ship 2,000 PRs/month with high confidence, as gardener of Grok Bot's codebase. Core thesis: a verification skill — agents verifying their own work and closing the loop without a human bottleneck — is critical infrastructure, worth 100-1000x team output. Key practices: Build the Lever (agent-friendly debug CLIs over markdown), rich debugging runtimes matter so much she'd switch stacks for them, cloud agents over git worktrees for parallelism, Feature Maps as token-efficient materialized memory, and routines that auto-reproduce user reports. Treat the verification skill like infra, even with an oncall rotation.",
+      "added": "2026-08-31",
+      "read": "2026-09-04",
       "has_notes": true
     },
     {
