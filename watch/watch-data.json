@@ -100,16 +100,6 @@
       "summary": "This video features a podcast episode of *Syntax* where hosts Wes Bos and Scott Tolinski interview developers Mario Zechner and Armin Ronacher about **Pi**, a minimal and highly extensible AI coding agent harness. The creators explain that Pi relies on a simple loop structure utilizing bash commands and basic file tools, arguing that a minimalist design makes the agent more predictable and adaptable to unique developer workflows. They also discuss broader trends in autonomous agents, the capabilities of modern models like Anthropic's Claude, and the persistent security challenge of prompt injection in agentic workflows.\n\nWho would benefit from watching: This video is highly beneficial for software engineers, web developers, AI enthusiasts, and cybersecurity professionals interested in the practical development, security challenges, and future direction of autonomous AI coding assistants.",
       "added": "2026-08-20",
       "times_shown": 0
-    },
-    {
-      "slug": "the-paradox-at-the-heart-of-ai-and-science-terence-tao",
-      "title": "The paradox at the heart of AI and science | Terence Tao",
-      "url": "https://www.youtube.com/watch?v=svl_1upFpQo",
-      "video_id": "svl_1upFpQo",
-      "channel": "Big Think Clips",
-      "summary": "In this video, renowned mathematician Terence Tao explores the profound impact of artificial intelligence on the methodologies of math and science. He explains how AI can automate complex tasks like data analysis and theory generation at scale, but cautions that a heavy reliance on these tools may erode the deep, intuitive understanding that human scientists gain through slow, manual problem-solving. Tao also details how large language models function by predicting patterns in data, highlighting both their impressive capabilities in generating proofs and their lack of true, grounded understanding of the world. This video is highly beneficial for educators, researchers, and anyone interested in the future of scientific discovery in the age of AI.",
-      "added": "2026-09-04",
-      "times_shown": 0
     }
   ],
   "archive": [
@@ -552,6 +542,17 @@
       "added": "2026-09-02",
       "watched": "2026-09-02",
       "has_notes": false
+    },
+    {
+      "slug": "the-paradox-at-the-heart-of-ai-and-science-terence-tao",
+      "title": "The paradox at the heart of AI and science | Terence Tao",
+      "url": "https://www.youtube.com/watch?v=svl_1upFpQo",
+      "video_id": "svl_1upFpQo",
+      "channel": "Big Think Clips",
+      "summary": "In this video, renowned mathematician Terence Tao explores the profound impact of artificial intelligence on the methodologies of math and science. He explains how AI can automate complex tasks like data analysis and theory generation at scale, but cautions that a heavy reliance on these tools may erode the deep, intuitive understanding that human scientists gain through slow, manual problem-solving. Tao also details how large language models function by predicting patterns in data, highlighting both their impressive capabilities in generating proofs and their lack of true, grounded understanding of the world. This video is highly beneficial for educators, researchers, and anyone interested in the future of scientific discovery in the age of AI.",
+      "added": "2026-09-04",
+      "watched": "2026-09-04",
+      "has_notes": true
     }
   ]
 }
