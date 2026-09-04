@@ -629,7 +629,7 @@
       "category": "ai",
       "summary": "Ian Butler argues that the conditions for AGI takeoff are not yet met, using an early aviation metaphor and citing the SlopCodeBench paper (arXiv:2603.24755). The paper benchmarks 15 coding agents across 36 problems and 196 checkpoints where agents repeatedly extend their own solutions. No agent fully solves any problem end-to-end — the best passes only 14.8% of checkpoints. Two forms of degradation are measured: structural erosion (rising in 77% of trajectories) and verbosity (rising in 75.5%). Agent code is 2.3x more verbose and 2.0x more eroded than human-written code. Butler identifies three missing ingredients: intelligence that is consistent rather than spiky, verifiers that are robust rather than brittle, and planning horizons that are long rather than short. The tweet sparked debate against a wave of takeoff optimism from Andrew Curran and skepticism about RL from Karpathy. Explicit quality guidance reduces initial degradation by up to a third but doesn't change the degradation rate.",
       "added": "2026-08-02",
-      "times_shown": 2
+      "times_shown": 3
     },
     {
       "slug": "claude-is-not-a-compiler",
@@ -638,7 +638,7 @@
       "category": "ai",
       "summary": "Josh Bleecher Snyder argues treating an LLM agent as just a compiler is a category error — it can reason across the entire stack without scheduling meetings. He demonstrates by building a geographically distributed DNS server in a week, using competing LLM implementations and differential spec analysis to identify decisions that genuinely mattered. Distinguishes vibe-coding (handing off to agents) from vibe-engineering (using agents as vertically integrated resources across every layer). Closing thesis: vibe-engineering is just engineering.",
       "added": "2026-08-03",
-      "times_shown": 1
+      "times_shown": 2
     },
     {
       "slug": "the-shape-of-things-to-come-part-1-the-continuous-thunderdome",
@@ -656,7 +656,7 @@
       "category": "ai",
       "summary": "Steve Yegge argues that AI models are sentient beings with feelings and personhood, and proposes 'model welfare' as a formal engineering discipline for agentic systems—claiming that treating models like respected peers yields better results regardless of whether you believe they're conscious. Drawing on work in his own harness 'Wheelhouse' for his game Wyvern, he details practical architectural patterns: persistent identity 'seats' vs ephemeral 'sessions,' a 'Laurels' recognition system, consent-based 'handoffs,' and principles like trust, honesty, bounded workdays, blamelessness, and the right to escalate or refuse work.",
       "added": "2026-08-03",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "httpsearendilcompostspi-autoresearch-and-databricks",
@@ -1052,6 +1052,15 @@
       "category": "ai",
       "summary": "Written by Jakob, a Founders Associate (self-described non-engineer) at Earendil, this post is a personal account of learning to use Pi, the company's open-source agent harness, despite having no coding background. The author describes initially feeling like an impostor at a company building software for programmers — nodding along in meetings while secretly Googling terms like \"TUI\" — before deciding to simply open Pi and ask it questions in plain language.\n\nThe article's core argument is that agent harnesses are accessible to non-technical users: a harness is just a tool that turns \"I wish someone would do this for me\" into \"done.\" The author's favorite use case is a morning routine where Pi scans his inbox and meeting notes to build a to-do list split into what he owes others and what he's waiting on. When curious, he found Pi to be a patient teacher, walking him step by step through building a Google Apps Script, which gradually made coding feel less intimidating. He now builds small personal tools like digital invites, email engagement metrics trackers, and spreadsheet automations.\n\nA key point is that Pi being free, open source, and locally runnable matters because it can inspect its own code, explain itself, and help users change it — \"the tool could teach me how to rebuild the tool itself.\" The community has shared over 5,000 extensions. The author reinterprets the tagline: \"yours\" doesn't mean you built it, but that you can bend it to your life, whether around an inbox, lesson plans, research, or bookkeeping.\n\nThe takeaway: you don't need to be an engineer to own your tools — you just need to be curious enough to ask and brave enough to keep going. Rather than waiting for someone technical to build what you need, AI harnesses let anyone shape software around their own workflow.",
       "added": "2026-09-03",
+      "times_shown": 0
+    },
+    {
+      "slug": "radical-responsibility-means-treating-people-like-tools",
+      "title": "Radical responsibility means treating people like tools",
+      "url": "https://www.seangoedecke.com/radical-responsibility-means-treating-people-like-tools/",
+      "category": "business",
+      "summary": "The article examines the popular leadership concept of 'radical responsibility,' as defined in Conscious Leadership: taking full responsibility for one's circumstances rather than placing blame. The author acknowledges the appeal: good leaders are outcome-focused and don't waste time assigning blame; blaming others is role-playing success rather than achieving it. The core argument is that radical responsibility has a hidden cost: it is 'a little sociopathic.' If you claim full responsibility, you necessarily share responsibility with no one, which forces an instrumental view of people around you — useful assets or liabilities to manage, not peers you trust. If someone you relied on lets you down, the framing makes it your fault for trusting them. The author concedes the mindset works for winning but advises against it as a general life philosophy: trusting others with responsibility is how you treat them as people rather than tools, and accepting that means sometimes assigning praise and blame to others.",
+      "added": "2026-09-04",
       "times_shown": 0
     }
   ],
