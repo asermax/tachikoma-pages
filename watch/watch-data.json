@@ -544,6 +544,17 @@
       "has_notes": false
     },
     {
+      "slug": "ep-05-im-the-arbiter-of-tokens-and-gpus",
+      "title": "Ep 05 - \"I'm the Arbiter of Tokens and GPUs\"",
+      "url": "https://www.youtube.com/watch?v=gPBw5Cr9VJo",
+      "video_id": "gPBw5Cr9VJo",
+      "channel": "Next Token",
+      "summary": "In this episode of The Next Token podcast, hosts Dillon Mulroy and Sunil Pai interview Michelle Chen, Group Product Manager for Cloudflare's AI platform. Chen explains the differences and recent integration between Cloudflare's Workers AI, which manages the physical GPU hardware and model execution, and AI Gateway, which provides observability, caching, and security across various AI model providers. She also shares the fast-paced origin story of how Cloudflare rapidly deployed GPUs globally to datacenters to support edge-based AI. Highly relevant for software engineers, AI developers, and product managers interested in cloud infrastructure and edge AI deployment.",
+      "added": "2026-09-04",
+      "watched": "2026-09-04",
+      "has_notes": true
+    },
+    {
       "slug": "the-paradox-at-the-heart-of-ai-and-science-terence-tao",
       "title": "The paradox at the heart of AI and science | Terence Tao",
       "url": "https://www.youtube.com/watch?v=svl_1upFpQo",
