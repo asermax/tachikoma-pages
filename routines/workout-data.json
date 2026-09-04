@@ -63,6 +63,15 @@
           "weight": null
         },
         {
+          "name": "Short abs with elevated legs",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "40",
+          "unit": "",
+          "weight": null
+        },
+        {
           "name": "Knee push-ups",
           "detail": "wide",
           "sets": 3,
