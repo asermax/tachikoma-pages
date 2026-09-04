@@ -100,6 +100,16 @@
       "summary": "This video features a podcast episode of *Syntax* where hosts Wes Bos and Scott Tolinski interview developers Mario Zechner and Armin Ronacher about **Pi**, a minimal and highly extensible AI coding agent harness. The creators explain that Pi relies on a simple loop structure utilizing bash commands and basic file tools, arguing that a minimalist design makes the agent more predictable and adaptable to unique developer workflows. They also discuss broader trends in autonomous agents, the capabilities of modern models like Anthropic's Claude, and the persistent security challenge of prompt injection in agentic workflows.\n\nWho would benefit from watching: This video is highly beneficial for software engineers, web developers, AI enthusiasts, and cybersecurity professionals interested in the practical development, security challenges, and future direction of autonomous AI coding assistants.",
       "added": "2026-08-20",
       "times_shown": 0
+    },
+    {
+      "slug": "the-full-length-interview-with-yuval-noah-harari-the-economist",
+      "title": "The full-length interview with Yuval Noah Harari | The Economist",
+      "url": "https://www.youtube.com/watch?v=FNZhxTtOL-I",
+      "video_id": "FNZhxTtOL-I",
+      "channel": "The Economist",
+      "summary": "In this interview, The Economist Editor-in-Chief Zanny Minton Beddoes and historian Yuval Noah Harari discuss the future of artificial intelligence and its potential to surpass human control. Harari argues that as critical systems like finance and media grow too complex for human comprehension, societal trust is shifting away from traditional human institutions and toward AI algorithms. This transition suggests that AI will gain control not through force, but because humans willingly delegate decision-making power to more capable machine-learning systems. Worthwhile for anyone interested in the social and political implications of AI.",
+      "added": "2026-09-04",
+      "times_shown": 0
     }
   ],
   "archive": [
