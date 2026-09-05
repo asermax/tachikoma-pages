@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'what-are-code-reviews-even-for', title: 'What are code reviews even for?', meta: 'Brian Houck · Aug 2026', time: '12:25' },
     { slug: 'freedom-and-resentment-peter-strawson', title: 'Freedom and Resentment', meta: 'Peter F. Strawson · 1962', time: '64:58' },
     { slug: 'there-are-many-agent-harnesses-but-this-one-is-mine', title: 'There are many agent harnesses, but this one is mine.', meta: 'Jakob · Earendil', time: '4:10' },
     { slug: 'how-to-protect-yourself-from-workslop', title: 'How to protect yourself from workslop', meta: 'Sean Goedecke · Sep 2026', time: '3:51' },
