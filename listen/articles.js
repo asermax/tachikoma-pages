@@ -68,7 +68,6 @@ const ARTICLES = [
     { slug: 'viability-of-local-models-for-coding', title: 'Viability of local models for coding', meta: 'Birgitta Böckeler & Martin Fowler · Jul 2026', time: '15:44' },
     { slug: 'software-design-in-the-agentic-age', title: 'Software Design in the Agentic Age: Place Your Bets', meta: 'Mathias Verraes · Jul 2026', time: '13:43' },
     { slug: 'the-primitive-is-the-product', title: 'The primitive is the product', meta: 'Lenny Pruss · Jun 2026', time: '12:28' },
-    { slug: 'on-idea-generation', title: 'one must imagine sisyphus full of ideas: on exercising the idea muscle', meta: 'Sankalp · Jun 2026', time: '23:30' },
     { slug: 'prompt-injection-as-role-confusion', title: 'A Theory of Prompt Injection (and Why You Should Study Roles)', meta: 'Charles Ye et al. · Jun 2026', time: '35:09' },
     { slug: 'why-ai-hasnt-replaced-software-engineers', title: 'Why AI Hasnt Replaced Software Engineers', meta: 'Normal Tech · Jun 2026', time: '24:26' },
     { slug: 'agent-context', title: 'Agent Context', meta: 'Sankalp · Jun 2026', time: '12:39' },
