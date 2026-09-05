@@ -1044,6 +1044,15 @@
       "summary": "Peter Strawson's landmark 1962 British Academy lecture on moral responsibility and determinism. He argues against both the pessimist view (determinism would invalidate blame and moral obligation) and the optimist reduction of moral practices to social policy. Instead, he grounds reactive attitudes — resentment, gratitude, forgiveness, indignation — in the ordinary human practice of taking an participant stance toward one another, contrasting it with the objective stance of treating people as manageable objects. Moral responsibility survives determinism not through metaphysical free will but because reactive attitudes are constitutive of human interpersonal life; abandoning them would mean abandoning human relationships as we know them.",
       "added": "2026-09-04",
       "times_shown": 0
+    },
+    {
+      "slug": "what-are-code-reviews-even-for",
+      "title": "What are code reviews even for?",
+      "url": "https://newsletter.getdx.com/p/what-are-code-reviews-even-for",
+      "category": "engineering",
+      "summary": "This article examines how AI-generated code is overwhelming the code review process and argues that organizations must rethink what code review is actually for before automating it away. At Meta, significant lines of code per diff rose 106% over the past year, diffs per developer rose 51% (over 80% of that growth from agentic AI), while the share of diffs reviewed within 24 hours is declining. Industry-wide, AI tools are producing more and larger PRs (median PR size up 64% per DX analysis), and since developers only want to spend about 7% of their time reviewing, 'the math doesn't work.' The author argues that much of the review burden is self-inflicted and that AI merely inherited and amplified bad habits — decades of research already showed what makes review effective (small changes, meaningful descriptions, automated checks before human review, bounded review sessions, distributed reviewer responsibility) yet those practices were never widely adopted. Once fundamentals are in place, AI has a real role: developers want AI to handle routine, low-judgment work but explicitly reject auto-merging or AI taking final accountability. Meta's RADAR system is the model: automates review of low-to-medium risk diffs while routing high-risk changes to humans, achieving 535,000+ diffs reviewed, a revert rate one-third of non-RADAR diffs, and 3.3x faster median time to close — though even its team flags that expanding automation erodes knowledge transfer. The deeper point: code review was never just about finding defects (a Microsoft study found defect-related comments were only 14% of review comments); it also explores alternatives, transfers knowledge, and builds awareness. The takeaway: AI should make human review more valuable by reserving scarce human attention for changes where judgment and accountability matter most.",
+      "added": "2026-09-05",
+      "times_shown": 0
     }
   ],
   "archive": [
