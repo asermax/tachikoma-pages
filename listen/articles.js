@@ -1,5 +1,4 @@
 const ARTICLES = [
-    { slug: 'latent-powers', title: 'Latent Powers', meta: 'Armin Ronacher · Sep 2026', time: '4:37' },
     { slug: 'why-some-conversations-rearrange-your-brain', title: 'why some conversations rearrange your brain', meta: 'maja · May 2025', time: '20:47' },
     { slug: 'two-kinds-of-introspection', title: 'Two kinds of introspection', meta: 'Henrik Karlsson · Jun 2023', time: '7:39' },
     { slug: 'agency', title: 'On agency', meta: 'Henrik Karlsson · Jul 2025', time: '26:07' },
