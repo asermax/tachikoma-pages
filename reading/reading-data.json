@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04",
+  "generated_at": "2026-09-05",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1051,15 +1051,6 @@
       "url": "https://andreasklein.at/WF/Strawson%20Peter%20-%20Freedom%20and%20Resentment.pdf",
       "category": "philosophy",
       "summary": "Peter Strawson's landmark 1962 British Academy lecture on moral responsibility and determinism. He argues against both the pessimist view (determinism would invalidate blame and moral obligation) and the optimist reduction of moral practices to social policy. Instead, he grounds reactive attitudes — resentment, gratitude, forgiveness, indignation — in the ordinary human practice of taking an participant stance toward one another, contrasting it with the objective stance of treating people as manageable objects. Moral responsibility survives determinism not through metaphysical free will but because reactive attitudes are constitutive of human interpersonal life; abandoning them would mean abandoning human relationships as we know them.",
-      "added": "2026-09-04",
-      "times_shown": 0
-    },
-    {
-      "slug": "radical-responsibility-means-treating-people-like-tools",
-      "title": "Radical responsibility means treating people like tools",
-      "url": "https://www.seangoedecke.com/radical-responsibility-means-treating-people-like-tools/",
-      "category": "business",
-      "summary": "The article examines the popular leadership concept of 'radical responsibility,' as defined in Conscious Leadership: taking full responsibility for one's circumstances rather than placing blame. The author acknowledges the appeal: good leaders are outcome-focused and don't waste time assigning blame; blaming others is role-playing success rather than achieving it. The core argument is that radical responsibility has a hidden cost: it is 'a little sociopathic.' If you claim full responsibility, you necessarily share responsibility with no one, which forces an instrumental view of people around you — useful assets or liabilities to manage, not peers you trust. If someone you relied on lets you down, the framing makes it your fault for trusting them. The author concedes the mindset works for winning but advises against it as a general life philosophy: trusting others with responsibility is how you treat them as people rather than tools, and accepting that means sometimes assigning praise and blame to others.",
       "added": "2026-09-04",
       "times_shown": 0
     }
@@ -2254,6 +2245,16 @@
       "added": "2026-09-02",
       "read": "2026-09-02",
       "has_notes": false
+    },
+    {
+      "slug": "radical-responsibility-means-treating-people-like-tools",
+      "title": "Radical responsibility means treating people like tools",
+      "url": "https://www.seangoedecke.com/radical-responsibility-means-treating-people-like-tools/",
+      "category": "business",
+      "summary": "The article examines the popular leadership concept of 'radical responsibility,' as defined in Conscious Leadership: taking full responsibility for one's circumstances rather than placing blame. The author acknowledges the appeal: good leaders are outcome-focused and don't waste time assigning blame; blaming others is role-playing success rather than achieving it. The core argument is that radical responsibility has a hidden cost: it is 'a little sociopathic.' If you claim full responsibility, you necessarily share responsibility with no one, which forces an instrumental view of people around you — useful assets or liabilities to manage, not peers you trust. If someone you relied on lets you down, the framing makes it your fault for trusting them. The author concedes the mindset works for winning but advises against it as a general life philosophy: trusting others with responsibility is how you treat them as people rather than tools, and accepting that means sometimes assigning praise and blame to others.",
+      "added": "2026-09-04",
+      "read": "2026-09-05",
+      "has_notes": true
     }
   ]
 }
