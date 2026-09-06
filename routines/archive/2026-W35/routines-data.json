@@ -1,0 +1,189 @@
+{
+  "generated_at": "2026-09-06T02:00:28.720900-03:00",
+  "week_start": "2026-08-30",
+  "week_label": "August 30 - September 05, 2026",
+  "last_updated": "Sunday, September 06, 2026 at 02:00",
+  "stats": {
+    "completed": 10.666666666666666,
+    "planned": 15,
+    "display": "10.7 / 15"
+  },
+  "daily": {
+    "Sunday": {
+      "status": "done",
+      "completed": 1,
+      "total": 1
+    },
+    "Monday": {
+      "status": "partial",
+      "completed": 2,
+      "total": 3
+    },
+    "Tuesday": {
+      "status": "done",
+      "completed": 3,
+      "total": 3
+    },
+    "Wednesday": {
+      "status": "partial",
+      "completed": 1,
+      "total": 3
+    },
+    "Thursday": {
+      "status": "done",
+      "completed": 3,
+      "total": 3
+    },
+    "Friday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 1
+    },
+    "Saturday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    }
+  },
+  "goals": [
+    {
+      "name": "Wind-Down Routine",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "4 nights",
+      "target": "6 nights",
+      "progress_pct": 66
+    }
+  ],
+  "routines": [
+    {
+      "id": "basic-workout",
+      "name": "Basic Workout",
+      "emoji": "\ud83d\udcaa",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "done"
+        },
+        {
+          "day": "Thu",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 2,
+      "total": 2
+    },
+    {
+      "id": "music-practice",
+      "name": "Music Practice",
+      "emoji": "\ud83c\udfb7",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "1.5h",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "piano-practice",
+      "name": "Piano Practice",
+      "emoji": "\ud83c\udfb9",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "1h",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "reading",
+      "name": "Reading",
+      "emoji": "\ud83d\udcd6",
+      "sessions": [
+        {
+          "day": "Sun",
+          "status": "done"
+        },
+        {
+          "day": "Mon",
+          "status": "pending"
+        },
+        {
+          "day": "Tue",
+          "status": "done"
+        },
+        {
+          "day": "Wed",
+          "status": "pending"
+        },
+        {
+          "day": "Thu",
+          "status": "done"
+        },
+        {
+          "day": "Fri",
+          "status": "pending"
+        }
+      ],
+      "metrics_total": "90min",
+      "comparison": "",
+      "done": 3,
+      "total": 6
+    },
+    {
+      "id": "rock-climbing",
+      "name": "Rock Climbing",
+      "emoji": "\ud83e\uddd7",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "done"
+        },
+        {
+          "day": "Thu",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 2,
+      "total": 2
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga",
+      "emoji": "\ud83e\uddd8",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        },
+        {
+          "day": "Wed",
+          "status": "pending"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 2
+    }
+  ],
+  "spirit": {
+    "state": "content",
+    "emoji": "\ud83d\udc17",
+    "title": "\ud83d\udc17 Winter Boar Piglet",
+    "image": "assets/content.webp",
+    "description": "Your boar piglet sits content in soft drizzle, tender green sprouts around it, gentle overcast light \u2014 calm, settled, satisfied."
+  }
+}
