@@ -19,7 +19,6 @@ const ARTICLES = [
     { slug: 'fences-not-sandboxes', title: 'Fences, not Sandboxes', meta: 'Steve Yegge · Aug 2026', time: '22:55' },
     { slug: 'dont-answer-the-first-question', title: 'Don\'t answer the first question', meta: 'Lalit Maganti · Aug 2026', time: '7:19' },
     { slug: 'saas-isnt-dead-sameness-is', title: 'SaaS Isn\'t Dead. Sameness Is.', meta: 'Chad Fowler · Aug 2026', time: '26:29' },
-    { slug: 'how-i-find-problems-staff-engineer', title: 'How I Find Problems to Solve as a Staff Engineer', meta: 'Lalit Maganti · Aug 2026', time: '10:04' },
     { slug: 'anger-anxiety-and-agency', title: 'Anger, Anxiety and Agency', meta: 'Armin Ronacher · Aug 2026', time: '5:12' },
     { slug: 'i-will-fucking-piledrive-you-if-you-mention-ai-again', title: 'I Will Fucking Piledrive You If You Mention AI Again', meta: 'Ludicity · Aug 2026', time: '23:41' },
     { slug: 'the-worlds-left-to-conquer', title: 'The Worlds Left To Conquer', meta: 'Ludicity · Aug 2026', time: '12:31' },
