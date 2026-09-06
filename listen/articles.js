@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'ironies-of-automation', title: 'Ironies of Automation', meta: 'Lisanne Bainbridge · 1983', time: '35:26' },
     { slug: 'sensors-for-coding-agents', title: 'Maintainability Sensors for Coding Agents', meta: 'Birgitta Böckeler · 2026', time: '41:47' },
     { slug: 'harness-engineering-codex', title: 'Harness Engineering: Leveraging Codex in an Agent-First World', meta: 'OpenAI · 2026', time: '19:39' },
     { slug: 'minions-stripes-one-shot-end-to-end-coding-agents', title: 'Minions: Stripe\'s One-Shot End-to-End Coding Agents', meta: 'Stripe Engineering · 2026', time: '9:03' },
