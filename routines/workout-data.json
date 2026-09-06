@@ -1,5 +1,5 @@
 {
-  "week": "2026-W35",
+  "week": "2026-W36",
   "days": {
     "Monday": {
       "location": "Home - Dumbbells",
@@ -13,7 +13,16 @@
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "4",
+          "target": "5",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Bulgarian split squats",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "8",
           "unit": "",
           "weight": null
         },
@@ -59,6 +68,15 @@
           "sets": 3,
           "type": "reps",
           "target": "5",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Jump squats",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "12",
           "unit": "",
           "weight": null
         },
