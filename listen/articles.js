@@ -52,7 +52,6 @@ const ARTICLES = [
     { slug: 'should-you-use-ai-for-a-task-heres-a-simple-way-to-decide', title: 'Should You Use AI for a Task? Here\'s a Simple Way to Decide', meta: 'Bruce Schneier · Jul 2026', time: '6:23' },
     { slug: 'how-i-almost-lost-my-hands', title: 'How I almost lost my hands', meta: 'Jason Wei · Jul 2026', time: '11:24' },
     { slug: 'anthropics-position-on-open-weight-models', title: 'Our position on open-weights models', meta: 'Dario Amodei · Jul 2026', time: '8:09' },
-    { slug: 'harness-engineering', title: 'Harness engineering for coding agent users', meta: 'Birgitta Böckeler · Jul 2026', time: '16:05' },
     { slug: 'context-anchoring', title: 'Context Anchoring', meta: 'Rahul Garg · Jul 2026', time: '16:05' },
     { slug: 'should-still-design-code-humans', title: 'Should we still design code for humans?', meta: 'Valentina Servile · Jul 2026', time: '20:40' },
     { slug: 'how-coding-agents-read-your-code', title: 'How coding agents read your code (and how to write for them)', meta: 'Ben Vinegar · Jul 2026', time: '37:04' },
