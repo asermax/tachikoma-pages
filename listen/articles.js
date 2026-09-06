@@ -1,4 +1,6 @@
 const ARTICLES = [
+    { slug: 'future-of-software-engineering-2026', title: 'The Future of Software Engineering — Retreat Findings', meta: 'Thoughtworks · Jun 2026', time: '31:56' },
+    { slug: 'the-revolt-of-the-reader', title: 'The Revolt of the Reader', meta: 'Bryan Cantrill · Sep 2026', time: '8:05' },
     { slug: 'why-some-conversations-rearrange-your-brain', title: 'why some conversations rearrange your brain', meta: 'maja · May 2025', time: '20:47' },
     { slug: 'two-kinds-of-introspection', title: 'Two kinds of introspection', meta: 'Henrik Karlsson · Jun 2023', time: '7:39' },
     { slug: 'agency', title: 'On agency', meta: 'Henrik Karlsson · Jul 2025', time: '26:07' },
