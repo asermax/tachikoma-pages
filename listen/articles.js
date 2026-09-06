@@ -1,4 +1,8 @@
 const ARTICLES = [
+    { slug: 'sensors-for-coding-agents', title: 'Maintainability Sensors for Coding Agents', meta: 'Birgitta Böckeler · 2026', time: '41:47' },
+    { slug: 'harness-engineering-codex', title: 'Harness Engineering: Leveraging Codex in an Agent-First World', meta: 'OpenAI · 2026', time: '19:39' },
+    { slug: 'minions-stripes-one-shot-end-to-end-coding-agents', title: 'Minions: Stripe\'s One-Shot End-to-End Coding Agents', meta: 'Stripe Engineering · 2026', time: '9:03' },
+    { slug: 'the-role-of-developer-skills', title: 'The Role of Developer Skills in Agentic Coding', meta: 'Birgitta Böckeler · Apr 2026', time: '15:43' },
     { slug: 'future-of-software-engineering-2026', title: 'The Future of Software Engineering — Retreat Findings', meta: 'Thoughtworks · Jun 2026', time: '31:56' },
     { slug: 'the-revolt-of-the-reader', title: 'The Revolt of the Reader', meta: 'Bryan Cantrill · Sep 2026', time: '8:05' },
     { slug: 'why-some-conversations-rearrange-your-brain', title: 'why some conversations rearrange your brain', meta: 'maja · May 2025', time: '20:47' },
