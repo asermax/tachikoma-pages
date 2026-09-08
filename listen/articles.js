@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'automatically-detecting-ai-text-in-my-browser', title: 'Automatically detecting AI text in my browser', meta: 'Sean Goedecke · Sep 2026', time: '7:23' },
     { slug: 'ironies-of-automation', title: 'Ironies of Automation', meta: 'Lisanne Bainbridge · 1983', time: '35:26' },
     { slug: 'sensors-for-coding-agents', title: 'Maintainability Sensors for Coding Agents', meta: 'Birgitta Böckeler · 2026', time: '41:47' },
     { slug: 'harness-engineering-codex', title: 'Harness Engineering: Leveraging Codex in an Agent-First World', meta: 'OpenAI · 2026', time: '19:39' },
