@@ -1109,6 +1109,15 @@
       "times_shown": 0
     },
     {
+      "slug": "automatically-detecting-ai-text-in-my-browser",
+      "title": "Automatically detecting AI text in my browser",
+      "url": "https://www.seangoedecke.com/deckard/",
+      "category": "ai",
+      "summary": "The author argues that automated AI text detection is an underserved niche, with Pangram currently the only strong commercial option. He wants a tool that runs in the background of his browser and automatically scans pages for AI-generated text without sending data to a third-party service, so he explores local open-source models instead.\n\nHe benchmarks several small local AI-detection models against AI-detection datasets. While Pangram claims a 99.66% detection rate with a 0.004% false positive rate, the best small local models (Gradient MLX 4-bit, EditLens RoBERTa-large INT8) catch only ~52-56% of AI-involved text with ~2.5-2.7% false positives, and others fare worse. Still, he argues these are useful for someone who understands their limitations: you only need enough flags to be suspicious, and knowing the ~2% false-positive rate prevents treating a single flag as proof.\n\nEncouraged, he built Deckard, a Chrome extension that talks to a locally running Gradient model on a Mac via Chrome native messaging (no web server needed). It uses about 400MB-1.2GB of memory while active, shuts itself off after five minutes of inactivity, and successfully flagged known AI text like YouTube's built-in AI summaries. It's lightweight enough to run constantly without noticeable battery or heat impact.\n\nThe main takeaway: Deckard isn't as good as Pangram, but it's good enough for interested users today, and the author expects local detection models to improve dramatically — drawing a parallel to his earlier (correct) prediction that AI agents would improve rapidly as underlying models were swapped in, so he looks forward to upgrading Deckard's model to something far better.",
+      "added": "2026-09-08",
+      "times_shown": 0
+    },
+    {
       "slug": "creepy-crawlies",
       "title": "Creepy crawlies",
       "url": "https://people.kernel.org/monsieuricon/creepy-crawlies",
