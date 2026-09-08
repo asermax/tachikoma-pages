@@ -1,0 +1,102 @@
+{
+  "title": "Automatically detecting AI text in my browser",
+  "meta": "Sean Goedecke · Sep 2026 · ~7 min listen",
+  "body": "<div class=\"chunk\"><p>Automated AI text detection is currently an underserved niche. The only game in town is <a href=\"https://www.pangram.com/\" target=\"_blank\" rel=\"noopener\">Pangram</a>, which does an excellent job but desperately needs more competition. In a few years, I would be surprised if every major social network doesn’t scan new posts and comments for AI content in order to tag them (or simply remove them).</p></div>\n<div class=\"chunk\"><p>I like that I can rely on Pangram to confirm my suspicions when I read <a href=\"https://arxiv.org/abs/2609.03344\" target=\"_blank\" rel=\"noopener\">something</a> that sounds like AI. But it’d be much better if I could choose to avoid AI-generated text in the first place. What I want is something that runs in the background and automatically scans text on websites I visit, without me having to ask for it. I could build something like this on top of Pangram, but it’d <a href=\"https://www.pangram.com/pricing\" target=\"_blank\" rel=\"noopener\">cost money</a>, and in general I don’t like the idea of sending every piece of text my browser sees to a third-party service. What about local models?</p></div>\n<div class=\"chunk\"><p>The open-source models available for AI text detection are <em>fine</em>. Pangram <a href=\"https://www.pangram.com/blog/pangram-4-technical\" target=\"_blank\" rel=\"noopener\">claims</a> a 99.66% detection rate with a 0.004% false positive rate. I benchmarked a bunch of small local models against a combination of AI-detection datasets and got these results:</p></div>\n<div class=\"chunk\"><table>\n<thead>\n<tr>\n  <th>Model / variant</th>\n  <th>Human falsely flagged</th>\n  <th>AI-involved text caught</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n  <td><a href=\"https://huggingface.co/ShantanuT01/gradient-ai-text-detector\" target=\"_blank\" rel=\"noopener\">Gradient — MLX 4-bit</a></td>\n  <td>2.712%</td>\n  <td>52.35%</td>\n</tr>\n<tr>\n  <td><a href=\"https://huggingface.co/benreeve/editlens-roberta-large-onnx-int8\" target=\"_blank\" rel=\"noopener\">EditLens RoBERTa-large — community INT8</a></td>\n  <td>2.484%</td>\n  <td>56.06%</td>\n</tr>\n<tr>\n  <td><a href=\"https://huggingface.co/ShantanuT01/vanguard-ai-text-detector\" target=\"_blank\" rel=\"noopener\">Vanguard</a></td>\n  <td>2.267%</td>\n  <td>44.92%</td>\n</tr>\n<tr>\n  <td><a href=\"https://huggingface.co/desklib/ai-text-detector-v1.01\" target=\"_blank\" rel=\"noopener\">Desklib</a></td>\n  <td>3.008%</td>\n  <td>45.04%</td>\n</tr>\n<tr>\n  <td><a href=\"https://huggingface.co/rasbt/ai-text-detector-distilbert\" target=\"_blank\" rel=\"noopener\">Raschka DistilBERT</a></td>\n  <td>2.598%</td>\n  <td>39.01%</td>\n</tr>\n<tr>\n  <td><a href=\"https://huggingface.co/rasbt/ai-text-detector-qwen3-0.6b-variable\" target=\"_blank\" rel=\"noopener\">Raschka Qwen3-0.6B</a></td>\n  <td>2.028%</td>\n  <td>28.67%</td>\n</tr>\n<tr>\n  <td><a href=\"https://huggingface.co/rasbt/ai-text-detector-modernbert\" target=\"_blank\" rel=\"noopener\">Raschka ModernBERT</a></td>\n  <td>1.698%</td>\n  <td>21.58%</td>\n</tr>\n<tr>\n  <td><a href=\"https://huggingface.co/onnx-community/tmr-ai-text-detector-ONNX\" target=\"_blank\" rel=\"noopener\">TMR / Oxidane — INT8</a></td>\n  <td>1.595%</td>\n  <td>19.35%</td>\n</tr>\n</tbody>\n</table></div>\n<div class=\"chunk\"><p>I’m not surprised these are so much worse. I didn’t even benchmark Pangram’s own EditLens 3B model, since that’s too big to keep running in the background on my laptop, and the real production Pangram model is likely one or two orders of magnitude bigger than that. But these models are still good enough to be useful to someone who understands their limitations. If you want to flag an AI-written article, you don’t need to flag all of it, just enough to be suspicious. And so long as you’re aware that the false-positive rate is ~2%, you can avoid treating a single flag as solid proof of AI use.</p></div>\n<div class=\"chunk\"><p>Encouraged by this, I vibed up <a href=\"https://github.com/sgoedecke/deckard\" target=\"_blank\" rel=\"noopener\">Deckard</a>: a Chrome extension that talks to a locally-running model (the bolded one in the table above) on your Mac. One nice thing is that I didn’t have to start a web server: the Chrome extension is happy to start the model as-needed and can talk with it over <a href=\"https://developer.chrome.com/docs/extensions/develop/concepts/native-messaging\" target=\"_blank\" rel=\"noopener\">native messaging</a>. It uses about 400MB-1.2GB of memory while active (so it’s like having five or six extra Chrome tabs open), and it turns itself off if you go five minutes without using the model.</p></div>\n<div class=\"chunk\"><p>I was pleasantly surprised to see Deckard successfully mark text I knew was AI-generated, such as the built-in YouTube AI summary or the AI <a href=\"https://www.seangoedecke.com/ai-research-with-codex/\" target=\"_blank\" rel=\"noopener\">snippets</a> in my own posts:</p></div>\n<div class=\"chunk image-chunk\"><img src=\"images/automatically-detecting-ai-text-in-my-browser/snippets.webp\" alt=\"snippets\" loading=\"lazy\" /><p class=\"img-caption\">snippets</p></div>\n<div class=\"chunk\"><p>It’s lightweight enough that I have it running all the time. I haven’t noticed my MacBook Pro get hot at all or any decrease in battery life, though your mileage may vary on different machines.</p></div>\n<div class=\"chunk\"><p>Is Deckard good yet? That depends. It’s good enough that I’m planning to use it, and I recommend it to anyone who’s interested in automatic AI checking. It’s way, way worse than Pangram, and way worse than I think tooling like this is going to be in the next few years.</p></div>\n<div class=\"chunk\"><p>Way back in November 2023, I <a href=\"https://www.seangoedecke.com/llm-driven-agents/\" target=\"_blank\" rel=\"noopener\">wrote</a> that AI-driven agents were going to be a really big deal. I recommended starting to develop harnesses early, so you can be ready when the models get good enough:</p></div>\n<div class=\"chunk\"><p>As with most modern language model engineering, a ReAct agent can also see massive sudden improvements by swapping out the underlying model for a better one. … I think this is another reason to invest in agents like this early, in order to take advantage of more powerful models as they come out.</p></div>\n<div class=\"chunk\"><p>I was right about that, and I (although it’s lower-stakes) think I’m also right about this. AI detection models are only going to get better over time: Pangram is not going to be the only game in town forever, and we’re eventually going to see small local models that do a good-enough job at identifying AI-written text. I look forward to swapping out the local model in <a href=\"https://github.com/sgoedecke/deckard\" target=\"_blank\" rel=\"noopener\">Deckard</a> with something that’s 2x or 10x better.</p></div>\n<div class=\"chunk\"><ul>\n<li>Substack <a href=\"https://support.substack.com/hc/en-us/articles/50891130623508-How-can-I-detect-AI-on-Substack\" target=\"_blank\" rel=\"noopener\">kind of has this</a> already, although you have to click a button to scan the post.<a href=\"https://www.seangoedecke.com#fnref-1\" target=\"_blank\" rel=\"noopener\"></a></li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>Well, me and Astra. Overall my experience vibecoding this was very pleasant: I was able to make a bunch of top-level decisions, I could choose programming languages I was less familiar with but were better choices (like doing inference in C++ instead of Python), and the LLM made me aware of choices I would not have thought of by myself (e.g. using native messaging instead of local HTTP). <a href=\"https://www.seangoedecke.com#fnref-2\" target=\"_blank\" rel=\"noopener\"></a></li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li>Is this true, given that AI models will also be getting more human-like over time? That’s a subject for a whole other post, but I think so. First, the AI labs aren’t really incentivized to defeat tools like Pangram (if anything it’s the reverse). Second, I don’t see any way around the fact that AI models have a distinct writing style that’s RL-ed into them. <a href=\"https://www.seangoedecke.com#fnref-3\" target=\"_blank\" rel=\"noopener\"></a></li>\n</ul></div>\n<div class=\"chunk\"><p>If you liked this post, consider <a href=\"https://buttondown.com/seangoedecke\" target=\"_blank\" rel=\"noopener\">subscribing</a> to email updates about my new posts, or <a href=\"https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fwww.seangoedecke.com%2Fdeckard%2F&amp;t=Automatically%20detecting%20AI%20text%20in%20my%20browser\" target=\"_blank\" rel=\"noopener\">sharing it on Hacker News</a>.</p></div>\n<div class=\"chunk\"><p>Here's a preview of a related post that shares tags with this one.</p></div>\n<div class=\"chunk\"><p>Weird projects I shipped with AI</p></div>\n<div class=\"chunk\"><p>Where are all the AI-generated projects? This is a</p></div>\n<div class=\"chunk\"><p><a href=\"https://news.ycombinator.com/item?id=46262545\" target=\"_blank\" rel=\"noopener\">common question</a> from AI skeptics: if LLMs are so good at writing code, where is the tsunami of new AI-generated apps, services and games?I personally don’t find this to be much of a paradox. Writing code is only one of the bottlenecks involved in actually</p></div>\n<div class=\"chunk\"><p><a href=\"https://www.seangoedecke.com/how-to-ship\" target=\"_blank\" rel=\"noopener\">shipping</a> a new product, after all. It’s also impossible to talk about the paid work I’ve done with AI (you’ll simply have to take my word that it’s increased my productivity). But one thing I can do is share a list of personal projects I’ve built with AI in the last twelve months.<a href=\"https://www.seangoedecke.com/weird-projects-i-shipped-with-ai/\" target=\"_blank\" rel=\"noopener\">Continue reading...</a></p></div>\n",
+  "audio": "automatically-detecting-ai-text-in-my-browser.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      21.65,
+      55.575,
+      76.525,
+      161.925,
+      197.375,
+      228.725,
+      240.075,
+      250.1,
+      261.275,
+      278.1,
+      290.925,
+      309.825,
+      334.675,
+      339.925,
+      365.575,
+      388.725,
+      396.175,
+      400.55,
+      403.15,
+      406.925,
+      424.8
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14
+      ],
+      [
+        15
+      ],
+      [
+        16
+      ],
+      [
+        17
+      ],
+      [
+        18
+      ],
+      [
+        19
+      ],
+      [
+        20
+      ],
+      [
+        21
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://www.seangoedecke.com/deckard/"
+}
