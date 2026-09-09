@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08",
+  "generated_at": "2026-09-09",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1106,6 +1106,15 @@
       "category": "ai",
       "summary": "The author argues that automated AI text detection is an underserved niche, with Pangram currently the only strong commercial option. He wants a tool that runs in the background of his browser and automatically scans pages for AI-generated text without sending data to a third-party service, so he explores local open-source models instead.\n\nHe benchmarks several small local AI-detection models against AI-detection datasets. While Pangram claims a 99.66% detection rate with a 0.004% false positive rate, the best small local models (Gradient MLX 4-bit, EditLens RoBERTa-large INT8) catch only ~52-56% of AI-involved text with ~2.5-2.7% false positives, and others fare worse. Still, he argues these are useful for someone who understands their limitations: you only need enough flags to be suspicious, and knowing the ~2% false-positive rate prevents treating a single flag as proof.\n\nEncouraged, he built Deckard, a Chrome extension that talks to a locally running Gradient model on a Mac via Chrome native messaging (no web server needed). It uses about 400MB-1.2GB of memory while active, shuts itself off after five minutes of inactivity, and successfully flagged known AI text like YouTube's built-in AI summaries. It's lightweight enough to run constantly without noticeable battery or heat impact.\n\nThe main takeaway: Deckard isn't as good as Pangram, but it's good enough for interested users today, and the author expects local detection models to improve dramatically — drawing a parallel to his earlier (correct) prediction that AI agents would improve rapidly as underlying models were swapped in, so he looks forward to upgrading Deckard's model to something far better.",
       "added": "2026-09-08",
+      "times_shown": 0
+    },
+    {
+      "slug": "are-you-getting-your-moneys-worth-from-ai",
+      "title": "Are You Getting Your Money's Worth from AI?",
+      "url": "https://www.jamesshore.com/v2/blog/2026/are-you-getting-your-moneys-worth-from-ai",
+      "category": "ai",
+      "summary": "James Shore opens a multi-part essay series on how to rigorously quantify the impact of AI on software development organizations. He notes that software is AI's biggest beneficiary — one CIO with a 170-person organization measured a 2.1x productivity gain — but that this comes at substantial cost: top AI users spending $21,000/month on tokens at one company, $6,000–8,000 per engineer per month at another. Those costs eventually come out of the personnel budget, with real consequences for real people, so leaders need to know both costs and benefits rather than relying on anecdotes, some of which are outright fiction.\n\nShore argues there's no one-size-fits-all answer: what works for an internal IT shop differs from a startup, and speed isn't everything — doubling output while spending enough on tokens to halve your staff may be a net loss. Self-assessment is unreliable, as the METR study showed (engineers believed they were 20% faster but measured 19% slower). On costs, he warns that current AI pricing is heavily subsidized by vendors fighting for market share, while countervailing forces (open-weight models, cheaper inference chips, routers, more token-efficient models) could push prices down — so ROI models should make cost assumptions explicit and consider both optimistic and pessimistic scenarios. Adoption also involves a change-management dip where productivity falls before it rises.\n\nLong-term effects matter too: if AI doubles production but also doubles maintenance costs, short-term gains are erased within months and a permanent productivity penalty follows. He also cites rising engineer burnout under AI-driven workflows, and stresses the goal is delivering value faster, not software faster.\n\nOn what not to do: don't measure lines of code (AI verbosity means you'd be measuring \"slop\") and don't count pull requests, since AI breaks the assumption that PRs reflect a steady development pace — plus metrics that become targets get gamed (Goodhart's Law, citing Robert Austin). His conclusion: measure the *approach*, not people — run measurements periodically to evaluate AI strategies, learn from them, and stop measuring. Future parts in the series cover measuring delivery speed, unintended consequences, and business outcomes.",
+      "added": "2026-09-09",
       "times_shown": 0
     }
   ],
