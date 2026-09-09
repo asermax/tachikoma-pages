@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'why-we-should-anthropomorphize-ai-agents', title: 'Why we should anthropomorphize AI agents', meta: 'Sean Goedecke · Sep 2026', time: '8:32' },
     { slug: 'are-you-getting-your-moneys-worth-from-ai', title: 'Are You Getting Your Money\'s Worth from AI?', meta: 'James Shore · 2026', time: '12:00' },
     { slug: 'automatically-detecting-ai-text-in-my-browser', title: 'Automatically detecting AI text in my browser', meta: 'Sean Goedecke · Sep 2026', time: '7:23' },
     { slug: 'ironies-of-automation', title: 'Ironies of Automation', meta: 'Lisanne Bainbridge · 1983', time: '35:26' },
