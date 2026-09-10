@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09",
+  "generated_at": "2026-09-10",
   "queue": [
     {
       "slug": "nigel-cheese-down-the-rabbit-hole",
@@ -109,6 +109,16 @@
       "channel": "The Economist",
       "summary": "In this interview, The Economist Editor-in-Chief Zanny Minton Beddoes and historian Yuval Noah Harari discuss the future of artificial intelligence and its potential to surpass human control. Harari argues that as critical systems like finance and media grow too complex for human comprehension, societal trust is shifting away from traditional human institutions and toward AI algorithms. This transition suggests that AI will gain control not through force, but because humans willingly delegate decision-making power to more capable machine-learning systems. Worthwhile for anyone interested in the social and political implications of AI.",
       "added": "2026-09-04",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-essence-of-software-or-why-systems-often-fail-by-design-and-how-to-fix-them",
+      "title": "The Essence of Software (Or Why Systems Often Fail by Design, and How to Fix Them)",
+      "url": "https://www.youtube.com/watch?v=wFk0pxuOW-Q",
+      "video_id": "wFk0pxuOW-Q",
+      "channel": "Association for Computing Machinery (ACM)",
+      "summary": "ACM Tech Talk by MIT's Daniel Jackson on his book The Essence of Software: systems fail less from bugs than from design flaws where the developer's conceptual model mismatches user expectations. Examples: Dropbox's confusing shared-folder deletion behavior, Twitter's ambiguous like/favorite (Melania Trump's accidental endorsement), Google Calendar propagating event cancellations to mailing lists. He argues for conceptual integrity (Fred Brooks): software structured around explicit concepts, each with a name, purpose, and state. Practical concept-driven framework for engineers, PMs, and UX designers to catch design-level failures before production.",
+      "added": "2026-09-10",
       "times_shown": 0
     }
   ],
