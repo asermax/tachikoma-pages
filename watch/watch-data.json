@@ -112,16 +112,6 @@
       "times_shown": 0
     },
     {
-      "slug": "state-of-agentic-coding-10-with-armin-and-ben",
-      "title": "State of Agentic Coding #10 with Armin and Ben",
-      "url": "https://www.youtube.com/watch?v=9UAxrdcDjjU",
-      "video_id": "9UAxrdcDjjU",
-      "channel": "Armin Ronacher",
-      "summary": "State of Agentic Coding #10 \u2014 Armin Ronacher and Ben Vinegar on the generative AI landscape: AI watermarking and detection, quality of LLM-generated content, and the competitive dynamics of AI coding tools (Windsurf acquisition, model loyalty driven by defaults and pricing). Second half: economics of open-weight vs closed models, and the shift from local IDE integrations toward cloud-hosted agents (Devin etc.), complicated by guardrails, security policies, and subscription pricing.",
-      "added": "2026-09-10",
-      "times_shown": 0
-    },
-    {
       "slug": "the-essence-of-software-or-why-systems-often-fail-by-design-and-how-to-fix-them",
       "title": "The Essence of Software (Or Why Systems Often Fail by Design, and How to Fix Them)",
       "url": "https://www.youtube.com/watch?v=wFk0pxuOW-Q",
@@ -593,6 +583,17 @@
       "summary": "In this video, renowned mathematician Terence Tao explores the profound impact of artificial intelligence on the methodologies of math and science. He explains how AI can automate complex tasks like data analysis and theory generation at scale, but cautions that a heavy reliance on these tools may erode the deep, intuitive understanding that human scientists gain through slow, manual problem-solving. Tao also details how large language models function by predicting patterns in data, highlighting both their impressive capabilities in generating proofs and their lack of true, grounded understanding of the world. This video is highly beneficial for educators, researchers, and anyone interested in the future of scientific discovery in the age of AI.",
       "added": "2026-09-04",
       "watched": "2026-09-04",
+      "has_notes": true
+    },
+    {
+      "slug": "state-of-agentic-coding-10-with-armin-and-ben",
+      "title": "State of Agentic Coding #10 with Armin and Ben",
+      "url": "https://www.youtube.com/watch?v=9UAxrdcDjjU",
+      "video_id": "9UAxrdcDjjU",
+      "channel": "Armin Ronacher",
+      "summary": "State of Agentic Coding #10 \u2014 Armin Ronacher and Ben Vinegar on the generative AI landscape: AI watermarking and detection, quality of LLM-generated content, and the competitive dynamics of AI coding tools (Windsurf acquisition, model loyalty driven by defaults and pricing). Second half: economics of open-weight vs closed models, and the shift from local IDE integrations toward cloud-hosted agents (Devin etc.), complicated by guardrails, security policies, and subscription pricing.",
+      "added": "2026-09-10",
+      "watched": "2026-09-10",
       "has_notes": true
     }
   ]
