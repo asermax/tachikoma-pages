@@ -1,7 +1,6 @@
 const ARTICLES = [
     { slug: 'distillation-essence-of-software', title: 'The Essence of the Essence', meta: 'Daniel Jackson', time: '44:23' },
     { slug: 'pstack-part-2-research-planning-prototyping-and-architecture', title: 'The Complete Guide to pstack Pt. 2', meta: 'Lauren Tan · Sep 2026', time: '22:24' },
-    { slug: 'astra-why', title: 'Astra for Coding: Why Are We Doing This Again?', meta: 'Armin Ronacher · Sep 2026', time: '18:47' },
     { slug: 'why-we-should-anthropomorphize-ai-agents', title: 'Why we should anthropomorphize AI agents', meta: 'Sean Goedecke · Sep 2026', time: '8:32' },
     { slug: 'are-you-getting-your-moneys-worth-from-ai', title: 'Are You Getting Your Money\'s Worth from AI?', meta: 'James Shore · 2026', time: '12:00' },
     { slug: 'automatically-detecting-ai-text-in-my-browser', title: 'Automatically detecting AI text in my browser', meta: 'Sean Goedecke · Sep 2026', time: '7:23' },
