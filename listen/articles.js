@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'they-really-do-think-ai-might-kill-everyone', title: 'They really do think AI might kill everyone', meta: 'Sean Goedecke · Sep 2026', time: '10:25' },
     { slug: 'distillation-essence-of-software', title: 'The Essence of the Essence', meta: 'Daniel Jackson', time: '44:23' },
     { slug: 'pstack-part-2-research-planning-prototyping-and-architecture', title: 'The Complete Guide to pstack Pt. 2', meta: 'Lauren Tan · Sep 2026', time: '22:24' },
     { slug: 'why-we-should-anthropomorphize-ai-agents', title: 'Why we should anthropomorphize AI agents', meta: 'Sean Goedecke · Sep 2026', time: '8:32' },
