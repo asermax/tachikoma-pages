@@ -112,6 +112,16 @@
       "times_shown": 0
     },
     {
+      "slug": "state-of-agentic-coding-10-with-armin-and-ben",
+      "title": "State of Agentic Coding #10 with Armin and Ben",
+      "url": "https://www.youtube.com/watch?v=9UAxrdcDjjU",
+      "video_id": "9UAxrdcDjjU",
+      "channel": "Armin Ronacher",
+      "summary": "State of Agentic Coding #10 \u2014 Armin Ronacher and Ben Vinegar on the generative AI landscape: AI watermarking and detection, quality of LLM-generated content, and the competitive dynamics of AI coding tools (Windsurf acquisition, model loyalty driven by defaults and pricing). Second half: economics of open-weight vs closed models, and the shift from local IDE integrations toward cloud-hosted agents (Devin etc.), complicated by guardrails, security policies, and subscription pricing.",
+      "added": "2026-09-10",
+      "times_shown": 0
+    },
+    {
       "slug": "the-essence-of-software-or-why-systems-often-fail-by-design-and-how-to-fix-them",
       "title": "The Essence of Software (Or Why Systems Often Fail by Design, and How to Fix Them)",
       "url": "https://www.youtube.com/watch?v=wFk0pxuOW-Q",
