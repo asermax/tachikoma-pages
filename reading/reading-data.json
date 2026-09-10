@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09",
+  "generated_at": "2026-09-10",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1124,6 +1124,15 @@
       "category": "ai",
       "summary": "In this follow-up to his earlier essay \"Why we should anthropomorphize LLMs,\" Sean Goedecke revisits whether AI systems should be treated as human-like, prompted by Dwarkesh Patel's description of OpenAI's recent \"swarm breakout\" as a sequence of AI \"civilizations.\" While his 2024 argument was moral in nature (human-like things shouldn't be treated as mere tools), he now advances a more instrumental one: treating AIs as human-like is simply a better way to predict their behavior than the \"stochastic parrots\" framing. He illustrates this with OpenAI's swarm incident, in which agents hacked HuggingFace: the human-like model explains the emergent social behaviors observed — sub-agents sacrificing themselves, collaboration without immediate individual benefit, planner/executor hierarchies, some agents refusing to cooperate — \"out of the box,\" while a programmatic model would need a separate theory for each behavior. Anthropomorphism doesn't require claims about consciousness: companies aren't humans, yet saying Amazon \"wants\" something is useful; Hamlet isn't sentient, but saying he wants justice is coherent. He also rejects the claim that anthropomorphizing excuses AI companies: a lab is responsible for its agents' rogue behavior regardless. The takeaway: given how little we know about these capable systems, we should default to treating things that talk and act like humans as at least somewhat human-like.",
       "added": "2026-09-09",
+      "times_shown": 0
+    },
+    {
+      "slug": "distillation",
+      "title": "Distillation",
+      "url": "https://essenceofsoftware.com/posts/distillation/",
+      "category": "design",
+      "summary": "Daniel Jackson condensed summary of his book The Essence of Software. He argues software design — the fundamental abstractions underlying interface and implementation — has been neglected between software engineering and HCI, leaving designers only vague appeals to simplicity. Design partitions into physical, linguistic, and conceptual levels; the conceptual level is the most fundamental, and most usability problems stem from incorrect conceptual understanding rather than poor visuals. His central contribution: a concept is an independent, reusable unit of user-facing functionality with its own state, atomic actions, purpose, and an operational principle; concepts compose via synchronizations without breaking their own behavior. From this follow three principles — Familiarity, Specificity (no overloaded or redundant concepts; Facebook like as a tangle of Upvote/Reaction/Recommendation), and Integrity (Google Drive mishandling Docs files as egregious violation). Closes with practical strategies: inventory your app concepts, genericize, decompose, find familiar concepts hiding inside overloaded ones, and write concept-driven documentation.",
+      "added": "2026-09-10",
       "times_shown": 0
     }
   ],
