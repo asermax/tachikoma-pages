@@ -120,6 +120,16 @@
       "summary": "ACM Tech Talk by MIT's Daniel Jackson on his book The Essence of Software: systems fail less from bugs than from design flaws where the developer's conceptual model mismatches user expectations. Examples: Dropbox's confusing shared-folder deletion behavior, Twitter's ambiguous like/favorite (Melania Trump's accidental endorsement), Google Calendar propagating event cancellations to mailing lists. He argues for conceptual integrity (Fred Brooks): software structured around explicit concepts, each with a name, purpose, and state. Practical concept-driven framework for engineers, PMs, and UX designers to catch design-level failures before production.",
       "added": "2026-09-10",
       "times_shown": 0
+    },
+    {
+      "slug": "the-ai-language-we-cant-read-neuralese-ft-rob-miles-computerphile",
+      "title": "The AI Language We Can't Read: Neuralese ft. Rob Miles - Computerphile",
+      "url": "https://www.youtube.com/watch?v=iuHddnIzKRA",
+      "video_id": "iuHddnIzKRA",
+      "channel": "Computerphile",
+      "summary": "This video explores the mechanics of AI \"chain of thought\" (CoT) reasoning, focusing on how large language models use hidden intermediate steps to solve complex, multi-step problems. Rob Miles explains that CoT serves as a serial \"scratchpad,\" allowing models to break down tasks like math or sequential logic into step-by-step passes rather than trying to calculate answers all at once. The discussion also addresses the nuances of anthropomorphizing AI, explaining that while these models don't think like humans, framing their internal processing as \"thinking\" remains a useful shortcut. Highly beneficial for AI researchers, developers, and tech enthusiasts seeking a deeper understanding of LLM transparency, reasoning capabilities, and alignment.",
+      "added": "2026-09-11",
+      "times_shown": 0
     }
   ],
   "archive": [
