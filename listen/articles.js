@@ -1,5 +1,4 @@
 const ARTICLES = [
-    { slug: 'if-coding-is-solved-what-now-measuring-the-sloppiness-of-code', title: 'If coding is solved, what now?: Measuring the sloppiness of code', meta: 'Earendil · Sep 2026', time: '8:31' },
     { slug: 'they-really-do-think-ai-might-kill-everyone', title: 'They really do think AI might kill everyone', meta: 'Sean Goedecke · Sep 2026', time: '10:25' },
     { slug: 'distillation-essence-of-software', title: 'The Essence of the Essence', meta: 'Daniel Jackson', time: '44:23' },
     { slug: 'why-we-should-anthropomorphize-ai-agents', title: 'Why we should anthropomorphize AI agents', meta: 'Sean Goedecke · Sep 2026', time: '8:32' },
