@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'ai-supposed-killer-apps', title: 'A.I. Was Supposed to Give Us New Killer Apps. What Happened?', meta: 'Paul Ford · Sep 2026', time: '7:40' },
     { slug: 'pdoom', title: 'P(doom)', meta: 'Armin Ronacher · Sep 2026', time: '9:16' },
     { slug: 'we-must-pace-the-frontier', title: 'We Must Pace the Frontier', meta: 'Dario Amodei · Sep 2026', time: '21:57' },
     { slug: 'i-made-a-build-profiler-to-understand-buns-compile-times', title: 'I made a build profiler to understand Bun\'s compile times', meta: 'Lalit Maganti · Sep 2026', time: '23:17' },
