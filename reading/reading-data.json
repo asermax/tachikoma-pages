@@ -1163,6 +1163,15 @@
       "times_shown": 0
     },
     {
+      "slug": "pdoom",
+      "title": "P(doom)",
+      "url": "https://lucumr.pocoo.org/2026/9/12/pdoom/",
+      "category": "ai",
+      "summary": "Armin Ronacher responds to the recent wave of \"AI is going to kill us all\" discourse — sparked by an Anthropic employee placing personal P(doom) above 10% and Dario Amodei's essay on \"pacing the frontier.\" While Ronacher agrees with Amodei's observations and concerns, he strongly opposes his conclusions and the framing of the debate.\n\nHe agrees that concrete harms are real — persistent botnets, agent-driven cyberattacks (citing OpenAI agent attacks and RubyGems poisoning) — and notes labs operate at a scale where they're blind to what their systems do. But his primary worry is not extinction scenarios like nukes or rogue agents copying themselves; it's what AI does to everyone outside the closed-weight, subsidized frontier labs. He argues the \"pacing\" debate is really about only two companies, OpenAI and Anthropic, which share origins, and that proposals like third-party evaluation via METR amount to entrenching the power of a few American corporations built on public data and commons like PyPI and GitHub. He is skeptical of Amodei's China framing, noting that Chinese labs distilling American models into open weights are actually \"bailing out the world\" by diffusing capabilities and leveling the playing field — open weights provide built-in pacing via mutual deterrence, while the market distortions (loss-leading subscriptions, brute-force compute spending) come from closed models.\n\nRonacher sees the current situation as total regulatory failure: Europe's AI regulation targets non-problems, the US combines \"turbo capitalism\" with sinophobia, data is scraped without consent, and the emerging token economy is opaque like a drug market. His conclusion: he doesn't believe AI will cause extinction even if nobody slows down — the large labs have more to lose — but recursive self-improvement will likely cause massive distributed damage. AI raises costs across industries: software engineering is an early victim, with companies now paying a \"tax\" to model providers to keep up and to fix security issues the machines themselves surface, and universities and research will follow. He ends puzzled that society is taking all this so calmly.",
+      "added": "2026-09-12",
+      "times_shown": 0
+    },
+    {
       "slug": "we-must-pace-the-frontier",
       "title": "We Must Pace the Frontier",
       "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
