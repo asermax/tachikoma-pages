@@ -120,6 +120,26 @@
       "summary": "ACM Tech Talk by MIT's Daniel Jackson on his book The Essence of Software: systems fail less from bugs than from design flaws where the developer's conceptual model mismatches user expectations. Examples: Dropbox's confusing shared-folder deletion behavior, Twitter's ambiguous like/favorite (Melania Trump's accidental endorsement), Google Calendar propagating event cancellations to mailing lists. He argues for conceptual integrity (Fred Brooks): software structured around explicit concepts, each with a name, purpose, and state. Practical concept-driven framework for engineers, PMs, and UX designers to catch design-level failures before production.",
       "added": "2026-09-10",
       "times_shown": 0
+    },
+    {
+      "slug": "ai-researchers-debate-how-close-we-are-to-recursive-self-improvement",
+      "title": "AI researchers debate how close we are to recursive self-improvement",
+      "url": "https://www.youtube.com/watch?v=PrSf7IOYu-I",
+      "video_id": "PrSf7IOYu-I",
+      "channel": "Dwarkesh Patel",
+      "summary": "This video features a roundtable discussion with AI researchers exploring the technical reasons why superintelligent AI might not be developed within the next ten years. The participants argue that current AI development faces significant bottlenecks, such as a lack of true generalization, the recurrence of hype-and-disappointment cycles, and the potential of hitting asymptotic performance limits under current paradigms. A comparison of chess bot Elo ratings over time is used to illustrate how steady linear progress can deceptively feel like a sudden breakthrough once it crosses human-level ability. Anyone interested in AI research, future technology trends, or the realistic limitations of machine learning would benefit from watching this video.",
+      "added": "2026-09-12",
+      "times_shown": 0
+    },
+    {
+      "slug": "how-a-cloudflare-engineer-ships-production-code-he-didnt-write-dillon-mulroy",
+      "title": "How a Cloudflare Engineer Ships Production Code He Didn't Write | Dillon Mulroy",
+      "url": "https://www.youtube.com/watch?v=sYNOgpDKTvE",
+      "video_id": "sYNOgpDKTvE",
+      "channel": "Jan-Niklas Wortmann",
+      "summary": "This video features a discussion between Jan-Niklas Wortmann and Cloudflare Principal Engineer Dillon Mulroy about the profound impact of generative AI on the software engineering profession. Mulroy shares his personal transition from a traditional programmer to relying heavily on AI to write code, detailing both the massive productivity gains and the emotional challenges of this shift in his day-to-day work. The speakers emphasize that while AI alters how code is generated, developers must remain responsible craftsmen who understand the output and guide the technology. This discussion is highly valuable for software developers, tech leaders, and students navigating the rapidly changing landscape of the tech industry.",
+      "added": "2026-09-12",
+      "times_shown": 0
     }
   ],
   "archive": [
