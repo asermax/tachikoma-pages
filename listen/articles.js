@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'we-must-pace-the-frontier', title: 'We Must Pace the Frontier', meta: 'Dario Amodei · Sep 2026', time: '21:57' },
     { slug: 'i-made-a-build-profiler-to-understand-buns-compile-times', title: 'I made a build profiler to understand Bun\'s compile times', meta: 'Lalit Maganti · Sep 2026', time: '23:17' },
     { slug: 'dont-build-tools-for-ai-agents', title: 'Don\'t build tools for AI agents', meta: 'Sean Goedecke · Sep 2026', time: '4:30' },
     { slug: 'they-really-do-think-ai-might-kill-everyone', title: 'They really do think AI might kill everyone', meta: 'Sean Goedecke · Sep 2026', time: '10:25' },
