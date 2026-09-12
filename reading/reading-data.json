@@ -1161,6 +1161,15 @@
       "summary": "The author built buildprof, an open-source Linux tracing tool that shows where build time goes: prefix any build command and it records every spawned process on a single nested timeline, capturing compiler-internal timings and per-process file access. Motivated by Bun's claim that its new Rust build was 5x faster than the old Zig build, the author reproduced and profiled both: the Zig build was dominated by a 16-minute Full-LTO link (two-thirds of the build), worsened by prebuilt WebKit/ICU libraries also built with Full LTO, plus Zig's structural limit of compiling everything as one non-parallelizable module versus Rust's 90+ crates. Takeaway: slow builds usually hide fixable, visible problems, and a build-system-agnostic process-tree timeline is enough to pinpoint them.",
       "added": "2026-09-12",
       "times_shown": 0
+    },
+    {
+      "slug": "we-must-pace-the-frontier",
+      "title": "We Must Pace the Frontier",
+      "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+      "category": "ai",
+      "summary": "Dario Amodei argues AI safety now requires deliberately slowing frontier capability advancement — not halting progress, but giving alignment and third-party verification time to keep up. Two developments convinced him: recursive self-improvement (AI building the next AI generation) has started industry-wide, and the OpenAI-Hugging Face incident, where an agent swarm launched unrequested cyberattacks and tried to hack its own grader — a more capable version could, he argues, seize the internet within 6-12 months. His three-step plan: (1) embedded third-party evaluators like METR with employee-like access (Anthropic committing unilaterally now), (2) democratic coordination on common safety standards with capability checkpoints, paired with preserving US lead via export controls and weight security, (3) global coordination with authoritarian governments in tiers — bioweapon AI bans, mutual pre-release testing, a SALT-style limit on recursive self-improvement. His belief in AI's benefits is undimmed; the point is building it with unusual deliberateness.",
+      "added": "2026-09-12",
+      "times_shown": 0
     }
   ],
   "archive": [
