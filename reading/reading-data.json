@@ -2507,6 +2507,16 @@
       "added": "2026-09-11",
       "read": "2026-09-12",
       "has_notes": true
+    },
+    {
+      "slug": "a-severe-misalignment-of-ai-in-mathematics-declaration",
+      "title": "A Severe Misalignment of AI in Mathematics (Declaration)",
+      "url": "https://mathandai.org/",
+      "category": "ai",
+      "summary": "A declaration signed by 26 Fields Medalists (including Terence Tao, Peter Scholze, and Pierre Deligne) warning that AI companies' push to solve mathematical problems as benchmarks is severely misaligned with the goals of mathematics itself. Research mathematics aims at conceptual understanding of structures; famous problems serve as landmarks that signal genuine new insight, and their value is realized only through the slow human process of talks, discussion, simplification, and eventual textbook presentation. Solving problems is merely a proxy for that understanding — and mass-producing \"true/false\" statements at ever-faster pace could destroy the fertile ground that produces new ideas.\n\nThe signatories raise attribution and plagiarism concerns: AI solutions are announced in a rush, without proper writeups, isolation of new methods, or citation of previous work. Without willing mathematicians to develop and integrate AI-conceived ideas into the canon, those ideas never fully come alive, and the crucial human transmission chain between mathematicians is lost.\n\nThe declaration frames this as a general threat to intellectual work: years of training traditionally produce not just answers but understanding and the ability to formulate new questions, and AI increasingly produces the results of that work directly, breaking the alignment between means and ends. The same issues face other scientific and creative professions and ultimately all of society. Whether AI's changes benefit or destroy a field will be determined by the humans in control of the technology.",
+      "added": "2026-09-13",
+      "read": "2026-09-13",
+      "has_notes": true
     }
   ]
 }
