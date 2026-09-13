@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-12T02:01:11.791800-03:00",
+  "generated_at": "2026-09-13T02:01:12.157581-03:00",
   "week_start": "2026-09-06",
   "week_label": "September 06 - September 12, 2026",
-  "last_updated": "Saturday, September 12, 2026 at 02:01",
+  "last_updated": "Sunday, September 13, 2026 at 02:01",
   "stats": {
-    "completed": 11.6,
+    "completed": 11.5,
     "planned": 15,
-    "display": "11.6 / 15"
+    "display": "11.5 / 15"
   },
   "daily": {
     "Sunday": {
@@ -136,7 +136,7 @@
         }
       ],
       "metrics_total": "75min",
-      "comparison": "-15min",
+      "comparison": "",
       "done": 3,
       "total": 6
     },
