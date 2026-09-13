@@ -41,7 +41,6 @@ const ARTICLES = [
     { slug: 'saas-isnt-dead-sameness-is', title: 'SaaS Isn\'t Dead. Sameness Is.', meta: 'Chad Fowler · Aug 2026', time: '26:29' },
     { slug: 'i-will-fucking-piledrive-you-if-you-mention-ai-again', title: 'I Will Fucking Piledrive You If You Mention AI Again', meta: 'Ludicity · Aug 2026', time: '23:41' },
     { slug: 'the-worlds-left-to-conquer', title: 'The Worlds Left To Conquer', meta: 'Ludicity · Aug 2026', time: '12:31' },
-    { slug: 'harnesses-are-situated-agents', title: 'Harnesses are Situated Agents', meta: 'Drew Breunig · Aug 2026', time: '4:23' },
     { slug: 'ai-ecosystem-pace-layers', title: 'Understanding the Dynamics of the AI Ecosystem with Pace Layers', meta: 'Drew Breunig · Aug 2026', time: '4:28' },
     { slug: 'the-problem-is-prompt-debt', title: 'The Problem is Prompt Debt', meta: 'Drew Breunig · Aug 2026', time: '8:51' },
     { slug: 'good-writing-is-obvious-not-original', title: 'Good writing is obvious, not original', meta: 'Sean Goedecke · Aug 2026', time: '4:57' },
