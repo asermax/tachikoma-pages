@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'pacing-the-frontier-or-pacing', title: 'Pacing the Frontier, or Pacing the Narrative?', meta: 'Nick Mark · Sep 2026', time: '12:01' },
     { slug: 'ive-sold-out', title: 'I\'ve sold out', meta: 'Mario Zechner · Apr 2026', time: '18:05' },
     { slug: 'announcing-pi-lefos', title: 'Announcing Pi & Lefos', meta: 'Earendil · Apr 2026', time: '1:54' },
     { slug: 'porting-ale-linux-cli', title: 'Honey, I Looked at the Data of a Frontier Benchmark and Found some Issues', meta: 'Sankalp · Sep 2026', time: '36:47' },
