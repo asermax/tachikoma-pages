@@ -1,12 +1,12 @@
 {
-  "week": "2026-W36",
+  "week": "2026-W37",
   "days": {
     "Monday": {
       "location": "Home - Dumbbells",
       "exercises": []
     },
     "Tuesday": {
-      "location": "Climbing Gym - Bar",
+      "location": "Climbing Gym - Bar + TRX/Bands",
       "exercises": [
         {
           "name": "Chin-ups",
@@ -18,7 +18,7 @@
           "weight": null
         },
         {
-          "name": "Bulgarian split squats",
+          "name": "TRX Rows",
           "detail": null,
           "sets": 3,
           "type": "reps",
@@ -27,29 +27,38 @@
           "weight": null
         },
         {
-          "name": "Hanging knee raises",
+          "name": "Full Push-ups",
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "12",
+          "target": "6",
           "unit": "",
           "weight": null
         },
         {
-          "name": "Knee push-ups",
-          "detail": "diamond",
+          "name": "Bulgarian Split Squats",
+          "detail": "w/ DBs",
           "sets": 3,
           "type": "reps",
-          "target": "10",
+          "target": "8",
           "unit": "",
           "weight": null
         },
         {
-          "name": "Scapular pulls",
+          "name": "Band Face Pulls",
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "12",
+          "target": "15",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Wrist Extensions",
+          "detail": "light DB",
+          "sets": 2,
+          "type": "reps",
+          "target": "15",
           "unit": "",
           "weight": null
         }
@@ -60,7 +69,7 @@
       "exercises": []
     },
     "Thursday": {
-      "location": "Climbing Gym - Bar",
+      "location": "Climbing Gym - Bar + TRX/Bands",
       "exercises": [
         {
           "name": "Pull-ups",
@@ -72,39 +81,48 @@
           "weight": null
         },
         {
-          "name": "Jump squats",
+          "name": "TRX Wide Rows",
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "12",
+          "target": "8",
           "unit": "",
           "weight": null
         },
         {
-          "name": "Short abs with elevated legs",
+          "name": "Hollow Body Hold",
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "40",
-          "unit": "",
-          "weight": null
-        },
-        {
-          "name": "Knee push-ups",
-          "detail": "wide",
-          "sets": 3,
-          "type": "reps",
-          "target": "12",
-          "unit": "",
-          "weight": null
-        },
-        {
-          "name": "Dead hang",
-          "detail": null,
-          "sets": 3,
-          "type": "time",
           "target": "20",
-          "unit": "s",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Single-Leg RDL",
+          "detail": "DB opposite hand",
+          "sets": 3,
+          "type": "reps",
+          "target": "8",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Band Pallof Press",
+          "detail": null,
+          "sets": 3,
+          "type": "reps",
+          "target": "10",
+          "unit": "",
+          "weight": null
+        },
+        {
+          "name": "Wrist Extensions",
+          "detail": "light DB",
+          "sets": 2,
+          "type": "reps",
+          "target": "15",
+          "unit": "",
           "weight": null
         }
       ]
