@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12",
+  "generated_at": "2026-09-13",
   "queue": [
     {
       "slug": "nigel-cheese-down-the-rabbit-hole",
@@ -625,6 +625,17 @@
       "summary": "This video explores the mechanics of AI \"chain of thought\" (CoT) reasoning, focusing on how large language models use hidden intermediate steps to solve complex, multi-step problems. Rob Miles explains that CoT serves as a serial \"scratchpad,\" allowing models to break down tasks like math or sequential logic into step-by-step passes rather than trying to calculate answers all at once. The discussion also addresses the nuances of anthropomorphizing AI, explaining that while these models don't think like humans, framing their internal processing as \"thinking\" remains a useful shortcut. Highly beneficial for AI researchers, developers, and tech enthusiasts seeking a deeper understanding of LLM transparency, reasoning capabilities, and alignment.",
       "added": "2026-09-11",
       "watched": "2026-09-11",
+      "has_notes": true
+    },
+    {
+      "slug": "pi-agent-dev-reveals-his-agentic-engineering-workflow",
+      "title": "Pi Agent dev reveals his Agentic Engineering Workflow",
+      "url": "https://www.youtube.com/watch?v=SxuQs9GGYbk",
+      "video_id": "SxuQs9GGYbk",
+      "channel": "David Ondrej",
+      "summary": "This video features an interview with Armin, the creator of Flask and founder of Earendil, discussing the development and success of their minimal AI agent harness, Pi Agent. Armin explains that Pi Agent's strong performance stems from its simplicity and reliance on basic, low-level interfaces like Bash, arguing that modern language models are becoming highly proficient at executing direct computer commands rather than requiring complex frameworks. Additionally, he touches on emerging trends in agentic engineering, such as interleaved system messages, and how these shape the future of AI-assisted software development. This discussion is particularly beneficial for software developers, AI engineers, and tech entrepreneurs interested in the practical design of AI coding agents and product optimization.",
+      "added": "2026-09-13",
+      "watched": "2026-09-13",
       "has_notes": true
     }
   ]
