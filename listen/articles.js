@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'superintelligence-security', title: 'Thoughts on Superintelligence Security', meta: 'Manuel Araoz · Aug 2023', time: '23:57' },
     { slug: 'pacing-the-frontier-or-pacing', title: 'Pacing the Frontier, or Pacing the Narrative?', meta: 'Nick Mark · Sep 2026', time: '12:01' },
     { slug: 'ive-sold-out', title: 'I\'ve sold out', meta: 'Mario Zechner · Apr 2026', time: '18:05' },
     { slug: 'announcing-pi-lefos', title: 'Announcing Pi & Lefos', meta: 'Earendil · Apr 2026', time: '1:54' },
