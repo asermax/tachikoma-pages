@@ -830,15 +830,6 @@
       "times_shown": 0
     },
     {
-      "slug": "harnesses-are-situated-agents",
-      "title": "Harnesses are Situated Agents",
-      "url": "https://www.dbreunig.com/2026/08/14/harnesses-are-situated-agents.html",
-      "category": "ai",
-      "summary": "Breunig defines the agent \"harness\" as a \"situated agent\" — the system managing everything around an agent's core loop (system prompt, planning tool, file system, subagents, per Harrison Chase). Surveying the new wave of harnesses (Omnigent, DeepSeek Harness, Buzz, QM, Flue, Muse Code), he finds they're more alike than different and extracts an eight-layer zoom-out: Session, Environment, Repo, Memory, Skills, Team, Organization, Model — each layer outward used by more people and changed less often. Harnesses, not models, create lock-in: switching from Claude Code to Codex is trivial, but shifting once a team has systems managing all layers is very hard. The network effects AI labs have been searching for may look just like SaaS-era network effects — something Cursor and Copilot already understood.",
-      "added": "2026-08-23",
-      "times_shown": 0
-    },
-    {
       "slug": "the-problem-is-prompt-debt",
       "title": "The Problem is Prompt Debt",
       "url": "https://www.dbreunig.com/2026/06/22/the-problem-is-prompt-debt.html",
@@ -2335,6 +2326,16 @@
       "summary": "Drew Breunig argues that Anthropic's powerful-but-expensive model 'Fable' marks a turning point for agentic coding analogous to the end of Moore's Law. Before Fable, optimizing your coding harness felt wasteful — the next model drop would paper over most problems at the same price. Fable's high cost made cheaper models (Opus, 5.6, K3, GLM) 'good enough' for most code, forcing deliberate routing: interrogating designs with Fable, then handing briefs to GLM (~1/9th cost) for implementation. He's skeptical inference price drops will reverse this — efficiency gains also benefit cheap models, and better harnesses make weaker models sufficient. Fable's access controls and data retention requirements further pushed companies toward deliberate routing and trace/token sourcing. The era of reflexively sending everything to frontier models is over; context engineering and work placement are the new maturity.\n\n**Notes:** Agustin agrees with the routing thesis and adds a further driver: he's waiting for the end of subscription subsidizing. Right now everyone happily spends inference as if there's no tomorrow because the real cost isn't being paid — once subsidies end, the economics will make routing to cheaper models even more appealing, reinforcing Breunig's argument.",
       "added": "2026-08-23",
       "read": "2026-08-23",
+      "has_notes": true
+    },
+    {
+      "slug": "harnesses-are-situated-agents",
+      "title": "Harnesses are Situated Agents",
+      "url": "https://www.dbreunig.com/2026/08/14/harnesses-are-situated-agents.html",
+      "category": "ai",
+      "summary": "Breunig defines the agent \"harness\" as a \"situated agent\" — the system managing everything around an agent's core loop (system prompt, planning tool, file system, subagents, per Harrison Chase). Surveying the new wave of harnesses (Omnigent, DeepSeek Harness, Buzz, QM, Flue, Muse Code), he finds they're more alike than different and extracts an eight-layer zoom-out: Session, Environment, Repo, Memory, Skills, Team, Organization, Model — each layer outward used by more people and changed less often. Harnesses, not models, create lock-in: switching from Claude Code to Codex is trivial, but shifting once a team has systems managing all layers is very hard. The network effects AI labs have been searching for may look just like SaaS-era network effects — something Cursor and Copilot already understood.",
+      "added": "2026-08-23",
+      "read": "2026-09-13",
       "has_notes": true
     },
     {
