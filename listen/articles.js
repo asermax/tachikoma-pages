@@ -1,4 +1,6 @@
 const ARTICLES = [
+    { slug: 'ive-sold-out', title: 'I\'ve sold out', meta: 'Mario Zechner · Apr 2026', time: '18:05' },
+    { slug: 'announcing-pi-lefos', title: 'Announcing Pi & Lefos', meta: 'Earendil · Apr 2026', time: '1:54' },
     { slug: 'porting-ale-linux-cli', title: 'Honey, I Looked at the Data of a Frontier Benchmark and Found some Issues', meta: 'Sankalp · Sep 2026', time: '36:47' },
     { slug: 'ai-supposed-killer-apps', title: 'A.I. Was Supposed to Give Us New Killer Apps. What Happened?', meta: 'Paul Ford · Sep 2026', time: '7:40' },
     { slug: 'pdoom', title: 'P(doom)', meta: 'Armin Ronacher · Sep 2026', time: '9:16' },
