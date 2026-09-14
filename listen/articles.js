@@ -8,7 +8,6 @@ const ARTICLES = [
     { slug: 'porting-ale-linux-cli', title: 'Honey, I Looked at the Data of a Frontier Benchmark and Found some Issues', meta: 'Sankalp · Sep 2026', time: '36:47' },
     { slug: 'ai-supposed-killer-apps', title: 'A.I. Was Supposed to Give Us New Killer Apps. What Happened?', meta: 'Paul Ford · Sep 2026', time: '7:40' },
     { slug: 'pdoom', title: 'P(doom)', meta: 'Armin Ronacher · Sep 2026', time: '9:16' },
-    { slug: 'we-must-pace-the-frontier', title: 'We Must Pace the Frontier', meta: 'Dario Amodei · Sep 2026', time: '21:57' },
     { slug: 'i-made-a-build-profiler-to-understand-buns-compile-times', title: 'I made a build profiler to understand Bun\'s compile times', meta: 'Lalit Maganti · Sep 2026', time: '23:17' },
     { slug: 'dont-build-tools-for-ai-agents', title: 'Don\'t build tools for AI agents', meta: 'Sean Goedecke · Sep 2026', time: '4:30' },
     { slug: 'they-really-do-think-ai-might-kill-everyone', title: 'They really do think AI might kill everyone', meta: 'Sean Goedecke · Sep 2026', time: '10:25' },
