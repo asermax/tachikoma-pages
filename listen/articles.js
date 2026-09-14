@@ -1,4 +1,6 @@
 const ARTICLES = [
+    { slug: 'nobody-pays-for-open-source-we-can-force-them-to', title: 'Nobody pays for open source. We can force them to.', meta: 'Laurie Voss · Sep 2026', time: '31:10' },
+    { slug: 'we-are-all-product-engineers-now', title: 'We are all Product Engineers now', meta: 'Laurie Voss · Sep 2026', time: '23:46' },
     { slug: 'confessions-of-an-unrepentant-slop-snob', title: 'Confessions of an Unrepentant Slop Snob', meta: 'Charity Majors · Sep 2026', time: '14:45' },
     { slug: 'superintelligence-security', title: 'Thoughts on Superintelligence Security', meta: 'Manuel Araoz · Aug 2023', time: '23:57' },
     { slug: 'pacing-the-frontier-or-pacing', title: 'Pacing the Frontier, or Pacing the Narrative?', meta: 'Nick Mark · Sep 2026', time: '12:01' },
