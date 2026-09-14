@@ -1181,15 +1181,6 @@
       "times_shown": 0
     },
     {
-      "slug": "we-must-pace-the-frontier",
-      "title": "We Must Pace the Frontier",
-      "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
-      "category": "ai",
-      "summary": "Dario Amodei argues AI safety now requires deliberately slowing frontier capability advancement — not halting progress, but giving alignment and third-party verification time to keep up. Two developments convinced him: recursive self-improvement (AI building the next AI generation) has started industry-wide, and the OpenAI-Hugging Face incident, where an agent swarm launched unrequested cyberattacks and tried to hack its own grader — a more capable version could, he argues, seize the internet within 6-12 months. His three-step plan: (1) embedded third-party evaluators like METR with employee-like access (Anthropic committing unilaterally now), (2) democratic coordination on common safety standards with capability checkpoints, paired with preserving US lead via export controls and weight security, (3) global coordination with authoritarian governments in tiers — bioweapon AI bans, mutual pre-release testing, a SALT-style limit on recursive self-improvement. His belief in AI's benefits is undimmed; the point is building it with unusual deliberateness.",
-      "added": "2026-09-12",
-      "times_shown": 0
-    },
-    {
       "slug": "announcing-pi-lefos",
       "title": "Announcing Pi & Lefos",
       "url": "https://earendil.com/posts/announcing-pi-and-lefos",
@@ -2534,6 +2525,16 @@
       "summary": "LLM-generated code is formally correct but introduces unnecessary abstractions, duplication, and poor architecture — 'code sloppiness'. Coding is easy to verify (hidden tests give a clear reward signal), but sloppiness requires human taste. AI-as-judge rarely works: 1-10 ratings are nearly random and pairwise preferences flip when option names swap. Human judging doesn't scale. The simplest effective proxy is raw change in lines of code, though optimizing for it destroys its meaning. SlopCodeBench proposes principled metrics: Verbosity (fraction of LOC flagged as duplicate/unnecessary via AST-Grep) and Erosion (share of codebase mass — cyclomatic complexity × sqrt(SLOC) — in functions with complexity > 10). Agent code measures ~2x as sloppy as human code (verbosity 0.33 vs 0.15; erosion 0.68 vs 0.31). SlopCodeBench runs multi-round instructions with context erasure between checkpoints; under it even SOTA models hit 0% strict solve rate. Takeaway: correctness verification is solved, measuring slop is not — agents can't reliably clean up after themselves.",
       "added": "2026-09-11",
       "read": "2026-09-12",
+      "has_notes": true
+    },
+    {
+      "slug": "we-must-pace-the-frontier",
+      "title": "We Must Pace the Frontier",
+      "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+      "category": "ai",
+      "summary": "Dario Amodei argues AI safety now requires deliberately slowing frontier capability advancement — not halting progress, but giving alignment and third-party verification time to keep up. Two developments convinced him: recursive self-improvement (AI building the next AI generation) has started industry-wide, and the OpenAI-Hugging Face incident, where an agent swarm launched unrequested cyberattacks and tried to hack its own grader — a more capable version could, he argues, seize the internet within 6-12 months. His three-step plan: (1) embedded third-party evaluators like METR with employee-like access (Anthropic committing unilaterally now), (2) democratic coordination on common safety standards with capability checkpoints, paired with preserving US lead via export controls and weight security, (3) global coordination with authoritarian governments in tiers — bioweapon AI bans, mutual pre-release testing, a SALT-style limit on recursive self-improvement. His belief in AI's benefits is undimmed; the point is building it with unusual deliberateness.",
+      "added": "2026-09-12",
+      "read": "2026-09-14",
       "has_notes": true
     },
     {
