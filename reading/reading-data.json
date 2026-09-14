@@ -1215,15 +1215,6 @@
       "summary": "Charity Majors digs into why AI involvement in communication sometimes feels like a violation and sometimes doesn't. Central argument: language does functional jobs and relational jobs. In functional contexts (data, diffs, collaborative docs) AI substitution is unremarkable; in relational ones (opinions, feedback, cold outreach) the value comes from a specific person having thought or felt something, so AI text registers as a violation and degrades trust. What matters is less how much AI was used than which contexts, and whether use was disclosed. AI's 'slick, sycophantic, uncanny valleyness' is uniquely trust-destroying. Conclusion: use AI broadly for functional work, never automate relationship maintenance, and companies should write down explicit AI norms now (as Honeycomb did).",
       "added": "2026-09-14",
       "times_shown": 0
-    },
-    {
-      "slug": "slow-developer-experience-will-bottleneck-fast-models",
-      "title": "Slow developer experience will bottleneck fast models",
-      "url": "https://seangoedecke.com/slow-devex-will-bottleneck-fast-models/",
-      "category": "engineering",
-      "summary": "Sean Goedecke argues that as AI models get dramatically faster, the dev loop bottleneck shifts from token generation to developer experience: file reads, compilers, test suites. With agents running at thousands of tokens per second (he contrasts GPT-6-Astra at ~60 tok/s with Taalas' Jimmy at 17k tok/s), tool-call latency becomes decisive. Expect pressure to write agentic code in fast-compiling languages like Go, and a late-2020s comeback of DevEx teams with a new mission: optimizing the dev loop for AI agents rather than humans.",
-      "added": "2026-09-14",
-      "times_shown": 0
     }
   ],
   "archive": [
@@ -2545,6 +2536,16 @@
       "summary": "A declaration signed by 26 Fields Medalists (including Terence Tao, Peter Scholze, and Pierre Deligne) warning that AI companies' push to solve mathematical problems as benchmarks is severely misaligned with the goals of mathematics itself. Research mathematics aims at conceptual understanding of structures; famous problems serve as landmarks that signal genuine new insight, and their value is realized only through the slow human process of talks, discussion, simplification, and eventual textbook presentation. Solving problems is merely a proxy for that understanding — and mass-producing \"true/false\" statements at ever-faster pace could destroy the fertile ground that produces new ideas.\n\nThe signatories raise attribution and plagiarism concerns: AI solutions are announced in a rush, without proper writeups, isolation of new methods, or citation of previous work. Without willing mathematicians to develop and integrate AI-conceived ideas into the canon, those ideas never fully come alive, and the crucial human transmission chain between mathematicians is lost.\n\nThe declaration frames this as a general threat to intellectual work: years of training traditionally produce not just answers but understanding and the ability to formulate new questions, and AI increasingly produces the results of that work directly, breaking the alignment between means and ends. The same issues face other scientific and creative professions and ultimately all of society. Whether AI's changes benefit or destroy a field will be determined by the humans in control of the technology.",
       "added": "2026-09-13",
       "read": "2026-09-13",
+      "has_notes": true
+    },
+    {
+      "slug": "slow-developer-experience-will-bottleneck-fast-models",
+      "title": "Slow developer experience will bottleneck fast models",
+      "url": "https://seangoedecke.com/slow-devex-will-bottleneck-fast-models/",
+      "category": "engineering",
+      "summary": "Sean Goedecke argues that as AI models get dramatically faster, the dev loop bottleneck shifts from token generation to developer experience: file reads, compilers, test suites. With agents running at thousands of tokens per second (he contrasts GPT-6-Astra at ~60 tok/s with Taalas' Jimmy at 17k tok/s), tool-call latency becomes decisive. Expect pressure to write agentic code in fast-compiling languages like Go, and a late-2020s comeback of DevEx teams with a new mission: optimizing the dev loop for AI agents rather than humans.",
+      "added": "2026-09-14",
+      "read": "2026-09-14",
       "has_notes": true
     }
   ]
