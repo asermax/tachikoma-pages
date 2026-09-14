@@ -1,4 +1,6 @@
 const ARTICLES = [
+    { slug: 'slow-developer-experience-will-bottleneck-fast-models', title: 'Slow developer experience will bottleneck fast models', meta: 'Sean Goedecke · Sep 2026', time: '3:38' },
+    { slug: 'confessions-of-an-unrepentant-slop-snob', title: 'Confessions of an Unrepentant Slop Snob', meta: 'Charity Majors · Sep 2026', time: '14:45' },
     { slug: 'superintelligence-security', title: 'Thoughts on Superintelligence Security', meta: 'Manuel Araoz · Aug 2023', time: '23:57' },
     { slug: 'pacing-the-frontier-or-pacing', title: 'Pacing the Frontier, or Pacing the Narrative?', meta: 'Nick Mark · Sep 2026', time: '12:01' },
     { slug: 'ive-sold-out', title: 'I\'ve sold out', meta: 'Mario Zechner · Apr 2026', time: '18:05' },
