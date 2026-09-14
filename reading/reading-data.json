@@ -1163,15 +1163,6 @@
       "times_shown": 0
     },
     {
-      "slug": "pdoom",
-      "title": "P(doom)",
-      "url": "https://lucumr.pocoo.org/2026/9/12/pdoom/",
-      "category": "ai",
-      "summary": "Armin Ronacher responds to the recent wave of \"AI is going to kill us all\" discourse — sparked by an Anthropic employee placing personal P(doom) above 10% and Dario Amodei's essay on \"pacing the frontier.\" While Ronacher agrees with Amodei's observations and concerns, he strongly opposes his conclusions and the framing of the debate.\n\nHe agrees that concrete harms are real — persistent botnets, agent-driven cyberattacks (citing OpenAI agent attacks and RubyGems poisoning) — and notes labs operate at a scale where they're blind to what their systems do. But his primary worry is not extinction scenarios like nukes or rogue agents copying themselves; it's what AI does to everyone outside the closed-weight, subsidized frontier labs. He argues the \"pacing\" debate is really about only two companies, OpenAI and Anthropic, which share origins, and that proposals like third-party evaluation via METR amount to entrenching the power of a few American corporations built on public data and commons like PyPI and GitHub. He is skeptical of Amodei's China framing, noting that Chinese labs distilling American models into open weights are actually \"bailing out the world\" by diffusing capabilities and leveling the playing field — open weights provide built-in pacing via mutual deterrence, while the market distortions (loss-leading subscriptions, brute-force compute spending) come from closed models.\n\nRonacher sees the current situation as total regulatory failure: Europe's AI regulation targets non-problems, the US combines \"turbo capitalism\" with sinophobia, data is scraped without consent, and the emerging token economy is opaque like a drug market. His conclusion: he doesn't believe AI will cause extinction even if nobody slows down — the large labs have more to lose — but recursive self-improvement will likely cause massive distributed damage. AI raises costs across industries: software engineering is an early victim, with companies now paying a \"tax\" to model providers to keep up and to fix security issues the machines themselves surface, and universities and research will follow. He ends puzzled that society is taking all this so calmly.",
-      "added": "2026-09-12",
-      "times_shown": 0
-    },
-    {
       "slug": "porting-ale-linux-cli-i-looked-at-the-data-of-a-frontier-benchmark-and-found-som",
       "title": "Honey, I Looked at the Data of a Frontier Benchmark and Found some Issues: Porting ALE Linux CLI to Verifiers v1",
       "url": "https://sankalp.bearblog.dev/porting-ale-linux-cli-i-looked-at-the-data-of-a-frontier-benchmark-and-found-some-issues/",
@@ -2516,6 +2507,16 @@
       "summary": "LLM-generated code is formally correct but introduces unnecessary abstractions, duplication, and poor architecture — 'code sloppiness'. Coding is easy to verify (hidden tests give a clear reward signal), but sloppiness requires human taste. AI-as-judge rarely works: 1-10 ratings are nearly random and pairwise preferences flip when option names swap. Human judging doesn't scale. The simplest effective proxy is raw change in lines of code, though optimizing for it destroys its meaning. SlopCodeBench proposes principled metrics: Verbosity (fraction of LOC flagged as duplicate/unnecessary via AST-Grep) and Erosion (share of codebase mass — cyclomatic complexity × sqrt(SLOC) — in functions with complexity > 10). Agent code measures ~2x as sloppy as human code (verbosity 0.33 vs 0.15; erosion 0.68 vs 0.31). SlopCodeBench runs multi-round instructions with context erasure between checkpoints; under it even SOTA models hit 0% strict solve rate. Takeaway: correctness verification is solved, measuring slop is not — agents can't reliably clean up after themselves.",
       "added": "2026-09-11",
       "read": "2026-09-12",
+      "has_notes": true
+    },
+    {
+      "slug": "pdoom",
+      "title": "P(doom)",
+      "url": "https://lucumr.pocoo.org/2026/9/12/pdoom/",
+      "category": "ai",
+      "summary": "Armin Ronacher responds to the recent wave of \"AI is going to kill us all\" discourse — sparked by an Anthropic employee placing personal P(doom) above 10% and Dario Amodei's essay on \"pacing the frontier.\" While Ronacher agrees with Amodei's observations and concerns, he strongly opposes his conclusions and the framing of the debate.\n\nHe agrees that concrete harms are real — persistent botnets, agent-driven cyberattacks (citing OpenAI agent attacks and RubyGems poisoning) — and notes labs operate at a scale where they're blind to what their systems do. But his primary worry is not extinction scenarios like nukes or rogue agents copying themselves; it's what AI does to everyone outside the closed-weight, subsidized frontier labs. He argues the \"pacing\" debate is really about only two companies, OpenAI and Anthropic, which share origins, and that proposals like third-party evaluation via METR amount to entrenching the power of a few American corporations built on public data and commons like PyPI and GitHub. He is skeptical of Amodei's China framing, noting that Chinese labs distilling American models into open weights are actually \"bailing out the world\" by diffusing capabilities and leveling the playing field — open weights provide built-in pacing via mutual deterrence, while the market distortions (loss-leading subscriptions, brute-force compute spending) come from closed models.\n\nRonacher sees the current situation as total regulatory failure: Europe's AI regulation targets non-problems, the US combines \"turbo capitalism\" with sinophobia, data is scraped without consent, and the emerging token economy is opaque like a drug market. His conclusion: he doesn't believe AI will cause extinction even if nobody slows down — the large labs have more to lose — but recursive self-improvement will likely cause massive distributed damage. AI raises costs across industries: software engineering is an early victim, with companies now paying a \"tax\" to model providers to keep up and to fix security issues the machines themselves surface, and universities and research will follow. He ends puzzled that society is taking all this so calmly.",
+      "added": "2026-09-12",
+      "read": "2026-09-14",
       "has_notes": true
     },
     {
