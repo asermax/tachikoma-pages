@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14",
+  "generated_at": "2026-09-15",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1223,6 +1223,15 @@
       "category": "ai",
       "summary": "Laurie Voss (seldo) argues that the cost of writing software has collapsed, and builds a 10-year forecast of what happens to the software industry on two big assumptions: first, AI agents will eventually eat the entire software development lifecycle — they're already excellent at writing code, and review, maintenance, deployment, and scaling are merely temporary holdouts; second, there is no upper bound on how much software the world needs, since most businesses and institutions still run on terrible or nonexistent software they can't afford at current prices. Together these mean there is no real glut of developers — any apparent oversupply is transitional — but the job of \"programmer\" is about to change beyond recognition.\n\nHe breaks the cost of making software into pieces by how vulnerable each is to agents: writing code has already collapsed; code review and maintenance are going soon; deployment and scaling are next on the chopping block. What's \"possibly safe\" is everything that requires figuring out what humans actually want: deciding what to build, deciding what \"good\" means (his AI-evaluation day job), and making software delightful — the most wobbly of the three. This maps onto the junior-developer crisis: juniors were hired to turn well-specified tickets into code, which is exactly what agents now do. Updated Stanford labor data shows employment for 22-25-year-olds in AI-exposed jobs is 19% below where it would otherwise be, driven by reduced hiring, with losses concentrated in \"codified\" knowledge (in the training data) while experienced workers holding \"tacit\" knowledge gain ground.\n\nThe main takeaway: the durable core of software development is product engineering — working out what people actually want and whether the result is good, which can't be automated or scaled. That job pays around $240k, and because the traditional junior-to-senior pipeline is gone, nobody is currently being trained for it.",
       "added": "2026-09-14",
+      "times_shown": 0
+    },
+    {
+      "slug": "interpreting-pangram",
+      "title": "Interpreting Pangram",
+      "url": "https://lucumr.pocoo.org/2026/9/14/interpreting-pangram/",
+      "category": "ai",
+      "summary": "Armin Ronacher reacts to a dust-up in which David Sacks tweeted, the AI-detection service Pangram flagged the tweet as entirely AI-generated, and Sacks dismissed AI detectors as bogus. Ronacher notes that Pangram has a very low false-positive rate (0.0041% false AI accusations, 0.34% missed AI text per its paper), yet anyone who uses an LLM as a writing assistant will have seen their own posts rated 100% AI.\n\nHe explains how Pangram works: it is a trained model that classifies text segments as definitely human, definitely AI, or a mixture, using synthetic training data — an LLM rewrites known human texts on the same topic and performs partial edits, letting the model learn co-authored patterns.\n\nTo probe the claim, Ronacher ran an experiment: he had an LLM help draft a prompt from Sacks's tweet, then used Opus 5 to generate an 8-paragraph tweet on \"pacing the frontier\" responding to Dario Amodei and Sam Altman. Pangram correctly rated that output 100% AI — unsurprising. The interesting question is the reverse: he then personally rewrote the LLM output from scratch, paragraph by paragraph, keeping the same structure and ideas but with no LLM writing any sentence (similarity checkers put the two texts at about 50% similar; only an LLM typo-fix pass was used afterward).\n\nThe experiment is really about what \"AI-generated text\" even means: text whose ideas and structure were LLM-proposed but whose words were typed by a human sits in a gray zone, and Ronacher uses the Pangram test to explore where detectors — and our intuitions — draw that line. The takeaway is that AI detection verdicts are less clear-cut than \"100% AI\" labels suggest, since human/LLM collaboration blurs the boundary.",
+      "added": "2026-09-15",
       "times_shown": 0
     }
   ],
