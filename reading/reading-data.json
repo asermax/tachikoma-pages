@@ -1226,6 +1226,15 @@
       "times_shown": 0
     },
     {
+      "slug": "measuring-ais-impact-on-delivery-speed",
+      "title": "Measuring AI's Impact on Delivery Speed",
+      "url": "https://www.jamesshore.com/v2/blog/2026/measuring-ais-impact-on-delivery-speed",
+      "category": "engineering",
+      "summary": "This article is the second part of James Shore's series on quantifying AI's impact on software development, focusing on how to rigorously measure whether AI actually makes teams deliver faster. He begins by drawing a sharp distinction between delivery speed and productivity: productivity is value produced divided by money spent, while speed is just one component of it. The article deliberately tackles the narrower question of whether teams finish assigned work faster, leaving business outcomes for part 4.\n\nShore argues there is no objective measure of software development speed, since outputs aren't standardized—features vary in size, stories and story points are arbitrary, and estimates are chronically over-optimistic, so neither request counts nor on-time delivery rates work. The viable approach is to compare a team or person to themselves, using the ratio of actual time to estimated time. If the distribution of actual:estimate ratios shifts, the team got faster. He illustrates this with data from the Star Citizen alpha 3.0 release, whose actual/estimate ratios form an S-shaped curve (with a telltale cliff at 1.0 indicating work expanding to meet estimates) that a censored log-normal fit matches closely.\n\nFour complications must be handled: (1) actual:estimate ratios vary, so the effect must be seen in aggregate; (2) individuals differ systematically in how they work and estimate, so comparisons should be within-person rather than across people; (3) estimates shift when people know they'll use AI, so estimates must be collected before AI/no-AI assignment; and (4) concurrent process improvements confound results, so \"with AI\" and \"without AI\" tasks should be interleaved and both approaches should share the same streamlined workflows. Together these requirements amount to a randomized, within-subject, repeated-measures controlled trial: each person records an estimate, randomly draws a task from a virtual bag split evenly between with-AI and without-AI assignments, and logs actual time, spending, and task type.\n\nShore acknowledges the method is heavier than counting PRs but argues it's warranted because AI spending varies by order of magnitude across organizations and expectations are inflated—he cites the METR study showing experienced developers overestimated AI's speed benefits by nearly 50%. He also cautions that speed gains must be contextualized: a 2x improvement in coding that applies to only half a person's week yields only a 1.33x overall improvement. The series continues with part 3 on unintended consequences and sustainability of speed gains.",
+      "added": "2026-09-15",
+      "times_shown": 0
+    },
+    {
       "slug": "tell-agents-the-why-not-just-the-how",
       "title": "Tell agents the why, not just the how",
       "url": "https://seangoedecke.com/tell-agents-the-why/",
