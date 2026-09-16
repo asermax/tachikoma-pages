@@ -15,25 +15,28 @@
           "type": "reps",
           "target": "5",
           "unit": "",
-          "weight": null
+          "weight": null,
+          "rir": 2
         },
         {
           "name": "TRX Rows",
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "8",
+          "target": "8-12",
           "unit": "",
-          "weight": null
+          "weight": null,
+          "rir": 2
         },
         {
           "name": "Full Push-ups",
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "6",
+          "target": "6-10",
           "unit": "",
-          "weight": null
+          "weight": null,
+          "rir": 2
         },
         {
           "name": "Bulgarian Split Squats",
@@ -42,7 +45,8 @@
           "type": "reps",
           "target": "8",
           "unit": "",
-          "weight": null
+          "weight": null,
+          "rir": 2
         },
         {
           "name": "Band Face Pulls",
@@ -51,16 +55,18 @@
           "type": "reps",
           "target": "15",
           "unit": "",
-          "weight": null
+          "weight": null,
+          "rir": 2
         },
         {
           "name": "Wrist Extensions",
           "detail": "light DB",
           "sets": 2,
           "type": "reps",
-          "target": "15",
+          "target": "15-20",
           "unit": "",
-          "weight": null
+          "weight": null,
+          "rir": 2
         }
       ]
     },
@@ -78,25 +84,28 @@
           "type": "reps",
           "target": "5",
           "unit": "",
-          "weight": null
+          "weight": null,
+          "rir": 2
         },
         {
           "name": "TRX Wide Rows",
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "8",
+          "target": "8-10",
           "unit": "",
-          "weight": null
+          "weight": null,
+          "rir": 2
         },
         {
           "name": "Hollow Body Hold",
           "detail": null,
           "sets": 3,
-          "type": "reps",
-          "target": "20",
-          "unit": "",
-          "weight": null
+          "type": "time",
+          "target": "20-30",
+          "unit": "s",
+          "weight": null,
+          "rir": 2
         },
         {
           "name": "Single-Leg RDL",
@@ -105,7 +114,8 @@
           "type": "reps",
           "target": "8",
           "unit": "",
-          "weight": null
+          "weight": null,
+          "rir": 2
         },
         {
           "name": "Band Pallof Press",
@@ -114,16 +124,18 @@
           "type": "reps",
           "target": "10",
           "unit": "",
-          "weight": null
+          "weight": null,
+          "rir": 2
         },
         {
           "name": "Wrist Extensions",
           "detail": "light DB",
           "sets": 2,
           "type": "reps",
-          "target": "15",
+          "target": "15-20",
           "unit": "",
-          "weight": null
+          "weight": null,
+          "rir": null
         }
       ]
     },
