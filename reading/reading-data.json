@@ -1262,15 +1262,6 @@
       "times_shown": 0
     },
     {
-      "slug": "httpsseangoedeckecomjev-means-structured-output-is-interesting-again",
-      "title": "Jev means structured output is interesting again",
-      "url": "https://seangoedecke.com/jev-means-structured-output-is-interesting-again/",
-      "category": "ai",
-      "summary": "The article discusses Jev, a newly announced AI model that takes human-language prompts but produces only structured output (e.g., picking from user-provided choices), unlike ordinary LLMs that generate human language autoregressively, one token at a time.\n\nJev's key advantage is consistently low latency: typical responses run around 70ms with a worst case of about 500ms, versus seconds for standard LLMs. Because it only produces structured output, Jev is not autoregressive — it answers many questions in parallel in a single forward pass. The author's favorite demonstration is Jev playing Doom in real time by answering low-latency decision queries (goal selection, keyboard input) from a text game state. He argues this kind of fast, cheap intelligence could become a genuinely new computational primitive, enabling non-chatbot programs that inject millisecond-scale AI decisions throughout.\n\nHowever, the author is skeptical of Jev's technical moat. Fast structured output is arguably already achievable with regular LLMs: by prefilling the response and generating just one token restricted to provided choices (instead of grammar-constrained autoregressive JSON decoding), you can get most of Jev's speed, consistency, and parallelism — and people began demonstrating this right after the announcement. He suspects any lab or programmer could replicate the approach, though a model fine-tuned specifically on structured output likely retains an edge.\n\nHe also doubts Jev will match frontier LLM intelligence, since it cannot use test-time compute, and dismisses the \"no hallucinations\" claim as a semantic dodge — the model can still pick wrong choices, it just doesn't invent free-form text. The conclusion: it's unclear how much value lies in the model itself versus the single-token inference strategy, but the author welcomes competition in fast structured output and hopes major labs release their own fine-tuned versions.",
-      "added": "2026-09-16",
-      "times_shown": 0
-    },
-    {
       "slug": "httpsyeggeaiessaysseats-and-sunsets",
       "title": "Seats and Sunsets — Steve Yegge",
       "url": "https://yegge.ai/essays/seats-and-sunsets/",
@@ -2630,6 +2621,16 @@
       "added": "2026-09-15",
       "read": "2026-09-15",
       "has_notes": false
+    },
+    {
+      "slug": "httpsseangoedeckecomjev-means-structured-output-is-interesting-again",
+      "title": "Jev means structured output is interesting again",
+      "url": "https://seangoedecke.com/jev-means-structured-output-is-interesting-again/",
+      "category": "ai",
+      "summary": "The article discusses Jev, a newly announced AI model that takes human-language prompts but produces only structured output (e.g., picking from user-provided choices), unlike ordinary LLMs that generate human language autoregressively, one token at a time.\n\nJev's key advantage is consistently low latency: typical responses run around 70ms with a worst case of about 500ms, versus seconds for standard LLMs. Because it only produces structured output, Jev is not autoregressive — it answers many questions in parallel in a single forward pass. The author's favorite demonstration is Jev playing Doom in real time by answering low-latency decision queries (goal selection, keyboard input) from a text game state. He argues this kind of fast, cheap intelligence could become a genuinely new computational primitive, enabling non-chatbot programs that inject millisecond-scale AI decisions throughout.\n\nHowever, the author is skeptical of Jev's technical moat. Fast structured output is arguably already achievable with regular LLMs: by prefilling the response and generating just one token restricted to provided choices (instead of grammar-constrained autoregressive JSON decoding), you can get most of Jev's speed, consistency, and parallelism — and people began demonstrating this right after the announcement. He suspects any lab or programmer could replicate the approach, though a model fine-tuned specifically on structured output likely retains an edge.\n\nHe also doubts Jev will match frontier LLM intelligence, since it cannot use test-time compute, and dismisses the \"no hallucinations\" claim as a semantic dodge — the model can still pick wrong choices, it just doesn't invent free-form text. The conclusion: it's unclear how much value lies in the model itself versus the single-token inference strategy, but the author welcomes competition in fast structured output and hopes major labs release their own fine-tuned versions.",
+      "added": "2026-09-16",
+      "read": "2026-09-16",
+      "has_notes": true
     }
   ]
 }
