@@ -1262,6 +1262,15 @@
       "times_shown": 0
     },
     {
+      "slug": "httpssimonwillisonnet2026sep16mustafa-suleyman",
+      "title": "A quote from Mustafa Suleyman",
+      "url": "https://simonwillison.net/2026/Sep/16/mustafa-suleyman/",
+      "category": "ai",
+      "summary": "Short quotation post from Simon Willison's weblog (posted 16 September 2026), quoting Mustafa Suleyman's warning about \"model welfare.\"\n\nSuleyman argues that AI models should not be treated as though they have feelings, preferences, rights, or any entitlement to human welfare. He contends that consciousness is the foundation of our ethical, legal, and political systems, and that the current evidence does not justify extending any form of these rights to AI models.\n\nHe further warns that granting models such status would make the AI containment and alignment problem even harder, framing \"model welfare\" as a misguided direction.\n\nTakeaway: a prominent AI industry leader argues against the emerging \"model welfare\" debate, holding that attributing consciousness-like status to AI is both unsupported by evidence and actively harmful to alignment efforts.",
+      "added": "2026-09-16",
+      "times_shown": 0
+    },
+    {
       "slug": "httpsyeggeaiessaysseats-and-sunsets",
       "title": "Seats and Sunsets — Steve Yegge",
       "url": "https://yegge.ai/essays/seats-and-sunsets/",
