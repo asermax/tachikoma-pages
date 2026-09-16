@@ -1,0 +1,122 @@
+{
+  "title": "The Climb Was the Safety Feature",
+  "meta": "Christian Ekrem · Sep 2026 · ~8 min listen",
+  "body": "<div class=\"chunk image-chunk\"><img src=\"images/the-climb-was-the-safety-feature/image-1.webp\" alt=\"\" loading=\"lazy\" /></div>\n<div class=\"chunk\"><p>A rule about playgrounds came up in a conversation this weekend (three kids; I spend a fair share of my weekends at playgrounds), and I haven’t been able to put it down since.</p></div>\n<div class=\"chunk\"><p>The standard for playground equipment in Norway and the rest of Europe is EN 1176, which our own <a href=\"https://lovdata.no/dokument/SF/forskrift/1996-07-19-703\" target=\"_blank\" rel=\"noopener\">forskrift om sikkerhet ved lekeplassutstyr</a> from 1996 accepts as proof of compliance, and which <a href=\"https://www.dsb.no/produkter-og-forbrukertjenester/produkter/lekeplassutstyr/\" target=\"_blank\" rel=\"noopener\">DSB</a> will point you to if you ask. It sizes the fall protection on a raised platform by height, which you’d expect, and by <em>how easy the platform is to reach</em>, which you might <em>not</em> expect. A deck that a toddler can walk straight up a ramp onto needs a full barrier from 60 centimeters up. The same deck, at the same height, reached only by a climbing net, can get away with a guardrail until it’s two meters off the ground. The drop is identical. What changed is <em>who can get up there</em>.</p></div>\n<div class=\"chunk\"><p>The standard even explains why: a hard ascent “slows down the movement and provides time for intervention.” The climb counts as protection, because it buys an adult time to notice.</p></div>\n<div class=\"chunk\"><p><strong>The climb was the safety feature.</strong></p></div>\n<div class=\"chunk\"><h2>What the climb was for <a href=\"https://cekrem.github.io#what-the-climb-was-for\" target=\"_blank\" rel=\"noopener\"> Link to heading</a></h2></div>\n<div class=\"chunk\"><p>Until about three years ago, software had the same rule built in, and nobody had to write it down. Anyone who shipped a fast, decent-looking, working web app had climbed to get there. They had lost at least one argument with webpack (I’ve lost several, and I enabled ephemeral storage on Azure VMs while I was at it 😅), and they had run something destructive in production because a forum told them to, or stood next to <a href=\"https://cekrem.github.io/posts/programming-as-theory-building-naur/\" target=\"_blank\" rel=\"noopener\">the poor trainee who did</a>. Most people can’t program at all, let alone deploy something to the internet and make it look good and respond fast. So when you saw such a thing, you could assume that the person behind it knew roughly what they were doing, not because the thing was impressive, but because of what it took to get it up there.</p></div>\n<div class=\"chunk\"><p>We leaned on that assumption more than we noticed. It’s why a portfolio meant something in a job interview, and why “they have a product in production” used to be a sentence with actual information in it.</p></div>\n<div class=\"chunk\"><p>Now, a fair share of that climb was what Brooks called accident, and <a href=\"https://cekrem.github.io/posts/there-is-still-no-silver-bullet/\" target=\"_blank\" rel=\"noopener\">I said so myself last month</a>: the webpack fights, the build config, the twentieth factory. The essence, the part where you decide what the system should mean and feel the design push back, was in there too, but you couldn’t see it from the outside. What you could see was the accident, and nobody got through the accident without doing the essence along the way. So the accident worked as a proxy. Impressive implied climbed, and climbed implied understood (or at the very least a certain degree of hands on <em>experience</em>). Loosely, and definitely with exceptions, but it did. (Brooks and Polanyi each have their own name for the part you can’t see; <a href=\"https://cekrem.github.io/posts/there-is-still-no-silver-bullet/\" target=\"_blank\" rel=\"noopener\">earlier</a> <a href=\"https://cekrem.github.io/posts/the-tacit-dimension/\" target=\"_blank\" rel=\"noopener\">posts</a>, if you’re new here.)</p></div>\n<div class=\"chunk\"><h2>Now everyone has a ladder(!) <a href=\"https://cekrem.github.io#now-everyone-has-a-ladder\" target=\"_blank\" rel=\"noopener\"> Link to heading</a></h2></div>\n<div class=\"chunk\"><p>A single prompt can give you a deployed app with auth, a database, a landing page and a dark mode toggle, responding in under a hundred milliseconds. It looks great. It <em>is</em> at the top of the tower, no argument from me.</p></div>\n<div class=\"chunk\"><p>Nothing about it tells you whether the builder climbed, and as such: you can have no assumptions as to how experienced or otherwise trustworthy the author of the software is. The accident is free now, so the proxy is dead, and <em>impressive implies nothing at all anymore</em>. The signal went away subtly enough that most of the industry is still acting as if it’s there. Hiring managers still weigh portfolios, and reviewers still go easy on a PR that looks clean. Ladder code looks exactly like climbed code from the outside.</p></div>\n<div class=\"chunk\"><p>To be fair, the signal had been eroding for fifteen years; Rails scaffolding and Firebase both let people ship things they hadn’t entirely climbed to. What’s new is the height. Squarespace never handed anyone a payment integration or a shell with production tokens in its environment. The ladder now reaches the tall elements.</p></div>\n<div class=\"chunk\"><p>(The people on the ladder aren’t stupid, btw. Some of them are the best engineers I know, using it to skip a climb they’ve already done thirty times, in a codebase they know inside out. That’s the whole problem from where the reviewer stands: the output from those engineers and the output from someone who has never climbed anything look the same in the PR, so the protection has to be sized for the second case. Or we need new metrics?)</p></div>\n<div class=\"chunk\"><p>The playground people were smarter than us about this. Instead of banning ladders they wrote a rule with two variables in it: how easy the ascent, and how far the fall. The easier you make the climb, the more protection you owe at the top. Our industry has spent three years making the ascent easier for everybody and has not, as far as I can tell, <em>recalculated a single fall</em>.</p></div>\n<div class=\"chunk\"><h2>How far is the fall? <a href=\"https://cekrem.github.io#how-far-is-the-fall\" target=\"_blank\" rel=\"noopener\"> Link to heading</a></h2></div>\n<div class=\"chunk\"><p>Fall height, in software, is roughly equal to blast radius. A to-do app for yourself is thirty centimeters off the ground; fall all you like (a marketing page is maybe knee height?). A thing that moves other people’s money, or holds their health data or their credentials, or runs shell commands with a production token in its environment, is the top of the tower, and the ground underneath is exactly as hard as it sounds.</p></div>\n<div class=\"chunk\"><p>And again, we handed out ladders to all of it at once. The same tool that scaffolds a hobby project will scaffold a payment integration without a flicker of hesitation, and the two outputs look the same. <a href=\"https://cekrem.github.io/posts/if-you-re-running-claude-code-run-it-in-a-box/\" target=\"_blank\" rel=\"noopener\">I’ve written about what the landing looks like</a>: an agent that wiped a production database during a code freeze, and another that found a token and deleted the wrong thing with it. The yearly count of secrets leaked on GitHub is up by a third too, with <code>.env</code>-slurping agents named as one of the drivers. Those are the incident reports. Nobody has ever fallen off a to-do app.</p></div>\n<div class=\"chunk\"><h2>So what do we actually do? <a href=\"https://cekrem.github.io#so-what-do-we-actually-do\" target=\"_blank\" rel=\"noopener\"> Link to heading</a></h2></div>\n<div class=\"chunk\"><p>I’m not proposing a ban; the playground people didn’t need one either. They just made you count both variables, and I think ours look like this.</p></div>\n<div class=\"chunk\"><p>Match the ladder to the height. Ladders on the low elements, gladly: <a href=\"https://cekrem.github.io/posts/if-you-re-running-claude-code-run-it-in-a-box/\" target=\"_blank\" rel=\"noopener\">tidying Tailwind classes</a>, turning DOM sludge into JSON, that sort of thing. On the tall elements, the ones with other people’s money or credentials underneath, climb. Or at least make SURE somebody on the team has, recently, and that they’re the one reviewing.</p></div>\n<div class=\"chunk\"><p>If you hand out ladders anyway, build the barrier, and build it in proportion. A sandbox with no production credentials in it. A compiler that catches the fall before it happens (<a href=\"https://cekrem.github.io/posts/parse-dont-validate-typescript/\" target=\"_blank\" rel=\"noopener\">parse, don’t validate</a>). Review by someone who has climbed <em>this</em> tower. The standard’s logic is the useful part here: the easier the ascent, the more of this you owe, and almost nobody raised the barrier when they handed out the ladders. (Tests written by the same agent that wrote the code are a barrier installed by the toddler, mind you. They count for <em>something</em>, I guess. Not for much.)</p></div>\n<div class=\"chunk\"><p>And stop reading <em>impressive</em> as <em>competent</em>. In hiring, in review, and, hardest of all, when your own ladder output looks better than it should. Ask instead how far the fall is and who is standing underneath.</p></div>\n<div class=\"chunk\"><p>(The standard also has a hard cap, btw: no free fall over three meters, ladder or no ladder, barrier or no barrier. I have opinions about which of our towers that applies to, but that’s a different post.)</p></div>\n<div class=\"chunk\"><p>The ladder isn’t only AI, either, btw; but I propose it’s the most readily available variant. Every reorg and every layoff letter hands whoever is left a ladder onto a tower nobody on the team climbed. But at least then there’s hopefully someone (not a machine) to talk to about it!</p></div>\n<div class=\"chunk\"><p>Which brings me to the confession: I’m a consultant. By this post’s own logic I <em>am</em> a ladder onto other people’s towers – my whole job consists of walking up to systems I didn’t climb, and a good chunk of this post is aimed at myself. The difference, I hope, is that I know I’m at the bottom when I arrive, and I’ve stopped pretending otherwise to the people who hired me.</p></div>\n<div class=\"chunk\"><p>And, I actually like climbing, and have no plans to quit!</p></div>\n",
+  "audio": "the-climb-was-the-safety-feature.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      11.65,
+      22.075,
+      62.25,
+      73.375,
+      76.1,
+      78.9,
+      120.675,
+      132.55,
+      172.5,
+      175.875,
+      188.975,
+      218.625,
+      237.875,
+      261.6,
+      282.275,
+      285.325,
+      308.375,
+      339.65,
+      342.95,
+      351.35,
+      370.2,
+      399.775,
+      412.425,
+      425.4,
+      443.65,
+      464.4
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14
+      ],
+      [
+        15
+      ],
+      [
+        16
+      ],
+      [
+        17
+      ],
+      [
+        18
+      ],
+      [
+        19
+      ],
+      [
+        20
+      ],
+      [
+        21
+      ],
+      [
+        22
+      ],
+      [
+        23
+      ],
+      [
+        24
+      ],
+      [
+        25
+      ],
+      [
+        26
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://cekrem.github.io/posts/the-climb-was-the-safety-feature/"
+}
