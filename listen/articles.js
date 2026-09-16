@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'seats-and-sunsets', title: 'Seats and Sunsets — Steve Yegge', meta: 'Steve Yegge · Sep 2026', time: '23:48' },
     { slug: 'agentic-test-processes-llm-benchmarks', title: 'Agentic test processes, LLM benchmarks, and other notes on agentic coding', meta: 'Dan Luu · Sep 2026', time: '96:26' },
     { slug: 'measuring-ais-impact-on-delivery-speed', title: 'Measuring AI\'s Impact on Delivery Speed', meta: 'James Shore · 2026', time: '12:37' },
     { slug: 'tell-agents-the-why', title: 'Tell agents the why, not just the how', meta: 'Sean Goedecke · Sep 2026', time: '3:38' },
