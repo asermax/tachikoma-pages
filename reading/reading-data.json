@@ -1253,6 +1253,24 @@
       "times_shown": 0
     },
     {
+      "slug": "httpscekremgithubiopoststhe-climb-was-the-safety-feature",
+      "title": "The Climb Was the Safety Feature",
+      "url": "https://cekrem.github.io/posts/the-climb-was-the-safety-feature/",
+      "category": "ai",
+      "summary": "The article opens with a rule from the European playground safety standard (EN 1176): the required fall protection for a raised platform depends not only on its height, but on how hard it is to reach. A ramp-access deck needs full barriers from 60 cm; the same deck reached by a climbing net only needs a guardrail up to two meters. The hard ascent \"slows down the movement and provides time for intervention\" — the climb itself is part of the safety system.\n\nThe author argues software worked the same way until roughly three years ago: anyone who shipped a fast, polished web app had climbed — fought webpack, broken things in production, learned the hard way. That difficult ascent served as an invisible proxy: impressive output implied real experience. Portfolios and \"has a product in production\" carried information precisely because the climb was unavoidable.\n\nAI code generation has now handed everyone a ladder. One prompt can yield a deployed app with auth, a database, and good performance, yet \"ladder code looks exactly like climbed code from the outside.\" The proxy is dead — impressive implies nothing about competence anymore — though the industry still behaves otherwise: hiring managers still weigh portfolios and reviewers still go easy on clean-looking PRs. The signal was already eroding (Rails scaffolding, Firebase), but the new \"height\" is what changed: today's ladders reach payment integrations and production credentials, not just static sites.\n\nThe proposed response mirrors the playground standard: match the ladder to the height. Use AI freely on low-stakes work (styling, refactors), but have someone who has genuinely climbed review anything with a large blast radius — money, health data, credentials, shell access. If ladders are handed out anyway, build proportional barriers: sandboxed environments with no production credentials, compile-time guarantees, review by experienced engineers. Crucially, stop reading \"impressive\" as \"competent\" — in hiring, in code review, and in your own AI-generated output. Instead, ask how far the fall is and who is standing underneath.",
+      "added": "2026-09-16",
+      "times_shown": 0
+    },
+    {
+      "slug": "httpsseangoedeckecomjev-means-structured-output-is-interesting-again",
+      "title": "Jev means structured output is interesting again",
+      "url": "https://seangoedecke.com/jev-means-structured-output-is-interesting-again/",
+      "category": "ai",
+      "summary": "The article discusses Jev, a newly announced AI model that takes human-language prompts but produces only structured output (e.g., picking from user-provided choices), unlike ordinary LLMs that generate human language autoregressively, one token at a time.\n\nJev's key advantage is consistently low latency: typical responses run around 70ms with a worst case of about 500ms, versus seconds for standard LLMs. Because it only produces structured output, Jev is not autoregressive — it answers many questions in parallel in a single forward pass. The author's favorite demonstration is Jev playing Doom in real time by answering low-latency decision queries (goal selection, keyboard input) from a text game state. He argues this kind of fast, cheap intelligence could become a genuinely new computational primitive, enabling non-chatbot programs that inject millisecond-scale AI decisions throughout.\n\nHowever, the author is skeptical of Jev's technical moat. Fast structured output is arguably already achievable with regular LLMs: by prefilling the response and generating just one token restricted to provided choices (instead of grammar-constrained autoregressive JSON decoding), you can get most of Jev's speed, consistency, and parallelism — and people began demonstrating this right after the announcement. He suspects any lab or programmer could replicate the approach, though a model fine-tuned specifically on structured output likely retains an edge.\n\nHe also doubts Jev will match frontier LLM intelligence, since it cannot use test-time compute, and dismisses the \"no hallucinations\" claim as a semantic dodge — the model can still pick wrong choices, it just doesn't invent free-form text. The conclusion: it's unclear how much value lies in the model itself versus the single-token inference strategy, but the author welcomes competition in fast structured output and hopes major labs release their own fine-tuned versions.",
+      "added": "2026-09-16",
+      "times_shown": 0
+    },
+    {
       "slug": "httpsyeggeaiessaysseats-and-sunsets",
       "title": "Seats and Sunsets — Steve Yegge",
       "url": "https://yegge.ai/essays/seats-and-sunsets/",
