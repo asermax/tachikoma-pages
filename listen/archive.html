@@ -117,7 +117,7 @@
 </div>
 <div id="content">
     <h2>Articles</h2>
-    <input type="search" id="searchBox" class="search-box" placeholder="Search titles..." autocomplete="off">
+    <input type="search" id="searchBox" class="search-box" placeholder="Search titles and authors..." autocomplete="off">
     <div id="archiveList"></div>
 </div>
 <script src="../assets/tachikoma.js?v=4e37b477ab801357"></script>
@@ -154,7 +154,8 @@ function renderItem(a) {
 function renderList() {
     const q = searchBox.value.trim().toLowerCase();
     const matches = q
-        ? ARTICLES.filter(a => a.title.toLowerCase().includes(q))
+        ? ARTICLES.filter(a => a.title.toLowerCase().includes(q)
+            || (a.meta || '').split('·')[0].toLowerCase().includes(q))
         : ARTICLES;
     archiveList.innerHTML = '';
     if (matches.length === 0) {
