@@ -94,6 +94,17 @@
             font-size: 1rem;
             color: #764ba2;
             font-weight: 600;
+        }
+        .rir-chip {
+            display: inline-block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #764ba2;
+            background: rgba(118, 75, 162, 0.12);
+            border-radius: 10px;
+            padding: 0.1rem 0.5rem;
+            vertical-align: middle;
+        }
             margin-top: 0.25rem;
         }
 
@@ -543,9 +554,9 @@
                 h += '<div class="exercise-detail">(' + esc(ex.detail) + ')</div>';
             }
             if (ex.type === 'reps') {
-                h += '<div class="exercise-target">' + ex.target + ' reps</div>';
+                h += '<div class="exercise-target">' + esc(ex.target) + ' reps' + (ex.rir ? ' <span class="rir-chip">RIR ' + ex.rir + '</span>' : '') + '</div>';
             } else {
-                h += '<div class="exercise-target">' + ex.target + ex.unit + '</div>';
+                h += '<div class="exercise-target">' + esc(ex.target) + esc(ex.unit) + (ex.rir ? ' <span class="rir-chip">RIR ' + ex.rir + '</span>' : '') + '</div>';
             }
             if (ex.weight) {
                 h += '<div class="exercise-weight">' + esc(ex.weight) + '</div>';
