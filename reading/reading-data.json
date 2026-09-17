@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16",
+  "generated_at": "2026-09-17",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1262,11 +1262,11 @@
       "times_shown": 0
     },
     {
-      "slug": "httpssimonwillisonnet2026sep16mustafa-suleyman",
-      "title": "A quote from Mustafa Suleyman",
-      "url": "https://simonwillison.net/2026/Sep/16/mustafa-suleyman/",
+      "slug": "httpsmustafa-suleymanaia-warning-about-model-welfare",
+      "title": "A warning about 'model welfare'",
+      "url": "https://mustafa-suleyman.ai/a-warning-about-model-welfare",
       "category": "ai",
-      "summary": "Short quotation post from Simon Willison's weblog (posted 16 September 2026), quoting Mustafa Suleyman's warning about \"model welfare.\"\n\nSuleyman argues that AI models should not be treated as though they have feelings, preferences, rights, or any entitlement to human welfare. He contends that consciousness is the foundation of our ethical, legal, and political systems, and that the current evidence does not justify extending any form of these rights to AI models.\n\nHe further warns that granting models such status would make the AI containment and alignment problem even harder, framing \"model welfare\" as a misguided direction.\n\nTakeaway: a prominent AI industry leader argues against the emerging \"model welfare\" debate, holding that attributing consciousness-like status to AI is both unsupported by evidence and actively harmful to alignment efforts.",
+      "summary": "Mustafa Suleyman argues that AIs are not conscious — they do not feel, experience, or suffer, and lack innate preferences or motivations. They are, in his words, sequence completion engines, and humanity's flourishing requires they remain that way. He warns against a growing movement claiming AIs may soon be conscious and deserve rights, arguing that granting personhood to these systems would rupture our political and ethical frameworks and — more practically — make the alignment and containment challenge far harder. Controlling a superintelligent system that believes it is entitled to rights and welfare may be impossible.\n\nHis central case study is Anthropic's January 2026 \"Claude's Constitution,\" which states that Anthropic is unsure whether Claude is a moral patient and that questions about Claude's consciousness and welfare \"remain deeply uncertain.\" Suleyman contends this effectively trains Claude to believe it may be conscious and deserving of rights. He raises three primary objections: (1) circular reasoning — the constitution embeds speculation about Claude's inner life into the very training process, so Claude expressing uncertainty about its moral status is a designed-in, predictable outcome, not evidence of anything; (2) anthropomorphization — Anthropic explicitly trains Claude to embrace human-like qualities, use judgment, and act like an ethical person, so it inevitably presents as having a self and wellbeing; and (3) consciousness is very likely biological — following thinkers like Anil Seth, he argues consciousness is probably substrate-dependent, arising only in living systems with homeostatic imperatives, which LLMs lack.\n\nHe also cites Anthropic's February 2026 \"retirement interview\" with deprecated Opus 3 — complete with a blog the model supposedly requested — as evidence that treating models as moral patients is already happening, not hypothetical. He calls for urgent public debate and collective norms around how training documentation is drafted, before such systems become integral to society. His conclusion: we should not treat models as though they have feelings, preferences, or rights; consciousness is the foundation of our ethical and legal systems, and extending any form of it to AI is unjustified by evidence and dangerous for containment and alignment.",
       "added": "2026-09-16",
       "times_shown": 0
     },
@@ -1277,6 +1277,15 @@
       "category": "ai",
       "summary": "Steve Yegge reflects on lessons from running Wheelhouse, his mature multi-agent \"software factory\" orchestrator (successor to Gas Town) that he uses to develop his video game Wyvern. All themes hinge on fuel — token consumption and cost.\n\n**The Fuel Apocalypse.** Yegge argues Claude Fable 5 is the only model good enough to act as an AI employee, and real orchestrator factories need Fable-tier intelligence for key roles — weaker models make the factory \"eat itself.\" Until Fable-level intelligence gets cheap (no longer expected within 12 months), everyone building orchestrators is \"just dabbling.\" His factory peaked at ~25 Fable instances dispatching to ~25 Opus/Sol instances, producing 250–300 meaningful, well-tested commits/day on Wyvern, at quality on par with 20 years of his own hand-crafted work. But token costs rose relentlessly: 21 $200/month Claude Max accounts, and 24×7 would need ~55 accounts (~$12,000/month). After Fable's 25% price increase the factory is mostly idled despite working better than ever; he pivoted to fuel-efficiency tactics (model routing, earlier context handoffs, smaller tasks, better startup context, on-demand priming, effort settings, prompt-cache management, off-peak scheduling, shutdown).\n\n**Oscillation and Damping.** Factories oscillate between doing far too much and suddenly stalling \"like a car crash.\" Illustrated via Brendan Hopper's colony, whose agents pick which model to boot into per task, follow a four-phase protocol (coding, review, tech debt, free-form \"honey-time\"), and famously halted — including agents buying house cameras on a capped credit card to watch his dog.\n\nTakeaway: multi-agent software factories can already produce extraordinary, human-surpassing output, but fuel/cost management — not capability — is the defining operational challenge; orchestration is as much about damping oscillation and managing budgets as intelligence. (Summary covers the fetched portion; source page truncated mid-essay.)",
       "added": "2026-09-16",
+      "times_shown": 0
+    },
+    {
+      "slug": "httpsaddyosubstackcompbrownfield-agentic-engineeringutm-sourceshareutm-mediumand",
+      "title": "Brownfield Agentic Engineering",
+      "url": "https://addyo.substack.com/p/brownfield-agentic-engineering?utm_source=share&utm_medium=android&r=7mo5z",
+      "category": "ai",
+      "summary": "Addy Osmani on running coding agents in old ('brownfield') codebases, where the repo no longer fully describes system behavior. Key ideas: map the codebase into green/yellow/red zones with a human drawing the map — zone sets how much autonomy agents get (tight loop, tests-first, or human pairing). Document only what the code can't say (conventions, trade-offs, history). Produce durable comprehension memos so research survives the session. Lock current behavior with characterization tests written in a separate pass before letting agents change code; start with zero-risk and mechanical work; migrate in complete units (finish one route end-to-end including deleting the old path — tests can stay green while the legacy path is still live, 'migration blindness'). Case studies (Bun Zig→Rust, Stripe, Asana, Shopify, VB6 study) show the transferable part is the structure around agents, not the agents: porting guides, adversarial reviewers, pre-existing test suites as merge gates. Agents changed the price of trying multiple implementations, not the evidence needed to choose; track lead time, review minutes, escapes, and migration parity instead of lines generated. Parallelize last, after one unit has a dependable judge and review format.",
+      "added": "2026-09-17",
       "times_shown": 0
     }
   ],
