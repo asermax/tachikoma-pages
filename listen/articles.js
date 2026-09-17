@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'brownfield-agentic-engineering', title: 'Brownfield Agentic Engineering', meta: 'Addy Osmani · Sep 2026', time: '20:51' },
     { slug: 'a-warning-about-model-welfare', title: 'A warning about \'model welfare\'', meta: 'Mustafa Suleyman · Sep 2026', time: '42:33' },
     { slug: 'the-climb-was-the-safety-feature', title: 'The Climb Was the Safety Feature', meta: 'Christian Ekrem · Sep 2026', time: '7:48' },
     { slug: 'seats-and-sunsets', title: 'Seats and Sunsets — Steve Yegge', meta: 'Steve Yegge · Sep 2026', time: '23:48' },
