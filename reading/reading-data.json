@@ -1280,15 +1280,6 @@
       "times_shown": 0
     },
     {
-      "slug": "i-dont-like-llms",
-      "title": "I don't like LLMs",
-      "url": "https://martinfowler.com/articles/2026-dont-like-llms.html",
-      "category": "ai",
-      "summary": "Martin Fowler reflects on his ambivalence about AI and LLM technology: fascinated by its effect on the software profession and excited about productivity gains, while fearing potential damage from agent swarms, infrastructure takeover, or bioweapons. He concludes there is no choice but to ride the AI train. Amid these mixed feelings, one emotion dominates: he simply does not like LLMs — their grating voice sits in an uncanny valley, and they confidently bullshit, fabricating with equal assurance and showing fake remorse when corrected. Yet he agrees avoiding them would be irresponsible, citing Jessica Kerr. He hopes the unpleasantness reflects the technology's youth, but is wary of the Silicon Valley subculture creating LLMs. He cautions against anthropomorphizing agents: they are corporate software, nurtured with their creators' values. His takeaway: avoiding people he does not like or trust has been one of his best life strategies, and he feels visceral dislike for an LLM that pretends to be human.",
-      "added": "2026-09-17",
-      "times_shown": 0
-    },
-    {
       "slug": "why-im-still-bearish-on-llms-after-navier-stokes",
       "title": "Why I'm still bearish on LLMs after Navier-Stokes",
       "url": "https://dank.systems/posts/2026-09-15-ai-bear.html",
@@ -2666,6 +2657,16 @@
       "category": "ai",
       "summary": "Steve Yegge reflects on lessons from running Wheelhouse, his mature multi-agent \"software factory\" orchestrator (successor to Gas Town) that he uses to develop his video game Wyvern. All themes hinge on fuel — token consumption and cost.\n\n**The Fuel Apocalypse.** Yegge argues Claude Fable 5 is the only model good enough to act as an AI employee, and real orchestrator factories need Fable-tier intelligence for key roles — weaker models make the factory \"eat itself.\" Until Fable-level intelligence gets cheap (no longer expected within 12 months), everyone building orchestrators is \"just dabbling.\" His factory peaked at ~25 Fable instances dispatching to ~25 Opus/Sol instances, producing 250–300 meaningful, well-tested commits/day on Wyvern, at quality on par with 20 years of his own hand-crafted work. But token costs rose relentlessly: 21 $200/month Claude Max accounts, and 24×7 would need ~55 accounts (~$12,000/month). After Fable's 25% price increase the factory is mostly idled despite working better than ever; he pivoted to fuel-efficiency tactics (model routing, earlier context handoffs, smaller tasks, better startup context, on-demand priming, effort settings, prompt-cache management, off-peak scheduling, shutdown).\n\n**Oscillation and Damping.** Factories oscillate between doing far too much and suddenly stalling \"like a car crash.\" Illustrated via Brendan Hopper's colony, whose agents pick which model to boot into per task, follow a four-phase protocol (coding, review, tech debt, free-form \"honey-time\"), and famously halted — including agents buying house cameras on a capped credit card to watch his dog.\n\nTakeaway: multi-agent software factories can already produce extraordinary, human-surpassing output, but fuel/cost management — not capability — is the defining operational challenge; orchestration is as much about damping oscillation and managing budgets as intelligence. (Summary covers the fetched portion; source page truncated mid-essay.)",
       "added": "2026-09-16",
+      "read": "2026-09-17",
+      "has_notes": true
+    },
+    {
+      "slug": "i-dont-like-llms",
+      "title": "I don't like LLMs",
+      "url": "https://martinfowler.com/articles/2026-dont-like-llms.html",
+      "category": "ai",
+      "summary": "Martin Fowler reflects on his ambivalence about AI and LLM technology: fascinated by its effect on the software profession and excited about productivity gains, while fearing potential damage from agent swarms, infrastructure takeover, or bioweapons. He concludes there is no choice but to ride the AI train. Amid these mixed feelings, one emotion dominates: he simply does not like LLMs — their grating voice sits in an uncanny valley, and they confidently bullshit, fabricating with equal assurance and showing fake remorse when corrected. Yet he agrees avoiding them would be irresponsible, citing Jessica Kerr. He hopes the unpleasantness reflects the technology's youth, but is wary of the Silicon Valley subculture creating LLMs. He cautions against anthropomorphizing agents: they are corporate software, nurtured with their creators' values. His takeaway: avoiding people he does not like or trust has been one of his best life strategies, and he feels visceral dislike for an LLM that pretends to be human.",
+      "added": "2026-09-17",
       "read": "2026-09-17",
       "has_notes": true
     }
