@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-16T02:01:03.481691-03:00",
+  "generated_at": "2026-09-17T02:00:30.683286-03:00",
   "week_start": "2026-09-13",
   "week_label": "September 13 - September 19, 2026",
-  "last_updated": "Wednesday, September 16, 2026 at 02:01",
+  "last_updated": "Thursday, September 17, 2026 at 02:00",
   "stats": {
-    "completed": 3.5,
-    "planned": 8,
-    "display": "3.5 / 8"
+    "completed": 3.6666666666666665,
+    "planned": 11,
+    "display": "3.7 / 11"
   },
   "daily": {
     "Sunday": {
@@ -25,9 +25,9 @@
       "total": 3
     },
     "Wednesday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 3
     },
     "Thursday": {
       "status": "empty",
@@ -50,9 +50,9 @@
       "name": "Wind-Down Routine",
       "emoji": "",
       "status": "pending",
-      "accumulated": "1 nights",
+      "accumulated": "2 nights",
       "target": "6 nights",
-      "progress_pct": 16
+      "progress_pct": 33
     }
   ],
   "routines": [
@@ -82,7 +82,7 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -120,7 +120,7 @@
         },
         {
           "day": "Tue",
-          "status": "pending"
+          "status": "skipped"
         },
         {
           "day": "Wed",
@@ -170,7 +170,7 @@
         },
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -180,10 +180,10 @@
     }
   ],
   "spirit": {
-    "state": "tired",
+    "state": "critical",
     "emoji": "\ud83d\udc32",
     "title": "\ud83d\udc32 Jade Dragonling",
-    "image": "assets/tired.webp",
-    "description": "Your jade dragonling slumps under grey drizzle and fog, wings drooping \u2014 weary little scales, needing rest."
+    "image": "assets/critical.webp",
+    "description": "Your jade dragonling hunches and shivers against wind and dark storm clouds \u2014 sad, small, weathering it out."
   }
 }
