@@ -1280,6 +1280,15 @@
       "times_shown": 0
     },
     {
+      "slug": "i-dont-like-llms",
+      "title": "I don't like LLMs",
+      "url": "https://martinfowler.com/articles/2026-dont-like-llms.html",
+      "category": "ai",
+      "summary": "Martin Fowler reflects on his ambivalence about AI and LLM technology: fascinated by its effect on the software profession and excited about productivity gains, while fearing potential damage from agent swarms, infrastructure takeover, or bioweapons. He concludes there is no choice but to ride the AI train. Amid these mixed feelings, one emotion dominates: he simply does not like LLMs — their grating voice sits in an uncanny valley, and they confidently bullshit, fabricating with equal assurance and showing fake remorse when corrected. Yet he agrees avoiding them would be irresponsible, citing Jessica Kerr. He hopes the unpleasantness reflects the technology's youth, but is wary of the Silicon Valley subculture creating LLMs. He cautions against anthropomorphizing agents: they are corporate software, nurtured with their creators' values. His takeaway: avoiding people he does not like or trust has been one of his best life strategies, and he feels visceral dislike for an LLM that pretends to be human.",
+      "added": "2026-09-17",
+      "times_shown": 0
+    },
+    {
       "slug": "why-im-still-bearish-on-llms-after-navier-stokes",
       "title": "Why I'm still bearish on LLMs after Navier-Stokes",
       "url": "https://dank.systems/posts/2026-09-15-ai-bear.html",
