@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'still-bearish-on-llms-after-navier-stokes', title: 'Why I\'m still bearish on LLMs after Navier-Stokes', meta: 'jay kruer · Sep 2026', time: '7:09' },
     { slug: 'brownfield-agentic-engineering', title: 'Brownfield Agentic Engineering', meta: 'Addy Osmani · Sep 2026', time: '20:51' },
     { slug: 'a-warning-about-model-welfare', title: 'A warning about \'model welfare\'', meta: 'Mustafa Suleyman · Sep 2026', time: '42:33' },
     { slug: 'the-climb-was-the-safety-feature', title: 'The Climb Was the Safety Feature', meta: 'Christian Ekrem · Sep 2026', time: '7:48' },
