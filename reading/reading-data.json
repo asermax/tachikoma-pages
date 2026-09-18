@@ -1289,6 +1289,15 @@
       "times_shown": 0
     },
     {
+      "slug": "bend-2-and-the-vibe-coding-trap",
+      "title": "Bend 2 and the Vibe-Coding Trap",
+      "url": "https://blog.liampwll.com/posts/bend_vibe_coding/",
+      "category": "ai",
+      "summary": "The article uses Bend 2, a language pitched for the AI coding era where humans write \"laws\" and LLMs write implementations plus machine-checked proofs, as a case study in a common but under-discussed trap of vibe coding. The author's core argument is not about Bend's specific design flaws but about how vibe coding lets a developer build a substantial, complete solution before learning enough about the problem domain to recognize that a far better, existing solution exists.\n\nThe concrete example: Bend's homepage demo requires 58 lines of \"laws\" just to state that the player can never reach the flag, and the LLM must write 442 lines of proof from first principles to verify them. Notably, the words \"formal verification\" appear nowhere in Bend's website or codebase — the author built an entire language and compiler around a problem without apparently realizing a whole field already exists for it.\n\nTo demonstrate, the author vibe-coded an equivalent program in SPARK, an open-source formal-verification language. It specifies the same laws with inductive invariants and loop invariants, and GNATprove proves all 12 checks outright — no 442-line handwritten proof needed. A little research would have revealed this standard, because knowing the state of the art is what lets you ask an LLM the right questions.\n\nThe main takeaway: LLMs will happily build whatever you ask for, even if it's decades behind the state of the art or already exists. They will never stop to suggest that mature tools (like automated proof assistants) could eliminate 99% of the work. Vibe coding removes the friction that previously forced developers to research a problem before building a solution, making it easy to unknowingly reinvent broken or obsolete designs.",
+      "added": "2026-09-18",
+      "times_shown": 0
+    },
+    {
       "slug": "how-i-vibed-a-proof-of-conways-conjecture",
       "title": "How I Vibed a Proof of Conway's Conjecture",
       "url": "https://overreacted.io/how-i-vibed-a-proof-of-conways-conjecture/",
