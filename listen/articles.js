@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'bend-vibe-coding', title: 'Bend 2 and the Vibe-Coding Trap', meta: 'Liam Powell · Sep 2026', time: '6:11' },
     { slug: 'how-i-vibed-a-proof-of-conways-conjecture', title: 'How I Vibed a Proof of Conway\'s Conjecture', meta: 'Dan Abramov · Sep 2026', time: '44:08' },
     { slug: 'i-dont-like-llms', title: 'I don\'t like LLMs', meta: 'Martin Fowler · Sep 2026', time: '2:35' },
     { slug: 'still-bearish-on-llms-after-navier-stokes', title: 'Why I\'m still bearish on LLMs after Navier-Stokes', meta: 'jay kruer · Sep 2026', time: '7:09' },
