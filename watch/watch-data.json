@@ -648,6 +648,17 @@
       "added": "2026-09-13",
       "watched": "2026-09-13",
       "has_notes": false
+    },
+    {
+      "slug": "homa-the-end-of-tcp-for-ai-clusters-john-ousterhout-stanford",
+      "title": "Homa: The End of TCP for AI Clusters \u2014 John Ousterhout, Stanford",
+      "url": "https://www.youtube.com/watch?v=eZ8WWZzoaR0",
+      "video_id": "eZ8WWZzoaR0",
+      "channel": "AI Engineer",
+      "summary": "In this presentation, Stanford Professor Emeritus John Ousterhout argues that the evolving nature of AI workloads\u2014specifically inference and agentic workflows\u2014has made network latency far more critical than throughput. He explains that traditional protocols like TCP and RDMA suffer from high tail latency and poor congestion control when handling modern, granular message exchanges, which can stall valuable GPU resources. To solve this, Ousterhout introduces 'Homa,' a new clean-slate transport protocol designed at Stanford that significantly reduces tail latency by improving congestion management. This talk is highly beneficial for AI infrastructure engineers, network systems researchers, and developers looking to optimize data center performance for modern AI applications.",
+      "added": "2026-09-18",
+      "watched": "2026-09-18",
+      "has_notes": false
     }
   ]
 }
