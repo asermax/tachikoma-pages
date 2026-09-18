@@ -23,7 +23,7 @@
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "8-12",
+          "target": "12",
           "unit": "",
           "weight": null,
           "rir": 2
@@ -33,7 +33,7 @@
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "6-10",
+          "target": "10",
           "unit": "",
           "weight": null,
           "rir": 2
@@ -63,7 +63,7 @@
           "detail": "light DB",
           "sets": 2,
           "type": "reps",
-          "target": "15-20",
+          "target": "20",
           "unit": "",
           "weight": null,
           "rir": 2
@@ -92,7 +92,7 @@
           "detail": null,
           "sets": 3,
           "type": "reps",
-          "target": "8-10",
+          "target": "10",
           "unit": "",
           "weight": null,
           "rir": 2
@@ -102,7 +102,7 @@
           "detail": null,
           "sets": 3,
           "type": "time",
-          "target": "20-30",
+          "target": "30",
           "unit": "s",
           "weight": null,
           "rir": 2
@@ -132,7 +132,7 @@
           "detail": "light DB",
           "sets": 2,
           "type": "reps",
-          "target": "15-20",
+          "target": "20",
           "unit": "",
           "weight": null,
           "rir": null
