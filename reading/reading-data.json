@@ -2678,6 +2678,16 @@
       "added": "2026-09-17",
       "read": "2026-09-17",
       "has_notes": true
+    },
+    {
+      "slug": "programming-is-a-game",
+      "title": "Programming Is a Game",
+      "url": "https://blog.exe.dev/programming-is-a-game",
+      "category": "ai",
+      "summary": "The article examines why AI agents have become remarkably good at programming while LLM chatbots in general have stagnated. The author, Ian Lance Taylor, argues that programming improved because programs come with built-in feedback: tests. An agent can write code, write a test, and verify the code passes — solving each problem via two independent approaches (coding and testing) that must agree, which suppresses the errors and hallucinations typical of chatbots. Humans remain necessary to verify that the program solves the right problem, but checking the big picture is easier than checking every detail — a genuine synergy.\n\nOther properties make programming well-suited to agents: an abundance of high-quality examples in open source software, and a rigid, documented set of rules a program must satisfy just to build and run. The author notes this same combination — tests, examples, and rigid rules — characterizes strategy games like chess and Go, where AI reached superhuman play years ago. In hindsight, it is unsurprising AI carried that success into an arena with the same essential characteristics.\n\nThe article then asks what other domains fit this pattern. Law superficially qualifies (many examples, relatively rigid documented rules), but its \"tests\" — lawsuits — take months or years to resolve, precluding fast development. Medicine, despite frequent predictions of AI breakthroughs, fits poorly: its rules are undocumented, treatment test cycles are very slow, and it is full of unanticipated side effects (\"reverse synergies\"). AI search may help rare diseases that get little human attention, but the general population does not have rare diseases, so broadly useful medical breakthroughs would require fundamentally new AI approaches.\n\nThe main takeaway: AI's programming gains stem from the domain's verifiable, rule-based, example-rich structure — the same structure that made games like chess and Go tractable. Domains lacking fast, reliable feedback loops will resist similar progress, so for now the practical benefit is increased programming productivity.",
+      "added": "2026-09-18",
+      "read": "2026-09-18",
+      "has_notes": true
     }
   ]
 }
