@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'brain-off', title: 'There\'s no point at which turning your brain off will work', meta: 'Dan Luu · Sep 2026', time: '25:23' },
     { slug: 'how-i-vibed-a-proof-of-conways-conjecture', title: 'How I Vibed a Proof of Conway\'s Conjecture', meta: 'Dan Abramov · Sep 2026', time: '44:08' },
     { slug: 'i-dont-like-llms', title: 'I don\'t like LLMs', meta: 'Martin Fowler · Sep 2026', time: '2:35' },
     { slug: 'still-bearish-on-llms-after-navier-stokes', title: 'Why I\'m still bearish on LLMs after Navier-Stokes', meta: 'jay kruer · Sep 2026', time: '7:09' },
