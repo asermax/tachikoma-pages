@@ -670,6 +670,17 @@
       "added": "2026-09-18",
       "watched": "2026-09-18",
       "has_notes": false
+    },
+    {
+      "slug": "the-last-imo-problem-ai-could-not-solve",
+      "title": "The last IMO problem AI could not solve",
+      "url": "https://www.youtube.com/watch?v=Nbwv5wHQoj0",
+      "video_id": "Nbwv5wHQoj0",
+      "channel": "3Blue1Brown",
+      "summary": "This video explores Problem 6 from the 2025 International Math Olympiad (IMO), a highly challenging grid-tiling problem that initially stumped both the world's best students and advanced AI systems. The presenter highlights the rapid progress of AI in competitive mathematics while explaining why this specific problem required a level of patience and creative insight that machines struggled to replicate. To prepare viewers for the solution, the video introduces a simpler but conceptually related brain teaser about slicing a cube with the minimum number of cuts. This video is ideal for math enthusiasts, students preparing for math competitions, and anyone interested in the limits of AI reasoning and human problem-solving.",
+      "added": "2026-09-19",
+      "watched": "2026-09-19",
+      "has_notes": false
     }
   ]
 }
