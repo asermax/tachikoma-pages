@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18",
+  "generated_at": "2026-09-19",
   "queue": [
     {
       "slug": "nigel-cheese-down-the-rabbit-hole",
@@ -656,6 +656,17 @@
       "video_id": "eZ8WWZzoaR0",
       "channel": "AI Engineer",
       "summary": "In this presentation, Stanford Professor Emeritus John Ousterhout argues that the evolving nature of AI workloads\u2014specifically inference and agentic workflows\u2014has made network latency far more critical than throughput. He explains that traditional protocols like TCP and RDMA suffer from high tail latency and poor congestion control when handling modern, granular message exchanges, which can stall valuable GPU resources. To solve this, Ousterhout introduces 'Homa,' a new clean-slate transport protocol designed at Stanford that significantly reduces tail latency by improving congestion management. This talk is highly beneficial for AI infrastructure engineers, network systems researchers, and developers looking to optimize data center performance for modern AI applications.",
+      "added": "2026-09-18",
+      "watched": "2026-09-18",
+      "has_notes": false
+    },
+    {
+      "slug": "why-jev-diogo-almeida-typesafe-ai",
+      "title": "Why Jev \u2014 Diogo Almeida, TypeSafe AI",
+      "url": "https://www.youtube.com/watch?v=cJ0EOzey--o",
+      "video_id": "cJ0EOzey--o",
+      "channel": "AI Engineer",
+      "summary": "In this presentation, Diogo Almeida, a co-creator of ChatGPT and InstructGPT, discusses the limitations of current AI models trained with Reinforcement Learning from Human Feedback (RLHF) and outlines what lies ahead for the industry. He argues that today's AI is highly effective for 'assistance' tasks that keep a human in the loop but struggles with high-stakes 'automation' because RLHF optimizes for pleasing human preferences rather than objective accuracy. According to Almeida, the next phase of AI will move beyond the ChatGPT 'assistance' era and transition into an era of true, reliable automation. This presentation is highly valuable for AI developers, engineers, and technology leaders seeking a grounded, realistic perspective on the current capabilities and future trajectory of large language models.",
       "added": "2026-09-18",
       "watched": "2026-09-18",
       "has_notes": false
