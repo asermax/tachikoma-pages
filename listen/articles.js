@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'the-senior-engineer-death-spiral', title: 'the senior engineer death spiral', meta: 'Sunil Pai · Sep 2026', time: '4:31' },
     { slug: 'how-i-vibed-a-proof-of-conways-conjecture', title: 'How I Vibed a Proof of Conway\'s Conjecture', meta: 'Dan Abramov · Sep 2026', time: '44:08' },
     { slug: 'i-dont-like-llms', title: 'I don\'t like LLMs', meta: 'Martin Fowler · Sep 2026', time: '2:35' },
     { slug: 'still-bearish-on-llms-after-navier-stokes', title: 'Why I\'m still bearish on LLMs after Navier-Stokes', meta: 'jay kruer · Sep 2026', time: '7:09' },
