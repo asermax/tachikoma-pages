@@ -1,4 +1,6 @@
 const ARTICLES = [
+    { slug: 'strategic-choices-when-both-options-are-good', title: 'Strategic choices: When both options are good', meta: 'Jason Cohen · Sep 2026', time: '18:44' },
+    { slug: 'ruthless-prioritization-while-the-dog-pees-on-the-floor', title: 'Ruthless prioritization while the dog pees on the floor', meta: 'Jason Cohen · Sep 2026', time: '15:03' },
     { slug: 'the-senior-engineer-death-spiral', title: 'the senior engineer death spiral', meta: 'Sunil Pai · Sep 2026', time: '4:31' },
     { slug: 'how-i-vibed-a-proof-of-conways-conjecture', title: 'How I Vibed a Proof of Conway\'s Conjecture', meta: 'Dan Abramov · Sep 2026', time: '44:08' },
     { slug: 'i-dont-like-llms', title: 'I don\'t like LLMs', meta: 'Martin Fowler · Sep 2026', time: '2:35' },
