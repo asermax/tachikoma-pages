@@ -1,0 +1,118 @@
+{
+  "title": "Making decisions with Jev",
+  "meta": "Nicolas Chagnet · Sep 20, 2026 · ~5 min listen",
+  "body": "<div class=\"chunk\"><p>Unless you live under a rock (i.e. are not terminally online), you must have heard of <a href=\"https://typesafe.ai\" target=\"_blank\" rel=\"noopener\">TypeSafe.ai</a>’s new AI model Jev. Their <a href=\"https://typesafe.ai/blog/introducing-system-one-models-and-jev\" target=\"_blank\" rel=\"noopener\">annoucement</a> spread quickly within the AI-hyped communities and less than a week later, countless blog posts, projects and applications have been built with this model. So, since it’s a grey Sunday here, I thought why not jump on a bandwagon for once!</p></div>\n<div class=\"chunk\"><h2>What is Jev?</h2></div>\n<div class=\"chunk\"><p>If you really want to understand Jev in details, I can really only refer you to their <a href=\"https://docs.typesafe.ai/introduction\" target=\"_blank\" rel=\"noopener\">documentation page</a>. The important thing to know is that Jev isn’t a new LLM model release like we’re used to, promising higher and higher intelligence. Jev represents both a departure from the bigger-is-better paradigm, instead focusing on cheaper and faster, as well as a shift from the “AI as a chatbot” concept. In their lingo, this is a <em>System One</em> model, instead of the usual <em>System Two</em> we’ve become accustomed to.</p></div>\n<div class=\"chunk\"><p>The way I like to think about it, Jev is to ML classification what ChatGPT was to basic NLP. You can think of it as a generalized classification model trained on <em>a lot</em> of data. All Jev requires is a custom <strong>state</strong> (can be a string, a JSON object, or a list of those) and a <strong>bounded output space</strong> and Jev will return an answer. There are three types of questions you can answer with Jev:</p></div>\n<div class=\"chunk\"><ul>\n<li><strong>choices</strong>: give Jev a list of choices, and you’ll get a selected choice, with a confidence score and a probability for each of the choices,</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li><strong>noul</strong>: to a yes/no question, Jev answers with a number between 0 and 1 indicating the probability Jev estimates for a yes,</li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li><strong>score</strong>: give Jev a scale definition and you’ll get a score on that scale, with a confidence level, a legend for each level and a probability of each step in the legend.</li>\n</ul></div>\n<div class=\"chunk\"><h3>Examples</h3></div>\n<div class=\"chunk\"><p>It’s a bit easier to illustrate all this with some examples. I’m running the below examples using the <a href=\"https://github.com/tumf/jev-cli\" target=\"_blank\" rel=\"noopener\"> jev-cli</a> tool. Let’s say we are responsible for a small town public services and we receive an email like this</p></div>\n<div class=\"chunk\"><p>Okay so first we can figure out if this is an emergency?</p></div>\n<div class=\"chunk\"><p>With a value of 0.68, Jev would rule it an emergency, but not confidently. If instead we use a more ‘natural’ way of phrasing this, you can see the model is <em>a lot</em> more confident that there <em>is</em> an emergency.</p></div>\n<div class=\"chunk\"><p>Next we can also figure out which department is needed by giving Jev choices</p></div>\n<div class=\"chunk\"><p>Phew, no doubt here the fire department is needed. If we tweak the state, you can see how other departments might also start showing up, for example paramedics if someone is injured.</p></div>\n<div class=\"chunk\"><p>Finally, we can score the state somehow on a provided scale</p></div>\n<div class=\"chunk\"><p>This is interesting: Jev is clearly missing the joke here. The email is not really supposed to convey panic, yet Jev places it solidly close to ‘Full-blown panicked’. My guess, it’s the exclamation marks. Let’s see if we dramatically tone it down</p></div>\n<div class=\"chunk\"><p>Bingo!</p></div>\n<div class=\"chunk\"><h2>Why use Jev?</h2></div>\n<div class=\"chunk\"><p>Hopefully, after all these examples, it should be pretty clear how Jev works and what kind of questions/answers you can use it for. What should also be pretty clear here is that all of this could already be done using either a fine-tuned classification model or your favourite LLM. What’s the added value here?</p></div>\n<div class=\"chunk\"><p>From a conceptual point of view, Jev’s architecture brings back type safety and confidence levels to the foreground, which is a welcome departure from the usual LLM paradigm of working with free-form text everywhere. You don’t need to parse Jev’s output, it can’t hallucinate a malformed output, and its reinforcement training is focused on getting its confidence level right rather than its accuracy.</p></div>\n<div class=\"chunk\"><p>However, the real marketing ace in the hole is its price and inference time. Per TypeSafe’s <a href=\"https://typesafe.ai/blog/introducing-system-one-models-and-jev\" target=\"_blank\" rel=\"noopener\">own numbers</a>, Jev is 40-200x faster than traditional LLM inference while being close to 500x cheaper. What this means is you can use Jev for real-time applications requiring many decisions per second and still come ahead on your budget.</p></div>\n<div class=\"chunk\"><p>The cherry on top of the cake is that you can batch as many questions as you want per API call. Jev’s architecture will handle these in parallel, unlike an LLM which would require independent calls for each of them.</p></div>\n<div class=\"chunk\"><p>On the other hand, the context size is much smaller (~10-100x smaller than typical LLMs) so Jev is limited to small isolated questions right now. And of course it can only handle cases where the output is part of a bounded space, by construction.</p></div>\n<div class=\"chunk\"><h2>Example project: a code-quality gate CLI tool</h2></div>\n<div class=\"chunk\"><p>To try it out, I made a <a href=\"https://github.com/NicolasChagnet/jev-code-quality\" target=\"_blank\" rel=\"noopener\">CLI tool</a> which analyses code quality using custom rules. The idea here is to fill the void between automated linting rules and full-blown LLM/human code review. Best practices, project-specific no-no’s, underperforming code: all these can be identified by Jev simultaneously and returned as a report, either to you or your agent or whoever writes your code these days.</p></div>\n<div class=\"chunk\"><h2>Footnotes</h2></div>\n<div class=\"chunk\"><ul>\n<li><a href=\"https://www.bbc.com/news/articles/cy5prvgw0r1o\" target=\"_blank\" rel=\"noopener\">GPT 5 was supposedly PhD-level at release</a>, whatever that means. I wonder where we’re at now…<a href=\"https://nchagnet.eu#user-content-fnref-intelligence\" target=\"_blank\" rel=\"noopener\"></a></li>\n</ul></div>\n",
+  "audio": "making-decisions-with-jev.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      22.875,
+      24.6,
+      57.15,
+      83.025,
+      91.8,
+      101.275,
+      111.9,
+      113.625,
+      127.65,
+      131.9,
+      146.525,
+      152.1,
+      163.9,
+      168.2,
+      184.65,
+      186.225,
+      188.1,
+      207.375,
+      231.825,
+      253.925,
+      268.5,
+      286.9,
+      291.175,
+      318.375,
+      319.95
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14
+      ],
+      [
+        15
+      ],
+      [
+        16
+      ],
+      [
+        17
+      ],
+      [
+        18
+      ],
+      [
+        19
+      ],
+      [
+        20
+      ],
+      [
+        21
+      ],
+      [
+        22
+      ],
+      [
+        23
+      ],
+      [
+        24
+      ],
+      [
+        25
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://nchagnet.eu/blog/jev-code-quality"
+}
