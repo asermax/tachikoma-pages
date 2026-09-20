@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-20T10:57:59.330143-03:00",
+  "generated_at": "2026-09-20T11:12:04.436777-03:00",
   "week_start": "2026-09-20",
   "week_label": "September 20 - September 26, 2026",
-  "last_updated": "Sunday, September 20, 2026 at 10:57",
+  "last_updated": "Sunday, September 20, 2026 at 11:12",
   "stats": {
     "completed": 0,
     "planned": 0,
@@ -173,9 +173,9 @@
   ],
   "spirit": {
     "state": "dormant",
-    "emoji": "\ud83d\udc32",
-    "title": "\ud83d\udc32 Jade Dragonling",
+    "emoji": "\ud83d\udc26",
+    "title": "\ud83d\udc26 Blossom Sparrow",
     "image": "assets/dormant.webp",
-    "description": "Your jade dragonling sleeps curled in moonlight under a starry sky \u2014 deep, peaceful rest."
+    "description": "Your blossom sparrow sleeps tucked under its wing in moonlight beneath a starry spring sky \u2014 deep, peaceful rest."
   }
 }
