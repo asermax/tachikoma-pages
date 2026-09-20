@@ -1,0 +1,106 @@
+{
+  "title": "Grit your teeth and ship it",
+  "meta": "Sean Goedecke · Sep 2026 · ~6 min listen",
+  "body": "<div class=\"chunk\"><p>Being good at building and being good at shipping are two separate skills. In the short term, they’re actually countervailing: if you have a gift for building, you’re likely to be <em>worse</em> at shipping. Ira Glass has a classic quote about this.</p></div>\n<div class=\"chunk\"><p>All of us who do creative work, we get into it because we have good taste. But there is this gap. For the first couple years you make stuff, it’s just not that good. It’s trying to be good, it has potential, but it’s not. But your taste, the thing that got you into the game, is still killer. And your taste is why your work disappoints you.</p></div>\n<div class=\"chunk\"><p>The only way around this is to <strong>grit your teeth and ship it</strong>. You have to force yourself to publish things you’ve made even when you think they’re crap.</p></div>\n<div class=\"chunk\"><p>Gifted programmers have a <a href=\"https://seangoedecke.com/addicted-to-being-useful/\" target=\"_blank\" rel=\"noopener\">nearly pathological</a> desire to build elegant, correct, neat systems. That’s what motivates them to learn the arcane details of their languages, or to spend time polishing and refactoring over and over again. But it’s also what makes them reluctant to ship. Any flaws in the software bother them on an emotional level. If they ship with those flaws, they feel like people will think they weren’t paying enough attention to notice them, or that they weren’t good enough to fix them.</p></div>\n<div class=\"chunk\"><p>This is annoying when you’re writing software on your own, but it’s completely fatal when you’re working in a tech company. Any large software system is covered in flaws, whether due to time pressure, <a href=\"https://seangoedecke.com/bad-code-at-big-companies/\" target=\"_blank\" rel=\"noopener\">relative inexperience</a>, <a href=\"https://seangoedecke.com/wicked-features/\" target=\"_blank\" rel=\"noopener\">wicked features</a>, or a hundred other reasons. Working with it is a process of compromise: of finding the best possible solution given the quirks and foibles of the codebase. In fact, since the most important thing in large codebases is <a href=\"https://seangoedecke.com/large-established-codebases/\" target=\"_blank\" rel=\"noopener\">consistency</a>, the right thing to do is sometimes to <em>duplicate</em> flaws, assuming they’re not catastrophic.</p></div>\n<div class=\"chunk\"><p>Gifted programmers often freeze up. I’ve often seen them retreat to smaller domains where they can safely make the code “correct”: tweaking dev-environment setup, or refactoring tests. Sometimes they just do nothing, and spin in shame and guilt (plus the compounding shame of not achieving anything) until they implode and quit. If they had worse taste, they wouldn’t be as good at programming, but they’d be a lot more useful. You can typically improve a bad diff with time and effort. You can’t improve <em>no</em> diff.</p></div>\n<div class=\"chunk\"><p>I have a sensitive eye for awkward sentences and uneven prose. That can make writing an unpleasant process: I know what I’m trying to say, but I can’t seem to say it in a way that’s as clear and as elegant as I know is possible. More than half the time I finish drafting a blog post, I look at the post and don’t think it’s very good. But I (mostly) grit my teeth and publish it anyway, because <strong>you have to bias towards shipping</strong>.</p></div>\n<div class=\"chunk\"><p>Like any skill, shipping gets easier the more you practice it. If I don’t publish a blog post for a month, I always feel like the next draft is too poorly-written or uninteresting to put out there. But when I’m publishing a post per day, I typically feel great about each draft. When I go back and read my old posts, I can’t tell which ones I felt good about and which ones I felt bad about. There’s no correlation between that and the posts that become <a href=\"https://seangoedecke.com/popular/\" target=\"_blank\" rel=\"noopener\">popular</a>. Here are some posts I didn’t like as I was writing them but that resonated with my audience:</p></div>\n<div class=\"chunk\"><ul>\n<li><a href=\"https://seangoedecke.com/the-simplest-thing-that-could-possibly-work/\" target=\"_blank\" rel=\"noopener\">Do the simplest thing that could possibly work</a></li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li><a href=\"https://seangoedecke.com/software-engineering-may-no-longer-be-a-lifetime-career/\" target=\"_blank\" rel=\"noopener\">Software engineering may no longer be a lifetime career</a></li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li><a href=\"https://seangoedecke.com/a-little-bit-cynical/\" target=\"_blank\" rel=\"noopener\">Software engineers should be a little bit cynical</a></li>\n</ul></div>\n<div class=\"chunk\"><p>Here are some posts I thought were pretty good but that didn’t find popularity:</p></div>\n<div class=\"chunk\"><ul>\n<li><a href=\"https://seangoedecke.com/weak-managers/\" target=\"_blank\" rel=\"noopener\">Weak engineering managers</a></li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li><a href=\"https://seangoedecke.com/solution-space/\" target=\"_blank\" rel=\"noopener\">Paths through the space of all possible solutions</a></li>\n</ul></div>\n<div class=\"chunk\"><ul>\n<li><a href=\"https://seangoedecke.com/impressing-people/\" target=\"_blank\" rel=\"noopener\">Trying to impress people you don’t respect</a></li>\n</ul></div>\n<div class=\"chunk\"><p>You just can’t predict what people will find interesting or useful. Producing a high volume of work thus gives much better yield than a small amount of highly-polished work.</p></div>\n<div class=\"chunk\"><p>It can be disheartening to realize that some of your most casual, throwaway work will be more successful than the work you slaved over. Specifically, it’s disheartening because it means realizing you don’t have <em>control</em> over your own success. You can’t produce something successful by focusing on a single piece until you’re satisfied it’s great. Instead, you just have to do a lot of things and see what sticks. You have to be <a href=\"https://sunilpai.dev/posts/the-senior-engineer-death-spiral/\" target=\"_blank\" rel=\"noopener\">momentum-based</a>, not outcome-based. In other words, <strong>you have to grit your teeth and ship it</strong>.</p></div>\n<div class=\"chunk\"><p>One common reason to write less is getting overly precious about your ideas. If you think you’ve got a really compelling concept, you don’t want to “waste it” on a poorly-written story. But in fact you can just write about the same thing over and over until you get it right! I have written like thirty blog posts about shipping (this is one of them), or about how tech companies work, or about how internal emotional regulation is as important as technical ability. I expect to continue writing and thinking about these ideas for as long as I find them interesting.</p></div>\n<div class=\"chunk\"><p>If you liked this post, consider <a href=\"https://buttondown.com/seangoedecke\" target=\"_blank\" rel=\"noopener\">subscribing</a> to email updates about my new posts, or <a href=\"https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fwww.seangoedecke.com%2Fgrit-your-teeth-and-ship-it%2F&amp;t=Grit%20your%20teeth%20and%20ship%20it\" target=\"_blank\" rel=\"noopener\">sharing it on Hacker News</a>.</p></div>\n<div class=\"chunk\"><p>Here's a preview of a related post that shares tags with this one.</p></div>\n<div class=\"chunk\"><p>The valley of engineering despair</p></div>\n<div class=\"chunk\"><p>I have</p></div>\n<div class=\"chunk\"><p><a href=\"https://seangoedecke.com/how-to-ship\" target=\"_blank\" rel=\"noopener\">delivered</a> a lot of successful engineering projects. When I start on a project, I’m now very (perhaps unreasonably) confident that I will ship it successfully. Even so, in every single one of these projects there is a period — perhaps a day, or even a week — where it feels like everything has gone wrong and the project will be a disaster. I call this the valley of engineering despair. A huge part of becoming good at running projects is anticipating and enduring this period.<a href=\"https://seangoedecke.com/the-valley-of-engineering-despair/\" target=\"_blank\" rel=\"noopener\">Continue reading...</a></p></div>\n",
+  "audio": "grit-your-teeth-and-ship-it.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      15.425,
+      36.575,
+      46.075,
+      76.15,
+      113.875,
+      143.7,
+      170.525,
+      205.05,
+      208.4,
+      212.9,
+      216.5,
+      222.075,
+      224.7,
+      228.45,
+      231.5,
+      243.275,
+      272.65,
+      308.05,
+      316.475,
+      321.3,
+      324.15,
+      325.675
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14
+      ],
+      [
+        15
+      ],
+      [
+        16
+      ],
+      [
+        17
+      ],
+      [
+        18
+      ],
+      [
+        19
+      ],
+      [
+        20
+      ],
+      [
+        21
+      ],
+      [
+        22
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://seangoedecke.com/grit-your-teeth-and-ship-it/"
+}
