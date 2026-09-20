@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19",
+  "generated_at": "2026-09-20",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1312,15 +1312,6 @@
       "url": "https://longform.asmartbear.com/strategic-choices/",
       "category": "business",
       "summary": "Jason Cohen: real strategy is a small set of macro-level strategic choices that align day-to-day autonomous decisions. Real choices have three properties: both sides are smart (many good companies picked each), every choice is a package deal with unavoidable costs, and choices mutually reinforce. When in conflict adhere to the choice; otherwise take wins. Balancing both sides lands you mediocre at everything. Ends with a reference table of classic strategic choices.",
-      "added": "2026-09-19",
-      "times_shown": 0
-    },
-    {
-      "slug": "the-senior-engineer-death-spiral",
-      "title": "the senior engineer death spiral",
-      "url": "https://sunilpai.dev/posts/the-senior-engineer-death-spiral/",
-      "category": "engineering",
-      "summary": "Sunil Pai describes a failure mode he calls \"the senior engineer death spiral,\" which typically begins when an engineer starts a new senior role, gets promoted, or takes on a big project. Feeling imposter syndrome and pressure to prove themselves, they try to \"cosplay\" a more senior engineer — designing overly ambitious things, going silent for weeks, and giving only \"positive updates\" at standup while having nothing to show.\n\nThe spiral then feeds on itself: guilt about not shipping leads to \"I'll just work harder and save this,\" which produces lost sleep, missed meals, damaged work and personal relationships, and eventually burnout, PIPs, firings, or quitting. Pai notes this has happened to him repeatedly and he now recognizes it early. He argues that modern work conditions — remote work, less structured task assignment, more ownership and siloing — make it dangerous to let people wonder what you're doing; you should instead be someone who constantly shares their work, so concerns surface before it's too late.\n\nThe counterintuitive fix: assume everyone is operating in good faith (they hired you as you are now, not who you'll be in six months), then \"drop a level\" and become the best teammate possible for a while — take bugs, grunt work, write-ups, and organizational tasks. This shifts you from an outcome-based mindset to a momentum-based one, rebuilding routines, relationships, and stamina.\n\nThe core lesson is that big projects aren't done with big heroic efforts but by slow, steady, incremental work until it's muscle memory — and reliability plus rebuilt trust is what earns you bigger work. As Pai puts it, you're in the reputation-building business, and software is downstream of that.",
       "added": "2026-09-19",
       "times_shown": 0
     }
@@ -2734,6 +2725,16 @@
       "summary": "The article examines why AI agents have become remarkably good at programming while LLM chatbots in general have stagnated. The author, Ian Lance Taylor, argues that programming improved because programs come with built-in feedback: tests. An agent can write code, write a test, and verify the code passes — solving each problem via two independent approaches (coding and testing) that must agree, which suppresses the errors and hallucinations typical of chatbots. Humans remain necessary to verify that the program solves the right problem, but checking the big picture is easier than checking every detail — a genuine synergy.\n\nOther properties make programming well-suited to agents: an abundance of high-quality examples in open source software, and a rigid, documented set of rules a program must satisfy just to build and run. The author notes this same combination — tests, examples, and rigid rules — characterizes strategy games like chess and Go, where AI reached superhuman play years ago. In hindsight, it is unsurprising AI carried that success into an arena with the same essential characteristics.\n\nThe article then asks what other domains fit this pattern. Law superficially qualifies (many examples, relatively rigid documented rules), but its \"tests\" — lawsuits — take months or years to resolve, precluding fast development. Medicine, despite frequent predictions of AI breakthroughs, fits poorly: its rules are undocumented, treatment test cycles are very slow, and it is full of unanticipated side effects (\"reverse synergies\"). AI search may help rare diseases that get little human attention, but the general population does not have rare diseases, so broadly useful medical breakthroughs would require fundamentally new AI approaches.\n\nThe main takeaway: AI's programming gains stem from the domain's verifiable, rule-based, example-rich structure — the same structure that made games like chess and Go tractable. Domains lacking fast, reliable feedback loops will resist similar progress, so for now the practical benefit is increased programming productivity.",
       "added": "2026-09-18",
       "read": "2026-09-18",
+      "has_notes": true
+    },
+    {
+      "slug": "the-senior-engineer-death-spiral",
+      "title": "the senior engineer death spiral",
+      "url": "https://sunilpai.dev/posts/the-senior-engineer-death-spiral/",
+      "category": "engineering",
+      "summary": "Sunil Pai describes a failure mode he calls \"the senior engineer death spiral,\" which typically begins when an engineer starts a new senior role, gets promoted, or takes on a big project. Feeling imposter syndrome and pressure to prove themselves, they try to \"cosplay\" a more senior engineer — designing overly ambitious things, going silent for weeks, and giving only \"positive updates\" at standup while having nothing to show.\n\nThe spiral then feeds on itself: guilt about not shipping leads to \"I'll just work harder and save this,\" which produces lost sleep, missed meals, damaged work and personal relationships, and eventually burnout, PIPs, firings, or quitting. Pai notes this has happened to him repeatedly and he now recognizes it early. He argues that modern work conditions — remote work, less structured task assignment, more ownership and siloing — make it dangerous to let people wonder what you're doing; you should instead be someone who constantly shares their work, so concerns surface before it's too late.\n\nThe counterintuitive fix: assume everyone is operating in good faith (they hired you as you are now, not who you'll be in six months), then \"drop a level\" and become the best teammate possible for a while — take bugs, grunt work, write-ups, and organizational tasks. This shifts you from an outcome-based mindset to a momentum-based one, rebuilding routines, relationships, and stamina.\n\nThe core lesson is that big projects aren't done with big heroic efforts but by slow, steady, incremental work until it's muscle memory — and reliability plus rebuilt trust is what earns you bigger work. As Pai puts it, you're in the reputation-building business, and software is downstream of that.",
+      "added": "2026-09-19",
+      "read": "2026-09-20",
       "has_notes": true
     }
   ]
