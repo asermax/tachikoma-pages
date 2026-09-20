@@ -1314,6 +1314,15 @@
       "summary": "Jason Cohen: real strategy is a small set of macro-level strategic choices that align day-to-day autonomous decisions. Real choices have three properties: both sides are smart (many good companies picked each), every choice is a package deal with unavoidable costs, and choices mutually reinforce. When in conflict adhere to the choice; otherwise take wins. Balancing both sides lands you mediocre at everything. Ends with a reference table of classic strategic choices.",
       "added": "2026-09-19",
       "times_shown": 0
+    },
+    {
+      "slug": "grit-your-teeth-and-ship-it",
+      "title": "Grit your teeth and ship it",
+      "url": "https://seangoedecke.com/grit-your-teeth-and-ship-it/",
+      "category": "engineering",
+      "summary": "Sean Goedecke argues that being good at building things and being good at shipping them are two separate skills — and that, in the short term, they actually work against each other. He opens with Ira Glass's \"taste gap\": people drawn to creative work have good taste, but their early output falls short of that taste, and it's precisely this taste that makes their own work disappoint them. His prescription is to force yourself to publish and ship even when you think the work isn't good enough.\n\nApplied to programming, gifted programmers have a near-pathological drive for elegant, correct systems — which makes them reluctant to ship. In a tech company, though, every large codebase is riddled with flaws, and working in it is a process of compromise; sometimes the right move is even to duplicate existing flaws for the sake of consistency. Strong programmers often freeze up under these conditions, retreating to safe, \"correct\" domains like dev-environment tweaks or test refactoring, or spinning in shame until they quit. His blunt framing: you can improve a bad diff over time, but you can't improve no diff.\n\nThe same dynamic applies to his own writing. He publishes drafts he doesn't think are good because you have to bias toward shipping. Shipping gets easier with practice, and there's no correlation between how he felt about a post and how well it performed — posts he disliked found audiences, posts he polished went nowhere.\n\nBecause you can't predict what will resonate, high volume beats small amounts of polished work. Instead of being outcome-based, be momentum-based. He also pushes back on being precious about ideas: write about the same theme repeatedly until you get it right.",
+      "added": "2026-09-20",
+      "times_shown": 0
     }
   ],
   "archive": [
