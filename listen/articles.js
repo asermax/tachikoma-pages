@@ -4,7 +4,6 @@ const ARTICLES = [
     { slug: 'strategic-choices-when-both-options-are-good', title: 'Strategic choices: When both options are good', meta: 'Jason Cohen · Sep 2026', time: '18:44' },
     { slug: 'ruthless-prioritization-while-the-dog-pees-on-the-floor', title: 'Ruthless prioritization while the dog pees on the floor', meta: 'Jason Cohen · Sep 2026', time: '15:03' },
     { slug: 'how-i-vibed-a-proof-of-conways-conjecture', title: 'How I Vibed a Proof of Conway\'s Conjecture', meta: 'Dan Abramov · Sep 2026', time: '44:08' },
-    { slug: 'i-dont-like-llms', title: 'I don\'t like LLMs', meta: 'Martin Fowler · Sep 2026', time: '2:35' },
     { slug: 'still-bearish-on-llms-after-navier-stokes', title: 'Why I\'m still bearish on LLMs after Navier-Stokes', meta: 'jay kruer · Sep 2026', time: '7:09' },
     { slug: 'brownfield-agentic-engineering', title: 'Brownfield Agentic Engineering', meta: 'Addy Osmani · Sep 2026', time: '20:51' },
     { slug: 'a-warning-about-model-welfare', title: 'A warning about \'model welfare\'', meta: 'Mustafa Suleyman · Sep 2026', time: '42:33' },
