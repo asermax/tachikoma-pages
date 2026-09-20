@@ -1,5 +1,5 @@
 {
-  "week": "2026-W37",
+  "week": "2026-W38",
   "days": {
     "Monday": {
       "location": "Home - Dumbbells",
@@ -76,68 +76,7 @@
     },
     "Thursday": {
       "location": "Climbing Gym - Bar + TRX/Bands",
-      "exercises": [
-        {
-          "name": "Pull-ups",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "5",
-          "unit": "",
-          "weight": null,
-          "rir": 2
-        },
-        {
-          "name": "TRX Wide Rows",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "10",
-          "unit": "",
-          "weight": null,
-          "rir": 2
-        },
-        {
-          "name": "Hollow Body Hold",
-          "detail": null,
-          "sets": 3,
-          "type": "time",
-          "target": "30",
-          "unit": "s",
-          "weight": null,
-          "rir": 2
-        },
-        {
-          "name": "Single-Leg RDL",
-          "detail": "DB opposite hand",
-          "sets": 3,
-          "type": "reps",
-          "target": "8",
-          "unit": "",
-          "weight": null,
-          "rir": 2
-        },
-        {
-          "name": "Band Pallof Press",
-          "detail": null,
-          "sets": 3,
-          "type": "reps",
-          "target": "10",
-          "unit": "",
-          "weight": null,
-          "rir": 2
-        },
-        {
-          "name": "Wrist Extensions",
-          "detail": "light DB",
-          "sets": 2,
-          "type": "reps",
-          "target": "20",
-          "unit": "",
-          "weight": null,
-          "rir": null
-        }
-      ]
+      "exercises": []
     },
     "Friday": {
       "location": "Rest",
