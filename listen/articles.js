@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'grit-your-teeth-and-ship-it', title: 'Grit your teeth and ship it', meta: 'Sean Goedecke · Sep 2026', time: '5:57' },
     { slug: 'strategic-choices-when-both-options-are-good', title: 'Strategic choices: When both options are good', meta: 'Jason Cohen · Sep 2026', time: '18:44' },
     { slug: 'ruthless-prioritization-while-the-dog-pees-on-the-floor', title: 'Ruthless prioritization while the dog pees on the floor', meta: 'Jason Cohen · Sep 2026', time: '15:03' },
     { slug: 'how-i-vibed-a-proof-of-conways-conjecture', title: 'How I Vibed a Proof of Conway\'s Conjecture', meta: 'Dan Abramov · Sep 2026', time: '44:08' },
