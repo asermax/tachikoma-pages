@@ -1341,6 +1341,15 @@
       "summary": "Follow-up to exe.dev's build-vs-buy piece: knowing what good looks like is a point-in-time judgment, but caring about it is ongoing work — 'good' keeps shifting as users, systems, and expectations drift. With AI agents making build-cost near zero, apps with an ICP of one are viable; the author argues products should become primitives and building blocks that users (via agents) assemble themselves rather than fixed workflows. Caveat: unrestricted customization is 'free, like puppies' — someone feeds it, drift needs monitoring, and users' choices can constrain the vendor. Products are never done; the real question is whether you care enough to own the upkeep.",
       "added": "2026-09-21",
       "times_shown": 0
+    },
+    {
+      "slug": "where-do-ai-norms-come-from",
+      "title": "Where do AI norms come from?",
+      "url": "https://charity.wtf/p/where-do-ai-norms-come-from",
+      "category": "ai",
+      "summary": "Charity Majors opens a blog dialogue with research psychologist Dr. Cat Hicks on AI norms, ethics, and team learning. Kicked off by a question on how friction-filled teams arrive at shared AI norms, Majors describes how Honeycomb built its AI norms and values documents — starting with opt-in listening sessions ('What AI-related thing has annoyed you lately?') that surfaced themes early and doubled as a pressure-release valve for pent-up frustration, so the heat had simmered down before the formal documents shipped. She frames the mood of the industry as vast unsettledness: teams shipping 2x yet judged against unproven 10x/100x expectations nobody can define. Ends handing off to Hicks's response in her 'fight for the human' newsletter.",
+      "added": "2026-09-21",
+      "times_shown": 0
     }
   ],
   "archive": [
