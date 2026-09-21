@@ -1,0 +1,106 @@
+{
+  "title": "Where do AI norms come from?",
+  "meta": "Charity Majors · Sep 2026 · ~5 min listen",
+  "body": "<div class=\"chunk image-chunk\"><img src=\"images/where-do-ai-norms-come-from/image-1.webp\" alt=\"\" loading=\"lazy\" /></div>\n<div class=\"chunk\"><p>After I posted “<a href=\"https://charity.wtf/p/confessions-of-an-unrepentant-slop\" target=\"_blank\" rel=\"noopener\">Confessions of an Unrepentant Slop Snob</a>” on LinkedIn last week, with links to the <a href=\"https://www.honeycomb.io/blog/ai-norms-values-part-1-how-we-do-business-at-honeycomb\" target=\"_blank\" rel=\"noopener\">Honeycomb</a> <a href=\"https://www.honeycomb.io/blog/ai-norms-values-part-2-ai-honeycomb-engineering\" target=\"_blank\" rel=\"noopener\">AI norms</a> <a href=\"https://www.honeycomb.io/blog/ai-norms-values-part-3-things-we-hold-true\" target=\"_blank\" rel=\"noopener\">and values docs</a>, I got this question from <a href=\"https://www.linkedin.com/in/niklas-lochschmidt?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B%2B86KIHG%2BTaSGiWYIghlXfg%3D%3D\" target=\"_blank\" rel=\"noopener\">Niklas Lochschmidt</a>:</p></div>\n<div class=\"chunk\"><p>I am curious if you could share more light on the process? Any guidance you would give people in companies that have the friction and internal debates, but maybe haven’t arrived at shared norms and values yet?</p></div>\n<div class=\"chunk\"><p>That’s a great question, and I will answer in just a minute.</p></div>\n<div class=\"chunk\"><p>I feel like this is a great way to kick off something I’ve been looking forward to all year — an old fashioned bloggy dialogue between myself and <a href=\"https://www.fightforthehuman.com/\" target=\"_blank\" rel=\"noopener\">Dr Cat Hicks, research psychologist to the  stars engineers</a>, on the topic of norms, ethics, and learning in the era of AI.</p></div>\n<div class=\"chunk\"><h2>In which Cat and I were both writing books at the same time</h2></div>\n<div class=\"chunk\"><p>When Cat’s publisher reached out to me in November of 2025 about reviewing her book, “<a href=\"https://www.drcathicks.com/#book\" target=\"_blank\" rel=\"noopener\">The Psychology of Software Teams</a>”, I .. didn’t notice the email for a month, then put off reading it for another two months, because I was in the middle of my own private hell trying to get the second edition of Observability Engineering written, then rewritten, then written again. 🫠</p></div>\n<div class=\"chunk\"><p>But once I did pick up her book, I downed it in a sitting. Then I wrote a long and gushing fan letter to Cat and her publisher, with bullet point lists (yes plural) of ideas for ways that we could collaborate or I could support her work. What struck me, reading her book, was how much overlap and resonance there was between what she was writing and what I was writing, despite being radically different books in almost every conceivable way.</p></div>\n<div class=\"chunk\"><p>Hers: a slim, disciplined 150 pages of text, plus another fifty pages of reference notes and citations, presenting common misconceptions about high-performing teams, what the research actually says, and how to integrate these learnings into practice, all neatly organized by theme.</p></div>\n<div class=\"chunk\"><p>Mine: a sprawling 600-page O’Reilly book on observability engineering, of which I was responsible for the first section, introducing the history and principles of observability, and the last, a guide to observability for technical decision-makers. It is…less disciplined, which is to say it is all over the fucking map. Instrumentation, evaluating costs and value of observability tools, making the case for investment, systems thinking, build vs buy, partnering with vendors, and more.</p></div>\n<div class=\"chunk\"><p>These books appear to have nothing in common besides the word “software”.</p></div>\n<div class=\"chunk\"><p>And yet.</p></div>\n<div class=\"chunk\"><p>The case I am making in the first and last sections of “Observability Engineering” (2nd ed) is the same case Cat is making in “Psychology of Software Teams”, from different angles.</p></div>\n<div class=\"chunk\"><p>What feeds greatness, in people and in teams? What are our responsibilities to each other? How do we engage with complex sociotechnical systems, as builders and caretakers, and leave them better off than we found them? How do we build systems of governance and accountability, a work environment that is supportive and pleasant, and a culture that equips us to successfully compete in the market? Are these things even compatible?</p></div>\n<div class=\"chunk\"><p>And now, of course, there’s AI in the mix. You might be delivering twice as much twice as fast, yet falling far short of expectations, if your managers, execs, or investors are expecting 10x, 100x or more. Are their expectations unreasonable, or has your output not sufficiently caught up or adjusted for what is now table stakes ? The only honest answer is that no one really knows yet.</p></div>\n<div class=\"chunk\"><h2>How should we navigate this moment in our own workplaces?</h2></div>\n<div class=\"chunk\"><p>So here we are. The stakes are high. There’s a vast sense of unsettledness and insecurity in our industry, with ecstatic possibilities coexisting alongside existential dread, and we’re all along for the ride with our meat sacks and Paleolithic psychologies. Surely there has never been a less boring time to be a psychologist who studies software engineers. I’m really looking forward to chatting about this with you, Cat, and grappling with some of these practical and/or existential questions together.</p></div>\n<div class=\"chunk\"><p>Let’s start off by circling back to the question we started off with. If other companies are interested in writing down some of their norms and values around AI usage, where should they start?</p></div>\n<div class=\"chunk\"><p>My response:</p></div>\n<div class=\"chunk\"><p>Start by listening. I put a few discussion hours on my calendar, opt-in, open door, each one capped at 10 people, and asked wide-open questions like “What AI-related thing has annoyed you lately?”</p></div>\n<div class=\"chunk\"><p>Themes began to emerge early on, and I followed those threads in later sessions to get a fuller picture of what was happening around the org. It was really helpful. It also felt like an excellent steam valve to release some of the pent-up anger and frustration people were feeling, to the point that when we did eventually release the AI norms and values documents internally, it felt like the heat had simmered down quite a bit.</p></div>\n<div class=\"chunk\"><p>Cat, where would you advise people to start?</p></div>\n<div class=\"chunk\"><p>(Watch for her response at her newsletter site, <a href=\"http://fightforthehuman.com\" target=\"_blank\" rel=\"noopener\">fightforthehuman</a>!)</p></div>\n",
+  "audio": "where-do-ai-norms-come-from.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      11.825,
+      24.125,
+      36.625,
+      40.45,
+      57.225,
+      60.825,
+      81.775,
+      104.825,
+      123.425,
+      155.1,
+      159.75,
+      161.05,
+      173.2,
+      196.0,
+      218.625,
+      222.325,
+      247.625,
+      259.35,
+      261.025,
+      273.675,
+      296.55,
+      299.4
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14
+      ],
+      [
+        15
+      ],
+      [
+        16
+      ],
+      [
+        17
+      ],
+      [
+        18
+      ],
+      [
+        19
+      ],
+      [
+        20
+      ],
+      [
+        21
+      ],
+      [
+        22
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://charity.wtf/p/where-do-ai-norms-come-from"
+}
