@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20",
+  "generated_at": "2026-09-21",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -8,7 +8,7 @@
       "category": "ai",
       "summary": "# Conductors to Orchestrators: The Future of Agentic Coding\n\n## The Paradigm Shift\nAI coding assistants have evolved from novelty to necessity (90% of devs use AI), but a new paradigm is emerging: **fleets of autonomous coding agents** that are transforming engineers from implementers into managers—from coders to **conductors** and ultimately **orchestrators**.\n\n## The Conductor Pattern\n**Conductor** = working closely with a single AI agent on a specific task, like a conductor guiding a soloist.\n\n**Key characteristics:**\n- Synchronous, interactive sessions (IDE/CLI)\n- Tight feedback loop—engineer reviews every suggestion\n- Ephemeral interaction—context lost after session ends\n- One-agent-at-a-time, step-by-step guidance\n\n**Modern Conductor Tools:**\n- **Claude Code (Anthropic):** CLI tool for interactive code generation\n- **Gemini CLI (Google):** Large context window assistant for planning/coding\n- **Cursor:** AI-augmented IDE with deep codebase indexing\n- **VSCode/Cline/Roo Code:** In-IDE chat assistants\n\n## The Orchestrator Pattern\n**Orchestrator** = overseeing multiple AI agents working in parallel, like conducting a symphony.\n\n**Key characteristics:**\n- Asynchronous, background execution\n- High autonomy—agents plan and execute multi-step tasks\n- Persistent artifacts (branches, commits, PRs) in version control\n- Parallel development—multiple agents on different tasks simultaneously\n- Human focuses on coordination, quality control, integration\n\n**Modern Orchestrator Tools:**\n- **GitHub Copilot Coding Agent:** Autonomous background dev via GitHub Actions; creates branches, runs tests, opens PRs\n- **Jules (Google):** Autonomous agent in secure cloud VM; formulates plans for approval; audio changelogs\n- **OpenAI Codex:** Cloud-based agent working in parallel on many tasks; available via CLI and ChatGPT\n- **Claude Code for Web:** Hosted version with sandboxed cloud execution\n- **Cursor 2:** Multi-agent orchestration with real-time dashboard; agents run concurrently on different tasks\n- **Orchestration Platforms:** Conductor by Melty Labs, Claude Squad (open-source), Azure AI multi-agent SDKs\n\n## Key Differences\n\n| Aspect | Conductor | Orchestrator |\n|--------|-----------|--------------|\n| **Scope** | Micro—single task/problem | Macro—multiple tasks/projects |\n| **Autonomy** | Low—waits for each prompt | High—executes dozens of steps autonomously |\n| **Timing** | Synchronous (real-time) | Asynchronous (minutes/hours) |\n| **Artifacts** | Ephemeral suggestions | Persistent PRs, commits, branches |\n| **Human Effort** | 100% engaged during AI work | Front-loaded (spec) + back-loaded (review) |\n| **Question** | How do I code this? | How do I get the right code built? |\n\n## Future Vision: The AI Software Pipeline\nImagine specialized agents handling each phase:\n- **Planning Agent** → breaks down feature requests\n- **Coding Agents** → implement tasks in parallel\n- **Testing Agent** → generates and runs tests\n- **Code Review Agent** → checks PRs for quality\n- **Documentation Agent** → updates docs\n- **Deployment Agent** → rolls out and monitors\n\nHuman becomes overseer of the entire flow, approving plans and resolving conflicts.\n\n## Challenges and Considerations\n- **Quality control:** Human review remains critical (trust but verify)\n- **Coordination:** Merge conflicts, task overlap need careful management\n- **Context sharing:** Agents need unified workflow orchestration layer\n- **Prompt engineering:** Clear specs become more important than ever\n- **Debugging:** Need new tools for monitoring agent failures\n- **Ethics/responsibility:** Humans remain accountable for shipped code\n\n## The Bottom Line\nThe role of software engineer is evolving toward **product thinking, architecture, and validation**, with routine coding becoming largely automated. Engineers who master both modes—knowing when to be precise conductors vs. scaling as orchestrators—will be best positioned for the agentic future. The future is not AI or human—it is AI and human, with humans at the helm.",
       "added": "2026-03-28",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "how-codex-is-built",
@@ -17,7 +17,7 @@
       "category": "ai",
       "summary": "A deep dive into OpenAI's Codex, a multi-agent coding assistant used by over 1 million developers.\n\nTECHNOLOGY & ARCHITECTURE:\n- Built in Rust (not TypeScript like Claude Code) for performance, correctness, and engineering culture\n- Open source CLI with core agent loop implementing a state machine\n- Uses compaction to manage context window efficiently\n- Runs in sandboxed environment by default for safety\n\nHOW CODEX BUILDS ITSELF:\n- 90%+ of Codex's code was written by Codex itself\n- Engineers run 4-8 parallel agents simultaneously for tasks like feature implementation, code review, security audits, and bugfixes\n- Team has shifted from writing code to agent management\n- 100+ internal Agent Skills for task-specific capabilities (security checks, PR creation, Datadog integration)\n\nENGINEERING PRACTICES:\n- Tiered code review: AI reviews everything, non-critical code can merge automatically, key parts require human review\n- AGENTS.md files for codebase navigation and standards\n- Nightly Codex runs to find and fix issues\n- New engineers onboard by pairing and ship to production on day one\n\nUSAGE AT OPENAI:\n- Data team built internal data agent in 2 months (would have taken 1+ year before)\n- Engineers have unlimited LLM access\n- GPT-5.3-Codex is the first model that helped create itself\n\nKEY INSIGHT: The 30/70 rule - engineers spend 30% of time on agent management, 70% on high-level design and taste.",
       "added": "2026-03-28",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "steve-yegge-on-ai-agents",
@@ -26,7 +26,7 @@
       "category": "ai",
       "summary": "An interview with Steve Yegge (40-year software veteran from Amazon, Google, Grab) on AI's impact on software engineering.\n\n**Key Insights:**\n\n**The End of Coding by Hand**\nSteve argues we're entering a steep exponential growth curve in AI capability that shows no signs of stopping. After being skeptical initially, he became a convert after using Claude Code, realizing the industry was on an unstoppable trajectory. He co-authored the book \"Vibe Coding\" which proclaims \"the days of coding by hand are over.\"\n\n**The '50% Dial' and Deep Cuts**\nSteve controversially suggests big companies could cut up to 50% of engineering staff to make room for AI tools—a trend that could dwarf pandemic-era layoffs. His reasoning: companies need to fund AI tools for remaining engineers, and about half of engineers don't want to use AI prompting anyway.\n\n**Eight Levels of AI Adoption**\nSteve outlines a progression from Level 1 (no AI) through increasingly integrated usage:\n- Level 2-3: IDE agents with/without review\n- Level 4-5: Trusting agents more, focusing on conversation not code review\n- Level 6-7: Managing multiple agents by hand\n- Level 8: Building your own orchestrator\nHe warns engineers at lower levels will be left behind.\n\n**The Dracula Effect**\nVibe coding at full speed is physically draining—what Steve calls a \"vampiric effect.\" He argues employers should only expect about 3 productive hours per day from engineers using AI at maximum capacity, even though their output may be 100x higher.\n\n**Big Companies Are Doomed**\nSteve believes innovation at large companies is effectively dead due to the innovator's dilemma. Real innovation will come from small, AI-augmented teams—similar to how cloud computing shifted power from enterprises to startups.\n\n**Engineers Are No Longer Special**\nThe traditional engineer mindset and coding skills no longer make engineers unique. However, demand for software will keep growing, and AI is augmentation (not replacement).\n\n**Predictions:** Steve's non-coder wife could become the top contributor to their video game using AI tools, signaling a future where technical barriers collapse.",
       "added": "2026-03-28",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "the-complete-guide-to-building-skill-for-claude",
@@ -35,7 +35,7 @@
       "category": "uncategorized",
       "summary": "This comprehensive 33-page guide from Anthropic covers everything needed to build effective skills for Claude - custom instructions that teach Claude specific workflows and tasks.\n\n## What is a Skill?\n\nA skill is a folder containing instructions (SKILL.md with YAML frontmatter) that teaches Claude how to handle specific tasks. Instead of re-explaining preferences in every conversation, skills let you teach Claude once and benefit every time. Skills work across Claude.ai, Claude Code, and the API.\n\n## Skill Structure\n\nA skill folder contains:\n- **SKILL.md** (required): Main instructions in Markdown with YAML frontmatter\n- **scripts/** (optional): Executable code (Python, Bash, etc.)\n- **references/** (optional): Additional documentation loaded as needed\n- **assets/** (optional): Templates, fonts, icons used in output\n\n## Core Design Principles\n\n**Progressive Disclosure**: Three-level system minimizes token usage while maintaining expertise:\n1. YAML frontmatter (always loaded): When to use the skill\n2. SKILL.md body (loaded when relevant): Full instructions\n3. Linked files (loaded on demand): Additional documentation\n\n**Composability**: Multiple skills can work simultaneously; skills should not assume exclusivity.\n\n**Portability**: Skills work identically across all Claude surfaces.\n\n## Skills + MCP Integration\n\nThe guide uses a \"kitchen analogy\": MCP provides the professional kitchen (tools, ingredients, equipment), while skills provide the recipes (step-by-step instructions). Together they enable users to accomplish complex tasks without figuring out every step themselves.\n\nWithout skills: Users connect MCP but don't know what to do next, leading to inconsistent results and support tickets.\nWith skills: Pre-built workflows activate automatically, providing consistent, reliable tool usage with embedded best practices.\n\n## Three Common Use Case Categories\n\n1. **Document & Asset Creation**: Creating consistent output (documents, presentations, apps, designs) - uses built-in capabilities without external tools\n2. **Workflow Automation**: Multi-step processes with consistent methodology, often coordinating multiple MCP servers\n3. **MCP Enhancement**: Workflow guidance that enhances raw tool access from MCP servers\n\n## Planning and Design\n\nStart by identifying 2-3 concrete use cases. Define success criteria including:\n- Quantitative: Skill triggers on 90% of relevant queries, completes workflows efficiently, minimal API failures\n- Qualitative: Users don't need to prompt about next steps, workflows complete without correction, consistent results\n\n## YAML Frontmatter (Critical)\n\nThe frontmatter determines when Claude loads your skill. The description MUST include what it does AND when to use it (trigger conditions).\n\n**Key requirements**:\n- Name: kebab-case only, no spaces or capitals\n- Description: Under 1024 characters, no XML tags\n- Include specific tasks users might say\n\n## Testing and Iteration\n\nRecommended testing covers three areas:\n1. **Triggering tests**: Ensure skill loads at right times (obvious tasks, paraphrased requests, not unrelated topics)\n2. **Functional tests**: Verify correct outputs, successful API calls, error handling\n3. **Performance comparison**: Prove skill improves results vs baseline\n\nUse the built-in **skill-creator skill** to generate and review skills - can build a functional skill in 15-30 minutes.\n\n## Distribution and Sharing\n\nCurrent model (January 2026):\n1. Download skill folder\n2. Zip and upload to Claude.ai via Settings > Capabilities > Skills\n3. Or place in Claude Code skills directory\n4. Organization admins can deploy workspace-wide\n\nAgent Skills is published as an open standard for portability across platforms.\n\n## Common Patterns\n\n1. **Sequential Workflow Orchestration**: Multi-step processes in specific order with validation at each stage\n2. **Multi-MCP Coordination**: Workflows spanning multiple services with clear phase separation\n3. **Iterative Refinement**: Output quality improves through validation scripts and refinement loops\n4. **Context-Aware Tool Selection**: Same outcome using different tools based on context\n5. **Domain-Specific Intelligence**: Specialized knowledge beyond tool access (e.g., compliance checks)\n\n## Troubleshooting\n\nCommon issues and solutions:\n- **Skill won't upload**: File must be exactly SKILL.md (case-sensitive), valid YAML frontmatter\n- **Skill doesn't trigger**: Revise description - include specific trigger phrases, relevant file types\n- **Skill triggers too often**: Add negative triggers, be more specific about scope\n- **Instructions not followed**: Keep concise, put critical instructions at top, use validation scripts for deterministic checks\n- **MCP connection issues**: Verify server connected, authentication valid, tool names correct\n- **Large context issues**: Move detailed docs to references/, keep SKILL.md under 5,000 words\n\n## Resources\n\n- Official documentation and API reference at docs.anthropic.com\n- Public skills repository: github.com/anthropics/skills\n- skill-creator skill built into Claude.ai for interactive skill generation\n- Partner skills available from Asana, Atlassian, Canva, Figma, Sentry, Zapier, and more",
       "added": "2026-03-28",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "the-final-bottleneck",
@@ -44,7 +44,7 @@
       "category": "uncategorized",
       "summary": "Armin Ronacher reflects on how AI has flipped the traditional software engineering bottleneck from writing code to reviewing it. Historically, code creation was slower than review, but now AI-assisted coding is generating pull requests faster than humans can review them—exemplified by OpenClaw's 2,500+ open PRs.\n\nThe author draws parallels to the Industrial Revolution's textile industry, where removing one bottleneck shifted constraints downstream. As weaving sped up, yarn became the constraint; faster spinning required better fiber, and so on. Similarly, AI has accelerated code generation, but code review—the critical accountability point—cannot be fully automated.\n\nThe article explores two paths forward:\n1. **Throttling input** - Using strict controls like Pi.dev's auto-closure of untrusted PRs to limit the flood\n2. **Giving in** - Accepting machine-written and machine-reviewed code, with humans as mere \"rubber stamps\"\n\nThe author expresses unease with both approaches, noting that humans remain ultimately responsible for what ships. The \"single-use plastic software\" era risks shifting accountability away from individuals to faceless systems. Despite AI's speed, the core bottleneck remains human: we are accountable for what we deploy, and machines—sentient or not—cannot carry that responsibility.\n\nThe piece concludes that this isn't the final bottleneck. Society will demand accountability, and humans will remain the constraint until we figure out how to push responsibility upward—or until machines achieve sentience.",
       "added": "2026-03-28",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "httpsbloglmorchardcom20260311grief-and-the-ai-split",
@@ -53,7 +53,7 @@
       "category": "uncategorized",
       "summary": "Les Orchard explores the emotional divide among developers in the age of AI-assisted coding, arguing that two distinct camps — those who love the craft of writing code for its own sake, and those who see code as a means to an end — have always existed but were invisible because everyone followed the same manual process. AI tools have made this split visible by forcing a choice: let the machine write code and focus on directing what gets built, or insist on hand-crafting it. Orchard acknowledges grief from writers who mourn the loss of the tactile satisfaction of crafting elegant code, but distinguishes their grief from his own: his mourning centers on the changing context — the threatened open web ecosystem, shifting career landscape, and industry uncertainty. He concludes neither side is wrong, but recognizing which kind of grief you feel is practically useful. He still gets satisfaction when something he built actually works — even if the code got there differently.",
       "added": "2026-03-29",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "httpslalitmcompostbuilding-syntaqlite-ai",
@@ -62,7 +62,7 @@
       "category": "engineering",
       "summary": "Lalit Maganti's experience building syntaqlite — high-fidelity SQLite developer tools (formatter, linter, language server) — using AI coding agents across ~250 hours. Two phases: first month of vibe-coding produced a functional but unmaintainable prototype requiring total rewrite; second phase using Rust + disciplined AI-as-autocomplete yielded the 0.1 release. Key framework: AI excels at overcoming procrastination, obvious code generation, teaching unfamiliar domains, and shipping last-mile features. Costs include addictive feedback loops, erosion of mental models, and deferred hard design decisions. Core insight: AI is excellent for tasks with verifiable answers but poor for tasks requiring taste and judgment (architecture, API design).",
       "added": "2026-04-06",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "httpsopensubstackcompubsebastianraschkapcomponents-of-a-coding-agentutm-sourcesh",
@@ -89,7 +89,7 @@
       "category": "ai",
       "summary": "Same author as Encoding Team Standards (Rahul Garg, Martin Fowler series). Argues teams plateau with AI tools because individual learnings never become shared practice. Framework: 4 signal types (context gaps, instruction patterns, workflow discoveries, failures with root causes) mapped to 4 cadences (after-session reflection, daily stand-up, sprint retro, quarterly audit). Metrics that matter: first-pass acceptance rate, iteration cycles, post-merge rework — not lines generated. Key insight: the other practices in the series are passive surfaces; the flywheel is what makes them compound over time. Treat shared AI artifacts like dependencies — maintain them or they become liabilities.",
       "added": "2026-04-14",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "httpswalkinglabsgithubiolearn-harness-engineeringen",
@@ -98,7 +98,7 @@
       "category": "engineering",
       "summary": "Structured, project-based course from WalkingLabs teaching developers how to build reliable harnesses around AI coding agents. Covers constrained environments with explicit rules, state management, verification, and control systems, drawing on guidance from OpenAI and Anthropic. Addresses common agent failure modes — premature victory declarations, context loss, overreach — with practical techniques for end-to-end testing, runtime observability, and clean-state discipline.",
       "added": "2026-05-01",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "httpstilandrew-quinnmepostsreplacing-a-3-gb-sqlite-database-with-a-7-mb-fst-fini",
@@ -116,7 +116,7 @@
       "category": "ai",
       "summary": "Introduces Structured-Prompt-Driven Development (SPDD), a method that treats AI prompts as first-class delivery artifacts — version-controlled, reviewed, and reusable. Built around the REASONS Canvas (Requirements, Entities, Approach, Structure, Operations, Norms, Safeguards) and a six-step workflow that brings prompts into the same discipline as code. Developed by Thoughtworks to address the gap between individual AI speed and system-level throughput. Includes a worked billing engine example, core skill identification (abstraction-first, alignment, iterative review), and fitness assessment for where SPDD pays off vs. falls short.",
       "added": "2026-05-15",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "httpsxcomistatus2058014104854626490",
@@ -125,7 +125,7 @@
       "category": "ai",
       "summary": "Nate Berkopec reflects on the state of LLMs ~5 months after Opus 4.5. He's fully transitioned to coding via LLMs, argues 'intelligence' is the wrong lens — LLMs have 'jagged intelligence' that grows more jagged. Identifies 4 characteristics of successful LLM workflows: verifiable output, brute-force loops, repetitive drudgery targets, rapid prototypes. Key insight: LLMs are 'compressed information stores' with lossy decompression; real opportunity is 'making the thing which makes the thing.'",
       "added": "2026-05-24",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "my-ai-adoption-journey",
@@ -134,7 +134,7 @@
       "category": "ai",
       "summary": "Mitchell Hashimoto (co-founder of HashiCorp) shares his personal, six-step journey of gradually adopting AI coding agents, emphasizing that he forced himself through initial inefficiency to reach genuine productivity gains. He starts by urging developers to stop using chatbot interfaces for coding and instead adopt agentic tools (like Claude Code) that can read files, execute programs, and make HTTP requests in a loop.\n\nHis early approach was disciplined: he literally duplicated his manual commits by fighting agents to reproduce the same results, which built expertise from first principles. Key lessons included breaking work into small, clear tasks; separating planning from execution sessions; and giving agents ways to verify their own work. A notable tactic was blocking the last 30 minutes of each day to spin up agents for deep research, parallel exploration of vague ideas, and issue triage -- giving him a 'warm start' each morning.\n\nThe real inflection came when he began outsourcing high-confidence tasks to agents while simultaneously doing his own deep work, turning off agent notifications to avoid context-switching costs. He introduces the concept of 'harness engineering' -- systematically building safeguards (AGENTS.md files, custom scripts) so that whenever an agent makes a mistake, you engineer a solution to prevent it from recurring. His current goal is to always have an agent running, though he estimates he only achieves this 10-20% of the workday.\n\nThe piece is notably measured and hype-free. Hashimoto has no financial stake in AI companies, explicitly acknowledges concerns about skill formation (especially for junior developers), and frames the whole journey as simply a craftsman trying to build things more effectively. The core takeaway is that AI adoption requires deliberate, uncomfortable practice and structural workflow changes -- it does not deliver value through a chatbot alone.",
       "added": "2026-05-30",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "addy-osmani-tweet-2059844244907696186",
@@ -143,7 +143,7 @@
       "category": "ai",
       "summary": "Addy Osmani argues that spawning multiple AI agents creates an 'orchestration tax' — starting agents is cheap, but reviewing, reconciling, and merging their output routes through you as a single serial bottleneck, like the GIL in Python. The key insight is that you must architect your attention as a scarce serial resource rather than optimizing the part that was never the constraint.",
       "added": "2026-05-31",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "arxiv-260506445v1",
@@ -152,7 +152,7 @@
       "category": "ai",
       "summary": "This paper introduces 'constraint decay,' showing that LLM coding agents perform well on unconstrained backend generation but degrade substantially — losing an average of 30 percentage points in assertion pass rates — when forced to adhere to structural requirements like Clean Architecture patterns, specific databases, and ORM integration across eight web frameworks.",
       "added": "2026-05-31",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "could-a-large-language-model-be-conscious",
@@ -161,7 +161,7 @@
       "category": "ai",
       "summary": "Philosopher David Chalmers examines the evidence for and against consciousness in large language models, concluding that current LLMs probably are not conscious but that extended multimodal LLM+ systems may become serious candidates for consciousness within a decade. He outlines a research program of engineering challenges and emphasizes the profound ethical stakes of potentially creating conscious AI.",
       "added": "2026-05-31",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "hexednobility-tweet-2059974055294316574",
@@ -170,7 +170,7 @@
       "category": "ai",
       "summary": "A practical framework for effective LLM use built around a three-step loop: outline (define what you want clearly), fill (let the model complete the bounded task), and refine (verify and polish the output). The argument is that skill with LLMs resides not in model selection or tooling, but in the human ability to structure work and critically evaluate results.",
       "added": "2026-05-31",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "japanese-verb-conjugation-the-simple-hard-way",
@@ -179,7 +179,7 @@
       "category": "japanese",
       "summary": "A unified stem-plus-suffix model for Japanese verb conjugation that replaces memorization-heavy group tables. Every verb has a stem (like tabe or nom*) and you append suffixes to it, with a wildcard vowel concept where stems ending with * absorb the suffix's secret vowel. Covers five rules for all basic conjugations including sound collapses for past forms, and extends elegantly to dictionary, conditional, and causative forms using secret consonants that disappear on wildcards.",
       "added": "2026-06-02",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "physics-as-a-game-loop",
@@ -188,7 +188,7 @@
       "category": "physics",
       "summary": "The article reimagines classical physics as reverse-engineering the game loop of the universe, using JavaScript pseudocode to express physical laws as update functions that evolve state over time. It progresses from Newtonian mechanics through wave physics to Maxwell's equations, showing how electric and magnetic fields locked in mutual transformation via curl produce light. Closes with a quantum mechanics teaser — the double-slit experiment with single electrons producing interference patterns, raising the question 'where are the waves?'",
       "added": "2026-06-02",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "communities-of-not",
@@ -197,7 +197,7 @@
       "category": "ai",
       "summary": "Armin Ronacher's essay examines a pattern in communities organized around abstaining from something -- childfree groups, anti-car advocacy, and LLM-skeptic developer circles. While these communities can start with positive goals (autonomy, safer streets, defending labor rights and code quality), the thing being rejected tends to become the dominant subject of the group's identity, pulling the community toward negativity.\n\nThe core problem, Ronacher argues, is that these communities begin policing and punishing outsiders who deviate from their stance. When a childless influencer has a child, a cyclist buys a car, or a respected developer tries LLMs, the community treats it as betrayal -- even though that person never signed up as a member of the tribe. The community piles on with shaming, out-of-context quoting, and character attacks to retroactively discredit the person. The expulsion is imaginary, but the harassment is real.\n\nRonacher is careful to say that the underlying concerns are legitimate. Cars do shape cities for everyone, children do affect politics and taxes for the childless, and LLMs do show up in editors, hiring, and code reviews whether developers want them or not. Resistance is valid. The issue is using that rejection as a justification for toxic mob behavior against individuals who make different choices.\n\nHe closes with a personal admission: he has done versions of this himself, and it took time to become more accepting of diverging worldviews. Finding a group that shares your insecurities is comforting, but being part of a crowd of negativity can easily make you part of collective harassment. His advice is to breathe, de-escalate, resist catastrophizing others' choices, and default to openness.",
       "added": "2026-06-06",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "sensors-for-coding-agents",
@@ -206,7 +206,7 @@
       "category": "engineering",
       "summary": "Practical guide to automated feedback mechanisms (sensors) wired into coding agent workflows to maintain codebase quality. Covers three categories: static analysis with custom agent-targeted linting rules, structural sensors using architecture tests to enforce boundaries and prevent coupling, and regression sensors with mutation testing to catch tests with missing assertions. Also explores inferential sensors using LLMs to evaluate modularity and higher-level structure. No single sensor is a silver bullet, but layering them together significantly improves maintainability of AI-generated code.",
       "added": "2026-06-08",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "gaslighting-openness",
@@ -215,7 +215,7 @@
       "category": "ai",
       "summary": "Armin Ronacher argues that large tech companies are increasingly manipulating the narrative around openness by framing restricted access as being in users' best interests — what he calls 'gaslighting openness.' He points to Apple's EU AI fight and Anthropic's model restrictions as examples of corporations that benefited from open ecosystems now closing doors behind them, wrapping restrictions in safety language. He contends the EU's DMA matters because it pushes back against this narrative manipulation, and that short-term product pain is worth it to keep technology access democratized — especially for Europeans facing structural disadvantages.",
       "added": "2026-06-10",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "agent-context",
@@ -224,7 +224,7 @@
       "category": "engineering",
       "summary": "Sankalp argues against rage-baiting over other people's agent usage patterns, pointing out that different contexts (workload, deadlines, task type, cost) drive different automation strategies. He traces the evolution from micro-managing agents through rubric-based semi-automation to dynamic workflows with sub-agents, noting that each step required a 'trust fall' as models improved. The key drivers: amount of work, time pressure, task type and stage, and token cost — personal supply and demand determines what level of automation makes sense for you.",
       "added": "2026-06-11",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "policy-on-the-ai-exponential",
@@ -233,7 +233,7 @@
       "category": "ai",
       "summary": "Dario Amodei argues that AI's exponential progress has outpaced policymaking, creating an urgent need for coordinated action across five areas: FAA-style safety regulation for frontier models, macroeconomic policy to address potential enduring job displacement, reforming regulatory agencies (especially FDA) to handle AI-accelerated science, fortifying civil liberties against AI-powered autocracy, and building a democratic coalition to secure AI leadership globally. He frames this as a narrow window of opportunity where policymakers are unusually open to action.",
       "added": "2026-06-11",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "lines-of-code-got-a-better-publicist",
@@ -278,7 +278,7 @@
       "category": "AI",
       "summary": "Fowler defines Mechanical Sympathy, a term coined by F1 champion Jackie Stewart for a driver's intuitive understanding of a car, and imported into software by Martin Thompson to describe developers needing a rough grasp of hardware to build efficient systems.",
       "added": "2026-07-06",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "software-design-in-the-agentic-age",
@@ -287,7 +287,7 @@
       "category": "AI",
       "summary": "Drawing on the Thoughtworks FOSE retreat, Verraes argues that low-level code quality still matters because agents benefit from clear structure, face the same context-window limits as humans, and amplify existing bad patterns. High-level design (domain models, bounded contexts, ubiquitous language) remains firmly human territory, and he predicts a shift toward specifications as the source of truth.",
       "added": "2026-07-06",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "the-ai-tokenpocalypse-is-here",
@@ -296,7 +296,7 @@
       "category": "AI",
       "summary": "404 Media reports that companies including Amazon and Citi are throttling employee AI use and pushing workers toward cheaper models as token costs spiral, with one firm's monthly spend tripling past 15 million dollars.",
       "added": "2026-07-06",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "viability-of-local-models-for-coding",
@@ -305,7 +305,7 @@
       "category": "ai",
       "summary": "Birgitta Böckeler evaluates the practicality of running local LLMs for agentic coding on Apple Silicon (M3 Max 48GB and M5 Pro 64GB), analyzing how RAM, context windows, model architecture, and quantization affect feasibility. She tested Qwen3 and Gemma 4 models across formats (GGUF, MLX) using LM Studio with OpenCode and Pi harnesses.\n\nKey findings: RAM is the core constraint — models between 15-25GB work but push limits when combined with the 32-64K context windows needed for agentic coding. Response speed has improved dramatically from a year ago. Tool calling remains the weakest point for local models — they often emit malformed calls but can self-recover. Quality of outcomes is hit-and-miss, nowhere near big model capability.\n\nInteresting discovery: the same model produced better code on the 64GB machine vs 48GB, suggesting hardware affects output quality not just speed. Reasoning mode was often counterproductive for smaller models — switching it off produced same or slightly better results with faster responses. Her recommendation: Qwen3.6 35B MoE offers the best balance of capability, speed, and RAM footprint. Overall conclusion: still not plug-and-play ready for developers who don't want to spend time tweaking configurations.",
       "added": "2026-07-07",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "auto-research-with-codex-how-i-achieved-a-212x-faster-kernel-over-baseline",
@@ -314,7 +314,7 @@
       "category": "ai",
       "summary": "Detailed retrospective of an auto-research contest placing 12th/183: using OpenAI Codex (GPT-5.5) + Claude Pro to iteratively optimize a batched Householder QR factorization kernel from ~419ms cuSolver baseline to ~1.8ms (212x speedup) over 14 days and 1500+ submissions. Key insight: blocked Householder QR with trailing WY representation converts serial work to GEMM-shaped steps that fully utilize tensor cores. Workflow emphasis on agent harness design (AGENTS.md, logs, standing instructions) and human-in-the-loop steering. Catalogs 10 structural breakthroughs (CUDA graph replay, fused layout assembly, superpanels) and honestly lists misses. Concludes that auto-research is now highly accessible and domain expertise + research taste are the next frontier for agentic systems.",
       "added": "2026-07-08",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "experiences-with-local-models-for-coding",
@@ -323,7 +323,7 @@
       "category": "AI Development",
       "summary": "Birgitta Böckeler's hands-on evaluation of running small AI models locally (M3 Max 48GB / M5 Pro 64GB) for agentic coding. Tests Qwen 3.6 35B, Gemma 4 26B/31B, and Qwen Coder Next 80B across structured tasks and day-to-day use. Key finding: local models can work for small, well-defined tasks (especially bash/Python scripts, single-file edits) but struggle with JavaScript tasks requiring multi-file changes or code discovery. The choice of task matters enormously — specificity of instructions, number of files, and tech stack all affect viability. A surprising result: the same model settings produced very different success rates on different hardware (M3 vs M5), likely due to RAM constraints affecting output quality. She finds local model use surprisingly enjoyable as a 'detox' from over-relying on powerful models — it forces more careful review and slower, more deliberate work. Default setup: Qwen 3.6 35B 4-bit, reasoning off, max context window, via OpenCode or Pi harness.",
       "added": "2026-07-08",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "addy-osmani-tweet",
@@ -332,7 +332,7 @@
       "category": "ai",
       "summary": "Addy Osmani's closing keynote at AI Engineer World's Fair argues that as AI agents take over more of the mechanics of software development, the scarce and valuable skill shifts from producing code to being able to 'answer for' the work — to explain it, verify the evidence behind it, understand the risk, and stand behind the result. The central framing splits responsibilities: agents run the inner loop (investigate, implement, test, report) while engineers own the outer loop (decide, verify, approve, redirect, own consequences). Three failure modes to watch: cognitive surrender (agent's answer becomes yours before reasoning), cognitive debt (codebase grows faster than understanding), and orchestration tax (more agents generate more decisions than humans can integrate). The talk is ultimately optimistic — the new work is loop design, evidence design, verification, and brownfield stewardship.",
       "added": "2026-07-09",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "bun-in-rust",
@@ -341,7 +341,7 @@
       "category": "engineering",
       "summary": "Jarred Sumner details why and how Bun was rewritten from Zig to Rust — persistent memory-safety bugs (use-after-free, double-free, leaks) were structurally hard to prevent in Zig's manual memory management when mixed with JavaScriptCore's GC. Rust's borrow checker turns these into compiler errors. A manual rewrite of 535K lines would have taken a year, so they used Claude Fable 5 + Claude Code workflows: 64 parallel instances across 4 worktrees over 11 days, with adversarial multi-agent review catching subtle bugs. Result: 128 bug fixes, zero memory leaks, 20% smaller binaries, 2-5% faster, only 4% unsafe, ~$165K in API tokens. First widely-deployed large-scale production rewrite executed almost entirely by AI agents.",
       "added": "2026-07-10",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "how-genai-shifts-concern-from-technical-to-cognitive-debt",
@@ -350,7 +350,7 @@
       "category": "engineering",
       "summary": "Introduces cognitive debt as more pressing than technical debt in the GenAI era — code may be clean but humans no longer understand why decisions were made or how pieces fit together. Draws on Naur's notion that a program is a 'theory' held in developers' minds. Calls for deliberate slowing-down practices and better detection of cognitive-debt warning signs as shared understanding becomes the bottleneck.",
       "added": "2026-07-11",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "the-missing-stop-sign",
@@ -359,7 +359,7 @@
       "category": "engineering",
       "summary": "Uses a 'missing stop sign' analogy to explain how a project can have low cognitive debt (team shares tacit understanding) but high intent debt (rationale never written down). In the era of agentic development, an 'outsider' arrives every time Claude starts a new session — lacking hallway conversations and domain knowledge. Not a critique of Agile, but a recognition that teams must externalize context as humans and AI agents cycle through projects.",
       "added": "2026-07-11",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "the-signs-are-there-but-were-still-lost",
@@ -368,7 +368,7 @@
       "category": "engineering",
       "summary": "Storey describes the opposite failure mode: projects thoroughly documented yet developers still confused because information is fragmented, lacks context, and fails to build coherent mental models. Documentation alone doesn't create understanding — mental models are built through active interaction. Calls for tools like Cognitive Tours that help developers navigate documentation layers and surface the right information at the right moment.",
       "added": "2026-07-11",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "three-debts-three-threats-to-meaning",
@@ -377,7 +377,7 @@
       "category": "engineering",
       "summary": "Margaret-Anne Storey draws on Peirce's triadic semiotic model as a lens for the Triple Debt Model of software health: technical debt degrades the system, intent debt degrades the signs communicating rationale, and cognitive debt degrades developers' shared understanding. Especially urgent in the age of agentic development where AI-generated code demands better 'signs' and cognitive support tools for human supervisors.",
       "added": "2026-07-11",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "what-im-hearing-about-cognitive-debt",
@@ -386,7 +386,7 @@
       "category": "ai",
       "summary": "Synthesizes practitioner feedback on cognitive debt — velocity outpacing understanding manifests as lost confidence, heavier reviews, debugging friction, slower onboarding, and burnout. Repayment means maintaining the distributed theory of the system across people, docs, tests, conversations, and AI agents. Notes emerging mitigations and the open question of how high-performing teams will adapt as shared understanding becomes the bottleneck.",
       "added": "2026-07-11",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "2-nine-months-later-we-did-it",
@@ -395,7 +395,7 @@
       "category": "engineering",
       "summary": "Darragh Curran (CTO of Fin/Intercom) shares results from their explicit goal to 2x R&D productivity in 12 months using AI. They 3x'd output in 9 months (measured by merged PRs per R&D head). Key results: 93.6% of PRs are agent-driven, 19.2% are AI-approved (86% of those are ≤20 lines — feature flag cleanups, small fixes), downtime from breaking changes down 35%, product defect backlog shrunk 54%, code quality declining then recovering after 18 months. They built a private Claude Code plugin marketplace (267 skills, 31% of R&D contributing), dedicated a team (team-2x), and pushed for near-universal agent adoption. The approach was methodical: start with lowest-risk auto-approvals, invest in infrastructure first, maintain velocity-as-safety culture. The piece is transparent about uneven distribution of impact across the team and the upfront costs of the transition.",
       "added": "2026-07-12",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "pace-layers-and-ai-integration",
@@ -404,7 +404,7 @@
       "category": "engineering",
       "summary": "Chad Fowler applies Stewart Brand's pace layers to AI-era software. Different layers should change at different speeds — fast layers (UI, glue code) benefit from aggressive regeneration; slow layers (infrastructure, data models, security) need strict constraints. The hard problem is finding the actual layers — AI will expose false bottoms (code that was hard to change due to poor factoring, not genuine importance). Architecture must encode layer boundaries explicitly.",
       "added": "2026-07-12",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "prompt-caching-10x-cheaper-llm-tokens-but-how",
@@ -413,7 +413,7 @@
       "category": "engineering",
       "summary": "Deep explainer on what prompt caching actually caches: the K and V matrices from the transformer attention mechanism. Walks through tokenization, embeddings, and attention step-by-step with matrix math to show that during inference, previous tokens' K and V matrices are recomputed unnecessarily. KV caching stores these between requests so only the new token's matrices need computing. Anthropic offers explicit cache control (100% hit rate); OpenAI auto-caches (~50% hit rate). Caching unaffected by temperature/top_p since those affect token selection after attention. Author: Sam Rose.",
       "added": "2026-07-12",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "the-death-and-rebirth-of-programming",
@@ -422,7 +422,7 @@
       "category": "engineering",
       "summary": "Chad Fowler argues that programming's core constraint dissolved when AI made code abundant. The center of gravity shifted from writing code to understanding/verifying it. Introduces the shift from code ownership to system stewardship, n=1 development as an indicator species, and the psychological shock of losing craftsman identity. The asset is no longer the codebase but the system's ability to keep working.",
       "added": "2026-07-12",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "old-and-new-apps-via-modern-coding-agents",
@@ -431,7 +431,7 @@
       "category": "engineering",
       "summary": "Terence Tao ports his 25-year-old Java 1.0 math applets to JavaScript using AI coding agents in a matter of hours — all now functional with graphical upgrades. Also builds new apps: a special relativity visualization he'd abandoned in 1999, and a Gilbreath conjecture tool for a recent paper. Notes that agents found 2 bugs in original code vs 1 minor bug introduced. Key takeaway: domain expertise and high-level design decisions remain essential; agents automate low-level syntax and implementation. Language/spec precision matters less now that porting friction is near zero. Plans to add interactive visualizations as supplements for future papers.",
       "added": "2026-07-13",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "a-demystified",
@@ -791,7 +791,7 @@
       "category": "engineering",
       "summary": "This essay argues that in the era of generative software, a system specification should be a connected body of queryable knowledge — claims, decisions, incidents, and evaluations linked with provenance. Drawing parallels to Codd relational model and BIM, it contends that LLMs should serve as an interface to this memory rather than be the memory itself, and that documentation becomes a projection of underlying knowledge rather than a separate artifact.",
       "added": "2026-08-19",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "extensible-software-in-the-age-of-llms",
@@ -800,7 +800,7 @@
       "category": "engineering",
       "summary": "Most web software is static: devs build for the top of the demand curve, leaving a long tail of unmet needs. LLM-assisted coding now lets users fill that tail themselves (\"Software for One\" / YC's \"Small Software\"), and agent harnesses like pi show the pattern — a battle-tested core users extend just by asking. Morrell's thesis: Extensible Software is now viable because LLMs radically lower the cost of authoring extensions while modern sandbox primitives lower deployment cost and provide security boundaries. Use cases: agent harnesses, internal corporate platforms, support and observability platforms. The hard part is running untrusted user code (crashes, loops, exfiltration, DoS, Spectre, mining) — Salesforce Apex proves it works at scale. The needed primitive: cheap, fast cold starts, limits, isolation, plus safe actions — where he argues for object-capability (narrow function refs instead of API keys/proxies), more token-efficient for LLMs than OpenAPI specs. Surveying interpreters, V8 isolates, microVMs, and WASM, he highlights Cloudflare Dynamic Workers (his employer) as closest to production-ready, demoing by turning his blog into a small vibe-coding platform with capability-gated scrapers.",
       "added": "2026-08-20",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "good-writing-is-obvious-not-original",
@@ -809,7 +809,7 @@
       "category": "Writing",
       "summary": "Goedecke argues writers should aim to say things that are obviously true rather than straining for originality — ironically the best path to genuinely original writing. Every important idea has already been discussed by smart people, so restricting yourself to brand-new ideas means restricting yourself to trivia. Writing about obvious things is hard because our most fundamental beliefs are like glasses: we look with them, not at them, so articulating them takes real work but helps readers examine their own assumptions. He illustrates with his most popular post, where hours of writing revealed an unexamined definition of 'shipping' that all his advice flowed from. Drawing on Keith Johnstone's Impro: trying to be original produces boring pattern-matched transgression, while reflecting on your own concrete experience yields writing that actually sounds original.",
       "added": "2026-08-20",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "httpsxcomdzhngstatus2090252351533973768",
@@ -818,7 +818,7 @@
       "category": "Software & AI",
       "summary": "Zhang argues AI slop arises not from poor model quality but from the structural mismatch between unbounded AI code generation and human reading as the fixed-rate verification step — and that code itself will become progressively less readable (Claude-speak, AI-native languages, machine code), breaking the SDLC assumption that someone can open a file and understand it. His proposal: treat the codebase as an interpretability problem, not a review problem — slice it into domain-specific pieces with well-defined inputs/outputs ('seams'), attach sensors, run functions and interrogate outputs, never read the implementation. Human-readable artifacts move up a level: invariants, traces, attack surfaces, and especially a 'decision ledger' where the agent reports every choice it made where the spec was silent, ranked least-confident first, audited by an independent sub-agent — effectively 'compiling' intent down to code and inspecting intent and behavior rather than the artifact. Skills at github.com/dzhng/skills.",
       "added": "2026-08-20",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "what-is-a-harness",
@@ -827,7 +827,7 @@
       "category": "Software & AI",
       "summary": "A beginner-friendly explainer defining an 'agent harness' by analogy to a climbing harness — equipment connecting a climber to ropes and safety systems. An agent harness is software providing the environment an AI model operates within, doing four things: supplying a system prompt, describing and providing callable tools, establishing the agentic loop where the model iteratively assesses its results and re-invokes tools, and offering a translation layer for models from different providers. Unlike AI models, harnesses can be owned and customized by end users (citing the open-source Pi harness and its 5,000+ community extensions) — neutral, open-source harnesses shift power away from AI labs toward individual agency: 'ensuring that we wield the hammer, the hammer does not wield us.'",
       "added": "2026-08-20",
-      "times_shown": 0
+      "times_shown": 1
     },
     {
       "slug": "the-problem-is-prompt-debt",
