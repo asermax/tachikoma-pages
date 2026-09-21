@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'where-do-ai-norms-come-from', title: 'Where do AI norms come from?', meta: 'Charity Majors · Sep 2026', time: '5:03' },
     { slug: 'caring-vs-knowing', title: 'Caring vs. Knowing', meta: 'Adam Zimman · Sep 2026', time: '6:44' },
     { slug: 'making-decisions-with-jev', title: 'Making decisions with Jev', meta: 'Nicolas Chagnet · Sep 20, 2026', time: '5:27' },
     { slug: 'grit-your-teeth-and-ship-it', title: 'Grit your teeth and ship it', meta: 'Sean Goedecke · Sep 2026', time: '5:57' },
