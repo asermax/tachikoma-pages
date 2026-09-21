@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-20T11:12:04.436777-03:00",
+  "generated_at": "2026-09-21T02:01:14.296784-03:00",
   "week_start": "2026-09-20",
   "week_label": "September 20 - September 26, 2026",
-  "last_updated": "Sunday, September 20, 2026 at 11:12",
+  "last_updated": "Monday, September 21, 2026 at 02:01",
   "stats": {
     "completed": 0,
-    "planned": 0,
-    "display": "0 / 0"
+    "planned": 1,
+    "display": "0 / 1"
   },
   "daily": {
     "Sunday": {
@@ -172,10 +172,10 @@
     }
   ],
   "spirit": {
-    "state": "dormant",
+    "state": "critical",
     "emoji": "\ud83d\udc26",
     "title": "\ud83d\udc26 Blossom Sparrow",
-    "image": "assets/dormant.webp",
-    "description": "Your blossom sparrow sleeps tucked under its wing in moonlight beneath a starry spring sky \u2014 deep, peaceful rest."
+    "image": "assets/critical.webp",
+    "description": "Your blossom sparrow shivers, soaked, against wind and dark storm clouds \u2014 sad, small, weathering it out."
   }
 }
