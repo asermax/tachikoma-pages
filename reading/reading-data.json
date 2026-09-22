@@ -1350,6 +1350,24 @@
       "summary": "Charity Majors opens a blog dialogue with research psychologist Dr. Cat Hicks on AI norms, ethics, and team learning. Kicked off by a question on how friction-filled teams arrive at shared AI norms, Majors describes how Honeycomb built its AI norms and values documents — starting with opt-in listening sessions ('What AI-related thing has annoyed you lately?') that surfaced themes early and doubled as a pressure-release valve for pent-up frustration, so the heat had simmered down before the formal documents shipped. She frames the mood of the industry as vast unsettledness: teams shipping 2x yet judged against unproven 10x/100x expectations nobody can define. Ends handing off to Hicks's response in her 'fight for the human' newsletter.",
       "added": "2026-09-21",
       "times_shown": 0
+    },
+    {
+      "slug": "did-openai-solve-the-wrong-navier-stokes-problem",
+      "title": "Did OpenAI solve the wrong Navier-Stokes problem?",
+      "url": "https://www.scientificamerican.com/article/did-openai-solve-the-wrong-navier-stokes-problem/",
+      "category": "science",
+      "summary": "OpenAI claimed a solution to the Clay Mathematics Institute's $1M Navier-Stokes problem using an internal LLM, but mathematicians argue it solved the wrong variant: its blowup relies on a contrived external force, which the Clay problem's official option C technically permits but which experts consider disconnected from the real, force-free problem. Shortly after, three mathematicians proved OpenAI's method can never be extended to the full force-free problem, since removing the force eliminates the blowup. Mathematicians are debating whether the equations can blow up only under artificial external forces, and some note the result may favor humans, since LLMs excel at constructing explicit blowups but struggle with proving impossibility. The community sees it as a wake-up call about AI's growing role in mathematics.",
+      "added": "2026-09-22",
+      "times_shown": 0
+    },
+    {
+      "slug": "it-was-never-about-coding",
+      "title": "It was never about coding",
+      "url": "https://blog.dyanacek.com/2026/09/21/it-was-never-about-coding/",
+      "category": "ai",
+      "summary": "The author responds to the question of whether developers will just spend their days reviewing AI-generated code, arguing that coding was always only a means to an end and never the core of the job. He walks through job titles — programmer, software architect, software engineer — and lands on Software Development Engineer as the best fit: he has spent 20 years engineering the process of building software, and those process improvements have been more durable and impactful than any individual code. He likens modern software development to an automated factory with quality gates, feedback loops, merges, and triage, and notes it resembles an agentic loop — but agents alone can't be trusted to build features unsupervised, so the value lies in the deterministic checks and gates humans build around them. Takeaway: with AI writing the code, the profession's real work — design, testing, operations, and improving the development process itself — becomes more visible and more central.",
+      "added": "2026-09-22",
+      "times_shown": 0
     }
   ],
   "archive": [
