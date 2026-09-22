@@ -1,4 +1,6 @@
 const ARTICLES = [
+    { slug: 'did-openai-solve-the-wrong-navier-stokes-problem', title: 'Did OpenAI solve the wrong Navier-Stokes problem?', meta: 'Joseph Howlett · Sep 21, 2026', time: '5:10' },
+    { slug: 'it-was-never-about-coding', title: 'It was never about coding', meta: 'David Yanacek · Sep 21, 2026', time: '11:52' },
     { slug: 'where-do-ai-norms-come-from', title: 'Where do AI norms come from?', meta: 'Charity Majors · Sep 2026', time: '5:03' },
     { slug: 'caring-vs-knowing', title: 'Caring vs. Knowing', meta: 'Adam Zimman · Sep 2026', time: '6:44' },
     { slug: 'making-decisions-with-jev', title: 'Making decisions with Jev', meta: 'Nicolas Chagnet · Sep 20, 2026', time: '5:27' },
