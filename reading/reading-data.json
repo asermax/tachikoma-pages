@@ -1352,15 +1352,6 @@
       "times_shown": 0
     },
     {
-      "slug": "ai-has-no-wisdom-and-neither-will-you",
-      "title": "AI Has No Wisdom and Neither Will You",
-      "url": "https://alexn.org/blog/2026/09/22/ai-has-no-wisdom-and-neither-will-you/",
-      "category": "dev",
-      "summary": "Alexandru Nedelcu argues that while the software industry is being transformed by AI, developers and organizations that stop reading and writing code are taking a serious risk. Code maintainability and good architecture can't be measured with immediate reward signals, so AI models — trained on rulebooks for beginners and on mostly-bad real-world code — can't learn the expert intuition needed to produce maintainable code, e.g. it's poor at simplifying code and defining genuinely reusable functions. Developers who fully delegate coding to AI will never reach mastery because they no longer make choices or learn from their own mistakes. The author, who does use LLMs as a productivity tool, predicts companies will eventually tout \"NO-AI\" policies as a competitive advantage, and warns of consequences if AI use stays irresponsible.",
-      "added": "2026-09-22",
-      "times_shown": 0
-    },
-    {
       "slug": "did-openai-solve-the-wrong-navier-stokes-problem",
       "title": "Did OpenAI solve the wrong Navier-Stokes problem?",
       "url": "https://www.scientificamerican.com/article/did-openai-solve-the-wrong-navier-stokes-problem/",
@@ -2807,6 +2798,16 @@
       "summary": "Sunil Pai describes a failure mode he calls \"the senior engineer death spiral,\" which typically begins when an engineer starts a new senior role, gets promoted, or takes on a big project. Feeling imposter syndrome and pressure to prove themselves, they try to \"cosplay\" a more senior engineer — designing overly ambitious things, going silent for weeks, and giving only \"positive updates\" at standup while having nothing to show.\n\nThe spiral then feeds on itself: guilt about not shipping leads to \"I'll just work harder and save this,\" which produces lost sleep, missed meals, damaged work and personal relationships, and eventually burnout, PIPs, firings, or quitting. Pai notes this has happened to him repeatedly and he now recognizes it early. He argues that modern work conditions — remote work, less structured task assignment, more ownership and siloing — make it dangerous to let people wonder what you're doing; you should instead be someone who constantly shares their work, so concerns surface before it's too late.\n\nThe counterintuitive fix: assume everyone is operating in good faith (they hired you as you are now, not who you'll be in six months), then \"drop a level\" and become the best teammate possible for a while — take bugs, grunt work, write-ups, and organizational tasks. This shifts you from an outcome-based mindset to a momentum-based one, rebuilding routines, relationships, and stamina.\n\nThe core lesson is that big projects aren't done with big heroic efforts but by slow, steady, incremental work until it's muscle memory — and reliability plus rebuilt trust is what earns you bigger work. As Pai puts it, you're in the reputation-building business, and software is downstream of that.",
       "added": "2026-09-19",
       "read": "2026-09-20",
+      "has_notes": true
+    },
+    {
+      "slug": "ai-has-no-wisdom-and-neither-will-you",
+      "title": "AI Has No Wisdom and Neither Will You",
+      "url": "https://alexn.org/blog/2026/09/22/ai-has-no-wisdom-and-neither-will-you/",
+      "category": "dev",
+      "summary": "Alexandru Nedelcu argues that while the software industry is being transformed by AI, developers and organizations that stop reading and writing code are taking a serious risk. Code maintainability and good architecture can't be measured with immediate reward signals, so AI models — trained on rulebooks for beginners and on mostly-bad real-world code — can't learn the expert intuition needed to produce maintainable code, e.g. it's poor at simplifying code and defining genuinely reusable functions. Developers who fully delegate coding to AI will never reach mastery because they no longer make choices or learn from their own mistakes. The author, who does use LLMs as a productivity tool, predicts companies will eventually tout \"NO-AI\" policies as a competitive advantage, and warns of consequences if AI use stays irresponsible.",
+      "added": "2026-09-22",
+      "read": "2026-09-22",
       "has_notes": true
     }
   ]
