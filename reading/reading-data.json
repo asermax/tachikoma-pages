@@ -1352,6 +1352,15 @@
       "times_shown": 0
     },
     {
+      "slug": "ai-has-no-wisdom-and-neither-will-you",
+      "title": "AI Has No Wisdom and Neither Will You",
+      "url": "https://alexn.org/blog/2026/09/22/ai-has-no-wisdom-and-neither-will-you/",
+      "category": "dev",
+      "summary": "Alexandru Nedelcu argues that while the software industry is being transformed by AI, developers and organizations that stop reading and writing code are taking a serious risk. Code maintainability and good architecture can't be measured with immediate reward signals, so AI models — trained on rulebooks for beginners and on mostly-bad real-world code — can't learn the expert intuition needed to produce maintainable code, e.g. it's poor at simplifying code and defining genuinely reusable functions. Developers who fully delegate coding to AI will never reach mastery because they no longer make choices or learn from their own mistakes. The author, who does use LLMs as a productivity tool, predicts companies will eventually tout \"NO-AI\" policies as a competitive advantage, and warns of consequences if AI use stays irresponsible.",
+      "added": "2026-09-22",
+      "times_shown": 0
+    },
+    {
       "slug": "did-openai-solve-the-wrong-navier-stokes-problem",
       "title": "Did OpenAI solve the wrong Navier-Stokes problem?",
       "url": "https://www.scientificamerican.com/article/did-openai-solve-the-wrong-navier-stokes-problem/",
