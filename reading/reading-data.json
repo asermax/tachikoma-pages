@@ -1368,6 +1368,15 @@
       "summary": "The author responds to the question of whether developers will just spend their days reviewing AI-generated code, arguing that coding was always only a means to an end and never the core of the job. He walks through job titles — programmer, software architect, software engineer — and lands on Software Development Engineer as the best fit: he has spent 20 years engineering the process of building software, and those process improvements have been more durable and impactful than any individual code. He likens modern software development to an automated factory with quality gates, feedback loops, merges, and triage, and notes it resembles an agentic loop — but agents alone can't be trusted to build features unsupervised, so the value lies in the deterministic checks and gates humans build around them. Takeaway: with AI writing the code, the profession's real work — design, testing, operations, and improving the development process itself — becomes more visible and more central.",
       "added": "2026-09-22",
       "times_shown": 0
+    },
+    {
+      "slug": "measuring-ais-unintended-consequences",
+      "title": "Measuring AI's Unintended Consequences",
+      "url": "https://www.jamesshore.com/v2/blog/2026/measuring-ais-unintended-consequences",
+      "category": "ai",
+      "summary": "James Shore's article is part 3 of his series on quantifying AI's impact on software development, focusing on how to measure unintended consequences of AI adoption such as reduced maintainability, developer burnout, and vendor lock-in. He argues these consequences matter because they carry real economic costs — slower feature delivery, attrition, and exposure to rising AI token costs. Since these effects are gradual and noisy, Shore recommends modeling and judgment over precise measurement, and proposes \"cost of change\" as the central concept to track. Key indicators include value-add percentage (his most trusted metric), DORA metrics, and token usage — each advisory rather than definitive, with trends taking months to become clear.",
+      "added": "2026-09-22",
+      "times_shown": 0
     }
   ],
   "archive": [
