@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'ai-has-no-wisdom-and-neither-will-you', title: 'AI Has No Wisdom and Neither Will You', meta: 'Alexandru Nedelcu · Sep 22, 2026', time: '5:46' },
     { slug: 'measuring-ais-unintended-consequences', title: 'Measuring AI\'s Unintended Consequences', meta: 'James Shore · Sep 22, 2026', time: '18:30' },
     { slug: 'did-openai-solve-the-wrong-navier-stokes-problem', title: 'Did OpenAI solve the wrong Navier-Stokes problem?', meta: 'Joseph Howlett · Sep 21, 2026', time: '5:38' },
     { slug: 'it-was-never-about-coding', title: 'It was never about coding', meta: 'David Yanacek · Sep 21, 2026', time: '10:29' },
