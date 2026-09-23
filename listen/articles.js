@@ -1,6 +1,5 @@
 const ARTICLES = [
     { slug: 'dont-vibe-prove', title: 'Don\'t Vibe — Prove', meta: 'Nicolas Grislain · Mar 13, 2026', time: '13:53' },
-    { slug: 'measuring-ais-unintended-consequences', title: 'Measuring AI\'s Unintended Consequences', meta: 'James Shore · Sep 22, 2026', time: '18:30' },
     { slug: 'did-openai-solve-the-wrong-navier-stokes-problem', title: 'Did OpenAI solve the wrong Navier-Stokes problem?', meta: 'Joseph Howlett · Sep 21, 2026', time: '5:38' },
     { slug: 'it-was-never-about-coding', title: 'It was never about coding', meta: 'David Yanacek · Sep 21, 2026', time: '10:29' },
     { slug: 'where-do-ai-norms-come-from', title: 'Where do AI norms come from?', meta: 'Charity Majors · Sep 2026', time: '5:03' },
@@ -15,7 +14,6 @@ const ARTICLES = [
     { slug: 'a-warning-about-model-welfare', title: 'A warning about \'model welfare\'', meta: 'Mustafa Suleyman · Sep 2026', time: '42:33' },
     { slug: 'the-climb-was-the-safety-feature', title: 'The Climb Was the Safety Feature', meta: 'Christian Ekrem · Sep 2026', time: '7:48' },
     { slug: 'agentic-test-processes-llm-benchmarks', title: 'Agentic test processes, LLM benchmarks, and other notes on agentic coding', meta: 'Dan Luu · Sep 2026', time: '96:26' },
-    { slug: 'measuring-ais-impact-on-delivery-speed', title: 'Measuring AI\'s Impact on Delivery Speed', meta: 'James Shore · 2026', time: '12:37' },
     { slug: 'tell-agents-the-why', title: 'Tell agents the why, not just the how', meta: 'Sean Goedecke · Sep 2026', time: '3:38' },
     { slug: 'nobody-pays-for-open-source-we-can-force-them-to', title: 'Nobody pays for open source. We can force them to.', meta: 'Laurie Voss · Sep 2026', time: '31:10' },
     { slug: 'we-are-all-product-engineers-now', title: 'We are all Product Engineers now', meta: 'Laurie Voss · Sep 2026', time: '23:46' },
@@ -31,7 +29,6 @@ const ARTICLES = [
     { slug: 'they-really-do-think-ai-might-kill-everyone', title: 'They really do think AI might kill everyone', meta: 'Sean Goedecke · Sep 2026', time: '10:25' },
     { slug: 'distillation-essence-of-software', title: 'The Essence of the Essence', meta: 'Daniel Jackson', time: '44:23' },
     { slug: 'why-we-should-anthropomorphize-ai-agents', title: 'Why we should anthropomorphize AI agents', meta: 'Sean Goedecke · Sep 2026', time: '8:32' },
-    { slug: 'are-you-getting-your-moneys-worth-from-ai', title: 'Are You Getting Your Money\'s Worth from AI?', meta: 'James Shore · 2026', time: '12:00' },
     { slug: 'automatically-detecting-ai-text-in-my-browser', title: 'Automatically detecting AI text in my browser', meta: 'Sean Goedecke · Sep 2026', time: '7:23' },
     { slug: 'ironies-of-automation', title: 'Ironies of Automation', meta: 'Lisanne Bainbridge · 1983', time: '35:26' },
     { slug: 'harness-engineering-codex', title: 'Harness Engineering: Leveraging Codex in an Agent-First World', meta: 'OpenAI · 2026', time: '19:39' },
