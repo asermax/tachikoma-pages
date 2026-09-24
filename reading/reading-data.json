@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23",
+  "generated_at": "2026-09-24",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1100,15 +1100,6 @@
       "times_shown": 0
     },
     {
-      "slug": "are-you-getting-your-moneys-worth-from-ai",
-      "title": "Are You Getting Your Money's Worth from AI?",
-      "url": "https://www.jamesshore.com/v2/blog/2026/are-you-getting-your-moneys-worth-from-ai",
-      "category": "ai",
-      "summary": "James Shore opens a multi-part essay series on how to rigorously quantify the impact of AI on software development organizations. He notes that software is AI's biggest beneficiary — one CIO with a 170-person organization measured a 2.1x productivity gain — but that this comes at substantial cost: top AI users spending $21,000/month on tokens at one company, $6,000–8,000 per engineer per month at another. Those costs eventually come out of the personnel budget, with real consequences for real people, so leaders need to know both costs and benefits rather than relying on anecdotes, some of which are outright fiction.\n\nShore argues there's no one-size-fits-all answer: what works for an internal IT shop differs from a startup, and speed isn't everything — doubling output while spending enough on tokens to halve your staff may be a net loss. Self-assessment is unreliable, as the METR study showed (engineers believed they were 20% faster but measured 19% slower). On costs, he warns that current AI pricing is heavily subsidized by vendors fighting for market share, while countervailing forces (open-weight models, cheaper inference chips, routers, more token-efficient models) could push prices down — so ROI models should make cost assumptions explicit and consider both optimistic and pessimistic scenarios. Adoption also involves a change-management dip where productivity falls before it rises.\n\nLong-term effects matter too: if AI doubles production but also doubles maintenance costs, short-term gains are erased within months and a permanent productivity penalty follows. He also cites rising engineer burnout under AI-driven workflows, and stresses the goal is delivering value faster, not software faster.\n\nOn what not to do: don't measure lines of code (AI verbosity means you'd be measuring \"slop\") and don't count pull requests, since AI breaks the assumption that PRs reflect a steady development pace — plus metrics that become targets get gamed (Goodhart's Law, citing Robert Austin). His conclusion: measure the *approach*, not people — run measurements periodically to evaluate AI strategies, learn from them, and stop measuring. Future parts in the series cover measuring delivery speed, unintended consequences, and business outcomes.",
-      "added": "2026-09-09",
-      "times_shown": 0
-    },
-    {
       "slug": "why-we-should-anthropomorphize-ai-agents",
       "title": "Why we should anthropomorphize AI agents",
       "url": "https://seangoedecke.com/why-we-should-anthropomorphize-ai-agents/",
@@ -1235,15 +1226,6 @@
       "times_shown": 0
     },
     {
-      "slug": "measuring-ais-impact-on-delivery-speed",
-      "title": "Measuring AI's Impact on Delivery Speed",
-      "url": "https://www.jamesshore.com/v2/blog/2026/measuring-ais-impact-on-delivery-speed",
-      "category": "engineering",
-      "summary": "This article is the second part of James Shore's series on quantifying AI's impact on software development, focusing on how to rigorously measure whether AI actually makes teams deliver faster. He begins by drawing a sharp distinction between delivery speed and productivity: productivity is value produced divided by money spent, while speed is just one component of it. The article deliberately tackles the narrower question of whether teams finish assigned work faster, leaving business outcomes for part 4.\n\nShore argues there is no objective measure of software development speed, since outputs aren't standardized—features vary in size, stories and story points are arbitrary, and estimates are chronically over-optimistic, so neither request counts nor on-time delivery rates work. The viable approach is to compare a team or person to themselves, using the ratio of actual time to estimated time. If the distribution of actual:estimate ratios shifts, the team got faster. He illustrates this with data from the Star Citizen alpha 3.0 release, whose actual/estimate ratios form an S-shaped curve (with a telltale cliff at 1.0 indicating work expanding to meet estimates) that a censored log-normal fit matches closely.\n\nFour complications must be handled: (1) actual:estimate ratios vary, so the effect must be seen in aggregate; (2) individuals differ systematically in how they work and estimate, so comparisons should be within-person rather than across people; (3) estimates shift when people know they'll use AI, so estimates must be collected before AI/no-AI assignment; and (4) concurrent process improvements confound results, so \"with AI\" and \"without AI\" tasks should be interleaved and both approaches should share the same streamlined workflows. Together these requirements amount to a randomized, within-subject, repeated-measures controlled trial: each person records an estimate, randomly draws a task from a virtual bag split evenly between with-AI and without-AI assignments, and logs actual time, spending, and task type.\n\nShore acknowledges the method is heavier than counting PRs but argues it's warranted because AI spending varies by order of magnitude across organizations and expectations are inflated—he cites the METR study showing experienced developers overestimated AI's speed benefits by nearly 50%. He also cautions that speed gains must be contextualized: a 2x improvement in coding that applies to only half a person's week yields only a 1.33x overall improvement. The series continues with part 3 on unintended consequences and sustainability of speed gains.",
-      "added": "2026-09-15",
-      "times_shown": 0
-    },
-    {
       "slug": "tell-agents-the-why-not-just-the-how",
       "title": "Tell agents the why, not just the how",
       "url": "https://seangoedecke.com/tell-agents-the-why/",
@@ -1366,15 +1348,6 @@
       "url": "https://blog.dyanacek.com/2026/09/21/it-was-never-about-coding/",
       "category": "ai",
       "summary": "The author responds to the question of whether developers will just spend their days reviewing AI-generated code, arguing that coding was always only a means to an end and never the core of the job. He walks through job titles — programmer, software architect, software engineer — and lands on Software Development Engineer as the best fit: he has spent 20 years engineering the process of building software, and those process improvements have been more durable and impactful than any individual code. He likens modern software development to an automated factory with quality gates, feedback loops, merges, and triage, and notes it resembles an agentic loop — but agents alone can't be trusted to build features unsupervised, so the value lies in the deterministic checks and gates humans build around them. Takeaway: with AI writing the code, the profession's real work — design, testing, operations, and improving the development process itself — becomes more visible and more central.",
-      "added": "2026-09-22",
-      "times_shown": 0
-    },
-    {
-      "slug": "measuring-ais-unintended-consequences",
-      "title": "Measuring AI's Unintended Consequences",
-      "url": "https://www.jamesshore.com/v2/blog/2026/measuring-ais-unintended-consequences",
-      "category": "ai",
-      "summary": "James Shore's article is part 3 of his series on quantifying AI's impact on software development, focusing on how to measure unintended consequences of AI adoption such as reduced maintainability, developer burnout, and vendor lock-in. He argues these consequences matter because they carry real economic costs — slower feature delivery, attrition, and exposure to rising AI token costs. Since these effects are gradual and noisy, Shore recommends modeling and judgment over precise measurement, and proposes \"cost of change\" as the central concept to track. Key indicators include value-add percentage (his most trusted metric), DORA metrics, and token usage — each advisory rather than definitive, with trends taking months to become clear.",
       "added": "2026-09-22",
       "times_shown": 0
     },
@@ -2660,6 +2633,16 @@
       "has_notes": true
     },
     {
+      "slug": "are-you-getting-your-moneys-worth-from-ai",
+      "title": "Are You Getting Your Money's Worth from AI?",
+      "url": "https://www.jamesshore.com/v2/blog/2026/are-you-getting-your-moneys-worth-from-ai",
+      "category": "ai",
+      "summary": "James Shore opens a multi-part essay series on how to rigorously quantify the impact of AI on software development organizations. He notes that software is AI's biggest beneficiary — one CIO with a 170-person organization measured a 2.1x productivity gain — but that this comes at substantial cost: top AI users spending $21,000/month on tokens at one company, $6,000–8,000 per engineer per month at another. Those costs eventually come out of the personnel budget, with real consequences for real people, so leaders need to know both costs and benefits rather than relying on anecdotes, some of which are outright fiction.\n\nShore argues there's no one-size-fits-all answer: what works for an internal IT shop differs from a startup, and speed isn't everything — doubling output while spending enough on tokens to halve your staff may be a net loss. Self-assessment is unreliable, as the METR study showed (engineers believed they were 20% faster but measured 19% slower). On costs, he warns that current AI pricing is heavily subsidized by vendors fighting for market share, while countervailing forces (open-weight models, cheaper inference chips, routers, more token-efficient models) could push prices down — so ROI models should make cost assumptions explicit and consider both optimistic and pessimistic scenarios. Adoption also involves a change-management dip where productivity falls before it rises.\n\nLong-term effects matter too: if AI doubles production but also doubles maintenance costs, short-term gains are erased within months and a permanent productivity penalty follows. He also cites rising engineer burnout under AI-driven workflows, and stresses the goal is delivering value faster, not software faster.\n\nOn what not to do: don't measure lines of code (AI verbosity means you'd be measuring \"slop\") and don't count pull requests, since AI breaks the assumption that PRs reflect a steady development pace — plus metrics that become targets get gamed (Goodhart's Law, citing Robert Austin). His conclusion: measure the *approach*, not people — run measurements periodically to evaluate AI strategies, learn from them, and stop measuring. Future parts in the series cover measuring delivery speed, unintended consequences, and business outcomes.",
+      "added": "2026-09-09",
+      "read": "2026-09-23",
+      "has_notes": true
+    },
+    {
       "slug": "astra-why",
       "title": "Astra for Coding: Why Are We Doing This Again?",
       "url": "https://lucumr.pocoo.org/2026/9/7/astra-why/",
@@ -2740,6 +2723,16 @@
       "has_notes": false
     },
     {
+      "slug": "measuring-ais-impact-on-delivery-speed",
+      "title": "Measuring AI's Impact on Delivery Speed",
+      "url": "https://www.jamesshore.com/v2/blog/2026/measuring-ais-impact-on-delivery-speed",
+      "category": "engineering",
+      "summary": "This article is the second part of James Shore's series on quantifying AI's impact on software development, focusing on how to rigorously measure whether AI actually makes teams deliver faster. He begins by drawing a sharp distinction between delivery speed and productivity: productivity is value produced divided by money spent, while speed is just one component of it. The article deliberately tackles the narrower question of whether teams finish assigned work faster, leaving business outcomes for part 4.\n\nShore argues there is no objective measure of software development speed, since outputs aren't standardized—features vary in size, stories and story points are arbitrary, and estimates are chronically over-optimistic, so neither request counts nor on-time delivery rates work. The viable approach is to compare a team or person to themselves, using the ratio of actual time to estimated time. If the distribution of actual:estimate ratios shifts, the team got faster. He illustrates this with data from the Star Citizen alpha 3.0 release, whose actual/estimate ratios form an S-shaped curve (with a telltale cliff at 1.0 indicating work expanding to meet estimates) that a censored log-normal fit matches closely.\n\nFour complications must be handled: (1) actual:estimate ratios vary, so the effect must be seen in aggregate; (2) individuals differ systematically in how they work and estimate, so comparisons should be within-person rather than across people; (3) estimates shift when people know they'll use AI, so estimates must be collected before AI/no-AI assignment; and (4) concurrent process improvements confound results, so \"with AI\" and \"without AI\" tasks should be interleaved and both approaches should share the same streamlined workflows. Together these requirements amount to a randomized, within-subject, repeated-measures controlled trial: each person records an estimate, randomly draws a task from a virtual bag split evenly between with-AI and without-AI assignments, and logs actual time, spending, and task type.\n\nShore acknowledges the method is heavier than counting PRs but argues it's warranted because AI spending varies by order of magnitude across organizations and expectations are inflated—he cites the METR study showing experienced developers overestimated AI's speed benefits by nearly 50%. He also cautions that speed gains must be contextualized: a 2x improvement in coding that applies to only half a person's week yields only a 1.33x overall improvement. The series continues with part 3 on unintended consequences and sustainability of speed gains.",
+      "added": "2026-09-15",
+      "read": "2026-09-23",
+      "has_notes": true
+    },
+    {
       "slug": "httpsseangoedeckecomjev-means-structured-output-is-interesting-again",
       "title": "Jev means structured output is interesting again",
       "url": "https://seangoedecke.com/jev-means-structured-output-is-interesting-again/",
@@ -2817,6 +2810,16 @@
       "summary": "Alexandru Nedelcu argues that while the software industry is being transformed by AI, developers and organizations that stop reading and writing code are taking a serious risk. Code maintainability and good architecture can't be measured with immediate reward signals, so AI models — trained on rulebooks for beginners and on mostly-bad real-world code — can't learn the expert intuition needed to produce maintainable code, e.g. it's poor at simplifying code and defining genuinely reusable functions. Developers who fully delegate coding to AI will never reach mastery because they no longer make choices or learn from their own mistakes. The author, who does use LLMs as a productivity tool, predicts companies will eventually tout \"NO-AI\" policies as a competitive advantage, and warns of consequences if AI use stays irresponsible.",
       "added": "2026-09-22",
       "read": "2026-09-22",
+      "has_notes": true
+    },
+    {
+      "slug": "measuring-ais-unintended-consequences",
+      "title": "Measuring AI's Unintended Consequences",
+      "url": "https://www.jamesshore.com/v2/blog/2026/measuring-ais-unintended-consequences",
+      "category": "ai",
+      "summary": "James Shore's article is part 3 of his series on quantifying AI's impact on software development, focusing on how to measure unintended consequences of AI adoption such as reduced maintainability, developer burnout, and vendor lock-in. He argues these consequences matter because they carry real economic costs — slower feature delivery, attrition, and exposure to rising AI token costs. Since these effects are gradual and noisy, Shore recommends modeling and judgment over precise measurement, and proposes \"cost of change\" as the central concept to track. Key indicators include value-add percentage (his most trusted metric), DORA metrics, and token usage — each advisory rather than definitive, with trends taking months to become clear.",
+      "added": "2026-09-22",
+      "read": "2026-09-23",
       "has_notes": true
     },
     {
