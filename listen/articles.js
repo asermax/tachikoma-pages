@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'when-ai-writes-almost-all-code-what-happens-to-software-engineering', title: 'When AI writes almost all code, what happens to software engineering?', meta: 'Gergely Orosz · Jan 2026', time: '39:44' },
     { slug: 'dont-vibe-prove', title: 'Don\'t Vibe — Prove', meta: 'Nicolas Grislain · Mar 13, 2026', time: '13:53' },
     { slug: 'did-openai-solve-the-wrong-navier-stokes-problem', title: 'Did OpenAI solve the wrong Navier-Stokes problem?', meta: 'Joseph Howlett · Sep 21, 2026', time: '5:38' },
     { slug: 'it-was-never-about-coding', title: 'It was never about coding', meta: 'David Yanacek · Sep 21, 2026', time: '10:29' },
