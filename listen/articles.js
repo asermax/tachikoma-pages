@@ -1,4 +1,6 @@
 const ARTICLES = [
+    { slug: 'one-month-without-ai', title: 'One month without AI', meta: 'Bustikiller · Sep 25, 2026', time: '9:53' },
+    { slug: 'advice-to-a-beginning-software-engineer', title: 'Advice to a beginning software engineer', meta: 'Sean Goedecke · Sep 26, 2026', time: '7:01' },
     { slug: 'you-should-all-be-asking-way-more-questions', title: 'You should all be asking way more questions', meta: 'Sean Goedecke · Sep 2026', time: '5:06' },
     { slug: 'there-is-more-to-code-review-than-automatable-detection', title: 'There is more to code review than (automatable) detection', meta: 'John Allspaw · Aug 2026', time: '6:35' },
     { slug: 'when-ai-writes-almost-all-code-what-happens-to-software-engineering', title: 'When AI writes almost all code, what happens to software engineering?', meta: 'Gergely Orosz · Jan 2026', time: '39:44' },
