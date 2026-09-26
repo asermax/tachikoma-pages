@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'tbm-441-ai-the-loss-of-positive-friction-and-what-to-do-about-it', title: 'TBM 441: AI, the Loss of Positive Friction, and What to Do About It', meta: 'John Cutler · Sep 24, 2026', time: '10:02' },
     { slug: 'one-month-without-ai', title: 'One month without AI', meta: 'Bustikiller · Sep 25, 2026', time: '9:53' },
     { slug: 'advice-to-a-beginning-software-engineer', title: 'Advice to a beginning software engineer', meta: 'Sean Goedecke · Sep 26, 2026', time: '7:01' },
     { slug: 'you-should-all-be-asking-way-more-questions', title: 'You should all be asking way more questions', meta: 'Sean Goedecke · Sep 2026', time: '5:06' },
