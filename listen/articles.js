@@ -36,7 +36,6 @@ const ARTICLES = [
     { slug: 'why-we-should-anthropomorphize-ai-agents', title: 'Why we should anthropomorphize AI agents', meta: 'Sean Goedecke · Sep 2026', time: '8:32' },
     { slug: 'automatically-detecting-ai-text-in-my-browser', title: 'Automatically detecting AI text in my browser', meta: 'Sean Goedecke · Sep 2026', time: '7:23' },
     { slug: 'ironies-of-automation-bainbridge-1983', title: 'Ironies of Automation', meta: 'Lisanne Bainbridge · 1983', time: '35:26' },
-    { slug: 'harness-engineering', title: 'Harness Engineering: Leveraging Codex in an Agent-First World', meta: 'OpenAI · 2026', time: '19:39' },
     { slug: 'minions-stripes-one-shot-end-to-end-coding-agents', title: 'Minions: Stripe\'s One-Shot End-to-End Coding Agents', meta: 'Stripe Engineering · 2026', time: '9:03' },
     { slug: 'the-role-of-developer-skills', title: 'The Role of Developer Skills in Agentic Coding', meta: 'Birgitta Böckeler · Apr 2026', time: '15:43' },
     { slug: 'the-future-of-software-engineering-europe-2026', title: 'The Future of Software Engineering — Retreat Findings', meta: 'Thoughtworks · Jun 2026', time: '31:56' },
