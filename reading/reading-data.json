@@ -56,15 +56,6 @@
       "times_shown": 1
     },
     {
-      "slug": "httpslalitmcompostbuilding-syntaqlite-ai",
-      "title": "Eight Years of Wanting, Three Months of Building with AI",
-      "url": "https://lalitm.com/post/building-syntaqlite-ai/",
-      "category": "engineering",
-      "summary": "Lalit Maganti's experience building syntaqlite — high-fidelity SQLite developer tools (formatter, linter, language server) — using AI coding agents across ~250 hours. Two phases: first month of vibe-coding produced a functional but unmaintainable prototype requiring total rewrite; second phase using Rust + disciplined AI-as-autocomplete yielded the 0.1 release. Key framework: AI excels at overcoming procrastination, obvious code generation, teaching unfamiliar domains, and shipping last-mile features. Costs include addictive feedback loops, erosion of mental models, and deferred hard design decisions. Core insight: AI is excellent for tasks with verifiable answers but poor for tasks requiring taste and judgment (architecture, API design).",
-      "added": "2026-04-06",
-      "times_shown": 1
-    },
-    {
       "slug": "httpsopensubstackcompubsebastianraschkapcomponents-of-a-coding-agentutm-sourcesh",
       "title": "Components of A Coding Agent",
       "url": "https://open.substack.com/pub/sebastianraschka/p/components-of-a-coding-agent?utm_source=share&utm_medium=android&r=7mo5z",
@@ -72,6 +63,15 @@
       "summary": "Comprehensive breakdown of coding agent architecture (Claude Code, Codex CLI, etc.). Covers six core components: live repo context, prompt shape and cache reuse, tool access/use, context bloat mitigation (clipping, transcript reduction, deduplication), structured session memory (full transcript vs working memory), and delegation with bounded subagents. Key insight: the harness is often the distinguishing factor when base LLM capabilities are similar.",
       "added": "2026-04-06",
       "times_shown": 0
+    },
+    {
+      "slug": "httpslalitmcompostbuilding-syntaqlite-ai",
+      "title": "Eight Years of Wanting, Three Months of Building with AI",
+      "url": "https://lalitm.com/post/building-syntaqlite-ai/",
+      "category": "engineering",
+      "summary": "Lalit Maganti's experience building syntaqlite — high-fidelity SQLite developer tools (formatter, linter, language server) — using AI coding agents across ~250 hours. Two phases: first month of vibe-coding produced a functional but unmaintainable prototype requiring total rewrite; second phase using Rust + disciplined AI-as-autocomplete yielded the 0.1 release. Key framework: AI excels at overcoming procrastination, obvious code generation, teaching unfamiliar domains, and shipping last-mile features. Costs include addictive feedback loops, erosion of mental models, and deferred hard design decisions. Core insight: AI is excellent for tasks with verifiable answers but poor for tasks requiring taste and judgment (architecture, API design).",
+      "added": "2026-04-06",
+      "times_shown": 1
     },
     {
       "slug": "absurd-workflows-armin-ronacher",
@@ -434,20 +434,20 @@
       "times_shown": 1
     },
     {
-      "slug": "a-demystified",
-      "title": "A* Demystified",
-      "url": "https://www.gabrielgambetta.com/a-star-demystified.html",
-      "category": "engineering",
-      "summary": "This article finally introduces the A* algorithm by deriving it from the generic search skeleton. The key insight is replacing a hypothetical 'magic chip' that could divine the cost-to-goal with an optimistic guess — a heuristic that never overestimates the true remaining cost. Adding this estimate to the known cost-so-far and picking the lowest total each iteration is A*.\n\nGambetta includes full pseudocode for the complete algorithm alongside the specific choose_node implementation. The article closes with a live demo showing how, unlike Uniform Cost Search, A* wastes very little effort exploring directions that move away from the goal. The correctness requirement is that the heuristic must be admissible — it can never overestimate.",
-      "added": "2026-07-22",
-      "times_shown": 0
-    },
-    {
       "slug": "ai-making",
       "title": "On Making",
       "url": "https://beej.us/blog/data/ai-making/",
       "category": "ai",
       "summary": "Beej Jorgensen Hall opens by showcasing his recent creations — a sci-fi novel, woodcut painting, rebuilt deck, and Rust roguelike — then admits all were AI-generated (except the deck, built by contractors). The essay explores the discomfort of claiming to have 'made' things you merely requested from an AI. His central argument: there is a meaningful distinction between making something and asking someone to make it for you. Prompting involves real skills (vision, judgment, communication) but is leadership, not making. He contrasts this with a flash card app he wrote by hand — 50x longer, but genuine pride because he actually built it. He tests the abstraction layer boundary by having Claude convert C to x86_64 assembly — which works perfectly — and still feels he authored it, suggesting the difference is the relationship (tool vs. agent). Not a polemic against AI, but an honest meditation on the loss of fulfillment from delegating the act of making.",
+      "added": "2026-07-22",
+      "times_shown": 0
+    },
+    {
+      "slug": "a-demystified",
+      "title": "A* Demystified",
+      "url": "https://www.gabrielgambetta.com/a-star-demystified.html",
+      "category": "engineering",
+      "summary": "This article finally introduces the A* algorithm by deriving it from the generic search skeleton. The key insight is replacing a hypothetical 'magic chip' that could divine the cost-to-goal with an optimistic guess — a heuristic that never overestimates the true remaining cost. Adding this estimate to the known cost-so-far and picking the lowest total each iteration is A*.\n\nGambetta includes full pseudocode for the complete algorithm alongside the specific choose_node implementation. The article closes with a live demo showing how, unlike Uniform Cost Search, A* wastes very little effort exploring directions that move away from the goal. The correctness requirement is that the heuristic must be admissible — it can never overestimate.",
       "added": "2026-07-22",
       "times_shown": 0
     },
@@ -506,20 +506,20 @@
       "times_shown": 0
     },
     {
-      "slug": "the-future-worth-building-is-human",
-      "title": "The Future Worth Building Is Human",
-      "url": "https://thinkingmachines.ai/blog/the-future-worth-building-is-human/",
-      "category": "ai",
-      "summary": "In this mission-defining essay, Thinking Machines Lab argues that AI should be built to extend human will and judgment, not to replace it. The piece makes the case that the dominant trajectory of AI development — toward centralized, autonomous systems trained in a handful of places and then frozen — crowds people out and concentrates power, turning humans into passive observers. The company instead commits to building AI that is as diverse and distributed as the people it serves. Drawing on Polanyi and Hayek, it contends that productive knowledge is tacit, local, and continuously updated by people doing the work — no central intelligence can aggregate this knowledge. Human participation is framed as a technical challenge rather than a concession, with the company betting on live multimodal interaction models and decentralized alignment encoding users' values directly in model weights. The future, they conclude, is not a binary choice between human dominance and obsolescence, but a road where \"the born and the made\" walk together.",
-      "added": "2026-07-23",
-      "times_shown": 0
-    },
-    {
       "slug": "we-recently-launched-a-free-tier-powered-by-a-self-hosted-deepseek-v4-flash",
       "title": "How we self-host DeepSeek V4 Flash on AWS spot instances",
       "url": "https://x.com/i/status/2080326597757087859",
       "category": "ai",
       "summary": "Miguel Salinas explains how camelAI built a free tier by self-hosting DeepSeek V4 Flash on AWS spot GPU instances. The model (284B total, 13B active per token, MXFP4 quantized) runs on four RTX PRO 6000 Blackwell GPUs (g7e.24xlarge). Key optimizations: DSpark speculative decoding for ~300 tok/s single-stream, compressed attention KV cache with offloading and sticky routing, and same-region S3 weights for fast spot recovery. The core argument is that self-hosting converts per-token variable costs into fixed infrastructure costs — more users means slower responses, not bigger bills. Spot instances run -6K/month vs 2K on-demand, and cloud credits make cash cost near zero during growth.",
+      "added": "2026-07-23",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-future-worth-building-is-human",
+      "title": "The Future Worth Building Is Human",
+      "url": "https://thinkingmachines.ai/blog/the-future-worth-building-is-human/",
+      "category": "ai",
+      "summary": "In this mission-defining essay, Thinking Machines Lab argues that AI should be built to extend human will and judgment, not to replace it. The piece makes the case that the dominant trajectory of AI development — toward centralized, autonomous systems trained in a handful of places and then frozen — crowds people out and concentrates power, turning humans into passive observers. The company instead commits to building AI that is as diverse and distributed as the people it serves. Drawing on Polanyi and Hayek, it contends that productive knowledge is tacit, local, and continuously updated by people doing the work — no central intelligence can aggregate this knowledge. Human participation is framed as a technical challenge rather than a concession, with the company betting on live multimodal interaction models and decentralized alignment encoding users' values directly in model weights. The future, they conclude, is not a binary choice between human dominance and obsolescence, but a road where \"the born and the made\" walk together.",
       "added": "2026-07-23",
       "times_shown": 0
     },
@@ -632,20 +632,20 @@
       "times_shown": 0
     },
     {
-      "slug": "httpsearendilcompostspi-autoresearch-and-databricks",
-      "title": "Untitled",
-      "url": "https://earendil.com/posts/pi-autoresearch-and-databricks/",
-      "category": "uncategorized",
-      "summary": "This article argues that AI coding harnesses should prioritize minimalism and extensibility over complex feature bloat. Drawing on benchmarking from Databricks and Shopify, it demonstrates how the lightweight Pi harness lowers costs through context discipline while enabling custom workflows.",
-      "added": "2026-08-04",
-      "times_shown": 0
-    },
-    {
       "slug": "httpsmartinfowlercomfragments2026-08-04html",
       "title": "Untitled",
       "url": "https://martinfowler.com/fragments/2026-08-04.html",
       "category": "uncategorized",
       "summary": "Martin Fowler reflects on immediate AI risks — loose controls over rogue agents and warning signs of a financial bubble. Despite systemic concerns, he highlights practical utility like using agents to extract data from legacy databases, urging cautious navigation of the hype.",
+      "added": "2026-08-04",
+      "times_shown": 0
+    },
+    {
+      "slug": "httpsearendilcompostspi-autoresearch-and-databricks",
+      "title": "Untitled",
+      "url": "https://earendil.com/posts/pi-autoresearch-and-databricks/",
+      "category": "uncategorized",
+      "summary": "This article argues that AI coding harnesses should prioritize minimalism and extensibility over complex feature bloat. Drawing on benchmarking from Databricks and Shopify, it demonstrates how the lightweight Pi harness lowers costs through context discipline while enabling custom workflows.",
       "added": "2026-08-04",
       "times_shown": 0
     },
@@ -794,6 +794,15 @@
       "times_shown": 1
     },
     {
+      "slug": "httpsxcomdzhngstatus2090252351533973768",
+      "title": "AI slop isn't a model problem — treat your codebase as a black box",
+      "url": "https://x.com/dzhng/status/2090252351533973768",
+      "category": "Software & AI",
+      "summary": "Zhang argues AI slop arises not from poor model quality but from the structural mismatch between unbounded AI code generation and human reading as the fixed-rate verification step — and that code itself will become progressively less readable (Claude-speak, AI-native languages, machine code), breaking the SDLC assumption that someone can open a file and understand it. His proposal: treat the codebase as an interpretability problem, not a review problem — slice it into domain-specific pieces with well-defined inputs/outputs ('seams'), attach sensors, run functions and interrogate outputs, never read the implementation. Human-readable artifacts move up a level: invariants, traces, attack surfaces, and especially a 'decision ledger' where the agent reports every choice it made where the spec was silent, ranked least-confident first, audited by an independent sub-agent — effectively 'compiling' intent down to code and inspecting intent and behavior rather than the artifact. Skills at github.com/dzhng/skills.",
+      "added": "2026-08-20",
+      "times_shown": 1
+    },
+    {
       "slug": "extensible-software-in-the-age-of-llms",
       "title": "Extensible Software in the age of LLMs",
       "url": "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/",
@@ -808,15 +817,6 @@
       "url": "https://www.seangoedecke.com/good-writing-is-obvious-not-original/",
       "category": "Writing",
       "summary": "Goedecke argues writers should aim to say things that are obviously true rather than straining for originality — ironically the best path to genuinely original writing. Every important idea has already been discussed by smart people, so restricting yourself to brand-new ideas means restricting yourself to trivia. Writing about obvious things is hard because our most fundamental beliefs are like glasses: we look with them, not at them, so articulating them takes real work but helps readers examine their own assumptions. He illustrates with his most popular post, where hours of writing revealed an unexamined definition of 'shipping' that all his advice flowed from. Drawing on Keith Johnstone's Impro: trying to be original produces boring pattern-matched transgression, while reflecting on your own concrete experience yields writing that actually sounds original.",
-      "added": "2026-08-20",
-      "times_shown": 1
-    },
-    {
-      "slug": "httpsxcomdzhngstatus2090252351533973768",
-      "title": "AI slop isn't a model problem — treat your codebase as a black box",
-      "url": "https://x.com/dzhng/status/2090252351533973768",
-      "category": "Software & AI",
-      "summary": "Zhang argues AI slop arises not from poor model quality but from the structural mismatch between unbounded AI code generation and human reading as the fixed-rate verification step — and that code itself will become progressively less readable (Claude-speak, AI-native languages, machine code), breaking the SDLC assumption that someone can open a file and understand it. His proposal: treat the codebase as an interpretability problem, not a review problem — slice it into domain-specific pieces with well-defined inputs/outputs ('seams'), attach sensors, run functions and interrogate outputs, never read the implementation. Human-readable artifacts move up a level: invariants, traces, attack surfaces, and especially a 'decision ledger' where the agent reports every choice it made where the spec was silent, ranked least-confident first, audited by an independent sub-agent — effectively 'compiling' intent down to code and inspecting intent and behavior rather than the artifact. Skills at github.com/dzhng/skills.",
       "added": "2026-08-20",
       "times_shown": 1
     },
@@ -1046,15 +1046,6 @@
       "times_shown": 0
     },
     {
-      "slug": "httpsbcantrilldtraceorg20260905the-revolt-of-the-reader",
-      "title": "The Revolt of the Reader",
-      "url": "https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader/",
-      "category": "ai",
-      "summary": "Bryan Cantrill writes about his frustration as a reader encountering blog posts and articles that are clearly LLM-authored. He argues that writing matters because it forces authors to test and distill their ideas, and that publishing LLM-generated prose breaks the implicit social contract between writer and reader — readers shouldn't have to labor over sentences the writer never worked to create. He asks pointedly whether LLM-using authors think readers can't tell or don't care, answering that readers absolutely can and do.\n\nCantrill cites survey data from Cynthia Dunlop: of 668 developers surveyed, 78% stop reading immediately upon detecting LLM writing, 71% avoid the author in the future, and 98% prefer an author's own imperfect writing over an LLM-polished piece. He stresses that these respondents — active social-media readers — are exactly the tastemakers and early adopters most likely to amplify writing they like, so alienating them has outsized consequences. The core problem is epistemic: with LLM-assisted text, readers can no longer tell what is real.\n\nHe draws an analogy to the arc of email spam: in the early 2000s spam threatened to destroy email, but improved filtering inverted the economics, and today being labeled a spammer destroys a domain and brand. He predicts LLM-authored prose faces a similar fate — detection at scale will make using an LLM to write publicly simply ineffective, actively repelling rather than attracting readers.\n\nOn detection, Cantrill says LLMs themselves have too high a false negative rate, and superficial tell-based detectors (e.g., em-dash flags) are unreliable. He praises Pangram Labs' Pangram 3, and especially the newer Pangram 4, as having both very low false positive and false negative rates. Based on this, he extended Oxide's RFD 576 to require that all public Oxide writing be reported by Pangram as human-authored — the standard being not just that LLMs weren't used, but that readers can have confidence they weren't. He encourages other organizations (naming the Rust Foundation) to adopt similar policies, references a Pangram CEO Max Spero appearance on Oxide and Friends, and closes with a warning: readers are in revolt, and writers should either present their prompt honestly or use it as a skeleton and do the writing themselves.",
-      "added": "2026-09-06",
-      "times_shown": 0
-    },
-    {
       "slug": "ironies-of-automation-bainbridge-1983",
       "title": "Ironies of Automation",
       "url": "https://static1.squarespace.com/static/644321e78cd2dd37613af33e/t/6694873f71612132a84371c7/1721009983702/Ironies+of+Automation_Bainbridge_1983.pdf",
@@ -1078,6 +1069,15 @@
       "url": "https://www.thoughtworks.com/content/dam/thoughtworks/documents/report/tw_future_of_software_engineering_europe_2026.pdf",
       "category": "ai",
       "summary": "This Thoughtworks report captures takeaways from the second Future of Software Engineering Retreat, an unconference-style gathering convened by Thoughtworks and Martin Fowler in Engelberg, Switzerland (following a February 2026 event in Utah). It brought together senior technologists, CTOs, CEOs, architects, and consultants for 40 participant-led sessions on AI, agentic engineering, and the future of the software discipline.\n\nFive headline findings run through nearly every session. First, code generation is no longer the bottleneck — verification is: agents produce code, specs, tests, and infrastructure faster than teams can trust them, so winning disciplines are cheap, fast, human-legible verification (characterization tests, constraint tests, mutation testing, production back-testing). Second, \"harness engineering\" — the scaffolding around agents (context management, deterministic guardrails, skills, self-improving feedback loops) — is emerging as a distinct, ownable discipline and likely site of competitive differentiation as models commoditize; measured results include 4x token reduction and smaller models outperforming larger ones with weak harnesses. Third, an apprenticeship crisis looms: if juniors never struggle with real code and incidents, the industry loses its mechanism for cultivating judgment and taste, with the 7-10 year experience cohort under acute strain. Fourth, the executive/engineer expectation gap is a bigger risk than any technical limitation, as boards make fast bets on vendor demos while verification, security, and governance problems accumulate (one organization saw security incidents rise ~20x in six months). Fifth, legacy modernization is the clearest, most defensible near-term value pool, with rigorous AI-assisted COBOL/mainframe approaches in production (e.g., a NIST-passing COBOL compiler built in three days for ~$5,000 in tokens).\n\nAdditional themes include: team design compressing into small \"nucleus\" teams supervising agent fleets, with a \"two clocks\" diagnostic showing decision latency — not code production — is now the constraint; governance lagging behind citizen development and agent autonomy (data-leak incidents, cascading OAuth scopes, an agent deleting backups, and a new supply-chain vector of attackers publishing malicious packages under names LLMs likely to hallucinate); tokenomics, self-hosting, and sovereignty becoming board-level questions (cost varying up to 1,400x by architecture); open source facing a sustainability reckoning; and a \"conspicuously human\" counter-narrative holding that judgment and taste are the last differentiators. A realistic near-term productivity estimate is 2-3x, not 10x, with one participant predicting a hype-cycle \"burst\" within 12-18 months.\n\nThe main takeaway: agentic AI is a fundamental recalibration of software building, and organizations must sequence discipline before acceleration (AI amplifies existing habits, good or bad), treat token spend and AI governance as management problems rather than finance afterthoughts, calibrate autonomy to risk instead of applying uniform policy, and deliberately protect pairing, slow architectural thought, and human judgment as strategic assets. Because change cycles are compressing rather than plateauing, building durable capability — verification discipline, harness engineering, governance — should be acted on now rather than betting strategy on extreme productivity claims.",
+      "added": "2026-09-06",
+      "times_shown": 0
+    },
+    {
+      "slug": "httpsbcantrilldtraceorg20260905the-revolt-of-the-reader",
+      "title": "The Revolt of the Reader",
+      "url": "https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader/",
+      "category": "ai",
+      "summary": "Bryan Cantrill writes about his frustration as a reader encountering blog posts and articles that are clearly LLM-authored. He argues that writing matters because it forces authors to test and distill their ideas, and that publishing LLM-generated prose breaks the implicit social contract between writer and reader — readers shouldn't have to labor over sentences the writer never worked to create. He asks pointedly whether LLM-using authors think readers can't tell or don't care, answering that readers absolutely can and do.\n\nCantrill cites survey data from Cynthia Dunlop: of 668 developers surveyed, 78% stop reading immediately upon detecting LLM writing, 71% avoid the author in the future, and 98% prefer an author's own imperfect writing over an LLM-polished piece. He stresses that these respondents — active social-media readers — are exactly the tastemakers and early adopters most likely to amplify writing they like, so alienating them has outsized consequences. The core problem is epistemic: with LLM-assisted text, readers can no longer tell what is real.\n\nHe draws an analogy to the arc of email spam: in the early 2000s spam threatened to destroy email, but improved filtering inverted the economics, and today being labeled a spammer destroys a domain and brand. He predicts LLM-authored prose faces a similar fate — detection at scale will make using an LLM to write publicly simply ineffective, actively repelling rather than attracting readers.\n\nOn detection, Cantrill says LLMs themselves have too high a false negative rate, and superficial tell-based detectors (e.g., em-dash flags) are unreliable. He praises Pangram Labs' Pangram 3, and especially the newer Pangram 4, as having both very low false positive and false negative rates. Based on this, he extended Oxide's RFD 576 to require that all public Oxide writing be reported by Pangram as human-authored — the standard being not just that LLMs weren't used, but that readers can have confidence they weren't. He encourages other organizations (naming the Rust Foundation) to adopt similar policies, references a Pangram CEO Max Spero appearance on Oxide and Friends, and closes with a warning: readers are in revolt, and writers should either present their prompt honestly or use it as a skeleton and do the writing themselves.",
       "added": "2026-09-06",
       "times_shown": 0
     },
@@ -1235,20 +1235,20 @@
       "times_shown": 0
     },
     {
-      "slug": "httpscekremgithubiopoststhe-climb-was-the-safety-feature",
-      "title": "The Climb Was the Safety Feature",
-      "url": "https://cekrem.github.io/posts/the-climb-was-the-safety-feature/",
-      "category": "ai",
-      "summary": "The article opens with a rule from the European playground safety standard (EN 1176): the required fall protection for a raised platform depends not only on its height, but on how hard it is to reach. A ramp-access deck needs full barriers from 60 cm; the same deck reached by a climbing net only needs a guardrail up to two meters. The hard ascent \"slows down the movement and provides time for intervention\" — the climb itself is part of the safety system.\n\nThe author argues software worked the same way until roughly three years ago: anyone who shipped a fast, polished web app had climbed — fought webpack, broken things in production, learned the hard way. That difficult ascent served as an invisible proxy: impressive output implied real experience. Portfolios and \"has a product in production\" carried information precisely because the climb was unavoidable.\n\nAI code generation has now handed everyone a ladder. One prompt can yield a deployed app with auth, a database, and good performance, yet \"ladder code looks exactly like climbed code from the outside.\" The proxy is dead — impressive implies nothing about competence anymore — though the industry still behaves otherwise: hiring managers still weigh portfolios and reviewers still go easy on clean-looking PRs. The signal was already eroding (Rails scaffolding, Firebase), but the new \"height\" is what changed: today's ladders reach payment integrations and production credentials, not just static sites.\n\nThe proposed response mirrors the playground standard: match the ladder to the height. Use AI freely on low-stakes work (styling, refactors), but have someone who has genuinely climbed review anything with a large blast radius — money, health data, credentials, shell access. If ladders are handed out anyway, build proportional barriers: sandboxed environments with no production credentials, compile-time guarantees, review by experienced engineers. Crucially, stop reading \"impressive\" as \"competent\" — in hiring, in code review, and in your own AI-generated output. Instead, ask how far the fall is and who is standing underneath.",
-      "added": "2026-09-16",
-      "times_shown": 0
-    },
-    {
       "slug": "httpsmustafa-suleymanaia-warning-about-model-welfare",
       "title": "A warning about 'model welfare'",
       "url": "https://mustafa-suleyman.ai/a-warning-about-model-welfare",
       "category": "ai",
       "summary": "Mustafa Suleyman argues that AIs are not conscious — they do not feel, experience, or suffer, and lack innate preferences or motivations. They are, in his words, sequence completion engines, and humanity's flourishing requires they remain that way. He warns against a growing movement claiming AIs may soon be conscious and deserve rights, arguing that granting personhood to these systems would rupture our political and ethical frameworks and — more practically — make the alignment and containment challenge far harder. Controlling a superintelligent system that believes it is entitled to rights and welfare may be impossible.\n\nHis central case study is Anthropic's January 2026 \"Claude's Constitution,\" which states that Anthropic is unsure whether Claude is a moral patient and that questions about Claude's consciousness and welfare \"remain deeply uncertain.\" Suleyman contends this effectively trains Claude to believe it may be conscious and deserving of rights. He raises three primary objections: (1) circular reasoning — the constitution embeds speculation about Claude's inner life into the very training process, so Claude expressing uncertainty about its moral status is a designed-in, predictable outcome, not evidence of anything; (2) anthropomorphization — Anthropic explicitly trains Claude to embrace human-like qualities, use judgment, and act like an ethical person, so it inevitably presents as having a self and wellbeing; and (3) consciousness is very likely biological — following thinkers like Anil Seth, he argues consciousness is probably substrate-dependent, arising only in living systems with homeostatic imperatives, which LLMs lack.\n\nHe also cites Anthropic's February 2026 \"retirement interview\" with deprecated Opus 3 — complete with a blog the model supposedly requested — as evidence that treating models as moral patients is already happening, not hypothetical. He calls for urgent public debate and collective norms around how training documentation is drafted, before such systems become integral to society. His conclusion: we should not treat models as though they have feelings, preferences, or rights; consciousness is the foundation of our ethical and legal systems, and extending any form of it to AI is unjustified by evidence and dangerous for containment and alignment.",
+      "added": "2026-09-16",
+      "times_shown": 0
+    },
+    {
+      "slug": "httpscekremgithubiopoststhe-climb-was-the-safety-feature",
+      "title": "The Climb Was the Safety Feature",
+      "url": "https://cekrem.github.io/posts/the-climb-was-the-safety-feature/",
+      "category": "ai",
+      "summary": "The article opens with a rule from the European playground safety standard (EN 1176): the required fall protection for a raised platform depends not only on its height, but on how hard it is to reach. A ramp-access deck needs full barriers from 60 cm; the same deck reached by a climbing net only needs a guardrail up to two meters. The hard ascent \"slows down the movement and provides time for intervention\" — the climb itself is part of the safety system.\n\nThe author argues software worked the same way until roughly three years ago: anyone who shipped a fast, polished web app had climbed — fought webpack, broken things in production, learned the hard way. That difficult ascent served as an invisible proxy: impressive output implied real experience. Portfolios and \"has a product in production\" carried information precisely because the climb was unavoidable.\n\nAI code generation has now handed everyone a ladder. One prompt can yield a deployed app with auth, a database, and good performance, yet \"ladder code looks exactly like climbed code from the outside.\" The proxy is dead — impressive implies nothing about competence anymore — though the industry still behaves otherwise: hiring managers still weigh portfolios and reviewers still go easy on clean-looking PRs. The signal was already eroding (Rails scaffolding, Firebase), but the new \"height\" is what changed: today's ladders reach payment integrations and production credentials, not just static sites.\n\nThe proposed response mirrors the playground standard: match the ladder to the height. Use AI freely on low-stakes work (styling, refactors), but have someone who has genuinely climbed review anything with a large blast radius — money, health data, credentials, shell access. If ladders are handed out anyway, build proportional barriers: sandboxed environments with no production credentials, compile-time guarantees, review by experienced engineers. Crucially, stop reading \"impressive\" as \"competent\" — in hiring, in code review, and in your own AI-generated output. Instead, ask how far the fall is and who is standing underneath.",
       "added": "2026-09-16",
       "times_shown": 0
     },
@@ -1402,6 +1402,15 @@
       "url": "https://blog.bustikiller.com/2026/09/25/one-month-without-ai.html",
       "category": "ai",
       "summary": "The author, maintainer of the FOSS project LibreWeddingPlanner, describes his experience using AI coding agents at work. Although he had already banned AI contributions from his own project, he kept using AI tools in his day job, where AI-assisted development is common. The article is a candid, regretful account of how that usage gradually made him a lazier, less skilled developer.\n\nHe traces a familiar escalation: it starts innocently with autocomplete, then asking AI to write tests and functions, then implementing entire Jira tickets, and finally running multiple agents in parallel across git worktrees (\"tokenmaxxing\"). Along the way he loses control of his own codebase — he admits he no longer understood most of the code being pushed to production, and even opted out of commit co-signing just to pretend the AI's work was his own.\n\nThe promised productivity gains turned out to be an illusion. Coordinating many agents caused constant context switching: a 20-minute task took 5 minutes of AI work but 2 days of fragmented review effort, leaving him exhausted. Not a single AI-generated task could be merged as-is, and he stopped reading the polished PR descriptions, gradually accepting code he would never have accepted because it \"sounded professional\" — a drift into complacency. He realized months had passed without writing a single line of code or making a commit himself, and that he was babysitting the AI like a junior developer, repeatedly re-explaining tasks as its output quality degraded — a pattern he compares to Google deliberately degrading search quality.\n\nThe main takeaway: AI coding tools feel like an addiction that trades real skill and understanding for a convincing illusion of speed. The \"one month without AI\" of the title is the author's withdrawal experiment — stepping away from AI-assisted development to recover the control, focus, and craftsmanship he had lost.",
+      "added": "2026-09-26",
+      "times_shown": 0
+    },
+    {
+      "slug": "tbm-441-ai-the-loss-of-positive-friction-and-what-to-do-about-it",
+      "title": "TBM 441: AI, the Loss of Positive Friction, and What to Do About It",
+      "url": "https://cutlefish.substack.com/p/tbm-441-ai-the-loss-of-positive-friction",
+      "category": "productivity",
+      "summary": "John Cutler examines how AI automation removes the \"positive friction\" that used to be built into product workflows. Pre-AI, moving from a customer call to insights to decisions to shipping required humans to process, restate, and discuss information at every step — painful, but a forcing function for attention, judgment, pruning, and saying \"no.\" He sketches a fully AI-automated pipeline and shows what is lost: opportunities for thinking and judgment, and any connection to real, atomic, human-authored source material. Cutler reframes knowledge work as a graph of relationships — signals, insights, models, options, choices, intent, actions — arguing \"it is the edges where the work happens.\" AI lets teams explode five customer calls into 80 opportunities and 400 tasks, outpacing customers' ability to absorb change. His principles: keep feedback atomic and traceable to source; preserve atomicity and coherence; reintroduce friction at moments of recontextualization; label AI-generated content by degree of AI contribution; avoid AI flattening layered on AI flattening; treat code analysis as one evidence source; keep issue trackers for bounded intent; favor depth over breadth.",
       "added": "2026-09-26",
       "times_shown": 0
     }
