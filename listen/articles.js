@@ -2,7 +2,6 @@ const ARTICLES = [
     { slug: 'human-ai-partnerships-are-for-alignment-not-capability', title: 'Human-AI partnerships are for alignment, not capability', meta: 'Sean Goedecke · Sep 2026', time: '3:45' },
     { slug: 'advice-to-a-beginning-software-engineer', title: 'Advice to a beginning software engineer', meta: 'Sean Goedecke · Sep 26, 2026', time: '7:01' },
     { slug: 'you-should-all-be-asking-way-more-questions', title: 'You should all be asking way more questions', meta: 'Sean Goedecke · Sep 2026', time: '5:06' },
-    { slug: 'there-is-more-to-code-review-than-automatable-detection', title: 'There is more to code review than (automatable) detection', meta: 'John Allspaw · Aug 2026', time: '6:35' },
     { slug: 'when-ai-writes-almost-all-of-the-code-what-happens-to-code-review', title: 'When AI writes almost all code, what happens to software engineering?', meta: 'Gergely Orosz · Jan 2026', time: '39:44' },
     { slug: 'dont-vibe-prove', title: 'Don\'t Vibe — Prove', meta: 'Nicolas Grislain · Mar 13, 2026', time: '13:53' },
     { slug: 'did-openai-solve-the-wrong-navier-stokes-problem', title: 'Did OpenAI solve the wrong Navier-Stokes problem?', meta: 'Joseph Howlett · Sep 21, 2026', time: '5:38' },
