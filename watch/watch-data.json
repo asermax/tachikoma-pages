@@ -692,6 +692,17 @@
       "added": "2026-09-25",
       "watched": "2026-09-25",
       "has_notes": true
+    },
+    {
+      "slug": "how-i-shipped-2500-prs-last-month-to-production-lauren-poteto",
+      "title": "How I shipped 2,500 PRs last month to production",
+      "url": "https://x.com/poteto/status/2102050467505430555",
+      "video_id": "2102050467505430555",
+      "channel": "Lauren (@poteto)",
+      "summary": "Lauren (@poteto) walks through the workflow behind shipping 2,500 PRs to production in a single month with heavy AI-agent assistance (talk made for Cursor Compile London, published free on X). Focus is on building confidence in agent output at scale so humans don't have to read every diff. Agustin's caveat: her work is mostly optimizing already-working systems rather than high-decision-intensity architecture/design, an easier case to automate \u2014 but the confidence-building point stands.",
+      "added": "2026-09-27",
+      "watched": "2026-09-27",
+      "has_notes": true
     }
   ]
 }
