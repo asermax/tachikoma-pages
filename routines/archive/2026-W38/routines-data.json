@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-27T10:51:15.911884-03:00",
-  "week_start": "2026-09-27",
-  "week_label": "September 27 - October 03, 2026",
-  "last_updated": "Sunday, September 27, 2026 at 10:51",
+  "generated_at": "2026-09-27T02:00:36.395237-03:00",
+  "week_start": "2026-09-20",
+  "week_label": "September 20 - September 26, 2026",
+  "last_updated": "Sunday, September 27, 2026 at 02:00",
   "stats": {
-    "completed": 0,
-    "planned": 0,
-    "display": "0 / 0"
+    "completed": 4.666666666666667,
+    "planned": 13,
+    "display": "4.7 / 13"
   },
   "daily": {
     "Sunday": {
@@ -15,29 +15,29 @@
       "total": 1
     },
     "Monday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 3
     },
     "Tuesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "partial",
+      "completed": 1,
+      "total": 3
     },
     "Wednesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 3,
+      "total": 3
     },
     "Thursday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 1
     },
     "Friday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 1
     },
     "Saturday": {
       "status": "empty",
@@ -50,9 +50,9 @@
       "name": "Wind-Down Routine",
       "emoji": "",
       "status": "pending",
-      "accumulated": "0 nights",
+      "accumulated": "4 nights",
       "target": "6 nights",
-      "progress_pct": 0
+      "progress_pct": 66
     }
   ],
   "routines": [
@@ -64,16 +64,12 @@
         {
           "day": "Tue",
           "status": "pending"
-        },
-        {
-          "day": "Thu",
-          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
       "done": 0,
-      "total": 2
+      "total": 1
     },
     {
       "id": "music-practice",
@@ -82,12 +78,12 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         }
       ],
-      "metrics_total": "",
+      "metrics_total": "1h",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -112,7 +108,7 @@
       "sessions": [
         {
           "day": "Sun",
-          "status": "pending"
+          "status": "skipped"
         },
         {
           "day": "Mon",
@@ -120,24 +116,24 @@
         },
         {
           "day": "Tue",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Thu",
-          "status": "pending"
+          "status": "skipped"
         },
         {
           "day": "Fri",
           "status": "pending"
         }
       ],
-      "metrics_total": "",
+      "metrics_total": "50min",
       "comparison": "",
-      "done": 0,
+      "done": 2,
       "total": 6
     },
     {
@@ -148,16 +144,12 @@
         {
           "day": "Tue",
           "status": "pending"
-        },
-        {
-          "day": "Thu",
-          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
       "done": 0,
-      "total": 2
+      "total": 1
     },
     {
       "id": "yoga",
@@ -170,20 +162,20 @@
         },
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 2
     }
   ],
   "spirit": {
-    "state": "dormant",
+    "state": "critical",
     "emoji": "\ud83d\udc26",
     "title": "\ud83d\udc26 Blossom Sparrow",
-    "image": "assets/dormant.webp",
-    "description": "Your blossom sparrow sleeps tucked under its wing in moonlight beneath a starry spring sky \u2014 deep, peaceful rest."
+    "image": "assets/critical.webp",
+    "description": "Your blossom sparrow shivers, soaked, against wind and dark storm clouds \u2014 sad, small, weathering it out."
   }
 }
