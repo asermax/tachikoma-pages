@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'fools-expertise', title: 'Fool\'s Expertise', meta: 'Bryan Cantrill · Sep 2026', time: '4:20' },
     { slug: 'human-ai-partnerships-are-for-alignment-not-capability', title: 'Human-AI partnerships are for alignment, not capability', meta: 'Sean Goedecke · Sep 2026', time: '3:45' },
     { slug: 'advice-to-a-beginning-software-engineer', title: 'Advice to a beginning software engineer', meta: 'Sean Goedecke · Sep 26, 2026', time: '7:01' },
     { slug: 'you-should-all-be-asking-way-more-questions', title: 'You should all be asking way more questions', meta: 'Sean Goedecke · Sep 2026', time: '5:06' },
