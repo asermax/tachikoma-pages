@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'the-spec-can-come-later', title: 'The Spec Can Come Later', meta: 'Chad Fowler · Sep 2026', time: '2:26' },
     { slug: 'advice-to-a-beginning-software-engineer', title: 'Advice to a beginning software engineer', meta: 'Sean Goedecke · Sep 26, 2026', time: '7:01' },
     { slug: 'you-should-all-be-asking-way-more-questions', title: 'You should all be asking way more questions', meta: 'Sean Goedecke · Sep 2026', time: '5:06' },
     { slug: 'when-ai-writes-almost-all-of-the-code-what-happens-to-code-review', title: 'When AI writes almost all code, what happens to software engineering?', meta: 'Gergely Orosz · Jan 2026', time: '39:44' },
