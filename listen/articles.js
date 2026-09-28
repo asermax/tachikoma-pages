@@ -3,7 +3,6 @@ const ARTICLES = [
     { slug: 'you-should-all-be-asking-way-more-questions', title: 'You should all be asking way more questions', meta: 'Sean Goedecke · Sep 2026', time: '5:06' },
     { slug: 'when-ai-writes-almost-all-of-the-code-what-happens-to-code-review', title: 'When AI writes almost all code, what happens to software engineering?', meta: 'Gergely Orosz · Jan 2026', time: '39:44' },
     { slug: 'dont-vibe-prove', title: 'Don\'t Vibe — Prove', meta: 'Nicolas Grislain · Mar 13, 2026', time: '13:53' },
-    { slug: 'did-openai-solve-the-wrong-navier-stokes-problem', title: 'Did OpenAI solve the wrong Navier-Stokes problem?', meta: 'Joseph Howlett · Sep 21, 2026', time: '5:38' },
     { slug: 'it-was-never-about-coding', title: 'It was never about coding', meta: 'David Yanacek · Sep 21, 2026', time: '10:29' },
     { slug: 'where-do-ai-norms-come-from', title: 'Where do AI norms come from?', meta: 'Charity Majors · Sep 2026', time: '5:03' },
     { slug: 'caring-vs-knowing', title: 'Caring vs. Knowing', meta: 'Adam Zimman · Sep 2026', time: '6:44' },
