@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27",
+  "generated_at": "2026-09-28",
   "queue": [
     {
       "slug": "nigel-cheese-down-the-rabbit-hole",
@@ -702,6 +702,17 @@
       "summary": "Lauren (@poteto) walks through the workflow behind shipping 2,500 PRs to production in a single month with heavy AI-agent assistance (talk made for Cursor Compile London, published free on X). Focus is on building confidence in agent output at scale so humans don't have to read every diff. Agustin's caveat: her work is mostly optimizing already-working systems rather than high-decision-intensity architecture/design, an easier case to automate \u2014 but the confidence-building point stands.",
       "added": "2026-09-27",
       "watched": "2026-09-27",
+      "has_notes": true
+    },
+    {
+      "slug": "one-page-design-philosophy-one-of-the-most-important-videos-for-game-developers",
+      "title": "One Page Design Philosophy - One Of The Most Important Videos For Game Developers",
+      "url": "https://www.youtube.com/watch?v=E9_wLks1kAg",
+      "video_id": "E9_wLks1kAg",
+      "channel": "circache",
+      "summary": "Stone Librande (Creative Director, EA/Maxis) presents his One-Page Designs approach to game development documentation. He contrasts traditional design bibles and modern design wikis \u2014 long text-heavy docs are hard to maintain, update, and search \u2014 against one-page visual designs that communicate design relationships more efficiently. Aimed at game designers and developers looking to improve design documentation and team communication.",
+      "added": "2026-09-27",
+      "watched": "2026-09-28",
       "has_notes": true
     }
   ]
