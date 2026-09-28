@@ -1,0 +1,58 @@
+{
+  "title": "The Spec Can Come Later",
+  "meta": "Chad Fowler · Sep 2026 · ~2 min listen",
+  "body": "<div class=\"chunk\"><h1>The Spec Can Come Later</h1></div>\n<div class=\"chunk\"><p>When I say things like &quot;delete the code, keep the spec,&quot; many people seem to interpret that as a rule: write the specification first, and only then are you allowed to program.</p></div>\n<div class=\"chunk\"><p>That's not what I mean. It's also not how anyone actually builds software. I think this is the source of a lot of pushback I've heard not just to my own ideas but to any of the various spec-driven development approaches that have spawned in the past couple of years.\\</p></div>\n<div class=\"chunk\"><p>Experienced developers know this in their bones. Programming is one of the most important ways we find out what we actually want. You try something, it's wrong, and you change your mind. Some requirements don't exist until an implementation breaks them.</p></div>\n<div class=\"chunk\"><p>Here's a rule I know to be true: My first attempts at specifiying a system are always wrong. This is a fact I've treated as a rule since I first started programming in earnest in the 90s. I think this is what drew me to eXtreme Programming immediately when I saw it. &quot;A user story is the promise of a conversation&quot;. Sometimes it's a conversation with the business owner. Sometimes it's a conversation with unit tests and a compiler.</p></div>\n<div class=\"chunk\"><p>Matteo Paltenghi and Satish Chandra seem to have had the same intuition. <a href=\"https://arxiv.org/abs/2607.09900\" target=\"_blank\" rel=\"noopener\">AfterVibe: What Remains When the Conversation Ends</a> explores this scientifically. They extract specifications from finished AI coding sessions and the code changes those sessions produced. Then they hand the recovered spec to another agent and ask it to rebuild the same changes in the existing repository.</p></div>\n<div class=\"chunk\"><p>That's the part I find exciting. The first implementation is how you discover what you mean. The second is how you find out whether you wrote it down.</p></div>\n<div class=\"chunk\"><p>So the order flips. You start with a vague idea and hack until something works. You come out the other side with a spec you couldn't have written on day one. Then you regenerate, and you see what the spec actually kept. Given enough time and money, every software project ever created could have benefited from this. But now we can do it many times per day with (re)generative AI.</p></div>\n<div class=\"chunk\"><p>None of this removes judgment. Regenerate a bug faithfully and you've just got a bug with better provenance. Someone still has to decide which discoveries become requirements and which were accidents.</p></div>\n<div class=\"chunk\"><p>You don't have to know everything before you start. You just have to stop throwing away what you learned.</p></div>\n<div class=\"chunk\"><p>Thanks to Dusan Omercevic, CEO of <a href=\"https://www.codeplain.ai/\" target=\"_blank\" rel=\"noopener\">Codeplain</a>, for pointing me to the paper.</p></div>\n",
+  "audio": "the-spec-can-come-later.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      2.05,
+      13.075,
+      29.2,
+      44.9,
+      68.075,
+      91.625,
+      101.2,
+      122.45,
+      135.0,
+      141.025
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://aicoding.leaflet.pub/3mwlzitykzc27"
+}
