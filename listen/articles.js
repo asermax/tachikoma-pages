@@ -112,7 +112,6 @@ const ARTICLES = [
     { slug: 'components-of-a-coding-agent', title: 'Components of A Coding Agent', meta: 'Sebastian Raschka · Apr 2026', time: '23:23' },
     { slug: 'the-shape-of-things-to-come-part-2-model-welfare-for-agentic-engineers', title: 'The Shape of Things to Come, Part 2: Model Welfare for Agentic Engineers', meta: 'Steve Yegge · 2026', time: '16:17' },
     { slug: 'pace-layers-and-ai-integration', title: 'Pace Layers and AI Integration', meta: 'Chad Fowler · Dec 2025', time: '12:08' },
-    { slug: 'the-death-and-rebirth-of-programming', title: 'The Death and Rebirth of Programming', meta: 'Chad Fowler · Dec 2025', time: '6:05' },
     { slug: 'agents-are-hard', title: 'Agent Design Is Still Hard', meta: 'Armin Ronacher · Nov 2025', time: '12:51' },
     { slug: 'absurd-workflows', title: 'Absurd Workflows: Durable Execution With Just Postgres', meta: 'Armin Ronacher · Nov 2025', time: '6:44' },
     { slug: 'tdd-inside-the-agent-loop-theater-or-actual-value', title: 'TDD inside the agent loop - theater or actual value?', meta: 'Birgitta Böckeler · Aug 2025', time: '30:50' },
