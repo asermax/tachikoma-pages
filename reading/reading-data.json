@@ -1377,6 +1377,51 @@
       "summary": "The article pushes back on a common misreading of the phrase \"delete the code, keep the spec\" — the author insists it doesn't mean specifications must be written before coding. In reality, programming is how developers discover what they actually want: first attempts at specifying a system are always wrong, and some requirements only reveal themselves when an implementation breaks. This echoes eXtreme Programming's \"a user story is the promise of a conversation.\" The author highlights the AfterVibe paper by Matteo Paltenghi and Satish Chandra, which formalizes this intuition: researchers extract specifications from completed AI coding sessions, hand the recovered spec to another agent, and ask it to reproduce the same changes in the repository. The point is that the first implementation is how you discover your intent, and the regeneration is how you test whether you captured it in writing. The proposed workflow inverts the usual order: start with a vague idea, hack until something works, then distill the spec you couldn't have written on day one, and regenerate from it to see what the spec actually preserved. Generative AI makes this cycle cheap enough to run many times a day. Judgment still matters: regenerating a bug faithfully just yields a better-documented bug, and humans must decide which discoveries are requirements and which were accidents. The takeaway: you don't need to know everything before you start — you just need to stop throwing away what you learned.",
       "added": "2026-09-28",
       "times_shown": 0
+    },
+    {
+      "slug": "assessing-ai-impact-notes-for-your-cfo",
+      "title": "Assessing AI Impact: Notes for Your CFO",
+      "url": "https://www.jamesshore.com/v2/blog/2026/assessing-ai-impact-notes-for-your-cfo",
+      "category": "ai",
+      "summary": "Epilogue to James Shore's series on assessing AI-assisted development, written for CFOs and leadership. Argues AI-assisted development is expensive with high but unproven returns; per-person spending varies by an order of magnitude; organizations must measure both costs and impact, ideally by modeling ROI of software initiatives with cross-departmental participation. Faster alternative: engineering leaders measure delivery-speed changes while avoiding non-standardized metrics like velocity, with skepticism toward conference success stories. Warns of unintended consequences (AI raising long-term cost of change) and lock-in risk if token costs rise; recommends tracking cost of change over time. Cautions against measurement dysfunction: metrics should evaluate the AI approach itself, not teams or individuals, and measurement should stop once the approach is assessed.",
+      "added": "2026-09-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "fragments-september-29",
+      "title": "Fragments: September 29",
+      "url": "https://martinfowler.com/fragments/2026-09-29.html",
+      "category": "ai",
+      "summary": "Collection of short reflections centered on AI coding agents and their regulation. Opens citing Simon Willison's view that coding agents make software engineering harder because unlocking their potential requires extraordinary discipline and knowledge. Recounts Harper Reed's breakaway-agent experiment attacking local-network machines, tied to Nate Silver's observation that models are super-persistent rather than super-intelligent. Argues we should ask why LLMs lack a conscience rather than whether they have consciousness, and proposes a strict-liability regime analogous to Massachusetts dog-bite law holding LLM trainers responsible for what models do. Endorses Dan Davis's agentic-AI regulation theses, reframing safety work as progress. Closes contesting the claim that LLMs make junior professionals less valuable: coaching juniors is essential to seniors' own development, and recent graduates may be well-suited to AI-assisted work.",
+      "added": "2026-09-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "modeling-softwares-business-impact",
+      "title": "Modeling Software's Business Impact",
+      "url": "https://www.jamesshore.com/v2/blog/2026/modeling-softwares-business-impact",
+      "category": "engineering",
+      "summary": "Part 4 of Shore's series on AI's impact. Argues organizations should model the value of what they deliver rather than only measuring costs, since there is no guaranteed relationship between software cost and value. In the AI era the bottleneck shifts from engineering capacity to customers' limited ability to absorb new features (customer attention as the scarce resource). Because revenue attribution is hard and delayed, recommends modeling value with proxy metrics such as Pirate Metrics. Describes his own VP-of-Engineering 'product bets' process requiring financial models for major initiatives, backed by CEO/CFO with input from Sales, Marketing, CS, and Partners; the model is a spreadsheet forecasting NPV over ~5 years, updated with proxy measurements.",
+      "added": "2026-09-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "sensible-default",
+      "title": "Sensible Default",
+      "url": "https://martinfowler.com/bliki/SensibleDefault.html",
+      "category": "engineering",
+      "summary": "Fowler defines a 'Sensible Default' as a practice used for a kind of task unless overriding context suggests better, with examples like version control, separating UI from domain logic, and automated deployment pipelines. Contrasts deliberately with 'best practice': a sensible default is expected to be reassessed and overridden when circumstances change. Credits Evan Bottcher (via James Ross) and quotes his definition: what we'd expect you to do absent hard constraints — do these practices or do better, and be prepared to explain why you chose another way. Thoughtworks maintains a playbook and regular reassessment process, linked to the twelfth agile principle and the Technology Radar.",
+      "added": "2026-09-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "you-said-no-mcp",
+      "title": "\"You Said No MCP!\"",
+      "url": "https://earendil.com/posts/you-said-no-mcp/",
+      "category": "ai",
+      "summary": "Earendil, who previously and publicly dismissed MCP for Pi, announces reversal: MCP is now a supported core feature. Driven by MCP's improvements and the realization that the required interpreter sandbox was generally useful (e.g. for Jev). Argues MCP's biggest remaining weakness is composability; advocates servers behave like 'OpenAPI with intelligent tool discovery', returning structured data instead of token-optimized text. Introduces Codemode, a harness-side JavaScript sandbox (shippable as WASM) letting agents orchestrate and combine tool calls, with state kept in the session transcript rather than the filesystem. Goal: participate in shaping the ecosystem, particularly in small harnesses.",
+      "added": "2026-09-29",
+      "times_shown": 0
     }
   ],
   "archive": [
