@@ -1,4 +1,9 @@
 const ARTICLES = [
+    { slug: 'you-said-no-mcp', title: '"You Said No MCP!"', meta: 'Earendil Engineering · 29 Sep 2026', time: '6:11' },
+    { slug: 'sensible-default', title: 'Sensible Default', meta: 'Martin Fowler · 29 Sep 2026', time: '2:02' },
+    { slug: 'modeling-softwares-business-impact', title: 'Modeling Software\'s Business Impact', meta: 'James Shore · 29 Sep 2026', time: '16:50' },
+    { slug: 'assessing-ai-impact-notes-for-your-cfo', title: 'Assessing AI Impact: Notes for Your CFO', meta: 'James Shore · 29 Sep 2026', time: '7:14' },
+    { slug: 'fragments-september-29', title: 'Fragments: September 29', meta: 'Martin Fowler · 29 Sep 2026', time: '5:23' },
     { slug: 'the-spec-can-come-later', title: 'The Spec Can Come Later', meta: 'Chad Fowler · Sep 2026', time: '2:26' },
     { slug: 'advice-to-a-beginning-software-engineer', title: 'Advice to a beginning software engineer', meta: 'Sean Goedecke · Sep 26, 2026', time: '7:01' },
     { slug: 'you-should-all-be-asking-way-more-questions', title: 'You should all be asking way more questions', meta: 'Sean Goedecke · Sep 2026', time: '5:06' },
