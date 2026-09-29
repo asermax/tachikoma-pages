@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28",
+  "generated_at": "2026-09-29",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -412,15 +412,6 @@
       "url": "https://ngrok.com/blog/prompt-caching",
       "category": "engineering",
       "summary": "Deep explainer on what prompt caching actually caches: the K and V matrices from the transformer attention mechanism. Walks through tokenization, embeddings, and attention step-by-step with matrix math to show that during inference, previous tokens' K and V matrices are recomputed unnecessarily. KV caching stores these between requests so only the new token's matrices need computing. Anthropic offers explicit cache control (100% hit rate); OpenAI auto-caches (~50% hit rate). Caching unaffected by temperature/top_p since those affect token selection after attention. Author: Sam Rose.",
-      "added": "2026-07-12",
-      "times_shown": 0
-    },
-    {
-      "slug": "the-death-and-rebirth-of-programming",
-      "title": "The Death and Rebirth of Programming",
-      "url": "https://aicoding.leaflet.pub/3malrv6poy22a",
-      "category": "engineering",
-      "summary": "Chad Fowler argues that programming's core constraint dissolved when AI made code abundant. The center of gravity shifted from writing code to understanding/verifying it. Introduces the shift from code ownership to system stewardship, n=1 development as an indicator species, and the psychological shock of losing craftsman identity. The asset is no longer the codebase but the system's ability to keep working.",
       "added": "2026-07-12",
       "times_shown": 0
     },
@@ -2067,6 +2058,16 @@
       "summary": "Chad Fowler introduces the concept of 'regenerative software' — systems designed around the premise that code is disposable when generation is cheap. The central paradox: the most durable AI-era systems will be built from code meant to die. Rather than preserving implementations, we should preserve intent through durable interfaces, behavioral evaluations, and automation that assumes replacement is normal. He draws on parallels to immutable infrastructure: just as servers became cattle, code becomes a consumable input. The goal is immortality of intent, not immortality of code. He warns that using AI as a productivity multiplier inside old mental models works briefly but accelerates entropy — larger codebases, lower comprehension, more fragile systems. The piece is a manifesto for the Phoenix Architecture blog: pace layers, evaluations as true source code, rewriting over refactoring, and cultural comfort with deletion.",
       "added": "2026-07-12",
       "read": "2026-07-12",
+      "has_notes": true
+    },
+    {
+      "slug": "the-death-and-rebirth-of-programming",
+      "title": "The Death and Rebirth of Programming",
+      "url": "https://aicoding.leaflet.pub/3malrv6poy22a",
+      "category": "engineering",
+      "summary": "Chad Fowler argues that programming's core constraint dissolved when AI made code abundant. The center of gravity shifted from writing code to understanding/verifying it. Introduces the shift from code ownership to system stewardship, n=1 development as an indicator species, and the psychological shock of losing craftsman identity. The asset is no longer the codebase but the system's ability to keep working.",
+      "added": "2026-07-12",
+      "read": "2026-09-29",
       "has_notes": true
     },
     {
