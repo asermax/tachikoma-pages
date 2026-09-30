@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29",
+  "generated_at": "2026-09-30",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1421,6 +1421,15 @@
       "category": "ai",
       "summary": "Earendil, who previously and publicly dismissed MCP for Pi, announces reversal: MCP is now a supported core feature. Driven by MCP's improvements and the realization that the required interpreter sandbox was generally useful (e.g. for Jev). Argues MCP's biggest remaining weakness is composability; advocates servers behave like 'OpenAPI with intelligent tool discovery', returning structured data instead of token-optimized text. Introduces Codemode, a harness-side JavaScript sandbox (shippable as WASM) letting agents orchestrate and combine tool calls, with state kept in the session transcript rather than the filesystem. Goal: participate in shaping the ecosystem, particularly in small harnesses.",
       "added": "2026-09-29",
+      "times_shown": 0
+    },
+    {
+      "slug": "deser-rethinking-rust-serialization",
+      "title": "Deser: Rethinking Rust Serialization",
+      "url": "https://lucumr.pocoo.org/2026/9/29/deser/",
+      "category": "engineering",
+      "summary": "Armin Ronacher introduces Deser, a Rust serialization library begun in 2022 that reuses Serde's user-facing ergonomics while replacing its architecture with an event-driven, push-based design inspired by miniserde, keeping state on the heap in an arena rather than recursing on the call stack. Motivates the project by documenting Serde corner cases (internally tagged enums conflicting with serde_json's arbitrary_precision, flatten breaking integer map keys, deserialize_with adapters not composing with Option/Vec), tracing them to three design decisions: one trait set for all format kinds, a fixed data model that loses information when buffering, and call-stack recursion. Deliberately excludes non-self-describing formats like protobuf. Expects Serde won't be replaced due to orphan-rule ecosystem entrenchment, but Deser now implements all important self-describing formats (JSON, YAML, TOML, CBOR, JSON5, XML, plist). Draws on problems from Sentry Relay's high-volume untrusted JSON processing.",
+      "added": "2026-09-30",
       "times_shown": 0
     }
   ],
