@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'deser-rethinking-rust-serialization', title: 'Deser: Rethinking Rust Serialization', meta: 'Armin Ronacher · 29 Sep 2026', time: '17:31' },
     { slug: 'you-said-no-mcp', title: '"You Said No MCP!"', meta: 'Earendil Engineering · 29 Sep 2026', time: '6:11' },
     { slug: 'sensible-default', title: 'Sensible Default', meta: 'Martin Fowler · 29 Sep 2026', time: '2:02' },
     { slug: 'modeling-softwares-business-impact', title: 'Modeling Software\'s Business Impact', meta: 'James Shore · 29 Sep 2026', time: '16:50' },
