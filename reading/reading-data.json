@@ -1431,6 +1431,24 @@
       "summary": "Armin Ronacher introduces Deser, a Rust serialization library begun in 2022 that reuses Serde's user-facing ergonomics while replacing its architecture with an event-driven, push-based design inspired by miniserde, keeping state on the heap in an arena rather than recursing on the call stack. Motivates the project by documenting Serde corner cases (internally tagged enums conflicting with serde_json's arbitrary_precision, flatten breaking integer map keys, deserialize_with adapters not composing with Option/Vec), tracing them to three design decisions: one trait set for all format kinds, a fixed data model that loses information when buffering, and call-stack recursion. Deliberately excludes non-self-describing formats like protobuf. Expects Serde won't be replaced due to orphan-rule ecosystem entrenchment, but Deser now implements all important self-describing formats (JSON, YAML, TOML, CBOR, JSON5, XML, plist). Draws on problems from Sentry Relay's high-volume untrusted JSON processing.",
       "added": "2026-09-30",
       "times_shown": 0
+    },
+    {
+      "slug": "pi-10",
+      "title": "Pi 1.0",
+      "url": "https://earendil.com/posts/pi-1-0/",
+      "category": "ai",
+      "summary": "Earendil ships Pi 1.0: hardened, minimal, extensible agent harness. Adds Codemode (native MCP + non-LLM models like Jev and image models), virtual-model extension support, deferred tool loading, Anthropic cache warming, mid-conversation system messages, new TUI theme, full-screen by default. Pi Durable launched alongside as an experimental package for long-running agentic applications.",
+      "added": "2026-10-01",
+      "times_shown": 0
+    },
+    {
+      "slug": "pi-durable",
+      "title": "Pi Durable",
+      "url": "https://earendil.com/posts/pi-durable/",
+      "category": "ai",
+      "summary": "Pi Durable: experimental framework for long-running, multi-user agentic applications on any JavaScript runtime. Harness = storage + machinery for parallel LLM conversations; ~15k lines, agent-readable. Pluggable storage (memory/SQLite/JSONL) and execution environments; task-level checkpointing makes runs crash-proof and resumable; compaction keeps working set in memory; exactly-once submissions via requestId.",
+      "added": "2026-10-01",
+      "times_shown": 0
     }
   ],
   "archive": [
