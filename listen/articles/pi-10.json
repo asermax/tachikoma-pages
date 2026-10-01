@@ -1,0 +1,74 @@
+{
+  "title": "Pi 1.0",
+  "meta": "Earendil · Oct 1, 2026 · ~3 min listen",
+  "body": "<div class=\"chunk\"><p>Today we are proudly shipping Pi 1.0: a hardened, minimal, extensible agent harness that you can make your own. Hundreds of thousands of people around the world use Pi every week. Many of you submit issues and pull requests. Over the course of many months, we have used that feedback to improve, harden and evolve Pi into a stable piece of software that people and businesses can depend on.</p></div>\n<div class=\"chunk\"><p>Pi is known for being minimal. We care about holding that line. While agentic tooling changes every week, many of the changes do not last. Pi does not work that way. We wait until something has proven itself, and only then do we consider adopting it; weighing its true functionality against its inherent added complexity. We spoke more about that process and how it relates to Codemode and MCP earlier this week <a href=\"https://earendil.com/posts/you-said-no-mcp/\" target=\"_blank\" rel=\"noopener\">here</a>.</p></div>\n<div class=\"chunk\"><p>The Pi 1.0 we are shipping today is a result of that process. Pi already ran the latest models from every major provider, became a daily driver coding agent for people around the world, and provided a supermalleable substrate on which to build agentic applications. With Pi 1.0 we are adding the following into Pi:</p></div>\n<div class=\"chunk\"><ul>\n<li>Codemode (native support for MCP, and non-LLM models like Jev and image models)</li>\n<li>Extension support for virtual models</li>\n<li>Deferred tool loading</li>\n<li>Cache warming for anthropic models</li>\n<li>Mid-conversation system messages (transcript-aware prompt and tool changes)</li>\n<li>A new TUI theme</li>\n<li>Full-screen mode by default</li>\n</ul></div>\n<div class=\"chunk\"><p>We have thought about many of these features for months. They were thrown up against the wall and stuck. The list of things that fell off the wall is much longer. When we use Pi with all these new features it feels like a major step forward, but it also still feels simple, like Pi.</p></div>\n<div class=\"chunk\"><p>Alongside this work of continually refining and evolving Pi, we also began to understand that there were aspects of Pi that did not fit the shape of how many people wanted to use it. At Earendil, we want to bring Pi's minimalism and the way it allows you to wield AI outside of the coding agent and outside of the terminal. It needs to be reachable from different surfaces and support longer-running conversations and tasks. In short, Pi must become more durable. Rather than stray from our minimal roots and try to make Pi something it wasn't, we combined that work into a new experimental package that we are shipping today, Pi Durable. Pi Durable is a new substrate for building long-running agentic applications that lets the builders and the users of those applications wield and steer the underlying intelligence with tremendous dexterity. It shares Pi's key principles, minimalism and supermalleability, but it extends those principles into new dimensions. Mario writes in more detail about how we crafted Pi Durable <a href=\"https://earendil.com/posts/pi-durable/\" target=\"_blank\" rel=\"noopener\">here</a>.</p></div>\n<div class=\"chunk\"><p>Earendil was formed to craft software and open protocols that strengthen human agency. Today we are shipping tools to you all to help do just that. We're eager to hear feedback from you and to harness the future out in the open together.</p></div>\n<div class=\"chunk\"><p>Pi 1.0 is available today:</p></div>\n<div class=\"chunk\"><pre><code class=\"language-sh\">curl -fsSL https://pi.dev/install.sh | sh\n</code></pre></div>\n<div class=\"chunk\"><p>or on Windows</p></div>\n<div class=\"chunk\"><pre><code class=\"language-powershell\">powershell -c &quot;irm https://pi.dev/install.ps1 | iex&quot;\n</code></pre></div>\n<div class=\"chunk\"><p>Pi Durable is available today as an experimental package:</p></div>\n<div class=\"chunk\"><pre><code class=\"language-sh\">npm install @earendil-works/pi-durable @earendil-works/pi-ai @earendil-works/chord\n</code></pre></div>\n<div class=\"chunk\"><p>Both are MIT licensed. Documentation is at <a href=\"https://pi.dev/\" target=\"_blank\" rel=\"noopener\">pi.dev</a>. Code is at <a href=\"https://github.com/earendil-works/pi\" target=\"_blank\" rel=\"noopener\">github.com/earendil-works/pi</a>.</p></div>\n<div class=\"chunk\"><ol>\n<li>Codemode: Pi writes a script that boils a week of commits down to a short summary</li>\n<li>Pi writes itself an extension: a virtual model that plans with Claude Opus and implements with GPT, with Jev deciding when to switch</li>\n<li>Reload, start a new session, and pick the new <code>router/auto</code> model</li>\n<li>Planning runs on Claude Opus</li>\n<li>Jev spots the switch to implementation and hands over to GPT 6 Luna</li>\n<li><code>!</code> runs the finished script</li>\n<li><code>/session</code> breaks down cost per model and cache use</li>\n</ol>\n<p>Codemode: Pi writes a script that boils a week of commits down to a short summary</p></div>\n",
+  "audio": "pi-10.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      20.475,
+      41.425,
+      59.5,
+      84.825,
+      98.65,
+      151.575,
+      165.0,
+      167.875,
+      171.55,
+      173.35,
+      177.95,
+      182.675,
+      187.175,
+      194.975
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://earendil.com/posts/pi-1-0/"
+}
