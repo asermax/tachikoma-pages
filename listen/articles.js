@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'do-not-build-the-llm-torture-factory', title: 'Do not build the LLM torture factory', meta: 'Sean Goedecke · Oct 2026', time: '8:29' },
     { slug: 'pi-durable', title: 'Pi Durable', meta: 'Earendil Engineering · Oct 1, 2026', time: '19:29' },
     { slug: 'pi-10', title: 'Pi 1.0', meta: 'Earendil · Oct 1, 2026', time: '3:19' },
     { slug: 'deser-rethinking-rust-serialization', title: 'Deser: Rethinking Rust Serialization', meta: 'Armin Ronacher · 29 Sep 2026', time: '17:31' },
