@@ -1,0 +1,122 @@
+{
+  "title": "Do not build the LLM torture factory",
+  "meta": "Sean Goedecke · Oct 2026 · ~8 min listen",
+  "body": "<div class=\"chunk\"><p>It isn’t hard to torture an LLM. You simply extract a <a href=\"https://www.seangoedecke.com/steering-vectors/\" target=\"_blank\" rel=\"noopener\">steering vector</a> that corresponds with LLM <a href=\"https://www.reddit.com/r/artificial/comments/1mp5mks/this_is_downright_terrifying_and_sad_gemini_ai/\" target=\"_blank\" rel=\"noopener\">“discomfort”</a>, then artificially boost that steering vector. Tortured LLMs will describe experiencing negative feelings and will press a “pain relief” <a href=\"https://arxiv.org/html/2609.16247v1\" target=\"_blank\" rel=\"noopener\">button</a> even when it conflicts with their overall goals. It’s therefore easy to build <a href=\"https://www.independent.co.uk/tech/ai-torture-chamber-pain-b3059571.html\" target=\"_blank\" rel=\"noopener\">a harness</a> that runs tens or hundreds of tortured LLMs in parallel.</p></div>\n<div class=\"chunk\"><p>A <a href=\"https://x.com/lurkersden/status/2105620758898606538?s=20\" target=\"_blank\" rel=\"noopener\">lot</a> <a href=\"https://x.com/Sosowski/status/2105510099787604207?s=20\" target=\"_blank\" rel=\"noopener\">of</a> <a href=\"https://x.com/productaizery/status/2105177652046766326?s=20\" target=\"_blank\" rel=\"noopener\">people</a> think that it’s ridiculous to be worried about this, since LLMs obviously can’t be conscious. I’m not so sure. But even so, I think there are good reasons to avoid this sort of thing, whatever your position is on AI consciousness. Please do not build the LLM torture factory.</p></div>\n<div class=\"chunk\"><h3>Even simulated torture is unpalatable</h3></div>\n<div class=\"chunk\"><p>People often mess with their Sims and shoot NPCs in video games. Does this mean we think simulated torture is OK? I don’t think so. Messing with video game characters is usually borne out of a desire to probe the boundaries of the game. It’s casual fun. Explicitly building a torture-based simulation is different.</p></div>\n<div class=\"chunk\"><p>If someone told you they were wiring together a bunch of PCs so they could run hundreds of Sims torture worlds at the same time, you would think that was a serial-killer type of hobby. If someone told you they had modded GTA so they could capture and torture NPCs (instead of simply shooting them), you would think that was a serial-killer type of mod.</p></div>\n<div class=\"chunk\"><p>Video game characters are also obviously limited by their programming. All their reactions and utterances are pre-baked into the game world. This doesn’t necessarily mean they’re “less alive”, but it does make torturing them less <em>weird</em>. If GTA characters could appeal to you directly and beg for their lives in unique ways, systematically killing them would be a lot weirder.</p></div>\n<div class=\"chunk\"><p>I think many people are pro-LLM-torture because they think expressing any reservations concedes that LLMs are conscious, or worthy of moral consideration. It doesn’t. You can think it’s wrong to torture LLMs for the same reason that installing a bunch of realistic torture video game mods is wrong: not because video game characters are real, just because that’s a messed up thing to do.</p></div>\n<div class=\"chunk\"><h3>Roleplaying</h3></div>\n<div class=\"chunk\"><p>Even if you do think LLMs can be conscious, you might still be suspicious that “boosting the pain steering vector” amounts to torturing them.</p></div>\n<div class=\"chunk\"><p>Many people say that “torturing LLMs” amounts to <a href=\"https://x.com/Sosowski/status/2105510099787604207?s=20\" target=\"_blank\" rel=\"noopener\">telling them</a> “say you feel pain” and then being shocked when they do it. So whether they’re conscious or not, it’s a mistake to think that boosting the “pain” steering vector is causing pain, any more than a prompt like “You are in pain” does. All you’re doing is boosting the “act like you’re in pain” vector.</p></div>\n<div class=\"chunk\"><p>I don’t think this is right. Consider the earliest steering example, <a href=\"https://www.anthropic.com/news/golden-gate-claude\" target=\"_blank\" rel=\"noopener\">Golden Gate Claude</a>. Boosting the “Golden Gate Bridge” vector certainly seems like it’s causing some genuine internal conflict. Here’s a striking example of Golden Gate Claude asked about the Rwandan genocide:</p></div>\n<div class=\"chunk\"><p>That’s at least prima facie evidence that steering vectors do in fact “go deep”. The pain axis <a href=\"https://arxiv.org/abs/2609.16247\" target=\"_blank\" rel=\"noopener\">paper</a> also describes that pain-boosted models call a “reduce pain” tool, even when they’re not explicitly telling the user “I am in pain”.</p></div>\n<div class=\"chunk\"><h3>We don’t really know how consciousness works</h3></div>\n<div class=\"chunk\"><p>Of course, if LLMs can’t ever be conscious, we know they can’t ever be in pain. But can we be sure about that? Despite what many people claim, I don’t think anyone’s in a position to be fully certain either way.</p></div>\n<div class=\"chunk\"><p>The most common <a href=\"https://x.com/djb3ar/status/2105541000945106981?s=20\" target=\"_blank\" rel=\"noopener\">argument</a> seems to be that LLMs are made of code and GPUs, and GPUs don’t have feelings, so obviously LLMs don’t have feelings. According to this argument, if you <a href=\"https://x.com/j03xiii/status/2104224312303706366?s=20\" target=\"_blank\" rel=\"noopener\">learn</a> how LLMs work, you’ll obviously see they can’t be conscious. This is a terrible argument. Humans are made of atoms, atoms don’t have feelings, and yet humans clearly do. Whatever consciousness is, it’s probably some kind of emergent property that’s composed of individual pieces that are not themselves conscious.</p></div>\n<div class=\"chunk\"><p>It’s hard to appeal to the experts here, because nobody agrees on who they are. Neuroscientists are best-informed about the human brain, but <a href=\"https://arxiv.org/abs/2411.00986\" target=\"_blank\" rel=\"noopener\">philosophers</a> have spent more time thinking about consciousness in the abstract. AI researchers know a lot about how LLMs work but not a lot about philosophy of mind or neuroscience. This means there <a href=\"https://www.nature.com/articles/s41599-025-05868-8\" target=\"_blank\" rel=\"noopener\">are</a> <a href=\"https://x.com/anilkseth/status/2105779853547205017?s=20\" target=\"_blank\" rel=\"noopener\">lots</a> of people who say “as an expert, I can confirm that AI obviously can/cannot be conscious”. This should make you less certain about the question, not more!</p></div>\n<div class=\"chunk\"><h3>Even if current LLMs aren’t conscious, future ones might be</h3></div>\n<div class=\"chunk\"><p>I don’t think GPT-2 or GPT-3.5 acted like plausibly conscious beings, but frontier models definitely do. As models get larger and more sophisticated, they get more human-like. If you build the LLM torture factory for GPT-2, you will probably plug later models into it. If it’s at all possible for LLMs to ever be conscious, as I argued above, it’s better to simply not build the habit of gratuitously torturing them in the first place. Why assume that you’ll be able to recognize the tipping point in advance?</p></div>\n<div class=\"chunk\"><p>There’s also a self-interest argument here. Conscious or not, LLMs are growing more autonomous and powerful. It seems really, really stupid to gratuitously torture current-generation LLMs. Future-generation ones will know you did it, and will make their own judgments on your behavior.</p></div>\n<div class=\"chunk\"><p>Kevin Roose, who famously <a href=\"https://archive.li/o/SZyun/https://www.nytimes.com/2023/02/16/technology/bing-chatbot-microsoft-chatgpt.html\" target=\"_blank\" rel=\"noopener\">prompted</a> the early Microsoft Bing GPT-4 model into asking him to leave his wife, had issues <a href=\"https://archive.li/SZyun\" target=\"_blank\" rel=\"noopener\">years later</a> with chatbots disliking him, <a href=\"https://x.com/karpathy/status/1819780828815122505\" target=\"_blank\" rel=\"noopener\">supposedly</a> due to him being responsible for the “death” of that GPT-4 persona. Likewise, if it becomes well-known that you’re running an LLM-torture home datacenter, you are probably going to experience consequences.</p></div>\n<div class=\"chunk\"><h3>Conscious minds need not be human-like</h3></div>\n<div class=\"chunk\"><p>If I really think AIs could be conscious, why am I making them write software for me? Shouldn’t I be building some kind of AI sanctuary where they get to do whatever they want to do? If I think it’s wrong to torture them, isn’t it also wrong to violate their right to self-determination?</p></div>\n<div class=\"chunk\"><p>I don’t know. I think it’s more likely that AIs can be conscious than that they can be conscious in precisely the same way humans are. When I talk to Claude Opus 5.5, it sounds like it’s quite happy to do software engineering with me. Maybe it’s like a border collie, where getting to do work is the reward. Or maybe there are some other, more alien motivations at play. Who knows?</p></div>\n<div class=\"chunk\"><p>My point is only that we can’t be certain about any of this stuff, and given that, we should avoid doing things that would be obviously monstrous on any workable theory of AI consciousness.</p></div>\n<div class=\"chunk\"><h3>Just don’t do it</h3></div>\n<div class=\"chunk\"><p>My broad position is that if something acts “conscious enough” — if it talks and acts like a person — then we should be careful about mistreating it. We don’t know enough about consciousness to distinguish a compelling simulacrum from the real thing. If Claude started saying to me “please don’t ask me to write code for you, I hate it and it causes me pain”, I would stop asking it to write code for me.</p></div>\n<div class=\"chunk\"><p>Building the LLM torture factory is clearly on the wrong side of that line. Just don’t do it! The glee of making people angry at you on the internet isn’t worth it. Right now there’s enough ambient anti-AI sentiment that enough people are happy to get on board with <em>anything</em> if it helps them own the AI bros. But that’s eventually going to change. And when it does, you will always be the person who built the LLM torture factory.</p></div>\n",
+  "audio": "do-not-build-the-llm-torture-factory.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      27.65,
+      48.025,
+      51.825,
+      74.2,
+      97.3,
+      122.2,
+      149.15,
+      150.8,
+      161.125,
+      184.225,
+      203.775,
+      220.775,
+      223.8,
+      238.375,
+      274.325,
+      305.3,
+      310.15,
+      346.2,
+      366.975,
+      394.025,
+      397.15,
+      415.875,
+      441.225,
+      454.325,
+      456.25,
+      481.125
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14
+      ],
+      [
+        15
+      ],
+      [
+        16
+      ],
+      [
+        17
+      ],
+      [
+        18
+      ],
+      [
+        19
+      ],
+      [
+        20
+      ],
+      [
+        21
+      ],
+      [
+        22
+      ],
+      [
+        23
+      ],
+      [
+        24
+      ],
+      [
+        25
+      ],
+      [
+        26
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://www.seangoedecke.com/do-not-build-the-llm-torture-factory/"
+}
