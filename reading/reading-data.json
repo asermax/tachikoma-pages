@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01",
+  "generated_at": "2026-10-02",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1411,15 +1411,6 @@
       "url": "https://martinfowler.com/bliki/SensibleDefault.html",
       "category": "engineering",
       "summary": "Fowler defines a 'Sensible Default' as a practice used for a kind of task unless overriding context suggests better, with examples like version control, separating UI from domain logic, and automated deployment pipelines. Contrasts deliberately with 'best practice': a sensible default is expected to be reassessed and overridden when circumstances change. Credits Evan Bottcher (via James Ross) and quotes his definition: what we'd expect you to do absent hard constraints — do these practices or do better, and be prepared to explain why you chose another way. Thoughtworks maintains a playbook and regular reassessment process, linked to the twelfth agile principle and the Technology Radar.",
-      "added": "2026-09-29",
-      "times_shown": 0
-    },
-    {
-      "slug": "you-said-no-mcp",
-      "title": "\"You Said No MCP!\"",
-      "url": "https://earendil.com/posts/you-said-no-mcp/",
-      "category": "ai",
-      "summary": "Earendil, who previously and publicly dismissed MCP for Pi, announces reversal: MCP is now a supported core feature. Driven by MCP's improvements and the realization that the required interpreter sandbox was generally useful (e.g. for Jev). Argues MCP's biggest remaining weakness is composability; advocates servers behave like 'OpenAPI with intelligent tool discovery', returning structured data instead of token-optimized text. Introduces Codemode, a harness-side JavaScript sandbox (shippable as WASM) letting agents orchestrate and combine tool calls, with state kept in the session transcript rather than the filesystem. Goal: participate in shaping the ecosystem, particularly in small harnesses.",
       "added": "2026-09-29",
       "times_shown": 0
     },
@@ -3000,6 +2991,16 @@
       "summary": "Bryan Cantrill reacts to Ezra Klein's interview with Nvidia CEO Jensen Huang, viewing it as a Rorschach test for AI doomerism: pessimists hear Huang as dismissive, while skeptics of doom (like Cantrill) find his responses reasonable. Cantrill's core criticism is that Huang failed to push back on Klein's repeated appeals to the authority of AI experts like Geoffrey Hinton — an authority Cantrill argues is often unearned. He coins \"Fool's Expertise\" to describe the pattern where expertise in one domain (e.g., LLMs) is treated as warranting authority in entirely different domains. His exhibit is Hinton's famously wrong 2016 prediction that radiologists would be obsolete by 2021: Hinton didn't understand what radiologists actually do — they do far more than interpret images — and faster image interpretation empowers radiologists rather than replacing them. Cantrill argues the problem is especially acute for catastrophe claims, since real-world disasters involve long causal chains across domains; understanding one link doesn't imply understanding the chain (he cites how NTSB investigation teams are deliberately multidisciplinary). If AI doom depends on pathways into the physical world — cyberattacks, engineered pathogens, nuclear weapons — then experts in those pathways, not AI researchers, should be consulted. Cybersecurity experts, viral synthesis experts, and nuclear-safeguards specialists generally find these fears overstated, and the risks are more diffuse and attenuated along the proposed pathways. His model of serious analysis is RAND's \"On the Extinction Risk from Artificial Intelligence,\" which consulted domain experts (nuclear, biotech, climate, risk) while deliberately excluding AI experts to avoid speculating about future AI capabilities. The takeaway: sober, domain-specific expert analysis deserves far more weight than apocalyptic forecasts from AI pioneers, and interviewers like Klein should stop conflating kinds of expertise.",
       "added": "2026-09-28",
       "read": "2026-09-28",
+      "has_notes": true
+    },
+    {
+      "slug": "you-said-no-mcp",
+      "title": "\"You Said No MCP!\"",
+      "url": "https://earendil.com/posts/you-said-no-mcp/",
+      "category": "ai",
+      "summary": "Earendil, who previously and publicly dismissed MCP for Pi, announces reversal: MCP is now a supported core feature. Driven by MCP's improvements and the realization that the required interpreter sandbox was generally useful (e.g. for Jev). Argues MCP's biggest remaining weakness is composability; advocates servers behave like 'OpenAPI with intelligent tool discovery', returning structured data instead of token-optimized text. Introduces Codemode, a harness-side JavaScript sandbox (shippable as WASM) letting agents orchestrate and combine tool calls, with state kept in the session transcript rather than the filesystem. Goal: participate in shaping the ecosystem, particularly in small harnesses.",
+      "added": "2026-09-29",
+      "read": "2026-10-02",
       "has_notes": true
     }
   ]
