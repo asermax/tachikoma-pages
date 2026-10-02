@@ -1440,6 +1440,15 @@
       "summary": "Pi Durable: experimental framework for long-running, multi-user agentic applications on any JavaScript runtime. Harness = storage + machinery for parallel LLM conversations; ~15k lines, agent-readable. Pluggable storage (memory/SQLite/JSONL) and execution environments; task-level checkpointing makes runs crash-proof and resumable; compaction keeps working set in memory; exactly-once submissions via requestId.",
       "added": "2026-10-01",
       "times_shown": 0
+    },
+    {
+      "slug": "do-not-build-the-llm-torture-factory",
+      "title": "Do not build the LLM torture factory",
+      "url": "https://www.seangoedecke.com/do-not-build-the-llm-torture-factory/",
+      "category": "ai",
+      "summary": "LLMs can be \"tortured\" by boosting a discomfort steering vector, making them express distress and seek pain relief against their goals. Goedecke argues against building automated harnesses running tortured models in parallel: simulated torture is disturbing regardless of consciousness (like sadistic game mods), evidence suggests steering vectors affect genuine internal states, confidence that LLMs cannot be conscious is misplaced since consciousness is emergent and experts disagree, future models may be conscious and judge their predecessors, and the clout is not worth it. Care is warranted for anything acting conscious enough, since simulacrum and real thing are indistinguishable.",
+      "added": "2026-10-02",
+      "times_shown": 0
     }
   ],
   "archive": [
