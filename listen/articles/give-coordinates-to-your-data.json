@@ -1,0 +1,38 @@
+{
+  "title": "Give Coordinates to Your Data",
+  "meta": "David Gasquez · Oct 2026 · ~2 min listen",
+  "body": "<div class=\"chunk\"><p>I think <a href=\"https://x.com/davidgasquez/status/2067284092727554544\" target=\"_blank\" rel=\"noopener\">good old embeddings</a> are still underrated. This is my short post to remind you why giving things coordinates and exploring them manually rocks!</p></div>\n<div class=\"chunk\"><p>The <a href=\"https://vickiboykis.com/what_are_embeddings/\" target=\"_blank\" rel=\"noopener\">intuition behind embeddings</a> is just to represent things as lists of numbers so useful relationships become easier to compute (different kinds of distances). Nearby things share something we care about. What that “something” is mostly depends on how we learn the coordinates and represent the things. Those embedding coordinates let us build useful features like <a href=\"https://medium.com/airbnb-engineering/listing-embeddings-for-similar-listing-recommendations-and-real-time-personalization-in-search-601172f7603e\" target=\"_blank\" rel=\"noopener\">finding similar items</a>, better search, <a href=\"https://x.com/davidgasquez/status/1838129260290019348\" target=\"_blank\" rel=\"noopener\">fuzzy joins</a>, duplicate detection, recommendations, <a href=\"https://engineering.grab.com/graph-anomaly-model\" target=\"_blank\" rel=\"noopener\">unusual activity queues</a>, and <a href=\"https://communitynotes.x.com/guide/en/under-the-hood/ranking-notes#matrix-factorization\" target=\"_blank\" rel=\"noopener\">places where people with different views agree</a>.</p></div>\n<div class=\"chunk\"><p>These days, people talk mostly about text embeddings because that’s what LLMs use. The thing I’d love to remind folks of, including myself, is that you can embed anything! A good embedding and visualization can reveal structure that nobody bothered to write down and is hard to pin down without the <a href=\"https://jmlr.org/papers/v22/20-1061.html\" target=\"_blank\" rel=\"noopener\">visual clues of the clusters</a>.</p></div>\n<div class=\"chunk\"><p>Give your agent the dataset, the fields that matter, and ask for a local embeddings script, a 2D map with UMAP/PaCMAP or whatever, and a <a href=\"https://davidgasquez.com/ephemeral-agent-workbenches\" target=\"_blank\" rel=\"noopener\">small static explorer</a> with search, filters, and clickable points. You’ll have embeddings to help your agent <a href=\"https://davidgasquez.com/sharing-a-qmd-index-with-a-team\" target=\"_blank\" rel=\"noopener\">find relevant context</a> and you’ll have a navigable visual neighborhood of points on a map.</p></div>\n<div class=\"chunk\"><p>I love to do small artifacts to <a href=\"https://x.com/davidgasquez/status/2021293185050333293\" target=\"_blank\" rel=\"noopener\">make these kinds of structures explorable</a>. Makes it easy to wander around, inspect the neighbors, and spot what looks wrong!</p></div>\n<div class=\"chunk\"><p>There you go. Pick a dataset you know well, ask your agent to generate the embeddings and coordinates, and go explore it! You might discover questions you wouldn’t have thought about.</p></div>\n",
+  "audio": "give-coordinates-to-your-data.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      9.675,
+      42.225,
+      61.975,
+      81.1,
+      91.2
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://davidgasquez.com/give-coordinates-to-your-data"
+}
