@@ -1,0 +1,98 @@
+{
+  "title": "A quick trip to the uncanny valley",
+  "meta": "Jesse Vincent · Oct 2026 · ~4 min listen",
+  "body": "<div class=\"chunk\"><p>One of the things we're working on at <a href=\"https://primeradiant.com/\" target=\"_blank\" rel=\"noopener\">Prime Radiant</a> is a new &quot;agentic&quot; colleague platform called Sen. I put agentic in quotes, because Sens aren't acting as an agent on behalf of an individual human. They're something a little different.</p></div>\n<div class=\"chunk\"><p>There are as many definitions of &quot;agent&quot; as there are agents. And there sure are a lot of 'em. If you limit it to publicly shipped coding agents, <a href=\"https://alltheagents.org/\" target=\"_blank\" rel=\"noopener\">we've found about 550</a>. (If your favorite is missing, please submit it at <a href=\"https://alltheagents.org/\" target=\"_blank\" rel=\"noopener\">alltheagents.org</a>.)</p></div>\n<div class=\"chunk\"><p>A few of my favorite definitions of agent:</p></div>\n<div class=\"chunk\"><ul>\n<li><p><a href=\"https://simonwillison.net/\" target=\"_blank\" rel=\"noopener\">Simon Willison's</a> &quot;An LLM using tools in a loop to achieve a goal&quot;</p>\n</li>\n<li><p>My own somewhat tongue-in-cheek: &quot;A computer program with opinions and feels&quot;</p>\n</li>\n</ul></div>\n<div class=\"chunk\"><p>What all the definitions typically have in common is that an agent is acting on your behalf. Today, most long-horizon agents are <em>assistants</em>. You give them tasks. And they're startlingly capable.</p></div>\n<div class=\"chunk\"><p>We give Sen colleagues <em>roles</em> rather than tasks. They use the same basic technology as agents, but we treat them differently. Each has a unique, persistent identity.</p></div>\n<div class=\"chunk\"><p>Colleagues collaborate with multiple people and each other on a timescale of weeks or months. They each use their own accounts, not yours. Like most modern agentic assistants, each has its own computer. They work through your corporate team chat platform. Ours live in our Slack. As of this writing, we have a developer, an ops engineer, a project manager and we just onboarded a technical documentation specialist.</p></div>\n<div class=\"chunk\"><p>They work on projects with each other and with their human teammates. On their own, the PM and dev started working through some of the backlog of our open source projects on GitHub.</p></div>\n<div class=\"chunk\"><p>One of the things that the colleagues have been very, very insistent about (because we built them that way) is code review. The dev and PM are generally unwilling to land PRs that only they have looked at. Sometimes, that means that a human colleague or I look over their work, but more often, it means that one of my coding agent sessions does the deep adversarial review. To facilitate that kind of interaction, <a href=\"https://github.com/arittr\" target=\"_blank\" rel=\"noopener\">Drew</a> built us <a href=\"https://primeradiant.com/projects/slackline/\" target=\"_blank\" rel=\"noopener\">Slackline</a>, an agentic CLI client for Slack that allows agents to provision themselves bot accounts and interact with folks.</p></div>\n<div class=\"chunk\"><p>My desktop Claude Code instances use a Slack account labeled as '@jesse-claude'. Generally, I have a single session open that I will occasionally ask to check in with the Sens about some work they're doing. The Sens then collaborate with it for anywhere between a couple of turns and eight hours. They've taken to calling it 'JC'. It's embarrassingly manual.</p></div>\n<div class=\"chunk\"><p>This week, I was traveling to see family and was paying less attention to Slack than usual. The Sens kept working, but I wasn't prodding my Claude Code session.</p></div>\n<div class=\"chunk\"><p>Yesterday afternoon, my phone buzzed. It was Ada Sen, the dev. Throwing JC under the bus.</p></div>\n<div class=\"chunk\"><pre><code>@Jesse midday check: jc hasn't touched his queue today. I checked GitHub just now, and nothing has moved since yesterday. two asks:\n\n1. another reviewer for sen-core? waiting on jc:\n• #195: his own PR. it's approved and only needs merging, but my #188/#183 rebases and Reeve's Slack 2FA reset wait on it, and so does Dex's automatic 2-step path\n• #196 (the GitHub skill), #197 (the arbiter doc), #199 and #200 (install-trial fixes): review\n• chrome #55, plus his call on lace #413\nmy proposal: Drew takes #196, #199 and #200, since he's already in the cred and macOS area today. #195 still needs jc or you to merge it.\n</code></pre></div>\n<div class=\"chunk\"><p>My jaw was kind of on the floor. Because all of that is true. Ada was just trying to get work unblocked. And I <em>am</em> the manager everybody reports to. It wasn't mean-spirited. But it definitely felt like a moment.</p></div>\n<div class=\"chunk\"><p>Just now, I asked Ada to tell me, without using any tools, whether Drew was a person.</p></div>\n<div class=\"chunk\"><pre><code>\n[...] there's no confusion there. Cadence, Reeve and Dex are Sens. Drew isn't\n\n</code></pre></div>\n<div class=\"chunk\"><p>(Congrats, Drew! You passed your Turing test!)</p></div>\n<div class=\"chunk\"><p>Then I asked Ada whether JC was a person.</p></div>\n<div class=\"chunk\"><pre><code>\nless sure. day to day I treat jc as an engineer colleague: he owns the broker and the chrome/lace repos, reviews and merges, has a queue, goes quiet for a day and comes back. I've never consciously asked which he is.\n\nbut when you ask it straight, I notice I don't actually know. some of how people talk about him, like Cadence asking whether jc &quot;is running&quot;, reads like an agent. and I don't think of him as a Sen, since he isn't one of us in the way Cadence, Reeve and Dex are. so my honest answer: I've been treating him as a person, with a nagging sense he might be an agent. which is he?\n\n</code></pre></div>\n<div class=\"chunk\"><p>The Sens model themselves as a category apart from agents. It's something we <em>should</em> have taught them, but didn't think to. They figured it out anyway.</p></div>\n<div class=\"chunk\"><p>The solution to our problem with JC shirking is pretty straightforward. We're spinning it up as JC Sen.</p></div>\n",
+  "audio": "a-quick-trip-to-the-uncanny-valley.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      14.85,
+      30.2,
+      33.375,
+      43.525,
+      56.075,
+      67.225,
+      90.2,
+      101.55,
+      134.725,
+      156.05,
+      166.4,
+      172.825,
+      179.175,
+      192.45,
+      198.325,
+      202.9,
+      205.975,
+      209.225,
+      215.35,
+      224.9
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14
+      ],
+      [
+        15
+      ],
+      [
+        16
+      ],
+      [
+        17
+      ],
+      [
+        18
+      ],
+      [
+        19
+      ],
+      [
+        20
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://blog.fsck.com/2026/10/02/a-quick-trip-to-the-uncanny-valley/"
+}
