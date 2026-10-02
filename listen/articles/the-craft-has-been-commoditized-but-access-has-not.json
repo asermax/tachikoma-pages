@@ -1,0 +1,70 @@
+{
+  "title": "the craft has been commoditized, but access has not",
+  "meta": "Geoffrey Huntley · Oct 2026 · ~3 min listen",
+  "body": "<div class=\"chunk\"><p>One of the original promises of a personal computer was that the computer would be personal. It's kind of strange to think that, now in 2026, it has taken circa 40 years for this to actually become true.</p></div>\n<div class=\"chunk\"><p>You see, over the last 40 years, someone was either a software developer, also known as a programmer, and in that case they were able to make a computer personal. If you didn't have these skills, you were given an interface, and your ability to personalize the computer or software was limited to what the interface could do.</p></div>\n<div class=\"chunk\"><p>Something strange is happening in game development circles right now. With AI, everyone is a game developer. It doesn't matter whether someone has the skills of a software developer or a game developer; they can express what they want, and a couple of loops later, they have outcomes.</p></div>\n<div class=\"chunk\"><p>Yet, why is it that at most corporates right now, the responsibility to develop software is a named role or job function?</p></div>\n<div class=\"chunk\"><blockquote>\n<p>One of my hottest takes right now is that 2026 and 2027 are all about enabling others in your organization to contribute to and develop software, and if your corporate roadmap doesn't have this on the agenda, you're missing the mark. If you aren't aligned with making this happen, then you're self-sabotaging your career.</p>\n</blockquote></div>\n<div class=\"chunk\"><p>Corporate is full of dogma about how things should be done, the processes, and who's responsible for getting things done. This needs to be completely rethought from first principles, including who is responsible for these activities and what that entails.</p></div>\n<div class=\"chunk\"><p>Everyone is now a software developer. The craft has been commoditized, but access to do the craft within corporate has not. Agile assumed writing software was the costly, scarce activity, so it optimized the loop around human authorship by a select few.</p></div>\n<div class=\"chunk\"><p>If you still have software engineers within your company writing code by hand and outright rejecting AI, you should be setting the stage for tough career conversations with that person within the next six months, because they have failed the curiosity test.</p></div>\n<div class=\"chunk\"><p>It's easy to get political about the commoditization of our profession, and I see engineers that I respect lean into the argument that labs have stolen intellectual property, etc., but it's been two years now...</p></div>\n<div class=\"chunk\"><blockquote>\n<p>There is a big pool of juniors who are available, are cheaper, and are more AI-native that can be hired. There's never been a market for free-range organic software; it's always been about more, cheaper and sooner.</p>\n</blockquote></div>\n<div class=\"chunk\"><p>If you're looking to get ahead as a software engineer or business leader, my strongest recommendation is to enable the commoditization of access so everyone can write software within your business.</p></div>\n<div class=\"chunk\"><p>ps. There is no reason software quality should dip in your organization because of AI adoption. These days, when I hear someone say that, I just think...</p></div>\n<div class=\"chunk\"><blockquote>\n<p>&quot;Wow, you're truly over-indexing on the quality of humans that were available to hire in the general labor market. These LLMs generate better code than 99% of companies could hire for. Things have changed. Why can't you see this? Please put your family unit and yourself first.&quot;</p>\n</blockquote></div>\n<div class=\"chunk\"><p>Our job as software engineers now is to engineer systems, including safety controls, that let everyone ship to production — safely.</p></div>\n",
+  "audio": "the-craft-has-been-commoditized-but-access-has-not.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      12.375,
+      29.625,
+      44.85,
+      52.725,
+      70.2,
+      84.45,
+      99.3,
+      113.55,
+      126.025,
+      137.6,
+      148.85,
+      157.975,
+      173.875
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ],
+      [
+        13
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://ghuntley.com/access/"
+}
