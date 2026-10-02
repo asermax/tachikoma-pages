@@ -1,4 +1,7 @@
 const ARTICLES = [
+    { slug: 'a-quick-trip-to-the-uncanny-valley', title: 'A quick trip to the uncanny valley', meta: 'Jesse Vincent · Oct 2026', time: '3:52' },
+    { slug: 'the-craft-has-been-commoditized-but-access-has-not', title: 'the craft has been commoditized, but access has not', meta: 'Geoffrey Huntley · Oct 2026', time: '3:03' },
+    { slug: 'software-doesnt-need-to-be-readable-anymore-it-needs-to-be-explainable', title: 'software doesn\'t need to be readable anymore. it needs to be explainable.', meta: 'Geoffrey Huntley · Oct 2026', time: '16:16' },
     { slug: 'do-not-build-the-llm-torture-factory', title: 'Do not build the LLM torture factory', meta: 'Sean Goedecke · Oct 2026', time: '8:29' },
     { slug: 'pi-durable', title: 'Pi Durable', meta: 'Earendil Engineering · Oct 1, 2026', time: '19:29' },
     { slug: 'pi-10', title: 'Pi 1.0', meta: 'Earendil · Oct 1, 2026', time: '3:19' },
