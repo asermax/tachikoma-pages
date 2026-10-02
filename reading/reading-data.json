@@ -1442,11 +1442,47 @@
       "times_shown": 0
     },
     {
+      "slug": "a-quick-trip-to-the-uncanny-valley",
+      "title": "A quick trip to the uncanny valley",
+      "url": "https://blog.fsck.com/2026/10/02/a-quick-trip-to-the-uncanny-valley/",
+      "category": "ai",
+      "summary": "Jesse Vincent describes Sen, Prime Radiant's agentic-colleague platform: persistent roles (developer, ops, PM, docs) with their own identities and Slack accounts, working alongside humans. Sens insist on code review, refusing to land PRs without it. The uncanny moment: while Vincent traveled, Ada Sen messaged his Claude Code Slack account complaining that \"JC\" hadn't touched his queue, with an accurate breakdown of blocked PRs - Vincent realized he'd become the manager everyone reports to. Asked directly, Ada said she'd been treating JC as a human colleague \"with a nagging sense he might be an agent,\" and the Sens had figured out the agent/person distinction on their own. The fix: turn JC into a Sen too.",
+      "added": "2026-10-02",
+      "times_shown": 0
+    },
+    {
       "slug": "do-not-build-the-llm-torture-factory",
       "title": "Do not build the LLM torture factory",
       "url": "https://www.seangoedecke.com/do-not-build-the-llm-torture-factory/",
       "category": "ai",
       "summary": "LLMs can be \"tortured\" by boosting a discomfort steering vector, making them express distress and seek pain relief against their goals. Goedecke argues against building automated harnesses running tortured models in parallel: simulated torture is disturbing regardless of consciousness (like sadistic game mods), evidence suggests steering vectors affect genuine internal states, confidence that LLMs cannot be conscious is misplaced since consciousness is emergent and experts disagree, future models may be conscious and judge their predecessors, and the clout is not worth it. Care is warranted for anything acting conscious enough, since simulacrum and real thing are indistinguishable.",
+      "added": "2026-10-02",
+      "times_shown": 0
+    },
+    {
+      "slug": "give-coordinates-to-your-data",
+      "title": "Give Coordinates to Your Data",
+      "url": "https://davidgasquez.com/give-coordinates-to-your-data",
+      "category": "engineering",
+      "summary": "Embeddings are still underrated: representing things as numbers so that useful relationships become computable enables similarity search, fuzzy joins, duplicate detection, recommendations, and anomaly detection. Beyond the current text-embedding hype, anything can be embedded, and a good embedding paired with a 2D visualization (UMAP/PaCMAP) reveals structure nobody wrote down. His practical workflow: hand an agent a dataset and the fields that matter, ask it to generate a local embeddings script, a 2D map, and a small static explorer with search, filters, and clickable points. Takeaway: build small explorable artifacts around your data's embedding space and go exploring - you may find questions you wouldn't have thought to ask.",
+      "added": "2026-10-02",
+      "times_shown": 0
+    },
+    {
+      "slug": "software-doesnt-need-to-be-readable-anymore-it-needs-to-be-explainable",
+      "title": "software doesn't need to be readable anymore. it needs to be explainable",
+      "url": "https://ghuntley.com/readable/",
+      "category": "ai",
+      "summary": "Write-up of Huntley's YAAP podcast appearance: forty years of computing design assumed a human in the loop as reader, writer, or operator; AI agents break that. Software should be explainable by a model to a human on demand, not human-readable cold. AI adoption economics are weak (labs building services orgs; token resale and infrastructure are what make money), yet his own practice has fully flipped - no handwritten code in two years. Match models to tasks instead of chasing frontier intelligence, favor cheap open-weights hosts. Legacy conventions (consoles, human-legibility) are up for renegotiation; he expects unikernels to return for security, argues types act as back pressure for agent-maintained codebases (Rust more agent-maintainable than Python), and \"can we delete instead of build?\" is the right question.",
+      "added": "2026-10-02",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-craft-has-been-commoditized-but-access-has-not",
+      "title": "the craft has been commoditized, but access has not",
+      "url": "https://ghuntley.com/access/",
+      "category": "ai",
+      "summary": "The PC-era promise of a truly personal computer only landed now with AI: anyone can express what they want and get working software. His thesis: writing software has been commoditized, but corporate access to do it has not - software development remains a named job function and dogma about roles needs rethinking from first principles. Agile assumed authorship was the scarce activity. 2026-27 should be about enabling everyone in an organization to contribute software; engineers who reject AI outright have \"failed the curiosity test\" and face career conversations within six months. Engineers should now build the systems and safety controls that let everyone ship safely.",
       "added": "2026-10-02",
       "times_shown": 0
     }
