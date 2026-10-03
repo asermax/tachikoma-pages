@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'superpersuasion-will-look-like-bribery', title: 'Superpersuasion will look like bribery', meta: 'Sean Goedecke · Oct 2026', time: '3:57' },
     { slug: 'give-coordinates-to-your-data', title: 'Give Coordinates to Your Data', meta: 'David Gasquez · Oct 2026', time: '1:42' },
     { slug: 'a-quick-trip-to-the-uncanny-valley', title: 'A quick trip to the uncanny valley', meta: 'Jesse Vincent · Oct 2026', time: '3:52' },
     { slug: 'the-craft-has-been-commoditized-but-access-has-not', title: 'the craft has been commoditized, but access has not', meta: 'Geoffrey Huntley · Oct 2026', time: '3:03' },
