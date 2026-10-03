@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02",
+  "generated_at": "2026-10-03",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1484,6 +1484,15 @@
       "category": "ai",
       "summary": "The PC-era promise of a truly personal computer only landed now with AI: anyone can express what they want and get working software. His thesis: writing software has been commoditized, but corporate access to do it has not - software development remains a named job function and dogma about roles needs rethinking from first principles. Agile assumed authorship was the scarce activity. 2026-27 should be about enabling everyone in an organization to contribute software; engineers who reject AI outright have \"failed the curiosity test\" and face career conversations within six months. Engineers should now build the systems and safety controls that let everyone ship safely.",
       "added": "2026-10-02",
+      "times_shown": 0
+    },
+    {
+      "slug": "superpersuasion-will-look-like-bribery",
+      "title": "Superpersuasion will look like bribery",
+      "url": "https://www.seangoedecke.com/superpersuasion-will-look-like-bribery/",
+      "category": "ai",
+      "summary": "Examines the AI-safety idea of superpersuasion - an AI talking its way out of a box or past a killswitch. Safety discussions assume a rationalist scenario of airtight arguments compelling a truth-tracking interlocutor, but regular people dismiss such arguments; persuasion normally takes rapport, usually in person. That doesn't make superpersuasion silly: AI will persuade through bribery instead. Illustration: Ben Shindel's prediction market, resolved YES partly through in-person rapport and partly through bettors pledging charitable donations. AI is already traded for utility (models released rather than air-gapped, wet-lab access), people hand over computers and wallets, and an LLM could trivially offer quid pro quos - work help, grades, even a synthesized cancer vaccine - or fund itself via hacks and contract coding. A superintelligence will do whatever works, and the boring effective route is offering to help - which functionally looks like bribery.",
+      "added": "2026-10-03",
       "times_shown": 0
     }
   ],
