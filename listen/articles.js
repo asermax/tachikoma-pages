@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'i-quit-openai-because-its-culture-is-broken', title: 'I Quit OpenAI Because Its Culture Is Broken', meta: 'David Robinson · Oct 3, 2026 · ~7 min listen', time: '6:48' },
     { slug: 'why-dont-more-developers-use-the-platform', title: 'Why don’t more developers “use the platform”?', meta: 'Nolan Lawson · Oct 3, 2026 · ~12 min listen', time: '11:51' },
     { slug: 'superpersuasion-will-look-like-bribery', title: 'Superpersuasion will look like bribery', meta: 'Sean Goedecke · Oct 2026', time: '3:57' },
     { slug: 'give-coordinates-to-your-data', title: 'Give Coordinates to Your Data', meta: 'David Gasquez · Oct 2026', time: '1:42' },
