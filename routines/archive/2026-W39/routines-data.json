@@ -1,0 +1,189 @@
+{
+  "generated_at": "2026-10-04T02:01:05.735749-03:00",
+  "week_start": "2026-09-27",
+  "week_label": "September 27 - October 03, 2026",
+  "last_updated": "Sunday, October 04, 2026 at 02:01",
+  "stats": {
+    "completed": 6.833333333333333,
+    "planned": 15,
+    "display": "6.8 / 15"
+  },
+  "daily": {
+    "Sunday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 1
+    },
+    "Monday": {
+      "status": "done",
+      "completed": 3,
+      "total": 3
+    },
+    "Tuesday": {
+      "status": "partial",
+      "completed": 1,
+      "total": 3
+    },
+    "Wednesday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 3
+    },
+    "Thursday": {
+      "status": "partial",
+      "completed": 2,
+      "total": 3
+    },
+    "Friday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 1
+    },
+    "Saturday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    }
+  },
+  "goals": [
+    {
+      "name": "Wind-Down Routine",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "5 nights",
+      "target": "6 nights",
+      "progress_pct": 83
+    }
+  ],
+  "routines": [
+    {
+      "id": "basic-workout",
+      "name": "Basic Workout",
+      "emoji": "\ud83d\udcaa",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "pending"
+        },
+        {
+          "day": "Thu",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 2
+    },
+    {
+      "id": "music-practice",
+      "name": "Music Practice",
+      "emoji": "\ud83c\udfb7",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 1
+    },
+    {
+      "id": "piano-practice",
+      "name": "Piano Practice",
+      "emoji": "\ud83c\udfb9",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "1h",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "reading",
+      "name": "Reading",
+      "emoji": "\ud83d\udcd6",
+      "sessions": [
+        {
+          "day": "Sun",
+          "status": "pending"
+        },
+        {
+          "day": "Mon",
+          "status": "done"
+        },
+        {
+          "day": "Tue",
+          "status": "pending"
+        },
+        {
+          "day": "Wed",
+          "status": "pending"
+        },
+        {
+          "day": "Thu",
+          "status": "pending"
+        },
+        {
+          "day": "Fri",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "30min",
+      "comparison": "",
+      "done": 1,
+      "total": 6
+    },
+    {
+      "id": "rock-climbing",
+      "name": "Rock Climbing",
+      "emoji": "\ud83e\uddd7",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "done"
+        },
+        {
+          "day": "Thu",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 2,
+      "total": 2
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga",
+      "emoji": "\ud83e\uddd8",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        },
+        {
+          "day": "Wed",
+          "status": "pending"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 2
+    }
+  ],
+  "spirit": {
+    "state": "tired",
+    "emoji": "\ud83d\udc26",
+    "title": "\ud83d\udc26 Blossom Sparrow",
+    "image": "assets/tired.webp",
+    "description": "Your blossom sparrow hunches under grey drizzle and fog, feathers ruffled \u2014 weary little wings, needing rest."
+  }
+}
