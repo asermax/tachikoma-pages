@@ -1,43 +1,43 @@
 {
-  "generated_at": "2026-10-04T02:01:05.735749-03:00",
-  "week_start": "2026-09-27",
-  "week_label": "September 27 - October 03, 2026",
-  "last_updated": "Sunday, October 04, 2026 at 02:01",
+  "generated_at": "2026-10-04T17:06:43.611931-03:00",
+  "week_start": "2026-10-04",
+  "week_label": "October 04 - October 10, 2026",
+  "last_updated": "Sunday, October 04, 2026 at 17:06",
   "stats": {
-    "completed": 6.833333333333333,
-    "planned": 15,
-    "display": "6.8 / 15"
+    "completed": 0,
+    "planned": 0,
+    "display": "0 / 0"
   },
   "daily": {
     "Sunday": {
-      "status": "missed",
+      "status": "empty",
       "completed": 0,
-      "total": 1
+      "total": 0
     },
     "Monday": {
-      "status": "done",
-      "completed": 3,
-      "total": 3
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Tuesday": {
-      "status": "partial",
-      "completed": 1,
-      "total": 3
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Wednesday": {
-      "status": "missed",
+      "status": "empty",
       "completed": 0,
-      "total": 3
+      "total": 0
     },
     "Thursday": {
-      "status": "partial",
-      "completed": 2,
-      "total": 3
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Friday": {
-      "status": "missed",
+      "status": "empty",
       "completed": 0,
-      "total": 1
+      "total": 0
     },
     "Saturday": {
       "status": "empty",
@@ -50,9 +50,9 @@
       "name": "Wind-Down Routine",
       "emoji": "",
       "status": "pending",
-      "accumulated": "5 nights",
+      "accumulated": "0 nights",
       "target": "6 nights",
-      "progress_pct": 83
+      "progress_pct": 0
     }
   ],
   "routines": [
@@ -64,25 +64,6 @@
         {
           "day": "Tue",
           "status": "pending"
-        },
-        {
-          "day": "Thu",
-          "status": "done"
-        }
-      ],
-      "metrics_total": "",
-      "comparison": "",
-      "done": 1,
-      "total": 2
-    },
-    {
-      "id": "music-practice",
-      "name": "Music Practice",
-      "emoji": "\ud83c\udfb7",
-      "sessions": [
-        {
-          "day": "Wed",
-          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -91,33 +72,10 @@
       "total": 1
     },
     {
-      "id": "piano-practice",
-      "name": "Piano Practice",
-      "emoji": "\ud83c\udfb9",
-      "sessions": [
-        {
-          "day": "Mon",
-          "status": "done"
-        }
-      ],
-      "metrics_total": "1h",
-      "comparison": "",
-      "done": 1,
-      "total": 1
-    },
-    {
       "id": "reading",
       "name": "Reading",
       "emoji": "\ud83d\udcd6",
       "sessions": [
-        {
-          "day": "Sun",
-          "status": "pending"
-        },
-        {
-          "day": "Mon",
-          "status": "done"
-        },
         {
           "day": "Tue",
           "status": "pending"
@@ -132,13 +90,13 @@
         },
         {
           "day": "Fri",
-          "status": "skipped"
+          "status": "pending"
         }
       ],
-      "metrics_total": "30min",
+      "metrics_total": "",
       "comparison": "",
-      "done": 1,
-      "total": 6
+      "done": 0,
+      "total": 4
     },
     {
       "id": "rock-climbing",
@@ -147,17 +105,13 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "done"
-        },
-        {
-          "day": "Thu",
-          "status": "done"
+          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 2,
-      "total": 2
+      "done": 0,
+      "total": 1
     },
     {
       "id": "yoga",
@@ -165,25 +119,21 @@
       "emoji": "\ud83e\uddd8",
       "sessions": [
         {
-          "day": "Mon",
-          "status": "done"
-        },
-        {
           "day": "Wed",
           "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 1,
-      "total": 2
+      "done": 0,
+      "total": 1
     }
   ],
   "spirit": {
-    "state": "tired",
+    "state": "dormant",
     "emoji": "\ud83d\udc26",
     "title": "\ud83d\udc26 Blossom Sparrow",
-    "image": "assets/tired.webp",
-    "description": "Your blossom sparrow hunches under grey drizzle and fog, feathers ruffled \u2014 weary little wings, needing rest."
+    "image": "assets/dormant.webp",
+    "description": "Your blossom sparrow sleeps tucked under its wing in moonlight beneath a starry spring sky \u2014 deep, peaceful rest."
   }
 }
