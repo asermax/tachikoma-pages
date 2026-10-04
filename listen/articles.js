@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'agents-dont-need-memory-they-need-documentation', title: 'Agents Don\'t Need Memory. They Need Documentation.', meta: 'Kevin Liao · Oct 2026 · ~7 min listen', time: '6:43' },
     { slug: 'designing-mcp-gateway-ubers-mcp-management-platform', title: 'Designing MCP Gateway: Uber\'s MCP Management Platform', meta: 'Uber Engineering · Oct 2, 2026 · ~18 min listen', time: '17:50' },
     { slug: 'i-quit-openai-because-its-culture-is-broken', title: 'I Quit OpenAI Because Its Culture Is Broken', meta: 'David Robinson · Oct 3, 2026 · ~7 min listen', time: '6:48' },
     { slug: 'why-dont-more-developers-use-the-platform', title: 'Why don’t more developers “use the platform”?', meta: 'Nolan Lawson · Oct 3, 2026 · ~12 min listen', time: '11:51' },
