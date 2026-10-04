@@ -1496,6 +1496,15 @@
       "times_shown": 0
     },
     {
+      "slug": "agents-dont-need-memory-they-need-documentation",
+      "title": "Agents Don't Need Memory. They Need Documentation.",
+      "url": "https://liao.gg/blog/agents-dont-need-memory",
+      "category": "ai",
+      "summary": "Argues that RAG-based agent memory plugins (transcript mining + vector DB + similarity injection) solve the wrong problem: retrieval is driven by embedding similarity, snippets lose context, stale memories persist, and the store is unauditable. Proposes document-based memory instead — a structured Markdown \"brain\" of instructions, specs, decisions, and research that the agent consults before working and updates afterward, with a prompt → consult → build → update loop. Packaged as the open-source Operator Memory plugin (github.com/aerovato/operator-memory).",
+      "added": "2026-10-04",
+      "times_shown": 0
+    },
+    {
       "slug": "designing-mcp-gateway-ubers-mcp-management-platform",
       "title": "Designing MCP Gateway: Uber's MCP Management Platform",
       "url": "https://x.com/UberEng/status/2106071967619322330",
