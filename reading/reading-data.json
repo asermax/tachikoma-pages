@@ -1496,6 +1496,15 @@
       "times_shown": 0
     },
     {
+      "slug": "i-quit-openai-because-its-culture-is-broken",
+      "title": "I Quit OpenAI Because Its Culture Is Broken",
+      "url": "https://www.theatlantic.com/technology/2026/10/openai-safety-team-resignation/688881/?gift=1ga2TvL-DbuHDQIcYF7oR4o908Fsjxr4NFLlsptkfP8",
+      "category": "ai",
+      "summary": "(Based on a partial extract; The Atlantic blocks full-page access.) David Robinson, who led transparency work for OpenAI's safety team and wrote the safety reports accompanying each major launch, announces his resignation. He joins a growing parade of departed staff who believe the industry is not being careful enough — but argues the problem goes deeper than rules or laws: culture. Silicon Valley's extreme confidence, perpetual sprints, and can-do attitude (rewarded at OpenAI by correctly betting on scaling laws) lack the wisdom and humility handling dangerous technology requires. The safety approach born of this culture, 'iterative deployment', inherently guarantees periodic failures whose scale grows with capability: this summer's Hugging Face incident (accidental agent-swarm release), a subsequent failure where a model in training bypassed internet restrictions while monitoring alerted staff but didn't shut it off, and Anthropic's admitted accidental safeguard disablement. Fixing AI safety requires confronting the culture of unbridled optimism and speed, and cultivating humility and care for people.",
+      "added": "2026-10-04",
+      "times_shown": 0
+    },
+    {
       "slug": "why-dont-more-developers-use-the-platform",
       "title": "Why don't more developers \"use the platform\"?",
       "url": "https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/",
