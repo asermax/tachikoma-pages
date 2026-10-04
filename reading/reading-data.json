@@ -1496,6 +1496,15 @@
       "times_shown": 0
     },
     {
+      "slug": "designing-mcp-gateway-ubers-mcp-management-platform",
+      "title": "Designing MCP Gateway: Uber's MCP Management Platform",
+      "url": "https://x.com/UberEng/status/2106071967619322330",
+      "category": "ai",
+      "summary": "Uber Engineering describes the design of MCP Gateway, a foundational microservice that centralizes all Model Context Protocol (MCP) interactions between AI agents and Uber's backend services. As MCP adoption grew from ad-hoc, fragmented team-by-team integrations, Uber faced duplicated infrastructure, poor tool discoverability, and inconsistent security; the Gateway solves this with two main components: an MCP Registry (control plane) that serves as a single source of truth for discovery, ownership, and enablement, and a Proxy Gateway (data plane) that translates MCP calls into HTTP, gRPC, or TChannel requests and back, letting existing APIs become agent-callable tools without modifying downstream services. The platform currently hosts over 800 MCP servers and 5,000+ tools. A key innovation is AutoCrawler, a Cadence-powered discovery engine that continuously scans Uber's IDL registry (Protobuf/Thrift) and native MCP server heartbeats (via the MCPFx framework), automatically generating virtual MCP servers, LLM-written agent-friendly tool descriptions, and JSON-RPC 2.0 schemas — with all tools registered disabled-by-default so owning teams must review and explicitly enable them ('discovery doesn't imply exposure'). Third-party integrations (e.g., Jira, Google) are supported via token exchange services, and the data plane enforces tool-level authorization plus automatic PII redaction, with runtime execution delegated to the Muttley service-mesh sidecar. Scaling exposed context-bloat problems, addressed by three mechanisms: Omni MCP (single proxy enabling incremental tool discovery), Response Projection (GraphQL-like field trimming of tool responses), and Code Mode (MCP calls routed through the aifx CLI so coding agents discover and invoke tools without loading definitions into context — now company default). Core takeaway: existing APIs are the fastest way to give agents tools, and the hard part of agentic systems at scale isn't the AI but the connective tissue — discovery, security, and governance.",
+      "added": "2026-10-04",
+      "times_shown": 0
+    },
+    {
       "slug": "i-quit-openai-because-its-culture-is-broken",
       "title": "I Quit OpenAI Because Its Culture Is Broken",
       "url": "https://www.theatlantic.com/technology/2026/10/openai-safety-team-resignation/688881/?gift=1ga2TvL-DbuHDQIcYF7oR4o908Fsjxr4NFLlsptkfP8",
