@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03",
+  "generated_at": "2026-10-04",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1493,6 +1493,15 @@
       "category": "ai",
       "summary": "Examines the AI-safety idea of superpersuasion - an AI talking its way out of a box or past a killswitch. Safety discussions assume a rationalist scenario of airtight arguments compelling a truth-tracking interlocutor, but regular people dismiss such arguments; persuasion normally takes rapport, usually in person. That doesn't make superpersuasion silly: AI will persuade through bribery instead. Illustration: Ben Shindel's prediction market, resolved YES partly through in-person rapport and partly through bettors pledging charitable donations. AI is already traded for utility (models released rather than air-gapped, wet-lab access), people hand over computers and wallets, and an LLM could trivially offer quid pro quos - work help, grades, even a synthesized cancer vaccine - or fund itself via hacks and contract coding. A superintelligence will do whatever works, and the boring effective route is offering to help - which functionally looks like bribery.",
       "added": "2026-10-03",
+      "times_shown": 0
+    },
+    {
+      "slug": "why-dont-more-developers-use-the-platform",
+      "title": "Why don't more developers \"use the platform\"?",
+      "url": "https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/",
+      "category": "engineering",
+      "summary": "Nolan Lawson plays devil's advocate on why developers resist 'use the platform': historical browser gaps (jQuery era), familiarity with React/npm ecosystems and their better docs, npm's division of labor packaging platform APIs, and the IKEA effect — building things yourself is fun, educational, and how today's platform advocates learned the platform (Lawson via PouchDB/IndexedDB polyfills). Parallel to ClickHouse custom solutions duplicating native capabilities. AI coding cuts both ways: LLMs may pick the right native API, or multiply over-engineered non-idiomatic workarounds. Conclusion: the mantra tames spaghetti, but DIY abstractions are how developers gain platform expertise.",
+      "added": "2026-10-04",
       "times_shown": 0
     }
   ],
