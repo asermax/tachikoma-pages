@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04",
+  "generated_at": "2026-10-05",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1529,6 +1529,24 @@
       "category": "engineering",
       "summary": "Nolan Lawson plays devil's advocate on why developers resist 'use the platform': historical browser gaps (jQuery era), familiarity with React/npm ecosystems and their better docs, npm's division of labor packaging platform APIs, and the IKEA effect — building things yourself is fun, educational, and how today's platform advocates learned the platform (Lawson via PouchDB/IndexedDB polyfills). Parallel to ClickHouse custom solutions duplicating native capabilities. AI coding cuts both ways: LLMs may pick the right native API, or multiply over-engineered non-idiomatic workarounds. Conclusion: the mantra tames spaghetti, but DIY abstractions are how developers gain platform expertise.",
       "added": "2026-10-04",
+      "times_shown": 0
+    },
+    {
+      "slug": "ai-is-now-si-super-intelligence-isnt-superior",
+      "title": "AI Is Now SI: Super Intelligence Isn't Superior",
+      "url": "https://tej.as/blog/super-intelligence-isnt-superior",
+      "category": "ai",
+      "summary": "Reacting to a satirical executive order rebranding \"AI\" as \"Super Intelligence\" (SI), Tejas Kumar argues the rename erases \"artificial\" — the fact humans made these systems — and likens it to the golden calf: models are built from \"our own earrings,\" human text recast as an object of worship. The essay's key distinction: \"super\" is a performance claim (real — chess, Go, protein folding, IMO math), \"superior\" is a worth claim no benchmark measures; the BCG/Harvard \"jagged frontier\" study shows consultants did worse with GPT-4 outside its capabilities. Human \"bugs\" — forgetting, irrational loyalty, feeling others' pain — are exactly what benchmarks can't capture. Super intelligence is real; superiority is a category error.",
+      "added": "2026-10-05",
+      "times_shown": 0
+    },
+    {
+      "slug": "what-is-webmcp-how-my-website-gives-ai-agents-tools",
+      "title": "What Is WebMCP? How My Website Gives AI Agents Tools",
+      "url": "https://tej.as/blog/what-is-webmcp",
+      "category": "ai",
+      "summary": "Introduces WebMCP, a proposed W3C Web ML CG standard letting a web page expose JavaScript tools (name, description, JSON Schema, function) to AI agents in the browser — replacing fragile screenshot-and-click scraping with explicit structured tool calls. Tejas ships four read-only tools on tej.as, sourced from the same modules that render the visible content so agent answers match what humans see; unlike a standalone MCP server, it's a few functions in the existing site, not a second product. Chrome-only for now (origin trial from Chrome 149, expires March 2027; API moved from navigator.modelContext to document.modelContext). ~780 lines of TypeScript to implement.",
+      "added": "2026-10-05",
       "times_shown": 0
     }
   ],
