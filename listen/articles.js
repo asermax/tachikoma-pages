@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'what-is-webmcp-how-my-website-gives-ai-agents-tools', title: 'What Is WebMCP? How My Website Gives AI Agents Tools', meta: 'Tejas Kumar · Oct 2026 · ~12 min listen', time: '12:20' },
     { slug: 'ai-is-now-si-super-intelligence-isnt-superior', title: 'AI Is Now SI: Super Intelligence Isn\'t Superior', meta: 'Tejas Kumar · Oct 2026 · ~23 min listen', time: '22:37' },
     { slug: 'agents-dont-need-memory-they-need-documentation', title: 'Agents Don\'t Need Memory. They Need Documentation.', meta: 'Kevin Liao · Oct 2026 · ~7 min listen', time: '6:43' },
     { slug: 'designing-mcp-gateway-ubers-mcp-management-platform', title: 'Designing MCP Gateway: Uber\'s MCP Management Platform', meta: 'Uber Engineering · Oct 2, 2026 · ~18 min listen', time: '17:50' },
