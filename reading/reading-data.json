@@ -1532,15 +1532,6 @@
       "times_shown": 0
     },
     {
-      "slug": "ai-is-now-si-super-intelligence-isnt-superior",
-      "title": "AI Is Now SI: Super Intelligence Isn't Superior",
-      "url": "https://tej.as/blog/super-intelligence-isnt-superior",
-      "category": "ai",
-      "summary": "Reacting to a satirical executive order rebranding \"AI\" as \"Super Intelligence\" (SI), Tejas Kumar argues the rename erases \"artificial\" — the fact humans made these systems — and likens it to the golden calf: models are built from \"our own earrings,\" human text recast as an object of worship. The essay's key distinction: \"super\" is a performance claim (real — chess, Go, protein folding, IMO math), \"superior\" is a worth claim no benchmark measures; the BCG/Harvard \"jagged frontier\" study shows consultants did worse with GPT-4 outside its capabilities. Human \"bugs\" — forgetting, irrational loyalty, feeling others' pain — are exactly what benchmarks can't capture. Super intelligence is real; superiority is a category error.",
-      "added": "2026-10-05",
-      "times_shown": 0
-    },
-    {
       "slug": "an-application-in-lisp-you-grow-by-talking-to-it",
       "title": "an application in lisp you grow by talking to it",
       "url": "https://ghuntley.com/lisp/",
@@ -3127,6 +3118,16 @@
       "summary": "Earendil, who previously and publicly dismissed MCP for Pi, announces reversal: MCP is now a supported core feature. Driven by MCP's improvements and the realization that the required interpreter sandbox was generally useful (e.g. for Jev). Argues MCP's biggest remaining weakness is composability; advocates servers behave like 'OpenAPI with intelligent tool discovery', returning structured data instead of token-optimized text. Introduces Codemode, a harness-side JavaScript sandbox (shippable as WASM) letting agents orchestrate and combine tool calls, with state kept in the session transcript rather than the filesystem. Goal: participate in shaping the ecosystem, particularly in small harnesses.",
       "added": "2026-09-29",
       "read": "2026-10-02",
+      "has_notes": true
+    },
+    {
+      "slug": "ai-is-now-si-super-intelligence-isnt-superior",
+      "title": "AI Is Now SI: Super Intelligence Isn't Superior",
+      "url": "https://tej.as/blog/super-intelligence-isnt-superior",
+      "category": "ai",
+      "summary": "Reacting to a satirical executive order rebranding \"AI\" as \"Super Intelligence\" (SI), Tejas Kumar argues the rename erases \"artificial\" — the fact humans made these systems — and likens it to the golden calf: models are built from \"our own earrings,\" human text recast as an object of worship. The essay's key distinction: \"super\" is a performance claim (real — chess, Go, protein folding, IMO math), \"superior\" is a worth claim no benchmark measures; the BCG/Harvard \"jagged frontier\" study shows consultants did worse with GPT-4 outside its capabilities. Human \"bugs\" — forgetting, irrational loyalty, feeling others' pain — are exactly what benchmarks can't capture. Super intelligence is real; superiority is a category error.",
+      "added": "2026-10-05",
+      "read": "2026-10-05",
       "has_notes": true
     }
   ]
