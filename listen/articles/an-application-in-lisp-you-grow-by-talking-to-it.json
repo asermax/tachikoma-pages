@@ -1,0 +1,118 @@
+{
+  "title": "an application in lisp you grow by talking to it",
+  "meta": "Geoffrey Huntley · Oct 5 2026 · ~6 min listen",
+  "body": "<div class=\"chunk\"><p>It's kind of strange seeing all these discussions about software factories... and the like. It's also strange to see conversations about programming languages or claims that $language is best, as if that will remain true going forward. It's very clear, however, that programming languages will converge toward something, but that 'something' is undefined for now.</p></div>\n<div class=\"chunk\"><p>What I haven't seen is people really deeply understanding the power of the new substrate that we have. People are still too fixated on what they have now and how systems have been built to rethink fundamentally how much things can change.</p></div>\n<div class=\"chunk\"><blockquote>\n<p>To me, a software factory isn't just about process automation; it isn't about automating everything you've got as it is now. It's about using this substrate so you can develop your product while it runs whilst in the product itself.</p>\n<p>Everyone (regardless of their discipline or background) in the company should be able to develop the product in the product without having to go to some external vendor supplied tool.</p>\n<p>The only tool that exists is your product itself. The product should build the product from the product.</p>\n</blockquote></div>\n<div class=\"chunk\"><p>earlier explorations into recursive product development at the begining on the year</p></div>\n<div class=\"chunk\"><p>In a future blog post, I'll go further into what it means for the product to develop the product, in the product, but for now I have one simple thing for you to imagine:</p></div>\n<div class=\"chunk\"><blockquote>\n<p>Why is software built the way it is now, rather than grown through iterative use of LLMs? What if you could develop your application just by chatting with it? Live and interactive with no compilation steps.</p>\n</blockquote></div>\n<div class=\"chunk\"><p>To demonstrate this, I built Jiti, a small kernel for growing a running Lisp application through conversation with an LLM. You ask for a capability, the model writes Lisp, and the application permanently acquires that capability until you ask for that capability to be removed.</p></div>\n<div class=\"chunk\"><p>The kernel supplies the machinery to inspect, change, execute, and recover a managed Lisp world. Application behavior comes from whatever you decide to add to the application by prompting for those outcomes. With Jiti, you can start from a clean slate or modify an existing application to add more behavior just by prompting it.</p></div>\n<div class=\"chunk image-chunk\"><img src=\"images/an-application-in-lisp-you-grow-by-talking-to-it/a-request-to-add-a-capability-goes-to-an.webp\" alt=\"A request to add a capability goes to an external language model with instructions, registered tool descriptions and observed application state. The model requests a tool call. The controller validates and routes it to the persistent worker, which evaluates Lisp in the running application. Actual values, checks or a live pause return through the controller to inform the next model step. Accepted definitions and managed data remain available for later requests. Ordinary Lisp function calls do not require inference.\" loading=\"lazy\" /><p class=\"img-caption\">A request to add a capability goes to an external language model with instructions, registered tool descriptions and observed application state. The model requests a tool call. The controller validates and routes it to the persistent worker, which evaluates Lisp in the running application. Actual values, checks or a live pause return through the controller to inform the next model step. Accepted definitions and managed data remain available for later requests. Ordinary Lisp function calls do not require inference.</p></div>\n<div class=\"chunk\"><p>The source code is available on GitHub, and I encourage you to run it and play around with it. It is very generic, in the sense that it can do literally anything you want. All you have to do is ask, and it will program that capability into the application.</p></div>\n<div class=\"chunk\"><p>GitHub - ghuntley/jiti: Live Common Lisp image repair with OpenAI tools, persistent revisions, and a conversational CLI</p></div>\n<div class=\"chunk\"><p>How it works is relatively simple. At a high level, an OpenAI model receives your request, instructions for operating the application, tool definitions, and observations of its current state. The kernel can ask to inspect the available functions, read a definition, propose new source, or execute an expression.</p></div>\n<div class=\"chunk\"><p>Once a definition is accepted, it is an ordinary Lisp function. Calling it does not inherently require another inference request. You can call it from Lisp, from another application function, or through the chat interface.</p></div>\n<div class=\"chunk image-chunk\"><img src=\"images/an-application-in-lisp-you-grow-by-talking-to-it/image-2.webp\" alt=\"\" loading=\"lazy\" /></div>\n<div class=\"chunk\"><p>The OpenAI model is used to extend a program, while the running Lisp world holds the resulting functionality.</p></div>\n<div class=\"chunk\"><p>The agent tool interface has two useful intentions.</p></div>\n<div class=\"chunk\"><ul>\n<li><code>develop_form</code> adds, redefines or removes functionality.</li>\n<li><code>execute_form</code> calls functionality that exists, including combinations of existing functions.</li>\n</ul></div>\n<div class=\"chunk\"><p>Both use the same evaluator and transaction machinery. The distinction helps the model choose whether the user is asking to change the application or simply use it.</p></div>\n<div class=\"chunk\"><p>Suppose I've already asked the application to add <code>uppercase-string</code> and r<code>everse-string</code>. I can then prompt the kernel to uppercase some text and reverse the result. The composition is just Lisp:</p></div>\n<div class=\"chunk\"><pre><code class=\"language-lisp\">(reverse-string (uppercase-string &quot;Hello&quot;))\n</code></pre></div>\n<div class=\"chunk\"><p>If I want that combination as a reusable capability, I can prompt it to save that as a function.</p></div>\n<div class=\"chunk\"><pre><code class=\"language-lisp\">(defun shout-backwards (text)\n  (reverse-string (uppercase-string text)))\n</code></pre></div>\n<div class=\"chunk\"><p>That function joins the catalog with its arguments and source, ready for inspection and later use. A future request can discover it and build on it. The application accumulates an executable vocabulary through use. Lisp already gives us the composition rules; the kernel keeps the evolving definitions available and their managed effects accountable.</p></div>\n<div class=\"chunk image-chunk\"><img src=\"images/an-application-in-lisp-you-grow-by-talking-to-it/the-controller-validates-tool-arguments.webp\" alt=\"The controller validates tool arguments and sends actions one at a time to a persistent worker, receiving observations and results in return. The worker owns evaluation, the live stack and active restarts. Inside that worker, the world adapter provides managed code and data, the function catalogue, checkpoint and restore, and durable export and import. Caller-supplied safety checks and goals are assessed at safe points. Safety determines whether a candidate may be kept; goals determine completion. Accepted managed changes publish durable revisions. The reference adapter covers named functions and readable table data.\" loading=\"lazy\" /><p class=\"img-caption\">The controller validates tool arguments and sends actions one at a time to a persistent worker, receiving observations and results in return. The worker owns evaluation, the live stack and active restarts. Inside that worker, the world adapter provides managed code and data, the function catalogue, checkpoint and restore, and durable export and import. Caller-supplied safety checks and goals are assessed at safe points. Safety determines whether a candidate may be kept; goals determine completion. Accepted managed changes publish durable revisions. The reference adapter covers named functions and readable table data.</p></div>\n<div class=\"chunk\"><p>Lisp deserves the credit for the interactive programming machinery. Definitions, inspection, conditions, and restarts have been there for decades. It's kind of cool, huh?</p></div>\n<div class=\"chunk\"><p>To me, the idea that an agent writes source code and then there's a costly CI/CD compilation phase is now truly undefined now that we have AI. The only limiting factor will really be people's curiosity about what they can do with this new substrate...</p></div>\n",
+  "audio": "an-application-in-lisp-you-grow-by-talking-to-it.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      21.05,
+      35.1,
+      67.45,
+      72.125,
+      82.425,
+      95.875,
+      113.375,
+      134.0,
+      163.375,
+      179.225,
+      188.5,
+      208.225,
+      222.325,
+      232.525,
+      240.15,
+      243.825,
+      254.375,
+      265.35,
+      277.7,
+      283.475,
+      290.325,
+      294.425,
+      315.9,
+      354.1,
+      365.575
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14
+      ],
+      [
+        15
+      ],
+      [
+        16
+      ],
+      [
+        17
+      ],
+      [
+        18
+      ],
+      [
+        19
+      ],
+      [
+        20
+      ],
+      [
+        21
+      ],
+      [
+        22
+      ],
+      [
+        23
+      ],
+      [
+        24
+      ],
+      [
+        25
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://ghuntley.com/lisp/"
+}
