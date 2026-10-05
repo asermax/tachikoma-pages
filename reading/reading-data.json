@@ -1541,6 +1541,24 @@
       "times_shown": 0
     },
     {
+      "slug": "an-application-in-lisp-you-grow-by-talking-to-it",
+      "title": "an application in lisp you grow by talking to it",
+      "url": "https://ghuntley.com/lisp/",
+      "category": "ai",
+      "summary": "Geoffrey Huntley argues that discussions about 'software factories' and which programming language is 'best' miss the point of the new LLM substrate. Instead of automating existing processes, he envisions developing a product while it runs, inside the product itself — where the product builds the product, and anyone in a company can extend it without external tooling. To demonstrate, he built Jiti, a small kernel for 'growing' a running Common Lisp application through conversation with an LLM. The model gets two tools: develop_form (add, redefine, or remove functionality) and execute_form (call existing functionality). Once accepted, a definition becomes an ordinary Lisp function requiring no further inference — the application accumulates an 'executable vocabulary', with changes persisted as durable revisions. Huntley credits Lisp's decades-old interactive programming machinery as what makes this possible. His conclusion: with AI, the traditional compile/CI-CD loop is 'truly undefined', rapid application development is back, and the only real limit is curiosity.",
+      "added": "2026-10-05",
+      "times_shown": 0
+    },
+    {
+      "slug": "fragments-october-4",
+      "title": "Fragments: October 4",
+      "url": "https://martinfowler.com/fragments/2026-10-04.html",
+      "category": "ai",
+      "summary": "A collection of short fragments by Martin Fowler, mostly on AI and the software profession. Fowler reflects on LLM consciousness ('we shipped the id and forgot the superego', via Forbidden Planet), arguing we are shifting from 'building' deterministic systems to 'nurturing' inferential ones — unlike traditional bugs, LLM misbehavior offers no simple fix. He covers the deportation of Ola Bini from Ecuador after a years-long prosecution he describes as bogus. On the code-reading question: he links Huntley's claim that human-readable code is no longer the goal to projectional editing, and cites Sam Ruby's argument that high-level languages like Rails remain valuable as compact, precise specifications — compiling a 60,000-token Rails app to C yields 4 million tokens, overwhelming LLM context. Unmesh Joshi's point that code serves both as machine instructions and as a conceptual model rounds it out: coding's role is changing, not disappearing. A final fragment notes Google's latest model 'knows less, but pretends less.'",
+      "added": "2026-10-05",
+      "times_shown": 0
+    },
+    {
       "slug": "what-is-webmcp-how-my-website-gives-ai-agents-tools",
       "title": "What Is WebMCP? How My Website Gives AI Agents Tools",
       "url": "https://tej.as/blog/what-is-webmcp",
