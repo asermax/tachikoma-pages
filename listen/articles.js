@@ -2,7 +2,6 @@ const ARTICLES = [
     { slug: 'an-application-in-lisp-you-grow-by-talking-to-it', title: 'an application in lisp you grow by talking to it', meta: 'Geoffrey Huntley · Oct 5 2026 · ~6 min listen', time: '6:21' },
     { slug: 'fragments-october-4', title: 'Fragments: October 4', meta: 'Martin Fowler · Oct 4 2026 · ~9 min listen', time: '8:31' },
     { slug: 'what-is-webmcp-how-my-website-gives-ai-agents-tools', title: 'What Is WebMCP? How My Website Gives AI Agents Tools', meta: 'Tejas Kumar · Oct 2026 · ~12 min listen', time: '12:20' },
-    { slug: 'ai-is-now-si-super-intelligence-isnt-superior', title: 'AI Is Now SI: Super Intelligence Isn\'t Superior', meta: 'Tejas Kumar · Oct 2026 · ~23 min listen', time: '22:37' },
     { slug: 'agents-dont-need-memory-they-need-documentation', title: 'Agents Don\'t Need Memory. They Need Documentation.', meta: 'Kevin Liao · Oct 2026 · ~7 min listen', time: '6:43' },
     { slug: 'designing-mcp-gateway-ubers-mcp-management-platform', title: 'Designing MCP Gateway: Uber\'s MCP Management Platform', meta: 'Uber Engineering · Oct 2, 2026 · ~18 min listen', time: '17:50' },
     { slug: 'i-quit-openai-because-its-culture-is-broken', title: 'I Quit OpenAI Because Its Culture Is Broken', meta: 'David Robinson · Oct 3, 2026 · ~7 min listen', time: '6:48' },
