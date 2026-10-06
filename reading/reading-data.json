@@ -1557,6 +1557,15 @@
       "summary": "Introduces WebMCP, a proposed W3C Web ML CG standard letting a web page expose JavaScript tools (name, description, JSON Schema, function) to AI agents in the browser — replacing fragile screenshot-and-click scraping with explicit structured tool calls. Tejas ships four read-only tools on tej.as, sourced from the same modules that render the visible content so agent answers match what humans see; unlike a standalone MCP server, it's a few functions in the existing site, not a second product. Chrome-only for now (origin trial from Chrome 149, expires March 2027; API moved from navigator.modelContext to document.modelContext). ~780 lines of TypeScript to implement.",
       "added": "2026-10-05",
       "times_shown": 0
+    },
+    {
+      "slug": "what-is-codemode",
+      "title": "What is Codemode",
+      "url": "https://lucumr.pocoo.org/2026/10/6/codemode/",
+      "category": "ai",
+      "summary": "Armin Ronacher explains Codemode, added to his Pi coding agent alongside 1.0 MCP support, building on his argument that agents should compose tools via code rather than loading many tools into context. Key insight: split between the trusted harness (brain) and the sandboxed execution environment (hands). Bash can only compose programs, but some capabilities need native harness tools — so Codemode lets the LLM run sandboxed JavaScript (QuickJS WASM, no network/filesystem/timers) on the harness side to issue and compose tool calls. This enables concurrency, structured handling of large outputs without polluting context, persistent state via a transcript store, and APIs that don't fit as regular tools (image generation, classifier models, sub-agent orchestration). It also changes MCP usage: tools are discovered and called programmatically inside Codemode instead of being exposed to the model, shown with Sentry. He criticizes double-escaping awkwardness of JS-string-accepting servers (Cloudflare) and lists what MCP needs: structured JSON output via outputSchema, consistent result shapes, binary data support, and composable cross-server tool search. Not a reversal of his pro-CLI stance; open questions remain around durability, deterministic languages like Starlark, and small-model support.",
+      "added": "2026-10-06",
+      "times_shown": 0
     }
   ],
   "archive": [
