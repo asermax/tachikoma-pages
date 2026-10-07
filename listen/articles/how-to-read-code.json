@@ -1,0 +1,90 @@
+{
+  "title": "How to read code",
+  "meta": "Sean Goedecke · Oct 7, 2026 · ~6 min listen",
+  "body": "<div class=\"chunk\"><p>Everyone knows how to read a book. Beginning at the first page, you read each word in order, stopping periodically to think, until you arrive at the last word on the last page. That’s how you read a newspaper article, or a poem, or an email. Why would reading code be any different?</p></div>\n<div class=\"chunk\"><h3>Why code is different</h3></div>\n<div class=\"chunk\"><p>English text is designed to be read in order. In fact, there are almost no constraints on the order of a text aside from how you want the reader to consume it. In writing this post, I could put the ideas I want to convey in any order I like. Code, on the other hand, is designed to be <em>run</em> by a computer. The order is thus primarily determined by non-human factors. I cannot simply move a line of code to the beginning of a file or function because I think it provides a better introduction to the program for human readers.</p></div>\n<div class=\"chunk\"><p>The other big difference is that English text is always read as a final product, while code is usually read as a <em>diff</em>. We software engineers spend most of our time reading subtle changes to existing code, not brand-new programs. Imagine if reading this post was like that. You would read each successive draft in the order I wrote them, consuming the post as a changed sentence here and a new sentence there. It would be easy to lose track of the overall flow.</p></div>\n<div class=\"chunk\"><p>The third reason — and I say this as a lover of literature and poetry — is that code is much more structurally complex than English texts. Even famously difficult books are <em>syntactically</em> simpler than most computer programs (for instance, grammatical dependencies are largely bounded by a single paragraph, while code dependencies can stretch across the entire codebase). Their primary difficulty lies in understanding the nuances of human nature being discussed, not in understanding what each word’s grammatical function is. Large codebases are also just longer: <em>War and Peace</em> contains around 600,000 words, while most large modern codebases have that many <em>lines</em>.</p></div>\n<div class=\"chunk\"><h3>People are bad at reading code</h3></div>\n<div class=\"chunk\"><p>As I’ve said <a href=\"https://www.seangoedecke.com/nobody-knows-how-software-products-work/\" target=\"_blank\" rel=\"noopener\">many</a> <a href=\"https://www.seangoedecke.com/in-defense-of-not-understanding-your-codebase/\" target=\"_blank\" rel=\"noopener\">times</a>, large computer programs are simply too complex for a single person to fully understand. Reading code in a large program is thus a process of <em>compromise</em>: of deciding which parts to thoroughly grasp and which parts to gloss over; or of portioning out your finite mental capacity across the codebase.</p></div>\n<div class=\"chunk\"><p>Because of all this, <strong>most people read code very badly</strong>. They struggle through it front-to-back, like a book, and lose track of the execution flow. Or they just read through the diff and miss the significance of un-edited parts of the code. Or they simply are defeated by the complexity, give up and just guess what it means. How can you do better?</p></div>\n<div class=\"chunk\"><h3>How I read code</h3></div>\n<div class=\"chunk\"><p>The best article I’ve read about reading code is <a href=\"https://radimentary.wordpress.com/2020/05/16/of-math-and-memory-part-3-final/\" target=\"_blank\" rel=\"noopener\">this piece</a> about reading mathematics papers, which have a similar structure. The author describes a technique called “dyadic scanning”. Instead of reading slowly and sequentially, you make several passes: first to figure out the overall structure, then the sub-structure, and then finally the details.</p></div>\n<div class=\"chunk\"><p>For code, this means reading out-of-order. I like to pick an important path (say, the happy path for the feature introduced in the diff) and trace through which functions are calling which other functions, just to get a sense of the flow. Only once I’ve got a good sense of that do I pay close attention to what those functions are actually doing.</p></div>\n<div class=\"chunk\"><p>Usually I do multiple passes, each following a different thread. I’ll take a function or a piece of data and try to figure out how it’s used, fanning out to multiple call-sites (including ones outside the diff) as I go. For small diffs, I just ctrl+f for the function name to jump around; for large diffs, I open it in-editor and ctrl+click for easier navigation. I try to be ruthlessly focused on just the thing I’m looking at right now: everything else gets treated as a black box.</p></div>\n<div class=\"chunk\"><p>Once I’m confident I understand the diff, only then will I sit down and carefully read it end-to-end. The purpose of that read is less to learn about the structure — which I should already know by this point — than to catch any weird bits of code I hadn’t noticed in previous out-of-order passes. If I do see anything unusual, I then go back to doing passes.</p></div>\n<div class=\"chunk\"><p>This might sound slow. But in fact each pass is very fast, since I’m not painstakingly puzzling through each line of code.</p></div>\n<div class=\"chunk\"><h3>Can’t AI just do it for you?</h3></div>\n<div class=\"chunk\"><p>Many people are now saying that you don’t have to read code anymore: either because LLMs now produce reliably high-quality code without oversight, or because you can simply ask a reviewer LLM to read the code for you. I think both of these ideas are false.</p></div>\n<div class=\"chunk\"><p>Obviously the quality of LLM code is context-dependent. As I wrote in <a href=\"https://www.seangoedecke.com/pure-and-impure-engineering/\" target=\"_blank\" rel=\"noopener\"><em>Pure and impure software engineering</em></a>, some software fields (game development, libraries, tools like databases) have wildly different engineering standards, practices and values to other software fields (say, distributed systems at big tech companies). If you’re just making a tool for yourself, you probably don’t have to read the code if you don’t want to. But having read a bunch of AI-generated code this year, I can say that you definitely still have to read it.</p></div>\n<div class=\"chunk\"><p>I <em>routinely</em> find massive errors in AI-generated code. These are not bugs — the code typically does what the AI wanted it to do — so much as they’re problems of <a href=\"https://www.seangoedecke.com/human-ai-partnerships-are-for-alignment-not-capability/\" target=\"_blank\" rel=\"noopener\">alignment</a>. As a recent example, a small change to thread an extra value through some existing code ballooned out into a complex three-thousand-line diff, because the agent noticed a race condition and built a complex machinery to “fix” it. In fact, this race condition was harmless by design: two pieces of unrelated data could become briefly out of sync, with no customer impact.</p></div>\n<div class=\"chunk\"><p>Can LLMs just read the code for you? No, for the same reason: even if they make no mistakes, their technical values will not match yours or those of your company. You can still use LLMs to help you read code, but you have to carefully read and review that LLM output, and you should also be carefully reading the code itself.</p></div>\n",
+  "audio": "how-to-read-code.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      16.15,
+      18.425,
+      49.3,
+      74.4,
+      115.575,
+      118.225,
+      138.05,
+      157.0,
+      158.95,
+      178.275,
+      197.125,
+      226.225,
+      246.85,
+      254.375,
+      256.925,
+      272.65,
+      304.425,
+      337.8
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14
+      ],
+      [
+        15
+      ],
+      [
+        16
+      ],
+      [
+        17
+      ],
+      [
+        18
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://www.seangoedecke.com/how-to-read-code/"
+}

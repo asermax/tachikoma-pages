@@ -1,4 +1,6 @@
 const ARTICLES = [
+    { slug: 'a-terminal-protocol-for-program-status-osc-7501', title: 'A Terminal Protocol for Program Status (OSC 7501)', meta: 'Mitchell Hashimoto · Oct 6, 2026 · ~7 min listen', time: '7:08' },
+    { slug: 'how-to-read-code', title: 'How to read code', meta: 'Sean Goedecke · Oct 7, 2026 · ~6 min listen', time: '5:56' },
     { slug: 'what-is-codemode', title: 'What is Codemode', meta: 'Armin Ronacher · Oct 6, 2026 · ~13 min listen', time: '12:58' },
     { slug: 'an-application-in-lisp-you-grow-by-talking-to-it', title: 'an application in lisp you grow by talking to it', meta: 'Geoffrey Huntley · Oct 5 2026 · ~6 min listen', time: '6:21' },
     { slug: 'fragments-october-4', title: 'Fragments: October 4', meta: 'Martin Fowler · Oct 4 2026 · ~9 min listen', time: '8:31' },
