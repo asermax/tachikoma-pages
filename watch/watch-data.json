@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06",
+  "generated_at": "2026-10-07",
   "queue": [
     {
       "slug": "nigel-cheese-down-the-rabbit-hole",
@@ -713,6 +713,17 @@
       "summary": "Stone Librande (Creative Director, EA/Maxis) presents his One-Page Designs approach to game development documentation. He contrasts traditional design bibles and modern design wikis \u2014 long text-heavy docs are hard to maintain, update, and search \u2014 against one-page visual designs that communicate design relationships more efficiently. Aimed at game designers and developers looking to improve design documentation and team communication.",
       "added": "2026-09-27",
       "watched": "2026-09-28",
+      "has_notes": true
+    },
+    {
+      "slug": "monday-medications-september-28th-2026",
+      "title": "Monday Medications September 28th 2026",
+      "url": "https://www.youtube.com/watch?v=WFG2UpVNe9I",
+      "video_id": "WFG2UpVNe9I",
+      "channel": "Pi",
+      "summary": "Discussion of how newer AI coding models (like Opus 5.5) have shifted from structured edit tools to executing bash commands, and what that means for token efficiency, code correctness, and developer UX. The speakers dig into the challenge of reviewing large transcripts and raw bash output, and compare how platforms like Claude Code handle file changes and diff synthesis using Git worktrees. Key takeaway: developer platforms need more sophisticated agent-integrated diff and snapshot tooling so humans can efficiently monitor and review AI-generated code. Useful for software engineers and anyone building AI coding tools.",
+      "added": "2026-10-07",
+      "watched": "2026-10-07",
       "has_notes": true
     }
   ]
