@@ -1568,15 +1568,6 @@
       "times_shown": 0
     },
     {
-      "slug": "a-terminal-protocol-for-program-status-osc-7501",
-      "title": "A Terminal Protocol for Program Status (OSC 7501)",
-      "url": "https://mitchellh.com/writing/program-status-osc7501",
-      "category": "engineering",
-      "summary": "Mitchell Hashimoto introduces OSC 7501, a terminal escape sequence spec called the Program Status Protocol, letting any program report its state (idle, working with optional progress, done, blocked, error) directly through the pty so terminals and tools can surface it as notifications, status icons, or agentic inboxes. The problem: long-running terminal work (builds, deploys, coding agents) where users step away. Existing fixes fall short — screen-scraping heuristics are brittle and inbox-specific APIs need per-tool integrations and don't work over SSH or in containers, while the pty already works everywhere. The protocol is one OSC sequence with key=value pairs; a POSIX shell wrapper around rsync is enough to participate. Implemented in libghostty and Rex, with proof-of-concept integrations in Terraform, Claude Code, Codex, and Homebrew, each about a dozen lines. Takeaway: a small terminal-native protocol beats screen scraping and fragmented per-tool APIs.",
-      "added": "2026-10-07",
-      "times_shown": 0
-    },
-    {
       "slug": "do-you-actually-like-hard-problems",
       "title": "Do you actually like hard problems?",
       "url": "https://sunilpai.dev/posts/the-wrong-hard-things/",
@@ -3164,6 +3155,16 @@
       "summary": "Reacting to a satirical executive order rebranding \"AI\" as \"Super Intelligence\" (SI), Tejas Kumar argues the rename erases \"artificial\" — the fact humans made these systems — and likens it to the golden calf: models are built from \"our own earrings,\" human text recast as an object of worship. The essay's key distinction: \"super\" is a performance claim (real — chess, Go, protein folding, IMO math), \"superior\" is a worth claim no benchmark measures; the BCG/Harvard \"jagged frontier\" study shows consultants did worse with GPT-4 outside its capabilities. Human \"bugs\" — forgetting, irrational loyalty, feeling others' pain — are exactly what benchmarks can't capture. Super intelligence is real; superiority is a category error.",
       "added": "2026-10-05",
       "read": "2026-10-05",
+      "has_notes": true
+    },
+    {
+      "slug": "a-terminal-protocol-for-program-status-osc-7501",
+      "title": "A Terminal Protocol for Program Status (OSC 7501)",
+      "url": "https://mitchellh.com/writing/program-status-osc7501",
+      "category": "engineering",
+      "summary": "Mitchell Hashimoto introduces OSC 7501, a terminal escape sequence spec called the Program Status Protocol, letting any program report its state (idle, working with optional progress, done, blocked, error) directly through the pty so terminals and tools can surface it as notifications, status icons, or agentic inboxes. The problem: long-running terminal work (builds, deploys, coding agents) where users step away. Existing fixes fall short — screen-scraping heuristics are brittle and inbox-specific APIs need per-tool integrations and don't work over SSH or in containers, while the pty already works everywhere. The protocol is one OSC sequence with key=value pairs; a POSIX shell wrapper around rsync is enough to participate. Implemented in libghostty and Rex, with proof-of-concept integrations in Terraform, Claude Code, Codex, and Homebrew, each about a dozen lines. Takeaway: a small terminal-native protocol beats screen scraping and fragmented per-tool APIs.",
+      "added": "2026-10-07",
+      "read": "2026-10-07",
       "has_notes": true
     }
   ]
