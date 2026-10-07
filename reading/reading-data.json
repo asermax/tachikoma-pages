@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06",
+  "generated_at": "2026-10-07",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1565,6 +1565,33 @@
       "category": "ai",
       "summary": "Armin Ronacher explains Codemode, added to his Pi coding agent alongside 1.0 MCP support, building on his argument that agents should compose tools via code rather than loading many tools into context. Key insight: split between the trusted harness (brain) and the sandboxed execution environment (hands). Bash can only compose programs, but some capabilities need native harness tools — so Codemode lets the LLM run sandboxed JavaScript (QuickJS WASM, no network/filesystem/timers) on the harness side to issue and compose tool calls. This enables concurrency, structured handling of large outputs without polluting context, persistent state via a transcript store, and APIs that don't fit as regular tools (image generation, classifier models, sub-agent orchestration). It also changes MCP usage: tools are discovered and called programmatically inside Codemode instead of being exposed to the model, shown with Sentry. He criticizes double-escaping awkwardness of JS-string-accepting servers (Cloudflare) and lists what MCP needs: structured JSON output via outputSchema, consistent result shapes, binary data support, and composable cross-server tool search. Not a reversal of his pro-CLI stance; open questions remain around durability, deterministic languages like Starlark, and small-model support.",
       "added": "2026-10-06",
+      "times_shown": 0
+    },
+    {
+      "slug": "a-terminal-protocol-for-program-status-osc-7501",
+      "title": "A Terminal Protocol for Program Status (OSC 7501)",
+      "url": "https://mitchellh.com/writing/program-status-osc7501",
+      "category": "engineering",
+      "summary": "Mitchell Hashimoto introduces OSC 7501, a terminal escape sequence spec called the Program Status Protocol, letting any program report its state (idle, working with optional progress, done, blocked, error) directly through the pty so terminals and tools can surface it as notifications, status icons, or agentic inboxes. The problem: long-running terminal work (builds, deploys, coding agents) where users step away. Existing fixes fall short — screen-scraping heuristics are brittle and inbox-specific APIs need per-tool integrations and don't work over SSH or in containers, while the pty already works everywhere. The protocol is one OSC sequence with key=value pairs; a POSIX shell wrapper around rsync is enough to participate. Implemented in libghostty and Rex, with proof-of-concept integrations in Terraform, Claude Code, Codex, and Homebrew, each about a dozen lines. Takeaway: a small terminal-native protocol beats screen scraping and fragmented per-tool APIs.",
+      "added": "2026-10-07",
+      "times_shown": 0
+    },
+    {
+      "slug": "do-you-actually-like-hard-problems",
+      "title": "Do you actually like hard problems?",
+      "url": "https://sunilpai.dev/posts/the-wrong-hard-things/",
+      "category": "engineering",
+      "summary": "Sunil Pai argues engineers who say they like hard problems actually like puzzle solving: pattern-matching a repertoire of known solutions onto traditionally hard problems — a skill the industry rewarded handsomely. As of 2026, AI has become a cheat code machine with infinite breadth and depth for exactly that pattern matching, devaluing it. Genuinely hard problems now are complections of engineering, product, society, culture, and politics — messy and probably unsolvable — with enormous money for people who take them on. In an addendum he admits that after a productive year he felt empty: his identity came from being the engineer reached for when things were hard; people still reach for him, but for higher-level thinking rather than programming, and he misses being that guy. Takeaway: check whether your love of hard problems is love of solvable puzzles AI now commoditizes.",
+      "added": "2026-10-07",
+      "times_shown": 0
+    },
+    {
+      "slug": "how-to-read-code",
+      "title": "How to read code",
+      "url": "https://seangoedecke.com/how-to-read-code/",
+      "category": "engineering",
+      "summary": "Code can't be read like prose: English is ordered for the reader, code is ordered for the computer; it's usually read as a diff rather than a finished product; and it's structurally far more complex, with dependencies spanning whole codebases. Most engineers read badly — sequential slogging, skimming diffs and missing unchanged code, or guessing. The fix, borrowed from reading math papers, is dyadic scanning: multiple fast out-of-order passes. First trace an important path (e.g. the happy path) through its call graph, then follow threads — a function or piece of data out to its call-sites — treating everything else as a black box, and only then read the diff end-to-end to catch oddities. He also pushes back on AI removing the need to read code: he routinely finds large alignment errors in generated code (machinery solving problems that don't exist), and a reviewer LLM can't read for you because its technical values won't match yours.",
+      "added": "2026-10-07",
       "times_shown": 0
     }
   ],
