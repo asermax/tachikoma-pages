@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'the-world-hasnt-figured-out-yet-that-you-can-literally-just-fix-everything-with', title: 'the world hasn’t figured out yet that you can literally just fix everything with a Nix overlay', meta: 'Geoffrey Huntley · Oct 7, 2026 · ~8 min listen', time: '8:23' },
     { slug: 'how-to-read-code', title: 'How to read code', meta: 'Sean Goedecke · Oct 7, 2026 · ~6 min listen', time: '5:56' },
     { slug: 'what-is-codemode', title: 'What is Codemode', meta: 'Armin Ronacher · Oct 6, 2026 · ~13 min listen', time: '12:58' },
     { slug: 'an-application-in-lisp-you-grow-by-talking-to-it', title: 'an application in lisp you grow by talking to it', meta: 'Geoffrey Huntley · Oct 5 2026 · ~6 min listen', time: '6:21' },
