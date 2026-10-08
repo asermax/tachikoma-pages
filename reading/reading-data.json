@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07",
+  "generated_at": "2026-10-08",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1583,6 +1583,24 @@
       "category": "engineering",
       "summary": "Code can't be read like prose: English is ordered for the reader, code is ordered for the computer; it's usually read as a diff rather than a finished product; and it's structurally far more complex, with dependencies spanning whole codebases. Most engineers read badly — sequential slogging, skimming diffs and missing unchanged code, or guessing. The fix, borrowed from reading math papers, is dyadic scanning: multiple fast out-of-order passes. First trace an important path (e.g. the happy path) through its call graph, then follow threads — a function or piece of data out to its call-sites — treating everything else as a black box, and only then read the diff end-to-end to catch oddities. He also pushes back on AI removing the need to read code: he routinely finds large alignment errors in generated code (machinery solving problems that don't exist), and a reviewer LLM can't read for you because its technical values won't match yours.",
       "added": "2026-10-07",
+      "times_shown": 0
+    },
+    {
+      "slug": "the-world-hasnt-figured-out-yet-that-you-can-literally-just-fix-everything-with",
+      "title": "the world hasn't figured out yet that you can literally just fix everything with a Nix overlay",
+      "url": "https://ghuntley.com/nix/",
+      "category": "engineering",
+      "summary": "The author, drawing on nearly 13 years of experience with Nix, opens with a paradox: Nix is a \"terrible\" programming language with a ferocious learning cliff, yet it should be the primary choice for all software projects. He argues that AI has changed the accessibility equation — tools that once required years to master can now be used by prompting for outcomes — so the historical learning barrier is no longer a valid excuse. He begins by clarifying that \"Nix\" is overloaded terminology, spanning a package manager, a build system, and an operating system, and encourages people to ask exactly how someone uses it.\n\nOn developer and agent experience, he advocates using devenv.sh to define a single source of truth for toolchains and dependencies (e.g., Rust, Postgres, git hooks) that works identically across local machines, CI/CD, and ephemeral agent sandbox environments. He criticizes the common \"madness\" of configuration drift between laptops, CI, and sandboxes, and dismisses simpler tools like mise as insufficient for enabling agents to \"truly fly.\"\n\nBeyond package management, Nix is highly composable: the same expressions that define a dev environment can build performant Docker images (via pkgs.dockerTools.buildLayeredImage) whose binaries can even run in production. But the author's deepest reason for loving Nix is composing an operating system: he develops on NixOS and deliberately grants his agents sudo access, because NixOS is designed to be nearly impossible to break and changes can be instantly rolled back.\n\nHis distinctive practice in \"loop engineering\" is treating the entire operating system as the system under test. Using NixOS's built-in runNixOSTest framework, he spins up multi-machine QEMU clusters to assert network configuration, firewall zones, IP forwarding rules, and application interoperability before deployment.\n\nThe main takeaway: with AI lowering the learning barrier, Nix's composability and safety make it uniquely suited to the agentic development era — a single declarative source of truth spanning dev environments, CI, Docker images, and fully testable operating systems — which is why AI labs themselves use it.",
+      "added": "2026-10-07",
+      "times_shown": 0
+    },
+    {
+      "slug": "to-kodak-yourself-out-of-business",
+      "title": "to Kodak yourself out of business",
+      "url": "https://ghuntley.com/kodak/",
+      "category": "ai",
+      "summary": "Geoffrey Huntley's article opens with the news that JetBrains reported a net loss for the first time in its recorded history. He frames this as vindication of a prediction he made in January 2025, while working as a tech lead at Canva, that traditional IDEs were obsolete in a post-LLM world — arguing that developers might not need multiple IDEs, might invert \"collaborate with humans\" features into \"collaborate with LLMs,\" or might not need an IDE at all. At the time, coworkers dismissed the idea, insisting JetBrains would adapt.\n\nHuntley notes that JetBrains, rather than adapting to the agentic coding market, only raised subscription prices while product quality declined — which he calls a \"private equity/Broadcom-style subscription revenue extraction phase.\" He argues JetBrains \"Kodaked themselves\": they could only see the world through the lens of the IDE, betting that AST/symbolic context from language servers would be a source of alpha, even as competitors in agentic coding got strong results without symbolic context injection. Their domain expertise became a curse that prevented adaptation.\n\nHe generalizes the lesson beyond JetBrains: every company is blinded by its domain expertise and revenue model, and in the AI-driven transformation, leaders need to stay \"neuroplastic\" and audit their blind spots. As an example, he points to AI labs whose token-based worldview leads them to believe a better model will solve software verification — overlooking that verification of correct behavior in production under suboptimal conditions (e.g., flaky networks) won't be solved by a better model alone.\n\nThe main takeaway: in this moment of hyper-transformation, business leaders should examine their own dogma and worldview to avoid \"Kodaking\" themselves out of business.",
+      "added": "2026-10-08",
       "times_shown": 0
     }
   ],
