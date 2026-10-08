@@ -1604,6 +1604,15 @@
       "times_shown": 0
     },
     {
+      "slug": "if-your-team-is-happy-are-you-doing-a-good-job",
+      "title": "If your team is happy, are you doing a good job?",
+      "url": "https://charity.wtf/p/if-your-team-is-happy-are-you-doing",
+      "category": "engineering",
+      "summary": "In this third installment of her dialogue with Dr. Cat Hicks on how teams are changing in the AI era, Charity Majors argues that \"team happiness\" has become a badly misunderstood proxy for management quality, and that psychological safety has drifted far from its original purpose.\n\nShe traces the shift back to Google's 2015 Project Aristotle (and the parallel rise of DORA), which upended tech's prior cult of the individual \"brilliant jerk\" by showing that high-performing teams are distinguished by dynamics like psychological safety, dependability, and clarity. But the research's core nuance — that psychological safety is defined as safety for interpersonal risk-taking and must be paired with accountability to drive performance — was lost in popularization. The meaning eroded into \"I should never feel bad at work,\" with people citing layoffs, constructive feedback, or after-hours Slack messages as violations. Majors insists psychological safety matters not because it feels good, but because it enables learning, which produces higher performance.\n\nShe attributes the erosion partly to ZIRP-era management philosophy, when cheap money and infinite headcount let her generation of managers overcorrect against command-and-control predecessors by prioritizing comfort and feelings. Her own manager's answer — \"if your team is happy, you're doing a good job\" — doesn't survive scrutiny: happiness can't be the business outcome, since leaders must sometimes frustrate people, say no, and challenge them. Invoking Aristotle's distinction between eudaimonia and hedonic pleasure (and backing it with modern research from Gilbert and Kahneman), she notes we're poor predictors of what genuinely satisfies us; real happiness comes from growth, which is often uncomfortable.\n\nThe takeaway: feelings deserve acknowledgment and respect, but they are not a business metric to manage toward. Effective managers must be both caring humans and skilled business operators, and a leader who can't disappoint their reports can't lead. The goal is excellence and good outcomes for everyone — not happiness as such.",
+      "added": "2026-10-08",
+      "times_shown": 0
+    },
+    {
       "slug": "to-kodak-yourself-out-of-business",
       "title": "to Kodak yourself out of business",
       "url": "https://ghuntley.com/kodak/",
