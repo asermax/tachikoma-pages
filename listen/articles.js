@@ -1,4 +1,7 @@
 const ARTICLES = [
+    { slug: 'there-are-many-themes-but-this-one-is-yours', title: 'There are many themes, but this one is yours', meta: 'Maximilian Blazek · Oct 9, 2026 · ~15 min listen', time: '14:55' },
+    { slug: 'help-on-your-cli-is-all-you-need-for-llm-context-until-you-dont', title: '--help on your CLI is all you need for LLM context until you don\'t.', meta: 'Geoffrey Huntley · Oct 9, 2026 · ~3 min listen', time: '3:06' },
+    { slug: 'if-your-team-is-too-busy-doing-their-normal-job-to-experiment-with-ai-youre-prep', title: 'if your team is too busy doing their \'normal job\' to experiment with AI, you\'re preparing them to be replaced', meta: 'Geoffrey Huntley · Oct 9, 2026 · ~12 min listen', time: '12:26' },
     { slug: 'could-a-large-language-model-be-conscious', title: 'Could a Large Language Model Be Conscious?', meta: 'David Chalmers · Aug 9, 2023 · ~44 min listen', time: '43:37' },
     { slug: 'if-your-team-is-happy-are-you-doing-a-good-job', title: 'If your team is happy, are you doing a good job?', meta: 'Charity Majors · Oct 2026 · ~12 min listen', time: '11:56' },
     { slug: 'collecting-favours', title: 'Collecting favours', meta: 'Sunil Pai · Oct 2026 · ~8 min listen', time: '8:04' },
