@@ -1559,15 +1559,6 @@
       "times_shown": 0
     },
     {
-      "slug": "what-is-codemode",
-      "title": "What is Codemode",
-      "url": "https://lucumr.pocoo.org/2026/10/6/codemode/",
-      "category": "ai",
-      "summary": "Armin Ronacher explains Codemode, added to his Pi coding agent alongside 1.0 MCP support, building on his argument that agents should compose tools via code rather than loading many tools into context. Key insight: split between the trusted harness (brain) and the sandboxed execution environment (hands). Bash can only compose programs, but some capabilities need native harness tools — so Codemode lets the LLM run sandboxed JavaScript (QuickJS WASM, no network/filesystem/timers) on the harness side to issue and compose tool calls. This enables concurrency, structured handling of large outputs without polluting context, persistent state via a transcript store, and APIs that don't fit as regular tools (image generation, classifier models, sub-agent orchestration). It also changes MCP usage: tools are discovered and called programmatically inside Codemode instead of being exposed to the model, shown with Sentry. He criticizes double-escaping awkwardness of JS-string-accepting servers (Cloudflare) and lists what MCP needs: structured JSON output via outputSchema, consistent result shapes, binary data support, and composable cross-server tool search. Not a reversal of his pro-CLI stance; open questions remain around durability, deterministic languages like Starlark, and small-model support.",
-      "added": "2026-10-06",
-      "times_shown": 0
-    },
-    {
       "slug": "do-you-actually-like-hard-problems",
       "title": "Do you actually like hard problems?",
       "url": "https://sunilpai.dev/posts/the-wrong-hard-things/",
@@ -3227,6 +3218,16 @@
       "summary": "Reacting to a satirical executive order rebranding \"AI\" as \"Super Intelligence\" (SI), Tejas Kumar argues the rename erases \"artificial\" — the fact humans made these systems — and likens it to the golden calf: models are built from \"our own earrings,\" human text recast as an object of worship. The essay's key distinction: \"super\" is a performance claim (real — chess, Go, protein folding, IMO math), \"superior\" is a worth claim no benchmark measures; the BCG/Harvard \"jagged frontier\" study shows consultants did worse with GPT-4 outside its capabilities. Human \"bugs\" — forgetting, irrational loyalty, feeling others' pain — are exactly what benchmarks can't capture. Super intelligence is real; superiority is a category error.",
       "added": "2026-10-05",
       "read": "2026-10-05",
+      "has_notes": true
+    },
+    {
+      "slug": "what-is-codemode",
+      "title": "What is Codemode",
+      "url": "https://lucumr.pocoo.org/2026/10/6/codemode/",
+      "category": "ai",
+      "summary": "Armin Ronacher explains Codemode, added to his Pi coding agent alongside 1.0 MCP support, building on his argument that agents should compose tools via code rather than loading many tools into context. Key insight: split between the trusted harness (brain) and the sandboxed execution environment (hands). Bash can only compose programs, but some capabilities need native harness tools — so Codemode lets the LLM run sandboxed JavaScript (QuickJS WASM, no network/filesystem/timers) on the harness side to issue and compose tool calls. This enables concurrency, structured handling of large outputs without polluting context, persistent state via a transcript store, and APIs that don't fit as regular tools (image generation, classifier models, sub-agent orchestration). It also changes MCP usage: tools are discovered and called programmatically inside Codemode instead of being exposed to the model, shown with Sentry. He criticizes double-escaping awkwardness of JS-string-accepting servers (Cloudflare) and lists what MCP needs: structured JSON output via outputSchema, consistent result shapes, binary data support, and composable cross-server tool search. Not a reversal of his pro-CLI stance; open questions remain around durability, deterministic languages like Starlark, and small-model support.",
+      "added": "2026-10-06",
+      "read": "2026-10-09",
       "has_notes": true
     },
     {
