@@ -9,7 +9,6 @@ const ARTICLES = [
     { slug: 'to-kodak-yourself-out-of-business', title: 'to Kodak yourself out of business', meta: 'Geoffrey Huntley · Oct 8, 2026 · ~3 min listen', time: '3:19' },
     { slug: 'the-world-hasnt-figured-out-yet-that-you-can-literally-just-fix-everything-with', title: 'the world hasn’t figured out yet that you can literally just fix everything with a Nix overlay', meta: 'Geoffrey Huntley · Oct 7, 2026 · ~8 min listen', time: '8:23' },
     { slug: 'how-to-read-code', title: 'How to read code', meta: 'Sean Goedecke · Oct 7, 2026 · ~6 min listen', time: '5:56' },
-    { slug: 'what-is-codemode', title: 'What is Codemode', meta: 'Armin Ronacher · Oct 6, 2026 · ~13 min listen', time: '12:58' },
     { slug: 'an-application-in-lisp-you-grow-by-talking-to-it', title: 'an application in lisp you grow by talking to it', meta: 'Geoffrey Huntley · Oct 5 2026 · ~6 min listen', time: '6:21' },
     { slug: 'fragments-october-4', title: 'Fragments: October 4', meta: 'Martin Fowler · Oct 4 2026 · ~9 min listen', time: '8:31' },
     { slug: 'what-is-webmcp-how-my-website-gives-ai-agents-tools', title: 'What Is WebMCP? How My Website Gives AI Agents Tools', meta: 'Tejas Kumar · Oct 2026 · ~12 min listen', time: '12:20' },
