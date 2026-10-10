@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'softwares-centaur-age-may-last-decades', title: 'Software\'s centaur age may last decades', meta: 'Sean Goedecke · Oct 9, 2026 · ~6 min listen', time: '5:44' },
     { slug: 'which-computational-universe-do-we-live-in', title: 'Which Computational Universe Do We Live In?', meta: 'Erica Klarreich · Apr 18, 2022 · ~9 min listen', time: '9:03' },
     { slug: 'there-are-many-themes-but-this-one-is-yours', title: 'There are many themes, but this one is yours', meta: 'Maximilian Blazek · Oct 9, 2026 · ~15 min listen', time: '14:55' },
     { slug: 'help-on-your-cli-is-all-you-need-for-llm-context-until-you-dont', title: '--help on your CLI is all you need for LLM context until you don\'t.', meta: 'Geoffrey Huntley · Oct 9, 2026 · ~3 min listen', time: '3:06' },
