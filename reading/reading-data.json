@@ -1640,15 +1640,6 @@
       "times_shown": 0
     },
     {
-      "slug": "softwares-centaur-age-may-last-decades",
-      "title": "Software's centaur age may last decades",
-      "url": "https://www.seangoedecke.com/softwares-centaur-age-may-last-decades/",
-      "category": "ai",
-      "summary": "The article argues that software engineering is currently in a \"centaur age\" (roughly 2022 onward), a period in which human engineers paired with AI coding systems outperform either humans or AI alone. Drawing an analogy to chess — where human+engine pairs remained competitive for about twenty years after engines surpassed humans — the author suggests software's centaur age could similarly last decades, which should be encouraging for engineers planning their careers.\n\nThe author traces the evolution of the centaur age: GitHub Copilot launched in 2022 as AI autocomplete; chat with models like GPT-4 came next; coding agents emerged with Cursor's agent mode in 2024 and Claude Code in early 2025; and after Claude Opus 4.5's release in November 2025, agents became reliable enough to run unsupervised. Today, no unassisted engineer can beat a centaur team, but neither can an unsupervised agent — the remaining mistakes agents make are alignment errors (mismatched technical values, over/under-engineering) rather than ordinary bugs. Centaurs are on top.\n\nThe author weighs whether software's centaur age might be shorter than chess's, considering counterforces in both directions: software is harder than chess, but far more lucrative and funded; solving it increases total work to be done; broadly capable AI could destabilize the economy; historical centaur ages like knitting's lasted two centuries; and technology is accelerating. The conclusion is genuine uncertainty, with chess's ~20-year centaur age as a reasonable default baseline.\n\nFor engineers, the advice is: don't quit for another trade out of panic; lean into being a centaur, since refusing AI is now a losing position regardless of whether the AI financial bubble pops; and think hard about what human value remains — previously technical expertise, now possibly alignment or taste. The overall takeaway: avoid catastrophizing. The apocalypse of full automation may loom for decades, and panicking early could mean giving up an entire normal-length career.",
-      "added": "2026-10-10",
-      "times_shown": 0
-    },
-    {
       "slug": "unikernels-were-hard-key-word-were",
       "title": "unikernels were hard. key word: were.",
       "url": "https://ghuntley.com/unikernels/",
@@ -3257,6 +3248,16 @@
       "summary": "Mitchell Hashimoto introduces OSC 7501, a terminal escape sequence spec called the Program Status Protocol, letting any program report its state (idle, working with optional progress, done, blocked, error) directly through the pty so terminals and tools can surface it as notifications, status icons, or agentic inboxes. The problem: long-running terminal work (builds, deploys, coding agents) where users step away. Existing fixes fall short — screen-scraping heuristics are brittle and inbox-specific APIs need per-tool integrations and don't work over SSH or in containers, while the pty already works everywhere. The protocol is one OSC sequence with key=value pairs; a POSIX shell wrapper around rsync is enough to participate. Implemented in libghostty and Rex, with proof-of-concept integrations in Terraform, Claude Code, Codex, and Homebrew, each about a dozen lines. Takeaway: a small terminal-native protocol beats screen scraping and fragmented per-tool APIs.",
       "added": "2026-10-07",
       "read": "2026-10-07",
+      "has_notes": true
+    },
+    {
+      "slug": "softwares-centaur-age-may-last-decades",
+      "title": "Software's centaur age may last decades",
+      "url": "https://www.seangoedecke.com/softwares-centaur-age-may-last-decades/",
+      "category": "ai",
+      "summary": "The article argues that software engineering is currently in a \"centaur age\" (roughly 2022 onward), a period in which human engineers paired with AI coding systems outperform either humans or AI alone. Drawing an analogy to chess — where human+engine pairs remained competitive for about twenty years after engines surpassed humans — the author suggests software's centaur age could similarly last decades, which should be encouraging for engineers planning their careers.\n\nThe author traces the evolution of the centaur age: GitHub Copilot launched in 2022 as AI autocomplete; chat with models like GPT-4 came next; coding agents emerged with Cursor's agent mode in 2024 and Claude Code in early 2025; and after Claude Opus 4.5's release in November 2025, agents became reliable enough to run unsupervised. Today, no unassisted engineer can beat a centaur team, but neither can an unsupervised agent — the remaining mistakes agents make are alignment errors (mismatched technical values, over/under-engineering) rather than ordinary bugs. Centaurs are on top.\n\nThe author weighs whether software's centaur age might be shorter than chess's, considering counterforces in both directions: software is harder than chess, but far more lucrative and funded; solving it increases total work to be done; broadly capable AI could destabilize the economy; historical centaur ages like knitting's lasted two centuries; and technology is accelerating. The conclusion is genuine uncertainty, with chess's ~20-year centaur age as a reasonable default baseline.\n\nFor engineers, the advice is: don't quit for another trade out of panic; lean into being a centaur, since refusing AI is now a losing position regardless of whether the AI financial bubble pops; and think hard about what human value remains — previously technical expertise, now possibly alignment or taste. The overall takeaway: avoid catastrophizing. The apocalypse of full automation may loom for decades, and panicking early could mean giving up an entire normal-length career.",
+      "added": "2026-10-10",
+      "read": "2026-10-10",
       "has_notes": true
     }
   ]
