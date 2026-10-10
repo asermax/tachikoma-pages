@@ -1433,15 +1433,6 @@
       "times_shown": 0
     },
     {
-      "slug": "pi-durable",
-      "title": "Pi Durable",
-      "url": "https://earendil.com/posts/pi-durable/",
-      "category": "ai",
-      "summary": "Pi Durable: experimental framework for long-running, multi-user agentic applications on any JavaScript runtime. Harness = storage + machinery for parallel LLM conversations; ~15k lines, agent-readable. Pluggable storage (memory/SQLite/JSONL) and execution environments; task-level checkpointing makes runs crash-proof and resumable; compaction keeps working set in memory; exactly-once submissions via requestId.",
-      "added": "2026-10-01",
-      "times_shown": 0
-    },
-    {
       "slug": "a-quick-trip-to-the-uncanny-valley",
       "title": "A quick trip to the uncanny valley",
       "url": "https://blog.fsck.com/2026/10/02/a-quick-trip-to-the-uncanny-valley/",
@@ -3217,6 +3208,16 @@
       "summary": "Earendil, who previously and publicly dismissed MCP for Pi, announces reversal: MCP is now a supported core feature. Driven by MCP's improvements and the realization that the required interpreter sandbox was generally useful (e.g. for Jev). Argues MCP's biggest remaining weakness is composability; advocates servers behave like 'OpenAPI with intelligent tool discovery', returning structured data instead of token-optimized text. Introduces Codemode, a harness-side JavaScript sandbox (shippable as WASM) letting agents orchestrate and combine tool calls, with state kept in the session transcript rather than the filesystem. Goal: participate in shaping the ecosystem, particularly in small harnesses.",
       "added": "2026-09-29",
       "read": "2026-10-02",
+      "has_notes": true
+    },
+    {
+      "slug": "pi-durable",
+      "title": "Pi Durable",
+      "url": "https://earendil.com/posts/pi-durable/",
+      "category": "ai",
+      "summary": "Pi Durable: experimental framework for long-running, multi-user agentic applications on any JavaScript runtime. Harness = storage + machinery for parallel LLM conversations; ~15k lines, agent-readable. Pluggable storage (memory/SQLite/JSONL) and execution environments; task-level checkpointing makes runs crash-proof and resumable; compaction keeps working set in memory; exactly-once submissions via requestId.",
+      "added": "2026-10-01",
+      "read": "2026-10-10",
       "has_notes": true
     },
     {
