@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'mathematics-in-the-2nd-quantum-century-terence-tao-caltech-2026', title: 'Math 2.0', meta: 'Terence Tao · Oct 2026 · ~12 min listen', time: '12:12' },
     { slug: 'a-classifier-is-all-you-need', title: 'A classifier is all you need?', meta: 'Opeyemi Onikute · Sep 2026 · ~4 min listen', time: '4:22' },
     { slug: 'how-to-solve-hard-problems', title: 'How to solve hard problems', meta: 'Opeyemi Onikute · Oct 2026 · ~5 min listen', time: '5:29' },
     { slug: 'unikernels-were-hard-key-word-were', title: 'unikernels were hard. key word: were.', meta: 'Geoffrey Huntley · Oct 2026 · ~16 min listen', time: '16:27' },
