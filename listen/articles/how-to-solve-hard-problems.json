@@ -1,0 +1,122 @@
+{
+  "title": "How to solve hard problems",
+  "meta": "Opeyemi Onikute · Oct 2026 · ~5 min listen",
+  "body": "<div class=\"chunk\"><p>I’ve been thinking about how people solve problems in a “senior” role. While it’s ultimately just a title, success generally requires more than technical skills and feats. In a more junior role, you’d do well to just deliver a solution to a problem you’re given. But success beyond your constrained tasks is important in progressing to a more senior role. Defining a problem and building a solution is often just the beginning of the journey.</p></div>\n<div class=\"chunk\"><p>But this isn’t a post about what to expect based on seniority. It’s fundamentally about people who get things done (beyond personal goals) vs. people who don’t. I’ve made a non-exhaustive list of the traits I’ve noticed in people that solve complex problems. A lot of these principles have been personally valuable to everything I’ve achieved, and this is an attempt to make them plain so I can teach others to do the same.</p></div>\n<div class=\"chunk\"><p>When solving problems beyond your immediate self, it makes sense to:</p></div>\n<div class=\"chunk\"><h3>1. Get people onboard.</h3></div>\n<div class=\"chunk\"><p>When a team has existed long enough and has a broad scope of services, it tends to drift towards SMEs (Subject Matter Experts) for each piece. This is what I often see with initiatives that don’t succeed – An SME defines a problem and a solution that holds true within their scope, but the problem doesn’t only sit within that scope. They then invest time in building out the solution, but it never gets used or fully adopted. If they invested more time in aligning with the needs of other team members, they’d have come up with a better solution.</p></div>\n<div class=\"chunk\"><p>This can be a two-edged sword however. It’s difficult to please everyone. So,</p></div>\n<div class=\"chunk\"><h3>2. Don’t wait for full consensus.</h3></div>\n<div class=\"chunk\"><p>In diverse teams with different backgrounds and experiences, there’ll always be some disagreement about the nature of problems and their solutions. As someone solving any problem, your task is to get the majority to agree, and the minority to compromise, while forming an understanding of how and why they came to their stance. I’ve seen several useful initiatives that never got off the ground because a single team member did not agree. Meanwhile, the entire team continues to suffer the consequences of the problem. But getting consensus is easier if you:</p></div>\n<div class=\"chunk\"><h3>3. Build lots of allies.</h3></div>\n<div class=\"chunk\"><p>The more experience you have, the more it becomes clear that very little is achieved to solve cross-cutting problems without allies. <a href=\"https://www.goodreads.com/book/show/61058107-the-staff-engineer-s-path\" target=\"_blank\" rel=\"noopener\">The Staff Engineer’s Path</a> describes “sponsors” who support your work from above, but I’m more particular about lateral allies here. These are the people that will speak up for your initiatives in different rooms and give you feedback that improves your solutions. You don’t need to have a ton in common with every ally. You just need to find common ground with each of them. This is particularly important if you tend to solve widely-varying problems. A more heterogeneous crop of allies means you’ll have at least one of them to discuss it with.</p></div>\n<div class=\"chunk\"><h3>4. With enough eyes, a big problem becomes a small one.</h3></div>\n<div class=\"chunk\"><p>This is one of my favourite lessons from <a href=\"https://www.goodreads.com/book/show/33053\" target=\"_blank\" rel=\"noopener\">The Cathedral and the Bazaar</a>. When solving problems, it’s easy to enter a silo and get stuck. There is great power in getting multiple different eyes and lenses on a problem. One great example of this is in incident response (IR). The reason IR processes are designed that way is to get the right eyes on the problem, but also to get as many contextual eyes on the problem, either from the same team or multiple teams. It’s also much easier to get more eyes on your problems if you:</p></div>\n<div class=\"chunk\"><h3>5. Treat your users and stakeholders as first-class citizens.</h3></div>\n<div class=\"chunk\"><p>When building solutions to problems (tooling or frameworks, for example) that people will use, it’s important to treat those stakeholders like royalty. When someone reports a bug, fix it fast and have them retry. If this is not possible, respond in a reasonable time and give them a ticket to track. When you do treat people well, they become champions of the solution, and of you. They help you spot more novel bugs and advocate for the solution.</p></div>\n<div class=\"chunk\"><p>One possible drawback though is some people tend to give up on tools immediately they spot a bug, and don’t report said bug. So it’s also your duty to:</p></div>\n<div class=\"chunk\"><h3>6. Test more than your users.</h3></div>\n<div class=\"chunk\"><p>Never consider a task complete until you can reproduce and test in production. Even on a deadline, it’s better to delay than to push new code and wait for someone to use it. Your users should only discover novel bugs that you weren’t able to find. And whether you have bugs or not, you should always:</p></div>\n<div class=\"chunk\"><h3>7. Communicate often, clearly, and early.</h3></div>\n<div class=\"chunk\"><p>Let the relevant stakeholders know what problems you are thinking about and why you think they’re important. When describing problems, make sure you speak in the language of the target audience. ICs often care more about execution, and execs care more about broader impact. The reason you may not be getting traction on your initiatives could be a mismatch in the way you communicate their importance. By communicating early, you also learn that:</p></div>\n<div class=\"chunk\"><h3>8. Not every idea is a good idea, but it’s better than having no ideas.</h3></div>\n<div class=\"chunk\"><p>You will eventually learn that it’s possible to have tremendous ideas, but it’s also possible not to. I’ve had several ideas that seemed fantastic in hindsight, but I either overestimated or underestimated the problem, or was just focused on the wrong problem at the wrong time. Speaking to people about ideas and problems gives you perspective, do it often.</p></div>\n<div class=\"chunk\"><h3>9. Don’t be afraid to put things in the hands of users.</h3></div>\n<div class=\"chunk\"><p>Quite often, you’ll think about edge cases when building and wonder if they’ll actually hold true in production. Instead of deliberating or trying to cover every edge case in logic, it’s better to put the solution into the hands of the actual users and see what happens. You can’t expect to have all the answers in one straight swoop, so a strong feedback cycle helps you build better solutions.</p></div>\n<div class=\"chunk\"><h3>10. Learn to “manage”.</h3></div>\n<div class=\"chunk\"><p>Do the boring glue work for initiatives you care about. Regular meetings work wonders for progress. You’d be surprised by how much you can get done with a group of people working towards a solution if you bring them together regularly with clear agendas. It’s also important to know when to stop them, though. Meetings should always be optional, and if they do not bring value anymore, don’t be afraid to stop them.</p></div>\n<div class=\"chunk\"><p>There is a lot more to be said about solving the right problems, and solving them well. But I’ll stop here and continue to reflect.</p></div>\n<div class=\"chunk\"><p>Until next time.</p></div>\n",
+  "audio": "how-to-solve-hard-problems.ogg",
+  "sync": {
+    "timestamps": [
+      0.0,
+      20.825,
+      40.525,
+      44.95,
+      46.925,
+      74.625,
+      79.4,
+      81.925,
+      110.625,
+      112.85,
+      144.6,
+      148.575,
+      173.95,
+      178.3,
+      198.875,
+      208.425,
+      210.725,
+      227.75,
+      230.85,
+      250.625,
+      255.575,
+      275.175,
+      278.875,
+      298.45,
+      300.425,
+      319.525,
+      327.475
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14
+      ],
+      [
+        15
+      ],
+      [
+        16
+      ],
+      [
+        17
+      ],
+      [
+        18
+      ],
+      [
+        19
+      ],
+      [
+        20
+      ],
+      [
+        21
+      ],
+      [
+        22
+      ],
+      [
+        23
+      ],
+      [
+        24
+      ],
+      [
+        25
+      ],
+      [
+        26
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://opeonikute.dev/posts/how-to-solve-hard-problems"
+}
