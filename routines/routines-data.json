@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-11T10:51:17.462553-03:00",
+  "generated_at": "2026-10-11T11:00:52.347455-03:00",
   "week_start": "2026-10-11",
   "week_label": "October 11 - October 17, 2026",
-  "last_updated": "Sunday, October 11, 2026 at 10:51",
+  "last_updated": "Sunday, October 11, 2026 at 11:00",
   "stats": {
     "completed": 0,
     "planned": 0,
@@ -181,9 +181,9 @@
   ],
   "spirit": {
     "state": "dormant",
-    "emoji": "\ud83d\udc26",
-    "title": "\ud83d\udc26 Blossom Sparrow",
+    "emoji": "\ud83d\udc38",
+    "title": "\ud83d\udc38 Mud Frog",
     "image": "assets/dormant.webp",
-    "description": "Your blossom sparrow sleeps tucked under its wing in moonlight beneath a starry spring sky \u2014 deep, peaceful rest."
+    "description": "Your mud frog lies fully hidden beneath the mud under a quiet moonlit puddle \u2014 deep, still rest."
   }
 }
