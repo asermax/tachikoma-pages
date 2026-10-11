@@ -1,4 +1,6 @@
 const ARTICLES = [
+    { slug: 'a-classifier-is-all-you-need', title: 'A classifier is all you need?', meta: 'Opeyemi Onikute · Sep 2026 · ~4 min listen', time: '4:22' },
+    { slug: 'how-to-solve-hard-problems', title: 'How to solve hard problems', meta: 'Opeyemi Onikute · Oct 2026 · ~5 min listen', time: '5:29' },
     { slug: 'unikernels-were-hard-key-word-were', title: 'unikernels were hard. key word: were.', meta: 'Geoffrey Huntley · Oct 2026 · ~16 min listen', time: '16:27' },
     { slug: 'which-computational-universe-do-we-live-in', title: 'Which Computational Universe Do We Live In?', meta: 'Erica Klarreich · Apr 18, 2022 · ~9 min listen', time: '9:03' },
     { slug: 'there-are-many-themes-but-this-one-is-yours', title: 'There are many themes, but this one is yours', meta: 'Maximilian Blazek · Oct 9, 2026 · ~15 min listen', time: '14:55' },
