@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10",
+  "generated_at": "2026-10-11",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1640,6 +1640,24 @@
       "times_shown": 0
     },
     {
+      "slug": "a-classifier-is-all-you-need",
+      "title": "A classifier is all you need?",
+      "url": "https://opeonikute.dev/posts/a-classifier-is-all-you-need",
+      "category": "ai",
+      "summary": "The article, written by a Cloudflare SRE, explores whether LLM-based agents can be made reliable enough for operations automation. The author argues that the main obstacle to using LLM agents in SRE workflows is determinism — running the same task 1000 times should give the same result — and that prompt constraints, structured JSON outputs, and confidence-score \"classifier\" attempts have all failed to deliver predictability. A new classification-focused abstraction called Jev may be the missing piece for building autonomous ops agents. The author reviews existing approaches to automating complex scenarios like machine recovery: rigid state machines (used at Cloudflare), which break whenever the system deviates from expected state and require human intervention, and Stripe's approach of combining state machines with Dijkstra graph search to compute the best remediation path without human decisions. The author's own experience maintaining a workflow automation platform for six ops teams shows that powerful workflows are built from primitives (reboot, wipe, etc.) combined with embedded logic — but rigid logic still fails on unexpected states. The proposed design treats an LLM agent as a \"semi-autonomous collaborator\": given primitives and a good harness, the agent would generate state machines on the fly based on actual system state, with a human reviewing and approving; if the agent's confidence is too low, it bails and the human decides. Acknowledged limitations include the added complexity of generating full state machines versus simple classifications, and unhandled uncertainty about whether action outcomes will match the model's expectations. The main takeaway is cautious optimism: a classification-optimized AI primitive like Jev could finally enable autonomous decision-making for operations, but whether it works in practice remains to be seen — the author promises to report results on the Cloudflare blog or their own site.",
+      "added": "2026-10-10",
+      "times_shown": 0
+    },
+    {
+      "slug": "how-to-solve-hard-problems",
+      "title": "How to solve hard problems",
+      "url": "https://opeonikute.dev/posts/how-to-solve-hard-problems",
+      "category": "engineering",
+      "summary": "The article reflects on what distinguishes people who successfully solve complex, cross-cutting problems in senior engineering roles. The author argues that beyond technical skill, success depends on traits and habits that get initiatives adopted, not just built — a solution defined by a single SME often fails because the problem spans more people's scopes than their own. The author lists ten principles: get people onboard early rather than building in a silo; don't wait for full consensus — get the majority to agree and the minority to compromise; build lateral allies who will advocate for your work in other rooms; leverage many eyes on a problem (a lesson from The Cathedral and the Bazaar, echoed in incident response practices); treat users and stakeholders as first-class citizens so they become champions of your solution; test more than your users do, verifying in production before declaring work done; communicate often, clearly, and early, tailoring the message to the audience (ICs vs. execs); share ideas freely since feedback beats having no ideas; put solutions in users' hands rather than trying to anticipate every edge case; and learn to \"manage\" — do the unglamorous glue work like running regular, optional meetings with clear agendas, and stop them when they stop adding value. The main takeaway is that solving hard problems is fundamentally a social and organizational effort: alignment, communication, allies, and fast feedback loops matter as much as the technical solution itself, and adopting these habits is what separates people who get things done from those who don't.",
+      "added": "2026-10-10",
+      "times_shown": 0
+    },
+    {
       "slug": "unikernels-were-hard-key-word-were",
       "title": "unikernels were hard. key word: were.",
       "url": "https://ghuntley.com/unikernels/",
@@ -3248,6 +3266,16 @@
       "summary": "Mitchell Hashimoto introduces OSC 7501, a terminal escape sequence spec called the Program Status Protocol, letting any program report its state (idle, working with optional progress, done, blocked, error) directly through the pty so terminals and tools can surface it as notifications, status icons, or agentic inboxes. The problem: long-running terminal work (builds, deploys, coding agents) where users step away. Existing fixes fall short — screen-scraping heuristics are brittle and inbox-specific APIs need per-tool integrations and don't work over SSH or in containers, while the pty already works everywhere. The protocol is one OSC sequence with key=value pairs; a POSIX shell wrapper around rsync is enough to participate. Implemented in libghostty and Rex, with proof-of-concept integrations in Terraform, Claude Code, Codex, and Homebrew, each about a dozen lines. Takeaway: a small terminal-native protocol beats screen scraping and fragmented per-tool APIs.",
       "added": "2026-10-07",
       "read": "2026-10-07",
+      "has_notes": true
+    },
+    {
+      "slug": "agents-and-the-illusion-of-productivity",
+      "title": "Agents and the illusion of productivity",
+      "url": "https://opeonikute.dev/posts/agents-and-the-illusion-of-productivity",
+      "category": "productivity",
+      "summary": "The author describes creating an independent 2-hour course on Grafana MCP (30 videos, 7 chapters) over 2–3 months, mostly solo, and how using AI agents led him into a productivity trap. Having previously relied on LinkedIn Learning producers and editorial teams for editing and review, he decided to use agents for those functions in his first independent course — which he now calls a mistake. Drawing on the book \"10x Is Easier Than 2x,\" he argues that outsized gains come from focusing on the 20% of effort that produces 10x results, rather than the mundane 80% (e.g., fact-checking). Agents make it tempting to picture yourself as a ship captain orchestrating everything while focusing only on the 20%. This works for narrowly scoped tasks within a single role, but not for joint productions like a course, which require multiple roles and ways of thinking. The illusion manifests in two ways: first, you become responsible for all the context that would have lived in other people's heads; second, you bear the quality-control burden for every task — sending prompts, waiting, reviewing, and correcting. A human collaborator in a different role would have filtered context and ensured quality before handing work back. The course was completed and released, but at the cost of work that would have improved its chances of success, plus significant stress. His conclusion: he'll still use agents extensively for research and assistance, but next time he'll delegate the 80% and focus on the 10x work, since the current approach isn't physically or mentally scalable.",
+      "added": "2026-10-10",
+      "read": "2026-10-11",
       "has_notes": true
     },
     {
