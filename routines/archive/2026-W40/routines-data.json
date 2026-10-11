@@ -1,0 +1,139 @@
+{
+  "generated_at": "2026-10-11T02:01:01.772849-03:00",
+  "week_start": "2026-10-04",
+  "week_label": "October 04 - October 10, 2026",
+  "last_updated": "Sunday, October 11, 2026 at 02:01",
+  "stats": {
+    "completed": 2.8333333333333335,
+    "planned": 8,
+    "display": "2.8 / 8"
+  },
+  "daily": {
+    "Sunday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Monday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Tuesday": {
+      "status": "partial",
+      "completed": 1,
+      "total": 3
+    },
+    "Wednesday": {
+      "status": "partial",
+      "completed": 1,
+      "total": 2
+    },
+    "Thursday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 1
+    },
+    "Friday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 1
+    },
+    "Saturday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    }
+  },
+  "goals": [
+    {
+      "name": "Wind-Down Routine",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "5 nights",
+      "target": "6 nights",
+      "progress_pct": 83
+    }
+  ],
+  "routines": [
+    {
+      "id": "basic-workout",
+      "name": "Basic Workout",
+      "emoji": "\ud83d\udcaa",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 1
+    },
+    {
+      "id": "reading",
+      "name": "Reading",
+      "emoji": "\ud83d\udcd6",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "pending"
+        },
+        {
+          "day": "Wed",
+          "status": "done"
+        },
+        {
+          "day": "Thu",
+          "status": "skipped"
+        },
+        {
+          "day": "Fri",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "30min",
+      "comparison": "",
+      "done": 1,
+      "total": 4
+    },
+    {
+      "id": "rock-climbing",
+      "name": "Rock Climbing",
+      "emoji": "\ud83e\uddd7",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga",
+      "emoji": "\ud83e\uddd8",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 1
+    }
+  ],
+  "spirit": {
+    "state": "critical",
+    "emoji": "\ud83d\udc26",
+    "title": "\ud83d\udc26 Blossom Sparrow",
+    "image": "assets/critical.webp",
+    "description": "Your blossom sparrow shivers, soaked, against wind and dark storm clouds \u2014 sad, small, weathering it out."
+  }
+}
