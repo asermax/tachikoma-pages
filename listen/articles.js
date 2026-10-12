@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'software-engineers-dont-get-to-be-luddites-about-ai', title: 'Software engineers don\'t get to be Luddites about AI', meta: 'Sean Goedecke · Oct 12 2026 · ~5 min listen', time: '4:40' },
     { slug: 'adaptive-complexity-as-a-supervalue', title: 'Adaptive complexity as a supervalue', meta: 'Joshua Fost · Oct 2026 · ~45 min listen', time: '44:44' },
     { slug: 'you-didnt-do-it-right', title: '“You didn’t do it right”', meta: 'Jason Cohen · Oct 2026 · ~7 min listen', time: '7:04' },
     { slug: 'mathematics-in-the-2nd-quantum-century-terence-tao-caltech-2026', title: 'Math 2.0', meta: 'Terence Tao · Oct 2026 · ~12 min listen', time: '12:12' },
