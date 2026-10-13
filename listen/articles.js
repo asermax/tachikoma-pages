@@ -96,7 +96,6 @@ const ARTICLES = [
     { slug: 'the-problem-is-prompt-debt', title: 'The Problem is Prompt Debt', meta: 'Drew Breunig · Aug 2026', time: '8:51' },
     { slug: 'good-writing-is-obvious-not-original', title: 'Good writing is obvious, not original', meta: 'Sean Goedecke · Aug 2026', time: '4:57' },
     { slug: 'what-is-a-harness', title: 'What is a Harness?', meta: 'Earendil · Aug 2026', time: '10:09' },
-    { slug: 'ai-slop-isnt-a-model-problem-treat-your-codebase-as-a-black-box', title: 'AI slop isn\'t a model problem — treat your codebase as a black box', meta: 'David Zhang (@dzhng) · Aug 2026', time: '12:36' },
     { slug: 'extensible-software-in-the-age-of-llms', title: 'Extensible Software in the age of LLMs', meta: 'Jeremy Morrell · Aug 2026', time: '29:19' },
     { slug: 'ai-coding-insights', title: 'The Specification Is Not a Document', meta: 'leaflet.pub · Aug 2026', time: '32:39' },
     { slug: 'compaction-in-pi', title: 'How Compaction Works in Pi', meta: 'Earendil · Aug 2026', time: '6:19' },
