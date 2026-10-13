@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12",
+  "generated_at": "2026-10-13",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1328,6 +1328,14 @@
       "category": "commentary",
       "summary": "Jason Cohen recounts trying to implement OKRs four separate times at WP Engine — single team, department, company-wide — and failing every time despite genuine effort. Each time, experts answered \"you didn't do it right.\" His point: if a framework is that hard to implement correctly, the explanation itself is suspect. The pattern is universal — Ron Jeffries' \"Dark Scrum,\" jobs-to-be-done, the SDR model, Zappos' Holacracy all attract identical deflections after failure. He calls the underlying error the \"Precision Fallacy\": assuming the framework always works so any failure must be the implementer's fault. Because the required precision is undefined, the claim is unfalsifiable — echoing Popper's critique of theories no evidence can disprove. Every framework works within a context and fails outside it; failing is the more common case. His solution: treat frameworks like clothes — buy off the rack, then tailor. A framework fits perfectly ~15% of the time (where the success stories come from); otherwise adapt it, discard it if it can't be tailored, and roll it out as a one-team, one-quarter experiment rather than a company-wide mandate. What actually worked at WP Engine was a homegrown metrics framework: teams picked one metric they personally cared about, tracked it for a quarter, then organically added more — accountability in ways people wanted, never for outcomes they influenced but didn't control.",
       "added": "2026-10-11"
+    },
+    {
+      "slug": "original-thoughts-have-terrible-ux",
+      "title": "original thoughts have terrible UX",
+      "url": "https://sunilpai.dev/posts/original-ideas/",
+      "category": "ai",
+      "summary": "This satirical essay argues, tongue-in-cheek, that thinking for yourself is a terrible business model. It frames having an original thought as a bad product: it arrives unbidden with no references, no quality guarantee, and no documentation, and you must then spend days figuring out what the thought even means, whether it's good or stupid, and how to fit it into your head.\n\nThe economics don't stack up either. Developing a personal perspective takes days of effort with no assured payoff, whereas adopting an existing, widely-endorsed opinion takes ten seconds and yields the same (or better) social benefit: established opinions come with a ready-made audience, vocabulary, and community of people who will engage and disagree. Original thoughts also fail to scale: each one requires a fresh investment of time, work isn't reusable, and maintenance is costly, since discovering a flaw in one idea forces you to re-examine everything else you believed.\n\nThe author's mock solution is standardization: a small number of trusted opinion providers delivering curated, auto-updating perspectives on every topic, so subscribers can simply be told what to think the moment anything happens. The piece closes with the author deciding to stop developing their own opinions since there's no return on investment.\n\nThe overall takeaway is ironic commentary on intellectual laziness and outsourced opinion-forming: by treating independent thinking as a product with terrible UX, the essay implicitly champions the value (and cost) of actually thinking for yourself.",
+      "added": "2026-10-13"
     }
   ],
   "archive": [
