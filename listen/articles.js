@@ -1,4 +1,6 @@
 const ARTICLES = [
+    { slug: 'nobody-should-type-code-by-hand-anymore-heres-whats-left', title: 'nobody should type code by hand anymore. here\'s what\'s left.', meta: 'Geoffrey Huntley · Oct 13, 2026 · ~28 min listen', time: '28:12' },
+    { slug: 'faster-fourier-transforms', title: 'Faster Fourier Transforms', meta: 'Ben Recht · Oct 12, 2026 · ~10 min listen', time: '9:51' },
     { slug: 'original-thoughts-have-terrible-ux', title: 'original thoughts have terrible UX', meta: 'Sunil Pai · Oct 12 2026 · ~3 min listen', time: '2:31' },
     { slug: 'adaptive-complexity-as-a-supervalue', title: 'Adaptive complexity as a supervalue', meta: 'Joshua Fost · Oct 2026 · ~45 min listen', time: '44:44' },
     { slug: 'you-didnt-do-it-right', title: '“You didn’t do it right”', meta: 'Jason Cohen · Oct 2026 · ~7 min listen', time: '7:04' },
