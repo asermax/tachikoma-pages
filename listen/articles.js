@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'are-harnesses-worth-the-cost', title: 'Are Harnesses Worth the Cost?', meta: 'Naresh Jain · Oct 13, 2026 · ~29 min listen', time: '28:34' },
     { slug: 'nobody-should-type-code-by-hand-anymore-heres-whats-left', title: 'nobody should type code by hand anymore. here\'s what\'s left.', meta: 'Geoffrey Huntley · Oct 13, 2026 · ~28 min listen', time: '28:12' },
     { slug: 'faster-fourier-transforms', title: 'Faster Fourier Transforms', meta: 'Ben Recht · Oct 12, 2026 · ~10 min listen', time: '9:51' },
     { slug: 'original-thoughts-have-terrible-ux', title: 'original thoughts have terrible UX', meta: 'Sunil Pai · Oct 12 2026 · ~3 min listen', time: '2:31' },
