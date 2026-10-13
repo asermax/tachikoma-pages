@@ -1314,6 +1314,14 @@
       "added": "2026-10-11"
     },
     {
+      "slug": "are-harnesses-worth-the-cost",
+      "title": "Are Harnesses Worth the Cost?",
+      "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html",
+      "category": "ai",
+      "summary": "Naresh Jain (Martin Fowler's Exploring Gen AI series) reports a controlled experiment on whether a 'behavioral harness' improves coding-agent reliability. A harness combines guides (specs, examples, skills steering the agent before it acts) and sensors (deterministic contract checks, API tests, mocks giving executable feedback after). Task: build a BFF service with HTTP API, Order API dependency, Kafka publication, and failure/timeout semantics, judged by 178 external acceptance tests the inner harness never saw. GPT-6 Sol (frontier) passed 10/10 with and without harness — harness added no benefit while costing ~10.5x tokens and ~7x more ($2.679 vs $0.406 per run). Cost-optimized GPT-6 Luna succeeded in only 3/10 unharnessed (failures passed ~95%, slipping on edge cases like 202 deferred-creation workflows, Kafka wire-contract details, exact status codes) but 10/10 harnessed. Failures framed as 'attention lapses'; the harness is 'executable attention' pulling dropped requirements back into focus, with checks serving as deterministic control rather than LLM self-judgment. Economics: harnessed Luna runs cost ~$0.273, matching Sol's reliability at 33% lower cost. Caveats: small sample, single greenfield service, excludes harness authoring cost. Takeaway: model capability changes when sensors run, not whether verification is needed — continuously for cheap models, once as an acceptance gate for frontier ones.",
+      "added": "2026-10-13"
+    },
+    {
       "slug": "faster-fourier-transforms",
       "title": "Faster Fourier Transforms",
       "url": "https://www.argmin.net/p/faster-fourier-transforms",
