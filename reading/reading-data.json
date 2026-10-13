@@ -1314,6 +1314,22 @@
       "added": "2026-10-11"
     },
     {
+      "slug": "faster-fourier-transforms",
+      "title": "Faster Fourier Transforms",
+      "url": "https://www.argmin.net/p/faster-fourier-transforms",
+      "category": "science",
+      "summary": "Ben Recht examines OpenAI's claim of an AI-generated 'faster Fourier transform'. Tutorial first: naive DFT is n^2 ops, Cooley-Tukey (1965) is under 5n*log2(n). Recht argues the new result is a 'galactic algorithm': the hidden constant is estimated around 10^100, so the classic FFT would be 10^99 times faster even at n=10^100. He criticizes big-O notation for enabling 'logical laziness' — astronomically large constants still count as 'faster'. The computational model is also unrealistic: exact complex arithmetic with superpolynomially growing magnitudes would need exponential memory. Prior results (Morgenstern 1973, Ailon ~2014) already showed faster-than-n*log(n) FFTs require unbounded coefficients or severe instability. Broader conclusion: this exemplifies 'the rot' in theoretical CS — formalism detached from real computation, culture that discourages running algorithms; AI is good at automating our worst tendencies and can now mass-produce useless theory papers.",
+      "added": "2026-10-13"
+    },
+    {
+      "slug": "nobody-should-type-code-by-hand-anymore-heres-whats-left",
+      "title": "nobody should type code by hand anymore. here's what's left.",
+      "url": "https://ghuntley.com/agency/",
+      "category": "ai",
+      "summary": "Geoffrey Huntley's recap of a four-part Loop Engineering conversation with Josh Wulf. Core claim: there's no place left for a software engineer who types code by hand — the models stopped being the constraint long ago, and what remains for humans is vision, verification, and agency. Part 1 covers economics: VC-subsidized LLM access is a drying-up free education; managers who don't create experimentation time are preparing teams for replacement. Parts 2-3 cover verification: nobody can eyeball-review machine-generated code volume, so put the whole system under test (Nix, property-based testing, deterministic fault injection) and enforce architecture with pre-commit hooks; dismisses skill packs, AGENTS.md, and MCP configs as 'astrology for software engineers'; build your own ~300-line agent to learn fundamentals. Part 4: his workflow (disposable NixOS machines, iteration velocity, 'go fast by going slow'), the death of 'never rewrite', and revisiting previously-expensive ideas (unikernels, rewrites) now that loops make them cheap. Takeaway: lasting skills are curiosity, adaptability, agency — 'agency, not AGENTS.md.'",
+      "added": "2026-10-13"
+    },
+    {
       "slug": "original-thoughts-have-terrible-ux",
       "title": "original thoughts have terrible UX",
       "url": "https://sunilpai.dev/posts/original-ideas/",
