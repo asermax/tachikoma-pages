@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'original-thoughts-have-terrible-ux', title: 'original thoughts have terrible UX', meta: 'Sunil Pai · Oct 12 2026 · ~3 min listen', time: '2:31' },
     { slug: 'adaptive-complexity-as-a-supervalue', title: 'Adaptive complexity as a supervalue', meta: 'Joshua Fost · Oct 2026 · ~45 min listen', time: '44:44' },
     { slug: 'you-didnt-do-it-right', title: '“You didn’t do it right”', meta: 'Jason Cohen · Oct 2026 · ~7 min listen', time: '7:04' },
     { slug: 'a-classifier-is-all-you-need', title: 'A classifier is all you need?', meta: 'Opeyemi Onikute · Sep 2026 · ~4 min listen', time: '4:22' },
