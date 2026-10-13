@@ -658,14 +658,6 @@
       "added": "2026-08-20"
     },
     {
-      "slug": "httpsxcomdzhngstatus2090252351533973768",
-      "title": "AI slop isn't a model problem — treat your codebase as a black box",
-      "url": "https://x.com/dzhng/status/2090252351533973768",
-      "category": "Software & AI",
-      "summary": "Zhang argues AI slop arises not from poor model quality but from the structural mismatch between unbounded AI code generation and human reading as the fixed-rate verification step — and that code itself will become progressively less readable (Claude-speak, AI-native languages, machine code), breaking the SDLC assumption that someone can open a file and understand it. His proposal: treat the codebase as an interpretability problem, not a review problem — slice it into domain-specific pieces with well-defined inputs/outputs ('seams'), attach sensors, run functions and interrogate outputs, never read the implementation. Human-readable artifacts move up a level: invariants, traces, attack surfaces, and especially a 'decision ledger' where the agent reports every choice it made where the spec was silent, ranked least-confident first, audited by an independent sub-agent — effectively 'compiling' intent down to code and inspecting intent and behavior rather than the artifact. Skills at github.com/dzhng/skills.",
-      "added": "2026-08-20"
-    },
-    {
       "slug": "what-is-a-harness",
       "title": "What is a Harness?",
       "url": "https://earendil.com/posts/what-is-a-harness/",
@@ -2400,6 +2392,16 @@
       "added": "2026-08-19",
       "read": "2026-08-20",
       "has_notes": false
+    },
+    {
+      "slug": "httpsxcomdzhngstatus2090252351533973768",
+      "title": "AI slop isn't a model problem — treat your codebase as a black box",
+      "url": "https://x.com/dzhng/status/2090252351533973768",
+      "category": "Software & AI",
+      "summary": "Zhang argues AI slop arises not from poor model quality but from the structural mismatch between unbounded AI code generation and human reading as the fixed-rate verification step — and that code itself will become progressively less readable (Claude-speak, AI-native languages, machine code), breaking the SDLC assumption that someone can open a file and understand it. His proposal: treat the codebase as an interpretability problem, not a review problem — slice it into domain-specific pieces with well-defined inputs/outputs ('seams'), attach sensors, run functions and interrogate outputs, never read the implementation. Human-readable artifacts move up a level: invariants, traces, attack surfaces, and especially a 'decision ledger' where the agent reports every choice it made where the spec was silent, ranked least-confident first, audited by an independent sub-agent — effectively 'compiling' intent down to code and inspecting intent and behavior rather than the artifact. Skills at github.com/dzhng/skills.",
+      "added": "2026-08-20",
+      "read": "2026-10-13",
+      "has_notes": true
     },
     {
       "slug": "most-of-your-architecture-was-just-expensive-code",
