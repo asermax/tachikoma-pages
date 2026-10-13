@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12",
+  "generated_at": "2026-10-13",
   "queue": [
     {
       "slug": "nigel-cheese-down-the-rabbit-hole",
@@ -724,6 +724,17 @@
       "summary": "Discussion of how newer AI coding models (like Opus 5.5) have shifted from structured edit tools to executing bash commands, and what that means for token efficiency, code correctness, and developer UX. The speakers dig into the challenge of reviewing large transcripts and raw bash output, and compare how platforms like Claude Code handle file changes and diff synthesis using Git worktrees. Key takeaway: developer platforms need more sophisticated agent-integrated diff and snapshot tooling so humans can efficiently monitor and review AI-generated code. Useful for software engineers and anyone building AI coding tools.",
       "added": "2026-10-07",
       "watched": "2026-10-07",
+      "has_notes": true
+    },
+    {
+      "slug": "monday-medications-october-12th-2026",
+      "title": "Monday Medications October 12th 2026",
+      "url": "https://www.youtube.com/watch?v=o8B0_OlCL78",
+      "video_id": "o8B0_OlCL78",
+      "channel": "Pi",
+      "summary": "Armin and Mario discuss self-modifying software and AI agent coding harnesses. Personalized, evolving software for a single user is simple, but scaling self-modifying systems across teams needs robust core primitives, sandboxing, and well-defined constraints so agents don't break the base application. Covers plugin management, error recovery, and long-term stability alongside rapid AI-driven customization. Relevant to software engineers, AI developers, and system architects interested in extensible agent architectures.",
+      "added": "2026-10-13",
+      "watched": "2026-10-13",
       "has_notes": true
     }
   ]
