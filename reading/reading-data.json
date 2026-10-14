@@ -1122,14 +1122,6 @@
       "added": "2026-10-02"
     },
     {
-      "slug": "software-doesnt-need-to-be-readable-anymore-it-needs-to-be-explainable",
-      "title": "software doesn't need to be readable anymore. it needs to be explainable",
-      "url": "https://ghuntley.com/readable/",
-      "category": "ai",
-      "summary": "Write-up of Huntley's YAAP podcast appearance: forty years of computing design assumed a human in the loop as reader, writer, or operator; AI agents break that. Software should be explainable by a model to a human on demand, not human-readable cold. AI adoption economics are weak (labs building services orgs; token resale and infrastructure are what make money), yet his own practice has fully flipped - no handwritten code in two years. Match models to tasks instead of chasing frontier intelligence, favor cheap open-weights hosts. Legacy conventions (consoles, human-legibility) are up for renegotiation; he expects unikernels to return for security, argues types act as back pressure for agent-maintained codebases (Rust more agent-maintainable than Python), and \"can we delete instead of build?\" is the right question.",
-      "added": "2026-10-02"
-    },
-    {
       "slug": "the-craft-has-been-commoditized-but-access-has-not",
       "title": "the craft has been commoditized, but access has not",
       "url": "https://ghuntley.com/access/",
@@ -2925,6 +2917,16 @@
       "summary": "Pi Durable: experimental framework for long-running, multi-user agentic applications on any JavaScript runtime. Harness = storage + machinery for parallel LLM conversations; ~15k lines, agent-readable. Pluggable storage (memory/SQLite/JSONL) and execution environments; task-level checkpointing makes runs crash-proof and resumable; compaction keeps working set in memory; exactly-once submissions via requestId.",
       "added": "2026-10-01",
       "read": "2026-10-10",
+      "has_notes": true
+    },
+    {
+      "slug": "software-doesnt-need-to-be-readable-anymore-it-needs-to-be-explainable",
+      "title": "software doesn't need to be readable anymore. it needs to be explainable",
+      "url": "https://ghuntley.com/readable/",
+      "category": "ai",
+      "summary": "Write-up of Huntley's YAAP podcast appearance: forty years of computing design assumed a human in the loop as reader, writer, or operator; AI agents break that. Software should be explainable by a model to a human on demand, not human-readable cold. AI adoption economics are weak (labs building services orgs; token resale and infrastructure are what make money), yet his own practice has fully flipped - no handwritten code in two years. Match models to tasks instead of chasing frontier intelligence, favor cheap open-weights hosts. Legacy conventions (consoles, human-legibility) are up for renegotiation; he expects unikernels to return for security, argues types act as back pressure for agent-maintained codebases (Rust more agent-maintainable than Python), and \"can we delete instead of build?\" is the right question.",
+      "added": "2026-10-02",
+      "read": "2026-10-14",
       "has_notes": true
     },
     {
