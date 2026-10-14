@@ -27,7 +27,6 @@ const ARTICLES = [
     { slug: 'give-coordinates-to-your-data', title: 'Give Coordinates to Your Data', meta: 'David Gasquez · Oct 2026', time: '1:42' },
     { slug: 'a-quick-trip-to-the-uncanny-valley', title: 'A quick trip to the uncanny valley', meta: 'Jesse Vincent · Oct 2026', time: '3:52' },
     { slug: 'the-craft-has-been-commoditized-but-access-has-not', title: 'the craft has been commoditized, but access has not', meta: 'Geoffrey Huntley · Oct 2026', time: '3:03' },
-    { slug: 'software-doesnt-need-to-be-readable-anymore-it-needs-to-be-explainable', title: 'software doesn\'t need to be readable anymore. it needs to be explainable.', meta: 'Geoffrey Huntley · Oct 2026', time: '16:16' },
     { slug: 'do-not-build-the-llm-torture-factory', title: 'Do not build the LLM torture factory', meta: 'Sean Goedecke · Oct 2026', time: '8:29' },
     { slug: 'pi-10', title: 'Pi 1.0', meta: 'Earendil · Oct 1, 2026', time: '3:19' },
     { slug: 'deser-rethinking-rust-serialization', title: 'Deser: Rethinking Rust Serialization', meta: 'Armin Ronacher · 29 Sep 2026', time: '17:31' },
