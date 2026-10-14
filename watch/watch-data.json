@@ -188,6 +188,17 @@
       "has_notes": false
     },
     {
+      "slug": "code-mode-let-the-code-do-the-talking-sunil-pai-cloudflare",
+      "title": "Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare",
+      "url": "https://www.youtube.com/watch?v=8txf05vVVl4",
+      "video_id": "8txf05vVVl4",
+      "channel": "AI Engineer",
+      "summary": "Sunil Pai from Cloudflare introduces 'Code Mode,' where AI models generate code like JavaScript to interact with systems instead of traditional JSON-based tool calling. This approach reduces token usage by 99.9% and enables multiple API interactions in a single round trip. By leveraging the model's ability to compose logic through loops and state management, Code Mode provides a faster and more reliable interface for complex tasks.",
+      "added": "2026-04-21",
+      "watched": "2026-10-14",
+      "has_notes": false
+    },
+    {
       "slug": "we-finally-watched-tip2tip",
       "title": "We finally watched Tip2Tip",
       "url": "https://www.youtube.com/watch?v=-7TfJ4r4_p8",
