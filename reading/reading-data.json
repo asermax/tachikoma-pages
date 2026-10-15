@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14",
+  "generated_at": "2026-10-15",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1304,14 +1304,6 @@
       "category": "commentary",
       "summary": "Jason Cohen recounts trying to implement OKRs four separate times at WP Engine — single team, department, company-wide — and failing every time despite genuine effort. Each time, experts answered \"you didn't do it right.\" His point: if a framework is that hard to implement correctly, the explanation itself is suspect. The pattern is universal — Ron Jeffries' \"Dark Scrum,\" jobs-to-be-done, the SDR model, Zappos' Holacracy all attract identical deflections after failure. He calls the underlying error the \"Precision Fallacy\": assuming the framework always works so any failure must be the implementer's fault. Because the required precision is undefined, the claim is unfalsifiable — echoing Popper's critique of theories no evidence can disprove. Every framework works within a context and fails outside it; failing is the more common case. His solution: treat frameworks like clothes — buy off the rack, then tailor. A framework fits perfectly ~15% of the time (where the success stories come from); otherwise adapt it, discard it if it can't be tailored, and roll it out as a one-team, one-quarter experiment rather than a company-wide mandate. What actually worked at WP Engine was a homegrown metrics framework: teams picked one metric they personally cared about, tracked it for a quarter, then organically added more — accountability in ways people wanted, never for outcomes they influenced but didn't control.",
       "added": "2026-10-11"
-    },
-    {
-      "slug": "are-harnesses-worth-the-cost",
-      "title": "Are Harnesses Worth the Cost?",
-      "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html",
-      "category": "ai",
-      "summary": "Naresh Jain (Martin Fowler's Exploring Gen AI series) reports a controlled experiment on whether a 'behavioral harness' improves coding-agent reliability. A harness combines guides (specs, examples, skills steering the agent before it acts) and sensors (deterministic contract checks, API tests, mocks giving executable feedback after). Task: build a BFF service with HTTP API, Order API dependency, Kafka publication, and failure/timeout semantics, judged by 178 external acceptance tests the inner harness never saw. GPT-6 Sol (frontier) passed 10/10 with and without harness — harness added no benefit while costing ~10.5x tokens and ~7x more ($2.679 vs $0.406 per run). Cost-optimized GPT-6 Luna succeeded in only 3/10 unharnessed (failures passed ~95%, slipping on edge cases like 202 deferred-creation workflows, Kafka wire-contract details, exact status codes) but 10/10 harnessed. Failures framed as 'attention lapses'; the harness is 'executable attention' pulling dropped requirements back into focus, with checks serving as deterministic control rather than LLM self-judgment. Economics: harnessed Luna runs cost ~$0.273, matching Sol's reliability at 33% lower cost. Caveats: small sample, single greenfield service, excludes harness authoring cost. Takeaway: model capability changes when sensors run, not whether verification is needed — continuously for cheap models, once as an acceptance gate for frontier ones.",
-      "added": "2026-10-13"
     },
     {
       "slug": "faster-fourier-transforms",
