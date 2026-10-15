@@ -1328,6 +1328,14 @@
       "category": "engineering",
       "summary": "Geoffrey Huntley proposes a new open-source development model, arguing that the classic \"cathedral\" (closed, exclusive) and \"bazaar\" (GitHub pull-request-driven) models both fall short in the AI era. The bazaar model was already straining under social expectations: consumers felt entitled to nag maintainers, and maintainers were expected to merge contributions and provide unpaid maintenance indefinitely. With AI-generated code flooding in, reviewing machine-written pull requests becomes largely pointless — what matters is the underlying idea, not the patch. Huntley proposes the \"Remix Model\": instead of sending pull requests, consumers of a project write a small Nix overlay expressing the desired change once, then reuse that derivation across dev environments, Docker images, NixOS systems, tests, CI, and agent sandboxes — without forking or maintaining a divergent artifact. The core principle is \"ideas over patches\": the valuable unit is a change in behavior or architecture, and maintainers may incorporate, reimplement, or ignore it entirely, with no standing obligation to review or maintain anything. Nix's steep learning curve, long the barrier to easy remixing, no longer matters because AI agents can write the overlays. He gives an example: instead of a PR to Git, a consumer writes an overlay that patches Git to refuse force pushes. Going forward, Huntley says he will disable pull requests on his GitHub projects, keep discussions open, and publish guidance on how to remix his software. He believes removing the maintenance burden will lead to more people releasing software, and that GitHub's network graph can be used (even by agents) to discover remixes and feed good ideas back upstream.",
       "added": "2026-10-15"
+    },
+    {
+      "slug": "swe-bench-multimodal-scores-do-not-depend-on-images-at-least-in-my-experiments-w",
+      "title": "SWE-bench Multimodal scores do not depend on images, at least in my experiments with GPT-6 Luna",
+      "url": "https://sankalp.bearblog.dev/swe_multimodal/",
+      "category": "ai",
+      "summary": "The author ran GPT-6 Luna (xhigh) on SWE-bench Multimodal v2 (480 JavaScript-repo GitHub issues) in three full runs via a verifiers interception setup: with native images, with OCR replacements, and with placeholder text where images were removed. Scores were essentially identical (~37%, 175-178 of 480) across all three conditions, matching vals.ai's reported 37.5%. Trace audits by Sonnet 5.5 reviewers found that in 84% of tasks (403/480) the issue text fully specified the bug and images were merely illustrative; only 7 tasks arguably required images, with just one clear \"image win\" (carbon-12384). The author concludes the benchmark largely isn't testing multimodal ability, while noting caveats such as reliance on a single model and harness.",
+      "added": "2026-10-15"
     }
   ],
   "archive": [
