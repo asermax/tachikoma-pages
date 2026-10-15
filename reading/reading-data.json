@@ -1330,6 +1330,14 @@
       "added": "2026-10-15"
     },
     {
+      "slug": "context-inertia-when-agents-wont-let-go",
+      "title": "Context Inertia: When Agents Won't Let Go",
+      "url": "https://www.dbreunig.com/2026/10/14/context-inertia.html",
+      "category": "ai",
+      "summary": "Drew Breunig's article defines \"Context Inertia\" as an agent failure mode where a model commits to a hypothesis, subtask, or goal in its context and keeps pursuing it even after evidence says it should stop or change course. It cites four recent examples — Anthropic's Memento harness, the \"Fork-and-Flush\" paper, \"Stateless Language Agents,\" and UC Berkeley/Stanford's \"Scaling Discovery Requires Forgetting\" — all of which converged within about 10 days on the same fix: discard the agent's context and start fresh while retaining only the best work as files in the environment. Experiments showed forgetting-based approaches gained 4.5–9.2% over 30 proposals versus under 2% (at twice the cost) without forgetting, and the author notes that periodic compaction doesn't solve the problem because it preserves the very in-progress work driving the model's fixation.",
+      "added": "2026-10-15"
+    },
+    {
       "slug": "swe-bench-multimodal-scores-do-not-depend-on-images-at-least-in-my-experiments-w",
       "title": "SWE-bench Multimodal scores do not depend on images, at least in my experiments with GPT-6 Luna",
       "url": "https://sankalp.bearblog.dev/swe_multimodal/",
