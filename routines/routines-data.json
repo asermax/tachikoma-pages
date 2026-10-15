@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-14T02:00:32.923214-03:00",
+  "generated_at": "2026-10-15T02:01:05.215845-03:00",
   "week_start": "2026-10-11",
   "week_label": "October 11 - October 17, 2026",
-  "last_updated": "Wednesday, October 14, 2026 at 02:00",
+  "last_updated": "Thursday, October 15, 2026 at 02:01",
   "stats": {
-    "completed": 4.5,
-    "planned": 8,
-    "display": "4.5 / 8"
+    "completed": 7.666666666666667,
+    "planned": 11,
+    "display": "7.7 / 11"
   },
   "daily": {
     "Sunday": {
@@ -20,14 +20,14 @@
       "total": 3
     },
     "Tuesday": {
-      "status": "partial",
-      "completed": 2,
+      "status": "done",
+      "completed": 3,
       "total": 3
     },
     "Wednesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "partial",
+      "completed": 2,
+      "total": 3
     },
     "Thursday": {
       "status": "empty",
@@ -50,9 +50,9 @@
       "name": "Wind-Down Routine",
       "emoji": "",
       "status": "pending",
-      "accumulated": "1 nights",
+      "accumulated": "2 nights",
       "target": "6 nights",
-      "progress_pct": 16
+      "progress_pct": 33
     }
   ],
   "routines": [
@@ -82,7 +82,7 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -120,11 +120,11 @@
         },
         {
           "day": "Tue",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Thu",
@@ -135,9 +135,9 @@
           "status": "pending"
         }
       ],
-      "metrics_total": "30min",
-      "comparison": "",
-      "done": 1,
+      "metrics_total": "90min",
+      "comparison": "+60min",
+      "done": 3,
       "total": 6
     },
     {
@@ -170,20 +170,20 @@
         },
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 1,
+      "done": 2,
       "total": 2
     }
   ],
   "spirit": {
-    "state": "tired",
+    "state": "content",
     "emoji": "\ud83d\udc38",
     "title": "\ud83d\udc38 Mud Frog",
-    "image": "assets/tired.webp",
-    "description": "Your mud frog hides with just sleepy eyes above the mud, grey fog settling in \u2014 low energy, resting where it sits."
+    "image": "assets/content.webp",
+    "description": "Your mud frog pokes head and shoulders up from the mud under a soft drizzle \u2014 calm, settled, soaking it in."
   }
 }
