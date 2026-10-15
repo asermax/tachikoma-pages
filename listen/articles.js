@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'swe-bench-multimodal-scores-do-not-depend-on-images-at-least-in-my-experiments-w', title: 'SWE-bench Multimodal scores do not depend on images, at least in my experiments with GPT-6 Luna', meta: 'Sankalp Shubham · Oct 15, 2026 · ~23 min listen', time: '22:45' },
     { slug: 'a-new-model-for-open-source-closed-to-pull-requests-open-to-remix', title: 'a new model for open source: closed to pull requests, open to remix.', meta: 'Geoffrey Huntley · Oct 2026 · ~6 min listen', time: '5:39' },
     { slug: 'nobody-should-type-code-by-hand-anymore-heres-whats-left', title: 'nobody should type code by hand anymore. here\'s what\'s left.', meta: 'Geoffrey Huntley · Oct 13, 2026 · ~28 min listen', time: '28:12' },
     { slug: 'faster-fourier-transforms', title: 'Faster Fourier Transforms', meta: 'Ben Recht · Oct 12, 2026 · ~10 min listen', time: '9:51' },
