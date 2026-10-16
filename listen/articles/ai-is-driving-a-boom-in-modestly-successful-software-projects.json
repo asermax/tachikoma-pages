@@ -1,0 +1,78 @@
+{
+  "title": "AI is driving a boom in modestly successful software projects",
+  "meta": "Sean Goedecke · Oct 2026 · ~5 min listen",
+  "body": "<div class=\"chunk\"><p>If AI is so great, why aren’t we seeing an explosion of new, amazing software products? If anyone can turn their idea into working software with coding agents, <a href=\"https://www.natemeyvis.com/where-is-all-the-new-good-software/\" target=\"_blank\" rel=\"noopener\">where is all that software</a>? People have been <a href=\"https://mikelovesrobots.substack.com/p/wheres-the-shovelware-why-ai-coding\" target=\"_blank\" rel=\"noopener\">asking</a> <a href=\"https://www.answer.ai/posts/2026-03-12-so-where-are-all-the-ai-apps.html\" target=\"_blank\" rel=\"noopener\">this question</a> for years. As far as I can tell, the answer is that it’s spread out over a lot of modestly successful projects:</p></div>\n<div class=\"chunk\"><ul>\n<li>Somewhere between 2x and 20x new software is being created, depending on where you look</li>\n<li>There’s no real growth in massively successful software projects (not counting AI tools)</li>\n<li>There is around 2x growth in modestly successful software projects</li>\n</ul></div>\n<div class=\"chunk\"><h3>Where all the new software is<a href=\"https://www.seangoedecke.com/ai-is-driving-a-boom-in-modestly-successful-software/#where-all-the-new-software-is\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>I picked<a href=\"https://www.seangoedecke.com/ai-is-driving-a-boom-in-modestly-successful-software/#fn-1\" target=\"_blank\" rel=\"noopener\">1</a> around twenty separate sources — software marketplaces, plugin registries, modding platforms, etc — which <a href=\"https://github.com/sgoedecke/where-is-the-software/blob/main/WRITEUP.md\" target=\"_blank\" rel=\"noopener\">expose</a> installation counts. I then compared the number<a href=\"https://www.seangoedecke.com/ai-is-driving-a-boom-in-modestly-successful-software/#fn-2\" target=\"_blank\" rel=\"noopener\">2</a> of successful software projects between 2022-24 and 2025-26: i.e. before and after agentic coding hit the mainstream in mid-2025.</p></div>\n<div class=\"chunk\"><p>There’s a clear jump in <em>modestly</em> (not wildly) successful projects. For instance, the NVDA screen-reader <a href=\"https://nvda-addons.org/\" target=\"_blank\" rel=\"noopener\">addons directory</a> had a bit over twice as many new addons with more than a thousand downloads (though no change in addons with more than ten thousand). The HACS open-source home automation <a href=\"https://www.hacs.xyz/\" target=\"_blank\" rel=\"noopener\">community plugins store</a> likewise saw twice as many new addons with over a hundred installs but no change in ones with over a thousand. New Steam games with over a hundred reviews are about 60% more common now than pre-2024. Obsidian plugins, Firefox and Chrome extensions, Nexus game mods, and Blender extensions had the same pattern. The Google Play store, WordPress plugins, and a few others didn’t show this pattern, but I think it’s still enough to conclude that AI is indeed driving a boom in hobbyist software.</p></div>\n<div class=\"chunk\"><h3>Why addons and plugins?<a href=\"https://www.seangoedecke.com/ai-is-driving-a-boom-in-modestly-successful-software/#why-addons-and-plugins\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>I think examining addons, mods, and plugins is useful for a few reasons. First, it’s usually pretty easy to tell how many people are using them, or at least have installed them. Obviously AI is letting people produce a lot of software — I work at GitHub, so I see this first-hand, but the explosion in vibe-coded repos is clear to everyone — but without checking installation counts it’s unclear how much of this is actually being used.</p></div>\n<div class=\"chunk\"><p>Second, it’s a good way to minimize the amount of software that’s <em>about AI</em>. It doesn’t tell us much about AI’s effect on software to point out all the successful software projects that help people code with AI. That’s just selling shovels. The real question is whether AI is helping generate software <em>that solves people’s ordinary problems</em>.</p></div>\n<div class=\"chunk\"><p>AI-generated game mods and <a href=\"https://tech.yahoo.com/gaming/articles/ai-game-ports-bring-original-103210194.html\" target=\"_blank\" rel=\"noopener\">ports</a> are a great example of this, because gamers aren’t trying to change the world with AI coding. They just want to play multiplayer Halo CE in the browser, or <a href=\"https://www.reddit.com/r/Helldivers/comments/1x6leq7/modders_are_insane/\" target=\"_blank\" rel=\"noopener\">fly a plane</a> in Helldivers, or play Super Smash <a href=\"https://yougame.co/base/wii/super-smash-bros-brawl-usa\" target=\"_blank\" rel=\"noopener\">online</a> with rollback netcode. It’s looking like<a href=\"https://www.seangoedecke.com/ai-is-driving-a-boom-in-modestly-successful-software/#fn-3\" target=\"_blank\" rel=\"noopener\">3</a> AI can supply this need effectively.</p></div>\n<div class=\"chunk\"><h3>Were these projects actually AI generated?<a href=\"https://www.seangoedecke.com/ai-is-driving-a-boom-in-modestly-successful-software/#were-these-projects-actually-ai-generated\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>Everyone is very coy about AI usage in hobbyist communities. In the rare cases where people admit it, they often get dogpiled. People really don’t like AI, even when it’s producing software they find useful. Given that, I don’t think it’s possible to use voluntary AI disclosure data to figure out whether AI is driving a software boom: the presence of the tag itself will discourage use, and many developers are just not going to admit it.</p></div>\n<div class=\"chunk\"><p>A 2x growth in successful projects between 2022-24 and 2025-26 is clearly <em>something</em> to do with AI, particularly in the background of a 10x growth in total projects. Of course not all of these projects will have AI involvement. But when people ask “why hasn’t AI improved software”, they’re talking about a missing <em>trend</em><a href=\"https://www.seangoedecke.com/ai-is-driving-a-boom-in-modestly-successful-software/#fn-4\" target=\"_blank\" rel=\"noopener\">4</a>: wondering where all the new software is. As it turns out, it’s going towards a lot of small software projects that a few hundred or thousand people find useful.</p></div>\n<div class=\"chunk\"><h3>Why small, moderately successful projects?<a href=\"https://www.seangoedecke.com/ai-is-driving-a-boom-in-modestly-successful-software/#why-small-moderately-successful-projects\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>Why is AI growth visible in small projects but not big software companies? Why is it concentrated in moderately successful products and not wildly successful ones? I don’t have any data for this, but here’s my speculation.</p></div>\n<div class=\"chunk\"><p>Big, successful software companies often have all the visible features they want That’s why there’s not a wild explosion of new features in, say, macOS or Gmail: what would those features even be? As I’ve written about <a href=\"https://www.seangoedecke.com/difficulty-in-big-tech/\" target=\"_blank\" rel=\"noopener\">before</a>, they’re also technically paralyzed by the features they have, so it’s not trivial for even very good coding agents to add new ones. Finally, many new features in successful products are subtle (e.g. enterprise compatibility things that almost all users will never encounter, or purely internal systems that slightly increase reliability).</p></div>\n<div class=\"chunk\"><p>It’s less clear to me why there aren’t many new <em>wildly</em> successful hobbyist projects. Maybe it’s just hard to have a really good idea for a product, and AI can’t help with that. Or maybe it takes years for a really successful project to develop, and we need to be patient for the current crop of thousand-user tools to grow into hundred-thousand-user tools.</p></div>\n",
+  "audio": "ai-is-driving-a-boom-in-modestly-successful-software-projects.ogg",
+  "sync": {
+    "timestamps": [
+      0,
+      20.5,
+      37.925,
+      40.175,
+      61.95,
+      109.475,
+      111.675,
+      135.35,
+      156.125,
+      176.375,
+      179.575,
+      203.925,
+      233.85,
+      236.95,
+      251.6,
+      287.0
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14
+      ],
+      [
+        15
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://www.seangoedecke.com/ai-is-driving-a-boom-in-modestly-successful-software/"
+}
