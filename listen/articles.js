@@ -1,4 +1,6 @@
 const ARTICLES = [
+    { slug: 'neural-networks-are-already-clean-part-2', title: 'Neural Networks Are Already Clean — Part 2', meta: 'Nick Cammarata · Oct 2026 · ~43 min listen · Part 2 of 2', time: '42:38' },
+    { slug: 'neural-networks-are-already-clean-part-1', title: 'Neural Networks Are Already Clean — Part 1', meta: 'Nick Cammarata · Oct 2026 · ~119 min listen · Part 1 of 2', time: '118:42' },
     { slug: 'context-inertia-when-agents-wont-let-go', title: 'Context Inertia: When Agents Won’t Let Go', meta: 'Drew Breunig · Oct 14, 2026 · ~11 min listen', time: '11:10' },
     { slug: 'swe-bench-multimodal-scores-do-not-depend-on-images-at-least-in-my-experiments-w', title: 'SWE-bench Multimodal scores do not depend on images, at least in my experiments with GPT-6 Luna', meta: 'Sankalp Shubham · Oct 15, 2026 · ~23 min listen', time: '22:45' },
     { slug: 'a-new-model-for-open-source-closed-to-pull-requests-open-to-remix', title: 'a new model for open source: closed to pull requests, open to remix.', meta: 'Geoffrey Huntley · Oct 2026 · ~6 min listen', time: '5:39' },
