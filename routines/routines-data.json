@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-15T02:01:05.215845-03:00",
+  "generated_at": "2026-10-16T02:00:35.677818-03:00",
   "week_start": "2026-10-11",
   "week_label": "October 11 - October 17, 2026",
-  "last_updated": "Thursday, October 15, 2026 at 02:01",
+  "last_updated": "Friday, October 16, 2026 at 02:00",
   "stats": {
-    "completed": 7.666666666666667,
-    "planned": 11,
-    "display": "7.7 / 11"
+    "completed": 7.75,
+    "planned": 14,
+    "display": "7.8 / 14"
   },
   "daily": {
     "Sunday": {
@@ -30,9 +30,9 @@
       "total": 3
     },
     "Thursday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 3
     },
     "Friday": {
       "status": "empty",
@@ -50,9 +50,9 @@
       "name": "Wind-Down Routine",
       "emoji": "",
       "status": "pending",
-      "accumulated": "2 nights",
+      "accumulated": "3 nights",
       "target": "6 nights",
-      "progress_pct": 33
+      "progress_pct": 50
     }
   ],
   "routines": [
@@ -67,7 +67,7 @@
         },
         {
           "day": "Thu",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -151,7 +151,7 @@
         },
         {
           "day": "Thu",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -180,10 +180,10 @@
     }
   ],
   "spirit": {
-    "state": "content",
+    "state": "tired",
     "emoji": "\ud83d\udc38",
     "title": "\ud83d\udc38 Mud Frog",
-    "image": "assets/content.webp",
-    "description": "Your mud frog pokes head and shoulders up from the mud under a soft drizzle \u2014 calm, settled, soaking it in."
+    "image": "assets/tired.webp",
+    "description": "Your mud frog hides with just sleepy eyes above the mud, grey fog settling in \u2014 low energy, resting where it sits."
   }
 }
