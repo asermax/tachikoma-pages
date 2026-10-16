@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15",
+  "generated_at": "2026-10-16",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1344,6 +1344,14 @@
       "category": "ai",
       "summary": "The author ran GPT-6 Luna (xhigh) on SWE-bench Multimodal v2 (480 JavaScript-repo GitHub issues) in three full runs via a verifiers interception setup: with native images, with OCR replacements, and with placeholder text where images were removed. Scores were essentially identical (~37%, 175-178 of 480) across all three conditions, matching vals.ai's reported 37.5%. Trace audits by Sonnet 5.5 reviewers found that in 84% of tasks (403/480) the issue text fully specified the bug and images were merely illustrative; only 7 tasks arguably required images, with just one clear \"image win\" (carbon-12384). The author concludes the benchmark largely isn't testing multimodal ability, while noting caveats such as reliance on a single model and harness.",
       "added": "2026-10-15"
+    },
+    {
+      "slug": "neural-networks-are-already-clean",
+      "title": "Neural Networks Are Already Clean",
+      "url": "https://already-clean.goodfire.com/",
+      "category": "ai",
+      "summary": "The article argues that neural networks are far more interpretable than the field has believed, claiming that the canonical evidence for polysemanticity and superposition (e.g., InceptionV1's mixed neurons and the \"car/dog\" circuit) was misread — the apparent arbitrary mixing was mostly ordinary generalization and composition (\"recursive generalization\") plus architectural and tooling limitations, not a knot requiring unfolding. The author reports that with modest fixes, 99–100% of InceptionV1's final-layer neurons become interpretable across a 300× size range, and preliminary audits of modern language models like Qwen3-32B suggest roughly 90% of neurons have one main job with only ~2–4% not yet understood. The upshot is that mechanistic interpretability can proceed by studying networks directly rather than via reconstruction methods like sparse autoencoders, though the author notes caveats such as weak activations, thresholding choices, and small sample sizes.",
+      "added": "2026-10-16"
     }
   ],
   "archive": [
