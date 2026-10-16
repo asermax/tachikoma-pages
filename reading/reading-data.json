@@ -1346,11 +1346,43 @@
       "added": "2026-10-15"
     },
     {
+      "slug": "ai-is-driving-a-boom-in-modestly-successful-software-projects",
+      "title": "AI is driving a boom in modestly successful software projects",
+      "url": "https://www.seangoedecke.com/ai-is-driving-a-boom-in-modestly-successful-software/",
+      "category": "ai",
+      "summary": "Sean Goedecke analyzes ~20 marketplaces with public install counts: ~2x growth in modestly successful hobbyist projects (NVDA addons, HACS plugins, Steam games, Obsidian plugins) since agentic coding went mainstream, no growth in breakout hits. Argument: AI's macro effect is distributed across many mid-tier tools solving narrow problems, not unicorn apps.",
+      "added": "2026-10-16"
+    },
+    {
       "slug": "neural-networks-are-already-clean",
       "title": "Neural Networks Are Already Clean",
       "url": "https://already-clean.goodfire.com/",
       "category": "ai",
       "summary": "The article argues that neural networks are far more interpretable than the field has believed, claiming that the canonical evidence for polysemanticity and superposition (e.g., InceptionV1's mixed neurons and the \"car/dog\" circuit) was misread — the apparent arbitrary mixing was mostly ordinary generalization and composition (\"recursive generalization\") plus architectural and tooling limitations, not a knot requiring unfolding. The author reports that with modest fixes, 99–100% of InceptionV1's final-layer neurons become interpretable across a 300× size range, and preliminary audits of modern language models like Qwen3-32B suggest roughly 90% of neurons have one main job with only ~2–4% not yet understood. The upshot is that mechanistic interpretability can proceed by studying networks directly rather than via reconstruction methods like sparse autoencoders, though the author notes caveats such as weak activations, thresholding choices, and small sample sizes.",
+      "added": "2026-10-16"
+    },
+    {
+      "slug": "pi-durable-on-cloudflare",
+      "title": "Pi Durable on Cloudflare",
+      "url": "https://earendil.com/posts/pi-durable-on-cloudflare/",
+      "category": "engineering",
+      "summary": "Technical walkthrough of running Pi Durable (long-running AI agent harness) on Cloudflare Durable Objects: one session = one DO with SQLite storage, hibernatable WebSockets, alarm-driven scheduled work; Cloudflare storage adapter validated against Pi's conformance suite; multiplayer chat agent with forks, durable inbox, and a subagent for cross-conversation search.",
+      "added": "2026-10-16"
+    },
+    {
+      "slug": "revisiting-some-of-my-priors-about-openclaw",
+      "title": "Revisiting some of my priors about OpenClaw",
+      "url": "https://ghuntley.com/bot/",
+      "category": "ai",
+      "summary": "Geoffrey Huntley revisits personal AI bot priors: stopped self-hosting OpenClaw over the unsolved 'lethal trifecta', used managed Poke for a year, now runs Grokbot full-time. Catalogs a week of micro-bots (daily brief, newsletter unsubscribe, tax drafting, expense chasing, infra ops) built by turning missing functionality into skills, while flagging that the security problem remains unsolved.",
+      "added": "2026-10-16"
+    },
+    {
+      "slug": "state-of-agentic-coding-11-the-curiosity-test-lisp-and-labs-that-cant-fail",
+      "title": "state of agentic coding #11: the curiosity test, lisp, and labs that can't fail",
+      "url": "https://ghuntley.com/toronto/",
+      "category": "ai",
+      "summary": "Writeup of State of Agentic Coding ep. 11 (Ronacher/Vinegar, recorded in Toronto): Huntley's 'curiosity test' for developers displaced by AI, the Ralph loop's nine-month path from dismissal to industry standard, boom-bust parables (Buffalo/Detroit), Ronacher's commoditization read on software labor, DHH's IDE funeral, and why AI labs can't afford to fail.",
       "added": "2026-10-16"
     }
   ],
