@@ -1368,6 +1368,14 @@
       "category": "ai",
       "summary": "Geoffrey Huntley revisits personal AI bot priors: stopped self-hosting OpenClaw over the unsolved 'lethal trifecta', used managed Poke for a year, now runs Grokbot full-time. Catalogs a week of micro-bots (daily brief, newsletter unsubscribe, tax drafting, expense chasing, infra ops) built by turning missing functionality into skills, while flagging that the security problem remains unsolved.",
       "added": "2026-10-16"
+    },
+    {
+      "slug": "how-to-effectively-debug-when-you-no-longer-understand-the-code",
+      "title": "How to effectively debug when you no longer understand the code",
+      "url": "https://copyconstruct.medium.com/how-to-effectively-debug-when-you-no-longer-understand-the-code-bd3dcb2c5f7b",
+      "category": "engineering",
+      "summary": "Cindy Sridharan explores the emerging skill of debugging unfamiliar code with AI agents — being productive without fully reading or understanding the code. Grounded in three real production bugs (latency, memory leak, hang) on a near-decade-old codebase, she defines controls/variables/signals as the vocabulary of agentic debugging, shows how each bug needed different agent-steering approaches based on familiarity, reproducibility, and source access, and argues honest verification of agent conclusions plus rethinking the 'software factory' for autonomy and accountability is the paradigm shift required.",
+      "added": "2026-10-17"
     }
   ],
   "archive": [
