@@ -1368,14 +1368,6 @@
       "category": "ai",
       "summary": "Geoffrey Huntley revisits personal AI bot priors: stopped self-hosting OpenClaw over the unsolved 'lethal trifecta', used managed Poke for a year, now runs Grokbot full-time. Catalogs a week of micro-bots (daily brief, newsletter unsubscribe, tax drafting, expense chasing, infra ops) built by turning missing functionality into skills, while flagging that the security problem remains unsolved.",
       "added": "2026-10-16"
-    },
-    {
-      "slug": "state-of-agentic-coding-11-the-curiosity-test-lisp-and-labs-that-cant-fail",
-      "title": "state of agentic coding #11: the curiosity test, lisp, and labs that can't fail",
-      "url": "https://ghuntley.com/toronto/",
-      "category": "ai",
-      "summary": "Writeup of State of Agentic Coding ep. 11 (Ronacher/Vinegar, recorded in Toronto): Huntley's 'curiosity test' for developers displaced by AI, the Ralph loop's nine-month path from dismissal to industry standard, boom-bust parables (Buffalo/Detroit), Ronacher's commoditization read on software labor, DHH's IDE funeral, and why AI labs can't afford to fail.",
-      "added": "2026-10-16"
     }
   ],
   "archive": [
@@ -3065,6 +3057,16 @@
       "url": "https://earendil.com/posts/pi-durable-on-cloudflare/",
       "category": "engineering",
       "summary": "Technical walkthrough of running Pi Durable (long-running AI agent harness) on Cloudflare Durable Objects: one session = one DO with SQLite storage, hibernatable WebSockets, alarm-driven scheduled work; Cloudflare storage adapter validated against Pi's conformance suite; multiplayer chat agent with forks, durable inbox, and a subagent for cross-conversation search.",
+      "added": "2026-10-16",
+      "read": "2026-10-17",
+      "has_notes": true
+    },
+    {
+      "slug": "state-of-agentic-coding-11-the-curiosity-test-lisp-and-labs-that-cant-fail",
+      "title": "state of agentic coding #11: the curiosity test, lisp, and labs that can't fail",
+      "url": "https://ghuntley.com/toronto/",
+      "category": "ai",
+      "summary": "Writeup of State of Agentic Coding ep. 11 (Ronacher/Vinegar, recorded in Toronto): Huntley's 'curiosity test' for developers displaced by AI, the Ralph loop's nine-month path from dismissal to industry standard, boom-bust parables (Buffalo/Detroit), Ronacher's commoditization read on software labor, DHH's IDE funeral, and why AI labs can't afford to fail.",
       "added": "2026-10-16",
       "read": "2026-10-17",
       "has_notes": true
