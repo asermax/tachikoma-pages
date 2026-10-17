@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16",
+  "generated_at": "2026-10-17",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1359,14 +1359,6 @@
       "url": "https://already-clean.goodfire.com/",
       "category": "ai",
       "summary": "The article argues that neural networks are far more interpretable than the field has believed, claiming that the canonical evidence for polysemanticity and superposition (e.g., InceptionV1's mixed neurons and the \"car/dog\" circuit) was misread — the apparent arbitrary mixing was mostly ordinary generalization and composition (\"recursive generalization\") plus architectural and tooling limitations, not a knot requiring unfolding. The author reports that with modest fixes, 99–100% of InceptionV1's final-layer neurons become interpretable across a 300× size range, and preliminary audits of modern language models like Qwen3-32B suggest roughly 90% of neurons have one main job with only ~2–4% not yet understood. The upshot is that mechanistic interpretability can proceed by studying networks directly rather than via reconstruction methods like sparse autoencoders, though the author notes caveats such as weak activations, thresholding choices, and small sample sizes.",
-      "added": "2026-10-16"
-    },
-    {
-      "slug": "pi-durable-on-cloudflare",
-      "title": "Pi Durable on Cloudflare",
-      "url": "https://earendil.com/posts/pi-durable-on-cloudflare/",
-      "category": "engineering",
-      "summary": "Technical walkthrough of running Pi Durable (long-running AI agent harness) on Cloudflare Durable Objects: one session = one DO with SQLite storage, hibernatable WebSockets, alarm-driven scheduled work; Cloudflare storage adapter validated against Pi's conformance suite; multiplayer chat agent with forks, durable inbox, and a subagent for cross-conversation search.",
       "added": "2026-10-16"
     },
     {
@@ -3065,6 +3057,16 @@
       "summary": "The article argues that software engineers who are angry about AI automating their work have no standing to complain, because software engineering has always been in the business of automating other people's jobs. Every commercial software product exists because it replaces human labor, and the industry has already eliminated or transformed whole sectors: video rental stores, travel agencies, typing pools, data entry, typesetting companies, record stores, encyclopedias, and more. The author notes the creator of VisiCalc himself agonized over spreadsheets putting bookkeepers out of work.\n\nThe historical parallel the author draws is with the Luddites: engineers sympathetic to displaced workers like to identify with the textile workers, but they are actually the equivalent of the smiths and mechanics who built the power looms. Those mechanics, ironically, were themselves displaced fifty years later when improved manufacturing let unskilled laborers run the machines, and their strike fizzled partly because they were seen as hypocrites. The Times of the era dismissed their protest as \"the cry of the handloom weavers, a cry against inevitable and irresistible laws.\"\n\nThe author argues that from the inside, software engineering feels like elegant puzzle-solving, but what it actually is, is the replacement of human labor with cheaper machine labor. The optimistic view holds that automation is progress: modern medicine, reduced child mortality, food production, space exploration, and when industries die, new ones emerge. The author admits this pro-technology stance is unfashionable after climate change, the 2008 crash, social media's harms, and tech leaders' politics, but insists engineers have always been on the side of automation regardless of what they profess.\n\nThe main takeaway: deciding that this is the moment to oppose technological progress, precisely as the wave of automation reaches one's own industry, is undignified. Engineers have spent their careers destroying or transforming other people's jobs; if they believe that's wrong, fairness demands they accept the same fate for their own work.",
       "added": "2026-10-12",
       "read": "2026-10-12",
+      "has_notes": true
+    },
+    {
+      "slug": "pi-durable-on-cloudflare",
+      "title": "Pi Durable on Cloudflare",
+      "url": "https://earendil.com/posts/pi-durable-on-cloudflare/",
+      "category": "engineering",
+      "summary": "Technical walkthrough of running Pi Durable (long-running AI agent harness) on Cloudflare Durable Objects: one session = one DO with SQLite storage, hibernatable WebSockets, alarm-driven scheduled work; Cloudflare storage adapter validated against Pi's conformance suite; multiplayer chat agent with forks, durable inbox, and a subagent for cross-conversation search.",
+      "added": "2026-10-16",
+      "read": "2026-10-17",
       "has_notes": true
     }
   ]
