@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16",
+  "generated_at": "2026-10-17",
   "queue": [
     {
       "slug": "nigel-cheese-down-the-rabbit-hole",
@@ -746,6 +746,17 @@
       "summary": "Armin and Mario discuss self-modifying software and AI agent coding harnesses. Personalized, evolving software for a single user is simple, but scaling self-modifying systems across teams needs robust core primitives, sandboxing, and well-defined constraints so agents don't break the base application. Covers plugin management, error recovery, and long-term stability alongside rapid AI-driven customization. Relevant to software engineers, AI developers, and system architects interested in extensible agent architectures.",
       "added": "2026-10-13",
       "watched": "2026-10-13",
+      "has_notes": true
+    },
+    {
+      "slug": "state-of-agentic-coding-11-with-geoff-armin-and-ben",
+      "title": "State of Agentic Coding #11 with Geoff, Armin, and Ben",
+      "url": "https://www.youtube.com/watch?v=HDdbU10r7Js",
+      "video_id": "HDdbU10r7Js",
+      "channel": "Armin Ronacher",
+      "summary": "State of Agentic Coding ep. 11: Ben Vinegar and Armin Ronacher host Geoffrey Huntley on AI-driven development and loop engineering. Huntley presents 'The Curiosity Test' \u2014 developers at risk from AI displacement face a self-inflicted outcome if they fail to stay curious \u2014 while the hosts counterbalance with the psychological burden, career uncertainty, and loss of professional identity many developers feel as expectations shift overnight.",
+      "added": "2026-10-17",
+      "watched": "2026-10-17",
       "has_notes": true
     }
   ]
