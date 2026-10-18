@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'writing-is-no-longer-proof-of-work', title: 'Writing is no longer proof of work', meta: 'Sean Goedecke · Oct 18, 2026 · ~6 min listen', time: '6:10' },
     { slug: 'how-to-effectively-debug-when-you-no-longer-understand-the-code', title: 'How to effectively debug when you no longer understand the code', meta: 'Cindy Sridharan · Oct 2026 · ~97 min listen', time: '96:40' },
     { slug: 'revisiting-some-of-my-priors-about-openclaw', title: 'revisiting some of my priors about openclaw', meta: 'Geoffrey Huntley · Oct 2026 · ~8 min listen', time: '7:49' },
     { slug: 'neural-networks-are-already-clean-part-2', title: 'Neural Networks Are Already Clean — Part 2', meta: 'Nick Cammarata · Oct 2026 · ~43 min listen · Part 2 of 2', time: '42:38' },
