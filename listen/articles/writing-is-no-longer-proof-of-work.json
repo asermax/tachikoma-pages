@@ -1,0 +1,114 @@
+{
+  "title": "Writing is no longer proof of work",
+  "meta": "Sean Goedecke · Oct 18, 2026 · ~6 min listen",
+  "body": "<div class=\"chunk\"><p>Tech companies structurally depend on writing to serve as evidence, in the same way that Bitcoin depends on proof-of-work hashing. However, in the last few years, LLMs have started to undermine this practice.</p></div>\n<div class=\"chunk\"><p>How can writing be like proof-of-work? When I’m writing something at work, it’s not always to communicate an idea. Sometimes it’s because having a piece of writing is useful as <em>evidence</em>: of compliance with some process, of the fact that I put in effort, or of the fact that I know about some topic. Here are some examples.</p></div>\n<div class=\"chunk\"><h3>Writing as evidence of compliance<a href=\"https://www.seangoedecke.com/writing-is-no-longer-proof-of-work/#writing-as-evidence-of-compliance\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>The most obvious instance of writing as evidence is filling out mandatory templates: “risk assessments”, “impact evaluations”, and so on. The purpose of these is rarely to assess risk or evaluate impact. It’s some combination of:</p></div>\n<div class=\"chunk\"><ul>\n<li>Employees wanting to demonstrate that they’re taking some incident seriously by introducing new process</li>\n<li>A legal requirement that companies have developed the least-expensive way to technically satisfy</li>\n<li>Internal company rules intending to scare lazy or uncommitted engineers away from making dangerous changes</li>\n<li>Smaller companies trying to role-play processes from larger companies that are doing one of the above</li>\n</ul></div>\n<div class=\"chunk\"><p>It’s a mistake to buckle down and produce an excellent piece of writing here. You simply need to dash off something plausible enough to tick the box.</p></div>\n<div class=\"chunk\"><h3>Writing as evidence of effort<a href=\"https://www.seangoedecke.com/writing-is-no-longer-proof-of-work/#writing-as-evidence-of-effort\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>In the kinds of hundred-page reports produced by consultants, writing is evidence of <em>effort</em>. The actual piece of communication is the first page of text (or often not even that). The remaining ninety-nine pages are proof that the first page is well-researched, and that the money spent on hiring the consultancy wasn’t wasted.</p></div>\n<div class=\"chunk\"><p>Another example: if you’re working on a project by yourself, why spend time creating tickets and filling them out? I suppose theoretically someone could read them to get a sense of what you’re doing, but in that case you’ve failed to communicate the project via normal channels: telling people in Slack or in meetings, writing a proposal document, and so on. The tickets are primarily valuable as <em>evidence</em>: proof<a href=\"https://www.seangoedecke.com/writing-is-no-longer-proof-of-work/#fn-1\" target=\"_blank\" rel=\"noopener\">1</a> that you haven’t just been screwing around playing video games.</p></div>\n<div class=\"chunk\"><h3>Writing as evidence of learning<a href=\"https://www.seangoedecke.com/writing-is-no-longer-proof-of-work/#writing-as-evidence-of-learning\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>A third subcategory of writing-as-evidence is writing that proves that the writer has understood some topic.</p></div>\n<div class=\"chunk\"><p>The best example of this is reporting. Large organizations function via a tree of nested reports, often called “rollups”. Individual contributors give status updates to their managers, who summarize and combine those into team-level updates for their managers, and so on all the way to the top.</p></div>\n<div class=\"chunk\"><p>One of the reasons for this practice is that it forces each manager to build at least a minimal mental model of what’s going on in their local area. Taking the time to write a status report forces you to wrap your head around each detail, for the same reason that the best way to understand an idea is to try to explain it to someone else. Even if the VP or CEO doesn’t read the rollup, the fact that it exists is <em>evidence</em> that the manager has some grip over their domain.</p></div>\n<div class=\"chunk\"><h3>Proof of work<a href=\"https://www.seangoedecke.com/writing-is-no-longer-proof-of-work/#proof-of-work\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>You can think of all these kinds of writing-as-evidence as <a href=\"https://www.seangoedecke.com/blockchain-explained-simply/\" target=\"_blank\" rel=\"noopener\">proof of work</a>. Nobody really cares about the content, they care about the fact that you <em>sat down and wrote it</em>. Of course, this requires a measure of trust. Just like cryptocurrency proof-of-work, if you fake it (for instance, by pasting <a href=\"https://www.lipsum.com/\" target=\"_blank\" rel=\"noopener\">lorem ipsum</a> into pages 2-100 of your report), you can swindle the rewards without having to actually put in the effort.</p></div>\n<div class=\"chunk\"><p>To avoid fraud, tech companies will typically check some percentage of writing-as-evidence: either reactively, such as when an incident causes people to actually go and read the risk assessment on the PR that broke production, or proactively, by tasking some poor soul with reviewing the consultant report in detail. Blockchains, of course, are able to check the work automatically (for instance, by confirming that the nonce and block data do in fact hash to the claimed value).</p></div>\n<div class=\"chunk\"><p>To break Bitcoin, somebody would have to break SHA-256: to figure out a way to identify in advance what content would hash to a specific value, so you could produce the hash without doing the work. To break writing-as-evidence, somebody would have to figure out a way to generate text on demand, so you could produce the evidence (of compliance, effort or learning) without actually doing the work. Unfortunately, that happened in <a href=\"https://en.wikipedia.org/wiki/GPT-4\" target=\"_blank\" rel=\"noopener\">2023</a>.</p></div>\n<div class=\"chunk\"><h3>LLMs fundamentally break writing-as-evidence<a href=\"https://www.seangoedecke.com/writing-is-no-longer-proof-of-work/#llms-fundamentally-break-writing-as-evidence\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>Writing is no longer evidence of anything. LLM-produced writing makes evidence of compliance even more vacuous than it already is. It totally destroys evidence of effort: if you need a hundred-page report, you can generate one with an hour and a few dollars in inference tokens. Evidence of learning is likewise broken, since I can produce a detailed status report full of information that never passed through my mind at all (and certainly was never retained).</p></div>\n<div class=\"chunk\"><p>Of course, this problem isn’t limited to tech companies. Schools and universities rely on writing to serve as evidence of effort and learning, and students are using LLMs to cheat as hard as they can. Many political or regulatory bodies <a href=\"https://x.com/patio11/status/1640539217498632192\" target=\"_blank\" rel=\"noopener\">require</a> a certain bar of professional writing in order to filter requests, and are or will be overloaded by LLMs making that kind of writing generally available.</p></div>\n<div class=\"chunk\"><h3>What happens now?<a href=\"https://www.seangoedecke.com/writing-is-no-longer-proof-of-work/#what-happens-now\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>Currently we’re suffering through an overhang period where the processes are still in place but everyone knows how to trivially exploit them. It will be interesting to see how organizations adapt. They might:</p></div>\n<div class=\"chunk\"><ul>\n<li>Introduce new, harder-to-forge forms of evidence like recording a video or presenting live in a meeting (though this will take more time to consume than written reports)</li>\n<li>Attempt to mandate that certain forms of writing not be AI-generated (universities already do this<a href=\"https://www.seangoedecke.com/writing-is-no-longer-proof-of-work/#fn-2\" target=\"_blank\" rel=\"noopener\">2</a>), which will be <a href=\"https://www.seangoedecke.com/ai-detection/\" target=\"_blank\" rel=\"noopener\">difficult</a> to enforce</li>\n<li>Find other ways to track effort, such as asking an LLM to review an engineer’s code and judge how much work they put in</li>\n</ul></div>\n<div class=\"chunk\"><p>I can’t think of any great options here, which is interesting. If there really is no easy solution to this problem, the overhang period might go on for a while, where nobody is particularly happy with the status quo but there are no good alternatives.</p></div>\n<div class=\"chunk\"><p>In this scenario, individual software engineers are incentivized to exploit the system while they can, and avoid being harmed by other system-exploiters. In other words: don’t trust or waste time poring through LLM-authored documents yourself, but also don’t waste time writing documents by hand that are just intended to serve as evidence<a href=\"https://www.seangoedecke.com/writing-is-no-longer-proof-of-work/#fn-3\" target=\"_blank\" rel=\"noopener\">3</a>. Save that effort for documents that are intended to serve as <em>communication</em>.</p></div>\n",
+  "audio": "writing-is-no-longer-proof-of-work.ogg",
+  "sync": {
+    "timestamps": [
+      0,
+      12.175,
+      29.125,
+      32.4,
+      46.35,
+      73.25,
+      81.875,
+      84.85,
+      102.475,
+      125.5,
+      128.45,
+      135.75,
+      152.55,
+      176.15,
+      178.1,
+      198.625,
+      222.65,
+      245.15,
+      249.375,
+      273.05,
+      294.825,
+      297.05,
+      308.725,
+      334.525,
+      348.325
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14
+      ],
+      [
+        15
+      ],
+      [
+        16
+      ],
+      [
+        17
+      ],
+      [
+        18
+      ],
+      [
+        19
+      ],
+      [
+        20
+      ],
+      [
+        21
+      ],
+      [
+        22
+      ],
+      [
+        23
+      ],
+      [
+        24
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://seangoedecke.com/writing-is-no-longer-proof-of-work/"
+}
