@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17",
+  "generated_at": "2026-10-18",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1376,6 +1376,14 @@
       "category": "engineering",
       "summary": "Cindy Sridharan explores the emerging skill of debugging unfamiliar code with AI agents — being productive without fully reading or understanding the code. Grounded in three real production bugs (latency, memory leak, hang) on a near-decade-old codebase, she defines controls/variables/signals as the vocabulary of agentic debugging, shows how each bug needed different agent-steering approaches based on familiarity, reproducibility, and source access, and argues honest verification of agent conclusions plus rethinking the 'software factory' for autonomy and accountability is the paradigm shift required.",
       "added": "2026-10-17"
+    },
+    {
+      "slug": "writing-is-no-longer-proof-of-work",
+      "title": "Writing is no longer proof of work",
+      "url": "https://seangoedecke.com/writing-is-no-longer-proof-of-work/",
+      "category": "ai",
+      "summary": "Sean Goedecke argues that tech companies structurally depend on writing as *evidence* in the same way Bitcoin depends on proof-of-work hashing — and that LLMs have broken this arrangement. Much workplace writing exists not to communicate ideas, but to prove something: compliance with a process, effort expended, or knowledge acquired.\n\nHe identifies three categories of writing-as-evidence. First, evidence of compliance: mandatory risk assessments and impact evaluations whose real purpose is ticking boxes, scaring off careless engineers, or satisfying legal requirements — where dashing off something plausible beats producing an excellent document. Second, evidence of effort: consultant-style hundred-page reports where only the first page communicates anything, with the rest proving the money was well spent; similarly, self-created tickets that mainly prove you weren't slacking off. Third, evidence of learning: reporting \"rollups,\" where writing a status update forces a manager to build a mental model of their domain, with the report itself serving as evidence they understand their area even if no one reads it.\n\nLike Bitcoin, this system relies on trust plus spot-checking (e.g., reading the risk assessment after an incident). Breaking it required finding a way to produce the evidence without doing the work — the equivalent of breaking SHA-256. That happened in 2023 with LLMs: compliance documents become more vacuous, hundred-page reports can be generated in an hour for a few dollars, and status reports can be produced without any information passing through the writer's mind. The problem extends beyond tech to schools (student cheating) and regulatory bodies flooded with AI-generated requests.\n\nWe're now in an overhang period where broken processes remain in place. Possible adaptations — live presentations or videos, bans on AI-generated writing, or using LLMs to judge effort from code — all have drawbacks, and Goedecke sees no great solution, so the overhang may persist. His practical advice for individual engineers: exploit the system while avoiding harm from other exploiters — don't waste time reading LLM-authored evidence documents, and don't hand-write documents meant only as evidence; reserve writing effort for documents intended to genuinely communicate.",
+      "added": "2026-10-18"
     }
   ],
   "archive": [
