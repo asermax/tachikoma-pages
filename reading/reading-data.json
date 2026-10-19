@@ -1386,6 +1386,14 @@
       "added": "2026-10-18"
     },
     {
+      "slug": "new-season-upgrades-vol-3-split-keyboard-adventures",
+      "title": "New Season Upgrades Vol 3: Split Keyboard Adventures!",
+      "url": "https://cekrem.github.io/posts/new-season-upgrades-vol-3-split-keyboard-adventures/",
+      "category": "engineering",
+      "summary": "Christian Ekrem on transitioning to a split keyboard (MoErgo Go60) as a deliberate long-term investment in his craft. A week in, typing slowly but framing the temporary pain as worthwhile, in a lineage of muscle-memory investments (touch typing, layout switch to English, vim). Broader argument: embracing painful-today-great-tomorrow skills counterbalances instant gratification — especially when delegating coding to AI agents. The split itself isn't the biggest adjustment; the columnar layout is (keys aligned vertically matching finger lengths). Split keyboards shift work to thumbs (enter, backspace) away from pinky stretches. Community key-fu: mod taps (tap vs hold), sticky keys, layers (space-held coding layer with multi-symbol shortcuts like |> and ->); veterans go further with home-row mods, he's holding off. Takeaway: learning new skills never gets old, a layer always beats a hand stretch.",
+      "added": "2026-10-19"
+    },
+    {
       "slug": "what-requirements-dont-you-have",
       "title": "What requirements don't you have?",
       "url": "https://seangoedecke.com/what-requirements-dont-you-have/",
