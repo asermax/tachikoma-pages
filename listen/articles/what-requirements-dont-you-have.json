@@ -1,0 +1,82 @@
+{
+  "title": "What requirements don't you have?",
+  "meta": "Sean Goedecke · Oct 2026 · ~5 min listen",
+  "body": "<div class=\"chunk\"><p>When designing software, the requirements you don’t have are as important as the requirements you do. Identifying what you can compromise on — what can be slow, or stale, or inflexible — is usually the key to an elegant design.</p></div>\n<div class=\"chunk\"><h3>Elegant systems drop some requirements<a href=\"https://www.seangoedecke.com/what-requirements-dont-you-have/#elegant-systems-drop-some-requirements\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>For instance, take preforking web servers like <a href=\"https://github.com/defunkt/unicorn/\" target=\"_blank\" rel=\"noopener\">Unicorn</a>. Because they lack the feature of shared mutable state between server instances, they can run each server in its own process, which provides isolation for free. Because Unicorn specifically ignores the problem of slow client handling<a href=\"https://www.seangoedecke.com/what-requirements-dont-you-have/#fn-1\" target=\"_blank\" rel=\"noopener\">1</a>, it can queue requests directly on Unix sockets, drastically simplifying the implementation.</p></div>\n<div class=\"chunk\"><p>Because <a href=\"https://aws.amazon.com/s3\" target=\"_blank\" rel=\"noopener\">S3</a> does not support atomic multi-key updates — you cannot update multiple blobs in a single transaction — it can store data at the blob level however it chooses. That makes it much faster, since reads and writes don’t have to cross storage partitions, and much easier to scale, since less coordination means fewer sources of truth.</p></div>\n<div class=\"chunk\"><p><a href=\"https://github.com/statsd/statsd\" target=\"_blank\" rel=\"noopener\">StatsD</a> uses UDP by default, which means it doesn’t guarantee that every piece of data you send makes it into storage. In exchange for dropping that requirement, it incurs much less network overhead, which is a big advantage for a stats aggregation service that’s constantly shoveling data over the wire.</p></div>\n<div class=\"chunk\"><p>The general design approach of fanning out data to an edge cache buys a lot of speed and scaling by dropping the requirement that data must always be up-to-date. <a href=\"https://www.sqlite.org/\" target=\"_blank\" rel=\"noopener\">SQLite</a> buys operational simplicity — it can run out of a single file! — by dropping the requirement of concurrent writes. By accepting <a href=\"https://cursor.com/blog/git-at-any-scale\" target=\"_blank\" rel=\"noopener\">high tail latency</a><a href=\"https://www.seangoedecke.com/what-requirements-dont-you-have/#fn-2\" target=\"_blank\" rel=\"noopener\">2</a>, Cursor can scale their distributed git backend more easily. Well-designed systems turn their weaknesses into strengths.</p></div>\n<div class=\"chunk\"><h3>Why dropping requirements is hard<a href=\"https://www.seangoedecke.com/what-requirements-dont-you-have/#why-dropping-requirements-is-hard\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>Anyone who’s spent time designing real-world software (or who’s studied <a href=\"https://en.wikipedia.org/wiki/CAP_theorem\" target=\"_blank\" rel=\"noopener\">distributed systems</a>) knows that system design is a process of compromise. If you attempt to satisfy every single potential requirement — speed, concurrency, up-to-date data, a simple interface, supporting complex user behaviors — you will fail to design a working system at all.</p></div>\n<div class=\"chunk\"><p>Figuring out what requirements you can relax is difficult because <strong>it combines both business and technical expertise</strong>. It is technically challenging to identify precisely the level of staleness that a particular design change will allow; it is likewise challenging from a business perspective to determine whether that level of staleness is acceptable to users.</p></div>\n<div class=\"chunk\"><p>In most cases, an engineer who understands the technical side must try and explain it to a product manager, who can make a judgement on the business side. But this is a very difficult partnership to get right. Engineers and PMs have different incentives and little ability to check each other’s work, which makes it hard to <a href=\"https://www.seangoedecke.com/working-with-product-managers/#why-its-so-hard-to-build-trust\" target=\"_blank\" rel=\"noopener\">build trust</a>. Without trust, the product manager is liable to avoid giving any ground at all<a href=\"https://www.seangoedecke.com/what-requirements-dont-you-have/#fn-3\" target=\"_blank\" rel=\"noopener\">3</a>, which leaves the design in an impossible state.</p></div>\n<div class=\"chunk\"><p>This is an underappreciated reason why solo developers or startups can sometimes run rings around larger companies. Because the technical and business decisions are united in a single person, they can make design tradeoffs that would be impossible for a large company, enabling them to build systems that are far more elegant and powerful.</p></div>\n<div class=\"chunk\"><h3>Working with LLMs<a href=\"https://www.seangoedecke.com/what-requirements-dont-you-have/#working-with-llms\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>Knowing what requirements you don’t have becomes far more important when working with coding agents. Frontier models are very capable, but they have all gone through the purifying flames of <a href=\"https://rlvrbook.com/\" target=\"_blank\" rel=\"noopener\">RLVR</a>: like high-achieving schoolchildren, they are obsessed with satisfying the Grader. On top of that, they have very little business context compared to an experienced human. That often manifests as them catching correctness or consistency “bugs” that are really just hypothetical unsatisfied requirements.</p></div>\n<div class=\"chunk\"><p>For instance, it’s not uncommon for an LLM to casually introduce a mutex or other concurrency mechanism to ensure that two pieces of semi-related data are kept in sync, even if not told to do so. I’ve seen LLMs add weird checks in the middle of request handling to ensure that some already-checked piece of data hasn’t changed mid-flight, even if that wouldn’t successfully prevent the feared <a href=\"https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use\" target=\"_blank\" rel=\"noopener\">TOCTOU</a> bug<a href=\"https://www.seangoedecke.com/what-requirements-dont-you-have/#fn-4\" target=\"_blank\" rel=\"noopener\">4</a>. LLMs are obsessed with edge cases like “what if the current user loses their admin status in the middle of us handling one of their admin requests?”<a href=\"https://www.seangoedecke.com/what-requirements-dont-you-have/#fn-5\" target=\"_blank\" rel=\"noopener\">5</a>, or “what if the cache in storage partition A is updated a nanosecond before the one in storage partition B, leading some users to see different data?“. Particularly if run in a loop or told to “make no mistakes”, they will pile on cases like these until they’ve transformed your four-line change into a thousand-line monster.</p></div>\n<div class=\"chunk\"><p>This is why I’m confused by some people’s claims that <a href=\"https://newsletter.pragmaticengineer.com/p/what-is-happening-with-code-reviews\" target=\"_blank\" rel=\"noopener\">code review is dead</a>. About half the time I review a large AI-generated change, I notice some unnecessary requirement that makes the diff more complex. When I dig deeper, the LLM invariably introduced this requirement on its own.</p></div>\n<div class=\"chunk\"><p>When working with a cache, I will often spell out in my prompt that I don’t mind the data sometimes being stale or briefly inconsistent between cache instances. When reviewing Golang code, the first thing I do is scan for added mutexes or layers of indirection that don’t look necessary to me.</p></div>\n<div class=\"chunk\"><p>If you allow requirements like these to propagate unchecked through a codebase, they will petrify the system over time. The whole thing will be such a mess of checking and re-checking and holding locks and enforcing consistency that it cannot be scaled at all. Keeping systems elegant requires a ruthless focus: on accepting stale data or occasional tail latency, on avoiding all but critical instances of coordination, and in general on figuring out what requirements you <em>don’t</em> have to satisfy.</p></div>\n",
+  "audio": "what-requirements-dont-you-have.ogg",
+  "sync": {
+    "timestamps": [
+      0,
+      13.225,
+      16.675,
+      37.35,
+      56.25,
+      73.55,
+      96.15,
+      99.375,
+      118.45,
+      137.775,
+      161.125,
+      180.2,
+      182.925,
+      208.1,
+      255.25,
+      272.175,
+      288.7
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14
+      ],
+      [
+        15
+      ],
+      [
+        16
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://seangoedecke.com/what-requirements-dont-you-have/"
+}
