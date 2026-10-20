@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'the-age-of-wonders-and-terrors', title: 'The Age of Wonders and Terrors', meta: 'Scott Aaronson · Sep 2026 · ~15 min listen', time: '14:50' },
     { slug: 'new-season-upgrades-vol-3-split-keyboard-adventures', title: 'New Season Upgrades Vol 3: Split Keyboard Adventures!', meta: 'Christian Ekrem · Oct 2026 · ~7 min listen', time: '6:53' },
     { slug: 'what-requirements-dont-you-have', title: 'What requirements don\'t you have?', meta: 'Sean Goedecke · Oct 2026 · ~5 min listen', time: '5:13' },
     { slug: 'writing-is-no-longer-proof-of-work', title: 'Writing is no longer proof of work', meta: 'Sean Goedecke · Oct 18, 2026 · ~6 min listen', time: '6:10' },
