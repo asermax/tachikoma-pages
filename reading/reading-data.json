@@ -3298,11 +3298,21 @@
       "has_notes": true
     },
     {
+      "slug": "its-still-ok-to-enjoy-programming",
+      "title": "It's still OK to enjoy programming",
+      "url": "https://chriskiehl.com/article/it-is-still-ok-to-enjoy-programming",
+      "category": "productivity",
+      "summary": "Pushes back against the doom in programming communities about AI making hand-written code pointless: in paid work the economics changed, but work is not life. Describes programming for fun on weekends — a buggy Breakout clone, type-safety study via dependent types, recursion schemes — none needing economic justification. Doesn't mind that AI could one-shot his code; hard 'useless' ideas often pay off years later. The pressure not to enjoy programming comes from consuming doom-heavy content and vanishes when you disconnect. Enjoying things requires no economic justification.",
+      "added": "2026-10-20",
+      "read": "2026-10-20",
+      "has_notes": true
+    },
+    {
       "slug": "my-obituary-for-programming",
       "title": "My obituary for programming",
       "url": "https://dumbmatter.com/2026/10/programming-obituary/",
       "category": "ai",
-      "summary": "A long-time independent developer's melancholy eulogy for programming: he resisted AI because he loved coding and his business thrived, but respected engineers stopping writing code and non-programmers building impressive things pushed him to try agents — instant bug fixes from raw logs, 2–3x perf wins, years-long refactorings done effortlessly. He traces programming's history as paid logic puzzles and a superpower, concludes the work has become 'plugged into the Matrix' — great ability without understanding — and that vibecoding is not programming. Notes his own shift toward reaching for the agent first, 'addictive and meaningless', and worries AI obsoletes programmers first, humans generally after.",
+      "summary": "A long-time independent developer's melancholy eulogy for programming: he resisted AI because he loved coding and his business thrived, but respected engineers stopping writing code and non-programmers building impressive things pushed him to try agents — instant bug fixes from raw logs, 2–3x perf wins, years-long refactorings done effortlessly. He traces programming's history as paid logic puzzles and a superpower, concludes the work has become 'plugged into the Matrix' — great ability without understanding — and that vibecoding is not programming. Notes his own shift toward reaching for the agent first, 'addictive and meaningless', and worries AI obsoletes programmers first, humans generally after.\n\n## Note 2026-10-20\n\nAgrees the 'programmer as programmer' era is probably over, but pushes back on the full-eulogy framing: higher-level problems still require a programmer/systems-attuned mind, and not everyone has that ability even with superintelligence to guide them.\n\n## Note 2026-10-20\n\nNames the durable territory specifically: architecture, design, and the technical puzzles of making something scalable and maintainable.",
       "added": "2026-10-20",
       "read": "2026-10-20",
       "has_notes": false
