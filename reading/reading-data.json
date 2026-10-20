@@ -1392,6 +1392,190 @@
       "category": "engineering",
       "summary": "Sean Goedecke argues that in software design, the requirements you *don't* have are as important as the ones you do — identifying what can be slow, stale, or inflexible is usually the key to an elegant design. He illustrates this with examples: Unicorn's preforking model gets process isolation for free by lacking shared mutable state and ignoring slow clients; S3's lack of atomic multi-key updates lets it store and scale blobs independently; StatsD's use of UDP trades guaranteed delivery for far less network overhead; SQLite achieves single-file simplicity by dropping concurrent writes; edge caches buy speed by accepting stale data; and Cursor accepts high tail latency to scale its distributed git backend. Well-designed systems turn their weaknesses into strengths.\n\nDropping requirements is hard because it demands both technical and business expertise: an engineer must identify exactly how stale or slow a system can get, while a product manager must judge whether users will tolerate it. This partnership is fragile — engineers and PMs have misaligned incentives and can't easily verify each other's work, so trust is rare and PMs tend to concede nothing. Goedecke notes this is why solo developers and startups can out-design large companies: uniting technical and business judgment in one person enables tradeoffs big organizations can't make.\n\nThis matters even more when working with LLM coding agents, which — trained via RLVR to satisfy a grader and lacking business context — reflexively invent requirements nobody asked for: adding unnecessary mutexes, mid-request consistency checks, and defensive edge-case handling (e.g., \"what if the user loses admin status mid-request?\"). Run in loops or told to \"make no mistakes,\" they can turn a four-line change into a thousand-line monster. Goedecke pushes back on claims that code review is dead: about half of the large AI-generated diffs he reviews contain an unnecessary, LLM-invented requirement.\n\nThe core takeaway: if unneeded requirements propagate through a codebase, they petrify it into a mess of locks, re-checks, and enforced consistency that can't scale. Keeping systems elegant requires ruthlessly identifying which requirements you don't have — accepting stale data, occasional tail latency, and avoiding coordination except where truly critical — and explicitly telling both your PMs and your AI agents what they're allowed to compromise on.",
       "added": "2026-10-19"
+    },
+    {
+      "slug": "code-was-never-the-asset",
+      "title": "Code Was Never the Asset",
+      "url": "https://aicoding.leaflet.pub/3maqpvianlc2a",
+      "category": "ai",
+      "summary": "Generative AI doesn't create new software economics — it reveals old ones. Code was treated as durable capital when writing it dominated cost, but legacy systems are expensive because they're costly to understand, not because their lines hold value. Evolutionary modernization and Brand's pace layering already encoded the insight that replacement can be cheaper than preservation and that different code has different cost regimes. AI collapses the cost of writing but not understanding: winning systems minimize the long-term cost of comprehension, evaluation, and replacement.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "compaction-is-a-financial-strategy",
+      "title": "Compaction Is a Financial Strategy",
+      "url": "https://aicoding.leaflet.pub/3may5niwoyk2n",
+      "category": "ai",
+      "summary": "AI makes codebase size a direct economic variable: tokens cost money, context has budgets, and every retained line is re-paid per prompt. Hidden costs of keeping code: mental models, context-loss compression, degraded attention ('more hay does not make the needle easier to find'). Surviving legacy systems were flat, explicit, minimally abstract. Deletion is politically fraught and risky, but AI makes its ROI measurable and agents behave better in small codebases. Prescription: design deletable systems, favor replacement over refactoring, treat regeneration as the dominant strategy. Quality shifts from durability to regenerability.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "compile-to-architecture",
+      "title": "Compile to Architecture",
+      "url": "https://aicoding.leaflet.pub/3mgfsrk75ac2l",
+      "category": "engineering",
+      "summary": "With code generation cheap, the bottleneck is safely replacing code, and regeneration works when the unit of generation compiles into a stable architecture rather than a framework — frameworks give just enough structure to feel like architecture. Analogy to hardware: software should compile to an ISA-like architecture, with code as build artifact. Four constraints: consistent communication patterns, exclusive data-mutation authority, right component grain, independent evaluation surfaces. Wunderlist's layered architecture shows frameworks can churn while the stable structure makes rewriting pieces safe. Software should compile to architecture, producing systems, not applications.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "conceptual-mass-and-the-compaction-discipline",
+      "title": "Conceptual Mass and the Compaction Discipline",
+      "url": "https://aicoding.leaflet.pub/3mbhnolyzds2d",
+      "category": "engineering",
+      "summary": "Generative AI removes the friction that kept systems from bloating — years of drift now happen in months. Conceptual mass is the weight of ideas a human or AI must hold to change safely; AI inflates it with plausible abstractions and best-practice patterns. Counterforce is the Compaction Discipline: continuous pressure keeping mass proportional to purpose — refactoring reorganizes the closet, compaction realizes you don't need it. Wunderlist's deliberately dumb noun-shaped architecture enforced replaceability. Payoff is optionality. Generation is cheap; compression is leverage.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "do-web-components-have-a-future-if-nobody-is-writing-them",
+      "title": "Do web components have a future if nobody is writing them?",
+      "url": "https://nolanlawson.com/2026/10/19/do-web-components-have-a-future-if-nobody-is-writing-them/",
+      "category": "engineering",
+      "summary": "Lawson examines web components in the AI-coding era: they were designed for hand-typed HTML and economically necessary reuse, conditions agentic coding undermines. Google's Modern Web Guidance treats them as an afterthought; shadow DOM's benefits are matched by compile-time CSS scoping; frameworks themselves are increasingly disposable. Weak salvage arguments remain (micro-frontend sandboxing, framework-agnostic widgets like his emoji-picker). Their one unambiguous victory was explaining the platform — slots, parts, Open UI concepts flowed into standards. Even if they wither, they're woven into the web platform's coherence.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "evaluations-are-the-real-codebase",
+      "title": "Evaluations Are the Real Codebase",
+      "url": "https://aicoding.leaflet.pub/3mb526js42k26",
+      "category": "ai",
+      "summary": "Regeneration is now often cheaper than modification, so code is a cache and the real asset is evaluations encoding what the system must do. Distinguishes durable evaluations (invariants, interface contracts, property tests — survive reimplementation) from implementation-coupled tests that die with the code. Writing them is genuinely harder, but hoarding code is also an investment paid in compounding complexity. Litmus test: if a reimplementation in another language invalidates your tests, they're at the wrong boundary. Three tiers: ephemeral tests, durable evaluations, live production monitoring. Confidence is the product; code is a byproduct.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "immutable-infrastructure-immutable-code",
+      "title": "Immutable Infrastructure, Immutable Code",
+      "url": "https://aicoding.leaflet.pub/3mbaguyrjek2g",
+      "category": "ai",
+      "summary": "Applies 'never upgrade in place, replace' to application code: mutation accumulates hidden cost faster than replacement, and legacy is born through mutation — a system is legacy when understanding it requires knowledge encoded nowhere but the code. Phoenix Principle: the ability to burn a component and regenerate it from spec and evaluations without institutional memory. If you can't regenerate it, it isn't well-defined enough to exist. What survives: interfaces, contracts, evaluations, monitoring, data. Code is the current rendering, not the asset.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "laypeople-support-technical-fields-for-technology-not-art",
+      "title": "Laypeople support technical fields for technology, not art",
+      "url": "https://seangoedecke.com/laypeople-support-technical-fields-for-technology-not-art/",
+      "category": "ai",
+      "summary": "Critiques the 'programming/math is art, so LLM use misses the point' argument: laypeople support technical fields for pragmatic reasons — they value technology and believe these fields sustain it — so appeals to art feel like a contractor insisting on hand tools for the joy of craft. Defenders of human artistry must connect creative value to practical effectiveness: elegant abstractions, human-created concepts, inspiration-driven progress. The author himself isn't convinced he's seen LLM codebases hit a wall. An artistic case must show art makes technical work more effective, not that it's valuable in itself.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "n1-is-a-design-constraint-not-a-staffing-model",
+      "title": "n=1 Is a Design Constraint (Not a Staffing Model)",
+      "url": "https://aicoding.leaflet.pub/3mbuc4mohwc2k",
+      "category": "engineering",
+      "summary": "n=1 capability — one competent engineer can understand, modify, and regenerate the system from spec — is an architectural design constraint, not a staffing strategy. Systems passing it have clear boundaries, externalized meaning, replaceable components. Pushes back on the solo-genius myth: exceptional individual productivity reflects system properties, not talent. Teams were a coping mechanism for complexity that outgrew individual cognition. Meaning must live outside the code (evaluations, contracts, monitoring). If a system can't theoretically reach n=1, its architecture is already too expensive.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "production-is-a-compiler-input",
+      "title": "Production Is a Compiler Input",
+      "url": "https://aicoding.leaflet.pub/3mjx4erlboc2l",
+      "category": "ai",
+      "summary": "Extends the Phoenix Architecture so production truth becomes a direct input to what the system generates next — telemetry as compiler input. Central failure mode is 'evidence decay': a component can satisfy its spec today and fail months later with no code change as traffic, data, and cost envelopes drift. Three layers: spec (with operational/business constraints), canonicalization (raw signals into structured evidence statements), implementation graph (localizing drift). Key move is selective invalidation: when evidence drifts, invalidate only the affected subgraph and regenerate exactly what production has shown unjustified. A module is good only as long as evidence still supports its claim.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "provenance-is-the-new-version-control",
+      "title": "Provenance Is the New Version Control",
+      "url": "https://aicoding.leaflet.pub/3mcbiyal7jc2y",
+      "category": "ai",
+      "summary": "When code is synthesized, version control must move upstream from code to intent. Diffs stop representing decisions — they show what changed, not which requirement demanded it. Proposes a content-addressed intent graph: requirements, constraints, plans, decisions as hashed nodes with causal edges; a component's version is the graph's root hash. Unlike failed requirements-traceability efforts, incentives are inverted: a self-regenerating system must already know its own intent. Hard problems (canonicalization, implicit assumptions, non-determinism) are design constraints. Version the intent; code is downstream.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "relocating-rigor",
+      "title": "Relocating Rigor",
+      "url": "https://aicoding.leaflet.pub/3mbrvhyye4k2e",
+      "category": "ai",
+      "summary": "From an XP veteran: paradigm shifts look like removal of discipline but actually relocate rigor closer to where truth lives. XP replaced promises with tests; dynamic languages moved rigor into tests; continuous deployment demanded reversibility and observability. Generative AI is the same pattern misunderstood: the real danger isn't probabilistic generation but quiet failure — systems that work without anyone knowing why. Answer: relocate the discipline — explicit invariants, interfaces as contracts, ruthless evaluation, loud failures. Probabilistic inside, deterministic at the edges. Cheap generation without strict judgment is abdication.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "the-conversation-is-the-commit",
+      "title": "The Conversation Is the Commit",
+      "url": "https://aicoding.leaflet.pub/3mhxvpam4z22z",
+      "category": "ai",
+      "summary": "AI agents invert process and artifact: code is where decisions show up, not where they're made. The valuable knowledge (alternatives, constraints, tradeoffs) lives in ephemeral conversation — and now the real work happens in the agent loop, so the conversation is the commit and code is derived output. Manually editing agent code is editing compiled binaries, creating provenance debt. Provocative conclusion: if provenance matters, require agents to write all code, making engineering rules actually enforceable. Calls for version control for intent and for the whole production process, with persistent linkable conversations.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "the-deletion-test",
+      "title": "The Deletion Test",
+      "url": "https://aicoding.leaflet.pub/3md5ftetaes2e",
+      "category": "engineering",
+      "summary": "Diagnostic: what remains if you delete the entire implementation and regenerate from scratch? Dread signals that the code is the sole place your understanding lives. Fear of deletion is about evaluation, not code. Code should be treated as a cache — a disposable materialized view of understanding — dangerous only when the cache becomes source of truth. Safe deletion needs an oracle: mechanical ways to distinguish correct behavior independent of the old implementation. Goal isn't deleting everything but building systems where deletion is boring.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "the-generative-stack",
+      "title": "The Generative Stack",
+      "url": "https://aicoding.leaflet.pub/3miwhqqvwxc2x",
+      "category": "ai",
+      "summary": "Argues picking a single best tool for AI-assisted development is a strategic mistake; teams should build a generative stack where multiple competing tools and representations coexist at every phase between intent and verified behavior. Combine natural-language specs with formal constraints, multiple extraction tools, layered evaluation strategies, several candidate-generating models, independent feedback. Redundancy works because AI inverts the economics of maintaining overlapping representations. No toolchain layer ever settles on a single winner; design principle is absorption — treat each layer as a composition point so new tools add without replacing.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "the-gradient-of-trust",
+      "title": "The Gradient of Trust",
+      "url": "https://aicoding.leaflet.pub/3mb2qb6odxc2d",
+      "category": "ai",
+      "summary": "Developers intuitively trust small, pure, typed transformations and scrutinize code touching state and mess. The design question is how to move more code to the trusted end: constraints function as trust, and structure — not authorship — determines trustworthiness. Two strategies: make most work simple constrained transformations, and quarantine irreducibly messy code at small, observable, reversible edges. Distinguishes code trust from architectural trust; AI shifts emphasis to the latter. The real leverage isn't better prompts, it's better shapes.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "the-implementation-remembers",
+      "title": "The Implementation Remembers",
+      "url": "https://aicoding.leaflet.pub/3mobohx4fq22x",
+      "category": "ai",
+      "summary": "Mature systems encode undocumented institutional knowledge: strange retries, odd timeouts, defensive checks are usually scar tissue from real incidents. Organizations forget but the implementation retains the memory of what happened when desires collided with reality. In the AI era, asking a model to clean up messy code can remove embedded memory along with the mess — cleanliness and correctness are different properties, and clean code that forgets why it exists is a more elegant way to fail. Takeaway: before regenerating or refactoring, ask what the implementation knows that we have forgotten.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "the-industrialization-of-regenerative-software",
+      "title": "The Industrialization of Regenerative Software",
+      "url": "https://aicoding.leaflet.pub/3men54inhes2d",
+      "category": "ai",
+      "summary": "Critiques the 'AI software factory' metaphor: factories optimize for yield, not throughput. Teams generating forty AI services in two weeks accumulate duplicated logic and undeletable artifacts — industrializing generation without industrializing forgetting. Manufacturing learned defect rates, scrap reclamation, and disposal design; software talks features shipped but rarely what can be safely deleted. Durable artifact must be interfaces, invariants, evaluation suites, data. Software's industrial discipline is explicit boundaries, durable evaluations, drift detection, compaction cycles. Throughput is easy. Yield is the work.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "the-phoenix-primitives",
+      "title": "The Phoenix Primitives",
+      "url": "https://aicoding.leaflet.pub/3mjfruwwuck2d",
+      "category": "ai",
+      "summary": "When AI generates code, traditional primitives (files, layers, branches, PRs) lose force — they were cognitive containers for humans. A regenerative system's architecture is defined by what you can't delete: four primitives — behavioral specification, evaluations (runnable contracts), context boundary (shared schemas/contracts), provenance record (which spec version produced which implementation). Spec plus evaluations forms the regenerative grain, the unit you can safely delete and recreate. Specs become source of truth that can't drift; context boundaries become the new architecture; provenance replaces git narrative. Thriving developers will be the ones who draw the best boundaries.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "the-regenerative-grain",
+      "title": "The Regenerative Grain",
+      "url": "https://aicoding.leaflet.pub/3mfai4nqg6224",
+      "category": "engineering",
+      "summary": "Updates the 2014 'Tiny' argument: smallness is no longer about cognitive load but deletion safety — components should be small enough to safely delete and regenerate from spec. Five criteria for a boundary: comprehension (~10 min), isolation (verifiable without booting the system), mutation ownership, versioned contracts, and gut feeling (mild inconvenience is right; dread signals hidden invariants). Grain must balance verification surface against orchestration overhead. Crypto primitives, parsers, and regulated components need more deliberate approaches. The most expensive thing you can own is code you're afraid to change.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "the-system-is-the-asset",
+      "title": "The System Is the Asset",
+      "url": "https://aicoding.leaflet.pub/3mbp5ukeuzs22",
+      "category": "engineering",
+      "summary": "Against conflating the system with the codebase: a system is behavior, interfaces, data, invariants; code is one expression. Resistance to regenerative architectures comes from this conflation. Proposes local replacement behind stable boundaries; for legacy, extraction first — you cannot regenerate what you haven't defined. Outsourcing failed because system memory stayed implicit and social. The real constraints are schema evolution and data continuity, not code preservation. Age is not stability; visibility is. The asset is the ability to stay coherent while internals change.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "ui-is-a-conservation-layer",
+      "title": "UI Is a Conservation Layer",
+      "url": "https://aicoding.leaflet.pub/3mcxo5ojob22c",
+      "category": "ai",
+      "summary": "Regeneration must not extend to the UI: it is the human-facing protocol, and users experience software as continuity — habits and mental models that change invalidates. Pace-layer logic: regenerable code changes fast, UI slowly, user trust slowest of all. AI makes the failure mode worse because UI changes get cheap while user relearning stays expensive, exporting flexibility costs to users; damage is silent (metrics drift, support load, eroded trust). UI changes should be rare, deliberate, additive, reversible; user trust is a first-class dependency.",
+      "added": "2026-10-20"
+    },
+    {
+      "slug": "when-does-a-specification-become-a-program",
+      "title": "When Does a Specification Become a Program?",
+      "url": "https://aicoding.leaflet.pub/3msssevtkqc2c",
+      "category": "ai",
+      "summary": "Examines where the boundary between specification and implementation lies in AI-driven regenerative software, engaging Gonzalez's 'a detailed spec is code' and Zechner's 'agents fill unreviewed gaps' objections. Argues there will be no perfect specification — production evidence must flow back into the durable description. Specs may contain code, tests, schemas; the key distinction is authority over future implementations, not whether an artifact runs. Envisions a knowledge graph of structured assertions with provenance that humans and agents query. Precision narrows acceptable implementations but never collapses spec into implementation. Regeneration requires a learning loop or it becomes amnesia. Takeaway: the real boundary is what remains after the program burns.",
+      "added": "2026-10-20"
     }
   ],
   "archive": [
