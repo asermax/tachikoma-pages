@@ -1490,6 +1490,14 @@
       "added": "2026-10-20"
     },
     {
+      "slug": "the-age-of-wonders-and-terrors",
+      "title": "The Age of Wonders and Terrors",
+      "url": "https://scottaaronson.blog/?p=10062",
+      "category": "ai",
+      "summary": "Scott Aaronson argues the AI Singularity has effectively begun and skeptics must update honestly: the warning signs he set twenty years ago (AI solving major math problems) have come true, so moving goalposts is intellectually dishonest. Trigger: the apparent Navier-Stokes Millennium Problem solution via AI — a 166-page machine-generated proof verified in Lean — plus a deluge of AI-solved open problems (Jacobian conjecture counterexample, Lean-verified FLT, QMA results). He describes the math community's scramble over credit and review norms, endorses the Fields Medalists' letter keeping human understanding central to mathematics, and concludes human mathematicians are dethroned as primary theorem-provers — while urging researchers to confront the tsunami, including via alignment work.",
+      "added": "2026-10-20"
+    },
+    {
       "slug": "the-conversation-is-the-commit",
       "title": "The Conversation Is the Commit",
       "url": "https://aicoding.leaflet.pub/3mhxvpam4z22z",
@@ -3288,6 +3296,16 @@
       "added": "2026-10-16",
       "read": "2026-10-17",
       "has_notes": true
+    },
+    {
+      "slug": "my-obituary-for-programming",
+      "title": "My obituary for programming",
+      "url": "https://dumbmatter.com/2026/10/programming-obituary/",
+      "category": "ai",
+      "summary": "A long-time independent developer's melancholy eulogy for programming: he resisted AI because he loved coding and his business thrived, but respected engineers stopping writing code and non-programmers building impressive things pushed him to try agents — instant bug fixes from raw logs, 2–3x perf wins, years-long refactorings done effortlessly. He traces programming's history as paid logic puzzles and a superpower, concludes the work has become 'plugged into the Matrix' — great ability without understanding — and that vibecoding is not programming. Notes his own shift toward reaching for the agent first, 'addictive and meaningless', and worries AI obsoletes programmers first, humans generally after.",
+      "added": "2026-10-20",
+      "read": "2026-10-20",
+      "has_notes": false
     }
   ]
 }
