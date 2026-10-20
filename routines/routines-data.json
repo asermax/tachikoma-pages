@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-10-19T02:01:10.807077-03:00",
+  "generated_at": "2026-10-20T02:00:45.279868-03:00",
   "week_start": "2026-10-18",
   "week_label": "October 18 - October 24, 2026",
-  "last_updated": "Monday, October 19, 2026 at 02:01",
+  "last_updated": "Tuesday, October 20, 2026 at 02:00",
   "stats": {
-    "completed": 0,
-    "planned": 1,
-    "display": "0 / 1"
+    "completed": 2.0,
+    "planned": 4,
+    "display": "2 / 4"
   },
   "daily": {
     "Sunday": {
-      "status": "missed",
-      "completed": 0,
+      "status": "done",
+      "completed": 1,
       "total": 1
     },
     "Monday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "partial",
+      "completed": 1,
+      "total": 2
     },
     "Tuesday": {
       "status": "empty",
@@ -97,7 +97,7 @@
       "sessions": [
         {
           "day": "Sun",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Mon",
@@ -120,9 +120,9 @@
           "status": "pending"
         }
       ],
-      "metrics_total": "",
-      "comparison": "",
-      "done": 0,
+      "metrics_total": "30min",
+      "comparison": "-60min",
+      "done": 1,
       "total": 6
     },
     {
@@ -151,7 +151,7 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Wed",
@@ -160,15 +160,15 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 2
     }
   ],
   "spirit": {
-    "state": "critical",
+    "state": "tired",
     "emoji": "\ud83d\udc38",
     "title": "\ud83d\udc38 Mud Frog",
-    "image": "assets/critical.webp",
-    "description": "Your mud frog buries itself deep as storm clouds unload \u2014 only worried eyes peeking out, weathering it out."
+    "image": "assets/tired.webp",
+    "description": "Your mud frog hides with just sleepy eyes above the mud, grey fog settling in \u2014 low energy, resting where it sits."
   }
 }
