@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19",
+  "generated_at": "2026-10-20",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -343,14 +343,6 @@
       "url": "https://ideas.fin.ai/p/2x-nine-months-later",
       "category": "engineering",
       "summary": "Darragh Curran (CTO of Fin/Intercom) shares results from their explicit goal to 2x R&D productivity in 12 months using AI. They 3x'd output in 9 months (measured by merged PRs per R&D head). Key results: 93.6% of PRs are agent-driven, 19.2% are AI-approved (86% of those are ≤20 lines — feature flag cleanups, small fixes), downtime from breaking changes down 35%, product defect backlog shrunk 54%, code quality declining then recovering after 18 months. They built a private Claude Code plugin marketplace (267 skills, 31% of R&D contributing), dedicated a team (team-2x), and pushed for near-universal agent adoption. The approach was methodical: start with lowest-risk auto-approvals, invest in infrastructure first, maintain velocity-as-safety culture. The piece is transparent about uneven distribution of impact across the team and the upfront costs of the transition.",
-      "added": "2026-07-12"
-    },
-    {
-      "slug": "pace-layers-and-ai-integration",
-      "title": "Pace Layers and AI Integration",
-      "url": "https://aicoding.leaflet.pub/3maob46kbz22v",
-      "category": "engineering",
-      "summary": "Chad Fowler applies Stewart Brand's pace layers to AI-era software. Different layers should change at different speeds — fast layers (UI, glue code) benefit from aggressive regeneration; slow layers (infrastructure, data models, security) need strict constraints. The hard problem is finding the actual layers — AI will expose false bottoms (code that was hard to change due to poor factoring, not genuine importance). Architecture must encode layer boundaries explicitly.",
       "added": "2026-07-12"
     },
     {
@@ -2071,6 +2063,16 @@
       "summary": "This article, the second in a series by Christian Ekrem, extends Naur's \"Programming as Theory Building\" thesis to the institutional level. Ekrem draws on Hartzog and Silbey's \"How AI Destroys Institutions\" paper, mapping three destructive affordances of AI onto software teams. First, AI undermines expertise: juniors bypass mentoring pipelines by accepting uncomprehended AI output, never building theory. Second, AI short-circuits decision-making: AI-generated code arrives in a \"theoretical vacuum\" with no ownership, no PR discussion, importing architectural decisions nobody made—productive friction of code reviews is lost. Third, AI isolates humans: it displaces pairing and questions with a sycophantic alternative, eroding institutional trust. Ekrem endorses constrained AI use where \"the human sets the theory, and the AI executes within it\"—boilerplate, test scaffolding within established patterns. The article closes warning that teams fully embracing reflexive AI usage will find expertise pipelines broken, decision-making hollowed, and connections atrophied—code remaining that nobody understands, with no institutions left to produce the senior developers eventually needed again.",
       "added": "2026-07-11",
       "read": "2026-07-12",
+      "has_notes": true
+    },
+    {
+      "slug": "pace-layers-and-ai-integration",
+      "title": "Pace Layers and AI Integration",
+      "url": "https://aicoding.leaflet.pub/3maob46kbz22v",
+      "category": "engineering",
+      "summary": "Chad Fowler applies Stewart Brand's pace layers to AI-era software. Different layers should change at different speeds — fast layers (UI, glue code) benefit from aggressive regeneration; slow layers (infrastructure, data models, security) need strict constraints. The hard problem is finding the actual layers — AI will expose false bottoms (code that was hard to change due to poor factoring, not genuine importance). Architecture must encode layer boundaries explicitly.",
+      "added": "2026-07-12",
+      "read": "2026-10-20",
       "has_notes": true
     },
     {
