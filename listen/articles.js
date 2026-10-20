@@ -1,4 +1,10 @@
 const ARTICLES = [
+    { slug: 'the-conversation-is-the-commit', title: 'The Conversation Is the Commit', meta: 'Chad Fowler · Mar 2026 · ~10 min listen', time: '10:12' },
+    { slug: 'production-is-a-compiler-input', title: 'Production Is a Compiler Input', meta: 'Chad Fowler · Apr 2026 · ~6 min listen', time: '6:21' },
+    { slug: 'code-was-never-the-asset', title: 'Code Was Never the Asset', meta: 'Chad Fowler · Dec 2025 · ~6 min listen', time: '5:43' },
+    { slug: 'compile-to-architecture', title: 'Compile to Architecture', meta: 'Chad Fowler · Mar 2026 · ~11 min listen', time: '10:32' },
+    { slug: 'evaluations-are-the-real-codebase', title: 'Evaluations Are the Real Codebase', meta: 'Chad Fowler · Dec 2025 · ~10 min listen', time: '10:11' },
+    { slug: 'the-deletion-test', title: 'The Deletion Test', meta: 'Chad Fowler · Jan 2026 · ~6 min listen', time: '5:49' },
     { slug: 'laypeople-support-technical-fields-for-technology-not-art', title: 'Laypeople support technical fields for technology, not art', meta: 'Sean Goedecke · Oct 2026 · ~5 min listen', time: '4:57' },
     { slug: 'do-web-components-have-a-future-if-nobody-is-writing-them', title: 'Do web components have a future if nobody is writing them?', meta: 'Nolan Lawson · Oct 2026 · ~12 min listen', time: '12:12' },
     { slug: 'compaction-is-a-financial-strategy', title: 'Compaction Is a Financial Strategy', meta: 'Chad Fowler · Dec 2025 · ~12 min listen', time: '11:48' },
