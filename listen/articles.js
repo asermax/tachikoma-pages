@@ -136,7 +136,6 @@ const ARTICLES = [
     { slug: 'feedback-flywheel', title: 'Feedback Flywheel', meta: 'Rahul Garg · Apr 2026', time: '17:05' },
     { slug: 'syntaqlite-ai', title: 'Eight Years of Wanting, Three Months of Building with AI', meta: 'Lalit Maganti · Apr 2026', time: '24:06' },
     { slug: 'components-of-a-coding-agent', title: 'Components of A Coding Agent', meta: 'Sebastian Raschka · Apr 2026', time: '23:23' },
-    { slug: 'pace-layers-and-ai-integration', title: 'Pace Layers and AI Integration', meta: 'Chad Fowler · Dec 2025', time: '12:08' },
     { slug: 'agents-are-hard', title: 'Agent Design Is Still Hard', meta: 'Armin Ronacher · Nov 2025', time: '12:51' },
     { slug: 'absurd-workflows', title: 'Absurd Workflows: Durable Execution With Just Postgres', meta: 'Armin Ronacher · Nov 2025', time: '6:44' },
     { slug: 'tdd-inside-the-agent-loop-theater-or-actual-value', title: 'TDD inside the agent loop - theater or actual value?', meta: 'Birgitta Böckeler · Aug 2025', time: '30:50' },
