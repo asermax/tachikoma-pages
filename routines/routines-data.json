@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-20T02:00:45.279868-03:00",
+  "generated_at": "2026-10-21T02:00:16.608118-03:00",
   "week_start": "2026-10-18",
   "week_label": "October 18 - October 24, 2026",
-  "last_updated": "Tuesday, October 20, 2026 at 02:00",
+  "last_updated": "Wednesday, October 21, 2026 at 02:00",
   "stats": {
     "completed": 2.0,
-    "planned": 4,
-    "display": "2 / 4"
+    "planned": 7,
+    "display": "2 / 7"
   },
   "daily": {
     "Sunday": {
@@ -20,9 +20,9 @@
       "total": 2
     },
     "Tuesday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 3
     },
     "Wednesday": {
       "status": "empty",
@@ -165,10 +165,10 @@
     }
   ],
   "spirit": {
-    "state": "tired",
+    "state": "critical",
     "emoji": "\ud83d\udc38",
     "title": "\ud83d\udc38 Mud Frog",
-    "image": "assets/tired.webp",
-    "description": "Your mud frog hides with just sleepy eyes above the mud, grey fog settling in \u2014 low energy, resting where it sits."
+    "image": "assets/critical.webp",
+    "description": "Your mud frog buries itself deep as storm clouds unload \u2014 only worried eyes peeking out, weathering it out."
   }
 }
