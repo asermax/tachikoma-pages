@@ -798,6 +798,17 @@
       "added": "2026-10-17",
       "watched": "2026-10-17",
       "has_notes": true
+    },
+    {
+      "slug": "does-code-quality-still-matter-it-depends-on-this-max-kanat-alexander-capital-on",
+      "title": "Does Code Quality Still Matter? It Depends on This \u2014 Max Kanat-Alexander, Capital One",
+      "url": "https://www.youtube.com/watch?v=bU5gDVyu_28",
+      "video_id": "bU5gDVyu_28",
+      "channel": "AI Engineer",
+      "summary": "Max Kanat-Alexander on whether code quality still matters in AI-driven development, splitting software into disposable vs durable. Disposable software (low failure consequences, cheap to replace, no long-term maintenance) needs no code quality or rigor. Durable software (long-lived, mission-critical, many dependents) still depends on quality and clear structure to prevent compounding risk and maintainability decay. AI tools will multiply disposable software, but durable software remains; organizations should lower the cost of high quality via standardization and automated tooling.",
+      "added": "2026-10-22",
+      "watched": "2026-10-22",
+      "has_notes": true
     }
   ]
 }
