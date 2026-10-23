@@ -809,6 +809,17 @@
       "added": "2026-10-22",
       "watched": "2026-10-22",
       "has_notes": true
+    },
+    {
+      "slug": "ep-07-whats-after-code-mode",
+      "title": "Ep 07 - \"What's after Code Mode\"",
+      "url": "https://www.youtube.com/watch?v=0hRlvn0IPMI",
+      "video_id": "0hRlvn0IPMI",
+      "channel": "Next Token",
+      "summary": "In this segment of the Next Token podcast, hosts Dillon Mulroy, Rhys Sullivan, and Sunil Pai catch up with guest Matt Carey about personal updates and the growing trend of AI-driven video game modding. They discuss how AI tools like Claude allow users to easily generate custom game servers, first-person mods, and creative game mashups without needing extensive programming expertise. The group also reflects on the broader implications of personal software and AI agents handling daily tasks like online marketplace interactions. Software developers, gamers, and tech enthusiasts interested in practical AI applications and creative software automation will find this discussion insightful.",
+      "added": "2026-10-23",
+      "watched": "2026-10-23",
+      "has_notes": true
     }
   ]
 }
