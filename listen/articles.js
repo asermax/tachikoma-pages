@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'software-is-slow-because-of-bad-design-not-slow-languages', title: 'Software is slow because of bad design, not slow languages', meta: 'Sean Goedecke · Oct 2026 · ~7 min listen', time: '6:58' },
     { slug: 'the-conversation-is-the-commit', title: 'The Conversation Is the Commit', meta: 'Chad Fowler · Mar 2026 · ~10 min listen', time: '10:12' },
     { slug: 'production-is-a-compiler-input', title: 'Production Is a Compiler Input', meta: 'Chad Fowler · Apr 2026 · ~6 min listen', time: '6:21' },
     { slug: 'code-was-never-the-asset', title: 'Code Was Never the Asset', meta: 'Chad Fowler · Dec 2025 · ~6 min listen', time: '5:43' },
