@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22",
+  "generated_at": "2026-10-23",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1584,6 +1584,14 @@
       "category": "ai",
       "summary": "Examines where the boundary between specification and implementation lies in AI-driven regenerative software, engaging Gonzalez's 'a detailed spec is code' and Zechner's 'agents fill unreviewed gaps' objections. Argues there will be no perfect specification — production evidence must flow back into the durable description. Specs may contain code, tests, schemas; the key distinction is authority over future implementations, not whether an artifact runs. Envisions a knowledge graph of structured assertions with provenance that humans and agents query. Precision narrows acceptable implementations but never collapses spec into implementation. Regeneration requires a learning loop or it becomes amnesia. Takeaway: the real boundary is what remains after the program burns.",
       "added": "2026-10-20"
+    },
+    {
+      "slug": "software-is-slow-because-of-bad-design-not-slow-languages",
+      "title": "Software is slow because of bad design, not slow languages",
+      "url": "https://seangoedecke.com/software-is-slow-because-of-bad-design-not-slow-languages/",
+      "category": "Software Engineering",
+      "summary": "Sean Goedecke argues against the popular claim that AI will dramatically speed up software by rewriting it in faster languages like C, Rust, or assembly. Most real programs are I/O-bound — dominated by database queries, network calls, and disk access — so a language rewrite can only speed up the small fraction of time actually spent computing, and slow languages already offload heavy CPU-bound work to fast C-based libraries anyway. Even when speedups do come, they usually stem from design rather than language choice, as illustrated by Bryan Cantrill's story of a naive Rust rewrite of optimized C code unexpectedly running 30% faster thanks to cache-friendly data structures. The author's own big wins (caching, async work, parallelization, fixing N+1 queries) all involved redesigning programs to do less work, not rewriting them. He concludes that instead of asking AI agents to rewrite code in Rust, people should ask them to profile programs, find hotspots, and redesign what the software does — reserving language rewrites for rare, truly CPU-bound hotspots.",
+      "added": "2026-10-23"
     }
   ],
   "archive": [
