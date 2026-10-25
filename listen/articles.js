@@ -1,4 +1,6 @@
 const ARTICLES = [
+    { slug: 'the-state-of-context-engineering', title: 'The State of Context Engineering', meta: 'Drew Breunig · Oct 24, 2026 · ~32 min listen', time: '32:05' },
+    { slug: 'dont-anthropomorphize-big-tech-companies', title: 'Don\'t anthropomorphize big tech companies', meta: 'Sean Goedecke · Oct 25, 2026 · ~8 min listen', time: '7:46' },
     { slug: 'some-random-thoughts-about-ai', title: 'Some random thoughts about AI', meta: 'Nicolas Chagnet · Oct 19, 2026 · ~10 min listen', time: '10:12' },
     { slug: 'ultimate', title: 'Ultimate', meta: 'Daniel Griesser · Oct 2026 · ~19 min listen', time: '19:26' },
     { slug: 'software-is-slow-because-of-bad-design-not-slow-languages', title: 'Software is slow because of bad design, not slow languages', meta: 'Sean Goedecke · Oct 2026 · ~7 min listen', time: '6:58' },
