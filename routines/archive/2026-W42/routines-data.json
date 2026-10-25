@@ -1,0 +1,174 @@
+{
+  "generated_at": "2026-10-25T02:00:29.677571-03:00",
+  "week_start": "2026-10-18",
+  "week_label": "October 18 - October 24, 2026",
+  "last_updated": "Sunday, October 25, 2026 at 02:00",
+  "stats": {
+    "completed": 3.3333333333333335,
+    "planned": 14,
+    "display": "3.3 / 14"
+  },
+  "daily": {
+    "Sunday": {
+      "status": "done",
+      "completed": 1,
+      "total": 1
+    },
+    "Monday": {
+      "status": "partial",
+      "completed": 1,
+      "total": 2
+    },
+    "Tuesday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 3
+    },
+    "Wednesday": {
+      "status": "partial",
+      "completed": 1,
+      "total": 3
+    },
+    "Thursday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 3
+    },
+    "Friday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 1
+    },
+    "Saturday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    }
+  },
+  "goals": [
+    {
+      "name": "Wind-Down Routine",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "2 nights",
+      "target": "6 nights",
+      "progress_pct": 33
+    }
+  ],
+  "routines": [
+    {
+      "id": "basic-workout",
+      "name": "Basic Workout",
+      "emoji": "\ud83d\udcaa",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "pending"
+        },
+        {
+          "day": "Thu",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 2
+    },
+    {
+      "id": "music-practice",
+      "name": "Music Practice",
+      "emoji": "\ud83c\udfb7",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 1
+    },
+    {
+      "id": "reading",
+      "name": "Reading",
+      "emoji": "\ud83d\udcd6",
+      "sessions": [
+        {
+          "day": "Sun",
+          "status": "done"
+        },
+        {
+          "day": "Mon",
+          "status": "pending"
+        },
+        {
+          "day": "Tue",
+          "status": "pending"
+        },
+        {
+          "day": "Wed",
+          "status": "done"
+        },
+        {
+          "day": "Thu",
+          "status": "pending"
+        },
+        {
+          "day": "Fri",
+          "status": "pending"
+        }
+      ],
+      "metrics_total": "60min",
+      "comparison": "",
+      "done": 2,
+      "total": 6
+    },
+    {
+      "id": "rock-climbing",
+      "name": "Rock Climbing",
+      "emoji": "\ud83e\uddd7",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "pending"
+        },
+        {
+          "day": "Thu",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 2
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga",
+      "emoji": "\ud83e\uddd8",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        },
+        {
+          "day": "Wed",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 2
+    }
+  ],
+  "spirit": {
+    "state": "critical",
+    "emoji": "\ud83d\udc38",
+    "title": "\ud83d\udc38 Mud Frog",
+    "image": "assets/critical.webp",
+    "description": "Your mud frog buries itself deep as storm clouds unload \u2014 only worried eyes peeking out, weathering it out."
+  }
+}
