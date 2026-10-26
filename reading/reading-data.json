@@ -1570,14 +1570,6 @@
       "added": "2026-10-20"
     },
     {
-      "slug": "when-does-a-specification-become-a-program",
-      "title": "When Does a Specification Become a Program?",
-      "url": "https://aicoding.leaflet.pub/3msssevtkqc2c",
-      "category": "ai",
-      "summary": "Examines where the boundary between specification and implementation lies in AI-driven regenerative software, engaging Gonzalez's 'a detailed spec is code' and Zechner's 'agents fill unreviewed gaps' objections. Argues there will be no perfect specification — production evidence must flow back into the durable description. Specs may contain code, tests, schemas; the key distinction is authority over future implementations, not whether an artifact runs. Envisions a knowledge graph of structured assertions with provenance that humans and agents query. Precision narrows acceptable implementations but never collapses spec into implementation. Regeneration requires a learning loop or it becomes amnesia. Takeaway: the real boundary is what remains after the program burns.",
-      "added": "2026-10-20"
-    },
-    {
       "slug": "software-is-slow-because-of-bad-design-not-slow-languages",
       "title": "Software is slow because of bad design, not slow languages",
       "url": "https://seangoedecke.com/software-is-slow-because-of-bad-design-not-slow-languages/",
@@ -3366,6 +3358,16 @@
       "added": "2026-10-20",
       "read": "2026-10-20",
       "has_notes": false
+    },
+    {
+      "slug": "when-does-a-specification-become-a-program",
+      "title": "When Does a Specification Become a Program?",
+      "url": "https://aicoding.leaflet.pub/3msssevtkqc2c",
+      "category": "ai",
+      "summary": "Examines where the boundary between specification and implementation lies in AI-driven regenerative software, engaging Gonzalez's 'a detailed spec is code' and Zechner's 'agents fill unreviewed gaps' objections. Argues there will be no perfect specification — production evidence must flow back into the durable description. Specs may contain code, tests, schemas; the key distinction is authority over future implementations, not whether an artifact runs. Envisions a knowledge graph of structured assertions with provenance that humans and agents query. Precision narrows acceptable implementations but never collapses spec into implementation. Regeneration requires a learning loop or it becomes amnesia. Takeaway: the real boundary is what remains after the program burns.",
+      "added": "2026-10-20",
+      "read": "2026-10-26",
+      "has_notes": true
     }
   ]
 }
