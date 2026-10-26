@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'how-we-do-code-review-at-claude-code', title: 'How the Claude Code team does code review', meta: 'Addy Osmani, Morgan Lunt & Qing Wang · Oct 15, 2026 · ~22 min listen', time: '22:07' },
     { slug: 'we-should-be-more-ambitious-with-the-software-we-build', title: 'We should be more ambitious with the software we build', meta: 'Dan Luu · Sep 17, 2026 · ~25 min listen', time: '24:50' },
     { slug: 'the-state-of-context-engineering', title: 'The State of Context Engineering', meta: 'Drew Breunig · Oct 24, 2026 · ~32 min listen', time: '32:05' },
     { slug: 'some-random-thoughts-about-ai', title: 'Some random thoughts about AI', meta: 'Nicolas Chagnet · Oct 19, 2026 · ~10 min listen', time: '10:12' },
