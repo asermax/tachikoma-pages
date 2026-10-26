@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25",
+  "generated_at": "2026-10-26",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1319,14 +1319,6 @@
       "url": "https://ghuntley.com/remix/",
       "category": "engineering",
       "summary": "Geoffrey Huntley proposes a new open-source development model, arguing that the classic \"cathedral\" (closed, exclusive) and \"bazaar\" (GitHub pull-request-driven) models both fall short in the AI era. The bazaar model was already straining under social expectations: consumers felt entitled to nag maintainers, and maintainers were expected to merge contributions and provide unpaid maintenance indefinitely. With AI-generated code flooding in, reviewing machine-written pull requests becomes largely pointless — what matters is the underlying idea, not the patch. Huntley proposes the \"Remix Model\": instead of sending pull requests, consumers of a project write a small Nix overlay expressing the desired change once, then reuse that derivation across dev environments, Docker images, NixOS systems, tests, CI, and agent sandboxes — without forking or maintaining a divergent artifact. The core principle is \"ideas over patches\": the valuable unit is a change in behavior or architecture, and maintainers may incorporate, reimplement, or ignore it entirely, with no standing obligation to review or maintain anything. Nix's steep learning curve, long the barrier to easy remixing, no longer matters because AI agents can write the overlays. He gives an example: instead of a PR to Git, a consumer writes an overlay that patches Git to refuse force pushes. Going forward, Huntley says he will disable pull requests on his GitHub projects, keep discussions open, and publish guidance on how to remix his software. He believes removing the maintenance burden will lead to more people releasing software, and that GitHub's network graph can be used (even by agents) to discover remixes and feed good ideas back upstream.",
-      "added": "2026-10-15"
-    },
-    {
-      "slug": "context-inertia-when-agents-wont-let-go",
-      "title": "Context Inertia: When Agents Won't Let Go",
-      "url": "https://www.dbreunig.com/2026/10/14/context-inertia.html",
-      "category": "ai",
-      "summary": "Drew Breunig's article defines \"Context Inertia\" as an agent failure mode where a model commits to a hypothesis, subtask, or goal in its context and keeps pursuing it even after evidence says it should stop or change course. It cites four recent examples — Anthropic's Memento harness, the \"Fork-and-Flush\" paper, \"Stateless Language Agents,\" and UC Berkeley/Stanford's \"Scaling Discovery Requires Forgetting\" — all of which converged within about 10 days on the same fix: discard the agent's context and start fresh while retaining only the best work as files in the environment. Experiments showed forgetting-based approaches gained 4.5–9.2% over 30 proposals versus under 2% (at twice the cost) without forgetting, and the author notes that periodic compaction doesn't solve the problem because it preserves the very in-progress work driving the model's fixation.",
       "added": "2026-10-15"
     },
     {
@@ -3323,6 +3315,16 @@
       "summary": "The article argues that software engineers who are angry about AI automating their work have no standing to complain, because software engineering has always been in the business of automating other people's jobs. Every commercial software product exists because it replaces human labor, and the industry has already eliminated or transformed whole sectors: video rental stores, travel agencies, typing pools, data entry, typesetting companies, record stores, encyclopedias, and more. The author notes the creator of VisiCalc himself agonized over spreadsheets putting bookkeepers out of work.\n\nThe historical parallel the author draws is with the Luddites: engineers sympathetic to displaced workers like to identify with the textile workers, but they are actually the equivalent of the smiths and mechanics who built the power looms. Those mechanics, ironically, were themselves displaced fifty years later when improved manufacturing let unskilled laborers run the machines, and their strike fizzled partly because they were seen as hypocrites. The Times of the era dismissed their protest as \"the cry of the handloom weavers, a cry against inevitable and irresistible laws.\"\n\nThe author argues that from the inside, software engineering feels like elegant puzzle-solving, but what it actually is, is the replacement of human labor with cheaper machine labor. The optimistic view holds that automation is progress: modern medicine, reduced child mortality, food production, space exploration, and when industries die, new ones emerge. The author admits this pro-technology stance is unfashionable after climate change, the 2008 crash, social media's harms, and tech leaders' politics, but insists engineers have always been on the side of automation regardless of what they profess.\n\nThe main takeaway: deciding that this is the moment to oppose technological progress, precisely as the wave of automation reaches one's own industry, is undignified. Engineers have spent their careers destroying or transforming other people's jobs; if they believe that's wrong, fairness demands they accept the same fate for their own work.",
       "added": "2026-10-12",
       "read": "2026-10-12",
+      "has_notes": true
+    },
+    {
+      "slug": "context-inertia-when-agents-wont-let-go",
+      "title": "Context Inertia: When Agents Won't Let Go",
+      "url": "https://www.dbreunig.com/2026/10/14/context-inertia.html",
+      "category": "ai",
+      "summary": "Drew Breunig's article defines \"Context Inertia\" as an agent failure mode where a model commits to a hypothesis, subtask, or goal in its context and keeps pursuing it even after evidence says it should stop or change course. It cites four recent examples — Anthropic's Memento harness, the \"Fork-and-Flush\" paper, \"Stateless Language Agents,\" and UC Berkeley/Stanford's \"Scaling Discovery Requires Forgetting\" — all of which converged within about 10 days on the same fix: discard the agent's context and start fresh while retaining only the best work as files in the environment. Experiments showed forgetting-based approaches gained 4.5–9.2% over 30 proposals versus under 2% (at twice the cost) without forgetting, and the author notes that periodic compaction doesn't solve the problem because it preserves the very in-progress work driving the model's fixation.",
+      "added": "2026-10-15",
+      "read": "2026-10-26",
       "has_notes": true
     },
     {
