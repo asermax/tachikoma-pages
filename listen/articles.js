@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'the-counting-house', title: 'The Counting House', meta: 'Steve Yegge · Oct 27, 2026 · ~53 min listen', time: '52:46' },
     { slug: 'accelerating-interpretability-a-human-genome-project-for-ai', title: 'Accelerating Interpretability: A Human Genome Project for AI', meta: 'Thomas McGrath & Mathilde Papillon · Oct 26, 2026 · ~17 min listen', time: '16:44' },
     { slug: 'how-we-do-code-review-at-claude-code', title: 'How the Claude Code team does code review', meta: 'Addy Osmani, Morgan Lunt & Qing Wang · Oct 15, 2026 · ~22 min listen', time: '22:07' },
     { slug: 'we-should-be-more-ambitious-with-the-software-we-build', title: 'We should be more ambitious with the software we build', meta: 'Dan Luu · Sep 17, 2026 · ~25 min listen', time: '24:50' },
