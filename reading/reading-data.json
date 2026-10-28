@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27",
+  "generated_at": "2026-10-28",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1628,7 +1628,7 @@
     {
       "slug": "the-counting-house",
       "title": "The Counting House",
-      "url": "https://yegge.ai/listings/the-counting-house.html",
+      "url": "https://yegge.ai/essays/the-counting-house/",
       "category": "ai",
       "summary": "Steve Yegge's introduction to an enterprise AI pattern from his time talking with banks and large companies about where AI actually pays off: not in engineering orgs, but on the customer-service floor. The Counting House pattern places cheap, stateless models on hardened rails to handle millions of customer contacts, measured by evals — set beside his previously described \"Wheelhouse\" (open, credentialed, colleague-style software factory), each pattern explaining the other by contrast. Practical throughout: autonomy tiers, gold sets (evaluation datasets), orchestrator architecture, and which executives must sign off on which rows of the risk/ownership matrix. The middle section is a working data-science lesson built around four airline intents that all mention Denver, and a confusion matrix with dollar amounts in the cells. He argues SDLC-side AI still struggles at most big companies while this quieter pattern delivers real value today, and closes on model welfare for stateless \"clerk\" agents versus long-lived agentic engineers. Long piece, cut from 96% more material, illustrated with 27 drawings.",
       "added": "2026-10-27"
