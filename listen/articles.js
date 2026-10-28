@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'getting-good-at-ai-takes-time-and-practice', title: 'Getting good at AI takes time and practice', meta: 'Sean Goedecke · Oct 2026 · ~8 min listen', time: '7:40' },
     { slug: 'the-counting-house', title: 'The Counting House', meta: 'Steve Yegge · Oct 27, 2026 · ~53 min listen', time: '52:46' },
     { slug: 'accelerating-interpretability-a-human-genome-project-for-ai', title: 'Accelerating Interpretability: A Human Genome Project for AI', meta: 'Thomas McGrath & Mathilde Papillon · Oct 26, 2026 · ~17 min listen', time: '16:44' },
     { slug: 'how-we-do-code-review-at-claude-code', title: 'How the Claude Code team does code review', meta: 'Addy Osmani, Morgan Lunt & Qing Wang · Oct 15, 2026 · ~22 min listen', time: '22:07' },
