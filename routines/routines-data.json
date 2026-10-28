@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-27T02:00:24.081706-03:00",
+  "generated_at": "2026-10-28T02:00:55.835860-03:00",
   "week_start": "2026-10-25",
   "week_label": "October 25 - October 31, 2026",
-  "last_updated": "Tuesday, October 27, 2026 at 02:00",
+  "last_updated": "Wednesday, October 28, 2026 at 02:00",
   "stats": {
-    "completed": 0.0,
-    "planned": 2,
-    "display": "0 / 2"
+    "completed": 2.0,
+    "planned": 4,
+    "display": "2 / 4"
   },
   "daily": {
     "Sunday": {
@@ -20,9 +20,9 @@
       "total": 0
     },
     "Tuesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 2,
+      "total": 2
     },
     "Wednesday": {
       "status": "empty",
@@ -71,12 +71,12 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -101,12 +101,12 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -130,10 +130,10 @@
     }
   ],
   "spirit": {
-    "state": "critical",
+    "state": "tired",
     "emoji": "\ud83d\udc38",
     "title": "\ud83d\udc38 Mud Frog",
-    "image": "assets/critical.webp",
-    "description": "Your mud frog buries itself deep as storm clouds unload \u2014 only worried eyes peeking out, weathering it out."
+    "image": "assets/tired.webp",
+    "description": "Your mud frog hides with just sleepy eyes above the mud, grey fog settling in \u2014 low energy, resting where it sits."
   }
 }
