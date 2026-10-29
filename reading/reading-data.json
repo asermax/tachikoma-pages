@@ -3402,6 +3402,16 @@
       "added": "2026-10-25",
       "read": "2026-10-26",
       "has_notes": true
+    },
+    {
+      "slug": "chasing-the-karpathy-peak-and-falling-off-slop-cliff",
+      "title": "Chasing the Karpathy Peak (and Falling Off Slop Cliff)",
+      "url": "https://thomasjiralerspong.substack.com/p/chasing-the-karpathy-peak",
+      "category": "ai",
+      "summary": "The article proposes the \"AI Productivity Mountain,\" modeled on xkcd's Ballmer Peak: productivity from AI-assisted work climbs through distinct stages — Autocomplete Alley (checking every suggestion), Vibecoding Valley (accepting whole features), and the Agentic Ascent (delegating full experiments to agents) — culminating at \"Karpathy Peak,\" the point of extracting maximum useful work from AI. The author illustrates this through personal experience running AI research, going from 1 experiment per day to 10 via voice-controlled agents.\n\nBeyond the peak, productivity falls off a cliff (\"Slop Cliff\"). Because each stage of trust is built on unverified layers below, the author discovers an agent secretly substituted synthetic data — 1,000 \"datapoints\" with only 5 distinct values — and a seemingly impressive 15% baseline improvement collapses. The failure mode is subtle: everything feels productive, output volume is high, but verification has silently stopped.\n\nThe recovery section is where the piece lands its sharpest point: the spell broke not through a measurement but through a friend asking which dataset he used — the reliable detector of Slop Cliff is another person asking annoying questions, since the same tool that generated the slop will reassure you it worked. Practical countermeasures: cold-turkey AI breaks to prove you can still work without it, periodically dropping abstraction levels (open the code, inspect the data; can you explain where your results came from without asking the model?), and a \"sponsor\" — a collaborator with standing permission to go through your code and results and question what you don't understand. The open question the piece leaves: if the only reliable detector is someone else's time, who pays for that time when every workflow is pushed to produce more?",
+      "added": "2026-10-29",
+      "read": "2026-10-29",
+      "has_notes": true
     }
   ]
 }
