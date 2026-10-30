@@ -1650,6 +1650,22 @@
       "added": "2026-10-30"
     },
     {
+      "slug": "elegance-and-intelligence-are-anticorrelated",
+      "title": "Elegance and intelligence are anticorrelated",
+      "url": "https://seangoedecke.com/elegance-and-intelligence-are-anticorrelated/",
+      "category": "ai",
+      "summary": "Elegance and raw intelligence can be anticorrelated: people (and LLMs) with big working memory brute-force instead of building clean abstractions — von Neumann summing the fly puzzle's series by hand is the canonical example. In software, huge working memory removes the incentive to design; in AI, models produce verbose proofs and can solve conjectures without generating new ones. Humans' limited cognition forced clever abstractions — possibly a competitive advantage in the AI era.",
+      "added": "2026-10-30"
+    },
+    {
+      "slug": "my-desert-island-languages",
+      "title": "My desert island languages",
+      "url": "https://nchagnet.eu/blog/desert-island-languages",
+      "category": "engineering",
+      "summary": "Thought experiment: 3 languages on a desert island — Rust (general-purpose, FP features + pragmatic C attitude), Gleam (high-level FP on BEAM/JS), Lua (scripting over bash). Surveys Go, Zig, OCaml, Python, TS and rejects each. Distilled tastes: FP over OOP, no boilerplate, strong static typing, monad-style errors, dislikes VM runtimes. Conclusion: no universal choice — the value was clarifying his own preferences.",
+      "added": "2026-10-30"
+    },
+    {
       "slug": "why-are-good-developers-so-wary-of-agentic-development",
       "title": "Why are good developers so wary of agentic development?",
       "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
