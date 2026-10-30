@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29",
+  "generated_at": "2026-10-30",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1640,6 +1640,30 @@
       "category": "ai",
       "summary": "The article pushes back on the claim that getting good at using AI is trivial — that tricks become obsolete with each model generation, so there's nothing durable to learn. The author argues the opposite: working well with AI requires developing long-term skills that take time and practice, and deliberately avoiding AI means being left behind.\n\nThe author identifies several such durable skills. First, supplying the right context: new users expect the model to read their minds, while skilled users notice when the agent lacks key information and reflexively explain the broader reasons behind their goals. Second, knowing what models can and can't do: AI capabilities are uneven and hard to predict, but since new models mostly improve on what old ones were already good at, this intuition is surprisingly durable — and simply internalizing what to ask for (e.g., having an agent install its own MCP servers, run local tests, or triage overnight messages) is a skill in itself. Third, knowing what mistakes models make: reviewing AI-generated code differs from reviewing human code, with AI prone to misalignment errors like over-engineering or inventing requirements, and its superficial fluency (exhaustive comments, sophisticated features) can dazzle reviewers into unwarranted trust. Fourth, rapidly skim-reading verbose AI output to get to the actual claims and evidence.\n\nThe author acknowledges these skills may eventually be made obsolete — but only if models become so capable that humans aren't needed at all. Like chess's centaur era, human-AI pairing may remain valuable for decades, so building these skills is worthwhile, just as learning React was even knowing frameworks change. The conclusion: AI is like working with a weird savant colleague — valuable, but only if you take the time to learn how to work with it. Avoiding AI entirely does others no favors, though going fully into AI is also a mistake, since LLMs reward expertise best gained by hand.",
       "added": "2026-10-28"
+    },
+    {
+      "slug": "custom-voices-with-qwen3-tts",
+      "title": "Custom Voices With Qwen3-TTS",
+      "url": "https://lucumr.pocoo.org/2026/10/29/qwen3-custom-voices/",
+      "category": "ai",
+      "summary": "The author describes building a narrator/voice-over for a dungeon crawler game with his kids and chose Qwen3-TTS over alternatives like Kokoro because it supports voice cloning via speaker embeddings. He explains the three model variants: 1.7B-Base (clones from reference audio), 1.7B-CustomVoice (nine built-in speakers with instruction control), and 1.7B-VoiceDesign (invents a voice from a text description), noting a limitation that the Base cloning model cannot be steered with instructions like \"speak sad\" or \"whisper.\" Using 28 seconds of his own conference talk audio transcribed with Whisper, he demonstrates blending a cloned voice with a VoiceDesign-invented voice by taking weighted averages of the 2048-dimensional speaker embedding vectors, then \"baking\" the blend back into a new reference recording. He also tested the embeddings for speaker detection on his podcast, finding Qwen3 embeddings work well (98% accuracy) only when the reference comes from a similar recording context, while a dedicated speaker-verification model like ECAPA succeeds across contexts (97%). The main takeaway is that Qwen3-TTS's voice embeddings are flexible enough to clone, design, and arithmetically blend unique custom voices with fairly modest input recordings and tooling.",
+      "added": "2026-10-30"
+    },
+    {
+      "slug": "why-are-good-developers-so-wary-of-agentic-development",
+      "title": "Why are good developers so wary of agentic development?",
+      "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+      "category": "ai",
+      "summary": "Rachel (at Thoughtworks) explores why many excellent, early-adopter developers hesitate to fully embrace agentic coding. She argues the core fear isn't job loss or love of coding, but uncertainty about whether systems built by agents can be trusted when no one has experience building software this way — developers hesitate to \"take their hand off the wheel\" without confidence in the guardrails. She describes a Thoughtworks experiment where senior engineers built an airline application entirely with agents (no human-written code), finding that people spent roughly two-thirds of their time at the whiteboard on domain modeling, boundaries, and planning, and one-third building harnesses of tests, contracts, and pipelines to give agents enough freedom while retaining confidence in results. Key problems surfaced: the application ran but the build was frequently red, undermining the trust that continuous integration is meant to provide — possibly due to too many parallel agents, insufficient modularity, or changes arriving faster than checks could complete. This aligns with DORA's 2025 research showing AI adoption correlates with higher delivery throughput but lower delivery stability, suggesting continuous delivery and DevOps practices need rethinking for the agentic era. The article raises open questions about the role of TDD when agents write both tests and code, where acceptance/contract tests fit, how much upfront design to do, and whether large batch sizes (teams moving from Stories to Epics) can be handled by CI pipelines.",
+      "added": "2026-10-30"
+    },
+    {
+      "slug": "you-can-just-ask-ai-to-do-things",
+      "title": "You can just ask AI to do things",
+      "url": "https://seangoedecke.com/you-can-just-ask-ai-to-do-things/",
+      "category": "ai",
+      "summary": "Sean Goedecke argues that a key skill in working with AI is agency — being willing to hand new and ambitious tasks to AI agents, both in what you build and how you build it, since most people are bottlenecked on noticing which tasks agents can automate. He illustrates this with examples from his own workflow: asking agents to start and troubleshoot his dev server, run happy-path requests with curl, poll logs and metrics during production deploys, get second opinions from other models via subagents, pre-process overnight unread messages into a morning report, set up its own MCP servers/skills/API keys, and clean up and archive its own session sprawl. He notes he still writes his own messages, makes design decisions, reviews code, and picks what to work on, being skeptical of agent-suggested task lists. The main takeaway is that handing tedious tasks to agents often only requires the realization \"I could just get a model to do this for me,\" after which he never does the task manually again.",
+      "added": "2026-10-30"
     }
   ],
   "archive": [
