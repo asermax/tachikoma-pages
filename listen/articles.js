@@ -1,4 +1,7 @@
 const ARTICLES = [
+    { slug: 'custom-voices-with-qwen3-tts', title: 'Custom Voices With Qwen3-TTS', meta: 'Armin Ronacher · Oct 29, 2026 · ~11 min listen', time: '11:14' },
+    { slug: 'why-are-good-developers-so-wary-of-agentic-development', title: 'Why are good developers so wary of agentic development?', meta: 'Rachel Laycock · Oct 29, 2026 · ~11 min listen', time: '11:20' },
+    { slug: 'you-can-just-ask-ai-to-do-things', title: 'You can just ask AI to do things', meta: 'Sean Goedecke · Oct 29, 2026 · ~4 min listen', time: '4:27' },
     { slug: 'getting-good-at-ai-takes-time-and-practice', title: 'Getting good at AI takes time and practice', meta: 'Sean Goedecke · Oct 2026 · ~8 min listen', time: '7:40' },
     { slug: 'the-counting-house', title: 'The Counting House', meta: 'Steve Yegge · Oct 27, 2026 · ~53 min listen', time: '52:46' },
     { slug: 'accelerating-interpretability-a-human-genome-project-for-ai', title: 'Accelerating Interpretability: A Human Genome Project for AI', meta: 'Thomas McGrath & Mathilde Papillon · Oct 26, 2026 · ~17 min listen', time: '16:44' },
