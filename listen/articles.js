@@ -1,4 +1,6 @@
 const ARTICLES = [
+    { slug: 'my-desert-island-languages', title: 'My desert island languages', meta: 'Nicolas Chagnet · Oct 29 2026 · ~15 min listen', time: '15:23' },
+    { slug: 'elegance-and-intelligence-are-anticorrelated', title: 'Elegance and intelligence are anticorrelated', meta: 'Sean Goedecke · Oct 30 2026 · ~3 min listen', time: '3:22' },
     { slug: 'custom-voices-with-qwen3-tts', title: 'Custom Voices With Qwen3-TTS', meta: 'Armin Ronacher · Oct 29, 2026 · ~11 min listen', time: '11:14' },
     { slug: 'why-are-good-developers-so-wary-of-agentic-development', title: 'Why are good developers so wary of agentic development?', meta: 'Rachel Laycock · Oct 29, 2026 · ~11 min listen', time: '11:20' },
     { slug: 'you-can-just-ask-ai-to-do-things', title: 'You can just ask AI to do things', meta: 'Sean Goedecke · Oct 29, 2026 · ~4 min listen', time: '4:27' },
