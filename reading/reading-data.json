@@ -1642,6 +1642,14 @@
       "added": "2026-10-28"
     },
     {
+      "slug": "ai-proton-engineering-manifesto",
+      "title": "AI @ Proton, Engineering Manifesto",
+      "url": "https://x.com/josephfcox/status/2115868430897385497",
+      "category": "ai",
+      "summary": "Internal engineering manifesto by Proton's CTO (Bart), obtained and published by Joseph Cox (404media). Argues LLMs have made manual code-writing obsolete ('No one writes code anymore'), that AI adoption is an existential threat to Proton's mission, and that engineers' job is now 'to help the LLM write better code faster' — every engineer is a manager of models and agents. Names three reasons Proton hasn't captured AI's gains: engineer mentality stuck on phase-1 assistive use, unexamined workflow bottlenecks (CI, reviews, specs), and a collective-action problem requiring org-level investment. Notably aggressive framing — 'loser thinking', 'perception is more important than truth' — leaked amid the CEO publicly preaching AI caution.",
+      "added": "2026-10-30"
+    },
+    {
       "slug": "custom-voices-with-qwen3-tts",
       "title": "Custom Voices With Qwen3-TTS",
       "url": "https://lucumr.pocoo.org/2026/10/29/qwen3-custom-voices/",
