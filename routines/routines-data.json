@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-01T12:42:54.373298-03:00",
+  "generated_at": "2026-11-01T13:42:11.108676-03:00",
   "week_start": "2026-11-01",
   "week_label": "November 01 - November 07, 2026",
-  "last_updated": "Sunday, November 01, 2026 at 12:42",
+  "last_updated": "Sunday, November 01, 2026 at 13:42",
   "stats": {
     "completed": 0,
     "planned": 0,
@@ -197,9 +197,9 @@
   ],
   "spirit": {
     "state": "dormant",
-    "emoji": "\ud83d\udc38",
-    "title": "\ud83d\udc38 Mud Frog",
+    "emoji": "\ud83e\udda1",
+    "title": "\ud83e\udda1 Meadow Weasel",
     "image": "assets/dormant.webp",
-    "description": "Your mud frog lies fully hidden beneath the mud under a quiet moonlit puddle \u2014 deep, still rest."
+    "description": "Your meadow weasel sleeps curled in its burrow under moonlight and stars \u2014 deep, still, quiet rest."
   }
 }
