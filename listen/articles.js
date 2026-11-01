@@ -1,4 +1,6 @@
 const ARTICLES = [
+    { slug: 'fast-and-slow-ways-to-improve-your-reputation', title: 'Fast and slow ways to improve your reputation', meta: 'Sean Goedecke · Nov 2026 · ~7 min listen', time: '6:51' },
+    { slug: 'the-golden-age', title: 'The Golden Age', meta: 'Armin Ronacher · Oct 2026 · ~7 min listen', time: '7:21' },
     { slug: 'my-desert-island-languages', title: 'My desert island languages', meta: 'Nicolas Chagnet · Oct 29 2026 · ~15 min listen', time: '15:23' },
     { slug: 'elegance-and-intelligence-are-anticorrelated', title: 'Elegance and intelligence are anticorrelated', meta: 'Sean Goedecke · Oct 30 2026 · ~3 min listen', time: '3:22' },
     { slug: 'custom-voices-with-qwen3-tts', title: 'Custom Voices With Qwen3-TTS', meta: 'Armin Ronacher · Oct 29, 2026 · ~11 min listen', time: '11:14' },
