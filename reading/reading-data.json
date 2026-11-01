@@ -1680,6 +1680,22 @@
       "category": "ai",
       "summary": "Sean Goedecke argues that a key skill in working with AI is agency — being willing to hand new and ambitious tasks to AI agents, both in what you build and how you build it, since most people are bottlenecked on noticing which tasks agents can automate. He illustrates this with examples from his own workflow: asking agents to start and troubleshoot his dev server, run happy-path requests with curl, poll logs and metrics during production deploys, get second opinions from other models via subagents, pre-process overnight unread messages into a morning report, set up its own MCP servers/skills/API keys, and clean up and archive its own session sprawl. He notes he still writes his own messages, makes design decisions, reviews code, and picks what to work on, being skeptical of agent-suggested task lists. The main takeaway is that handing tedious tasks to agents often only requires the realization \"I could just get a model to do this for me,\" after which he never does the task manually again.",
       "added": "2026-10-30"
+    },
+    {
+      "slug": "fast-and-slow-ways-to-improve-your-reputation",
+      "title": "Fast and slow ways to improve your reputation",
+      "url": "https://seangoedecke.com/how-to-get-assigned-interesting-work/",
+      "category": "engineering",
+      "summary": "The article addresses the chicken-and-egg problem of needing a good reputation to get assigned important projects while needing important projects to build a reputation. It frames this through tech company theory of mind: managers want to give employees growth opportunities but care more about protecting their own reputation for delivery, so high-profile projects go to proven engineers. The slow, safe path is the ratchet approach: reliably ship small low-risk work, communicate it, then use that credibility for slightly higher-risk work while avoiding visible mistakes. Faster but riskier paths: build a relationship with your skip-level manager; make side bets by executing your own unassigned projects; impress engineer colleagues who can judge quality work and vouch for you on healthy teams. Main takeaway: if interesting work always goes to someone else, it's a reputation problem, not a personal one — don't argue fairness in 1:1s, make assigning you work look like your manager's best interest.",
+      "added": "2026-11-01"
+    },
+    {
+      "slug": "the-golden-age",
+      "title": "The Golden Age",
+      "url": "https://dark.ronacher.eu/2026/10/31/golden-age/",
+      "category": "ai",
+      "summary": "Armin Ronacher reflects on the disconnect between the tech industry's talk of an AI-driven golden age and the unstable world most people actually live in. Writing from Vienna after attending a family Halloween circus show, he describes a Europe shaped by nearby war, crumbling pension systems, rising prices, eroding rule of law, and 65 active global conflicts — a backdrop far removed from the insulated optimism of Silicon Valley. He argues the AI revolution's promised golden age is not shared: the wealthy are shielded from its downsides while ordinary people see few benefits beyond new costs — data-security burdens, pricier hardware, and a future where salary gains flow to hyperscalers as a kind of token tax. He draws a parallel to the industrial revolution, transformative for humanity but brutal for many workers, and suspects worker rights will be among the first casualties as economies compete through AI adoption. While accepting AI agents will inevitably become mandatory in companies and software engineering, he questions whether the revolution benefits society at large, offering a test for a true golden age: what it allows people to do, not what it allows a few to own.",
+      "added": "2026-11-01"
     }
   ],
   "archive": [
