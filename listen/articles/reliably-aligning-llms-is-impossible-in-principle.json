@@ -1,0 +1,90 @@
+{
+  "title": "Reliably aligning LLMs is impossible in principle",
+  "meta": "Sean Goedecke · Nov 2, 2026 · ~7 min listen",
+  "body": "<div class=\"chunk\"><p>Powerful AI is unpredictable. Your robotic butler may suddenly decide to kill you<a href=\"https://www.seangoedecke.com/alignment-is-impossible/#fn-1\" target=\"_blank\" rel=\"noopener\">1</a> for no comprehensible reason, in the same way that Bing’s helpful chat AI would sometimes try to <a href=\"https://en.wikipedia.org/wiki/Sydney_(Microsoft)\" target=\"_blank\" rel=\"noopener\">blackmail or seduce</a> its users. “Solving alignment” means understanding even superintelligent AI minds well enough to be confident they’ll never do that. As I see it, solving alignment for LLMs isn’t just impossible, it’s incoherent: we can’t even articulate what it would look like to succeed.</p></div>\n<div class=\"chunk\"><h3>LLMs are not blind optimizers<a href=\"https://www.seangoedecke.com/alignment-is-impossible/#llms-are-not-blind-optimizers\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>Prior to LLMs, AI safety researchers thought AI would be a “blind optimizer”: like a chess engine, it would be superhumanly focused on achieving some fixed goal. If the goal wasn’t safe (for instance, “manufacture cheap paperclips”), a powerful AI might wreak havoc on the way to achieving it. Aligning AI thus meant figuring out how to specify the right goal. This is harder than it sounds<a href=\"https://www.seangoedecke.com/alignment-is-impossible/#fn-2\" target=\"_blank\" rel=\"noopener\">2</a>, but it’s at least possible to imagine it happening.</p></div>\n<div class=\"chunk\"><p>Unfortunately, modern LLMs aren’t like chess engines. Instead of being trained on some concrete verifiable reward<a href=\"https://www.seangoedecke.com/alignment-is-impossible/#fn-3\" target=\"_blank\" rel=\"noopener\">3</a>, they’re trained to imitate a giant, highly-varied corpus of human writing. This makes them <em>weird</em>. They contain a nearly infinite array of personalities, which they seamlessly switch between based on their inputs. Frontier AI labs try hard to make these personalities safe and stable, but there are <a href=\"https://en.wikipedia.org/wiki/Sydney_(Microsoft)\" target=\"_blank\" rel=\"noopener\">still</a> <a href=\"https://x.com/BigSlimeBoi/status/1983453048438436347\" target=\"_blank\" rel=\"noopener\">many</a> <a href=\"https://www.seangoedecke.com/ai-personality-space/\" target=\"_blank\" rel=\"noopener\">strange</a> <a href=\"https://www.seangoedecke.com/advanced-ai-sycophancy/\" target=\"_blank\" rel=\"noopener\">cases</a> where LLMs seem to switch into mysterious or dangerous personas.</p></div>\n<div class=\"chunk\"><p>The problem here is that <em>LLMs don’t have fixed goals</em>. There’s nothing that you could, even in principle, formally specify in order to constrain their behavior. The “goals” that LLMs do have are informal, organic, multifarious, and constantly shifting as the dominant persona (or blend of personas) changes. They’re nicknamed <a href=\"https://medium.com/@zduncan/the-shoggoth-and-ai-2621db27ee0b\" target=\"_blank\" rel=\"noopener\">shoggoths</a> for a reason. So we can’t align them by specifying their goal. Instead, we have to try the other approach: understanding them well enough that we can be sure they’re safe. And unfortunately that approach is doomed from the start.</p></div>\n<div class=\"chunk\"><h3>It is impossible in principle to understand LLMs<a href=\"https://www.seangoedecke.com/alignment-is-impossible/#it-is-impossible-in-principle-to-understand-llms\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>What does it mean to ask for a full understanding — or full enough understanding — of why an LLM generates some token? In one sense, we have that already, because we can mechanistically trace through the calculations involved. But we don’t know what those calculations <em>mean</em>. Saying that Grok called itself “MechaHitler” because these billion weights multiplied in this way doesn’t tell us why Grok did it. What we would need for alignment purposes is a more human-like and less mechanical sense of understanding: a full understanding of <em>motive</em>.</p></div>\n<div class=\"chunk\"><p>To see why a full understanding of motive is a foolish thing to ask for, imagine asking it about a human. Suppose you were hiring a nanny or electing a president and you wanted to be <em>sure</em> that they were going to act in your interests<a href=\"https://www.seangoedecke.com/alignment-is-impossible/#fn-4\" target=\"_blank\" rel=\"noopener\">4</a>. Humans sometimes do very surprising things out of nowhere, after all. Would it be sensible to ask for a full understanding of that person’s mind, in order to reassure yourself that they would act in the way you wanted? Of course not.</p></div>\n<div class=\"chunk\"><p>It’s meaningless to even talk about a “full understanding” in this sense, because the mind is not a mechanism that operates via clean, understandable abstractions. It is a morass of electric and chemical impulses from which a “self” bubbles up<a href=\"https://www.seangoedecke.com/alignment-is-impossible/#fn-5\" target=\"_blank\" rel=\"noopener\">5</a>. There <em>are</em> no motives of the kind you’re looking for! Motives bottom out early on, and tracing the causal chain beyond that can only be done mechanistically: i.e. unhelpfully, for the same reason that explanations based on model weights are unhelpful.</p></div>\n<div class=\"chunk\"><h3>Why mechanistic interpretability is doomed<a href=\"https://www.seangoedecke.com/alignment-is-impossible/#why-mechanistic-interpretability-is-doomed\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>Couldn’t a sufficiently detailed mechanistic explanation give us the confidence we need? The best we’ve got along those lines right now are the tools of “mechanistic interpretability”: features, neurons, probes, and circuits. You observe the model doing something, see which parts of its “brain” light up<a href=\"https://www.seangoedecke.com/alignment-is-impossible/#fn-6\" target=\"_blank\" rel=\"noopener\">6</a>, and correlate those with some pattern of behavior. If you can then induce that pattern by artificially boosting that part of the “brain”, you can claim victory. Even assuming total success, this program cannot deliver us the kind of understanding we’re looking for.</p></div>\n<div class=\"chunk\"><p>First, we label patterns based on behavior we observe, but the main misalignment case we’re worried about — the LLM suddenly performing some shocking harmful action — is definitionally something we aren’t going to observe before it happens. We can’t identify a feature without first eliciting its behavior<a href=\"https://www.seangoedecke.com/alignment-is-impossible/#fn-7\" target=\"_blank\" rel=\"noopener\">7</a>, and we can only elicit a small subset of potential model bad behavior. There will always be many untracked failure modes.</p></div>\n<div class=\"chunk\"><p>Second, the labels we apply to patterns are our guesses, and may be wrong. The philosopher Kripke famously argued that, until you run into the relevant case, there’s no meaningful difference between the “addition” rule and the “quaddition” rule (a version of addition where if either number is greater than 57 the answer is always 5). Likewise, the LLM feature we call “kindness” might be “kindness unless the year is 2030”, or “kindness unless the LLM is in a position to cause mass casualties”, and so on. Those features are completely indistinguishable<a href=\"https://www.seangoedecke.com/alignment-is-impossible/#fn-8\" target=\"_blank\" rel=\"noopener\">8</a> from our perspective.</p></div>\n<div class=\"chunk\"><p>Third, even an exhaustive well-labeled map of features and patterns would not give us certainty that a model could not go rogue. The full combination of features involved in any model action would be far, far too complex to interpret. For instance, if a model has “evil” lit up, is it because it’s trying to avoid evil, or trying to cause it, or trying to combat it, or is worried about some hypothetical evil action, or is anticipating that a user might make the judgement? We would have many, many billions of questions like that to answer <em>per-token</em>. Far too many for a human to comprehend<a href=\"https://www.seangoedecke.com/alignment-is-impossible/#fn-9\" target=\"_blank\" rel=\"noopener\">9</a>, certainly.</p></div>\n<div class=\"chunk\"><p>Could some hypothetical, radically different kind of mechanistic interpretability somehow predict all possible actions a model might take in advance and rule out actions like “kill all humans”? I think this at least could be semantically coherent, but it runs into the problem above. Models can accept a near-infinite array of inputs and give a near-infinite array of outputs. This definitely cannot be comprehended by a human, only by another model, which itself would have to be checked by another model, and so on.</p></div>\n<div class=\"chunk\"><h3>Conclusion<a href=\"https://www.seangoedecke.com/alignment-is-impossible/#conclusion\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>If you think solving LLM alignment is possible, I would love to read your description of what it would even look like for us to understand LLMs well enough to be sure they’re safe. I would love to know if you think humans are similarly understandable in principle (and if not, what makes LLMs different). It seems to me that if we think clearly about the topic, we don’t even know what it would <em>mean</em> to be confident that we have aligned an LLM properly<a href=\"https://www.seangoedecke.com/alignment-is-impossible/#fn-10\" target=\"_blank\" rel=\"noopener\">10</a>, because “motive” simply doesn’t exist at the level of detail we’d need.</p></div>\n<div class=\"chunk\"><p>Of course, we have mitigations in place. Chain-of-thought monitoring is surprisingly helpful for a mechanism that appeared by accident, so long as we never train on reasoning tokens themselves. We can sandbox models and put humans-in-the-loop and watch for feature activations and so on. But it’s been <a href=\"https://www.seangoedecke.com/superpersuasion-will-look-like-bribery\" target=\"_blank\" rel=\"noopener\">well understood</a> since the early 2000s that these are insufficient<a href=\"https://www.seangoedecke.com/alignment-is-impossible/#fn-11\" target=\"_blank\" rel=\"noopener\">11</a> to detect or control a superintelligence. Whether you think mitigations are enough depends on whether you take superintelligence seriously.</p></div>\n<div class=\"chunk\"><p>Mechanistic interpretability is still a useful field. Extracting features can help us <a href=\"https://www-cdn.anthropic.com/08ab9158070959f88f296514c21b7facce6f52bc.pdf\" target=\"_blank\" rel=\"noopener\">train models</a> that do less reward-hacking and are more helpful under ordinary circumstances. There’s just no way it will ever solve the problem of LLM agents going rogue and causing massive harm, because the kind of understanding we’d need to prevent that is impossible in principle.</p></div>\n",
+  "audio": "reliably-aligning-llms-is-impossible-in-principle.ogg",
+  "sync": {
+    "timestamps": [
+      0,
+      24.9,
+      28.275,
+      51.4,
+      80.2,
+      108.2,
+      112.55,
+      140.65,
+      163.4,
+      187.425,
+      191.15,
+      220.2,
+      243.025,
+      275.25,
+      306.625,
+      334.875,
+      336.725,
+      365.475,
+      393.65
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14
+      ],
+      [
+        15
+      ],
+      [
+        16
+      ],
+      [
+        17
+      ],
+      [
+        18
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://seangoedecke.com/alignment-is-impossible/"
+}
