@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'exploring-super-agent-design-towards-a-more-autonomous-agent-system', title: 'Exploring Super-agent Design: Towards a More Autonomous Agent System', meta: 'DeepSeek Harness · ~40 min listen', time: '39:41' },
     { slug: 'fast-and-slow-ways-to-improve-your-reputation', title: 'Fast and slow ways to improve your reputation', meta: 'Sean Goedecke · Nov 2026 · ~7 min listen', time: '6:51' },
     { slug: 'the-golden-age', title: 'The Golden Age', meta: 'Armin Ronacher · Oct 2026 · ~7 min listen', time: '7:21' },
     { slug: 'my-desert-island-languages', title: 'My desert island languages', meta: 'Nicolas Chagnet · Oct 29 2026 · ~15 min listen', time: '15:23' },
