@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01",
+  "generated_at": "2026-11-02",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1696,6 +1696,14 @@
       "category": "ai",
       "summary": "Armin Ronacher reflects on the disconnect between the tech industry's talk of an AI-driven golden age and the unstable world most people actually live in. Writing from Vienna after attending a family Halloween circus show, he describes a Europe shaped by nearby war, crumbling pension systems, rising prices, eroding rule of law, and 65 active global conflicts — a backdrop far removed from the insulated optimism of Silicon Valley. He argues the AI revolution's promised golden age is not shared: the wealthy are shielded from its downsides while ordinary people see few benefits beyond new costs — data-security burdens, pricier hardware, and a future where salary gains flow to hyperscalers as a kind of token tax. He draws a parallel to the industrial revolution, transformative for humanity but brutal for many workers, and suspects worker rights will be among the first casualties as economies compete through AI adoption. While accepting AI agents will inevitably become mandatory in companies and software engineering, he questions whether the revolution benefits society at large, offering a test for a true golden age: what it allows people to do, not what it allows a few to own.",
       "added": "2026-11-01"
+    },
+    {
+      "slug": "exploring-super-agent-design-towards-a-more-autonomous-agent-system",
+      "title": "Exploring Super-agent Design: Towards a More Autonomous Agent System",
+      "url": "https://x.com/DeepSeekHarness/article/2116857257245987236",
+      "category": "ai",
+      "summary": "The DeepSeek Harness team argues that as models need less supervision per task, the bottleneck shifts to human attention — a person can follow only 3-5 isolated agent sessions at once. It proposes the Super-agent: a single continuous agent entity that persists across sessions, handles many concurrent tasks, connects to real working environments (IM, GitHub, email), and works proactively. Four characteristics: Continuous (one agent across all channels), Productive (fast, parallel, high-quality), Proactive (acts on environmental events unprompted), Persistent (always online, self-recovering) — none of which a single ReAct loop can provide; they must come from system architecture, drawing on classic computer-systems ideas. Five modules: (1) two-level architecture — a lightweight long-lived Router handling human interaction, coordination and memory, plus context-isolated Worker sessions with full tools executing concurrently; (2) event-driven triggers with a Fast Path (deterministic code) / Slow Path (LLM) filter, subscription-based event routing to Workers, Inline & Spill context management, Chain of Recall reference graphs, and speculative execution; (3) full-duplex multi-channel interaction via an async ReAct loop, with response style adapting per channel; (4) separation of compute, state, and environments — stateless cloud containers, DB-persisted state, execution environments on users' own machines via lightweight daemons; (5) an external Watchdog session monitoring infrastructure and task progress. Preliminary synthetic experiments: two-level Super-agent completed tasks faster and more stably than a single session with subagents (p50 12.4 vs 20.4 min), subscription pass-through cut Router token use ~37%, batching kept latency low at 40x event rates. Open problems: layer scaling/sharding, interaction redesign, context boundaries, A2A collaboration, security and prompt injection. Takeaway: classic systems engineering (batching, caching, speculation, watchdogs) applied to agents, letting humans move up to decisions and sign-off.",
+      "added": "2026-11-02"
     }
   ],
   "archive": [
