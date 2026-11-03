@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'audience-capture', title: 'Audience capture', meta: 'Sean Goedecke · Nov 3, 2026 · ~6 min listen', time: '5:47' },
     { slug: 'reliably-aligning-llms-is-impossible-in-principle', title: 'Reliably aligning LLMs is impossible in principle', meta: 'Sean Goedecke · Nov 2, 2026 · ~7 min listen', time: '6:53' },
     { slug: 'exploring-super-agent-design-towards-a-more-autonomous-agent-system', title: 'Exploring Super-agent Design: Towards a More Autonomous Agent System', meta: 'DeepSeek Harness · ~40 min listen', time: '39:41' },
     { slug: 'fast-and-slow-ways-to-improve-your-reputation', title: 'Fast and slow ways to improve your reputation', meta: 'Sean Goedecke · Nov 2026 · ~7 min listen', time: '6:51' },
