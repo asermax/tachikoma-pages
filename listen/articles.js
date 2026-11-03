@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'llms-are-not-superhuman-at-reading-and-writing-neural-network-weights', title: 'LLMs are not superhuman at reading and writing neural network weights', meta: 'Sean Goedecke · Nov 3, 2026 · ~4 min listen', time: '3:59' },
     { slug: 'audience-capture', title: 'Audience capture', meta: 'Sean Goedecke · Nov 3, 2026 · ~6 min listen', time: '5:47' },
     { slug: 'reliably-aligning-llms-is-impossible-in-principle', title: 'Reliably aligning LLMs is impossible in principle', meta: 'Sean Goedecke · Nov 2, 2026 · ~7 min listen', time: '6:53' },
     { slug: 'exploring-super-agent-design-towards-a-more-autonomous-agent-system', title: 'Exploring Super-agent Design: Towards a More Autonomous Agent System', meta: 'DeepSeek Harness · ~40 min listen', time: '39:41' },

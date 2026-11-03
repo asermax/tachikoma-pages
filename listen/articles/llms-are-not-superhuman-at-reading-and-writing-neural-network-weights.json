@@ -1,0 +1,62 @@
+{
+  "title": "LLMs are not superhuman at reading and writing neural network weights",
+  "meta": "Sean Goedecke · Nov 3, 2026 · ~4 min listen",
+  "body": "<div class=\"chunk\"><p>A recent <a href=\"https://rikiyat.github.io/blog/weight-space-programming/\" target=\"_blank\" rel=\"noopener\">paper</a> argues that frontier LLMs can work with neural network weights directly. This seems superhuman, but it isn’t.</p></div>\n<div class=\"chunk\"><p>The paper shows that GPT-6 Astra can take a small neural network and interact with its weights directly, “well past what we’d expect from humans or conventional algorithms”. Specifically, Astra was able to identify what games a small network<a href=\"https://www.seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/#fn-1\" target=\"_blank\" rel=\"noopener\">1</a> was trained to play just by looking at the weights, and even tweak the weights itself. The most impressive result is Astra significantly improving a 0.8B Qwen LLM’s ability on mathematics by natively editing its weights. The reason to be excited here is that “superhuman ability to improve language models” is precisely the kind of thing that could cause recursive self-improvement.</p></div>\n<div class=\"chunk\"><p><strong>I think a smart human ML researcher could perform all of these tasks</strong>. Figuring out what game a model was trained to play based on the network sounds impressive until you consider three points:</p></div>\n<div class=\"chunk\"><ol>\n<li>The input channels of the model directly listen to each 8x8 grid cell</li>\n<li>The input channels are <em>labeled</em> (e.g. “agent”, “moving objects”)</li>\n<li>It’s thus relatively trivial to calculate<a href=\"https://www.seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/#fn-2\" target=\"_blank\" rel=\"noopener\">2</a> which parts of the grid the first layer of weights cares about and why</li>\n</ol></div>\n<div class=\"chunk\"><p>Here’s that calculation expressed as a heatmap in three lines of Python:</p></div>\n<div class=\"chunk\"><pre><code class=\"language-text\">d = np.load(&quot;a9f535cc.npz&quot;)\nW1 = d[&quot;actor/dense1/kernel&quot;]\nnorms = np.linalg.norm(W1.reshape(10,10,5,32).transpose(2,0,1,3), axis=-1)  # 5 x 10 x 10\n</code></pre></div>\n<div class=\"chunk\"><p>And here’s the heatmap for each game:</p></div>\n<div class=\"chunk\"><p>If someone showed you that heatmap without the game labels, I think you’d be able to immediately identify at least the first three games purely by noticing where the player is (e.g. for Breakout, in a horizontal line at the bottom) and where the moving objects are (e.g. for Pac-Man, in the distinctive Pac-Man maze). It’s neat<a href=\"https://www.seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/#fn-3\" target=\"_blank\" rel=\"noopener\">3</a> that Astra was able to calculate the norms in its head without executing Python, but not <em>that</em> impressive, and certainly not something that should shock anyone who’s been paying attention.</p></div>\n<div class=\"chunk\"><p>I’m not going to go through each example<a href=\"https://www.seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/#fn-4\" target=\"_blank\" rel=\"noopener\">4</a> in the paper, so let’s skip straight to the most impressive one: fixing a 0.8B Qwen model’s ability to do mathematics. 0.8B is a lot of parameters, and “mathematics” is way more complicated than “guess what the game is based on how the player moves”, and editing weights is arguably harder than parsing them. What happened here?</p></div>\n<div class=\"chunk\"><p>First, note that the Qwen model was not “bad at mathematics” in a pure capabilities sense. It had a specific problem where after 32k tokens it would get stuck in loops, so any mathematical task that needed more than 32k tokens would automatically fail<a href=\"https://www.seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/#fn-5\" target=\"_blank\" rel=\"noopener\">5</a>. If you had a model that looped like this, how would you update the weights to fix it? Personally, I would try <a href=\"https://www.seangoedecke.com/steering-vectors/\" target=\"_blank\" rel=\"noopener\">steering</a>: I would write some reasoning texts that looped and some reasoning texts that didn’t, calculate the difference between the looping and non-looping residuals, measure how much each weight contributed to that difference, then try manually trimming those top weights. This is basically the <a href=\"https://github.com/p-e-w/heretic\" target=\"_blank\" rel=\"noopener\">Heretic</a> abliteration playbook.</p></div>\n<div class=\"chunk\"><p>And this is exactly what Astra did! It wrote four pairs of texts, measured<a href=\"https://www.seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/#fn-6\" target=\"_blank\" rel=\"noopener\">6</a> the weights that contributed to looping, started cutting them down and testing if it worked, and ended up finding a patch that stopped the Qwen model from looping, thus making it able to work on mathematical problems for more than 32k tokens. Again, <strong>this is exactly what a competent human researcher could have and would have done.</strong></p></div>\n<div class=\"chunk\"><p>It’s cool that Astra was able to make direct weight updates. But we shouldn’t think of this like a radically new capability that will change how AI research is done. We should think of this as analogous to the ability of LLMs to emit machine code and tweak compiled binaries: it’s an impressive trick, but the best way to work with binaries is still to write source code and compile it. Likewise, the best way to update the weights of a model is to train it normally. To the extent that intelligent LLMs help with AI research, they will help by improving <em>training</em>, not by magically tweaking model weights directly.</p></div>\n",
+  "audio": "llms-are-not-superhuman-at-reading-and-writing-neural-network-weights.ogg",
+  "sync": {
+    "timestamps": [
+      0,
+      8.325,
+      48.025,
+      59.975,
+      78.35,
+      83.9,
+      85.625,
+      88.45,
+      118.7,
+      141.175,
+      181.9,
+      205.175
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/"
+}
