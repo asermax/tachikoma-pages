@@ -1714,6 +1714,22 @@
       "added": "2026-11-02"
     },
     {
+      "slug": "algorithms-for-one",
+      "title": "Algorithms for One",
+      "url": "https://davidgasquez.com/algorithms-for-one",
+      "category": "ai",
+      "summary": "David Gasquez argues algorithms are 'tuned for you' but never 'tuned by you' because we don't own our data. Owning data (scraping, open protocols like AT Protocol, GDPR exports) enables personal algorithms: single-user rankers can spend unlimited compute per recommendation and use richer labeling than platform-scale systems. AI agents amplify this - asking questions the app never supported and building custom UIs on independent data. Example: Karpathy mining 43M HN comments for recommended videos into a custom browsing site. Software on open protocols that serves one person well likely serves others too.",
+      "added": "2026-11-03"
+    },
+    {
+      "slug": "astra-readwrite-misleading",
+      "title": "The 'Astra can read and write weights to improve Qwen' post is massively misleading",
+      "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+      "category": "ai",
+      "summary": "Matthew Honnibal critiques the viral 'Astra can read and write weights to improve Qwen' post: only the tiny-network experiments (17K-172K weights) actually read raw floats directly; every real-LLM result, including the headline Qwen MATH-500 jump from 7.9% to 48.1%, used Python code and in some cases ran the model on practice batches. Mixing techniques implies a unified weight-level 'gestalt' capability that wasn't demonstrated. He concedes the Qwen result is real progress - Astra can devise and perform tasks a human ML engineer would - but argues raw-weight and Python-assisted experiments don't belong in the same paper.",
+      "added": "2026-11-03"
+    },
+    {
       "slug": "audience-capture",
       "title": "Audience capture",
       "url": "https://seangoedecke.com/audience-capture/",
