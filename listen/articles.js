@@ -1,4 +1,6 @@
 const ARTICLES = [
+    { slug: 'algorithms-for-one', title: 'Algorithms for One', meta: 'David Gasquez · Nov 3, 2026 · ~3 min listen', time: '3:17' },
+    { slug: 'astra-readwrite-misleading', title: 'The \'Astra can read and write weights to improve Qwen\' post is misleading', meta: 'Matthew Honnibal · Nov 3, 2026 · ~6 min listen', time: '5:46' },
     { slug: 'llms-are-not-superhuman-at-reading-and-writing-neural-network-weights', title: 'LLMs are not superhuman at reading and writing neural network weights', meta: 'Sean Goedecke · Nov 3, 2026 · ~4 min listen', time: '3:59' },
     { slug: 'audience-capture', title: 'Audience capture', meta: 'Sean Goedecke · Nov 3, 2026 · ~6 min listen', time: '5:47' },
     { slug: 'reliably-aligning-llms-is-impossible-in-principle', title: 'Reliably aligning LLMs is impossible in principle', meta: 'Sean Goedecke · Nov 2, 2026 · ~7 min listen', time: '6:53' },

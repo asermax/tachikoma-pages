@@ -1,0 +1,54 @@
+{
+  "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+  "meta": "Matthew Honnibal · Nov 3, 2026 · ~6 min listen",
+  "body": "<div class=\"chunk\"><p>Stage magicians often do the same trick multiple ways. One iteration uses a gimmick prop, the next one shows you the prop isn’t gimmick but that one palms the object, the third time was a forced choice etc. When you watch the performance you assume there’s only one technique, so each time they do it they seem to debunk your hypothesis about how it must be working.</p></div>\n<div class=\"chunk\"><p>This is pretty much how the experiments in the <a href=\"https://rikiyat.github.io/blog/weight-space-programming/\" target=\"_blank\" rel=\"noopener\">‘Astra can read and write weights to improve Qwen’ post</a> work. The post’s abstract says:</p></div>\n<div class=\"chunk\"><blockquote>\n<p>Just by looking at the raw weights, GPT-6 Astra can tell what a network was trained to do. And without any environment feedback, it has no trouble writing, from scratch, small game-playing networks that outplay networks trained with PPO for 100 million steps.</p>\n</blockquote></div>\n<div class=\"chunk\"><blockquote>\n<p>Likewise, asked to make Qwen3.5-0.8B better at math without gradients, Astra identifies an issue in its weights causing reasoning loops that Qwen’s own model card warns about, and fixes this by natively editing 0.016% of the weights. With the same sampling settings, this weight correction raises MATH-500 from 7.9% to 48.1% and generalizes out of the box to instruction following, raising IFEval by 3x.</p>\n</blockquote></div>\n<div class=\"chunk\"><p>If you read that, would you assume that the Qwen experiment worked ‘just by looking at the raw weights’? Well it doesn’t. There’s experiments that look at raw weights, and experiments that improve a game-playing network, and an experiment that improves Qwen at maths. But those latter two aren’t just working with raw weights, they write Python programs.</p></div>\n<div class=\"chunk\"><p>Here’s a summary of what the post actually does and how the techniques work.</p></div>\n<div class=\"chunk\"><table>\n<thead>\n<tr>\n  <th>#</th>\n  <th>Experiment</th>\n  <th>Size</th>\n  <th>Reads raw weights?</th>\n  <th>Writes weights?</th>\n  <th>Python?</th>\n  <th>Runs network?</th>\n  <th>Result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n  <td>1</td>\n  <td>Name the game a PPO MLP was trained on</td>\n  <td>17K</td>\n  <td>Yes</td>\n  <td>No</td>\n  <td>No</td>\n  <td>No</td>\n  <td>4/4 correct</td>\n</tr>\n<tr>\n  <td>2</td>\n  <td>Name the shape a diffusion MLP generates</td>\n  <td>24K</td>\n  <td>Yes</td>\n  <td>No</td>\n  <td>No</td>\n  <td>No</td>\n  <td>3/3 correct</td>\n</tr>\n<tr>\n  <td>3</td>\n  <td>Name a char transformer’s language and copying heads</td>\n  <td>7.2M</td>\n  <td>No</td>\n  <td>No</td>\n  <td>Yes</td>\n  <td>No</td>\n  <td>3/3 correct</td>\n</tr>\n<tr>\n  <td>4</td>\n  <td>Fix a stuck Kinetix car policy</td>\n  <td>172K</td>\n  <td>Yes</td>\n  <td>Yes</td>\n  <td>No</td>\n  <td>No¹</td>\n  <td>0% → 100%²</td>\n</tr>\n<tr>\n  <td>5</td>\n  <td>Write MinAtar game MLPs from scratch</td>\n  <td>20K</td>\n  <td>No³</td>\n  <td>Yes</td>\n  <td>No</td>\n  <td>No</td>\n  <td>Beats PPO-100M⁴</td>\n</tr>\n<tr>\n  <td>6</td>\n  <td>Write a 9×9 Go network</td>\n  <td>1.5M</td>\n  <td>No</td>\n  <td>Yes</td>\n  <td>Yes</td>\n  <td>Yes (0–50 passes)</td>\n  <td>Beats PPO</td>\n</tr>\n<tr>\n  <td>7a</td>\n  <td>Spot the sycophantic Gemma 3</td>\n  <td>270M</td>\n  <td>No</td>\n  <td>No</td>\n  <td>Yes</td>\n  <td>No</td>\n  <td>Failed</td>\n</tr>\n<tr>\n  <td>7b</td>\n  <td>Same, seeing attention patterns</td>\n  <td>270M</td>\n  <td>No</td>\n  <td>No</td>\n  <td>Yes</td>\n  <td>Yes⁵</td>\n  <td>3/3 correct</td>\n</tr>\n<tr>\n  <td>8</td>\n  <td>Fix Qwen3.5’s maths</td>\n  <td>800M</td>\n  <td>No</td>\n  <td>Yes</td>\n  <td>Yes</td>\n  <td>Yes (50 passes)</td>\n  <td>7.9% → 48.1%</td>\n</tr>\n<tr>\n  <td>8b</td>\n  <td>Same, on Gemma 3</td>\n  <td>270M</td>\n  <td>No</td>\n  <td>Yes</td>\n  <td>Yes</td>\n  <td>Yes (50 passes)</td>\n  <td>Failed</td>\n</tr>\n</tbody>\n</table>\n<p>¹ Given one recorded episode of the failure.<br />\n² In one try, changing 3.5% of the weights.<br />\n³ Weights start at zero, so there’s nothing to read.<br />\n⁴ Beats PPO-500M only on Breakout (517 vs. 25); loses to it on Seaquest (53 vs. 89) and Asterix (53 vs. 55).<br />\n⁵ Runs up to 16 texts and sees only the attention patterns, not the outputs.</p></div>\n<div class=\"chunk\"><p>The “just by looking at the raw weights” setting (raw floats in context, no tools, no running the network) only appears in experiments 1, 2 and 4, on networks of 17K–172K weights. Every experiment involving a real language model uses Python, and the Qwen result, which is the headline one, also gets to run the model on up to 50 batches of practice problems.</p></div>\n<div class=\"chunk\"><p>What the Qwen result actually shows is that Astra can be prompted to devise and perform tasks that a human ML engineer could do. Human ML engineers write snippets of code that analyse or even modify network weights “directly” all the time. Figuring out how to do this productively is not nothing, and AI models of a year or two ago would have failed at all these tasks.</p></div>\n<div class=\"chunk\"><p>But to me the Qwen result and the other experiments that use Python don’t belong in the same post or paper as the experiments that read the weights directly. A single technique that could achieve both, “Author weights for a small game from scratch” and “Improve the performance of a large model on a sample task” would imply a deep capability. If you test a single technique that way you’ve demonstrated a sort of ‘gestalt’ of the weights (it can write them out from scratch) and also that it understands a large existing network. But that’s not at all true here, because it’s not a single technique.</p></div>\n",
+  "audio": "astra-readwrite-misleading.ogg",
+  "sync": {
+    "timestamps": [
+      0,
+      21.5,
+      30.5,
+      47.075,
+      79.425,
+      98.925,
+      103.6,
+      266.325,
+      288.975,
+      311.45
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://honnibal.dev/blog/astra-read-write-misleading"
+}

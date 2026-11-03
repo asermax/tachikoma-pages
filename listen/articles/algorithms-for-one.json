@@ -1,0 +1,46 @@
+{
+  "title": "Algorithms for One",
+  "meta": "David Gasquez · Nov 3, 2026 · ~3 min listen",
+  "body": "<div class=\"chunk\"><p>There are many algorithms out there tuned <em>for you</em> but almost none <em>tuned by you</em>. The main reason is that we don’t own our data, or accessing it is hard enough that we don’t bother. Owning our data is what lets us build tools around our lives and choose what matters, instead of hoping our clicks express our preferences.</p></div>\n<div class=\"chunk\"><p>Once you control your data (by scraping it, using an open network, or requesting a GDPR export), a new world of custom algorithms opens up. Open networks like the AT Protocol make this easier because <a href=\"https://davidgasquez.com/atproto-agents\" target=\"_blank\" rel=\"noopener\">agents can read structured public data without scraping an app’s interface</a>. This post is not entirely another ad for the AT Protocol, but about any data that should be yours, such as your x.com likes or your Spotify history.</p></div>\n<div class=\"chunk\"><p>A personal algorithm only needs to satisfy you. It is true that you cannot build an algorithm that competes with the main TikTok algorithm that feeds on billions of interactions. But you can compete on many other dimensions because TikTok serves millions of users and has to cut corners and simplify things to do it. Since your algorithm is only for you, you can throw whatever resources you want at it. For example, if I wanted my own recommendation algorithm for Bluesky posts, I could collect posts from all the feeds I wanted. Because the dataset is small-ish, I could spend as much compute and time per recommendation as I wanted, iterate on richer ranking and labeling (e.g. <a href=\"https://typesafe.ai/blog/introducing-system-one-models-and-jev\" target=\"_blank\" rel=\"noopener\">using jev</a>), and try many algorithms that Bluesky can’t afford to run across its entire user base.</p></div>\n<div class=\"chunk\"><p>Agents make owning or accessing your own data even more useful because you can ask questions the original app never supported, without waiting for its developers to build the feature. You can also build your own app on top of the data. As others have pointed out, Bluesky is just one view into atproto data. When <a href=\"https://overreacted.io/a-social-filesystem/\" target=\"_blank\" rel=\"noopener\">data lives independently of apps</a>, you can build another interface around it. These days, agents can easily <a href=\"https://newsletter.squishy.computer/p/agents-want-flexible-schemas\" target=\"_blank\" rel=\"noopener\">connect that data to a custom UI</a> shaped around what you need today. You can change the interface as your needs change and combine data from different places.</p></div>\n<div class=\"chunk\"><p>Here’s a recent example that puts everything together. Andrej Karpathy used Claude to find the videos that commenters recommended again and again across 43 million Hacker News comments, then <a href=\"https://x.com/karpathy/status/2116957135661945283\" target=\"_blank\" rel=\"noopener\">built a video browsing site around them</a>. The result is very different from the dopamine-optimized recommendations YouTube throws at you.</p></div>\n<div class=\"chunk\"><p>The experiment was only possible because someone maintains a Hacker News dataset that people like Andrej can build on. Others used the same dataset to build a different view <a href=\"https://news.ycombinator.com/item?id=50326821\" target=\"_blank\" rel=\"noopener\">focused on books</a>. Since the data is open and accessible, <a href=\"https://www.ssp.sh/brain/querying-hackernews-with-duckdb-directly/\" target=\"_blank\" rel=\"noopener\">you can do it too</a>.</p></div>\n<div class=\"chunk\"><p>It’s a great case of how an open and accessible dataset encouraged many custom views on top to surface different entities (YouTube videos, books, Wikipedia articles) and recommendation signals. <a href=\"https://news.ycombinator.com/item?id=50319510\" target=\"_blank\" rel=\"noopener\">Many people seem to enjoy these experiences</a>.</p></div>\n<div class=\"chunk\"><p>I want more software that works this way, built on protocols that keep data open and accessible. I want to build apps that grow with my interests. If an app is useful enough for me and open, it will probably be useful to other people too!</p></div>\n",
+  "audio": "algorithms-for-one.ogg",
+  "sync": {
+    "timestamps": [
+      0,
+      18.925,
+      46.475,
+      94.825,
+      129.25,
+      150.225,
+      166.2,
+      182.525
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://davidgasquez.com/algorithms-for-one"
+}
