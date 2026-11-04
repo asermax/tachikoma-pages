@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'critical-thinking-when-agents-do-the-work', title: 'Critical thinking when agents do the work', meta: 'Addy Osmani · Nov 3, 2026 · ~16 min listen', time: '16:07' },
     { slug: 'algorithms-for-one', title: 'Algorithms for One', meta: 'David Gasquez · Nov 3, 2026 · ~3 min listen', time: '3:17' },
     { slug: 'astra-readwrite-misleading', title: 'The \'Astra can read and write weights to improve Qwen\' post is misleading', meta: 'Matthew Honnibal · Nov 3, 2026 · ~6 min listen', time: '5:46' },
     { slug: 'llms-are-not-superhuman-at-reading-and-writing-neural-network-weights', title: 'LLMs are not superhuman at reading and writing neural network weights', meta: 'Sean Goedecke · Nov 3, 2026 · ~4 min listen', time: '3:59' },
