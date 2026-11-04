@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03",
+  "generated_at": "2026-11-04",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1744,6 +1744,14 @@
       "category": "ai",
       "summary": "A recent paper claims that frontier LLMs can work directly with neural network weights — appearing to show superhuman capability. The author argues this framing is wrong: a smart human ML researcher could perform all the tasks demonstrated.\n\nThe paper shows that GPT-6 Astra can identify what game a small network was trained to play just by inspecting its weights, and even edit weights to improve models — most impressively, patching a 0.8B Qwen LLM so it can do mathematics beyond 32k tokens, the kind of capability relevant to recursive self-improvement. But the author points out that the game-identification task is nearly trivial: the input channels are labeled and map directly to the 8x8 grid, so a three-line Python heatmap of first-layer weight norms reveals the game instantly. As for the Qwen fix, the model wasn't bad at math — it just got stuck in loops after 32k tokens. Astra's solution (writing paired looping/non-looping texts, measuring which weights contributed to the difference, and trimming those weights) is exactly what a competent human researcher would have done via the \"Heretic\" abliteration-style approach.\n\nThe main takeaway: directly editing weights is analogous to LLMs emitting machine code or tweaking compiled binaries — an impressive trick, but not a new research paradigm. The best way to update model weights is still normal training; to the extent LLMs accelerate AI research, it will be by improving training, not by magically editing weights by hand.",
       "added": "2026-11-03"
+    },
+    {
+      "slug": "critical-thinking-when-agents-do-the-work",
+      "title": "Critical thinking when agents do the work",
+      "url": "https://x.com/addyosmani/status/2117512471930167377",
+      "category": "ai",
+      "summary": "Addy Osmani argues that nothing in agentic workflows forces critical thinking anymore - fast, pleasant, mostly-correct outputs are easy to trust by default, and even running many agents in parallel leaves you one pair of eyes. Core concept: a spectrum from cognitive offloading (delegate, keep ownership) through deferral (output becomes your new input) to cognitive surrender (output quietly becomes yours, you stop checking). Comprehension debt accumulates invisibly; rebuilding understanding on demand is fine but you must know what you don't have. Delegate where being wrong is cheap, keep reasoning where consequences matter. Practical questions: hypothesize before asking, ask what would have to be true to be wrong, hear counterarguments from other models, would you bet on it in front of the maintainer. Verification as central habit - the bottleneck moved from coding to being sure you're right; watch the orchestration tax (finished work piling faster than you can stand behind it = hoping, not reviewing). Judgment moves to the front (intent) and end (accountability); you may offload the work but not the accountability.",
+      "added": "2026-11-04"
     }
   ],
   "archive": [
