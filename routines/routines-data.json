@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-04T02:00:33.036475-03:00",
+  "generated_at": "2026-11-05T02:01:10.987191-03:00",
   "week_start": "2026-11-01",
   "week_label": "November 01 - November 07, 2026",
-  "last_updated": "Wednesday, November 04, 2026 at 02:00",
+  "last_updated": "Thursday, November 05, 2026 at 02:01",
   "stats": {
-    "completed": 3.5,
-    "planned": 8,
-    "display": "3.5 / 8"
+    "completed": 4.333333333333333,
+    "planned": 11,
+    "display": "4.3 / 11"
   },
   "daily": {
     "Sunday": {
@@ -25,9 +25,9 @@
       "total": 3
     },
     "Wednesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "partial",
+      "completed": 1,
+      "total": 3
     },
     "Thursday": {
       "status": "empty",
@@ -90,12 +90,12 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         }
       ],
-      "metrics_total": "",
+      "metrics_total": "1h",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
@@ -196,10 +196,10 @@
     }
   ],
   "spirit": {
-    "state": "tired",
+    "state": "critical",
     "emoji": "\ud83e\udda1",
     "title": "\ud83e\udda1 Meadow Weasel",
-    "image": "assets/tired.webp",
-    "description": "Your meadow weasel curls up low and droopy in the drizzle, half-closed eyes \u2014 grey fog over the grass, resting where it sits."
+    "image": "assets/critical.webp",
+    "description": "Your meadow weasel huddles in its den as storm winds lash the meadow \u2014 worried eyes watching the rain pour."
   }
 }
