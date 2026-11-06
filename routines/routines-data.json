@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-05T02:01:10.987191-03:00",
+  "generated_at": "2026-11-06T02:00:41.785750-03:00",
   "week_start": "2026-11-01",
   "week_label": "November 01 - November 07, 2026",
-  "last_updated": "Thursday, November 05, 2026 at 02:01",
+  "last_updated": "Friday, November 06, 2026 at 02:00",
   "stats": {
-    "completed": 4.333333333333333,
-    "planned": 11,
-    "display": "4.3 / 11"
+    "completed": 4.25,
+    "planned": 14,
+    "display": "4.2 / 14"
   },
   "daily": {
     "Sunday": {
@@ -30,9 +30,9 @@
       "total": 3
     },
     "Thursday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 3
     },
     "Friday": {
       "status": "empty",
@@ -75,7 +75,7 @@
         },
         {
           "day": "Thu",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -163,7 +163,7 @@
         },
         {
           "day": "Thu",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
