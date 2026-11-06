@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'test-and-verification-technique-effectiveness-with-gpt-6-astra', title: 'Test and verification technique effectiveness with GPT-6 Astra', meta: 'Dan Luu · Nov 2026 · ~24 min listen', time: '24:05' },
     { slug: 'a-database-is-a-store-for-global-variables', title: 'A database is a store for global variables', meta: 'Sean Goedecke · Nov 2026 · ~6 min listen', time: '5:52' },
     { slug: 'critical-thinking-when-agents-do-the-work', title: 'Critical thinking when agents do the work', meta: 'Addy Osmani · Nov 3, 2026 · ~16 min listen', time: '16:07' },
     { slug: 'algorithms-for-one', title: 'Algorithms for One', meta: 'David Gasquez · Nov 3, 2026 · ~3 min listen', time: '3:17' },
