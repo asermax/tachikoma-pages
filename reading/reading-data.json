@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05",
+  "generated_at": "2026-11-06",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1752,6 +1752,14 @@
       "category": "ai",
       "summary": "Addy Osmani argues that nothing in agentic workflows forces critical thinking anymore - fast, pleasant, mostly-correct outputs are easy to trust by default, and even running many agents in parallel leaves you one pair of eyes. Core concept: a spectrum from cognitive offloading (delegate, keep ownership) through deferral (output becomes your new input) to cognitive surrender (output quietly becomes yours, you stop checking). Comprehension debt accumulates invisibly; rebuilding understanding on demand is fine but you must know what you don't have. Delegate where being wrong is cheap, keep reasoning where consequences matter. Practical questions: hypothesize before asking, ask what would have to be true to be wrong, hear counterarguments from other models, would you bet on it in front of the maintainer. Verification as central habit - the bottleneck moved from coding to being sure you're right; watch the orchestration tax (finished work piling faster than you can stand behind it = hoping, not reviewing). Judgment moves to the front (intent) and end (accountability); you may offload the work but not the accountability.",
       "added": "2026-11-04"
+    },
+    {
+      "slug": "a-database-is-a-store-for-global-variables",
+      "title": "A database is a store for global variables",
+      "url": "https://seangoedecke.com/a-database-is-a-store-for-global-variables/",
+      "category": "engineering",
+      "summary": "Argues database rows are definitionally global variables, creating tension with the 'globals are bad' dogma. Evaluates five explanations for why database-backed apps aren't a mess; finds 'databases are explicit' and 'we have usage norms' most convincing — both contingent properties, not inherent. Meta-point: common engineering dogma is a pile of loose heuristics, not settled principles; be suspicious of 'best practice' appeals without concrete reasons.",
+      "added": "2026-11-06"
     }
   ],
   "archive": [
