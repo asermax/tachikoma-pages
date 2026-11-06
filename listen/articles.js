@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'a-database-is-a-store-for-global-variables', title: 'A database is a store for global variables', meta: 'Sean Goedecke · Nov 2026 · ~6 min listen', time: '5:52' },
     { slug: 'critical-thinking-when-agents-do-the-work', title: 'Critical thinking when agents do the work', meta: 'Addy Osmani · Nov 3, 2026 · ~16 min listen', time: '16:07' },
     { slug: 'algorithms-for-one', title: 'Algorithms for One', meta: 'David Gasquez · Nov 3, 2026 · ~3 min listen', time: '3:17' },
     { slug: 'astra-readwrite-misleading', title: 'The \'Astra can read and write weights to improve Qwen\' post is misleading', meta: 'Matthew Honnibal · Nov 3, 2026 · ~6 min listen', time: '5:46' },
