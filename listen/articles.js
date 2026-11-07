@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'working-with-designers', title: 'Working with designers', meta: 'Sean Goedecke · Nov 2026 · ~9 min listen', time: '9:08' },
     { slug: 'firecracker-vm-escape-pwnescape-part-2', title: 'Firecracker VM Escape: PwnEscape Part 2.', meta: 'PWN Research, Paulos Yibelo · Nov 2026 · ~18 min listen', time: '17:54' },
     { slug: 'pwnescape-guest-to-host-kvm-escape-cve-2026-99999', title: 'PwnEscape: Guest-to-Host KVM Escape (CVE-2026-99999)', meta: 'PWN Research, Paulos Yibelo · Oct 2026 · ~32 min listen', time: '31:49' },
     { slug: 'test-and-verification-technique-effectiveness-with-gpt-6-astra', title: 'Test and verification technique effectiveness with GPT-6 Astra', meta: 'Dan Luu · Nov 2026 · ~24 min listen', time: '24:05' },

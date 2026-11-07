@@ -1,0 +1,110 @@
+{
+  "title": "Working with designers",
+  "meta": "Sean Goedecke · Nov 2026 · ~9 min listen",
+  "body": "<div class=\"chunk\"><p>I love working with designers, in part because (unlike managers and product managers) they’re culturally different from engineers. However, having more than one designer on a team is asking for trouble, and I have complicated negative thoughts about design systems.</p></div>\n<div class=\"chunk\"><h3>Design is a strange role<a href=\"https://www.seangoedecke.com/working-with-designers/#design-is-a-strange-role\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>Designers demonstrate their value immediately. While working on some feature, I’ll typically put together some placeholder UI that I’m reasonably happy with. I then show it to a designer, who strokes their chin and says “hmm, I have some ideas here”. They then go away and produce a mockup UI that is not just clearly better, but better in ways I could not have imagined. There aren’t any other roles at a tech company where you can see the value at a glance.</p></div>\n<div class=\"chunk\"><p>Designers are an unusual role in other ways, too. Engineering managers, product managers, and engineers all come from broadly the same stock: technical, detail-oriented planners. We are people of the spreadsheet. In fact, many managers and product managers were once engineers: it’s a natural transition. Not so for designers. I’m sure they exist, but I’ve never met any designers who started out as engineers.</p></div>\n<div class=\"chunk\"><p>Because of this, designers are culturally distant from engineers. In my experience, this is a big positive. I’ve complained <a href=\"https://www.seangoedecke.com/working-with-product-managers/#technical-product-managers\" target=\"_blank\" rel=\"noopener\">before</a> that product managers who were once engineers tend to be worse, not better. Once you start trying to make your own secret technical assessments instead of finding a way to trust your engineering team, you’re doomed: you won’t be able to do it well enough, and the fact that you’re trying will make it impossible to build the trust you need. Designers don’t have this problem at all<a href=\"https://www.seangoedecke.com/working-with-designers/#fn-1\" target=\"_blank\" rel=\"noopener\">1</a>.</p></div>\n<div class=\"chunk\"><h3>One designer at a time<a href=\"https://www.seangoedecke.com/working-with-designers/#one-designer-at-a-time\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>So far I have made designers sound like the elves of Middle-earth: mysterious creatures who glide around tech companies dispensing magic. In fact, they are more like the Slavic household spirits, or <a href=\"https://en.wikipedia.org/wiki/Domovoy\" target=\"_blank\" rel=\"noopener\">Domovoy</a>. If you have one Domovoy in a household, it will protect your home against misfortune. If you ever have more than one, they will <a href=\"https://en.wikisource.org/wiki/Page%3AThe_Mythology_of_All_Races_Vol_3_(Celtic_and_Slavic).djvu/367\" target=\"_blank\" rel=\"noopener\">fight bitterly</a>: “making all sorts of noises, injuring the cattle, turning the master out of his bed, choking people while asleep, etc”. Likewise, a designer can turn your scrappy product into something really beautiful — but you had better have only one designer, otherwise you’re asking for trouble.</p></div>\n<div class=\"chunk\"><p>The worst experience I have ever had working with designers was on a product where we had three of them: initially just one, who then rotated off the project and was replaced by two very senior designers. As far as I could tell, the first design was pretty good. Unfortunately, the new designers didn’t feel the same way. The very first thing they did was completely redesign the product, which meant I had to rewrite most of the frontend styles. Then they began disagreeing with each other. I think we went back on each page of the product three or four times: one designer would tell me to change X, then the other would change it back, and so on. In the meantime, I was desperately trying to get the product to work.</p></div>\n<div class=\"chunk\"><p>I knew what I was supposed to do in theory: get everyone in a room talking to each other and hash out a decision. Maybe this would have worked on a different product where the requirements were more stable, but it didn’t work here. The differences in taste, while imperceptible to me, were just too deep. It seemed like everything Designer A produced was slightly wrong in Designer B’s eyes, and vice versa. In the end we just powered through by implementing<a href=\"https://www.seangoedecke.com/working-with-designers/#fn-2\" target=\"_blank\" rel=\"noopener\">2</a> each new iteration until about a week before the deadline, at which point I called in two layers of management as air cover<a href=\"https://www.seangoedecke.com/working-with-designers/#fn-3\" target=\"_blank\" rel=\"noopener\">3</a> to freeze the design in its current state.</p></div>\n<div class=\"chunk\"><p>These were really good designers! They were far, far better than me at design, and were very nice people who I’d happily work with again. I just think it’s inherently bad to work with more than one designer at a time. I’ve had this experience over and over on different teams and companies. I can only guess<a href=\"https://www.seangoedecke.com/working-with-designers/#fn-4\" target=\"_blank\" rel=\"noopener\">4</a> as to why, but here are two theories:</p></div>\n<div class=\"chunk\"><ul>\n<li>Engineering disagreements can pivot on concrete measures of quality like latency, bugs, lines of code, and so on, while designers must rely only on taste</li>\n<li>Design changes anywhere affect the whole product, because users experience the product as a single design, while many engineering choices are invisible to the user (and so can be safely inconsistent)</li>\n</ul></div>\n<div class=\"chunk\"><h3>Flexibility and design systems<a href=\"https://www.seangoedecke.com/working-with-designers/#flexibility-and-design-systems\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>One way companies try to scale design work is to produce a “design system”: a library of frontend components that are all design-compliant, that can in theory be assembled like Legos into a page that looks consistent with the rest of the company. I hate design systems. However, <a href=\"https://winstonchurchill.org/resources/quotes/the-worst-form-of-government/\" target=\"_blank\" rel=\"noopener\">like democracy</a>, they’re better than any other way I’ve seen to enforce a consistent design.</p></div>\n<div class=\"chunk\"><p>The first problem with design systems is one of incentives. The engineering team that owns the design system<a href=\"https://www.seangoedecke.com/working-with-designers/#fn-5\" target=\"_blank\" rel=\"noopener\">5</a> is incentivized to produce elegant components that will look beautiful all the time. The engineering teams that <em>use</em> the design system are incentivized to produce systems that meet inelegant or ugly customer requirements. So you have this permanent battle where a product team demands something — say, the ability to embed arbitrary images into the dropdown component — and the design team pushes back because they’re worried it will look bad.</p></div>\n<div class=\"chunk\"><p>The dynamic I described above (where designers tend to disagree with each other) makes this much worse. Often an embedded designer on the engineering team will push for some design that is slightly different from the design system, which (a) makes the design system owners very unhappy, and (b) makes the engineers unhappy, because the component must be tortured into a very slightly different appearance.</p></div>\n<div class=\"chunk\"><p>The result of this problem is that engineering teams are perpetually hacking their way around the design system: reimplementing their own versions of components, reaching in with CSS to tweak the styles of existing components (which then get broken in each component update), and so on.</p></div>\n<div class=\"chunk\"><p>This leads into the second problem: compatibility. Design systems are typically written in the latest and greatest frontend framework, but the actual frontend code at a company is always a hodge-podge of various technologies and versions that are too expensive and risky to update. For instance, you often have a design system in React that is being used to plan changes to a frontend in pure HTML and CSS<a href=\"https://www.seangoedecke.com/working-with-designers/#fn-6\" target=\"_blank\" rel=\"noopener\">6</a>. I have spent <em>years</em> of my life wrestling with this exact problem: either you spend ages trying to reimplement some percentage of the React component, or you try and use the outdated pure-CSS design system (if one exists), or you give up and just embed a React component directly into the HTML. All of these are very unpleasant for different reasons.</p></div>\n<div class=\"chunk\"><p>One common situation is that the version of the design system available to <em>you</em> (i.e. the pure-CSS version, or the React 16 version) looks subtly different from the design system available to <em>your designer</em>, and so when you plug your Legos together you don’t quite get what they were visualizing. This leads to a very tedious conversation where you have to explain that no, it’s not actually trivial to bump the entire app to the latest React version<a href=\"https://www.seangoedecke.com/working-with-designers/#fn-7\" target=\"_blank\" rel=\"noopener\">7</a>. When you’re actually implementing the app, you have to constantly run a kind of translation in your head: “okay, the designer wants dropdown feature A, but the dropdowns in my version of the design system only offer features B and C, so I guess C is close enough…”</p></div>\n<div class=\"chunk\"><p>I still think design systems are better than the alternatives. When you’re up-to-date and don’t have a designer who wants anything weird, they work <em>great</em>. Ensuring that a thousand engineers across a giant application all produce consistent UI is a very hard problem and I don’t know any other way to solve it. I just wish that the designers I worked with were more considerate of the fact that design systems often make the immediate work of engineering more difficult.</p></div>\n<div class=\"chunk\"><h3>Do you actually need designers?<a href=\"https://www.seangoedecke.com/working-with-designers/#do-you-actually-need-designers\" target=\"_blank\" rel=\"noopener\"></a></h3></div>\n<div class=\"chunk\"><p>The classic <a href=\"https://medium.com/@susankatherinerits/the-3-legged-stool-of-product-development-a00ab50a0ac\" target=\"_blank\" rel=\"noopener\">three-legged stool</a> of product development is made up of engineering, product management, and design. Design is definitely the shorter leg. Almost every team I’ve worked on has had some kind of embedded product management, but only about half the teams I’ve worked on<a href=\"https://www.seangoedecke.com/working-with-designers/#fn-8\" target=\"_blank\" rel=\"noopener\">8</a> have had some access to design (and even fewer have had an embedded designer on the team). Why is that?</p></div>\n<div class=\"chunk\"><p>Partly it’s because there are products that don’t require design, or at least not in the visual sense that designers provide. Some of the teams I’ve worked on have owned systems with no real visual component: APIs, billing and reconciliation, markdown or pdf rendering<a href=\"https://www.seangoedecke.com/working-with-designers/#fn-9\" target=\"_blank\" rel=\"noopener\">9</a>. I have seen companies put designers on these teams anyway, out of some sense that “design thinking” can improve the structure of an API. This is nonsense. Good API design is <a href=\"https://www.seangoedecke.com/good-api-design/\" target=\"_blank\" rel=\"noopener\">very important</a>, but it’s a <em>technical</em> job, not an aesthetic one. Designers on these teams typically just sit around or tunnel-vision on some unimportant piece of UI that the team does own (e.g. some internal admin component that no customer will ever see).</p></div>\n<div class=\"chunk\"><p>It’s also because badly designed products still work. I don’t think Netlify Analytics is well-designed: it’s awkward to use and does not show me information it definitely has. But I still pay for it, because I want server-side analytics for my blog. I don’t think many people have complimented the aesthetics of the Microsoft Azure admin portal, but Azure <a href=\"https://insight.tmcnet.com/insight/microsoft-pushes-azure-past-100-billion-as-cloud-growth-accelerates-mv1ku93a\" target=\"_blank\" rel=\"noopener\">broke</a> $100B of revenue this year. There are very few software products where design is truly business-critical.</p></div>\n<div class=\"chunk\"><p>As an engineer, I selfishly wish I could work with a designer all the time. I want to work on beautiful products, and I can’t make them beautiful myself.</p></div>\n",
+  "audio": "working-with-designers.ogg",
+  "sync": {
+    "timestamps": [
+      0,
+      16.2,
+      18.475,
+      41.175,
+      64.35,
+      90.3,
+      92.425,
+      126.175,
+      163.425,
+      198.65,
+      218.475,
+      242.3,
+      244.925,
+      267.15,
+      301.1,
+      323.325,
+      341.225,
+      385.55,
+      425.875,
+      449.575,
+      452.075,
+      473.8,
+      515.575,
+      539.325
+    ],
+    "chunkMap": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14
+      ],
+      [
+        15
+      ],
+      [
+        16
+      ],
+      [
+        17
+      ],
+      [
+        18
+      ],
+      [
+        19
+      ],
+      [
+        20
+      ],
+      [
+        21
+      ],
+      [
+        22
+      ],
+      [
+        23
+      ]
+    ],
+    "prefixOffset": 0
+  },
+  "sourceUrl": "https://seangoedecke.com/working-with-designers/"
+}
