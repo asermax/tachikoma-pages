@@ -1,4 +1,6 @@
 const ARTICLES = [
+    { slug: 'firecracker-vm-escape-pwnescape-part-2', title: 'Firecracker VM Escape: PwnEscape Part 2.', meta: 'PWN Research, Paulos Yibelo · Nov 2026 · ~18 min listen', time: '17:54' },
+    { slug: 'pwnescape-guest-to-host-kvm-escape-cve-2026-99999', title: 'PwnEscape: Guest-to-Host KVM Escape (CVE-2026-99999)', meta: 'PWN Research, Paulos Yibelo · Oct 2026 · ~32 min listen', time: '31:49' },
     { slug: 'test-and-verification-technique-effectiveness-with-gpt-6-astra', title: 'Test and verification technique effectiveness with GPT-6 Astra', meta: 'Dan Luu · Nov 2026 · ~24 min listen', time: '24:05' },
     { slug: 'a-database-is-a-store-for-global-variables', title: 'A database is a store for global variables', meta: 'Sean Goedecke · Nov 2026 · ~6 min listen', time: '5:52' },
     { slug: 'critical-thinking-when-agents-do-the-work', title: 'Critical thinking when agents do the work', meta: 'Addy Osmani · Nov 3, 2026 · ~16 min listen', time: '16:07' },
