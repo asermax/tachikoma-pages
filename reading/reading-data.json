@@ -3574,6 +3574,16 @@
       "added": "2026-10-30",
       "read": "2026-10-31",
       "has_notes": true
+    },
+    {
+      "slug": "a-few-assorted-thoughts-about-llms-in-november-2026",
+      "title": "A few assorted thoughts about LLMs in November 2026",
+      "url": "https://ankursethi.com/blog/a-few-assorted-thoughts-about-llms-in-november-2026/",
+      "category": "ai",
+      "summary": "This article is a collection of short, opinionated observations by Ankur Sethi about the state of LLMs, written as a bulleted list of personal takes in November 2026.\n\nOn the technology itself: the author holds two conflicting views simultaneously — LLMs are genuinely useful tools, and they are also \"the greatest theft of intellectual labor in human history.\" He believes that in the right hands, LLMs can produce good, reliable software faster than ever, but that most organizations using them are producing slop despite their press releases. He urges skeptics to honestly attempt building serious software with LLMs before complaining, insists LLM-assisted code reviews (especially for security) are now part of doing the job properly, and complains that models over-engineer everything, making constant pushback exhausting. Notably, he assigns full responsibility for security breaches in LLM-generated code to the humans who shipped it, arguing AI must not become an \"accountability sink.\"\n\nOn industry and policy: he argues software built with LLM assistance is fine, but has zero tolerance for LLM-generated human writing (\"please don't talk to me\"). He calls for regulations forcing AI labs to make all training and post-training data public, reasoning that data unethically taken from the digital commons should be returned to it. He doubts the \"AI bubble\" framing — the big labs seem to be heading toward profitability, so he expects slower growth rather than collapse (admittedly based on vibes). He predicts open models will not displace Anthropic or OpenAI because the big labs have \"infinite compute\": they can always serve larger models, or serve smaller models at very high speeds. His core framing is that the big labs are in the business of selling compute, not intelligence. He also wants models 10–20x faster rather than bigger and smarter, seeing speed (and lower cost) as the next productivity inflection point, and wonders aloud whether anyone has cracked continuous learning yet.\n\nOn people: he warns that AI lab leaders like Dario Amodei and Sam Altman \"do not have your best interests at heart.\" His closing advice is to keep writing code by hand, keep learning computer science, and maintain LLM-free projects — partly for the love of it, and partly to stay sharp, understand how things work, and avoid total cognitive dependence on silicon.",
+      "added": "2026-11-07",
+      "read": "2026-11-07",
+      "has_notes": true
     }
   ]
 }
