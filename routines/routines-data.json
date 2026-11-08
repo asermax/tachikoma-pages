@@ -1,48 +1,48 @@
 {
-  "generated_at": "2026-11-08T02:01:04.231257-03:00",
-  "week_start": "2026-11-01",
-  "week_label": "November 01 - November 07, 2026",
-  "last_updated": "Sunday, November 08, 2026 at 02:01",
+  "generated_at": "2026-11-08T12:58:54.355576-03:00",
+  "week_start": "2026-11-08",
+  "week_label": "November 08 - November 14, 2026",
+  "last_updated": "Sunday, November 08, 2026 at 12:58",
   "stats": {
-    "completed": 5.5,
-    "planned": 18,
-    "display": "5.5 / 18"
+    "completed": 0,
+    "planned": 0,
+    "display": "0 / 0"
   },
   "daily": {
     "Sunday": {
-      "status": "partial",
-      "completed": 1,
-      "total": 2
+      "status": "missed",
+      "completed": 0,
+      "total": 1
     },
     "Monday": {
-      "status": "missed",
+      "status": "empty",
       "completed": 0,
-      "total": 1
+      "total": 0
     },
     "Tuesday": {
-      "status": "partial",
-      "completed": 2,
-      "total": 3
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Wednesday": {
-      "status": "partial",
-      "completed": 1,
-      "total": 3
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Thursday": {
-      "status": "partial",
-      "completed": 1,
-      "total": 3
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Friday": {
-      "status": "missed",
+      "status": "empty",
       "completed": 0,
-      "total": 1
+      "total": 0
     },
     "Saturday": {
-      "status": "missed",
+      "status": "empty",
       "completed": 0,
-      "total": 3
+      "total": 0
     }
   },
   "goals": [
@@ -58,9 +58,9 @@
       "name": "Wind-Down Routine",
       "emoji": "",
       "status": "pending",
-      "accumulated": "3 nights",
+      "accumulated": "0 nights",
       "target": "6 nights",
-      "progress_pct": 50
+      "progress_pct": 0
     }
   ],
   "routines": [
@@ -70,42 +70,8 @@
       "emoji": "\ud83d\udcaa",
       "sessions": [
         {
-          "day": "Tue",
-          "status": "done"
-        },
-        {
           "day": "Thu",
-          "status": "skipped"
-        }
-      ],
-      "metrics_total": "",
-      "comparison": "",
-      "done": 1,
-      "total": 2
-    },
-    {
-      "id": "music-practice",
-      "name": "Music Practice",
-      "emoji": "\ud83c\udfb7",
-      "sessions": [
-        {
-          "day": "Wed",
-          "status": "done"
-        }
-      ],
-      "metrics_total": "1h",
-      "comparison": "",
-      "done": 1,
-      "total": 1
-    },
-    {
-      "id": "piano-practice",
-      "name": "Piano Practice",
-      "emoji": "\ud83c\udfb9",
-      "sessions": [
-        {
-          "day": "Sat",
-          "status": "skipped"
+          "status": "pending"
         }
       ],
       "metrics_total": "",
@@ -114,9 +80,54 @@
       "total": 1
     },
     {
-      "id": "reading",
-      "name": "Reading",
-      "emoji": "\ud83d\udcd6",
+      "id": "music-practice",
+      "name": "Music Practice",
+      "emoji": "\ud83c\udfb7",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "pending"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 1
+    },
+    {
+      "id": "piano-practice",
+      "name": "Piano Practice",
+      "emoji": "\ud83c\udfb9",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "pending"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 1
+    },
+    {
+      "id": "rock-climbing",
+      "name": "Rock Climbing",
+      "emoji": "\ud83e\uddd7",
+      "sessions": [
+        {
+          "day": "Thu",
+          "status": "pending"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 1
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga",
+      "emoji": "\ud83e\uddd8",
       "sessions": [
         {
           "day": "Sun",
@@ -127,60 +138,6 @@
           "status": "pending"
         },
         {
-          "day": "Tue",
-          "status": "pending"
-        },
-        {
-          "day": "Wed",
-          "status": "pending"
-        },
-        {
-          "day": "Thu",
-          "status": "done"
-        },
-        {
-          "day": "Fri",
-          "status": "skipped"
-        },
-        {
-          "day": "Sat",
-          "status": "pending"
-        }
-      ],
-      "metrics_total": "30min",
-      "comparison": "",
-      "done": 1,
-      "total": 7
-    },
-    {
-      "id": "rock-climbing",
-      "name": "Rock Climbing",
-      "emoji": "\ud83e\uddd7",
-      "sessions": [
-        {
-          "day": "Tue",
-          "status": "done"
-        },
-        {
-          "day": "Thu",
-          "status": "skipped"
-        }
-      ],
-      "metrics_total": "",
-      "comparison": "",
-      "done": 1,
-      "total": 2
-    },
-    {
-      "id": "yoga",
-      "name": "Yoga",
-      "emoji": "\ud83e\uddd8",
-      "sessions": [
-        {
-          "day": "Sun",
-          "status": "done"
-        },
-        {
           "day": "Wed",
           "status": "pending"
         },
@@ -191,15 +148,15 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 1,
-      "total": 3
+      "done": 0,
+      "total": 4
     }
   ],
   "spirit": {
-    "state": "critical",
+    "state": "dormant",
     "emoji": "\ud83e\udda1",
     "title": "\ud83e\udda1 Meadow Weasel",
-    "image": "assets/critical.webp",
-    "description": "Your meadow weasel huddles in its den as storm winds lash the meadow \u2014 worried eyes watching the rain pour."
+    "image": "assets/dormant.webp",
+    "description": "Your meadow weasel sleeps curled in its burrow under moonlight and stars \u2014 deep, still, quiet rest."
   }
 }
