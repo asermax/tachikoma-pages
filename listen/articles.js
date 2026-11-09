@@ -1,4 +1,5 @@
 const ARTICLES = [
+    { slug: 'ai-and-irontown', title: 'AI and Irontown', meta: 'Armin Ronacher · Nov 2026 · ~5 min listen', time: '4:34' },
     { slug: 'your-coding-agents-made-you-a-manager', title: 'Your coding agents made you a manager', meta: 'Addy Osmani · Nov 2026 · ~22 min listen', time: '22:31' },
     { slug: 'llms-are-terrible-at-designing-ai-systems', title: 'LLMs are terrible at designing AI systems', meta: 'Sean Goedecke · Nov 2026 · ~5 min listen', time: '5:06' },
     { slug: 'working-with-designers', title: 'Working with designers', meta: 'Sean Goedecke · Nov 2026 · ~9 min listen', time: '9:08' },
