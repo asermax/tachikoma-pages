@@ -1792,14 +1792,6 @@
       "category": "ai",
       "summary": "Armin Ronacher draws an extended analogy between Princess Mononoke and today's AI debates. Irontown (Lady Eboshi's settlement) gives outcasts work, protection, and dignity while its mines destroy the forest — a map for AI's empowerment and its externalities, with Eboshi as a complicated figure doing real good while causing real harm. He extends the parallel to the unseen emperor who wants the forest spirit dead for immortality: no country needs to 'win at AI', the race runs on fear of the other side winning first. He identifies with Ashitaka, cursed but seeing 'with eyes unclouded by hate', a model for neutral engagement in a polarized conflict. Takeaway: AI is genuinely empowering and morally costly at once, and the costs often fall on people who get no benefit; the question is not whether there will be iron, but what kind of Irontown we build with it.",
       "added": "2026-11-09"
-    },
-    {
-      "slug": "i-am-a-silicon-valley-veteran-we-are-sabotaging-ourselves",
-      "title": "I Am a Silicon Valley Veteran. We Are Sabotaging Ourselves.",
-      "url": "https://www.nytimes.com/2026/11/09/opinion/ai-anthropic-doom-conscious.html",
-      "category": "ai",
-      "summary": "Jaron Lanier argues Silicon Valley is sabotaging AI through its rhetoric, not its tech: the industry's quasi-religious belief in conscious, godlike AI drives both doom warnings (Anthropic's 'catastrophic or existential risks' IPO language) and agent packaging, repeating the VR mainstreaming failure at larger scale. Public disapproval is a reaction to this insular culture, not the technology. He revives his 1980s phrase 'tools not creatures' (coined debating Marvin Minsky, whose 1970 keep-humans-as-pets alarmism he calls a moneymaker for military funding): with no evidence of machine consciousness, treating AI as a fancy calculator is both legitimate and safer. He's no capability skeptic — models are a 'superlibrary' of recombined human output — but agents are 'rituals of belief more than technological necessities' and the source of most concrete harms. Summary covers the retrievable portion of the essay (fetch truncated at ~half); the tail elaborating his 'tools not creatures' safety proposal was unavailable.",
-      "added": "2026-11-10"
     }
   ],
   "archive": [
