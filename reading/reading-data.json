@@ -1792,6 +1792,22 @@
       "category": "ai",
       "summary": "Armin Ronacher draws an extended analogy between Princess Mononoke and today's AI debates. Irontown (Lady Eboshi's settlement) gives outcasts work, protection, and dignity while its mines destroy the forest — a map for AI's empowerment and its externalities, with Eboshi as a complicated figure doing real good while causing real harm. He extends the parallel to the unseen emperor who wants the forest spirit dead for immortality: no country needs to 'win at AI', the race runs on fear of the other side winning first. He identifies with Ashitaka, cursed but seeing 'with eyes unclouded by hate', a model for neutral engagement in a polarized conflict. Takeaway: AI is genuinely empowering and morally costly at once, and the costs often fall on people who get no benefit; the question is not whether there will be iron, but what kind of Irontown we build with it.",
       "added": "2026-11-09"
+    },
+    {
+      "slug": "ai-usage-generates-a-fragile-codebase",
+      "title": "AI usage generates a fragile codebase",
+      "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+      "category": "ai",
+      "summary": "Evan Merz, generating 90-100% of his code with AI, argues heavy AI reliance makes codebases brittle. Four mechanisms: AI writes shallow tests that cover only cases already handled; AI writes overly complex code (DRY to a fault); developers lose understanding of their own codebase, so can't evaluate whether new abstractions fit; and AI moves too fast for review, accumulating small quality issues into tech debt. Four signs of fragility: rising incident counts, longer incident recovery, errors visible only to real users (uninstrumented), and degraded user experience — a 'vicious cycle of enshittification' of software made by AI for AI. Conclusion: products for humans need a human perspective; high-quality software will stay human-developed. Every word human-written.",
+      "added": "2026-11-10"
+    },
+    {
+      "slug": "amazon-saves-millions-by-replacing-sonnet-46-with-strands-decider",
+      "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
+      "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
+      "category": "ai",
+      "summary": "Two Amazon engineers replaced Claude Sonnet 4.6 with Strands Decider (a small decision model) for ticket labeling in one of the world's largest internal ticketing systems: 20 fixed categories, closed-choice classification. After moving to an E4B Gemma 4 build that beat production Sonnet on their test sets, results were dramatic — average call time down 78% (4215ms to 897ms), tokens per ticket down 70%, output tokens from 170 to 1, cost per ticket from $0.0222 to ~$0.0005 (~44x, millions saved annually). They rewrote the 20 labels as one/two-sentence criteria to fit the model's 4k window, and de-risked the switch with a three-way AppConfig setting (BEDROCK/DUAL/DECIDER) — judging every disagreement on real traffic taught more than offline evals and made rollback a 45-second config change. Takeaway: decision models replace LLMs for high-volume, closed-choice classification with stable catalogs, but not when labels need explanations, the catalog changes often, or context won't fit in a few thousand tokens.",
+      "added": "2026-11-10"
     }
   ],
   "archive": [
