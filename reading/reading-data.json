@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10",
+  "generated_at": "2026-11-11",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -3619,6 +3619,16 @@
       "summary": "This paper, from the AWS Agentic AI group, argues that the popular ideal of \"specification-driven development\" — where developers only specify *what* code should do (tests, examples, contracts) and an AI agent decides *how* to implement it — is fundamentally flawed. The authors show that the number and type of tests needed to steer a coding agent toward the intended program depends on the implementation structure (decomposition into data types, modules, and functions), which is precisely what the agent, not the developer, chooses. A test suite sufficient for one design can leave another badly underdetermined, forcing developers to reverse-engineer the agent's chosen structure from thousands of lines of generated code to know whether their specification is complete.\n\nThe authors formalize AI-assisted coding as an identification/control problem: an agent searches a hypothesis class of programs, first committing to a structure that restricts the class, with behavioral tests then selecting a program within it. They introduce Skeleton Coding, where developers jointly specify structure — data types, module boundaries, function signatures, data flow, and per-function contracts, written in code-like form — while leaving implementation bodies to the agent. Theoretically, they prove skeletons can exponentially reduce the number of required tests: (1) well-chosen hypothesis classes need exponentially fewer tests than poorly chosen ones of the same size; (2) exposing intermediate interfaces makes internal state observable, so a dataflow of n functions can be identified with O(n) local tests versus O(2^n) end-to-end tests; and (3) some requirements (internal implementation details) are unobservable from outputs and can only be enforced by stating them structurally. Adding formally verifiable contracts to skeletons also guarantees convergence to a goal implementation despite the non-Bayesian behavior of prompting.\n\nEmpirically, across four models (GPT-5.6 variants, Qwen, GLM) and three benchmarks (SCBench, SDDBench, ProgramBench), the best skeleton specifications reduce mean test error by 48.4% relative to the best purely behavioral specifications. Even when the agent can query a complete oracle reference implementation, skeletons still cut relative error by up to 27%. Structural specs outperform behavioral ones regardless of format, and code-like skeletons beat prose design documents. Skeletons also narrow the average gap between small and large models by ~52.4% (small models come within 5–8 percentage points of the largest model at 15–26× lower cost), reduce \"code erosion\" by 24.7% on average, and reach similar error rates with 32% fewer queries during iterative repair.\n\nThe main takeaway is that developers should not chase full separation of \"what\" from \"how.\" The highest-leverage control action over a coding agent is a versionable, reviewable code-like skeleton that fixes the architecture while the agent fills in the bodies — the decisions where skilled developers traditionally add the most value and that end-to-end tests cannot express.",
       "added": "2026-11-08",
       "read": "2026-11-08",
+      "has_notes": true
+    },
+    {
+      "slug": "glue-work-is-still-harmful-in-the-age-of-ai",
+      "title": "Glue work is still harmful in the age of AI",
+      "url": "https://seangoedecke.com/glue-work-is-still-harmful-in-the-age-of-ai/",
+      "category": "engineering",
+      "summary": "Sean Goedecke revisits his anti-glue-work argument in the AI era: unrewarded coordination labor matters even less now that LLMs write most code. Four reasons: AI agents shrink the coordination needed to ship (one engineer replaces a small team); ZIRP's end removed the prickly gatekeepers who demanded careful interpersonal handling; fewer junior hires eliminates onboarding/hand-holding glue work; write-only reports can now be LLM-generated. One firm line: never delegate actual communication with colleagues to a model — nothing damages working relationships faster. Conclusion unchanged from 2024: don't become the glue work person, let bad processes fail, spend your effort driving agents and writing code.",
+      "added": "2026-11-11",
+      "read": "2026-11-11",
       "has_notes": true
     }
   ]
