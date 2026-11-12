@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-11T02:00:22.113734-03:00",
+  "generated_at": "2026-11-12T02:00:58.423861-03:00",
   "week_start": "2026-11-08",
   "week_label": "November 08 - November 14, 2026",
-  "last_updated": "Wednesday, November 11, 2026 at 02:00",
+  "last_updated": "Thursday, November 12, 2026 at 02:00",
   "stats": {
-    "completed": 2.5,
-    "planned": 5,
-    "display": "2.5 / 5"
+    "completed": 4.666666666666667,
+    "planned": 7,
+    "display": "4.7 / 7"
   },
   "daily": {
     "Sunday": {
@@ -25,9 +25,9 @@
       "total": 0
     },
     "Wednesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "done",
+      "completed": 2,
+      "total": 2
     },
     "Thursday": {
       "status": "empty",
@@ -58,9 +58,9 @@
       "name": "Wind-Down Routine",
       "emoji": "",
       "status": "pending",
-      "accumulated": "1 nights",
+      "accumulated": "2 nights",
       "target": "6 nights",
-      "progress_pct": 16
+      "progress_pct": 33
     }
   ],
   "routines": [
@@ -86,12 +86,12 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         }
       ],
-      "metrics_total": "",
-      "comparison": "",
-      "done": 0,
+      "metrics_total": "1.5h",
+      "comparison": "+0.5h",
+      "done": 1,
       "total": 1
     },
     {
@@ -139,7 +139,7 @@
         },
         {
           "day": "Wed",
-          "status": "pending"
+          "status": "done"
         },
         {
           "day": "Sat",
@@ -148,15 +148,15 @@
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 1,
+      "done": 2,
       "total": 4
     }
   ],
   "spirit": {
-    "state": "tired",
+    "state": "content",
     "emoji": "\ud83e\udda1",
     "title": "\ud83e\udda1 Meadow Weasel",
-    "image": "assets/tired.webp",
-    "description": "Your meadow weasel curls up low and droopy in the drizzle, half-closed eyes \u2014 grey fog over the grass, resting where it sits."
+    "image": "assets/content.webp",
+    "description": "Your meadow weasel sits relaxed in tall grass under a soft overcast sky \u2014 calm, settled, soaking in the quiet meadow."
   }
 }
