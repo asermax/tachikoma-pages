@@ -1800,6 +1800,22 @@
       "category": "ai",
       "summary": "Two Amazon engineers replaced Claude Sonnet 4.6 with Strands Decider (a small decision model) for ticket labeling in one of the world's largest internal ticketing systems: 20 fixed categories, closed-choice classification. After moving to an E4B Gemma 4 build that beat production Sonnet on their test sets, results were dramatic — average call time down 78% (4215ms to 897ms), tokens per ticket down 70%, output tokens from 170 to 1, cost per ticket from $0.0222 to ~$0.0005 (~44x, millions saved annually). They rewrote the 20 labels as one/two-sentence criteria to fit the model's 4k window, and de-risked the switch with a three-way AppConfig setting (BEDROCK/DUAL/DECIDER) — judging every disagreement on real traffic taught more than offline evals and made rollback a 45-second config change. Takeaway: decision models replace LLMs for high-volume, closed-choice classification with stable catalogs, but not when labels need explanations, the catalog changes often, or context won't fit in a few thousand tokens.",
       "added": "2026-11-10"
+    },
+    {
+      "slug": "how-to-find-meaning-in-large-tech-companies",
+      "title": "How to find meaning in large tech companies",
+      "url": "https://seangoedecke.com/how-to-find-meaning-in-large-tech-companies/",
+      "category": "engineering",
+      "summary": "Rejects the \"dysfunction blocks what I want to do\" explanation for big-tech misery — it is closer to disgust at a messy room, plus the corrosion of faking investment in OKRs and manufactured hype. Offers a philosophy-grounded remedy for the resulting nihilism (direct contact with things that demonstrably matter) and locates real meaning in scale: millions benefit from your work, and slowing decline at that scale is worth doing. For those tolerant of mess with a rich life outside work, big-company engineering is as rich a source of meaning as any.",
+      "added": "2026-11-14"
+    },
+    {
+      "slug": "replacing-human-code-with-ai-slop-is-a-mistake",
+      "title": "Replacing human code with AI slop is a mistake",
+      "url": "https://evanxmerz.com/post/replacing-human-code-with-ai-slop-is-a-mistake/",
+      "category": "engineering",
+      "summary": "Argues the rush to replace hand-crafted codebases with AI-generated code (\"AI slop\") is a costly mistake: more downtime, code bloat, poor performance, and engineers trained into lazy dependence. Parallels the 2010s NoSQL hype cycle, cryptocurrency, and other fads where companies that jumped on hype trains were punished while traditional engineering kept operating reliably. Swapping craftsmanship for slop reflects bad leadership; the data will soon show rigor is better for the bottom line.",
+      "added": "2026-11-14"
     }
   ],
   "archive": [
