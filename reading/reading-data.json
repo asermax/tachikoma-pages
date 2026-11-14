@@ -1802,6 +1802,14 @@
       "added": "2026-11-10"
     },
     {
+      "slug": "how-complex-systems-fail",
+      "title": "How Complex Systems Fail",
+      "url": "https://how.complexsystems.fail/",
+      "category": "engineering",
+      "summary": "Richard Cook's widely cited principles on how complex, high-consequence systems fail: hazards are intrinsic and only defended against, catastrophes require multiple failures combining, and systems effectively run degraded, kept alive by redundancy and practitioner intervention. Root-cause attribution after accidents is a social need to blame, not a technical truth; hindsight bias distorts post-accident judgment of operators, who act as both producers and defenders, gambling under production-pressure vs-risk ambiguity that organizations leave unresolved. Safety is adaptive management of inherent hazards, not the absence of failure.",
+      "added": "2026-11-14"
+    },
+    {
       "slug": "how-to-find-meaning-in-large-tech-companies",
       "title": "How to find meaning in large tech companies",
       "url": "https://seangoedecke.com/how-to-find-meaning-in-large-tech-companies/",
@@ -3650,6 +3658,16 @@
       "added": "2026-11-14",
       "read": "2026-11-14",
       "has_notes": true
+    },
+    {
+      "slug": "steve-yegges-software-factory-hot-takes",
+      "title": "Steve Yegge's software factory hot takes",
+      "url": "https://x.com/Steve_Yegge/status/2121671447810888185",
+      "category": "engineering",
+      "summary": "Long-form X post distilling hot takes from Yegge's software-factory conference talks. (1) Slow down: pace AI outputs to human speeds — unpaced agents overwhelmed his players, accountant, merge queue, and machines, and most teams pushing hard aren't actually fast. (2) Build, don't buy: you probably don't need a software factory — they demand enormous upkeep (he burned down five), and grow bespoke to your domain. (3) Next year brings human/agent and agent/agent office drama: personal chief-of-staff entourages become so essential people bring them to work, kicking off the biggest cultural shift in a century. Advice: perfect how you work with your own agents first.",
+      "added": "2026-11-14",
+      "read": "2026-11-14",
+      "has_notes": false
     }
   ]
 }
