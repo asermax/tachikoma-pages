@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-15T11:24:59.543566-03:00",
+  "generated_at": "2026-11-15T11:54:55.208781-03:00",
   "week_start": "2026-11-15",
   "week_label": "November 15 - November 21, 2026",
-  "last_updated": "Sunday, November 15, 2026 at 11:24",
+  "last_updated": "Sunday, November 15, 2026 at 11:54",
   "stats": {
     "completed": 0,
     "planned": 0,
@@ -143,9 +143,9 @@
   ],
   "spirit": {
     "state": "dormant",
-    "emoji": "\ud83e\udda1",
-    "title": "\ud83e\udda1 Meadow Weasel",
+    "emoji": "\ud83d\udc1b",
+    "title": "\ud83d\udc1b Spring Caterpillar",
     "image": "assets/dormant.webp",
-    "description": "Your meadow weasel sleeps curled in its burrow under moonlight and stars \u2014 deep, still, quiet rest."
+    "description": "Your spring caterpillar sleeps curled on its leaf under moonlight and stars \u2014 deep, still, quiet night."
   }
 }
