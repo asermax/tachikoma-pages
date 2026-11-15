@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14",
+  "generated_at": "2026-11-15",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1816,6 +1816,14 @@
       "category": "engineering",
       "summary": "Rejects the \"dysfunction blocks what I want to do\" explanation for big-tech misery — it is closer to disgust at a messy room, plus the corrosion of faking investment in OKRs and manufactured hype. Offers a philosophy-grounded remedy for the resulting nihilism (direct contact with things that demonstrably matter) and locates real meaning in scale: millions benefit from your work, and slowing decline at that scale is worth doing. For those tolerant of mess with a rich life outside work, big-company engineering is as rich a source of meaning as any.",
       "added": "2026-11-14"
+    },
+    {
+      "slug": "ai-tdd-when-ai-writes-the-tests-you-still-get-to-code",
+      "title": "AI TDD: when AI writes the tests, you still get to code",
+      "url": "https://nchagnet.eu/blog/ai-tdd-markava-parser",
+      "category": "ai",
+      "summary": "Proposes \"AI TDD\": flip the usual division — the LLM writes the well-documented tests/spec, and you hand-write the implementation, keeping the craft and the mental model that delegating code erodes. Demonstrated by building Markava, a CommonMark superset with HTML tag shorthands, as a way to relearn OCaml: LLM drafts an atomic-step plan, generates tests per feature, developer implements in milestones until green. Practical lesson: ask for milestone-level test granularity — bare end-to-end tests give no implementation guidance. Frames AI as an ally to coding craft (and a learning tool) rather than a replacement for it.",
+      "added": "2026-11-15"
     }
   ],
   "archive": [
@@ -3667,7 +3675,7 @@
       "summary": "Long-form X post distilling hot takes from Yegge's software-factory conference talks. (1) Slow down: pace AI outputs to human speeds — unpaced agents overwhelmed his players, accountant, merge queue, and machines, and most teams pushing hard aren't actually fast. (2) Build, don't buy: you probably don't need a software factory — they demand enormous upkeep (he burned down five), and grow bespoke to your domain. (3) Next year brings human/agent and agent/agent office drama: personal chief-of-staff entourages become so essential people bring them to work, kicking off the biggest cultural shift in a century. Advice: perfect how you work with your own agents first.",
       "added": "2026-11-14",
       "read": "2026-11-14",
-      "has_notes": false
+      "has_notes": true
     }
   ]
 }
