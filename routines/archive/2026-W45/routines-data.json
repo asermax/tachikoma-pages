@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-11-15T02:00:47.123835-03:00",
+  "week_start": "2026-11-08",
+  "week_label": "November 08 - November 14, 2026",
+  "last_updated": "Sunday, November 15, 2026 at 02:00",
+  "stats": {
+    "completed": 6.333333333333333,
+    "planned": 10,
+    "display": "6.3 / 10"
+  },
+  "daily": {
+    "Sunday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 1
+    },
+    "Monday": {
+      "status": "done",
+      "completed": 2,
+      "total": 2
+    },
+    "Tuesday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Wednesday": {
+      "status": "done",
+      "completed": 2,
+      "total": 2
+    },
+    "Thursday": {
+      "status": "done",
+      "completed": 2,
+      "total": 2
+    },
+    "Friday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Saturday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 1
+    }
+  },
+  "goals": [
+    {
+      "name": "Reading",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "0min",
+      "target": "210min",
+      "progress_pct": 0
+    },
+    {
+      "name": "Wind-Down Routine",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "2 nights",
+      "target": "6 nights",
+      "progress_pct": 33
+    }
+  ],
+  "routines": [
+    {
+      "id": "basic-workout",
+      "name": "Basic Workout",
+      "emoji": "\ud83d\udcaa",
+      "sessions": [
+        {
+          "day": "Thu",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "music-practice",
+      "name": "Music Practice",
+      "emoji": "\ud83c\udfb7",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "1.5h",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "piano-practice",
+      "name": "Piano Practice",
+      "emoji": "\ud83c\udfb9",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "1h",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "rock-climbing",
+      "name": "Rock Climbing",
+      "emoji": "\ud83e\uddd7",
+      "sessions": [
+        {
+          "day": "Thu",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga",
+      "emoji": "\ud83e\uddd8",
+      "sessions": [
+        {
+          "day": "Sun",
+          "status": "skipped"
+        },
+        {
+          "day": "Mon",
+          "status": "done"
+        },
+        {
+          "day": "Wed",
+          "status": "done"
+        },
+        {
+          "day": "Sat",
+          "status": "pending"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 2,
+      "total": 4
+    }
+  ],
+  "spirit": {
+    "state": "content",
+    "emoji": "\ud83e\udda1",
+    "title": "\ud83e\udda1 Meadow Weasel",
+    "image": "assets/content.webp",
+    "description": "Your meadow weasel sits relaxed in tall grass under a soft overcast sky \u2014 calm, settled, soaking in the quiet meadow."
+  }
+}
