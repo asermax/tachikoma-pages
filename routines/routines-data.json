@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-14T02:01:11.138640-03:00",
+  "generated_at": "2026-11-15T02:00:47.123835-03:00",
   "week_start": "2026-11-08",
   "week_label": "November 08 - November 14, 2026",
-  "last_updated": "Saturday, November 14, 2026 at 02:01",
+  "last_updated": "Sunday, November 15, 2026 at 02:00",
   "stats": {
-    "completed": 6.4,
-    "planned": 9,
-    "display": "6.4 / 9"
+    "completed": 6.333333333333333,
+    "planned": 10,
+    "display": "6.3 / 10"
   },
   "daily": {
     "Sunday": {
@@ -40,9 +40,9 @@
       "total": 0
     },
     "Saturday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 1
     }
   },
   "goals": [
@@ -90,7 +90,7 @@
         }
       ],
       "metrics_total": "1.5h",
-      "comparison": "+0.5h",
+      "comparison": "",
       "done": 1,
       "total": 1
     },
