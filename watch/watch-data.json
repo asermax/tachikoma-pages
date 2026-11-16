@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15",
+  "generated_at": "2026-11-16",
   "queue": [
     {
       "slug": "nigel-cheese-down-the-rabbit-hole",
@@ -849,6 +849,17 @@
       "summary": "In this segment of the Next Token podcast, hosts Dillon Mulroy, Rhys Sullivan, and Sunil Pai catch up with guest Matt Carey about personal updates and the growing trend of AI-driven video game modding. They discuss how AI tools like Claude allow users to easily generate custom game servers, first-person mods, and creative game mashups without needing extensive programming expertise. The group also reflects on the broader implications of personal software and AI agents handling daily tasks like online marketplace interactions. Software developers, gamers, and tech enthusiasts interested in practical AI applications and creative software automation will find this discussion insightful.",
       "added": "2026-10-23",
       "watched": "2026-10-23",
+      "has_notes": true
+    },
+    {
+      "slug": "recursive-self-improvement-has-started",
+      "title": "Recursive self-improvement has started",
+      "url": "https://www.youtube.com/watch?v=1NHPDzpfR6Y",
+      "video_id": "1NHPDzpfR6Y",
+      "channel": "Dwarkesh Patel",
+      "summary": "Dwarkesh Patel updates his timeline for AI matching the best human ML researchers to a median prediction of 2028, citing data on AI accelerating AI R&D at Anthropic/OpenAI and rapid AI math breakthroughs. Argues ML research is largely empirical experimentation and technique combination \u2014 tasks AI is well-suited to automate.",
+      "added": "2026-11-16",
+      "watched": "2026-11-16",
       "has_notes": true
     }
   ]
