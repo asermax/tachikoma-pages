@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15",
+  "generated_at": "2026-11-16",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1823,6 +1823,14 @@
       "url": "https://nchagnet.eu/blog/ai-tdd-markava-parser",
       "category": "ai",
       "summary": "Proposes \"AI TDD\": flip the usual division — the LLM writes the well-documented tests/spec, and you hand-write the implementation, keeping the craft and the mental model that delegating code erodes. Demonstrated by building Markava, a CommonMark superset with HTML tag shorthands, as a way to relearn OCaml: LLM drafts an atomic-step plan, generates tests per feature, developer implements in milestones until green. Practical lesson: ask for milestone-level test granularity — bare end-to-end tests give no implementation guidance. Frames AI as an ally to coding craft (and a learning tool) rather than a replacement for it.",
+      "added": "2026-11-15"
+    },
+    {
+      "slug": "communicating-with-out-code",
+      "title": "Communicating with (out) code",
+      "url": "https://olano.dev/blog/communicating-with-code",
+      "category": "engineering",
+      "summary": "Reviews critiques of LLM-assisted writing (Oxide, Schwitzgebel, Demirbas): writing is a writer-reader dialogue and routing it through an LLM breaks a social contract, eroding trust. Pushes back on the 'code is different because machines verify it' claim — code has always been written for humans (Abelson, Knuth), and the same lost social contract, cognitive dissonance, and eroded intentional design apply when naming, comments, and modularization are passively accepted. LLM agents break the old balance between code-for-humans and code-for-machines programmers: excellent at passing CI, poor at conceptual integrity, produced at overwhelming volume. Concedes code-for-humans' edge rests on folklore and expects code-for-machines to prevail, like artisanal-to-industrial production. Closes with a Peopleware quote — software is 'the human communication business' — asking whether understanding still matters economically.",
       "added": "2026-11-15"
     }
   ],
