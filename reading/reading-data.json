@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16",
+  "generated_at": "2026-11-17",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1832,6 +1832,14 @@
       "category": "engineering",
       "summary": "Reviews critiques of LLM-assisted writing (Oxide, Schwitzgebel, Demirbas): writing is a writer-reader dialogue and routing it through an LLM breaks a social contract, eroding trust. Pushes back on the 'code is different because machines verify it' claim — code has always been written for humans (Abelson, Knuth), and the same lost social contract, cognitive dissonance, and eroded intentional design apply when naming, comments, and modularization are passively accepted. LLM agents break the old balance between code-for-humans and code-for-machines programmers: excellent at passing CI, poor at conceptual integrity, produced at overwhelming volume. Concedes code-for-humans' edge rests on folklore and expects code-for-machines to prevail, like artisanal-to-industrial production. Closes with a Peopleware quote — software is 'the human communication business' — asking whether understanding still matters economically.",
       "added": "2026-11-15"
+    },
+    {
+      "slug": "taste-and-connection",
+      "title": "Taste and Connection",
+      "url": "https://danielgriesser.com/posts/taste-and-connection/",
+      "category": "ai",
+      "summary": "Daniel Griesser sketches a near-future vision of software companies where AI agents do most of the operational work. Work becomes a few hours of daily meetings where an agent presents decisions, fans out subagents to test options, and humans agree on direction. Every employee has a personal/company agent as their sole interface, and while humans still make the decisions (because only humans can take responsibility), everything flows through agents so decisions remain traceable.\n\nOn the customer side, commerce continues as today — companies still sell goods and services for money, though the author wavers on whether a \"post-economic\" future is coming. The key technical enabler is fast, robust verification: if something ships to production, you know it works as defined. Systems become self-healing and so decoupled that experiences can be personalized nearly down to the individual customer.\n\nThe core argument is that output is no longer the bottleneck — it's free and fast, with idea-to-prototype in minutes. What remains scarce and valuable is taste, uniqueness, emotion, and connection. The author points to Apple and Blizzard: their success came from groups of people who believed in the same vision and built something together, not from superior specs.\n\nThe takeaway: this future isn't far off and pieces already exist; the missing piece is a unified way of doing it. The future of companies \"is clearly and purely about taste and connection.\"",
+      "added": "2026-11-17"
     }
   ],
   "archive": [
