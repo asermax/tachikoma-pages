@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-16T02:00:23.637401-03:00",
+  "generated_at": "2026-11-17T02:01:04.803130-03:00",
   "week_start": "2026-11-15",
   "week_label": "November 15 - November 21, 2026",
-  "last_updated": "Monday, November 16, 2026 at 02:00",
+  "last_updated": "Tuesday, November 17, 2026 at 02:01",
   "stats": {
-    "completed": 0,
-    "planned": 0,
-    "display": "0 / 0"
+    "completed": 0.0,
+    "planned": 3,
+    "display": "0 / 3"
   },
   "daily": {
     "Sunday": {
@@ -15,9 +15,9 @@
       "total": 0
     },
     "Monday": {
-      "status": "empty",
+      "status": "missed",
       "completed": 0,
-      "total": 0
+      "total": 1
     },
     "Tuesday": {
       "status": "empty",
@@ -142,10 +142,10 @@
     }
   ],
   "spirit": {
-    "state": "dormant",
+    "state": "critical",
     "emoji": "\ud83d\udc1b",
     "title": "\ud83d\udc1b Spring Caterpillar",
-    "image": "assets/dormant.webp",
-    "description": "Your spring caterpillar sleeps curled on its leaf under moonlight and stars \u2014 deep, still, quiet night."
+    "image": "assets/critical.webp",
+    "description": "Your spring caterpillar battles storm rain and lightning from its leaf boat \u2014 worried eyes under dark clouds."
   }
 }
