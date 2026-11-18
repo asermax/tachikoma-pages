@@ -1842,6 +1842,14 @@
       "added": "2026-11-17"
     },
     {
+      "slug": "im-as-of-now-completely-off-the-ai-bandwagon-if-i-was-ever-remotely-on-it",
+      "title": "I'm as of now completely off the AI bandwagon (if I was ever remotely on it)",
+      "url": "https://cekrem.github.io/posts/no-more-ai-at-all/",
+      "category": "ai",
+      "summary": "The author, a long-time AI skeptic and advocate of software engineering as a craft, announces a complete break from all LLM usage. Having previously given LLMs a fair trial in well-contained areas, he now concludes that cutting them out entirely is necessary for his sanity, happiness, and skill development. His central argument is a tool/service distinction: LLMs are not tools but services, and while delegating chores to services is fine, delegating code-writing destroys both the joy and quality of the craft. Even if LLM code were better, a program is more than its source code — the underlying theory is lost. He pushes back against the claim that LLM coding is just another abstraction level like compilers: compilers are deterministic and scrutinized; LLMs are stochastic black boxes on someone else's cloud. Ends with his line in the sand: uninstalling Claude Code, canceling his subscription, and pointers to two essays backing the drop-out.",
+      "added": "2026-11-18"
+    },
+    {
       "slug": "the-toolsmith",
       "title": "The Toolsmith",
       "url": "https://blog.fsck.com/2026/11/17/toolsmith/",
