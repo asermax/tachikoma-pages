@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17",
+  "generated_at": "2026-11-18",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1848,6 +1848,14 @@
       "category": "ai",
       "summary": "Daniel Griesser sketches a near-future vision of software companies where AI agents do most of the operational work. Work becomes a few hours of daily meetings where an agent presents decisions, fans out subagents to test options, and humans agree on direction. Every employee has a personal/company agent as their sole interface, and while humans still make the decisions (because only humans can take responsibility), everything flows through agents so decisions remain traceable.\n\nOn the customer side, commerce continues as today — companies still sell goods and services for money, though the author wavers on whether a \"post-economic\" future is coming. The key technical enabler is fast, robust verification: if something ships to production, you know it works as defined. Systems become self-healing and so decoupled that experiences can be personalized nearly down to the individual customer.\n\nThe core argument is that output is no longer the bottleneck — it's free and fast, with idea-to-prototype in minutes. What remains scarce and valuable is taste, uniqueness, emotion, and connection. The author points to Apple and Blizzard: their success came from groups of people who believed in the same vision and built something together, not from superior specs.\n\nThe takeaway: this future isn't far off and pieces already exist; the missing piece is a unified way of doing it. The future of companies \"is clearly and purely about taste and connection.\"",
       "added": "2026-11-17"
+    },
+    {
+      "slug": "the-toolsmith",
+      "title": "The Toolsmith",
+      "url": "https://blog.fsck.com/2026/11/17/toolsmith/",
+      "category": "ai",
+      "summary": "Jesse Vincent reflects on Fred Brooks's The Mythical Man-Month, which introduced Harlan Mills's \"Surgical Team\" structure — including the role of the toolsmith, who builds bespoke tooling so the chief programmer can stay focused. Reading it in college set the course of Vincent's career: building RT led to leading Perl 5, Keyboardio made physical tools, and Superpowers became widely adopted tooling for developers.\n\nThe article's pivot is about coding agents. Vincent had long instructed his agents (via AGENTS.md) to write scripts when a task would likely be repeated — but the agents were building those scripts incidentally and dropping them into ephemeral scratch directories. He realized that \"write a script to automate this task\" is itself a separable mission deserving an agent's exclusive focus, consistent with his own advice that agents should hand off single, well-scoped missions.\n\nSo he built \"toolsmith,\" a plugin for coding agents: instead of building incidental tools itself, the primary session delegates tool-building to a dedicated toolsmith subagent (a digital James Bond's Q). The toolsmith maintains a git repo in ~/.local/share/toolsmith/tools cataloging general-purpose and project-specific tools. When a session needs a tool, it reuses an existing one, extends a close match, or creates a new one. In two weeks of use it has produced dozens of tools, from word-counting for HTML to finding iOS device IDs to managing fleets of ephemeral EC2 instances.\n\nThe takeaway: treat tool-building as a first-class, delegated mission for your agents rather than incidental work, and invest in a persistent, cataloged tool inventory so agents can reuse what they've built.",
+      "added": "2026-11-18"
     }
   ],
   "archive": [
