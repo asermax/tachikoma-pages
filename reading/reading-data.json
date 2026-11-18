@@ -1842,6 +1842,14 @@
       "added": "2026-11-17"
     },
     {
+      "slug": "data-contracts",
+      "title": "Data Contracts",
+      "url": "https://martinfowler.com/articles/data-contracts.html",
+      "category": "engineering",
+      "summary": "The article argues that data contracts bring API-style design discipline to enterprise data: an explicit, machine-readable description of a dataset's schema, semantics, quality guarantees, and terms of use. It illustrates contracts using the Open Data Contract Standard (ODCS), showing YAML excerpts covering schemas, SQL-based quality rules, and service-level properties such as 24-hour freshness. A key theme is the impact on agentic AI: where a distrustful human pauses or asks the data owners, an AI agent treats every value as truth, producing confidently wrong results. Data contracts break this loop — published to a searchable data marketplace, they make data discoverable, tell agents how to query and join correctly, indicate how far to trust results, and specify what the agent is allowed to do. Contracts are machine-readable, verifiable, versioned, provider-driven, and consumer-oriented. Main takeaway: trust in data should be an explicit, continuously verified interface rather than an implicit assumption.",
+      "added": "2026-11-18"
+    },
+    {
       "slug": "im-as-of-now-completely-off-the-ai-bandwagon-if-i-was-ever-remotely-on-it",
       "title": "I'm as of now completely off the AI bandwagon (if I was ever remotely on it)",
       "url": "https://cekrem.github.io/posts/no-more-ai-at-all/",
