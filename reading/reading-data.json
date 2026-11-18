@@ -1826,14 +1826,6 @@
       "added": "2026-11-15"
     },
     {
-      "slug": "communicating-with-out-code",
-      "title": "Communicating with (out) code",
-      "url": "https://olano.dev/blog/communicating-with-code",
-      "category": "engineering",
-      "summary": "Reviews critiques of LLM-assisted writing (Oxide, Schwitzgebel, Demirbas): writing is a writer-reader dialogue and routing it through an LLM breaks a social contract, eroding trust. Pushes back on the 'code is different because machines verify it' claim — code has always been written for humans (Abelson, Knuth), and the same lost social contract, cognitive dissonance, and eroded intentional design apply when naming, comments, and modularization are passively accepted. LLM agents break the old balance between code-for-humans and code-for-machines programmers: excellent at passing CI, poor at conceptual integrity, produced at overwhelming volume. Concedes code-for-humans' edge rests on folklore and expects code-for-machines to prevail, like artisanal-to-industrial production. Closes with a Peopleware quote — software is 'the human communication business' — asking whether understanding still matters economically.",
-      "added": "2026-11-15"
-    },
-    {
       "slug": "building-agents-when-to-fold-subagents-into-your-main-agent-loop",
       "title": "Building Agents: When to Fold Subagents into Your Main Agent Loop",
       "url": "https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop",
@@ -3707,6 +3699,16 @@
       "summary": "Long-form X post distilling hot takes from Yegge's software-factory conference talks. (1) Slow down: pace AI outputs to human speeds — unpaced agents overwhelmed his players, accountant, merge queue, and machines, and most teams pushing hard aren't actually fast. (2) Build, don't buy: you probably don't need a software factory — they demand enormous upkeep (he burned down five), and grow bespoke to your domain. (3) Next year brings human/agent and agent/agent office drama: personal chief-of-staff entourages become so essential people bring them to work, kicking off the biggest cultural shift in a century. Advice: perfect how you work with your own agents first.",
       "added": "2026-11-14",
       "read": "2026-11-14",
+      "has_notes": true
+    },
+    {
+      "slug": "communicating-with-out-code",
+      "title": "Communicating with (out) code",
+      "url": "https://olano.dev/blog/communicating-with-code",
+      "category": "engineering",
+      "summary": "Reviews critiques of LLM-assisted writing (Oxide, Schwitzgebel, Demirbas): writing is a writer-reader dialogue and routing it through an LLM breaks a social contract, eroding trust. Pushes back on the 'code is different because machines verify it' claim — code has always been written for humans (Abelson, Knuth), and the same lost social contract, cognitive dissonance, and eroded intentional design apply when naming, comments, and modularization are passively accepted. LLM agents break the old balance between code-for-humans and code-for-machines programmers: excellent at passing CI, poor at conceptual integrity, produced at overwhelming volume. Concedes code-for-humans' edge rests on folklore and expects code-for-machines to prevail, like artisanal-to-industrial production. Closes with a Peopleware quote — software is 'the human communication business' — asking whether understanding still matters economically.",
+      "added": "2026-11-15",
+      "read": "2026-11-18",
       "has_notes": true
     }
   ]
