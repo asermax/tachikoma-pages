@@ -1856,6 +1856,30 @@
       "category": "ai",
       "summary": "The author, a long-time AI skeptic and advocate of software engineering as a craft, announces a complete break from all LLM usage. Having previously given LLMs a fair trial in well-contained areas, he now concludes that cutting them out entirely is necessary for his sanity, happiness, and skill development. His central argument is a tool/service distinction: LLMs are not tools but services, and while delegating chores to services is fine, delegating code-writing destroys both the joy and quality of the craft. Even if LLM code were better, a program is more than its source code — the underlying theory is lost. He pushes back against the claim that LLM coding is just another abstraction level like compilers: compilers are deterministic and scrutinized; LLMs are stochastic black boxes on someone else's cloud. Ends with his line in the sand: uninstalling Claude Code, canceling his subscription, and pointers to two essays backing the drop-out.",
       "added": "2026-11-18"
+    },
+    {
+      "slug": "if-you-stop-writing-code-you-also-get-worse-at-reviewing-it",
+      "title": "If you stop writing code, you also get worse at reviewing it",
+      "url": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/",
+      "category": "ai",
+      "summary": "Christian Ekrem argues the practice-makes-skill principle was abandoned in software engineering with the rise of generative AI. Engineers who stop writing code and delegate to LLMs erode not just coding ability but also code review, since reviewing is itself built on hands-on experience. Guitar and authorship analogies; most engineers aren't genuinely reading half of what Claude produces. Concedes there's more to software engineering than code, but engineers still need to know what good code looks like. Repeated LLM usage trains the brain to avoid anything hard, undermining learning, craft, and joy. Call to treat hands-on coding like any craft requiring deliberate practice.",
+      "added": "2026-11-20"
+    },
+    {
+      "slug": "why-i-resist-generative-ai",
+      "title": "Why I Resist Generative \"AI\"",
+      "url": "https://estherweidauer.com/articles/why-resist-generative-ai.html",
+      "category": "ai",
+      "summary": "Esther Weidauer (15-year developer, psychology student) collects her arguments against generative AI. Clarifies she targets LLMs/image generators/agents, not ML broadly. Rebuts pro-AI claims: the boom runs on subsidized investor costs; \"just a tool\" fails because generative AI is a service with hidden human labor and tools are never politically neutral; LLMs can't solve new problems as lossy compression of training data. Embraces the Luddite label; dismisses consciousness claims as ELIZA effect. Catalogs harms: environmental (electricity rivalling the UK's), psychological (cognitive debt, student dependence), economic (2008-style circular-financing bubble), epistemological (hallucinations mathematically inevitable, model-generated doom loop, burning the Library of Alexandria). Political: LLMs reinforce mainstream views, quietly omit legitimate topics, concentrate gatekeeping in unaccountable companies; argues generative AI is a right-wing project (Geuter, Watkins, McQuillan) and profiles the industry's TESCREAL ideological weirdness.",
+      "added": "2026-11-20"
+    },
+    {
+      "slug": "why-i-will-not-be-using-llms-in-my-coding",
+      "title": "Why I will not be using LLMs in my coding",
+      "url": "https://www.polso.info/why-i-will-not-be-using-llms-coding",
+      "category": "ai",
+      "summary": "Kristian Polso announces he will actively avoid LLMs/AI agents in professional work after a decade building production ML systems. Dealbreakers: cognitive impact (LLM brainfog studies, Microsoft survey, cognitive debt), output quality (verbose AI code looks impressive but is often poor; LLMs expose the literacy gap between coders), maintainability (agent-written codebases mean no human understands them), he enjoys writing and reading code as thinking, environmental cost (datacenter energy, Google's Finnish forest clearing), and politics (discomfort with OpenAI/Anthropic/Cursor, GDPR/CLOUD Act for EU citizens). Concedes getting-unstuck positives but judges them not worth it. Rejects inevitability: \"So is heroin.\" Recommends Esther Weidauer's essay.",
+      "added": "2026-11-20"
     }
   ],
   "archive": [
