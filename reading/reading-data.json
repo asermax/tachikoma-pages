@@ -1850,11 +1850,27 @@
       "added": "2026-11-18"
     },
     {
+      "slug": "fragments-november-20",
+      "title": "Fragments: November 20",
+      "url": "https://martinfowler.com/fragments/2026-11-20.html",
+      "category": "ai",
+      "summary": "Martin Fowler's linked-commentary collection. CodeScene data: healthy code is 22–35% cheaper for LLM review pipelines (465 PRs, three LLMs; Complex Method/Conditional smells the biggest cost drivers). Endorses Sharp's Nvidia analysis (centralized management, can it run without Huang?) and Yegge's warning to pace AI software factories at human-governable speed. Longest item: Chad Fowler on SaaS futures — durable value is data/trust/compliance/operations, one shared platform under ten thousand generated apps, with verification (not generation) as the bottleneck. Ends on corrigibility being under-prioritized (reward only for task completion) and Meta's Muse agent suing Meta for $75k as a sign agents will overwhelm human-designed institutions.",
+      "added": "2026-11-20"
+    },
+    {
       "slug": "if-you-stop-writing-code-you-also-get-worse-at-reviewing-it",
       "title": "If you stop writing code, you also get worse at reviewing it",
       "url": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/",
       "category": "ai",
       "summary": "Christian Ekrem argues the practice-makes-skill principle was abandoned in software engineering with the rise of generative AI. Engineers who stop writing code and delegate to LLMs erode not just coding ability but also code review, since reviewing is itself built on hands-on experience. Guitar and authorship analogies; most engineers aren't genuinely reading half of what Claude produces. Concedes there's more to software engineering than code, but engineers still need to know what good code looks like. Repeated LLM usage trains the brain to avoid anything hard, undermining learning, craft, and joy. Call to treat hands-on coding like any craft requiring deliberate practice.",
+      "added": "2026-11-20"
+    },
+    {
+      "slug": "the-stochastic-parrots-have-apparently-proved-the-riemann-hypothesis",
+      "title": "The stochastic parrots have apparently proved the Riemann Hypothesis",
+      "url": "https://scottaaronson.blog/?p=10344",
+      "category": "ai",
+      "summary": "Scott Aaronson reacts to Levent Alpöge's purported AI-assisted proof of the Generalized Riemann Hypothesis, formalized as 17.4M lines of Lean. Gives RH background (prime distribution as quasi-random 1/ln(x) primality within Õ(√n) error) and history from Riemann/Hilbert/Hardy. On soundness: Lean kernel bugs and type-theory uncertainty could in principle let a motivated AI prove falsehoods — worth urgent fixing — but no Lean-certificated AI result has ever been retracted, so he bets the proof stands. Mathematicians won't consider it settled until they can explain and reconstruct the ideas, which takes years at biological speed. P vs NP becomes the Final Boss; closes with his 9-year-old being unsurprised and his wife's \"We should still fix the leak.\"",
       "added": "2026-11-20"
     },
     {
