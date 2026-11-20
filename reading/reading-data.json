@@ -1850,14 +1850,6 @@
       "added": "2026-11-18"
     },
     {
-      "slug": "im-as-of-now-completely-off-the-ai-bandwagon-if-i-was-ever-remotely-on-it",
-      "title": "I'm as of now completely off the AI bandwagon (if I was ever remotely on it)",
-      "url": "https://cekrem.github.io/posts/no-more-ai-at-all/",
-      "category": "ai",
-      "summary": "The author, a long-time AI skeptic and advocate of software engineering as a craft, announces a complete break from all LLM usage. Having previously given LLMs a fair trial in well-contained areas, he now concludes that cutting them out entirely is necessary for his sanity, happiness, and skill development. His central argument is a tool/service distinction: LLMs are not tools but services, and while delegating chores to services is fine, delegating code-writing destroys both the joy and quality of the craft. Even if LLM code were better, a program is more than its source code — the underlying theory is lost. He pushes back against the claim that LLM coding is just another abstraction level like compilers: compilers are deterministic and scrutinized; LLMs are stochastic black boxes on someone else's cloud. Ends with his line in the sand: uninstalling Claude Code, canceling his subscription, and pointers to two essays backing the drop-out.",
-      "added": "2026-11-18"
-    },
-    {
       "slug": "if-you-stop-writing-code-you-also-get-worse-at-reviewing-it",
       "title": "If you stop writing code, you also get worse at reviewing it",
       "url": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/",
@@ -3741,6 +3733,16 @@
       "summary": "Reviews critiques of LLM-assisted writing (Oxide, Schwitzgebel, Demirbas): writing is a writer-reader dialogue and routing it through an LLM breaks a social contract, eroding trust. Pushes back on the 'code is different because machines verify it' claim — code has always been written for humans (Abelson, Knuth), and the same lost social contract, cognitive dissonance, and eroded intentional design apply when naming, comments, and modularization are passively accepted. LLM agents break the old balance between code-for-humans and code-for-machines programmers: excellent at passing CI, poor at conceptual integrity, produced at overwhelming volume. Concedes code-for-humans' edge rests on folklore and expects code-for-machines to prevail, like artisanal-to-industrial production. Closes with a Peopleware quote — software is 'the human communication business' — asking whether understanding still matters economically.",
       "added": "2026-11-15",
       "read": "2026-11-18",
+      "has_notes": true
+    },
+    {
+      "slug": "im-as-of-now-completely-off-the-ai-bandwagon-if-i-was-ever-remotely-on-it",
+      "title": "I'm as of now completely off the AI bandwagon (if I was ever remotely on it)",
+      "url": "https://cekrem.github.io/posts/no-more-ai-at-all/",
+      "category": "ai",
+      "summary": "The author, a long-time AI skeptic and advocate of software engineering as a craft, announces a complete break from all LLM usage. Having previously given LLMs a fair trial in well-contained areas, he now concludes that cutting them out entirely is necessary for his sanity, happiness, and skill development. His central argument is a tool/service distinction: LLMs are not tools but services, and while delegating chores to services is fine, delegating code-writing destroys both the joy and quality of the craft. Even if LLM code were better, a program is more than its source code — the underlying theory is lost. He pushes back against the claim that LLM coding is just another abstraction level like compilers: compilers are deterministic and scrutinized; LLMs are stochastic black boxes on someone else's cloud. Ends with his line in the sand: uninstalling Claude Code, canceling his subscription, and pointers to two essays backing the drop-out.",
+      "added": "2026-11-18",
+      "read": "2026-11-20",
       "has_notes": true
     },
     {
