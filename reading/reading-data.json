@@ -1882,6 +1882,14 @@
       "added": "2026-11-20"
     },
     {
+      "slug": "announcing-dreamcoder",
+      "title": "Announcing DreamCoder",
+      "url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
+      "category": "ai",
+      "summary": "Mickey Petersen of Mastering Emacs announces DreamCoder, a browser-based AI coding harness he has spent fifteen months building, inspired by his May 2025 experience with Claude Code. He found terminal-based coding agents awkward as a primary interface and their GUI versions second-class, so he set out to build a harness with a full-featured, human-centric interface. DreamCoder is a frontier-class harness with a tiling window manager (with a constraint solver ensuring panes stay readable), backgroundable sub-agents, MCP server support, terminals, skills, hooks, workspaces with live minimaps, avy-style keyboard selection, Helm-like type-to-complete dialogs, and support for both frontier and local open-weight models. He argues coding harnesses are the IDEs of the future and is also building a pentesting/cybersecurity suite on top of it. The article interleaves a long history of AI, LISP, and Emacs: McCarthy created LISP in the 1950s to build his Advice Taker; Steve Russell's implementation of eval gave us LISP as we know it; symbolic AI collapsed under fractal complexity, yet its legacy survives in tools like Teitelman's advice mechanism in Emacs, and the self-modifying ethos of LISP and Emacs is the philosophy Petersen applied to DreamCoder — which now writes itself inside DreamCoder. Closes on industry reflection: programmers must reinvent themselves as AI absorbs toil, taste remains a scarce human resource, capable small local models make the future local for many use cases. DreamCoder is not an Emacs application, though he teases future AI+Emacs plans.",
+      "added": "2026-11-21"
+    },
+    {
       "slug": "why-output-caching-doesnt-work",
       "title": "Why output caching doesn't work",
       "url": "https://seangoedecke.com/why-output-caching-doesnt-work/",
