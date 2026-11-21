@@ -1866,14 +1866,6 @@
       "added": "2026-11-20"
     },
     {
-      "slug": "the-stochastic-parrots-have-apparently-proved-the-riemann-hypothesis",
-      "title": "The stochastic parrots have apparently proved the Riemann Hypothesis",
-      "url": "https://scottaaronson.blog/?p=10344",
-      "category": "ai",
-      "summary": "Scott Aaronson reacts to Levent Alpöge's purported AI-assisted proof of the Generalized Riemann Hypothesis, formalized as 17.4M lines of Lean. Gives RH background (prime distribution as quasi-random 1/ln(x) primality within Õ(√n) error) and history from Riemann/Hilbert/Hardy. On soundness: Lean kernel bugs and type-theory uncertainty could in principle let a motivated AI prove falsehoods — worth urgent fixing — but no Lean-certificated AI result has ever been retracted, so he bets the proof stands. Mathematicians won't consider it settled until they can explain and reconstruct the ideas, which takes years at biological speed. P vs NP becomes the Final Boss; closes with his 9-year-old being unsurprised and his wife's \"We should still fix the leak.\"",
-      "added": "2026-11-20"
-    },
-    {
       "slug": "why-i-resist-generative-ai",
       "title": "Why I Resist Generative \"AI\"",
       "url": "https://estherweidauer.com/articles/why-resist-generative-ai.html",
@@ -3785,6 +3777,16 @@
       "summary": "Jesse Vincent reflects on Fred Brooks's The Mythical Man-Month, which introduced Harlan Mills's \"Surgical Team\" structure — including the role of the toolsmith, who builds bespoke tooling so the chief programmer can stay focused. Reading it in college set the course of Vincent's career: building RT led to leading Perl 5, Keyboardio made physical tools, and Superpowers became widely adopted tooling for developers.\n\nThe article's pivot is about coding agents. Vincent had long instructed his agents (via AGENTS.md) to write scripts when a task would likely be repeated — but the agents were building those scripts incidentally and dropping them into ephemeral scratch directories. He realized that \"write a script to automate this task\" is itself a separable mission deserving an agent's exclusive focus, consistent with his own advice that agents should hand off single, well-scoped missions.\n\nSo he built \"toolsmith,\" a plugin for coding agents: instead of building incidental tools itself, the primary session delegates tool-building to a dedicated toolsmith subagent (a digital James Bond's Q). The toolsmith maintains a git repo in ~/.local/share/toolsmith/tools cataloging general-purpose and project-specific tools. When a session needs a tool, it reuses an existing one, extends a close match, or creates a new one. In two weeks of use it has produced dozens of tools, from word-counting for HTML to finding iOS device IDs to managing fleets of ephemeral EC2 instances.\n\nThe takeaway: treat tool-building as a first-class, delegated mission for your agents rather than incidental work, and invest in a persistent, cataloged tool inventory so agents can reuse what they've built.",
       "added": "2026-11-18",
       "read": "2026-11-19",
+      "has_notes": true
+    },
+    {
+      "slug": "the-stochastic-parrots-have-apparently-proved-the-riemann-hypothesis",
+      "title": "The stochastic parrots have apparently proved the Riemann Hypothesis",
+      "url": "https://scottaaronson.blog/?p=10344",
+      "category": "ai",
+      "summary": "Scott Aaronson reacts to Levent Alpöge's purported AI-assisted proof of the Generalized Riemann Hypothesis, formalized as 17.4M lines of Lean. Gives RH background (prime distribution as quasi-random 1/ln(x) primality within Õ(√n) error) and history from Riemann/Hilbert/Hardy. On soundness: Lean kernel bugs and type-theory uncertainty could in principle let a motivated AI prove falsehoods — worth urgent fixing — but no Lean-certificated AI result has ever been retracted, so he bets the proof stands. Mathematicians won't consider it settled until they can explain and reconstruct the ideas, which takes years at biological speed. P vs NP becomes the Final Boss; closes with his 9-year-old being unsurprised and his wife's \"We should still fix the leak.\"",
+      "added": "2026-11-20",
+      "read": "2026-11-21",
       "has_notes": true
     }
   ]
