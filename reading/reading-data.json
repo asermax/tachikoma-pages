@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20",
+  "generated_at": "2026-11-21",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1888,6 +1888,14 @@
       "category": "ai",
       "summary": "Kristian Polso announces he will actively avoid LLMs/AI agents in professional work after a decade building production ML systems. Dealbreakers: cognitive impact (LLM brainfog studies, Microsoft survey, cognitive debt), output quality (verbose AI code looks impressive but is often poor; LLMs expose the literacy gap between coders), maintainability (agent-written codebases mean no human understands them), he enjoys writing and reading code as thinking, environmental cost (datacenter energy, Google's Finnish forest clearing), and politics (discomfort with OpenAI/Anthropic/Cursor, GDPR/CLOUD Act for EU citizens). Concedes getting-unstuck positives but judges them not worth it. Rejects inevitability: \"So is heroin.\" Recommends Esther Weidauer's essay.",
       "added": "2026-11-20"
+    },
+    {
+      "slug": "we-promoted-developers-into-architects-without-informing-them",
+      "title": "We promoted developers into architects without informing them",
+      "url": "https://manidoraisamy.com/developer-to-architect.html",
+      "category": "engineering",
+      "summary": "Opens with a debugging story: vibe-coded logging in a Google Forms addon made the welcome screen take 15 seconds because AI, unable to get user details Google restricted, generated convoluted multi-fallback API calls. An architect would have known the API costs — log a timestamp, or show the screen first and log async. Argument: AI won't make these judgment calls. It's sycophantic (executes requirements without pushback), lacks launch-vs-scale context, and implicitly decides architecture when you only specify requirements. It's so security-paranoid it always trades performance for security and backward compatibility, producing slow apps and redundant multi-versioned data models. Prescription: define architecture and data model first, constrain AI to code within them, require it to ask before architectural changes, and state explicitly when backward compatibility matters vs when old code should be deleted. Core point: developers were promoted into architects without being told; frustration with vibe coding comes from mourning the old job. Non-developers without architecture skills end up with slow apps and unmaintainable databases — jobs aren't going away, only the coding part. \"You got promoted. Nobody told you, so I am telling you.\"",
+      "added": "2026-11-21"
     }
   ],
   "archive": [
