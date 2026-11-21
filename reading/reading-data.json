@@ -1882,14 +1882,6 @@
       "added": "2026-11-20"
     },
     {
-      "slug": "we-promoted-developers-into-architects-without-informing-them",
-      "title": "We promoted developers into architects without informing them",
-      "url": "https://manidoraisamy.com/developer-to-architect.html",
-      "category": "engineering",
-      "summary": "Opens with a debugging story: vibe-coded logging in a Google Forms addon made the welcome screen take 15 seconds because AI, unable to get user details Google restricted, generated convoluted multi-fallback API calls. An architect would have known the API costs — log a timestamp, or show the screen first and log async. Argument: AI won't make these judgment calls. It's sycophantic (executes requirements without pushback), lacks launch-vs-scale context, and implicitly decides architecture when you only specify requirements. It's so security-paranoid it always trades performance for security and backward compatibility, producing slow apps and redundant multi-versioned data models. Prescription: define architecture and data model first, constrain AI to code within them, require it to ask before architectural changes, and state explicitly when backward compatibility matters vs when old code should be deleted. Core point: developers were promoted into architects without being told; frustration with vibe coding comes from mourning the old job. Non-developers without architecture skills end up with slow apps and unmaintainable databases — jobs aren't going away, only the coding part. \"You got promoted. Nobody told you, so I am telling you.\"",
-      "added": "2026-11-21"
-    },
-    {
       "slug": "why-output-caching-doesnt-work",
       "title": "Why output caching doesn't work",
       "url": "https://seangoedecke.com/why-output-caching-doesnt-work/",
@@ -3786,6 +3778,16 @@
       "category": "ai",
       "summary": "Scott Aaronson reacts to Levent Alpöge's purported AI-assisted proof of the Generalized Riemann Hypothesis, formalized as 17.4M lines of Lean. Gives RH background (prime distribution as quasi-random 1/ln(x) primality within Õ(√n) error) and history from Riemann/Hilbert/Hardy. On soundness: Lean kernel bugs and type-theory uncertainty could in principle let a motivated AI prove falsehoods — worth urgent fixing — but no Lean-certificated AI result has ever been retracted, so he bets the proof stands. Mathematicians won't consider it settled until they can explain and reconstruct the ideas, which takes years at biological speed. P vs NP becomes the Final Boss; closes with his 9-year-old being unsurprised and his wife's \"We should still fix the leak.\"",
       "added": "2026-11-20",
+      "read": "2026-11-21",
+      "has_notes": true
+    },
+    {
+      "slug": "we-promoted-developers-into-architects-without-informing-them",
+      "title": "We promoted developers into architects without informing them",
+      "url": "https://manidoraisamy.com/developer-to-architect.html",
+      "category": "engineering",
+      "summary": "Opens with a debugging story: vibe-coded logging in a Google Forms addon made the welcome screen take 15 seconds because AI, unable to get user details Google restricted, generated convoluted multi-fallback API calls. An architect would have known the API costs — log a timestamp, or show the screen first and log async. Argument: AI won't make these judgment calls. It's sycophantic (executes requirements without pushback), lacks launch-vs-scale context, and implicitly decides architecture when you only specify requirements. It's so security-paranoid it always trades performance for security and backward compatibility, producing slow apps and redundant multi-versioned data models. Prescription: define architecture and data model first, constrain AI to code within them, require it to ask before architectural changes, and state explicitly when backward compatibility matters vs when old code should be deleted. Core point: developers were promoted into architects without being told; frustration with vibe coding comes from mourning the old job. Non-developers without architecture skills end up with slow apps and unmaintainable databases — jobs aren't going away, only the coding part. \"You got promoted. Nobody told you, so I am telling you.\"",
+      "added": "2026-11-21",
       "read": "2026-11-21",
       "has_notes": true
     }
