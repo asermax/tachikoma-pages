@@ -1896,6 +1896,14 @@
       "category": "engineering",
       "summary": "Opens with a debugging story: vibe-coded logging in a Google Forms addon made the welcome screen take 15 seconds because AI, unable to get user details Google restricted, generated convoluted multi-fallback API calls. An architect would have known the API costs — log a timestamp, or show the screen first and log async. Argument: AI won't make these judgment calls. It's sycophantic (executes requirements without pushback), lacks launch-vs-scale context, and implicitly decides architecture when you only specify requirements. It's so security-paranoid it always trades performance for security and backward compatibility, producing slow apps and redundant multi-versioned data models. Prescription: define architecture and data model first, constrain AI to code within them, require it to ask before architectural changes, and state explicitly when backward compatibility matters vs when old code should be deleted. Core point: developers were promoted into architects without being told; frustration with vibe coding comes from mourning the old job. Non-developers without architecture skills end up with slow apps and unmaintainable databases — jobs aren't going away, only the coding part. \"You got promoted. Nobody told you, so I am telling you.\"",
       "added": "2026-11-21"
+    },
+    {
+      "slug": "why-output-caching-doesnt-work",
+      "title": "Why output caching doesn't work",
+      "url": "https://seangoedecke.com/why-output-caching-doesnt-work/",
+      "category": "ai",
+      "summary": "LLM inference caches model inputs (conversation history) to avoid recomputing tokens; the author asks whether outputs should be cached too, since agents visibly waste expensive output tokens repeating content — regurgitating code snippets, quoting evidence documents, echoing sample outputs. Proposed fix: fine-tune or prompt models to reference history segments (src/script.py:12-15) instead of repeating verbatim, with the harness expanding references for the user. It fails because visible output is a tiny fraction of total tokens: from his own agent histories only ~6% of output tokens are visible to the user — ~50% are reasoning tokens, ~44% tool calls. By Amdahl's law, saving even two-thirds of visible output yields only ~4% total reduction. The real lever is the invisible 94%, which depends on model intelligence: smarter models need fewer reasoning tokens and tool calls. This explains why more expensive per-token models are often cheaper overall — a 5x per-token premium offset by needing 6x fewer tokens. Takeaway: optimize for model capability, not output caching.",
+      "added": "2026-11-21"
     }
   ],
   "archive": [
