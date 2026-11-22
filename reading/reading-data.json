@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21",
+  "generated_at": "2026-11-22",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1896,6 +1896,14 @@
       "category": "ai",
       "summary": "LLM inference caches model inputs (conversation history) to avoid recomputing tokens; the author asks whether outputs should be cached too, since agents visibly waste expensive output tokens repeating content — regurgitating code snippets, quoting evidence documents, echoing sample outputs. Proposed fix: fine-tune or prompt models to reference history segments (src/script.py:12-15) instead of repeating verbatim, with the harness expanding references for the user. It fails because visible output is a tiny fraction of total tokens: from his own agent histories only ~6% of output tokens are visible to the user — ~50% are reasoning tokens, ~44% tool calls. By Amdahl's law, saving even two-thirds of visible output yields only ~4% total reduction. The real lever is the invisible 94%, which depends on model intelligence: smarter models need fewer reasoning tokens and tool calls. This explains why more expensive per-token models are often cheaper overall — a 5x per-token premium offset by needing 6x fewer tokens. Takeaway: optimize for model capability, not output caching.",
       "added": "2026-11-21"
+    },
+    {
+      "slug": "to-code-well-avoid-blunders",
+      "title": "To code well, avoid blunders",
+      "url": "https://seangoedecke.com/to-code-well-avoid-blunders/",
+      "category": "engineering",
+      "summary": "This article argues that the secret to writing good code is not brilliant insight but avoiding catastrophic mistakes. The author draws an analogy to chess and tennis: just as a player who never hangs pieces will beat most opponents, an engineer who avoids serious blunders will produce strong code without needing clever abstractions or elegant tricks. Unlike domains such as basketball—where a large lead survives individual mistakes—programming offers no durable winning advantage: a single blunder can turn an elegant codebase into a janky one. Blunders include introducing parallel systems for the same task, adding a second source of truth for key data, converting safe sync operations into fragile async ones, adding subtle points of failure, and complicating key interfaces. The cardinal sins are inconsistency (which breaks engineers' trust that code works the sensible way) and unnecessary requirements. Unnecessary requirements are dangerous because they are sticky—only the implementer has the context to judge whether one is needed—and because requirements interrelate, creating a combinatorial explosion that makes large codebases hard to work in. The practical advice: find where your task fits most normally into the existing codebase, and trim the task down to the smallest possible set of requirements. Total focus on blunder avoidance leaves no energy for clever patterns or extra-credit features, which the author flags as a warning sign of distraction. Great programming work doesn't require cleverness—cleverness can even be a disadvantage; what matters is attention to detail and a laser focus on consistency and minimal requirements.",
+      "added": "2026-11-22"
     }
   ],
   "archive": [
