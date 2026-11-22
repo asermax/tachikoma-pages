@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-22T10:49:41.403847-03:00",
+  "generated_at": "2026-11-22T11:10:22.231532-03:00",
   "week_start": "2026-11-22",
   "week_label": "November 22 - November 28, 2026",
-  "last_updated": "Sunday, November 22, 2026 at 10:49",
+  "last_updated": "Sunday, November 22, 2026 at 11:10",
   "stats": {
     "completed": 0,
     "planned": 0,
@@ -86,6 +86,21 @@
       "sessions": [
         {
           "day": "Wed",
+          "status": "pending"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 1
+    },
+    {
+      "id": "piano-practice",
+      "name": "Piano Practice",
+      "emoji": "\ud83c\udfb9",
+      "sessions": [
+        {
+          "day": "Mon",
           "status": "pending"
         }
       ],
