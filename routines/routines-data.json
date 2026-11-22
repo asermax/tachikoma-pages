@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-22T02:00:51.148496-03:00",
-  "week_start": "2026-11-15",
-  "week_label": "November 15 - November 21, 2026",
-  "last_updated": "Sunday, November 22, 2026 at 02:00",
+  "generated_at": "2026-11-22T10:37:35.068139-03:00",
+  "week_start": "2026-11-22",
+  "week_label": "November 22 - November 28, 2026",
+  "last_updated": "Sunday, November 22, 2026 at 10:37",
   "stats": {
-    "completed": 2.261904761904762,
-    "planned": 10,
-    "display": "2.3 / 10"
+    "completed": 0,
+    "planned": 0,
+    "display": "0 / 0"
   },
   "daily": {
     "Sunday": {
@@ -15,24 +15,24 @@
       "total": 0
     },
     "Monday": {
-      "status": "missed",
+      "status": "empty",
       "completed": 0,
-      "total": 1
+      "total": 0
     },
     "Tuesday": {
-      "status": "missed",
+      "status": "empty",
       "completed": 0,
-      "total": 2
+      "total": 0
     },
     "Wednesday": {
-      "status": "partial",
-      "completed": 1,
-      "total": 2
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Thursday": {
-      "status": "partial",
-      "completed": 1,
-      "total": 2
+      "status": "empty",
+      "completed": 0,
+      "total": 0
     },
     "Friday": {
       "status": "empty",
@@ -40,9 +40,9 @@
       "total": 0
     },
     "Saturday": {
-      "status": "missed",
+      "status": "empty",
       "completed": 0,
-      "total": 1
+      "total": 0
     }
   },
   "goals": [
@@ -50,17 +50,17 @@
       "name": "Reading",
       "emoji": "",
       "status": "pending",
-      "accumulated": "20min",
+      "accumulated": "0min",
       "target": "210min",
-      "progress_pct": 9
+      "progress_pct": 0
     },
     {
       "name": "Wind-Down Routine",
       "emoji": "",
       "status": "pending",
-      "accumulated": "1 nights",
+      "accumulated": "0 nights",
       "target": "6 nights",
-      "progress_pct": 16
+      "progress_pct": 0
     }
   ],
   "routines": [
@@ -71,17 +71,13 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "skipped"
-        },
-        {
-          "day": "Thu",
-          "status": "skipped"
+          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
       "done": 0,
-      "total": 2
+      "total": 1
     },
     {
       "id": "music-practice",
@@ -90,12 +86,12 @@
       "sessions": [
         {
           "day": "Wed",
-          "status": "done"
+          "status": "pending"
         }
       ],
-      "metrics_total": "1h",
+      "metrics_total": "",
       "comparison": "",
-      "done": 1,
+      "done": 0,
       "total": 1
     },
     {
@@ -105,17 +101,13 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "skipped"
-        },
-        {
-          "day": "Thu",
-          "status": "done"
+          "status": "pending"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 1,
-      "total": 2
+      "done": 0,
+      "total": 1
     },
     {
       "id": "yoga",
@@ -124,15 +116,15 @@
       "sessions": [
         {
           "day": "Mon",
-          "status": "skipped"
+          "status": "pending"
         },
         {
           "day": "Wed",
-          "status": "skipped"
+          "status": "pending"
         },
         {
           "day": "Sat",
-          "status": "skipped"
+          "status": "pending"
         }
       ],
       "metrics_total": "",
@@ -142,10 +134,10 @@
     }
   ],
   "spirit": {
-    "state": "critical",
+    "state": "dormant",
     "emoji": "\ud83d\udc1b",
     "title": "\ud83d\udc1b Spring Caterpillar",
-    "image": "assets/critical.webp",
-    "description": "Your spring caterpillar battles storm rain and lightning from its leaf boat \u2014 worried eyes under dark clouds."
+    "image": "assets/dormant.webp",
+    "description": "Your spring caterpillar sleeps curled on its leaf under moonlight and stars \u2014 deep, still, quiet night."
   }
 }

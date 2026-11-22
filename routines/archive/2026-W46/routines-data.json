@@ -1,0 +1,151 @@
+{
+  "generated_at": "2026-11-22T02:00:51.148496-03:00",
+  "week_start": "2026-11-15",
+  "week_label": "November 15 - November 21, 2026",
+  "last_updated": "Sunday, November 22, 2026 at 02:00",
+  "stats": {
+    "completed": 2.261904761904762,
+    "planned": 10,
+    "display": "2.3 / 10"
+  },
+  "daily": {
+    "Sunday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Monday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 1
+    },
+    "Tuesday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 2
+    },
+    "Wednesday": {
+      "status": "partial",
+      "completed": 1,
+      "total": 2
+    },
+    "Thursday": {
+      "status": "partial",
+      "completed": 1,
+      "total": 2
+    },
+    "Friday": {
+      "status": "empty",
+      "completed": 0,
+      "total": 0
+    },
+    "Saturday": {
+      "status": "missed",
+      "completed": 0,
+      "total": 1
+    }
+  },
+  "goals": [
+    {
+      "name": "Reading",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "20min",
+      "target": "210min",
+      "progress_pct": 9
+    },
+    {
+      "name": "Wind-Down Routine",
+      "emoji": "",
+      "status": "pending",
+      "accumulated": "1 nights",
+      "target": "6 nights",
+      "progress_pct": 16
+    }
+  ],
+  "routines": [
+    {
+      "id": "basic-workout",
+      "name": "Basic Workout",
+      "emoji": "\ud83d\udcaa",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "skipped"
+        },
+        {
+          "day": "Thu",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 2
+    },
+    {
+      "id": "music-practice",
+      "name": "Music Practice",
+      "emoji": "\ud83c\udfb7",
+      "sessions": [
+        {
+          "day": "Wed",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "1h",
+      "comparison": "",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "rock-climbing",
+      "name": "Rock Climbing",
+      "emoji": "\ud83e\uddd7",
+      "sessions": [
+        {
+          "day": "Tue",
+          "status": "skipped"
+        },
+        {
+          "day": "Thu",
+          "status": "done"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 1,
+      "total": 2
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga",
+      "emoji": "\ud83e\uddd8",
+      "sessions": [
+        {
+          "day": "Mon",
+          "status": "skipped"
+        },
+        {
+          "day": "Wed",
+          "status": "skipped"
+        },
+        {
+          "day": "Sat",
+          "status": "skipped"
+        }
+      ],
+      "metrics_total": "",
+      "comparison": "",
+      "done": 0,
+      "total": 3
+    }
+  ],
+  "spirit": {
+    "state": "critical",
+    "emoji": "\ud83d\udc1b",
+    "title": "\ud83d\udc1b Spring Caterpillar",
+    "image": "assets/critical.webp",
+    "description": "Your spring caterpillar battles storm rain and lightning from its leaf boat \u2014 worried eyes under dark clouds."
+  }
+}
