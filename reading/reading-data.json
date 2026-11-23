@@ -1866,14 +1866,6 @@
       "added": "2026-11-21"
     },
     {
-      "slug": "to-code-well-avoid-blunders",
-      "title": "To code well, avoid blunders",
-      "url": "https://seangoedecke.com/to-code-well-avoid-blunders/",
-      "category": "engineering",
-      "summary": "This article argues that the secret to writing good code is not brilliant insight but avoiding catastrophic mistakes. The author draws an analogy to chess and tennis: just as a player who never hangs pieces will beat most opponents, an engineer who avoids serious blunders will produce strong code without needing clever abstractions or elegant tricks. Unlike domains such as basketball—where a large lead survives individual mistakes—programming offers no durable winning advantage: a single blunder can turn an elegant codebase into a janky one. Blunders include introducing parallel systems for the same task, adding a second source of truth for key data, converting safe sync operations into fragile async ones, adding subtle points of failure, and complicating key interfaces. The cardinal sins are inconsistency (which breaks engineers' trust that code works the sensible way) and unnecessary requirements. Unnecessary requirements are dangerous because they are sticky—only the implementer has the context to judge whether one is needed—and because requirements interrelate, creating a combinatorial explosion that makes large codebases hard to work in. The practical advice: find where your task fits most normally into the existing codebase, and trim the task down to the smallest possible set of requirements. Total focus on blunder avoidance leaves no energy for clever patterns or extra-credit features, which the author flags as a warning sign of distraction. Great programming work doesn't require cleverness—cleverness can even be a disadvantage; what matters is attention to detail and a laser focus on consistency and minimal requirements.",
-      "added": "2026-11-22"
-    },
-    {
       "slug": "when-in-doubt-flail-about",
       "title": "When in doubt, flail about",
       "url": "https://seangoedecke.com/when-in-doubt-flail-about/",
@@ -2390,7 +2382,7 @@
       "category": "engineering",
       "summary": "Kent Beck argues YAGNI isn't about saving coding effort — it's about avoiding speculative structures. Two costs: Optionality (early commitment limits adaptability) and NPV (spending early delays value). As coding gets cheaper, the danger of speculative structures increases.\n\n**Reading notes**: Directly relevant to AI coding — models tend to add speculative features no one asked for, creating the exact premature structure commitment YAGNI warns against. Since LLMs can't easily iterate in-place, those decisions get locked in.",
       "added": "2026-06-25",
-      "read": null,
+      "read": "2026-11-23",
       "has_notes": false
     },
     {
@@ -2930,7 +2922,7 @@
       "category": "ai",
       "summary": "Sean Goedecke responds to a reader who accused him of defeatist writing about AI's impact on software engineering. He draws an analogy to the Industrial Revolution, arguing that programmers are like framework-knitters facing automation. While acknowledging his anti-revolutionary stance, he defends his pragmatic tone as protecting vulnerable engineers from career-destroying choices — arguing that someone needs to help scared junior devs navigate the changing landscape rather than foment resistance.",
       "added": "2026-08-09",
-      "read": null,
+      "read": "2026-11-23",
       "has_notes": false
     },
     {
@@ -3781,6 +3773,16 @@
       "summary": "Opens with a debugging story: vibe-coded logging in a Google Forms addon made the welcome screen take 15 seconds because AI, unable to get user details Google restricted, generated convoluted multi-fallback API calls. An architect would have known the API costs — log a timestamp, or show the screen first and log async. Argument: AI won't make these judgment calls. It's sycophantic (executes requirements without pushback), lacks launch-vs-scale context, and implicitly decides architecture when you only specify requirements. It's so security-paranoid it always trades performance for security and backward compatibility, producing slow apps and redundant multi-versioned data models. Prescription: define architecture and data model first, constrain AI to code within them, require it to ask before architectural changes, and state explicitly when backward compatibility matters vs when old code should be deleted. Core point: developers were promoted into architects without being told; frustration with vibe coding comes from mourning the old job. Non-developers without architecture skills end up with slow apps and unmaintainable databases — jobs aren't going away, only the coding part. \"You got promoted. Nobody told you, so I am telling you.\"",
       "added": "2026-11-21",
       "read": "2026-11-21",
+      "has_notes": true
+    },
+    {
+      "slug": "to-code-well-avoid-blunders",
+      "title": "To code well, avoid blunders",
+      "url": "https://seangoedecke.com/to-code-well-avoid-blunders/",
+      "category": "engineering",
+      "summary": "This article argues that the secret to writing good code is not brilliant insight but avoiding catastrophic mistakes. The author draws an analogy to chess and tennis: just as a player who never hangs pieces will beat most opponents, an engineer who avoids serious blunders will produce strong code without needing clever abstractions or elegant tricks. Unlike domains such as basketball—where a large lead survives individual mistakes—programming offers no durable winning advantage: a single blunder can turn an elegant codebase into a janky one. Blunders include introducing parallel systems for the same task, adding a second source of truth for key data, converting safe sync operations into fragile async ones, adding subtle points of failure, and complicating key interfaces. The cardinal sins are inconsistency (which breaks engineers' trust that code works the sensible way) and unnecessary requirements. Unnecessary requirements are dangerous because they are sticky—only the implementer has the context to judge whether one is needed—and because requirements interrelate, creating a combinatorial explosion that makes large codebases hard to work in. The practical advice: find where your task fits most normally into the existing codebase, and trim the task down to the smallest possible set of requirements. Total focus on blunder avoidance leaves no energy for clever patterns or extra-credit features, which the author flags as a warning sign of distraction. Great programming work doesn't require cleverness—cleverness can even be a disadvantage; what matters is attention to detail and a laser focus on consistency and minimal requirements.",
+      "added": "2026-11-22",
+      "read": "2026-11-23",
       "has_notes": true
     }
   ]
