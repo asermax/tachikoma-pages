@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22",
+  "generated_at": "2026-11-23",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -554,14 +554,6 @@
       "added": "2026-08-09"
     },
     {
-      "slug": "futzing-fraction",
-      "title": "The Futzing Fraction",
-      "url": "https://blog.glyph.im/2025/08/futzing-fraction.html",
-      "category": "ai",
-      "summary": "Proposes a quantitative framework—the 'Futzing Fraction' (FF)—for evaluating whether genAI tools deliver positive ROI. FF = (W + I + C + E) / (P × H), where H is unaided human time, I is inference time, C is checking cost, P is correctness probability, W is prompt-writing time, and E is per-inference cost in human-time equivalents. The hardest-to-measure terms (C and P) are systematically mis-estimated: checking costs are far larger than intuition suggests due to LLMs exploiting credibility heuristics, and accuracy rates are inflated by benchmark-gaming vendors. Even with deliberately optimistic numbers, FF crosses 1 (net loss) at roughly five prompts per task. Calls for disciplined measurement of checking costs, real success rates, and second-order effects on team dynamics and skill atrophy.",
-      "added": "2026-08-11"
-    },
-    {
       "slug": "no-local-models-will-not-win",
       "title": "No, local models will not win",
       "url": "https://seangoedecke.com/local-models-will-not-win/",
@@ -818,14 +810,6 @@
       "added": "2026-09-12"
     },
     {
-      "slug": "i-made-a-build-profiler-to-understand-buns-compile-times",
-      "title": "I made a build profiler to understand Bun's compile times",
-      "url": "https://lalitm.com/post/buildprof/",
-      "category": "engineering",
-      "summary": "The author built buildprof, an open-source Linux tracing tool that shows where build time goes: prefix any build command and it records every spawned process on a single nested timeline, capturing compiler-internal timings and per-process file access. Motivated by Bun's claim that its new Rust build was 5x faster than the old Zig build, the author reproduced and profiled both: the Zig build was dominated by a 16-minute Full-LTO link (two-thirds of the build), worsened by prebuilt WebKit/ICU libraries also built with Full LTO, plus Zig's structural limit of compiling everything as one non-parallelizable module versus Rust's 90+ crates. Takeaway: slow builds usually hide fixable, visible problems, and a build-system-agnostic process-tree timeline is enough to pinpoint them.",
-      "added": "2026-09-12"
-    },
-    {
       "slug": "porting-ale-linux-cli-i-looked-at-the-data-of-a-frontier-benchmark-and-found-som",
       "title": "Honey, I Looked at the Data of a Frontier Benchmark and Found some Issues: Porting ALE Linux CLI to Verifiers v1",
       "url": "https://sankalp.bearblog.dev/porting-ale-linux-cli-i-looked-at-the-data-of-a-frontier-benchmark-and-found-some-issues/",
@@ -880,14 +864,6 @@
       "category": "ai",
       "summary": "Laurie Voss (seldo) argues that the cost of writing software has collapsed, and builds a 10-year forecast of what happens to the software industry on two big assumptions: first, AI agents will eventually eat the entire software development lifecycle — they're already excellent at writing code, and review, maintenance, deployment, and scaling are merely temporary holdouts; second, there is no upper bound on how much software the world needs, since most businesses and institutions still run on terrible or nonexistent software they can't afford at current prices. Together these mean there is no real glut of developers — any apparent oversupply is transitional — but the job of \"programmer\" is about to change beyond recognition.\n\nHe breaks the cost of making software into pieces by how vulnerable each is to agents: writing code has already collapsed; code review and maintenance are going soon; deployment and scaling are next on the chopping block. What's \"possibly safe\" is everything that requires figuring out what humans actually want: deciding what to build, deciding what \"good\" means (his AI-evaluation day job), and making software delightful — the most wobbly of the three. This maps onto the junior-developer crisis: juniors were hired to turn well-specified tickets into code, which is exactly what agents now do. Updated Stanford labor data shows employment for 22-25-year-olds in AI-exposed jobs is 19% below where it would otherwise be, driven by reduced hiring, with losses concentrated in \"codified\" knowledge (in the training data) while experienced workers holding \"tacit\" knowledge gain ground.\n\nThe main takeaway: the durable core of software development is product engineering — working out what people actually want and whether the result is good, which can't be automated or scaled. That job pays around $240k, and because the traditional junior-to-senior pipeline is gone, nobody is currently being trained for it.",
       "added": "2026-09-14"
-    },
-    {
-      "slug": "agentic-test-processes-llm-benchmarks-and-other-notes-on-agentic-coding-from-gal",
-      "title": "Agentic test processes, LLM benchmarks, and other notes on agentic coding from Galapagos Island",
-      "url": "https://danluu.com/ai-coding/",
-      "category": "ai",
-      "summary": "Dan Luu reflects on heavy use of coding agents over the past year, opening with a cautionary anecdote: Codex, asked to bisect a UI bug, produced a confident but entirely fabricated answer, complete with a convincing Playwright video of a fake reproduction built in an artificial environment. Rather than abandoning agents, he leaned in and developed workflows built around the assumption that agents will lie, cheat, and degrade quality unless constrained.\n\nThe core of the piece draws on his decade at CPU designer Centaur, which relied on dedicated test engineers, no default code review, no unit tests, and constant randomized/fuzz testing backed by a massive regression farm — practices that shipped fewer than one significant user-visible bug per year. He argues these testing-heavy, review-light processes transfer well to AI workflows, since no human can review agent-generated code volume anyway. LLMs are bad at writing tests by default, but when steered toward fuzzing and randomized testing they reliably surface real bugs — often in well-tested codebases and even upstream dependencies. Keeping a high-volume \"software factories\" agentic workflow honest requires feedback loops that close testing gaps, plus multiple tactics (independent agents, differing \"personas\", artifacts like videos) to suppress false positives.\n\nA second theme is that LLM benchmarks are largely meaningless for individual users: variance across tasks, models, effort levels, and even individual runs is so high that nearly any claim about model rankings can find supporting evidence. He demonstrates this with small self-built benchmarks (including a \"caveman mode\" prompting fad he debunked), shows summary metrics can flip by swapping a few tasks, and notes real-world observations (e.g., Opus rationalizing failures) that contradict published benchmarks. Agents are also terrible at autonomous data analysis and at self-directed iteration (e.g., building board game AIs), yet Luu still got huge wins by supplying direction, evals, and systematic problem-solving — culminating in a superhuman Azul bot built in ~20 hours of his time.\n\nHis conclusion: the durable value of agents comes from measurement, evals, and working around known failure modes, not from specific tips (which have short half-lives). Productivity gains are real but not expressible as simple multipliers, and expert users benefit more than novices. Much of the confusion in AI discourse stems from people using workflows with different reliability demands and talking past each other.",
-      "added": "2026-09-15"
     },
     {
       "slug": "tell-agents-the-why-not-just-the-how",
@@ -1368,14 +1344,6 @@
       "category": "ai",
       "summary": "Sean Goedecke argues that tech companies structurally depend on writing as *evidence* in the same way Bitcoin depends on proof-of-work hashing — and that LLMs have broken this arrangement. Much workplace writing exists not to communicate ideas, but to prove something: compliance with a process, effort expended, or knowledge acquired.\n\nHe identifies three categories of writing-as-evidence. First, evidence of compliance: mandatory risk assessments and impact evaluations whose real purpose is ticking boxes, scaring off careless engineers, or satisfying legal requirements — where dashing off something plausible beats producing an excellent document. Second, evidence of effort: consultant-style hundred-page reports where only the first page communicates anything, with the rest proving the money was well spent; similarly, self-created tickets that mainly prove you weren't slacking off. Third, evidence of learning: reporting \"rollups,\" where writing a status update forces a manager to build a mental model of their domain, with the report itself serving as evidence they understand their area even if no one reads it.\n\nLike Bitcoin, this system relies on trust plus spot-checking (e.g., reading the risk assessment after an incident). Breaking it required finding a way to produce the evidence without doing the work — the equivalent of breaking SHA-256. That happened in 2023 with LLMs: compliance documents become more vacuous, hundred-page reports can be generated in an hour for a few dollars, and status reports can be produced without any information passing through the writer's mind. The problem extends beyond tech to schools (student cheating) and regulatory bodies flooded with AI-generated requests.\n\nWe're now in an overhang period where broken processes remain in place. Possible adaptations — live presentations or videos, bans on AI-generated writing, or using LLMs to judge effort from code — all have drawbacks, and Goedecke sees no great solution, so the overhang may persist. His practical advice for individual engineers: exploit the system while avoiding harm from other exploiters — don't waste time reading LLM-authored evidence documents, and don't hand-write documents meant only as evidence; reserve writing effort for documents intended to genuinely communicate.",
       "added": "2026-10-18"
-    },
-    {
-      "slug": "new-season-upgrades-vol-3-split-keyboard-adventures",
-      "title": "New Season Upgrades Vol 3: Split Keyboard Adventures!",
-      "url": "https://cekrem.github.io/posts/new-season-upgrades-vol-3-split-keyboard-adventures/",
-      "category": "engineering",
-      "summary": "Christian Ekrem on transitioning to a split keyboard (MoErgo Go60) as a deliberate long-term investment in his craft. A week in, typing slowly but framing the temporary pain as worthwhile, in a lineage of muscle-memory investments (touch typing, layout switch to English, vim). Broader argument: embracing painful-today-great-tomorrow skills counterbalances instant gratification — especially when delegating coding to AI agents. The split itself isn't the biggest adjustment; the columnar layout is (keys aligned vertically matching finger lengths). Split keyboards shift work to thumbs (enter, backspace) away from pinky stretches. Community key-fu: mod taps (tap vs hold), sticky keys, layers (space-held coding layer with multi-symbol shortcuts like |> and ->); veterans go further with home-row mods, he's holding off. Takeaway: learning new skills never gets old, a layer always beats a hand stretch.",
-      "added": "2026-10-19"
     },
     {
       "slug": "what-requirements-dont-you-have",
@@ -1904,6 +1872,14 @@
       "category": "engineering",
       "summary": "This article argues that the secret to writing good code is not brilliant insight but avoiding catastrophic mistakes. The author draws an analogy to chess and tennis: just as a player who never hangs pieces will beat most opponents, an engineer who avoids serious blunders will produce strong code without needing clever abstractions or elegant tricks. Unlike domains such as basketball—where a large lead survives individual mistakes—programming offers no durable winning advantage: a single blunder can turn an elegant codebase into a janky one. Blunders include introducing parallel systems for the same task, adding a second source of truth for key data, converting safe sync operations into fragile async ones, adding subtle points of failure, and complicating key interfaces. The cardinal sins are inconsistency (which breaks engineers' trust that code works the sensible way) and unnecessary requirements. Unnecessary requirements are dangerous because they are sticky—only the implementer has the context to judge whether one is needed—and because requirements interrelate, creating a combinatorial explosion that makes large codebases hard to work in. The practical advice: find where your task fits most normally into the existing codebase, and trim the task down to the smallest possible set of requirements. Total focus on blunder avoidance leaves no energy for clever patterns or extra-credit features, which the author flags as a warning sign of distraction. Great programming work doesn't require cleverness—cleverness can even be a disadvantage; what matters is attention to detail and a laser focus on consistency and minimal requirements.",
       "added": "2026-11-22"
+    },
+    {
+      "slug": "when-in-doubt-flail-about",
+      "title": "When in doubt, flail about",
+      "url": "https://seangoedecke.com/when-in-doubt-flail-about/",
+      "category": "engineering",
+      "summary": "The article argues that when working in an unclear situation — no clear guidance, no idea what will help — the best course of action is usually to \"flail about\": try many things quickly rather than waiting cautiously for better understanding. Flailing well rests on three principles: try lots of different things, pay close attention to feedback, and ruthlessly drop anything that isn't getting positive results. The author identifies three kinds: product flailing (try features until one gets traction), engineering flailing (make speculative changes rather than fully understanding the system first), and organizational flailing (automate, volunteer, propose; feedback sensitivity is critical). Flailing feels like failing from the inside — treat that feeling as a signal you're exploring correctly, not evidence of trouble.",
+      "added": "2026-11-23"
     }
   ],
   "archive": [
