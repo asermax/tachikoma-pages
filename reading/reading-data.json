@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23",
+  "generated_at": "2026-11-24",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1848,14 +1848,6 @@
       "category": "ai",
       "summary": "Kristian Polso announces he will actively avoid LLMs/AI agents in professional work after a decade building production ML systems. Dealbreakers: cognitive impact (LLM brainfog studies, Microsoft survey, cognitive debt), output quality (verbose AI code looks impressive but is often poor; LLMs expose the literacy gap between coders), maintainability (agent-written codebases mean no human understands them), he enjoys writing and reading code as thinking, environmental cost (datacenter energy, Google's Finnish forest clearing), and politics (discomfort with OpenAI/Anthropic/Cursor, GDPR/CLOUD Act for EU citizens). Concedes getting-unstuck positives but judges them not worth it. Rejects inevitability: \"So is heroin.\" Recommends Esther Weidauer's essay.",
       "added": "2026-11-20"
-    },
-    {
-      "slug": "announcing-dreamcoder",
-      "title": "Announcing DreamCoder",
-      "url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
-      "category": "ai",
-      "summary": "Mickey Petersen of Mastering Emacs announces DreamCoder, a browser-based AI coding harness he has spent fifteen months building, inspired by his May 2025 experience with Claude Code. He found terminal-based coding agents awkward as a primary interface and their GUI versions second-class, so he set out to build a harness with a full-featured, human-centric interface. DreamCoder is a frontier-class harness with a tiling window manager (with a constraint solver ensuring panes stay readable), backgroundable sub-agents, MCP server support, terminals, skills, hooks, workspaces with live minimaps, avy-style keyboard selection, Helm-like type-to-complete dialogs, and support for both frontier and local open-weight models. He argues coding harnesses are the IDEs of the future and is also building a pentesting/cybersecurity suite on top of it. The article interleaves a long history of AI, LISP, and Emacs: McCarthy created LISP in the 1950s to build his Advice Taker; Steve Russell's implementation of eval gave us LISP as we know it; symbolic AI collapsed under fractal complexity, yet its legacy survives in tools like Teitelman's advice mechanism in Emacs, and the self-modifying ethos of LISP and Emacs is the philosophy Petersen applied to DreamCoder — which now writes itself inside DreamCoder. Closes on industry reflection: programmers must reinvent themselves as AI absorbs toil, taste remains a scarce human resource, capable small local models make the future local for many use cases. DreamCoder is not an Emacs application, though he teases future AI+Emacs plans.",
-      "added": "2026-11-21"
     },
     {
       "slug": "why-output-caching-doesnt-work",
@@ -3755,6 +3747,16 @@
       "summary": "Scott Aaronson reacts to Levent Alpöge's purported AI-assisted proof of the Generalized Riemann Hypothesis, formalized as 17.4M lines of Lean. Gives RH background (prime distribution as quasi-random 1/ln(x) primality within Õ(√n) error) and history from Riemann/Hilbert/Hardy. On soundness: Lean kernel bugs and type-theory uncertainty could in principle let a motivated AI prove falsehoods — worth urgent fixing — but no Lean-certificated AI result has ever been retracted, so he bets the proof stands. Mathematicians won't consider it settled until they can explain and reconstruct the ideas, which takes years at biological speed. P vs NP becomes the Final Boss; closes with his 9-year-old being unsurprised and his wife's \"We should still fix the leak.\"",
       "added": "2026-11-20",
       "read": "2026-11-21",
+      "has_notes": true
+    },
+    {
+      "slug": "announcing-dreamcoder",
+      "title": "Announcing DreamCoder",
+      "url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
+      "category": "ai",
+      "summary": "Mickey Petersen of Mastering Emacs announces DreamCoder, a browser-based AI coding harness he has spent fifteen months building, inspired by his May 2025 experience with Claude Code. He found terminal-based coding agents awkward as a primary interface and their GUI versions second-class, so he set out to build a harness with a full-featured, human-centric interface. DreamCoder is a frontier-class harness with a tiling window manager (with a constraint solver ensuring panes stay readable), backgroundable sub-agents, MCP server support, terminals, skills, hooks, workspaces with live minimaps, avy-style keyboard selection, Helm-like type-to-complete dialogs, and support for both frontier and local open-weight models. He argues coding harnesses are the IDEs of the future and is also building a pentesting/cybersecurity suite on top of it. The article interleaves a long history of AI, LISP, and Emacs: McCarthy created LISP in the 1950s to build his Advice Taker; Steve Russell's implementation of eval gave us LISP as we know it; symbolic AI collapsed under fractal complexity, yet its legacy survives in tools like Teitelman's advice mechanism in Emacs, and the self-modifying ethos of LISP and Emacs is the philosophy Petersen applied to DreamCoder — which now writes itself inside DreamCoder. Closes on industry reflection: programmers must reinvent themselves as AI absorbs toil, taste remains a scarce human resource, capable small local models make the future local for many use cases. DreamCoder is not an Emacs application, though he teases future AI+Emacs plans.",
+      "added": "2026-11-21",
+      "read": "2026-11-24",
       "has_notes": true
     },
     {
