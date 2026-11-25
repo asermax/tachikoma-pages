@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-24T02:01:35.668922-03:00",
+  "generated_at": "2026-11-25T02:01:05.333821-03:00",
   "week_start": "2026-11-22",
   "week_label": "November 22 - November 28, 2026",
-  "last_updated": "Tuesday, November 24, 2026 at 02:01",
+  "last_updated": "Wednesday, November 25, 2026 at 02:01",
   "stats": {
-    "completed": 3.0,
-    "planned": 4,
-    "display": "3 / 4"
+    "completed": 4.0,
+    "planned": 6,
+    "display": "4 / 6"
   },
   "daily": {
     "Sunday": {
@@ -20,9 +20,9 @@
       "total": 2
     },
     "Tuesday": {
-      "status": "empty",
-      "completed": 0,
-      "total": 0
+      "status": "partial",
+      "completed": 1,
+      "total": 2
     },
     "Wednesday": {
       "status": "empty",
@@ -58,9 +58,9 @@
       "name": "Wind-Down Routine",
       "emoji": "",
       "status": "pending",
-      "accumulated": "1 nights",
+      "accumulated": "2 nights",
       "target": "6 nights",
-      "progress_pct": 16
+      "progress_pct": 33
     }
   ],
   "routines": [
@@ -71,7 +71,7 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "pending"
+          "status": "skipped"
         }
       ],
       "metrics_total": "",
@@ -116,12 +116,12 @@
       "sessions": [
         {
           "day": "Tue",
-          "status": "pending"
+          "status": "done"
         }
       ],
       "metrics_total": "",
       "comparison": "",
-      "done": 0,
+      "done": 1,
       "total": 1
     },
     {
