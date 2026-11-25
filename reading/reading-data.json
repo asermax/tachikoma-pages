@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24",
+  "generated_at": "2026-11-25",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1856,6 +1856,30 @@
       "category": "ai",
       "summary": "LLM inference caches model inputs (conversation history) to avoid recomputing tokens; the author asks whether outputs should be cached too, since agents visibly waste expensive output tokens repeating content — regurgitating code snippets, quoting evidence documents, echoing sample outputs. Proposed fix: fine-tune or prompt models to reference history segments (src/script.py:12-15) instead of repeating verbatim, with the harness expanding references for the user. It fails because visible output is a tiny fraction of total tokens: from his own agent histories only ~6% of output tokens are visible to the user — ~50% are reasoning tokens, ~44% tool calls. By Amdahl's law, saving even two-thirds of visible output yields only ~4% total reduction. The real lever is the invisible 94%, which depends on model intelligence: smarter models need fewer reasoning tokens and tool calls. This explains why more expensive per-token models are often cheaper overall — a 5x per-token premium offset by needing 6x fewer tokens. Takeaway: optimize for model capability, not output caching.",
       "added": "2026-11-21"
+    },
+    {
+      "slug": "abolish-lock-poisoning",
+      "title": "Abolish Lock Poisoning",
+      "url": "https://lucumr.pocoo.org/2026/11/25/poisoning/",
+      "category": "engineering",
+      "summary": "Armin Ronacher argues that Rust's mutex poisoning (a panic while holding a std::sync::Mutex marks it poisoned so every later lock() returns a PoisonError) should be removed or made opt-in. The feature's intent is to protect invariants broken by a mid-critical-section panic, but he says it has only ever bitten him and never helped, and he quotes a libs-team member that in std's history there has never been one report of anyone recovering from poison. His arguments: PoisonError must hold the guard, so holding the error holds the lock, and the common m.lock()? keeps the mutex locked as long as the error value lives, while match fallbacks that re-lock deadlock. Poisoning fails forever rather than fast: one panic on one thread turns every later lock().unwrap() into a panic while the process stays up (RLS after a failed cargo build, crash stats at Mozilla application-services, a Neon staging safekeeper, cascading test failures). Recovery is awkward, since into_inner() leaves the flag set and clear_poison only arrived in Rust 1.77. Nobody relies on it, including std itself, Tokio, Wasmtime, crossbeam-channel and rust-analyzer. And only Mutex poisons while RefCell does not, so coupling poisoning to mutexes is historical. His wish: stabilize std::sync::nonpoison, make std::sync::Mutex resolve to it by default, and add an explicit Poison<T> for those who want it.",
+      "added": "2026-11-25"
+    },
+    {
+      "slug": "ive-been-drinking-wine-in-my-kitchen",
+      "title": "I've been drinking wine in my kitchen",
+      "url": "https://scottaaronson.blog/?p=10362",
+      "category": "science",
+      "summary": "Scott Aaronson reacts to a burst of AI-generated results in complexity theory. The day before the post, shortly after Anthropic's proof of the Generalized Riemann Hypothesis, both Anthropic and OpenAI released proofs of Valiant's VP!=VNP conjecture, the central algebraic analogue of P!=NP and considered a warmup to it since the late 1970s. The conjecture says the permanent of an n x n matrix has no polynomial-size algebraic circuit, unlike the determinant. Anthropic's result shows a circuit of size exp(Omega(log^4/3 n)) is needed and OpenAI's gets exp(Omega(log^5/4 n)): superpolynomial but subexponential, against a best-known upper bound of about 2^n. Both work over all fields of characteristic other than 2. From Aaronson's partial understanding, both proofs use a nontrivial compression step followed by diagonalization, which is likely how they evade the natural proofs barrier; how they evade an algebraic-circuit relativization barrier is less clear to him. The proofs come with Lean formal certification. Asked whether this raises his confidence in P!=NP, he says he is back up to 96%. The same day, Khanna, Putterman, and Song posted a deterministic linear-time algorithm for minimum spanning trees, a decades-old open problem, with the main ideas generated entirely by AI (6.2 Astra) and verified, simplified and clarified by the authors. Aaronson closes wondering whether a proof of P!=NP is next, unsure whether the pace amounts to a singularity for mathematical research alone or something larger.",
+      "added": "2026-11-25"
+    },
+    {
+      "slug": "using-ai-without-losing-your-humanity",
+      "title": "Using AI Without Losing Your Humanity",
+      "url": "https://www.dbreunig.com/2026/11/24/using-ai-without-losing-your-humanity.html",
+      "category": "ai",
+      "summary": "A talk Drew Breunig gave at the Cloud-Native Geospatial Forum in October 2026. He describes himself as a heavy AI user, not a skeptic, yet still hesitates over which tasks are acceptable to offload and forget how to do. His argument is that AI models produce the average. In an experiment, the same prompt for a B2B CRM landing page returned near-identical results in every fresh session, and he links this to the uniform AI poster aesthetic. The cause, he says, is labs trading diversity for reliability, turning models into appliances that must work for experts and laypeople alike. He places this in a historical pattern of learning from deviation and then eliminating it: Taylor's time and motion studies, desire paths, and tools humans built to get weird again (alcohol, the I Ching, tarot, Brian Eno's Oblique Strategies). He calls this innovation through irritation and argues AI is a giant formalization machine that needs irritants, with humans playing that role. The harm is local (undifferentiated output in software, emails and plans) and global (bots writing for bots, models distilling from each other). He closes with four rules: put in the work when it matters; irritate, then prune; don't formalize yourself; and some questions are invitations, since offloading every question to AI costs you enjoyment, experience and the chance to ask a person.",
+      "added": "2026-11-25"
     }
   ],
   "archive": [
