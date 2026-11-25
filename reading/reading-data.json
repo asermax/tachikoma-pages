@@ -1866,6 +1866,14 @@
       "added": "2026-11-25"
     },
     {
+      "slug": "holy-shit-holy-shit-holy-shit-holy-shit",
+      "title": "HOLY SHIT HOLY SHIT HOLY SHIT HOLY SHIT",
+      "url": "https://scottaaronson.blog/?p=10379",
+      "category": "science",
+      "summary": "Scott Aaronson reacts to a rapid series of AI-generated mathematical breakthroughs. Over a single dinner evening with colleagues, he learned that OpenAI claims to prove that ω, the exponent of matrix multiplication, is exactly 9/4 — a lower bound matching the upper bound from the \"Mathocalypse\" of October 6 — and, in a separate release, that the true number of linear gates needed to compute the Fourier Transform is N(log N)^(1/2+o(1)), with a matching lower bound improving on the FFT's 60-year-old O(N log N). These came hot on the heels of proofs of VP ≠ VNP and the Riemann Hypothesis, plus Yupan Liu's AI-assisted proof that QIP(2) = PSPACE — a result that would have been a top-of-the-year theorem in 2025 but now barely registers.\n\nAaronson identifies two layers of shock. First, the answer to a central mystery of algorithms dating back to Strassen (1969) turns out to be a rational number — vindicating his long-held skepticism of colleagues' confident claims that ω=2. Second, and bigger: the AI proved any lower bound of the form ω>2 at all, a challenge he considered nearly as hard as P ≠ NP. He compares the moment to van Leeuwenhoek's microscope or Galileo's telescope: a whole new continent of mathematical truth suddenly becoming visible, and says that for the first time he feels in his bones that a proof of P ≠ NP is not far.\n\nHe urges readers not to deny what's happening: the labs back their claims with Lean certificates, and his working assumption is now that any proof from OpenAI or Anthropic is correct barring contrary information, even if understanding takes years. On cryptography, he says he's virtually certain the labs are sitting on one or more \"bombshells\" — algorithmic upper bounds that could break deployed cryptosystems — but refuses to speculate on specifics and warns against letting crypto anxiety overshadow the intellectual enormity of the moment. (In comments, he notes the day's Google factoring results are theoretical improvements to the number field sieve — making subexponential factoring deterministic and unconditional — with no practical cryptographic relevance.)\n\nHe closes on a personal note: this week feels like the beginning of an AI singularity, and he hopes it \"merely\" transforms the corner of the world concerned with hard math problems. He recommends a good Thanksgiving with family and friends, and hopes we find a world where we and our children are happy to live at the bottom of this rollercoaster.",
+      "added": "2026-11-25"
+    },
+    {
       "slug": "ive-been-drinking-wine-in-my-kitchen",
       "title": "I've been drinking wine in my kitchen",
       "url": "https://scottaaronson.blog/?p=10362",
