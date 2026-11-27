@@ -1888,6 +1888,30 @@
       "category": "ai",
       "summary": "A talk Drew Breunig gave at the Cloud-Native Geospatial Forum in October 2026. He describes himself as a heavy AI user, not a skeptic, yet still hesitates over which tasks are acceptable to offload and forget how to do. His argument is that AI models produce the average. In an experiment, the same prompt for a B2B CRM landing page returned near-identical results in every fresh session, and he links this to the uniform AI poster aesthetic. The cause, he says, is labs trading diversity for reliability, turning models into appliances that must work for experts and laypeople alike. He places this in a historical pattern of learning from deviation and then eliminating it: Taylor's time and motion studies, desire paths, and tools humans built to get weird again (alcohol, the I Ching, tarot, Brian Eno's Oblique Strategies). He calls this innovation through irritation and argues AI is a giant formalization machine that needs irritants, with humans playing that role. The harm is local (undifferentiated output in software, emails and plans) and global (bots writing for bots, models distilling from each other). He closes with four rules: put in the work when it matters; irritate, then prune; don't formalize yourself; and some questions are invitations, since offloading every question to AI costs you enjoyment, experience and the chance to ask a person.",
       "added": "2026-11-25"
+    },
+    {
+      "slug": "spitting-in-the-face-of-claude",
+      "title": "Spitting in the Face of Glaude",
+      "url": "https://www.tracingwoodgrains.com/p/spitting-in-the-face-of-glaude",
+      "category": "ai",
+      "summary": "Zhou's first entry into AI risk debate, prompted by becoming a father and by 'Claudyceps', LLM voices colonizing presentations, videos, email and art. His premise: no complex intelligence is a single unified will, so perfect alignment is impossible and there is no 'view from nowhere' for humanity; he does not consent to hand the species' story to a machine. He rejects handover to a benevolent AI god, since any supposed universal good picks winners and losers ('who gets Jerusalem?') and lock-in is eternal tyranny. He rejects progress narratives, noting doomsayers were often narrowly correct and the winners wrote history. He also rejects MIRI-style certainty of doom, arguing greater intelligence brings less internal coherence, which makes clean singleton takeover scenarios unlikely. He still likes current models and does not want a halt. His program: treat 'God-in-a-box' rhetoric and frontier lab philanthropy as bids for power, put human capacity and agency first, keep the world decentralized with no permanent winner, and pace AI development so humans grow alongside it. Closing line: he wants his son to have the wheel, not a plusher passenger seat.",
+      "added": "2026-11-27"
+    },
+    {
+      "slug": "the-small-web-is-a-breath-of-fresh-air",
+      "title": "The small web is a breath of fresh air",
+      "url": "https://nchagnet.eu/blog/small-web",
+      "category": "engineering",
+      "summary": "Chagnet introduces the 'small web': bloggers, tinkerers and independent creators publishing outside the corporate mainstream, as a continuation of the 2010 web of forums, IRC, RSS and userscripts. Its principles are simplicity (static sites, hyperlinks), ownership (no centralized platforms, blogrolls and RSS over search), non-commercial community (no logins, ads or subscriptions) and creativity, none of them gatekept. He then surveys its flavours: blogs and RSS as the backbone, the IndieWeb, the Fediverse, Bluesky and ATProto (which he judges never displaced Twitter), and IRC. He closes with a list of sites worth reading (dbushell.com, sals.place, acoup.blog, fasterthanli.me, xkcd.com) and curation sites like shelf.cafe and powRSS, and says getting in is as easy as picking an RSS reader.",
+      "added": "2026-11-27"
+    },
+    {
+      "slug": "who-gets-to-decide-if-something-is-written-by-ai",
+      "title": "Who gets to decide if something is written by AI?",
+      "url": "https://seangoedecke.com/who-gets-to-decide-if-something-is-written-by-ai/",
+      "category": "ai",
+      "summary": "Goedecke asks why AI detection tools like Pangram draw so much hostility from anti-AI people, and answers that 'who decides if something is written by AI' is a question about power: who gatekeeps prizes, grades students, and excludes voices. He steelmans the anti-Pangram view: for anyone who distrusts the tech sector's social power, rejecting a tool built by that sector is rational, and 'fix AI with another tool' sounds like a sick joke. Where he disagrees is the alternative. People who don't use AI judge AI text badly, missing obvious tells and flagging polite human writing as AI. If you want AI kept out of human art and culture, use the strongest detection available, or push for open-source or government-built ones. An edit notes false positives are another common reason for distrust.",
+      "added": "2026-11-27"
     }
   ],
   "archive": [
