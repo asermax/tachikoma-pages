@@ -1922,14 +1922,6 @@
       "added": "2026-11-28"
     },
     {
-      "slug": "neural-networks-and-deep-learning",
-      "title": "Neural Networks and Deep Learning",
-      "url": "https://neuralnetworksanddeeplearning.com/",
-      "category": "ai",
-      "summary": "Michael Nielsen's free online book (2015, last updated December 2019). It teaches the core concepts behind neural nets and deep learning in a hands-on, intuition-first way, building from first principles with working code. Six chapters: (1) recognizing handwritten digits, covering perceptrons, sigmoid neurons and gradient descent; (2) how backpropagation works, with its four fundamental equations; (3) improving how networks learn, covering cross-entropy, regularization, weight initialization and hyper-parameters; (4) a visual proof that neural nets can compute any function; (5) why deep networks are hard to train, covering the vanishing gradient problem; (6) deep learning, covering convolutional networks and the state of image recognition. The page also has an appendix on whether there is a simple algorithm for intelligence, an FAQ and a code repository.",
-      "added": "2026-11-28"
-    },
-    {
       "slug": "proactivity-can-read-as-sabotage",
       "title": "Proactivity Can Read as Sabotage",
       "url": "https://www.dbreunig.com/2026/11/27/proactivity-can-read-as-sabotage.html",
@@ -3875,6 +3867,16 @@
       "summary": "The article argues that when working in an unclear situation — no clear guidance, no idea what will help — the best course of action is usually to \"flail about\": try many things quickly rather than waiting cautiously for better understanding. Flailing well rests on three principles: try lots of different things, pay close attention to feedback, and ruthlessly drop anything that isn't getting positive results. The author identifies three kinds: product flailing (try features until one gets traction), engineering flailing (make speculative changes rather than fully understanding the system first), and organizational flailing (automate, volunteer, propose; feedback sensitivity is critical). Flailing feels like failing from the inside — treat that feeling as a signal you're exploring correctly, not evidence of trouble.",
       "added": "2026-11-23",
       "read": "2026-11-23",
+      "has_notes": true
+    },
+    {
+      "slug": "neural-networks-and-deep-learning",
+      "title": "Neural Networks and Deep Learning",
+      "url": "https://neuralnetworksanddeeplearning.com/",
+      "category": "ai",
+      "summary": "Michael Nielsen's free online book (2015, last updated December 2019). It teaches the core concepts behind neural nets and deep learning in a hands-on, intuition-first way, building from first principles with working code. Six chapters: (1) recognizing handwritten digits, covering perceptrons, sigmoid neurons and gradient descent; (2) how backpropagation works, with its four fundamental equations; (3) improving how networks learn, covering cross-entropy, regularization, weight initialization and hyper-parameters; (4) a visual proof that neural nets can compute any function; (5) why deep networks are hard to train, covering the vanishing gradient problem; (6) deep learning, covering convolutional networks and the state of image recognition. The page also has an appendix on whether there is a simple algorithm for intelligence, an FAQ and a code repository.",
+      "added": "2026-11-28",
+      "read": "2026-11-28",
       "has_notes": true
     }
   ]
