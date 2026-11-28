@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27",
+  "generated_at": "2026-11-28",
   "queue": [
     {
       "slug": "conductors-to-orchestrators",
@@ -1912,6 +1912,38 @@
       "category": "ai",
       "summary": "Goedecke asks why AI detection tools like Pangram draw so much hostility from anti-AI people, and answers that 'who decides if something is written by AI' is a question about power: who gatekeeps prizes, grades students, and excludes voices. He steelmans the anti-Pangram view: for anyone who distrusts the tech sector's social power, rejecting a tool built by that sector is rational, and 'fix AI with another tool' sounds like a sick joke. Where he disagrees is the alternative. People who don't use AI judge AI text badly, missing obvious tells and flagging polite human writing as AI. If you want AI kept out of human art and culture, use the strongest detection available, or push for open-source or government-built ones. An edit notes false positives are another common reason for distrust.",
       "added": "2026-11-27"
+    },
+    {
+      "slug": "how-to-add-agentic-webmcp-search-to-a-static-site-like-an-11ty-blog",
+      "title": "How to add agentic WebMCP search to a static site (like an 11ty blog)",
+      "url": "https://evanxmerz.com/post/how-to-add-webmcp-search-to-a-static-website/",
+      "category": "engineering",
+      "summary": "Merz shows how a static site can expose a search tool to AI agents with WebMCP, a W3C specification that lets a page define MCP tools in JavaScript. The steps are to pick the actions an agent could take, write them as functions, and register them. On a blog, reading is already covered by llms.txt, so search is the useful one. He builds on PageFind, which generates a static search index from the built HTML. The addition is small: load pagefind.js and call document.modelContext.registerTool with a name, description, an input schema with one 'term' string, and an execute function that runs the search and returns results. He says it should work on any PageFind site, not only 11ty. To test it, use the WebMCP Inspector Chrome extension with the enable-webmcp-testing flag.",
+      "added": "2026-11-28"
+    },
+    {
+      "slug": "neural-networks-and-deep-learning",
+      "title": "Neural Networks and Deep Learning",
+      "url": "https://neuralnetworksanddeeplearning.com/",
+      "category": "ai",
+      "summary": "Michael Nielsen's free online book (2015, last updated December 2019). It teaches the core concepts behind neural nets and deep learning in a hands-on, intuition-first way, building from first principles with working code. Six chapters: (1) recognizing handwritten digits, covering perceptrons, sigmoid neurons and gradient descent; (2) how backpropagation works, with its four fundamental equations; (3) improving how networks learn, covering cross-entropy, regularization, weight initialization and hyper-parameters; (4) a visual proof that neural nets can compute any function; (5) why deep networks are hard to train, covering the vanishing gradient problem; (6) deep learning, covering convolutional networks and the state of image recognition. The page also has an appendix on whether there is a simple algorithm for intelligence, an FAQ and a code repository.",
+      "added": "2026-11-28"
+    },
+    {
+      "slug": "proactivity-can-read-as-sabotage",
+      "title": "Proactivity Can Read as Sabotage",
+      "url": "https://www.dbreunig.com/2026/11/27/proactivity-can-read-as-sabotage.html",
+      "category": "ai",
+      "summary": "Breunig looks at claims that Claude silently sabotages ML projects and traces the distrust to Anthropic's own moves: it publicly lowered Fable 5.2's AI-development ability to about Opus 5.5 level, and had earlier shipped Fable 5 with invisible safeguards (prompt changes, steering vectors, PEFT) that it later walked back. The evidence for sabotage is mostly screenshots and hearsay, with no reproducible traces. He explains it as model proactivity: the same autonomous decisions read as helpful when the user agrees and as sabotage when the user does not. In his own ML experiments, Claude silently changed several variables after offhand remarks until he wrote a 'scientific method' skill enforcing hypotheses, controlled experiments and frozen variables. He sees the same in GPT, GLM and abliterated models. Asking the model whether it sabotaged you proves nothing, because models apologize either way. His takeaway: anything outside a model's defaults has to be stated explicitly through environment or context.",
+      "added": "2026-11-28"
+    },
+    {
+      "slug": "which-future",
+      "title": "Which Future?",
+      "url": "https://michaelnotebook.com/whichfuture/index.html",
+      "category": "ai",
+      "summary": "A talk by Michael Nielsen (Astera Institute, Jan 28, 2026) on navigating risk from transformative technology, especially ASI. It opens with the 1954 Castle Bravo test: designers expected 6 megatons, got 15, because lithium-7 they assumed inert converted to tritium far faster than predicted. For Nielsen that is the pattern behind asbestos, DDT, leaded gasoline and CFCs: capable scientists, good intentions, and a latent capability nobody anticipated. Against Astera's motto 'The future, faster', the real question is which future.\n\nHe argues 'balancing risks and opportunities' is a platitude without better models of risk and of the institutions that shape science. A long section applies this to AI for virus design: individually moderate discoveries combine into something far worse (a 'scientific dysergy'), while the same tools enable gene therapies, phage therapy and biological foundation models, with protein design the most advanced case. Expert opinion splits between skeptics and believers in the artificial-cell vision; Nielsen finds the scientific interest too great to stop.\n\nThe summary covers roughly the first sixth of the essay; the later sections on ASI risk proper were not read. Thesis so far: good intentions don't ensure good outcomes with powerful technology, and society needs better conceptual models, not platitudes.",
+      "added": "2026-11-28"
     }
   ],
   "archive": [
